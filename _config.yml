@@ -13,18 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ines Panker
+title: Unscrambled Computer Science
+author: Ines Panker
 description: >- # this means to ignore newlines until "baseurl:"
   Who am I?
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://inesp.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/ines-panker-logo.jpg"
 
 github_username: inesp
 linkedin_username: "ines-p-a6284a87"
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: ines-theme
 plugins:
   - jekyll-feed
 
