@@ -32,6 +32,15 @@ show_excerpts: true
 minima:
   date_format: "%-d. %b %Y"
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Ines Panker"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
