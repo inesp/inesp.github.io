@@ -26,9 +26,11 @@ linkedin_username: "ines-p-a6284a87"
 
 # Build settings
 markdown: kramdown
-theme: ines-theme
+#theme: ines-theme
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 show_excerpts: true
 minima:
