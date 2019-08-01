@@ -7,7 +7,19 @@
 
 	<body>
 
-		{{ content }}
+    <div class="container">
+      
+      <div class="row">
+        <aside class="col-md-3">
+          {%- include sidebar.html -%}
+        </aside>
+
+        <div class="col-md-9">
+      		{{ content }}
+        </div>
+      </div>
+
+    </div>
 
 	</body>
 

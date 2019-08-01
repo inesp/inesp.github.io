@@ -1,0 +1,11 @@
+body{
+  padding-top:50px;
+}
+
+.logo-img{ max-width:100px; }
+
+.post-meta {
+  font-style: italic;
+  color: #6c757d;
+  font-size: 90%;
+}

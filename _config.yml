@@ -33,8 +33,7 @@ plugins:
   - jekyll-seo-tag
 
 show_excerpts: true
-minima:
-  date_format: "%-d. %b %Y"
+date_format: "%-d. %b %Y"
 
 defaults:
   -

@@ -2,32 +2,29 @@
 layout: default
 ---
 
+<div class="container">
 
-<ul class="posts">
-	<li>
-		<h1 id="posts-label">posts</h1>
-	</li>
 
-	{%- for post in site.posts -%}
-	<li>
-		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-		<a class="post-link" href="{{ post.url | relative_url }}">
-			<h2 class="post-title">{{ post.title | escape }}</h2>
-		</a>
-		<div class="post-meta">
-			<ul class="post-categories">
-				{%- for tag in post.categories -%}
-				<li>{{ tag }}</li>
-				{%- endfor -%}
-			</ul>
-			<div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
-		</div>
-		<div class="post">
-			{%- if site.show_excerpts -%}
-			{{ post.excerpt }}
-			{%- endif -%}
-		</div>
-	</li>
-	{%- endfor -%}
-</ul>
+  {%- for post in site.posts -%}
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <a href="{{ post.url | relative_link }}" class="post-link">
+          <h2>{{ post.title }}</h2>
+        </a>
+
+        <div class="post-meta text-muted">
+          {{ post.date | date: site.date_format }}
+        </div>
+
+        {{ post.excerpt }}
+
+      </div>
+    </div>
+
+  {%- endfor -%}
+
+
+</div>
+
 
