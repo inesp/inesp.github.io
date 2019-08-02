@@ -97,4 +97,4 @@ This problem as well is solved with virtual servers. The number of virtual `slot
 
 - [Consistent Hashing: Algorithmic Tradeoffs](https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8){:target="_blank"}
 - [Wikipedia: Consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing){:target="_blank"}
-- [ML Wiki: Consistent Hashing](http://mlwiki.org/index.php/Consistent_Hashing#Virtual_Nodes){target="_blank"}
+- [ML Wiki: Consistent Hashing](http://mlwiki.org/index.php/Consistent_Hashing#Virtual_Nodes){:target="_blank"}
