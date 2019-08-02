@@ -19,7 +19,7 @@ Let's say you have implemented a very successful online telephone book. Your use
   
   When choosing a hash function, it is good to choose one, which distributes hashes uniformly.  
   
-  Let's say that our `some_hash_function` creates integer values between 0 and 1024. 
+  Let's say that our `some_hash_function` creates integer values between 0 and 1023. 
 
 - Next you need to choose the number of partitions or `slots`. 
 
@@ -29,7 +29,7 @@ Let's say you have implemented a very successful online telephone book. Your use
 
 - Now you need to map the `slots` into the same hash-space as the `keys`.
 
-  We need to give each of our 4 partitions a hash value and this hash value must also be between 0 and 1024 just like the results of `some_hash_function`. 
+  We need to give each of our 4 partitions a hash value and this hash value must also be between 0 and 1023 just like the results of `some_hash_function`. 
 
   We can use any method to define the hashes of our 4 partitions. Let's say we have chosen the following values: 
   
@@ -46,7 +46,7 @@ Let's say you have implemented a very successful online telephone book. Your use
 
   ![hash-space-line](/assets/consistent-hashing-space-line.jpg)
 
-  Our hash space extends from 0 to 1024. All the `keys` (=person's names) and all the `slots` (=DB partitions) have their position in the same hash space.
+  Our hash space extends from 0 to 1023. All the `keys` (=person's names) and all the `slots` (=DB partitions) have their position in the same hash space.
 
   To avoid having to deal with the start and the end, the hash space is usually drawn as a circle. Like this:
 
