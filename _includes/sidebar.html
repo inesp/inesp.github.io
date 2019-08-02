@@ -1,7 +1,44 @@
-  
-<h3><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h3>
-<p>by {{ site.author }}</p>
 
-<a href="{{ "/" | absolute_link }}"><img src="{{ site.logo | relative_url }}" class="img-fluid logo-img" alt="Logo" /></a>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      
+      <a href="{{ '/' | absolute_link }}"><img src="{{ site.logo | relative_url }}" class="img-fluid " alt="Logo" /></a>
 
-<p class="my-2">Hi, I'm Ines, I'm a computer engineer.</p>
+      <h3 class="my-2"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h3>
+      <p>by {{ site.author }}</p>
+
+
+      <ul class="social-icons my-2">
+          {%- if site.social.github -%}
+            <li><a 
+                href="https://github.com/{{ site.social.github | cgi_escape | escape }}" 
+                title="{{ site.social.github | escape }}"
+                target="_blank"
+                ><img 
+                  height="25" 
+                  width="25" 
+                  src="{{ '/assets/github.svg' | relative_link }}"
+                ></a></li>
+          {%- endif -%}
+
+          {%- if site.social.linkedin -%}
+            <li><a
+                href="https://www.linkedin.com/in/{{ site.social.linkedin | cgi_escape | escape }}" 
+                title="{{ site.author | escape }}"
+                target="_blank"
+                ><img
+                  height="25"
+                  width="25"
+                  src="{{ '/assets/linkedin.svg' | relative_link }}"
+                ></a></li>
+          {%- endif -%}
+      </ul>
+
+      <small>
+        © {{ "now" | date: "%Y"}} Ines Panker
+      </small>
+
+    </div>
+  </div>
+</div>

@@ -21,12 +21,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://inesp.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/ines-panker-logo.jpg"
 
-github_username: inesp
-linkedin_username: "ines-p-a6284a87"
+social:
+  github: inesp
+  linkedin: "ines-p-a6284a87"
 
 # Build settings
 markdown: kramdown
-#theme: ines-theme
 plugins:
   - jekyll-feed
   - jekyll-sitemap
