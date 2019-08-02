@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
 body{
   padding-top:50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
+
+footer{padding-top:50px;}
 
 a {
   color: #000;
@@ -10,6 +14,7 @@ a {
 
 code { font-size: 100%}
 
+aside h3{font-family: 'Saira Stencil One', cursive;}
 
 .logo-img{ max-width:100px; }
 
