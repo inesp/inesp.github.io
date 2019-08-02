@@ -46,9 +46,8 @@ For every day we want to know
 - the number of users per day
 
 To sum it up. On every day we need:
-```python
-space_needed = users * img_per_day * img_size
-```
+
+$$ space-needed = users * img_per_day * img_size$$
 
 **Hint #1:** Start with variables. Turn them into concrete numbers later.
 {:.box}
