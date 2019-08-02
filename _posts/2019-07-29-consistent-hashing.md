@@ -90,10 +90,8 @@ Each physical server gets multiple `slots` on the ring, these `slots` do not hav
 This problem as well is solved with virtual servers. The number of virtual `slots` for each physical server is determined based on the performance of the physical server.
 
 
------------------------------------------
-
-
-##### External Links
+###### External Links
+{:.external_links}
 
 - [Consistent Hashing: Algorithmic Tradeoffs](https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8){:target="_blank"}
 - [Wikipedia: Consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing){:target="_blank"}
