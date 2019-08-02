@@ -23,6 +23,10 @@ code { font-size: 100%}
   height: auto;
 }
 
+.post-content a{
+  color: #005ec2;
+}
+
 /**
  * Social media
  */
