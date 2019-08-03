@@ -24,7 +24,7 @@ There are at least the following types of estimates:
 
 
 
-### Scenario 1
+## Scenario
 
 You are building an app for photo sharing. You have about 500M active users per month. How much hardware space do you need?
 
@@ -38,7 +38,7 @@ Our users will upload pictures and they will download pictures.
 
 Let's first focus on the upload. We will derive the download numbers once we understand the upload numbers.
 
-#### Storage estimations for uploaded files
+### Storage estimations for uploaded files
 
 How much disk space do we need to store all uploaded pictures? Which variables are we interested in? Let's limit our discussion to average values. 
 
@@ -52,8 +52,7 @@ And how many days will we store the images? Probably a few years.
 To sum it up:
 
 $$ 
-space\_needed = users * img\_per\_day * img\_size * days\_to\_store\\
-
+space\_needed = users * img\_per\_day * img\_size * days\_to\_store
 $$
 
 **Hint #1:** Start with variables. Turn them into concrete numbers later.
@@ -75,6 +74,9 @@ images_{per\_day} = 500 e^6 users * 3 \frac{images}{user*day}\\
 = 1 500\ milion\ \frac{images}{day} \\= 1.5\ bilion\ \frac{images}{day} 
 $$
 
+**Hint #2:** Use units with numbers, this way you will be more certain what the result represents. 
+{:.box}
+
 Ok, so about $$1.5\ bilion$$ images a day. Considering the average image size of 1 MB, after 1 month, this would amount to:
 
 $$
@@ -91,9 +93,9 @@ Still, we might be interested to research some kind of image compression techniq
 
 But let's move on to traffic estimations. The numbers we got are good enough for our purposes.
 
-#### Traffic estimations
+### Traffic estimations
 
-**Hint 2:** Build upon established facts.
+**Hint #3:** Build upon established facts.
 {:.box}
 
 When thinking about expected traffic, you could be asking yourself are: 
@@ -110,17 +112,24 @@ $$
   \cong 17000 \frac {images}{s}
 $$
 
-$$17K$$ images are uploaded every second, but each of these images is also viewed $$v$$ times. This is a photo *sharing* app, so for every upload there is going to be $$v$$ viewings. Let's say that on average every image gets viewed 10 times.
+$$17K$$ images are uploaded every second, but each of these images is also viewed $$v$$ times. This is a photo *sharing* app, so for every upload there is going to be $$v$$ viewings. Let's say that on average every image gets viewed 10 times. This means $$170 000$$ requests per second:
 
 $$
- 17000 \frac{images}{s} * 1\frac{MB}{image} * 10 = 170 \frac{GB}{s}
+ requests = 17000 \frac{images}{s} * 10 \frac{req}{image} = 170\ K \frac{req}{s} \\ 
+
+  170 K \frac{req}{s} * 1\frac{MB}{req} = 170 \frac{GB}{s}
 $$
 
 This means that our servers need to serve $$170 GB/s$$.
 
 Servers are limited by 2 things: the number of concurrent connections and the bandwidth.
 
-What is a reasonable number of concurrent connections for a server? I have no idea. This depends at least on the server's spec and the kind of processing we will be doing for each request. The only way to answer this would be to look at the statistics of some actual servers.<ref>xx</ref>
+What is a reasonable number of concurrent connections for a server? I have no idea. This depends at least on the server's spec and the kind of processing we will be doing for each request. The only way to answer this would be to look at the statistics of some actual servers, of which there seem to be very few on the internet.
+
+How are we supposed to continue with no data from here on? I don't know. Can I server deliver 1 GB of data per second (that is 8 000 000 kbits/s), I don't know. Maybe it is closer to 0.1 GB/s, maybe it is 0.01 GB/s. 
+
+Everything up to here was pure speculation, but everything from here on would be just imagination. I presume there are some specialists somewhere, who deal with these numbers all the time. Why not ask them? :grin:
+
 
 
 
