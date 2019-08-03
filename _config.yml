@@ -27,14 +27,19 @@ social:
 
 # Build settings
 markdown: kramdown
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
+  - jekyll-scholar
 
 show_excerpts: true
 date_format: "%-d. %b %Y"
+
+scholar:
+  style: mia
 
 defaults:
   -
