@@ -1,6 +1,16 @@
 ---
 title: "Consistent Hashing in a Nutshell"
 tags: ["distributed-systems"]
+biblio:
+  -
+    title: "Consistent Hashing: Algorithmic Tradeoffs"
+    link: https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8
+  - 
+    title: "Wikipedia: Consistent hashing"
+    link: https://en.wikipedia.org/wiki/Consistent_hashing
+  - 
+    title: "ML Wiki: Consistent Hashing"
+    link: http://mlwiki.org/index.php/Consistent_Hashing#Virtual_Nodes
 ---
 
 Consistent hashing is a strategy most notably used by distributed databases for determining to which `slot` a `key` belongs. It's main advantage is that if a new `slot` needs to be added, only `K/n` objects need to be moved  (`K`=number of all keys, `n`=the number of `slots`). And this means adding and removing slots is relatively inexpensive.
@@ -89,10 +99,3 @@ Each physical server gets multiple `slots` on the ring, these `slots` do not hav
 
 This problem as well is solved with virtual servers. The number of virtual `slots` for each physical server is determined based on the performance of the physical server.
 
-
-###### External Links
-{:.external_links}
-
-- [Consistent Hashing: Algorithmic Tradeoffs](https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8){:target="_blank"}
-- [Wikipedia: Consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing){:target="_blank"}
-- [ML Wiki: Consistent Hashing](http://mlwiki.org/index.php/Consistent_Hashing#Virtual_Nodes){:target="_blank"}

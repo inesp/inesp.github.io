@@ -1,6 +1,22 @@
 ---
 title: How to estimate data requirements
 tags: ["estimation"]
+biblio:
+  - 
+    title: "Episode 06: Into to Architecture and Systems Design Interviews"
+    link: "https://www.youtube.com/watch?v=ZgdS0EUmn70"
+  -
+    title: "Grokking the System Design Interview"
+    link: "https://www.educative.io/collection/5668639101419520/5649050225344512"
+  - 
+    title: "Storage Pod 6.0: Building a 60 Drive 480TB Storage Server"
+    link: "https://www.backblaze.com/blog/open-source-data-storage-server/"
+  - 
+    title: "Does Google Photos Compress The Life Out Of Your Pics? Here's What Our Experiment Revealed"
+    link: "https://www.huffingtonpost.in/arpit-verma/bursting-the-myth-of-comp_b_8902076.html"
+  - 
+    title: "Test: Megabit/Gigabit Upgrade for a Download Server"
+    link: "https://www.paessler.com/tools/webstress/sample_performance_tests/megabit_gigabit_upgrade_for_a_download_server"
 ---
 
 Lately, this has become a common interview question. How many Bytes will some kind of hypothetical app probably need? But in fact, planning the data storage capacity is usually a complicated and time-consuming operation.
@@ -131,15 +147,3 @@ How are we supposed to continue with no data from here on? I don't know. Can I s
 Everything up to here was pure speculation, but everything from here on would be just imagination. I presume there are some specialists somewhere, who deal with these numbers all the time. Why not ask them? :grin:
 
 
-
-
-
-###### External sources:
-{:.external_links}
-
-- [Episode 06: Into to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70){:target="_blank"}
-- [Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512){:target="_blank"}
-- [Storage Pod 6.0: Building a 60 Drive 480TB Storage Server](https://www.backblaze.com/blog/open-source-data-storage-server/){:target="_blank"}
-- [Does Google Photos Compress The Life Out Of Your Pics? Here's What Our Experiment Revealed](https://www.huffingtonpost.in/arpit-verma/bursting-the-myth-of-comp_b_8902076.html){:target="_blank"}
-- [Testin: Megabit/Gigabit Upgrade 
-for a Download Server](https://www.paessler.com/tools/webstress/sample_performance_tests/megabit_gigabit_upgrade_for_a_download_server){:target="_blank"}

@@ -18,6 +18,8 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+
+    {%- include biblio.html -%}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
