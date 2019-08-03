@@ -13,13 +13,13 @@ biblio:
     link: http://mlwiki.org/index.php/Consistent_Hashing#Virtual_Nodes
 ---
 
-Consistent hashing is a strategy most notably used by distributed databases for determining to which `slot` a `key` belongs. It's main advantage is that if a new `slot` needs to be added, only `K/n` objects need to be moved  (`K`=number of all keys, `n`=the number of `slots`). And this means adding and removing slots is relatively inexpensive.
+Consistent hashing is a strategy most notably used by distributed databases for determining to which `slot` a `key` belongs. Its main advantage is that if a new `slot` needs to be added, only `K/n` objects need to be moved  (`K`=number of all keys, `n`=the number of `slots`). And this means adding and removing slots is relatively inexpensive.
 
 ## In Practice
 
 Let's say you have implemented a very successful online telephone book. Your users enter a person's name and get their telephone number. You already have millions of person-phone mappings and more are added every day. Your DB server will soon not be able to handle the number of requests, thus you decided to partition the database.
 
-- First you have to choose a `key`. 
+- First, you have to choose a `key`. 
 
   Read and write requests to the DB will always be done for a specific person's name. This means your key should be calculated from a person's name. 
 
@@ -31,7 +31,7 @@ Let's say you have implemented a very successful online telephone book. Your use
   
   Let's say that our `some_hash_function` creates integer values between 0 and 1023. 
 
-- Next you need to choose the number of partitions or `slots`. 
+- Next, you need to choose the number of partitions or `slots`. 
 
   Let's say we will have 4 partitions. 
 
@@ -50,7 +50,7 @@ Let's say you have implemented a very successful online telephone book. Your use
     Partition3: 900
   ```
 
-- In the last step we define the way `keys` map to `slots`.
+- In the last step, we define the way the `keys` map to `slots`.
 
   Here is what we have until now:
 
@@ -77,7 +77,7 @@ If we remove the server `P3`, then only its 1 `key` needs to be moved to `P0`.
 
 Moving of `keys` is always done to the new server or from a removed server, never between existing servers.
 
-We are also not storing any information in any kind of a global directory. Our partitions are completely independent from each other.
+We are also not storing any information in any kind of a global directory. Our partitions are completely independent of each other.
 
 ## Gotchas
 
@@ -87,12 +87,12 @@ Your hash function should distribute keys evenly over the whole hash space. But 
 
 Wikipedia holds [a list of hash functions](https://en.wikipedia.org/wiki/List_of_hash_functions){:target="_blank"}
 
-### How to remediate uneven distribution of keys
+### How to remediate an uneven distribution of keys
 
-In real world, the distribution of `keys` and `slots` is often not even. It can happen that mosts `keys` are stored in just a few `slots`, leaving other `slots` mostly empty. This is usually addressed with virtual `slots`. Each physical server is responsible for several virtual servers.
+In the real world, the distribution of `keys` and `slots` is often not even with most `keys` stored in just a few `slots`, leaving other `slots` mostly empty. This is usually addressed with virtual `slots`. Each physical server is responsible for several virtual servers.
 
 Each physical server gets multiple `slots` on the ring, these `slots` do not have to be together. This has 2 advantages: 
-- when a physical server fails, its `keys` are redistributed to many other `slots`, not just to its next neighour
+- when a physical server fails, its `keys` are redistributed to many other `slots`, not just to its next neighbour
 - with many `slots` the number of `keys` per `slot` goes does and the distribution of `keys` among `slots` becomes more even
 
 ### How to remediate some physical servers having better performance than others
