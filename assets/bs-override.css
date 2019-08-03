@@ -56,6 +56,21 @@ aside h3{font-family: 'Saira Stencil One', cursive;}
 }
 
 /**
+ * Math highlighting styles
+ */
+.MathJax_CHTML{
+  color: #d2196e;
+}
+.mjx-full-width.MathJax_CHTML{
+  background-color: #f4f4f4;
+  padding: 16px 0 !important;
+  color: inherit;
+}
+.mjx-block{
+  margin-top:10px;
+}
+
+/**
  * Syntax highlighting styles
  */
 .highlight {
