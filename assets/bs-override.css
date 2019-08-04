@@ -6,10 +6,16 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{font-family: "Bitter"}
+
 a {
   color: #000;
   transition: color 0.3s;
 }
+
+.post-content a, footer a{
+  color: #005ec2;
+}
+
 
 code { font-size: 100%}
 
@@ -32,9 +38,6 @@ aside h3{font-family: 'Saira Stencil One', cursive;}
   height: auto;
 }
 
-.post-content a{
-  color: #005ec2;
-}
 
 /**
  * Social media
