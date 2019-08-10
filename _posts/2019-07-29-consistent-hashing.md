@@ -35,7 +35,7 @@ Let's say you have implemented a very successful online telephone book. Your use
 
   Let's say we will have 4 partitions. 
 
-  4 was chosen completely at random. Considering our example it would have been perfectly enough to split the DB in half instead of into quarters, but it is easier to illustrate consistent hashing with more slots.
+  4 was chosen completely at random. Considering our example it would have been enough to split the DB in half instead of into quarters, but it is easier to illustrate consistent hashing with more slots.
 
 - Now you need to map the `slots` into the same hash-space as the `keys`.
 
@@ -93,7 +93,7 @@ In the real world, the distribution of `keys` and `slots` is often not even with
 
 Each physical server gets multiple `slots` on the ring, these `slots` do not have to be together. This has 2 advantages: 
 - when a physical server fails, its `keys` are redistributed to many other `slots`, not just to its next neighbour
-- with many `slots` the number of `keys` per `slot` goes does and the distribution of `keys` among `slots` becomes more even
+- with many `slots`, the number of `keys` per `slot` goes down and the distribution of `keys` among `slots` becomes more even
 
 ### How to remediate some physical servers having better performance than others
 
