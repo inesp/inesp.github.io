@@ -38,6 +38,8 @@ aside h3{font-family: 'Saira Stencil One', cursive;}
   height: auto;
 }
 
+.post-content img.full-width{ width:100%}
+
 
 /**
  * Social media
