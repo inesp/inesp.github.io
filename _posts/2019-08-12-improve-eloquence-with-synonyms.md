@@ -4,7 +4,7 @@ title: How I use Thesaurus's Synonyms to write better (i.e. advance my articulat
 
 It turns out that a significant part of our work as developers is to write stuff down. Or to say it more eloquently, to outline, recount and illustrate our deliberations in writing. Given that English is not my first language I might be forgiven for lacking in expressive prowess, but everybody is sometimes just tired, annoyed or drained. Sometimes our literary capacities are narrowed down to only simple words, like "bad", "good", "ugly".
 
-In those moments I turn to [Thesaurus's life saving (read: face-saving) online synonyms' dictionary](https://www.thesaurus.com/browse/good){:target="_blank"}.
+In those moments I turn to Thesaurus's life saving (read: face-saving) [online synonyms' dictionary](https://www.thesaurus.com/browse/good){:target="_blank"}.
 
 [![Synonyms' dictionary](/assets/Synonims-thesaurus.png)](https://www.thesaurus.com/browse/good){:target="_blank"}
 
@@ -45,9 +45,9 @@ Here is my attempt to improve the style of this sentence without expanding it to
 
 This article is half joke half truthful advice. Everything that is on the internet should be taken with a grain of salt :wink:. 
 
-However, communication is difficult, particularly written communication, since we have been programmed over the millennia to get 75% of out information from non-verbal cues. 
+However, communication is difficult, particularly written communication, since we have been programmed over the millennia to get 75% of our information from non-verbal cues. 
 
-When writing something down, there is the problem of the author not having succeded in expressing what she wanted to, the problem of us not having all the context, the problem of us not having succedded in expessing what we wanted to and the problem of this sentence being written down forever and ever and ever and ... (When are any comments, any emails ever deleted?). It is simply prudent to bit a bit more meticulous when crating your legacy.
+When writing something down, there is the problem of the author not having succeeded in expressing what she wanted to, the problem of us not having all the context, the problem of us not having succeeded in expressing what we wanted to and the problem of this sentence being written down forever and ever and ever and ... (When are any comments, any emails ever deleted?). It is simply prudent to bit a bit more meticulous when creating your legacy.
 
 
 ![Writings last](/assets/Synonyms-da-vinci.jpg){:.full-width}
