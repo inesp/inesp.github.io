@@ -1,5 +1,8 @@
 ---
 title: How I use Thesaurus's Synonyms to write better (i.e. advance my articulation)
+biblio:
+  -  title: "Thesaurus"
+     link: "https://www.thesaurus.com/"
 ---
 
 It turns out that a significant part of our work as developers is to write stuff down. Or to say it more eloquently, to outline, recount and illustrate our deliberations in writing. Given that English is not my first language I might be forgiven for lacking in expressive prowess, but everybody is sometimes just tired, annoyed or drained. Sometimes our literary capacities are narrowed down to only simple words, like "bad", "good", "ugly".
