@@ -27,6 +27,11 @@ social:
 
 # Build settings
 markdown: kramdown
+kramdown:
+  parse_block_html: true
+  math_engine_opts:
+    preview: true
+    preview_as_code: true
 
 plugins:
   - jekyll-feed
