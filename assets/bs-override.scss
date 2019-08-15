@@ -9,7 +9,10 @@ body{
   padding-bottom:10px;
 }
 
-h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{font-family: "Bitter"; margin-bottom: 1rem;}
+h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: "Bitter"; 
+  margin-bottom: 1rem;
+}
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
   margin-top: 3.5rem;
@@ -20,7 +23,7 @@ a {
   transition: color 0.3s;
 }
 
-.post-content a, footer a{
+.post-content a, footer a, .post-edit-link a {
   color: #005ec2;
 }
 
@@ -64,9 +67,16 @@ aside h3{font-family: 'Saira Stencil One', cursive;}
 }
 
 .external_links{
-  padding-top: 20px;
+  margin-top: 3.5rem;
+}
+
+.post-edit-link{
+  padding-top: 1rem;
+  margin-top: 3.5rem;
   border-top: 1px solid #ddd;
-  margin-top: 50px;
+  font-family: "Bitter"; 
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 /**
