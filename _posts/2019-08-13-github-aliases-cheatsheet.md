@@ -19,7 +19,7 @@ The first thing to shorten is the `git` command itself. In `~/.bashrc` (or somew
 alias g="git"
 ```
 
-*Don't forget running `source ~/.bashrc` after every change to `.bashrc`.*
+*Don't forget to run `source ~/.bashrc` after every change to `.bashrc`.*
 {:.small}
 
 From now on `g` is your `git` and all the commands instantly become shorter: `g status`, `g commit`, `g checkout`.
@@ -31,6 +31,7 @@ g config --global alias.a add
 g config --global alias.aa "add ."
 g config --global alias.co checkout
 g config --global alias.ci commit
+g config --global alias.cim "commit -m"
 g config --global alias.s status
 g config --global alias.p push
 ```
@@ -39,11 +40,11 @@ The results of this change are commands like `g br` instead of `git branch` and 
 
 #### Level 2 aliases
 
-These are a bit more advanced. Either it demands a bit of trial and error to set them up or they come with hard-coded assumptions.
+These can be troublesome to set up. Some of them have will only work inside a specific context.
 
 ##### `git lg`
 
-The most famous one is probably the `lg` command. Everybody is using it and I have absolutely no idea, where I got it from. There are several versions of it, but they are all visualizing the git history as a graph:
+The most famous one is probably the `lg` command. Everybody is using it and I have absolutely no idea, where I got it from. Several versions of it exist, but they are all visualizing the git history as a graph:
 
 ![git lg](/assets/git-lg.png)
 
@@ -65,7 +66,7 @@ Alternatively, a slightly different print is bellow:
  
 ##### `git afa`
 
-A common workflow at my current team is to amend existing commits. It is sometimes preferred to clean up the history and to squash certain commits together. The only problem of this is that it takes a few commands to accomplish and it gets very repetitive over time.
+A common workflow at my current team is to amend existing commits. Sometimes we strive to create a clean git history by squashing certain commits together. The only problem is that it takes a few commands to accomplish and it gets awfully repetitive over time.
 
 Git already supports this process. By calling `git commit --fixup 4dfa2350` a new commit is created, which can later be autosquashed.
 
@@ -124,7 +125,7 @@ Last but not least is my grep-ified checkout command:
   cog=!sh -c "git branch | grep '$1' | head -n1 | awk '{print $2}' | xargs git co "
 ```
 
-I don't know about you, but I really do not manage to keep the number of my local branches below 15. If they are only at 15, I am actually pretty happy. There are always 1 or 2 big ones, from which I am splitting of commits for actual pull requests, then there is a few of open pull requests in review, then there are a few experimental ones of a few, where I am researching something or preparing a presentation for something, then there are many from other team members, which I daily review, ... . Maybe I'm just bad at cleaning up or I just take up too much work. Anyway, I set up the above command to help me out.
+I don't know about you, but I really do not manage to keep the number of my local branches below 15. If they are only at 15, I am actually pretty happy. There are always 1 or 2 big ones, from which I am splitting of commits for actual pull requests, then there are a few of open pull requests in review, then there are a few experimental ones and a few, where I am researching something or preparing a presentation for something, then there are many from other team members, which I daily review, ... . Maybe I'm just bad at cleaning up or I just take up too much work. Anyway, I set up the above command to help me out.
 
 The above command runs `grep` over the list of all my git branches and checkouts the first one, which has the provided string in its name. Example:
 
@@ -149,4 +150,4 @@ ines: ~/repo (poc-clouds-blue)$ g br
   pr-1010
 ```
 
-Hopefully, some of these commands are helpful to you. At the very least, they show that any kind of workflow can at least partially be automated.
+Hopefully, some of these commands are helpful to you. At the very least, they show that any kind of workflow can be fully or partially automated.
