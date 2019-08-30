@@ -21,6 +21,8 @@ url: "https://inesp.github.io/" # the base hostname & protocol for your site, e.
 logo: "/assets/ines-panker-logo.jpg"
 google_analytics: true
 
+permalink: /:year/:month/:day/:title.html
+
 social:
   github: inesp
   linkedin: "ines-p-a6284a87"
@@ -61,6 +63,10 @@ sass:
     - node_modules
 
 highlighter: rouge
+
+feed:
+  categories:
+    - python
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
