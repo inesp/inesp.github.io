@@ -1,0 +1,26 @@
+
+{% if include.ref %}
+<p class="source-link"
+   ><img 
+    src="/assets/{{ include.src }}" 
+    alt="{{ include.alt }}">
+
+    <a 
+      href="{{ include.ref  }}" 
+      target="_blank">{{ include.ref }}</a>
+</p>
+
+{% else %}
+
+<p>
+  <a href="{{ include.link }}"
+     target="_blank"
+     ><img
+        src="/assets/{{ include.src }}"
+        alt="{{ include.alt }}">
+  </a>
+</p>
+
+{% endif %}
+
+

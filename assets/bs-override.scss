@@ -39,6 +39,16 @@ aside h3{font-family: 'Saira Stencil One', cursive;}
   margin-bottom:1rem;
 }
 
+.source-link{
+  text-align:center;
+
+  a{
+    font-style: italic;
+    color: #6c757d;
+    font-size: 90%;
+  }
+}
+
 .post-meta {
   font-style: italic;
   color: #6c757d;
