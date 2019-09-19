@@ -23,14 +23,23 @@ a {
   transition: color 0.3s;
 }
 
-.post-content a, footer a, .post-edit-link a {
+.post-content a, footer a, .post-edit-link a, a.visible-link {
   color: #005ec2;
+  text-decoration: underline;
 }
 
 
 code { font-size: 95%}
 
-aside h3{font-family: 'Saira Stencil One', cursive;}
+aside{
+  h2{font-family: 'Saira Stencil One', cursive;}
+ 
+  h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
 
 .box{
   border: 1px solid #ddd;

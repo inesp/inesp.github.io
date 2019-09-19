@@ -3,7 +3,7 @@
   <div class="row">
 
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
-      <h3 class="my-2"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h3>
+      <h2 class="my-2"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h2>
     </div>
 
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
@@ -34,8 +34,38 @@
                   src="{{ '/assets/linkedin.svg' | relative_link }}"
                 ></a></li>
           {%- endif -%}
+          
+          {%- if site.social.twitter -%}
+            <li><a
+                href="https://twitter.com/{{ site.social.twitter | cgi_escape | escape }}" 
+                title="{{ site.author | escape }}"
+                target="_blank"
+                ><img
+                  height="25"
+                  width="25"
+                  src="{{ '/assets/twitter.svg' | relative_link }}"
+                ></a></li>
+          {%- endif -%}
+          
+          {%- if site.social.medium -%}
+            <li><a
+                href="https://medium.com/@{{ site.social.medium | cgi_escape | escape }}" 
+                title="{{ site.author | escape }}"
+                target="_blank"
+                ><img
+                  height="25"
+                  width="25"
+                  src="{{ '/assets/medium.svg' | relative_link }}"
+                ></a></li>
+          {%- endif -%}
+
       </ul>
 
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5">
+        <h3>Who am I</h3>
+        <p>Hi, my name is  <a href="{{ '/about' | relative_link }}" class="visible-link">Ines Panker</a>. Software Developer by profession, Explorer by mind.</p>
+    </div>
+
   </div>
 </div>
