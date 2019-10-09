@@ -32,6 +32,14 @@ a {
 code { font-size: 95%}
 
 aside{
+
+  text-align:center;
+
+  .sidebar-logo{
+    max-width: 50%;
+    border-radius: 50%;
+  }
+  
   h2{font-family: 'Saira Stencil One', cursive;}
  
   h3{
@@ -81,7 +89,6 @@ aside{
 .social-icons{
   list-style: none;
   margin-left: 0;
-  padding-left: 0;
   display: table;
 }
 .social-icons li{
