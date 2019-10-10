@@ -2,15 +2,12 @@
 <div class="container mb-5">
   <div class="row">
 
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <p><img class="sidebar-logo" src="{{ "/assets/ines-panker-logo.jpg" | relative_link }}"></p>
 
       <h2 class="my-2"><a href="{{ "/" | absolute_link }}">{{ site.title }}</a></h2>
-    </div>
 
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
       <p>by {{ site.author }}</p>
-
 
       <ul class="social-icons my-2">
           {%- if site.social.github -%}
@@ -64,7 +61,7 @@
       </ul>
 
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 text-left">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 text-left d-none d-xl-block">
         <h3>Who am I</h3>
         <p>Hi, my name is  <a href="{{ '/about' | relative_link }}" class="visible-link">Ines Panker</a>. Software Developer by profession, Explorer by mind.</p>
     </div>
