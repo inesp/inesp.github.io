@@ -19,26 +19,26 @@ biblio:
     link: "https://www.paessler.com/tools/webstress/sample_performance_tests/megabit_gigabit_upgrade_for_a_download_server"
 ---
 
-Lately, this has become a common interview question. How many Bytes will some kind of hypothetical app probably need? But in fact, planning the data storage capacity is usually a complicated and time-consuming operation.
+Lately, this has become a common interview question: How many Bytes will some hypothetical app probably need? When in fact, planning the data storage capacity is usually a complicated and time-consuming operation. So how do you present your case in 45 minutes?
 
-For my taste, there are too many too loosely defined variables for the result to have any kind of real value. Even if the end goal is just to provide a ballpark figure. However, let us assume that we absolutely have to come up with a plausible number, how would we go about doing it.
+From where I stand, I see too many too loosely defined variables to see any real point in answering such questions, but being the interviewee, we usually decide to play along.
 
-I have found that in a way the best approach is to see the interviewer as if they were a colleague of yours, they don't know the answer, you don't know the answer, but let's see what numbers we can come up with together.
+So, even if the result can have no real-world value, let's say that we absolutely must come up with a plausible number, a ballpark figure. How would we go about doing it?
+
+## Let's talk over coffee
+
+For starters, we need to take the scariness out of this interview question.
+
+Since it is far more pleasant to discuss ideas with friends over coffee, than with bosses across the table, a good approach is to see the interviewer as if they were a colleague of yours, they don't know the answer, you don't know the answer, but let's see what numbers we can come up with together.
 
 ## Types of estimates
 
 There are at least the following types of estimates:
 - **traffic, throughput, bandwidth estimates**
-  
   How much traffic do you expect? Traffic is usually measured per month or per day. While bandwidth is measured per second and roughly describes the peak amount of traffic you will have to serve per second.
- 
 - **storage estimates**
-
   How much DB space do you expect to take up? Will 1 DB server be enough? How much other disk space do you expect to need?
-
 - **memory estimates**
-
-
 
 ## Scenario
 
@@ -144,6 +144,8 @@ What is a reasonable number of concurrent connections for a server? I have no id
 
 How are we supposed to continue with no data from here on? I don't know. Can I server deliver 1 GB of data per second (that is 8 000 000 kbit/s), I don't know. Maybe it is closer to 0.1 GB/s, maybe it is 0.01 GB/s. 
 
-Everything up to here was pure speculation, but everything from here on would be just imagination. I presume there are some specialists somewhere, who deal with these numbers all the time. Why not ask them? :grin:
+Everything up to here was pure speculation, but everything from here on would be just imagination. I presume there are some specialists somewhere, who deal with these numbers all the time. Better ask them :grin:
 
+## Exhausted...
 
+As you can see, we still came up with some compelling numbers. We are most definitely wrong because the world has a special way of being whimsical, but we did persevere. We did not give up and we did not get scared ad we will easily be persuaded that we are wrong. But doesn't every success story incorporate at least a bit of faking along the way?
