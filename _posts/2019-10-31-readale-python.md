@@ -6,27 +6,27 @@ biblio:
     link: "https://marshmallow.readthedocs.io/en/stable/"
 ---
 
-Code readability is a hot topic. We do not agree what it looks like and we do not agree how much of it is needed. It is rarely discussed on a new project and practically never on a project with only 1 developer. 
+Code readability is a hot topic. We do not agree with what it looks like and we do not agree with how much of it is needed. It is rarely discussed on a new project and practically never on a project with only 1 developer. 
 
 The obvious advantage of striving for readability is to have code, which is easier to share between developers and which is easier to maintain, expand, correct and modify later on.
 
-Consequently, if you hope for your project to be long lived or if you hope for it to grow with plenty of new feature, there are benefits to be gained. If your code is easy to read and understand, then new developers can be onboarded quicker and will be valuable sooner. Arguable, they will also make fewer bugs, because it is far easier to make a mistake when dealing with code, which you barely understand than in straightforward code.  
+Consequently, if you hope for your project to be long-lived or if you hope for it to grow with plenty of new features, there are benefits to be gained. If your code is easy to read and understand, then new developers can be onboarded quicker and will be valuable sooner. Arguable, they will also make fewer bugs, because it is far easier to make a mistake when dealing with code, which you barely understand than in straightforward code.  
 
 But, the biggest problem with readability is, that it is not objectively measurable. It is subjective in its nature. English, written with Japanese katakana letters, is not readable to me, because I am not fluent in katakana. For somebody else the opposite might be true, they are fluent in katakana, but not in English. None of these 2 examples is objectively more readable than the other.
 
 Code will always be exquisitely more readable and maintainable to those, who wrote it, than to those, who came after them.
 
-Nevertheless, you can do alot to help your successors understand your intentions. Here are my 3 random illustrations.
+Nevertheless, you can do a lot to help your successors understand your intentions. Here are my 3 random illustrations.
 
 ## Use the more common default
 
 **Problem** 
 
-You have a function, which calculates a user's favorite color. The calculation is complicated, so you will cache the result, but you will let the programmer decide whether she wants a freshly calculated color or the value from the cache. 
+You have a function, which calculates a user's favourite colour. The calculation is complicated, so you will cache the result, but you will let the programmer decide whether she wants a freshly calculated colour or the value from the cache.
 
 **Question**
 
-Here is 4 possible definitions. They are 4 possible variants to the 2 questions:
+Here are 4 possible definitions. They are 4 possible variants to the 2 questions:
 - should the default be USE cache or NOT USE cache?
 - should the parameter's name be `use_cache` or `ignore_cache`?
 
@@ -36,9 +36,9 @@ Here is 4 possible definitions. They are 4 possible variants to the 2 questions:
 
 To answer *"should the default be USE cache or NOT USE cache?"* we must look at how our function will be called. 
 
-If we already have a bunch of functions, with the same cache behavior, then we should prefer to copy that behavior.
+If we already have a bunch of functions, with the same cache behaviour, then we should prefer to copy that behaviour.
 
-If the programmers will use cache 80% of the time, then this should be the default behavior of this function.
+If the programmers will use cache 80% of the time, then this should be the default behaviour of this function.
 
 Let's say, that we want the default to be *USE cache*.
 
@@ -57,7 +57,7 @@ Which of the following 2 options do you prefer?
 
 <script src="https://gist.github.com/inesp/7c806216c188a14c5f85b9665f59a3e8.js"></script>
 
-I definitely prefer Option A. The `if not ignore_cache` followed immediately by a `if ignore_cache` with a nested `if not ignore_cache` is just too much for me. It looks like absurd complication of what must have started out as a simple flow.
+I definitely prefer Option A. The `if not ignore_cache` followed immediately by a `if ignore_cache` with a nested `if not ignore_cache` is just too much for me. It looks like an absurd complication of what must have started out as a simple flow.
 
 **Problem<sup>2</sup>**
 
@@ -71,11 +71,11 @@ Maybe something like this would work:
 
 <script src="https://gist.github.com/inesp/609db41a4b8757e7d3d51360713b7849.js"></script>
 
-## Prefer safelisting function arguments over using `**kwargs`
+## Prefer safelisting function arguments to using `**kwargs`
 
 **Problem**
 
-You class accepts many, many `init` parameters. To safe time (or because Pylint has a limit of 5 parameters per function) you decide to group them all into `**pizza_properties`:
+You class accepts many, many `init` parameters. To save time (or because Pylint has a limit of 5 parameters per function) you decide to group them all into `**pizza_properties`:
 
 <script src="https://gist.github.com/inesp/a085ff7ca1f52e7a015fefa05ce83827.js"></script>
 
@@ -103,7 +103,7 @@ I have the potential to create faulty data, which will be very difficult to spot
 
 It is always safer to safelist possible parameters as opposed to blocklisting them. And it is always safer to spell out each parameter we support. This gives us also the chance to raise an error early if an unexpected parameter is encountered. Someone might have just misspelled the word `cheze`, but an error with a message `create_cheeze() got an unexpected keyword argument 'cheze'` is much more informative than receiving a database error.
 
-There will of course be times, when it makes sense to use `**kwargs` or `*args`, but this is mostly useful for passing parameters between 2 well defined functions/classes.  
+There will, of course, be times, when it makes sense to use `**kwargs` or `*args`, but this is mostly useful for passing parameters between 2 well-defined functions/classes.  
 
 We should always look at our code from the view-point of other developers. How will they call it? How will they figure out what they can call it with? And we must always limit what our function can do! Trust no one, as they say. Even if you think your function cannot get un-sanitized user input, you can never be sure that everybody else properly sanitizes user input before sending it to you.
 
@@ -121,7 +121,7 @@ We could define dedicated `PizzaMaker`s for each pizza type.
 
 <script src="https://gist.github.com/inesp/44ef0e01989f7af8e7f9b474e88df6fd.js"></script>
 
-Both of these proposal might not be the perfect solution to our problem, they both certainly consist of more code than the original solution. But they also both validate the `pizza_properties`, they do something helpful in the extra lines of code.
+Both of these proposals might not be the perfect solution to our problem, they both certainly consist of more code than the original solution. But they also both validate the `pizza_properties`, they do something helpful in the extra lines of code.
 
 ## Functions and classes are for free, use them
 
@@ -137,7 +137,7 @@ When you show dropdowns of issues, you show the issues' `title`s, when you show 
 
 **Question**
 
-Is 1 line already considered code-repetition? Are we already violating the DRY (=do not repeat yourself)  principal?
+Is 1 line already considered code-repetition? Are we already violating the DRY (=do not repeat yourself)  principle?
 
 Or is 1 line too little to create a dedicated function?
 
@@ -157,7 +157,7 @@ While doing this, we will no doubt also find other, similar `if`-statements. May
 
 ## Conclusion
 
-Readability is in the eye of the beholder. But ignoring it completely creates kaos in your project. 
+Readability is in the eye of the beholder. But ignoring it completely creates chaos in your project. 
 
 Everything we built needs to be maintained, updated, refreshed to suit the changing times, changing requirements and expectations.
 
