@@ -1,5 +1,5 @@
 ---
-title: "Better Python Code: 3 readability examples"
+title: "Better Python Code: 3 examples in readability"
 biblio:
   -
     title: "Python Marshmallow"
@@ -12,11 +12,11 @@ The obvious advantage of striving for readability is to have code, which is easi
 
 Consequently, if you hope for your project to be long lived or if you hope for it to grow with plenty of new feature, there are benefits to be gained. If your code is easy to read and understand, then new developers can be onboarded quicker and will be valuable sooner. Arguable, they will also make fewer bugs, because it is far easier to make a mistake when dealing with code, which you barely understand than in straightforward code.  
 
-But, the biggest problem with readability is, that it is not objectively measurable. It is subjective in its nature. English, written with Japanese katakana letters, is not readable to me, because I am not fluent in katakana. For somebody else the opposite might be true, they are fluent in katakana, but not in English.
+But, the biggest problem with readability is, that it is not objectively measurable. It is subjective in its nature. English, written with Japanese katakana letters, is not readable to me, because I am not fluent in katakana. For somebody else the opposite might be true, they are fluent in katakana, but not in English. None of these 2 examples is objectively more readable than the other.
 
 Code will always be exquisitely more readable and maintainable to those, who wrote it, than to those, who came after them.
 
-Nevertheless, what can you do, to help your successors understand your intentions? Here are my 5 random illustrations.
+Nevertheless, you can do alot to help your successors understand your intentions. Here are my 3 random illustrations.
 
 ## Use the more common default
 
@@ -157,8 +157,15 @@ While doing this, we will no doubt also find other, similar `if`-statements. May
 
 ## Conclusion
 
-Readability is in the eye of the beholder. But ignoring it completely creates this:
+Readability is in the eye of the beholder. But ignoring it completely creates kaos in your project. 
 
-<socialized ap building>
+Everything we built needs to be maintained, updated, refreshed to suit the changing times, changing requirements and expectations.
+
+As long as we hope for our projects to become big and maintained by many people, we need to care about how others will interact with it.
+
+![readability-issues](/assets/readability.png)
+
+
+
 
 
