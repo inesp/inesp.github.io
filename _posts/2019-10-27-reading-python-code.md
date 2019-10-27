@@ -6,7 +6,7 @@ biblio:
     link: "https://marshmallow.readthedocs.io/en/stable/"
 ---
 
-Code readability is a hot topic. We do not agree with what it looks like and we do not agree with how much of it is needed. It is rarely discussed on a new project and practically never on a project with only 1 developer. 
+Code readability is a hot topic. We do not agree on what it looks like and we do not agree on how much of it is needed. It is rarely discussed on a new project and practically never on a project with only 1 developer. 
 
 The obvious advantage of striving for readability is to have code, which is easier to share between developers and which is easier to maintain, expand, correct and modify later on.
 
