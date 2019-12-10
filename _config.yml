@@ -17,7 +17,7 @@ title: Unscrambled Computer Science
 author: Ines Panker
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://inesp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.ines-panker.com" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/ines-panker-logo.jpg"
 google_analytics: true
 
