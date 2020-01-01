@@ -1,5 +1,5 @@
 ---
-title: Can you build a team, when we are all obsessed with frontmen?
+title: In search of a successful team in a culture obsessed with frontmen
 biblio:
   - title: "How to answer ‘Are you a team player?’ in an interview"
     link: "https://www.jobs.ie/job-talk/how-to-answer-are-you-a-team-player-in-an-interview/"
@@ -21,17 +21,17 @@ The first person to walk on the Moon was Neil Armstrong. I knew this before I kn
 
 ## Are you a team player?
 
-Have you ever been asked this question? Did you notice that etiquette rules determining how to answer it. We are not supposed to wing it, we are supposed to know the answer by heart. You first firmly say *"yes"* and then add a vague, but believable proof of your ability to perform exceptionally inside a team. A million articles on the internet explain how to answer in a sophisticated, educated way, without revealing anything personal. 
+Have you ever been asked this question? Did you notice that etiquette rules determine how to answer it. We are not supposed to wing it, we are supposed to know the answer by heart. You first firmly say *"yes"* and then add a vague, but believable proof of your ability to perform exceptionally inside a team. A million articles on the internet explain how to answer in a sophisticated, educated way, without revealing anything personal. 
 
 ![Google search: are you a team player](/assets/frontman-team-player.jpg)
 
 These articles generally do not criticize the question, but they also do not encourage their readers to be sincere when answering. Maybe they consider the people asking this question to be so out of sync with reality that they will not notice they received no answer. And maybe they are right. This question has no point. 
 
-Humans are social beings. Except for a few jackasses, psychopaths and narcissists, the rest of us would love being the most amazing team player. But, are you sure you will reward us if we decide that the team is more important and our own success?
+Humans are social beings. Except for a few jackasses, psychopaths and narcissists, the rest of us would love being the most amazing team player. But, are you sure you will reward us if we decide that the team is more important than our own success?
 
 ## Who is rewarded in your company?
 
-A few years ago, I was assigned to a new team at a new company. There were 4 of us and initially, we had few problems working together. As with any new team, we spent the first few months getting to know each other and accommodating each other's ways of working. But soon it became obvious, that while 3 of us have managed to adjust to life in this new team, one of us couldn't. One of us would repeatedly come into conflict with one or the other team member. But because managing people is complicated and not being thought enough it took the team's manager one year to decide to interfere. What is more, the intervention came in the form of a promotion. This person, who made 3 other people suffer for a year and was eroding away their motivation to work, to produce, was given a new title and his own team. True, it was a team of 1, but it was a promotion nevertheless. 
+A few years ago, I was assigned to a new team at a new company. There were 4 of us and initially, we had few problems working together. As with any new team, we spent the first few months getting to know each other and accommodating each other's ways of working. But soon it became obvious, that while 3 of us have managed to adjust to life in this new team, one of us couldn't. One of us would repeatedly come into conflict with other team members. But because managing people is complicated and not being thought enough it took the team's manager one year to decide to interfere. What is more, the intervention came in the form of a promotion. This person, who made 3 other people suffer for a year and was eroding away their motivation to work, to produce, was given a new title and his own team. True, it was a team of 1, but it was a promotion nevertheless. 
 
 Don't get me wrong, the 3 of us were very pleased with our team's shrinkage. We became more connected, more motivated and happier. But, looking at the effect on the whole company, such promotions very effectively undermine teamwork. On the one hand, they set the precedent that being a jackass will open up doors for you. On the other, they beg the question, have the managers in this company been promoted to their current positions, because they are good managers or because there is a team of 3 people somewhere, who just weren't able to work with this person anymore? 
 
@@ -43,17 +43,19 @@ Contrary to how Holywood often depicts bosses, people do not perform best in hos
 
 In hostile environments actions are expensive, one wrong step can mean you are going to be publicly attacked, ridiculed and insulted. Creativity is thus thrown out of the window, taking risks becomes a stupid thing to do and teamwork is dead. 
 
-The researchers W. Felps, T. Mitchell and E. Byington have researched the effect of having a bad apple in a team and found that this dramatically diminishes the team's output. Dealing with conflicts that arise 
+The researchers W. Felps, T. Mitchell and E. Byington have studied the effect of having a bad apple in a team and found that this dramatically diminishes the team's output. Dealing with conflicts that arise 
 
 > consumes inordinate amounts of time, psychological resources, and emotional energy
 
-The behaviour of the negative members undermines *"perceptions of equity, mood, and trust"*. The researches C. Pearson, L.Andersson and C.Porath have concluded that 
+The behaviour of the negative members undermines *"perceptions of equity, mood, and trust"*. Instead of focusing on the work, people waste time dealing with the trouble maker, which makes them anything but happy and satisfied with their workplace.
+
+The researches C. Pearson, L.Andersson and C.Porath published the results of their study on this topic in 2000 and have concluded that:
 
 > More than one-third of [the people surveyed] reported that they intentionally reduced their commitment to the organization as a result of being a target of uncivil behaviour. They disengaged from tasks and activities that went beyond their job specifications. Through all phases of our study, people told us that after being targets they ceased voluntary efforts. Some stopped helping newcomers, others stopped offering assistance to colleagues. Additionally, targets reduced their contributions to the organization as a whole, whether by pulling themselves off of task forces and committees, or by reducing efforts to generate or inspire innovation. 
 >
 > Nearly one-fourth of [the people surveyed] admitted that they intentionally decreased work efforts [..]. They stopped doing their best. Some also purposefully decreased the amount of time they spent at work.
 
-Don't underestimate the effect of a psychologically unsafe environment. 
+Don't underestimate the effect of a psychologically unsafe environment. There are no benefits to it. The company loses out on great work and the people lose out on their quality of life. In today's job market with ample opportunities, there is generally no reason for a developer to stay with a team that makes her hate Mondays.
 
 {% include image.html alt="People are like orchids" src="frontman-orchids-vs.jpg" ref="https://www.flickr.com/photos/carlos_verza/28707001995/" %}
 
@@ -113,11 +115,11 @@ This is how the Kaulong teach their children to share, to not seek advantage for
 
 Yes and no.
 
-I can play in a team really well, but I haven't yet seen many places, where this would be an advantage. As much as I really like helping and like building a welcoming community, it makes no sense for me to do it if this not appreciated and reciprocated. I have been a good student of our society.
+I can play in a team really well, but I haven't yet seen many places, where this would be an advantage. As much as I really like helping and like building a welcoming community, it makes no sense for me to do it if this is not appreciated and reciprocated. I have been a good student of our society.
 
 As long as we obsess over individual people, who singlehandedly and completely alone ;) did some great stuff, sacrificing myself for the team just isn't the smart thing to.
 
-We all will respect the rules of the system. Let's say your company has quarterly bonuses, which are paid out to individual contributors on the basis of whether or not these individual people have fulfilled their own individual goals. I just don't see, what would motivate these individuals to put the team first, above their bonuses. 
+We all respect the rules of the system. Let's say your company has quarterly bonuses, which are paid out to individual contributors on the basis of whether or not these individual people have fulfilled their own individual goals. I just don't see, what would motivate these individuals to put the team first, above their bonuses. 
 
 It is difficult to say, how we ended up so obsessed with individual contributors. Why is it that we can't, at the very least, see the people, who helped our hero along the journey. Nobody ever made it on their own, no matter what people tell you or tell themselves. But equally true is, that nobody ever fought the system on their own. 
 
@@ -125,7 +127,7 @@ It is difficult to say, how we ended up so obsessed with individual contributors
 
 In theory, what should be done is pretty straightforward. 
 
-I think that the first necessary step is to make the research mentioned above common knowledge. There are probably several people in your organization, who already have the traits needed to form a successful team. But if the general culture of your organization does not support such feelings, then they will not show this side of themselves. You want your employees to cherish and use their people skills, not hide them.
+I think that the first necessary step is to make the research mentioned above common knowledge. There are probably several people in your organization, who already have the traits needed to form a successful team. But if the general culture of your organization does not support such skills, then they will not show this side of themselves. You want your employees to cherish and use their people skills, not hide them.
 
 The second step is that your organization publicly and privately emphasises that this is the objective, you are striving for. The Code of Conduct documents are a nice feature. Not because they are a miracle solution, we must all agree with, but because they gently nudge people into the desired mind frame. As a plus, once uncivil behaviour happens, it is much easier to penalize someone, if you can calmly point towards a written document and say "look, you've broken our rule". 
 
@@ -135,9 +137,11 @@ Encourage open discussions, ask others what they think about the proposed plan. 
 
 Ask, how you can help. Hold open and honest 1-on-1s. Generally, people have to feel very, very pressured before they will go to their supervisor and complain. Behind every complaint, you ever received there were several attempts to complain, which never reached you. Be proactive at finding problems in the team dynamic, ask concrete questions on how your team members find this or that.
 
-Sometimes it is useful to define the rules for a meeting. I used to be present on a quarterly engineering retrospective 15 engineers present. And to streamline the conversation we agreed that each engineer had 3 minutes to present her points. In the end, we would agree upon the expected actions for each raised point.
+Sometimes it is useful to define the rules for a meeting. I used to be present on a quarterly engineering retrospective with 15 engineers present. And to streamline the conversation we agreed that each engineer had 3 minutes to present her points. In the end, we would agree upon the expected actions for each raised point.
 
-Trust your teammates and ensure that they trust each other as well. Nobody should be policing the rest of the team. Having a team member, who unprompted, keeps double-checking the work of others, is a dreadful experience. Believe me, been there, done that. At the time there were 3 teams in my engineering department. All of them were doing great when a very senior person was called upon to assist us. He came from a separate branch of the company and wanted to work on something new. He was extremely respected in the company and was trusted to pick his own assignments. Immediately after joining us, he decided that his time will be best spent by double-checking all of our work. He would block our open pull requests by either leaving comments about insignificant implementation details or long explanations of basic programming concepts, which he deemed we misused. Because he was trusted, he decided to singlehandedly change the programming guidelines we were following, which we would only notice once the checks on our pull requests would fail. You can imagine, we had a really hard time staying motivated. This person dominated our mind, whenever 2 or more of us would meet, we would sooner or later end up discussing his actions. Before we would often discuss programming related topics, we would try to improve our work environment and grow as developers, now, we would only vent about this one person. And by the way, this senior developer is actually a great person. He just doesn't trust other developers. Just because somebody is a good friend, doesn't mean he is a good co-worker.
+Trust your teammates and ensure that they trust each other as well. Nobody should be policing the rest of the team. Having a team member, who unprompted, keeps double-checking the work of others, is a dreadful experience. Believe me, been there, done that. 
+
+At the time there were 3 teams in my engineering department. All of them were doing great when a very senior person was called upon to assist us. He came from a separate branch of the company and wanted to work on something new. He was extremely respected in the company and was trusted to pick his own assignments. Immediately after joining us, he decided that his time will be best spent by double-checking all of our work. He would block our open pull requests by either leaving comments about insignificant implementation details or long explanations of basic programming concepts, which he deemed we misused. Because he was trusted, he decided to singlehandedly change the programming guidelines we were following, which we would only notice once the checks on our pull requests would fail. You can imagine, we had a really hard time staying motivated. This person dominated our mind, whenever 2 or more of us would meet, we would sooner or later end up discussing his actions. Before we would often discuss programming related topics, we would try to improve our work environment and grow as developers, now, we would only vent about this one person. And by the way, this senior developer is actually a great person. He just doesn't trust other developers. Just because somebody is a good friend, doesn't mean he is a good co-worker.
 
 Depending on a company's state, setting up a psychologically great environment can be difficult or easy. Looking at it from another perspective, we are perfectly capable of keeping relationships outside of work. Keeping work relationships healthy works in the same way. It is no more difficult than the rest of our lives. 
 
