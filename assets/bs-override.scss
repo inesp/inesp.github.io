@@ -75,6 +75,22 @@ aside{
   margin-bottom:1rem;
 }
 
+blockquote {
+  border-left: 10px solid #fff283;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
+
+  &:before {
+    color: #ffe610;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+}
+
 /**
  * Social media
  */
