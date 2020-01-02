@@ -1,5 +1,5 @@
 ---
-title: In search of a successful team in a culture obsessed with frontmen
+title: How to build a successful team in a culture obsessed with frontmen?
 biblio:
   - title: "How to answer ‘Are you a team player?’ in an interview"
     link: "https://www.jobs.ie/job-talk/how-to-answer-are-you-a-team-player-in-an-interview/"
