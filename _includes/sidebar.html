@@ -1,16 +1,12 @@
 
-<div class="container mb-5">
-  <div class="row">
+<div class="col-lg-12 col-xl-10 offset-xl-2">
 
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
-      <h2 class="my-2"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h2>
-    </div>
+    <h2 class=""><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h2>
 
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
-      <p>by {{ site.author }}</p>
+    <p>by {{ site.author }}</p>
 
 
-      <ul class="social-icons my-2">
+      <ul class="social-icons">
           {%- if site.social.github -%}
             <li><a 
                 href="https://github.com/{{ site.social.github | cgi_escape | escape }}" 
@@ -61,11 +57,7 @@
 
       </ul>
 
-    </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5">
-        <h3>Who am I</h3>
-        <p>Hi, my name is  <a href="{{ '/about' | relative_link }}" class="visible-link">Ines Panker</a>. Software Engineer by profession, Explorer by mind.</p>
-    </div>
+      <h3 class="mt-md-4 mt-lg-5">Who am I</h3>
+      <p class="mb-5">Hi, my name is  <a href="{{ '/about' | relative_link }}" class="visible-link">Ines Panker</a>. Software Engineer by profession, Explorer by mind.</p>
 
-  </div>
 </div>

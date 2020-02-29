@@ -9,33 +9,28 @@
 
 	<body>
 
-    <div class="container">
+    <div class="container-fluid">
       
       <div class="row">
-        <aside class="col-md-12 col-lg-3">
+        <aside class="col-md-12 col-lg-4 aside-padding no-gutters">
           {%- include sidebar.html -%}
         </aside>
 
-        <div class="col-md-12 col-lg-8">
+        <div class="col-md-12 col-lg-8 main-padding">
       		{{ content }}
         </div>
       </div>
     </div>
 
-    <footer class="container">
-      <div class="row">
-        {%- if page.layout == "post" -%}
-          <div class="col-md-12 col-lg-8 offset-lg-3">
-            <div class="mt-md-5">
-              <small>
-                 Except when otherwise noted, the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a> and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>.
-              </small>
-        {%- else -%}
-          <div class="col-xs-12 col-sm-12">
-            <div class="mt-md-5 text-center">
-              <small>© {{ "now" | date: "%Y"}} {{ site.author }}</small>
-        {%- endif -%}
-          </div>
+    <footer class="container-fluid">
+      <div class="row"> 
+        <div class="col-xs-12 col-sm-12 text-center">
+          <p>
+            <small>© {{ "now" | date: "%Y"}} {{ site.author }} - 
+            Except when otherwise noted, the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a> and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>.
+            </small>
+          </p>
+            
         </div>
       </div>
     </footer>
