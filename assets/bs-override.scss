@@ -150,7 +150,7 @@ blockquote {
   quotes: "\201C""\201D";
 
   &:before {
-    color: $color-yellow;
+    color: #ffeb41;
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
