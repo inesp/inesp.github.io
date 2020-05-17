@@ -33,9 +33,18 @@ social:
 markdown: kramdown
 kramdown:
   parse_block_html: true
+  math_engine: mathjax
   math_engine_opts:
     preview: true
     preview_as_code: true
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: python
+    css_class: 'highlight'
+    span:
+    block:
+
+highlighter: rouge
 
 plugins:
   - jekyll-feed
@@ -60,7 +69,6 @@ sass:
     - _sass
     - node_modules
 
-highlighter: rouge
 
 feed:
   categories:
