@@ -7,12 +7,11 @@ layout: default
   <div class="row">
     <div class="col-xs-12 col-sm-12">
 
-       <h1 class="">{{ page.title | escape }}</h1>
+     <h1 class="">{{ page.title | escape }}</h1>
 
-       <div class="post-content">
-         {{ content }}
-       </div>
+     <div class="post-content {{ page.css}}">
+       {{ content }}
      </div>
    </div>
-  </div>
+ </div>
 </div>

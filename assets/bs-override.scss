@@ -49,7 +49,13 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.technical h2{
+  padding-top: 2rem;
+  border-top: 3px solid #65a8c5;
 }
 
 a {
@@ -91,7 +97,7 @@ a {
 }
 
 
-code { font-size: 100%}
+code { font-size: 85%}
 
 aside{
   position:relative;
