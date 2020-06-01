@@ -1,5 +1,6 @@
 ---
 title: Cheat Sheet of Python Mock
+image: /assets/mock_intro.png
 biblio:
   - title: "Python docs: mock object library"
     link: "https://docs.python.org/3/library/unittest.mock.html"
@@ -1020,7 +1021,7 @@ For the above situation the pather would look like this:
     <td>&nbsp;</td>
     <td>
       <b>from slack_lib.slack_api import SlackAPI</b><br>
-      @patch.object<b>(SlackAPI, "post")</b>
+      @patch.object<b>(SlackAPI, "post")</b><br>
       def test(mock_slack_post):
     </td>
   </tr>
