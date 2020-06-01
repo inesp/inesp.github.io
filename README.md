@@ -16,5 +16,4 @@ Jekyll is a Ruby's gem. All the gem's you will use to run your site have to be l
 
 ### Updating gems
 
-Every so often run `bundle update -all`.
-
+Every so often run `bundle update --all` and then commit the new generated `Gemfile.lock`.
