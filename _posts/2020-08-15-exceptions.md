@@ -3,9 +3,9 @@ title: "Exceptions: how to take advantage of them, while not destroying your cod
 biblio:
 ---
 
-Exceptions are a tricky beast. You could get on with your whole programming career without ever truly using them. But you would be missing out **big time**. Exceptions have 2 extraordinary superpowers, which shouldn't be underplayed. But these superpowers take time and effort to learn. Still, as parents say: just because something is difficult to learn, doesn't mean we shouldn't try to master it.
+Exceptions are a tricky beast. It is difficult to know when to raise them and it is even more difficult to know when to catch them. Raising them is phylosophical dilema: is my unexpected situation exceptional enough that it merits an Exception or should I just put more effort into validating my function's input. Catching them is even worse. Catching exceptions entails me knowing exactly which are the exceptions a line of code can throw and then also knowing exactly what to do in all of these different cases.  Both of these conditions individually are practically unknowable, put together they just ... completely eliminate my chances of getting it right the first time. Still, as parents say: just because something is difficult to learn, doesn't mean we shouldn't try to master it. Exceptions have 2 extraordinary superpowers, which shouldn't be underplayed. But these superpowers take time and effort to learn.
 
-Nothing is quite like exceptions. You can't substitute them with any other statement, block, pattern or tool.. not truly anyway. But unfortunately, no scientific, easy to follow method for using them exists. And therein lies the rub. For to use them skillfully, you have to draw on your good experience, which you can only have if you have used them before. Notice the circular dependency? So what do you do? You have at least 2 options: you can go with the flow of the Go people and forbid anybody using them or you get intrigued and humbly try to get the circular dependency running. After all, there is code out there that has circular dependencies in it and is still running since many, many years.
+Nothing is quite like exceptions. You can't substitute them with any other statement, block, pattern or tool.. not truly anyway. But unfortunately, no systematic, easy to follow method for using them exists. And therein lies the rub. For to use them skillfully, you have to draw on your good experience, which you can only have if you have used them before. Notice the circular dependency? So what do you do? You have at least 2 options: you can go with the flow of the Go people and forbid anybody using them or you get intrigued and humbly try to get the circular dependency running. After all, rumors have it lots of code with circular dependencies is running in the world since many, many years.
 
 ## So.. what do we have to gain from using exceptions?
 
@@ -13,21 +13,50 @@ Exceptions are good for 2 amazing things:
 - they immediately stop any execution, no matter how deeply nested in the stack
 - they will tell anybody, who wants to know, the exact details for why they stopped
 
-At first, you might think these 2 things aren't that amazing at all, but let me prove you wrong with a few examples. 😁
+You might think, that doesn't sound amazing at all, but let me prove you wrong by showing how they tie your code together. 😁
 
-Exceptions exist to solve a very real problem: what should we do when an unexpected situation happens?
+Let's take the following function as an example:
 
-Let's say we have a function that calculates how big an aquarium should be according to what fish we will put inside. But suddenly, somebody wants to put a horse inside the aquarium. What do we do? How big an aquarium does a horse need? Em... at least a big enough aquarium that we can put a reasonably sized island into it, I guess. But in the real world, a function like this cannot think on its feet, it doesn't know who called it and what it needs its results for. So, it will raise an exception, which is nothing more than an explanation of its predicament. It will send this "message in a bottle" to its caller and hope that somebody somewhere higher up the stack will have more context to solve this crisis.
+```python
+def calculate_aquarium_size_for(animals: List[Animal]) -> float:
+  """Return the size of the needed aquarium in m^3, given a list of animals
+  that will live in it."""
+```
 
-The alternative to raising an exception here might be to simply return 0 cubic cm: a horse will need 0 cubic cm. Or maybe the function should pretend this is a see-horse and will thus need as much space as a small see-horse? Or maybe, we should return -1 and hope that the caller of this function will understand that -1 is a special value and will thus not continue with its execution and instead diligently return -1 up the stack until this -1 reaches somebody somewhere who will have more context to solve this crisis of -1.
+Our main objective in this exercise is to know when our code is messing up, returning an incorrect value. **How will you know that your function is working correctly?**
 
-If we just try to make the Horse-input value work for our function we will most probably be silently hiding a bug. As far as I have seen a huge percentage of bugs never show up in Sentry. If our functions turn any kind of invalid input into a valid output, how are we then to know that our code didn't do what the user wanted/expected it to do?
+Something goes wrong and suddenly a *horse* is one of the input variables. What should your function do? How big an aquarium does a horse need?
 
-Let's say we decide to return 0 for all non-fishy creatures. If the user submits a list of 9 fish and 1 horse into our aquarium-size-calculator function and we spit out the number 17405 cm^3, how should even the user know that the number is wrong? But what if our aquarium-size-calculator is an internal tool and the user is asking about the recommended size of a farm for 100 fish, 50 horses and 50 cows and we have internally miss-classified the horses as see creatures and now we return the number 500 m^2 of land 500 m^3 of water. How will we ever find this bug? The code works, no error is ever reported, all integers are integers, all strings are strings, the world is in order. When in fact, we are giving out bogus suggestions and having no back-loop to test our own results.
+Hm,.. frankly, probably at least a big enough aquarium that we can put a reasonably sized island into it, might be the correct answer. But our function can never figure this out, so .. what should our function do? Because it absolutely does not know what to do with a horse, it can decide to raise an `Exception`, which is nothing more than an explanation of its predicament. It can send this *"message in a bottle"* to its caller and hope that somebody somewhere higher up the stack will have more context to solve this crisis.
 
-Even worse, what if this recommended-farm-size-calculator is our internal tool, an inside appraisal to determine if a farmer is following our animal-friendly-guidelines and is thus qualified to be included into our animal-friendly-farms association which is dedicated to financially support animal-friendly-farms and to hinder the success of all others? Bugs can have real life consequences
+If our exception catching in the stack above is reasonable this error will find its way to the user, in the form of a more or less opaque error message, and also to the programmer, because, a smart developer logs all exceptions :wink: . Our program will also stop all future steps, which in our case might mean that we will not send out an order to buy an aquarium of the calculated size and that is definitely a good thing.
+
+But what if we don't like exceptions and have sworn to never use them. Maybe we have bad experiences, maybe we've seen idiots misuse exceptions in an old nuclear-missiles storage facility. Maybe it all almost went kabooom. And now we are scared for life. Or maybe we just saw a really badly maintained codebase that was littered with exceptions as if the devs were payed by the number of exceptions they raise.
+
+## What are the alternatives then?
+
+If the exceptions are like raising an alarm, with bells and sirens, then the alternative is to simply process this unexpected input and return something, something that will convey the same message: "This input is unexpected", but that will only reach the immediate caller and not bubble up the call-stack.
+
+We might, for instance, return 0: a horse will need 0 m^3 of water. Maybe even better, we could return -1 and make it more obvious that this number represents an error. As the next step, we have to make sure that the caller understands this output. If it sees -1, then it must do something, must handle this situation. If it doesn't know how, then it should return a similar error value to its caller. And so must the next caller do and the next caller and the next caller ... .
+
+If there are no exceptions, then each function must first check the results of any other function it calls and decide if the result is valid or not. If the result isn't valid, it has to pass a similar error response to its caller. This sounds like a really good idea. Each time you call a function, you have to think about any invalid value it could return, any errors it could cause. But then, that is exactly how exceptions work. Exceptions are basically a special return value. Programming languages already come with the detector for this invalid return value, an `Exception`, which they then automatically pass to the next caller, if this caller doesn't know what to do about it. The initial rule still stands: the dev has to think about what exceptions any function call might raise. The problem is just that this is very, very difficult.
+
+So, yes, you can build your own exceptions or you can use the ones, which are provided (if any are).
+
+## Passing the exception context
+
+The second superpower of `Exceptions` I have listed is the ability to pass a lot of context with it. When raising an exception, we tend to overlook this aspect. But when we get a bug report,
+
+Think about it, a good exception will tell you exactly what went wrong.   
 
 
+
+----
+
+
+
+
+# Afterall, exceptions exist to solve a very real problem: what should we do when an unexpected situation happens?
 
 ## So.. what are the pitfalls of using exceptions?
 
