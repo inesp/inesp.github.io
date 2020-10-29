@@ -1,19 +1,37 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One|Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One|Exo+2:wght@400;600&display=swap');
 @import "rouge.scss";
 
 $color-yellow: #fff283;
+$color-hover-red: #ff0040;
+$color-text: #212529;
 
 body{
 }
 
 aside {
   background: $color-yellow;
-  @media (min-width: 768px)  {
+  position:relative;
+
+  h2{font-family: 'Saira Stencil One', cursive;}
+
+  h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
+
+  @media (max-width: 991.9px) {
+    h2, h3, p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  a.my-name{text-decoration: underline; font-family: 'Saira Stencil One', cursive;}
 }
+
 .aside-padding{
   padding-top: 0.5rem;
 
@@ -44,13 +62,17 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
-  font-family: "Bitter";
+  font-family: "Exo 2";
   margin-bottom: 1rem;
 }
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
   margin-top: 4rem;
   margin-bottom: 2rem;
+}
+.post-excerpt h2{
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .technical h2{
@@ -59,20 +81,29 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 
 a {
-  color: #000;
+  color: $color-text;
 
   &:hover{
-    color: #007c89;
+    color: $color-hover-red;
   }
 }
 
-.post-content a, footer a, .post-edit-link a, a.visible-link {
-  color: #007c89;
+.post-content a, footer a, .post-edit-link a{
+  color: $color-text;
   text-decoration: underline;
 
   &:hover {
-    color: #B33951;
+    color: $color-hover-red;
   }
+}
+
+.post-excerpt{
+  margin-bottom: 8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 1200px) {
@@ -96,7 +127,7 @@ a {
     }
   }
 
-  .MJXc-display {
+  .MathJax_Display {
     max-width: 800px !important;
   }
 }
@@ -104,23 +135,7 @@ a {
 
 code { font-size: 85%}
 
-aside{
-  position:relative;
 
-  h2{font-family: 'Saira Stencil One', cursive;}
-
-  h3{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  @media (max-width: 991.9px) {
-    h2, h3, p {
-      margin-bottom: 0.5rem;
-    }
-  }
-}
 
 .box{
   border: 1px solid #ddd;
@@ -134,14 +149,11 @@ aside{
 
   a{
     font-style: italic;
-    color: #6c757d;
-    font-size: 90%;
+    font-size: 80%;
   }
 }
 
 .post-meta {
-  font-style: italic;
-  color: #6c757d;
   font-size: 90%;
 }
 
@@ -218,10 +230,8 @@ footer {
 .post-edit-link{
   padding-top: 1rem;
   margin-top: 3.5rem;
-  border-top: 1px solid #ddd;
-  font-family: "Bitter";
+  font-family: "Exo 2";
   margin-bottom: 1rem;
-  font-style: italic;
 }
 
 /**

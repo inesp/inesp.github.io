@@ -1,9 +1,9 @@
 {%- if page.biblio -%}
-  <h6 class="external_links">External sources</h6>
+  <h5 class="external_links pt-5">External sources</h5>
 
-  <ul class="small">
+  <ul class="">
     {%- for source in page.biblio -%}
-      <li><a href="{{ source.link }}" 
+      <li><a href="{{ source.link }}"
              target="_blank">{{ source.title }}</a></li>
     {%- endfor -%}
   </ul>
