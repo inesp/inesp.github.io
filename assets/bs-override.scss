@@ -101,6 +101,19 @@ a {
   margin-bottom: 8rem;
 }
 
+
+.title-underscore{
+  background-color: #DADADA;
+  height: 1px;
+
+  span{
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #ffe400;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -118,7 +131,7 @@ img {
     width: auto;
     max-width: 100%;
   }
-  .highlight, p.post-edit-link, .post-excerpt{
+  .highlight, p.post-edit-link, .post-excerpt, .title-underscore{
     max-width: 800px;
 
     img {
@@ -252,18 +265,3 @@ footer {
 
    width: 100%;
  }
- //
- // @media screen and (max-width: 767px) {
- //   .section-one {
- //     padding: 130px 0 190px;
- //   }
- //   .separator {
- //     bottom: -110px;
- //     .separator__svg {
- //       left: -20%;
- //       position: relative;
- //       transform: rotate(15deg);
- //       width: 140%;
- //     }
- //   }
- // }
