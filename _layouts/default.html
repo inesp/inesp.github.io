@@ -9,9 +9,9 @@
 
 	<body>
 
-    <div class="container-fluid position-relative">
+    <div class="container-fluid">
 
-      <div class="row">
+      <div class="row position-relative" style="min-height:100vh">
         <aside class="col-md-12 col-lg-3 aside-padding no-gutters">
           {%- include sidebar.html -%}
         </aside>
@@ -20,31 +20,22 @@
       		{{ content }}
         </div>
 
+        <div class="separator">
+          <svg class="separator__svg" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#fdd78e" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 100 100 V 10 L 0 100"/>
+            <path d="M 30 74 L 100 0 V 27 Z" fill="#fbaf1e" stroke-width="0"/>
+          </svg>
 
-      <div class="separator">
-        <svg class="separator__svg" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#fdd78e" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 100 100 V 10 L 0 100"/>
-          <path d="M 30 74 L 100 0 V 27 Z" fill="#fbaf1e" stroke-width="0"/>
-        </svg>
-      </div>
-    </div>
-
-    </div>
-
-    <footer class="container-fluid" style="background: #fdd78e;">
-
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 text-center">
-          <p>
+          <p style="background: #fdd78e;" class="text-center mb-0 pt-2 pb-5">
             <small>© {{ "now" | date: "%Y"}} {{ site.author }} -
             Except when otherwise noted, the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a> and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>.
             </small>
           </p>
-
         </div>
+
       </div>
-    </footer>
+
+    </div>
 
 
 	</body>
