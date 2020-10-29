@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Unscrambled Computer Science
+title: Bright Yellow
 author: Ines Panker
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -26,7 +26,7 @@ permalink: /:year/:month/:day/:title.html
 social:
   github: inesp
   linkedin: "ines-p-a6284a87"
-  twitter: "ines_panker" 
+  twitter: "ines_panker"
   medium: "ines.panker"
 
 # Build settings
