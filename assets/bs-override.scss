@@ -5,7 +5,7 @@
 @import "rouge.scss";
 
 $color-yellow: #fff283;
-$color-hover-red: #ff0040;
+$color-hover-red: #ff0040;  // #673e9c <- violet
 $color-text: #212529;
 
 body{
@@ -192,8 +192,6 @@ blockquote {
 }
 
 footer {
-  background: #FFFAD1;
-
   p {
     margin-bottom:1rem;
     margin-top: 1rem;
@@ -240,3 +238,32 @@ footer {
 .MathJax_Display, .MathJax{
   color: #d2196e;
 }
+
+
+/**
+ * Separator
+ */
+ .separator-space{padding-bottom: 150px;}
+ .separator {
+   bottom: 0px;
+   left: 0;
+   overflow: hidden;
+   position: absolute;
+
+   width: 100%;
+ }
+ //
+ // @media screen and (max-width: 767px) {
+ //   .section-one {
+ //     padding: 130px 0 190px;
+ //   }
+ //   .separator {
+ //     bottom: -110px;
+ //     .separator__svg {
+ //       left: -20%;
+ //       position: relative;
+ //       transform: rotate(15deg);
+ //       width: 140%;
+ //     }
+ //   }
+ // }
