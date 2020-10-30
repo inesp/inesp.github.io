@@ -118,6 +118,8 @@ Celery doesn't perform any retry logic by default. Mostly because it assumes tha
 
 One way of triggering a retry is by calling `self.retry()` in a task. What happens after this is triggered? An ETA time is calculated, some new metadata is put together and then the task is sent to the broker, where it falls into the `unacked` queue and is assigned to the same worker that already ran this task. This is how retry-tasks become ETA tasks and are therefore never seen in the main broker queue. It is a very sleek, but unexpected system. And again, Google has very little to say about this.
 
+Learn more about retries in [Celery task retry guide]({% post_url 2020-10-29-retry-celery-tasks %}).
+
 
 ## CPU bound or I/O bound and processes vs threads
 
