@@ -64,6 +64,7 @@ p {
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-family: "Exo 2";
   margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
@@ -88,7 +89,7 @@ a {
   }
 }
 
-.post-content a, footer a, .post-edit-link a{
+.post-content a, .footer a, .post-edit-link a{
   color: $color-text;
   text-decoration: underline;
 
@@ -204,13 +205,6 @@ blockquote {
   }
 }
 
-footer {
-  p {
-    margin-bottom:1rem;
-    margin-top: 1rem;
-    line-height: 1.2;
-  }
-}
 
 /**
  * Social media
