@@ -13,14 +13,13 @@ As much as I fancy looking like a TV hacker, I still decided to change the essay
 
 These are just about replacing 1-short-word with 1-shorter-word.
 
-The first thing to shorten is the `git` command itself. In `~/.bashrc` (or somewhere else) one would add:
+The first thing to shorten is the `git` command itself. In `~/.bashrc` (or somewhere else) you would add:
 
 ```bash
 alias g="git"
 ```
 
-*Don't forget to run `source ~/.bashrc` after every change to `.bashrc`.*
-{:.small}
+**Don't forget to run `source ~/.bashrc` after every change to `.bashrc`.**
 
 From now on `g` is your `git` and all the commands instantly become shorter: `g status`, `g commit`, `g checkout`.
 
@@ -38,9 +37,11 @@ g config --global alias.p push
 
 The results of this change are commands like `g br` instead of `git branch` and `g ci -m "Fix something"` instead of `git commit -m "Fix something"` and `g s` instead of `git status`.
 
+To get a list of your existing aliases, call: `g config --global --list` or you can directly open your global config file `~/.gitconfig`.
+
 #### Level 2 aliases
 
-These can be troublesome to set up. Some of them have will only work inside a specific context.
+These are a bit more advanced.
 
 ##### `git lg`
 
@@ -63,10 +64,10 @@ Alternatively, a slightly different print is bellow:
 ```
 
 ![git lg 2](/assets/Git-lg-2.png)
- 
+
 ##### `git afa`
 
-A common workflow at my current team is to amend existing commits. Sometimes we strive to create a clean git history by squashing certain commits together. The only problem is that it takes a few commands to accomplish and it gets awfully repetitive over time.
+A common workflow at my current team is to amend existing commits. We strive to create a clean git history by squashing certain commits together. The only problem is that it takes a few commands to accomplish this and it gets awfully repetitive over time.
 
 Git already supports this process. By calling `git commit --fixup 4dfa2350` a new commit is created, which can later be autosquashed.
 
@@ -77,7 +78,7 @@ $ git lg -3
 * deecdf2 - Commit B (10 minutes ago) <ines>
 * 045f234 - Commit A (10 minutes ago) <ines>
 ```
-and we modify the file `file_A.jpg` and call 
+and we modify the file `file_A.jpg` and call
 ```bash
 $ git add file_A.jpg
 $ git commit --fixup 045f234
@@ -105,7 +106,7 @@ which opens the window:
 ```
 . As you can see our newly created commit is already marked that it will modify *Commit A*.
 
-But as I said, this is a lengthy affair, thus I have set up the following aliases to make the process shorted:
+But as I said, this is a lengthy affair, thus I have set up the following aliases to make the process shorter:
 
 ```bash
 [alias]
@@ -115,6 +116,13 @@ But as I said, this is a lengthy affair, thus I have set up the following aliase
 ```
  `g f xxx` only creates the desired commit, `g fa xxx` also triggers a rebase and `g afa xxx` first commits all files before it creates a fixup-commit and triggers a rebase.
 
+##### Always have `autosquash` on
+
+In my experience this git setting should always be turned on. It is annoying to have to remember to add  `--autosquash` to your `rebase` commands. Whenever you do a rebase, git should check if you've marked any commits as `fixup`s and offer to merge them. By default this setting is off, but to turn it one, just do:
+
+```
+git config --global rebase.autosquash true
+```
 
 ##### `git cog`
 
@@ -122,12 +130,12 @@ Last but not least is my grep-ified checkout command:
 
 ```bash
 [alias]
-  cog=!sh -c "git branch | grep '$1' | head -n1 | awk '{print $2}' | xargs git co "
+  cog=!f() { git branch | grep $1 | head -n1 | cut -c 3- | xargs git co;}; f
 ```
 
 I don't know about you, but I really do not manage to keep the number of my local branches below 15. If they are only at 15, I am actually pretty happy. There are always 1 or 2 big ones, from which I am splitting of commits for actual pull requests, then there are a few of open pull requests in review, then there are a few experimental ones and a few, where I am researching something or preparing a presentation for something, then there are many from other team members, which I daily review, ... . Maybe I'm just bad at cleaning up or I just take up too much work. Anyway, I set up the above command to help me out.
 
-The above command runs `grep` over the list of all my git branches and checkouts the first one, which has the provided string in its name. Example:
+The command runs `grep` over the list of all my git branches and checkouts the first one, which has the provided string in its name. Example:
 
 ```bash
 ines: ~/repo (master)$ g br
