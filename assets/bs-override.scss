@@ -203,6 +203,10 @@ blockquote {
     margin-right: 0.25em;
     vertical-align: -0.4em;
   }
+
+  p:last-child{
+    margin-bottom: 0;
+  }
 }
 
 
