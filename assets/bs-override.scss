@@ -55,6 +55,12 @@ p {
     margin-bottom:2rem;
   }
 }
+li {
+  @media (min-width: 768px)  {
+    font-size:1.15rem;
+    line-height: 1.325;
+  }
+}
 .table p {
   font-size: inherit;
   margin-top: 0.5rem;
