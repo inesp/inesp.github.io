@@ -51,14 +51,15 @@ aside {
 p {
   @media (min-width: 768px)  {
     font-size:1.15rem;
-    line-height: 1.325;
+    line-height: 1.778;
     margin-bottom:2rem;
   }
 }
 li {
   @media (min-width: 768px)  {
     font-size:1.15rem;
-    line-height: 1.325;
+    line-height: 1.778;
+    margin-bottom: 1rem;
   }
 }
 .table p {
@@ -71,6 +72,7 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-family: "Exo 2";
   margin-bottom: 1rem;
   text-transform: capitalize;
+  line-height: 1.6;
 }
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
@@ -80,6 +82,7 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .post-excerpt h2{
   text-transform: uppercase;
   font-size: 2rem;
+  line-height: 1.625;
 }
 
 .technical h2{
@@ -175,6 +178,8 @@ code { font-size: 85%}
 
 .post-meta {
   font-size: 90%;
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .post-content img{
