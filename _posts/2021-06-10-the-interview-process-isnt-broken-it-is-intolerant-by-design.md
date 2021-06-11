@@ -2,6 +2,22 @@
 title: "The Interview Process isn't broken, it is intolerant by design"
 excerpt_separator: <!--more-->
 biblio:
+  - title: "Google Guide: Train your interviewers"
+    link: https://rework.withgoogle.com/guides/hiring-train-your-interviewers/steps/make-interviewing-everyones-job/
+  - title: "Field Report: Making Talent Decisions Less Biased II"
+    link: https://medium.com/@gapjumpers/field-report-making-talent-decisions-less-biased-ii-8d3d23e38082
+  - title: What do the best interviewers have in common? We looked at thousands of real interviews to find out.
+    link: https://blog.interviewing.io/what-do-the-best-interviewers-have-in-common-we-looked-at-thousands-of-real-interviews-to-find-out/
+  - title: After a lot more data, technical interview performance really is kind of arbitrary.
+    link: https://blog.interviewing.io/after-a-lot-more-data-technical-interview-performance-really-is-kind-of-arbitrary/
+  - title: There is a real connection between technical interview performance and salary.
+    link: https://blog.interviewing.io/there-is-a-real-connection-between-technical-interview-performance-and-salary-heres-the-data/
+  - title: Who Y Combinator companies want
+    link: https://triplebyte.com/blog/who-y-combinator-companies-want
+  - title: "Hans Christian Andersen: The Princess and the Pea"
+    link: http://www.eastoftheweb.com/short-stories/UBooks/PriPea.shtml
+  - title: "Invisible Women: Exposing Data Bias in a World Designed for Men"
+    linke: https://www.goodreads.com/book/show/41104077-invisible-women
 ---
 
 At the moment, the IT industry is considered a pretty prestigious profession. It attracts lots and lots of people because the pay is good, the working conditions are good and the whole society is in awe of the masterful things programmers produce.
