@@ -49,6 +49,7 @@ aside {
 
 
 p {
+  line-height: 1.8;
   @media (min-width: 768px)  {
     font-size:1.15rem;
     line-height: 1.778;
@@ -56,6 +57,7 @@ p {
   }
 }
 li {
+  line-height: 1.8;
   @media (min-width: 768px)  {
     font-size:1.15rem;
     line-height: 1.778;
@@ -158,6 +160,41 @@ img {
 
 code { font-size: 85%}
 
+h5.external_links{
+  margin-bottom: 1rem;
+}
+.external_links li{margin-bottom: 0.1rem;}
+
+
+.other-posts{
+  padding-top: 50px;
+  background: #fff283;
+  margin: 0 -15px;
+  padding: 50px 0 15px;
+
+  ul {
+    list-style: none;
+  }
+
+  a{
+    text-decoration: underline;
+  }
+
+  li::before {
+    content: "✅";
+    display: inline-block;
+    margin-right: 0.2rem;
+  }
+
+  li:nth-child(2)::before {
+    content: "🎯";
+  }
+
+  li:nth-child(3)::before {
+    content: "📯";
+  }
+
+}
 
 
 .box{
@@ -243,10 +280,6 @@ blockquote {
   margin: 0 5px 0 0;
 }
 
-.external_links{
-  margin-top: 3.5rem;
-}
-
 .post-edit-link{
   padding-top: 1rem;
   margin-top: 3.5rem;
@@ -265,7 +298,12 @@ blockquote {
 /**
  * Separator
  */
- .separator-space{padding-bottom: 150px;}
+ .separator-space{
+   padding-bottom: 200px;
+   @media (max-width: 700px)  {
+     padding-bottom: 300px;
+   }
+ }
  .separator {
    bottom: 0px;
    left: 0;

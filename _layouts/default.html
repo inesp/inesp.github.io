@@ -16,14 +16,17 @@
           {%- include sidebar.html -%}
         </aside>
 
-        <div class="col-md-12 col-lg-9 main-padding separator-space">
+        <div class="col-md-12 col-lg-9 main-padding">
       		{{ content }}
+
+          {%- include other_posts.html -%}
+
         </div>
 
         <div class="separator">
           <svg class="separator__svg" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#fdd78e" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 100 100 V 10 L 0 100"/>
-            <path d="M 10 92 L 100 0 V 27 Z" fill="#fbaf1e" stroke-width="0"/>
+            <path d="M 100 100 V 65 L 0 100"/>
+            <path d="M 10 96 L 100 65 V 50 Z" fill="#fbaf1e" stroke-width="0"/>
           </svg>
 
           <p style="background: #fdd78e;" class="text-center mb-0 pt-2 pb-5 footer">
