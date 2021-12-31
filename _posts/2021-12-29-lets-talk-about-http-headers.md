@@ -80,6 +80,6 @@ Retry-After: <delay-seconds>
 This means there is no need to create your own header called `X-Rate-Limit-Remaining-Seconds` or `X-RateLimit-Reset`, because `Retry-After` is always available.
 
 
-## ...
+## Fin
 
 Ok, now you know. Go, tell the others, and, please, use these 2 headers instead of making up your own.
