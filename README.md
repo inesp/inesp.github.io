@@ -6,7 +6,7 @@ Ines's Blog.
 
 GitHub Pages does NOT support the latest Ruby nor the latest Jekyll not every Jekyll gem. Here is a list of the gems and their versions, which are suppoerted on GitHub Pages: https://pages.github.com/versions/
 
-- Install Ruby (last I checked GitHub Pages is using Ruby 2.7.1).
+- Install Ruby (last I checked GitHub Pages is using Ruby 3.3.4).
   Last time it was `sudo apt-get install ruby-full`, but check here: https://www.ruby-lang.org/en/documentation/installation/#apt
   Don't forget to run `source ~/.bashrc` to load the new $PATH values
 - Install Bundler (a Ruby gem): `gem install bundler`

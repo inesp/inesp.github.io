@@ -6,3 +6,4 @@ _posts/**/*.swp
 _layouts/**/*.swp
 _includes/**/*.swp
 assets/**/*.swp
+.idea
