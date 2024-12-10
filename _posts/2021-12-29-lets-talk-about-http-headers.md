@@ -10,15 +10,19 @@ biblio:
     link: "https://www.rfc-editor.org/rfc/rfc6750.html"
 ---
 
-Here's the thing, my research tells me that most web developers know shockingly little about the HTTP headers or the HTTP standard as a whole. I mean, I get it, many universities/schools probably don't teach it (mine certainly didn't) and who sits at home on an idle Sunday morning and says to herself: "You know what? I'm going to pamper myself today by reading the HTTP standard." Nobody. I know. But, ... fact is, for a web developer, which many, many of us are, not having some understanding of the HTTP standard is a glaring hole in our knowledge. So, let's fix this problem.
+Here's the thing, as far as I can tell lots of (most?) web developers know shockingly little about the HTTP headers or the HTTP standard as a whole. 
+
+I mean, I get it, most education curricula don't include much HTTP-protocol-related information (mine certainly didn't) and who sits at home on an idle Sunday morning and says to herself: "You know what? I'm going to pamper myself today by reading the HTTP standard." Nobody. I know. 
+
+But, ... fact is, for a web developer, which many, many of us are, not having some understanding of the HTTP standard is a glaring gap in our knowledge. So, let's fix this problem.
 
 ![HTTP header](/assets/HTTP-header.jpg)
-
 
 <!--more-->
 
 
 ## What are HTTP headers anyway
+
 
 HTTP headers exist to exchange meta-information about the request/response.
 
@@ -36,22 +40,33 @@ The HTTP headers thus have 2 parts: the name and the value, which are separated 
 
 The best way to learn about all the HTTP headers, which already have a defined name and role, is to visit the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers){:target="_blank"}.
 
-**Truth is, the server and client can agree on any number and form of the HTTP headers.** But I think there is no point in inventing a new HTTP header for your application before you check the official list. The probability is high, that somebody before you has already needed a header for the exact same purpose as you need one today.
+**In truth, the server and client can invent their own headers.** But let's not re-invent the wheel. Let's always first check the official list of headers, before creating our own, custom, very special, most precious HTTP header. After all, there is a high probability that somebody before us already needed a header for the exact same purpose we do now.
 
-The main reason for not re-inventing the teapot is to make life easier for the users of your application. The second is getting free documentation.
+And if we do re-use what already exists, we get 2 added benefits:
 
-I currently work on an app that needs to call an assortment of different APIs and I can tell you I would really appreciate it if we could all start using the same headers. Many APIs do stick to the standards, most of them do, definitely more than 50% of them. But from my humble estimates, about 30% don't. About 1 in 3 APIs I have integrated, force us to use their custom headers and their docs never fully explain how these headers behave.
+  - the documentation is already there
+  - people already know how to use our header
 
-It is really unnecessarily tricky to write intercepting code for all the APIs, when those APIs insist on sending the same information in vastly different ways. Especially when those different ways aren't documented well. Because let's face it, we suck at writing documentation. So, let's improve our docs, let's make our users happy and just use the headers that are already well documented.
+I currently work on an app that needs to call an assortment of different APIs and I can tell you I would really appreciate it if we could all start using the same headers. 
+
+Many APIs *do* stick to the standards, but lots don't. Based on my limited experience, I would estimate that about 30% of API unnecessarily invent their own custom HTTP headers as replacement for standard HTTP headers.
+
+About 1 in 3 APIs I have integrated, force us to use their custom headers and their docs never fully explain how these headers behave.
+
+It is really unnecessarily tricky to write intercepting code for all the APIs, when those APIs insist on sending the same information in vastly different ways. Especially when those different ways aren't documented well. Because let's face it, we suck at writing documentation. 
+
+So, let's improve our docs, let's make our users happy and let's just use the headers that are already well documented.
 
 
 ## First HTTP header too few devs know: `Authorization`
 
-So, ... I don't know how else to say this, but, .. the `Authorization` header is meant for authorization. A shocker, I know. But seriously, if you expect requests to your server where the client must send some authentication information, like, ... an API key for instance 😉, please, use this header. Let's just all agree that from now on we will put authorization data of every API into the authorization header. This will make our lives much easier.
+So, ... I don't know how else to say this, but, .. the `Authorization` header is meant for authorization. A shocker, I know. But seriously, if you expect requests to your server where the client must send some authentication information, like, ... an API key for instance 😉, please, use this header. Let's just all agree that from now on we will put authorization data of every API into the authorization header.
 
-Let's not invent our own headers like `PRIVATE-TOKEN` or `DD-API-KEY` or `X-SF-Token` and let's not put authorization tokens in `GET` parameters or `POST` parameters for that matter and let's all meet at the `Authorization` header. It's really easy to use, the data is passed like this:
+Let's not invent our own headers like `PRIVATE-TOKEN` or `DD-API-KEY` or `X-SF-Token` and let's not put authorization tokens in `GET` parameters or `POST` parameters either. 
 
-```
+It's really easy to use, the data is passed like this:
+
+```http
 Authorization: <type> <authorisation-parameters>
 ```
 
@@ -82,4 +97,4 @@ This means there is no need to create your own header called `X-Rate-Limit-Remai
 
 ## Fin
 
-Ok, now you know. Go, tell the others, and, please, use these 2 headers instead of making up your own.
+Ok, now you know. Please go, tell the others.
