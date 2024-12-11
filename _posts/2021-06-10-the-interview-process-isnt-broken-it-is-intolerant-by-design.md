@@ -22,28 +22,38 @@ biblio:
 
 At the moment, the IT industry is considered a pretty prestigious profession. It attracts lots and lots of people because the pay is good, the working conditions are good and the whole society is in awe of the masterful things programmers produce.
 
-And the Covid-19 disaster, that plunged so many into financial insecurity? It didn't even leave a scratch on IT: the work is practically the same and the pay is still great. The fabulously uncomplicated transition from office work to home work made IT only more prestigious. So, yes, potential workers are coming in droves. They have been, for many years.
+Potential workers are trying join the IT train in droves. So many have been joining us that a third of working developers only have <= 4 years of work experience (according to Stack Overflow surveys).   
 
-This could have been a golden opportunity for IT companies to test all kinds of interview approaches on a vast number of people and develop a data-backed super approach. One that could finally tell what makes a good co-worker while not wasting days and days for both the candidate and the company.
+This could have been a golden opportunity for IT companies to test all kinds of interview approaches on a vast number of people and develop a data-backed super approach. One that could finally tell us what makes a good (co-)worker. 
 
-Instead, we are willingly standing still, voluntarily propping up this broken and deformed interview process. Why do we do this? **If we mostly agree that the interview process does not produce dreamy IT teams, then why are we sticking with it?**
+Instead, we are willingly standing still, voluntarily propping up this broken and deformed interview process. Why do we do this? 
 
-The answer is simple: **while it might not produce *dreamy* teams, it does produce teams that *feel and look and smell* like propper IT teams**, so the process must be correct after all.
+**If we mostly agree that the interview process does not produce dreamy IT teams, then why are we sticking with this process?**
+
+The answer is simple: **it produces "proper" IT teams**. It does not create great teams that deliver great products or services or are pleasant to work with or are innovative or are prolific. But it *does* create teams that look as if they are good IT teams. 
+
+We are mostly concerned with copy-pasting what we consciously or subconsciously believe is a good IT team: young, white, male, dressed in hoodies, socially awkward, having gone to the same universities we went to, having the same beer preferences we have, have had the same life experiences that we had, ... .
 
 <!--more-->
 
 ## Why do many claim the interview process is broken?
 
 
-The short answer: people, who consider themselves completely decent devs, feel left out. And they are right. From my statistic, I can confirm that many of them are completely decent devs and they are still left rejected.
+The short answer: people, who consider themselves completely decent devs, feel left out. 
+
+Now, are they right or are they not? 
+
+That's hard to judge when what we have are mostly just internet anecdotes. But, my bet is placed squarely on "yes, they are right". 
+
+And my strongest argument is the statistical analysis of the IT population. Given the billions of people on earth, how can it be there is sooo little variance in the IT population? How is it possible that a group of devs can be spotted on the street by their looks alone? This shouldn't be possible, if we really were a merit-based profession.
 
 **The perfectly competent devs feel they were rejected not because they had too little skill or talent, but because they didn't know answers to questions, they felt weren't truly relevant to the job posting. And I tend to agree with them.**
 
-From what I've seen and learned over the years, I doubt the value of many questions that wind up being asked in interviews.
+From what I've seen and learned over the years, I have 0 trust in most questions that wind up being asked in interviews.
 
 Obviously, companies are very different from each other and some do have adequate and successful interview processes, but those are the exception, not the rule.
 
-Over the years, I have been on all sides of the interview process, I've been the interviewer, the interviewee, the observer, the interviewer-adviser, the interviewee-adviser, ... . This does not make me an expert on interviews in any way, it just gives me a lot of anecdotal evidence.
+Over the years, I have been on all sides of the interview process, I've been the interviewer, the interviewee, the observer, the interviewer-adviser, the interviewee-adviser, ... . This does not make me an expert on interviews in any way, but I also can't just ignore the patterns I'm seeing.
 
 
 #### What's the point of the questions
@@ -55,9 +65,11 @@ Things like: **What am I even trying to learn about the interviewee with Questio
 
 Too many interviewers treat questions like a test: you get 10 questions, each is worth 10 points, you get a score according to how close you are to what I deem the most correct answer and you need 80 points to get to the next level.
 
-I don't want to say I never met anybody, who cared whether the questions they were asking actually gave them any useful information, it's just that I can't name anybody at the moment 😛.
+I don't want to say I never met anybody, who cared whether the questions they were asking actually gave them any useful information, it's just that there are so few of them.
 
-The obvious flaw in this approach is that all human knowledge is absolutely vast, even if you limit it to IT knowledge. Everybody will have gaping holes in their knowledge. **If you want to prove that somebody doesn't know enough, you can always do it:** just pick any niche topic, read about it for an hour and then ask about the details you've read. Works almost all the time. To make it work all the time, just pick 2 different niche topics and by the power of probability, you should be covered.
+The obvious flaw in this approach is that all human knowledge is absolutely vast, even if you limit it to IT knowledge. Everybody will have gaping gaps in their knowledge. 
+
+**You can always prove that somebody doesn't know enough of something:** just pick any niche topic, read about it for an hour and then ask about the details you've read. Works almost all the time. To make it work all the time, just pick 2 different niche topics and by the power of probability, you should be covered.
 
 The interviewer will (and should) always know more about a question, because she had to look it up before asking and because she heard a lot of different answers from different people. She will always have the upper hand in this one niche topic. Which should prompt every interviewer to be wary of this bias. But most aren't.
 
@@ -69,9 +81,11 @@ Even worse, many believe the topics have been chosen objectively.
 
 In reality, **the topics are mostly chosen poorly and randomly**. More often than not they are chosen **from the knowledge that the first interviewer happened to have**. And what these topics are good at is finding other people, who are just like that first interviewer.
 
-We are not searching for the best employees, we are searching for those, who feel and look and smell like that first person with hiring power in the company.
+We are not searching for the best developer, we are searching for those, who feel and look and smell like that first person with hiring power in the company.
 
-If you are not like that first interviewer, then the only other way to get hired is luck or networking. The "correct" answers to all interview topics can usually be obtained by having friends, who work there or are otherwise close to the company. But last time I checked, to be friends with somebody, you have to have even more in common than just the knowledge of some IT topics.
+If you are not like that first interviewer, then the only other way to get hired is luck or networking. The "correct" answers to all interview topics can usually be obtained by having friends, who work there or are otherwise close to the company. 
+
+But last time I checked, to be friends with somebody, you have to have even more in common than just the knowledge of some IT topics.
 
 Rejecting everybody, who is not deeply similar to the existing employees or does not have informal connections to your employees, helps to make the interview process feel broken.
 
@@ -79,7 +93,9 @@ Rejecting everybody, who is not deeply similar to the existing employees or does
 ## Everybody can be an interviewer
 
 
-Most companies further damage the process by treating it as something anybody can do, no training required. Why is this belief so prevalent among us? We don't believe that everybody can be a team lead or that everybody can give a good presentation, but we do believe that everybody should decide who gets a job. Heck, even Google recommends it:
+Most companies further damage the process by treating it as something anybody can do, no training required. 
+
+Why is this belief so prevalent among us? We don't believe that everybody can be a team lead or that everybody can give a good presentation, but we do believe that everybody should decide who gets a job. Heck, even Google recommends it:
 
 > Make interviewing everyone’s job
 >
@@ -100,7 +116,7 @@ But, I do wonder, how well they really train them. Everybody does not make a goo
 #### Can you beat bias with bias?
 
 
-I understand the appeal of making everybody participate in hiring. Like it or not, we are all biased to some degree. **People like to hire other people if they "click" with them, which usually means that they have some deep-rooted similarities.** Intuition might say, that the easiest way to achieve greater diversity of employees is simply making the group of decision-makers very diverse.
+I understand the appeal of making everybody participate in hiring. We are all biased to some degree. **People like to hire other people if they "click" with them, which usually means that they have some deep-rooted similarities.** A solution to achieve greater diversity of employees might then simply be to make the group of decision-makers very diverse.
 
 If a group of people is diverse, then their biases should be just as diverse and the group together will make a better hiring apparatus.
 
@@ -132,9 +148,9 @@ Not everybody can be an interviewer. I very strongly agree with this statement b
 
 Interviewing is a skill. If you want to be good at it, you have to learn, you have to grow and you have to practice.
 
-But if you have to practice a lot, then you have to enjoy doing it. You have to enjoy helping strangers show off their skills, their personality, while under pressure, even if you don't see yourself getting a bear with them afterwards.
+But if you have to practice a lot, then you have to enjoy doing it. You have to enjoy helping strangers show off their skills, their personality, while under pressure, even if you don't see yourself getting a beer with them afterward.
 
-How many people you know, interview like that?
+How many people do you know, who interview like that?
 
 
 ## We don't understand our profession, but we do believe the interview process is infallible
@@ -148,7 +164,7 @@ Given that our field is highly respected, many are suffering from an inflated eg
 This can cause 2 problems:
 - **We misjudge when picking interview questions.**
 
-  Our ideal programmer knows everything about sorting algorithms and bit manipulation, so we ask those questions. Forgetting that neither we nor any of our co-workers used this knowledge in the last 2 years.
+  Our ideal programmer knows everything about sorting algorithms and bit manipulation, so we ask those questions. Forgetting that neither we nor any of our co-workers used this knowledge in the last 10 years.
 
 - **We are suspicious of the candidate,** erring rather on the side of reject.
 
@@ -156,7 +172,7 @@ This can cause 2 problems:
 
 The research, however, shows that performance on technical interviews is highly volatile for almost all candidates.
 
-`interviewing.io` provides mock interviews to their users, they can use the platform to practice interviewing or to practice being interviewed. Each person does multiple of these sessions, which allowed them to compare the results for each person.
+`interviewing.io` provides mock interviews to their users, they can use the platform to practice interviewing or to practice being interviewed. Each person does multiple of these sessions, which allows the company to compare the results for each person.
 
 They found that **just 20% of their users consistently scored the same**. The others did well on some interviews and poorly on others. In real life, you usually can't afford to not be at your best all the time... always. Usually, **if you flunk 1 interview step, you are out**.
 

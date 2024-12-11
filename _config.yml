@@ -26,8 +26,6 @@ permalink: /:year/:month/:day/:title.html
 social:
   github: inesp
   linkedin: "ines-p-a6284a87"
-  twitter: "ines_panker"
-  medium: "ines.panker"
 
 # Build settings
 markdown: kramdown

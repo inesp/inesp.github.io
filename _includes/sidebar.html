@@ -31,30 +31,6 @@
                 ></a></li>
           {%- endif -%}
 
-          {%- if site.social.twitter -%}
-            <li><a
-                href="https://twitter.com/{{ site.social.twitter | cgi_escape | escape }}"
-                title="{{ site.author | escape }}"
-                target="_blank"
-                ><img
-                  height="25"
-                  width="25"
-                  src="{{ '/assets/twitter.svg' | relative_link }}"
-                ></a></li>
-          {%- endif -%}
-
-          {%- if site.social.medium -%}
-            <li><a
-                href="https://ines-panker.medium.com"
-                title="{{ site.author | escape }}"
-                target="_blank"
-                ><img
-                  height="25"
-                  width="25"
-                  src="{{ '/assets/medium.svg' | relative_link }}"
-                ></a></li>
-          {%- endif -%}
-
       </ul>
 
       <h3 class="mt-md-4 mt-lg-5">Who am I</h3>
