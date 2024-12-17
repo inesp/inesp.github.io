@@ -31,4 +31,4 @@ Here's the excerpt from my `.gitconfig` file:
 9. 🎉
 
 
-Now I can be in the middle of a taking apart the whole application and can still `rebase` to `master` with quickly and nonchalantly.
+Now I can be in the middle of a taking apart the whole application and can still `rebase` to `master` quickly and nonchalantly.
