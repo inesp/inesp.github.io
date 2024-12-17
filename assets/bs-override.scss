@@ -2,7 +2,7 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One|Exo+2:wght@400;600&display=swap');
-@import "rouge.scss";
+@import "monokai.css";
 
 $color-yellow: #fff283;
 $color-hover-red: #ff0040;  // #673e9c <- violet
@@ -318,6 +318,12 @@ blockquote {
   color: #d2196e;
 }
 
+.highlight {
+  pre {
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+}
 
 /**
  * Separator
