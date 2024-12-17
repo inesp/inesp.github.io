@@ -27,7 +27,7 @@ And now somebody asks me: **"For every animal, can you tell me which area they p
 
 Ok, I can do it. I need to `GROUP BY animal_id` and call `MAX(num_of_animals)`:
 
-```PostgreSQL
+```sql
 select
 	animal_id,
 	MAX(num_of_animals) as max_num
@@ -46,7 +46,7 @@ I can't just add `, area_code` to the list of `SELECT` columns, because I will g
 
 One of the standard solutions is to use a subquery: we `INNER JOIN` the 1st query with the `animals` table to identify the rows where the `animal_id` and `max_num` match:
 
-```PostgreSQL
+```sql
 select
 	animals.animal_id,
 	max_num,
@@ -77,7 +77,7 @@ Here is the solution I like better. I'd like to emphasize I am not the author of
 
 So, here is my favorite solution.
 
-```PostgreSQL
+```sql
 select
 	animal_id,
 	MAX(num_of_animals),
@@ -100,7 +100,7 @@ I personally, like this approach, but again *"PROFILE YOUR QUERIES ON YOUR ACTUA
 
 ### My friend's solution (because "the above solution is so hacky, that it should only be used in the context of MySQL" :P - hat tip to MySQL for being the most popular database platform)
 
-```PostgreSQL
+```sql
 SELECT
  DISTINCT animal_id,
  first_value(area_code_2) OVER win AS area_code,

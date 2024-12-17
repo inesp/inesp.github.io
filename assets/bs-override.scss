@@ -2,20 +2,23 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One|Exo+2:wght@400;600&display=swap');
-@import "rouge.scss";
+@import "monokai.css";
 
 $color-yellow: #fff283;
 $color-hover-red: #ff0040;  // #673e9c <- violet
 $color-text: #212529;
 
-body{
-}
 
 aside {
   background: $color-yellow;
   position:relative;
 
-  h2{font-family: 'Saira Stencil One', cursive;}
+  h2{
+    font-family: 'Saira Stencil One', cursive;
+    a {
+      text-decoration: none;
+    }
+  }
 
   h3{
     font-size: 1.2rem;
@@ -29,18 +32,41 @@ aside {
     }
   }
 
-  a.my-name{text-decoration: underline; font-family: 'Saira Stencil One', cursive;}
+  a.my-name{font-family: 'Saira Stencil One', cursive;}
+
+  /**
+   * Social media
+   */
+  .social-icons {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    display: table;
+
+    @media (min-width: 700px) and (max-width: 991.9px) {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    li {
+      float: left;
+      margin: 0 5px 0 0;
+    }
+  }
 }
 
 .aside-padding{
   padding-top: 0.5rem;
 
-  @media (min-width: 992px){
+  @media (min-width: 992px)  {
     padding-top: 4rem;
   }
 }
+
 .main-padding{
-  padding-top: 2rem;
+  padding-top: 3rem;
 
   @media (min-width: 992px)  {
     padding-top: 4rem;
@@ -77,24 +103,34 @@ ul{
 h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
   font-family: "Exo 2";
   margin-bottom: 1rem;
-  text-transform: capitalize;
   line-height: 1.6;
+  text-decoration: none;
+  code {
+    text-transform: none;
+  }
 }
-h1 code {
-  text-transform: none;
-}
-h2 code {
-  text-transform: none;
-}
+
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-.post-excerpt h2{
-  text-transform: uppercase;
-  font-size: 2rem;
-  line-height: 1.625;
+
+.post-excerpt {
+  margin-bottom: 8rem;
+
+  a{
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.625;
+    text-decoration: none;
+  }
 }
 
 .technical h2{
@@ -117,10 +153,6 @@ a {
   &:hover {
     color: $color-hover-red;
   }
-}
-
-.post-excerpt{
-  margin-bottom: 8rem;
 }
 
 
@@ -162,7 +194,7 @@ img {
     }
   }
 
-  .MathJax_Display {
+  .MathJax {
     max-width: 800px !important;
   }
 }
@@ -227,6 +259,10 @@ h5.external_links{
   margin-bottom: 1rem;
 }
 
+.post-content{
+  padding-top: 2rem;
+}
+
 .post-content img{
   max-width: 100%;
   height: auto;
@@ -266,27 +302,7 @@ blockquote {
 }
 
 
-/**
- * Social media
- */
-.social-icons{
-  list-style: none;
-  margin-left: 0;
-  margin-bottom: 2rem;
-  padding-left: 0;
-  display: table;
 
-  @media (min-width: 700px) and (max-width: 991.9px)  {
-    position: absolute;
-    right: 0;
-    top: 6px;
-  }
-}
-
-.social-icons li{
-  float: left;
-  margin: 0 5px 0 0;
-}
 
 .post-edit-link{
   padding-top: 1rem;
@@ -298,10 +314,16 @@ blockquote {
 /**
  * Math highlighting styles
  */
-.MathJax_Display, .MathJax{
+.MathJax{
   color: #d2196e;
 }
 
+.highlight {
+  pre {
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+}
 
 /**
  * Separator
@@ -317,6 +339,8 @@ blockquote {
    left: 0;
    overflow: hidden;
    position: absolute;
+   padding-left: 0;
+   padding-right: 0;
 
    width: 100%;
  }

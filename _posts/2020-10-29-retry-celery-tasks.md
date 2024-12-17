@@ -50,7 +50,6 @@ The task will still need to wait for its worker to have free processes/threads t
 1. Hook into the `task_prerun` signal to set the execution start time. This signal is rung just before the task is executed.
 
     ```python
-
     from celery import signals, Task
     from datetime import datetime, timezone
 
@@ -63,24 +62,23 @@ The task will still need to wait for its worker to have free processes/threads t
 2. Hook into the `task_postrun` signal to send the diff between ETA and the EXEC_START time to `statsd`:
 
     ```python
+   from celery import signals, Task
+   from datetime import datetime, timezone
+   from dateutil.parser import isoparse
 
-      from celery import signals, Task
-      from datetime import datetime, timezone
-      from dateutil.parser import isoparse
+   @signals.task_postrun.connect
+   def task_postrun(task: Task, state, *args, **kwargs):
 
-      @signals.task_postrun.connect
-      def task_postrun(task: Task, state, *args, **kwargs):
+       exec_start_str = getattr(task.request, EXEC_START, None)
+       eta_str = headers.get("eta")
+       if exec_start_str and eta_str:
+           exec_start = isoparse(getattr(task.request, EXEC_START, None))
+               eta = isoparse(eta_str)
 
-          exec_start_str = getattr(task.request, EXEC_START, None)
-          eta_str = headers.get("eta")
-          if exec_start_str and eta_str:
-              exec_start = isoparse(getattr(task.request, EXEC_START, None))
-                  eta = isoparse(eta_str)
+           diff_ms = int(exec_start - eta).total_seconds() * 1000)
 
-              diff_ms = int(exec_start - eta).total_seconds() * 1000)
-
-              logger.info(f"Diff between execution time and ETA is {diff_ms} ms for {task}.")
-              statsd.timing(f"celery.task.{key}", value, tags=[f"task:{task.name}"])
+           logger.info(f"Diff between execution time and ETA is {diff_ms} ms for {task}.")
+           statsd.timing(f"celery.task.{key}", value, tags=[f"task:{task.name}"])
     ```
 
 ##### **3. A worker finds a free process.**
@@ -114,7 +112,6 @@ This task will be retried whenever either the exception `EmailServerNotReachable
 After a retry is triggered, the new ETA will be set to `45` seconds into the future. The task will be run up to **6** times: the first time + 5 retries.
 
 ```python
-
 @celery_app.task(autoretry_for=(EmailServerNotReachable, SomeEmailException, ),default_retry_delay=45,  max_retries=5)
 def generate_and_send_email(user_id: int, event_name: str):
   ...
