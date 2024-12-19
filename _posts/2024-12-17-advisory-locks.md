@@ -1,6 +1,9 @@
 ---
 title: "Quick and easy: Add Postgres advisory locks to your Python code"
 excerpt_separator: <!--more-->
+biblio: 
+  - title: Postgre's Advisory Locks
+    link: https://www.postgresql.org/docs/17/explicit-locking.html#ADVISORY-LOCKS
 ---
 
 **When you need it**: when you want to lock the DB, but don't have the row to lock yet. As in: you want to create a row. 
