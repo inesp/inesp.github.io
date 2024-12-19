@@ -8,15 +8,15 @@ layout: default
 
     <div class="title-underscore"><span></span></div>
     <div class="post-excerpt">
-        <a href="{{ post.url | relative_link }}" class="post-link">
-          <h2>{{ post.title }}</h2>
-        </a>
+        <h2><a href="{{ post.url | relative_link }}">{{ post.title }}</a></h2>
 
         <div class="post-meta text-muted">
           {{ post.date | date: site.date_format }}
         </div>
 
         {{ post.excerpt }}
+
+        <div><a href="{{ post.url | relative_link }}">Continue reading &#x2026;</a></div>
 
     </div>
 

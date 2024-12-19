@@ -119,17 +119,17 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .post-excerpt {
   margin-bottom: 8rem;
 
-  a{
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
   h2 {
     font-size: 2rem;
     line-height: 1.625;
     text-decoration: none;
+
+    a{
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
