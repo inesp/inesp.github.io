@@ -144,6 +144,13 @@ a {
   &:hover{
     color: $color-hover-red;
   }
+
+  code {
+    color: var(--bs-code-color);
+    &:hover {
+      color: $color-hover-red;
+    }
+  }
 }
 
 .post-content a, .footer a, .post-edit-link a{
