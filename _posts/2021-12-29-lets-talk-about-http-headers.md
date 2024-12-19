@@ -66,7 +66,7 @@ Let's not invent our own headers like `PRIVATE-TOKEN` or `DD-API-KEY` or `X-SF-T
 
 It's really easy to use, the data is passed like this:
 
-```http
+```
 Authorization: <type> <authorisation-parameters>
 ```
 
