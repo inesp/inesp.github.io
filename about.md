@@ -16,9 +16,7 @@ I'm good at organizing chaos and also good at simplifying complexity to just the
 
 **Think of me as the chaos whisperer.** I'm turning wild messes into smooth, scalable systems. 
 
-The best code systems are like well-designed cities: carefully planned, easy to navigate, and capable of growing without falling apart.
-
-I don’t just create solutions, I build **foundations**.
+The best code systems are like well-designed cities: carefully planned, easy to navigate, and capable of growing without falling apart. The catch is to build **foundations** while creating solutions.
 
 My other passion lies with ***people*** and our motivations as we interact with code.
 
