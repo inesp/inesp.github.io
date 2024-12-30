@@ -10,7 +10,7 @@ I'm currently making my living mostly as a Python Web Developer and a mentor for
 
 My forte is **finding patters**.... in code, in systems, in data and in people. Must not forget the people 😉.
 
-<small>- *I hate writing about myself. I've been writing this page since 2019 now. Even in the age of ChatGPT I still can't find the words to describe myself. The right words keep eluding me.*</small>
+<small>- *I hate writing about myself. I've been writing this page for 5 years now. Even in the age of ChatGPT I still can't find the words to describe myself. The right words keep eluding me.*</small>
 
 I'm good at organizing chaos and also good at simplifying complexity to just the right level for every situation. 
 
