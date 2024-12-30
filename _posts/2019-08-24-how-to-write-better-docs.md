@@ -1,12 +1,10 @@
 ---
-title: Why is sooooo..o much documentation a pain to read?
+title: Why is sooooo.. much documentation a pain to read?
 biblio:
   - title: "5 Whys"
     link: "https://en.wikipedia.org/wiki/5_Whys"
   - title: "Webpack from Nothing"
     link: "https://what-problem-does-it-solve.com/webpack/index.html"
-  - title: "These 3 Industries Have the Highest Talent Turnover Rates"
-    link: "https://business.linkedin.com/talent-solutions/blog/trends-and-research/2018/the-3-industries-with-the-highest-turnover-rates"
 ---
 
 Because it is written in a boring, counterproductive style. But why is that? Because it copied the style of academic papers. But why are academic papers dry and boring? Because most schools have since forever talked to their pupils in a dry and boring manner. But why is that? Because until recently human society has been managed in an authoritarian manner. Everybody knew exactly who was above them and who was below them, who they have to obey and who they can give orders to. For the most part, *fun* was reserved for the afterlife and the rich. But come-on! we can do better, here are a few pointers.
