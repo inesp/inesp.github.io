@@ -1,6 +1,13 @@
 ---
 title: "Basic building blocks collection: Isolate code blocks from each other?"
 excerpt_separator: <!--more-->
+biblio:
+  - link: https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager
+    title: "Python: contextlib.contextmanager"
+  - link: https://docs.python.org/3/library/functools.html#functools.wraps
+    title: "Python: functools.wraps"
+  - link: https://mypy.readthedocs.io/en/stable/additional_features.html#extended-callable-types
+    title: "Mypy: NamedArg and other extra types"
 ---
 
 Aren't we all just constantly re-creating the same bits of code?
