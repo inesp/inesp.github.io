@@ -20,10 +20,19 @@ The best code systems are like well-designed cities: carefully planned, easy to 
 
 My other passion lies with ***people*** and our motivations as we interact with code.
 
-It started with a simple focus on the user: What's the point of the code we write? The settings should be minimal, the buttons intuitive, the design self-explanatory.
+It all started with in a wrong lecture hall. I was heading to a lecture about some "very important, backend stuff" and ended up
+in the wrong room, where somebody just casually gave the best talk of the conference, 
+a talk about intuitive design to a half empty room.
 
-But then it expanded to developers and managers. How do you build code systems that take care of the bureaucratic aspects of code interactions: **let's automate everything** that isn't fun to do manually. Technology must work for us, not we for it. How do you build a **community**, a true team of people to replace the often autocratic default relationships inside companies? 
+And since then I can't stop thinking about: What's the point of the code we write? Who is it for? 
+What do they want and need from the software? How can we make it easier for them to use it?
 
-And what's the point of the media in this whole equation? Which **lies** are we telling ourselves and which do we gladly hear from industry leaders? What is our future?
+But once you start thinking about people, you eventually realize developers and managers are also people.
 
-There are a million facets to building software. **I focus on creating solid architectures, maintainable, scalable and efficient while ensuring they align with the business goals and prioritize user needs.**
+So, what do they want and need from code? Can we build code systems that take care of the bureaucratic aspects of code interactions: **let's automate everything** that isn't fun to do manually. Technology must work for us, not we for it. How do you build a **community**, a true team of people to replace the often autocratic default relationships inside companies? 
+
+What about the on-lookers?
+What is the point of the media in this whole equation? 
+Which **lies** are we telling ourselves and which do we gladly hear from industry leaders?
+
+There are a million facets to building software. **My focus is creating solid architecture, maintainable, scalable and efficient while ensuring it aligns with the business goals and prioritizes users' needs.**
