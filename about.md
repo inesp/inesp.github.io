@@ -8,7 +8,7 @@ Hi, my name is Ines Panker. I'm a software engineer by trade and an explorer at 
 
 I'm currently making my living mostly as a Python Web Developer and a mentor for everything software-related. 
 
-My forte is **finding patters**.... in code, in systems, in data and in people. Must not forget the people 😉.
+My forte is **finding patterns**... in code, in systems, in data and in people. Must not forget the people 😉.
 
 <small>- *I hate writing about myself. I've been writing this page for 5 years now. Even in the age of ChatGPT I still can't find the words to describe myself. The right words keep eluding me.*</small>
 

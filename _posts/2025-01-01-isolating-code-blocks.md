@@ -26,7 +26,7 @@ And I'm starting with: Code that isolates (insulates) code blocks.
 
 ### Example: I'm sending emails to all team members. 
 
-If 1 person's email causes a bug, I want to code to skip this person and continue sending emails to others.
+If 1 person's email causes a bug, I want the code to skip this person and continue sending emails to others.
 
 Naive - no error handling:
 ```python
@@ -42,7 +42,8 @@ With error handling:
 def send_all_emails(users: list[User]):
     for user in users:
         with suppress_and_log_exc():
-            # ↑ Will catch any Exception, log it correctly and then. 
+            # ↑ Will catch any Exception, log it correctly 
+            # and then continue with the next user
             send_report_email_to_user(user)
 ```
 

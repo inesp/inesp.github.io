@@ -1,5 +1,5 @@
 ---
-title: "Building blocks collection: Global <code>user_id</code> / <code>request_id</code> / <code>tenant_id</code>"
+title: "Building blocks collection: Build me a global <code>user_id</code> / <code>request_id</code> / <code>tenant_id</code>"
 excerpt_separator: <!--more-->
 biblio:
   - link: https://github.com/python/cpython/blob/3.13/Lib/_threading_local.py
