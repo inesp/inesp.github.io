@@ -1,5 +1,5 @@
 ---
-title: "Building blocks collection: What to do when a DB transaction fails?"
+title: "Building blocks collection: What to do when a DB transaction fails? Retry them ♻️"
 excerpt_separator: <!--more-->
 biblio:
 ---
