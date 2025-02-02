@@ -168,7 +168,7 @@ Having a bit more trust that others are not complete idiots would do the develop
 
 **Smart, until proven silly.** This should be a good rule of thumb. 😁
 
-And following this matra leaves you with just 2 options:
+And following this mantra leaves you with just 2 options:
 - **a)** test everybody yourself -> sacrifice your time and energy to test people and become a judgy person nobody wants to work with
 - **b)** trust somebody else's judgement -> help build titles that actually mean something and then trust people with these titles
 
