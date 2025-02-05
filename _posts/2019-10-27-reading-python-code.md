@@ -1,5 +1,5 @@
 ---
-title: "Better Python Code: How reading other people's python code shaped my style"
+title: "How reading other people's python code shaped my style"
 biblio:
   -
     title: "Python Marshmallow"

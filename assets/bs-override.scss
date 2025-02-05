@@ -5,8 +5,10 @@
 @import "monokai.css";
 
 $color-yellow: #fff283;
+$color-yellow-dark: #ffed50;
 $color-hover-red: #ff0040;  // #673e9c <- violet
 $color-text: #212529;
+$color-badge-text: #5c5200;
 
 
 aside {
@@ -351,3 +353,19 @@ blockquote {
 
    width: 100%;
  }
+
+
+ /**
+  * tags
+  */
+.badge{
+  &.bg-yellow{
+    background: $color-yellow-dark;
+    color: $color-badge-text;
+  }
+  margin-right: 0.75rem;
+}
+.tags{
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}

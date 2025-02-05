@@ -1,5 +1,6 @@
 ---
 title: "Quick and easy: Add Postgres advisory locks to your Python code"
+tags: database
 excerpt_separator: <!--more-->
 biblio: 
   - title: PostgreSQL's Advisory Locks

@@ -1,5 +1,6 @@
 ---
 title: How I use Thesaurus's Synonyms to write better (i.e. advance my articulation)
+tags: people
 biblio:
   -  title: "Thesaurus"
      link: "https://www.thesaurus.com/"

@@ -15,6 +15,7 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
     </p>
 
+    <div class="tags">{%- for tag in page.tags -%}<span class="badge bg-yellow">{{ tag }}</span>{%- endfor -%}</div>
   </header>
 
   <div class="post-content {{ page.css | escape }}" itemprop="articleBody">

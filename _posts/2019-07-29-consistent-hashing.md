@@ -1,6 +1,5 @@
 ---
 title: "Consistent Hashing in a Nutshell"
-tags: ["distributed-systems"]
 biblio:
   -
     title: "Consistent Hashing: Algorithmic Tradeoffs"

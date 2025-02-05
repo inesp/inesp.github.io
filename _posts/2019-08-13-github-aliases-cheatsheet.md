@@ -1,5 +1,6 @@
 ---
 title: "Git cheat-sheet: Aliases"
+tags: git
 biblio:
   - title: "StackOverflow: Pretty git branch graphs"
     link: "https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs?page=1&tab=votes#tab-top"
