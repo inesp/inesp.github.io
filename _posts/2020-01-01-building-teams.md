@@ -1,5 +1,5 @@
 ---
-title: How to build a successful team in a culture obsessed with frontmen?
+title: How to build a successful team in a culture obsessed with lone heroes?
 tags: people
 biblio:
   - title: "How to answer ‘Are you a team player?’ in an interview"
@@ -120,7 +120,7 @@ Yes and no.
 
 I can play in a team really well, but I haven't yet seen many places, where this would be an advantage. As much as I really like helping and like building a welcoming community, it makes no sense for me to do it if this is not appreciated and reciprocated. I have been a good student of our society.
 
-As long as we obsess over individual people, who singlehandedly and completely alone ;) did some great stuff, sacrificing myself for the team just isn't the smart thing to.
+As long as we obsess over individual people, who single-handedly and completely alone ;) did some great stuff, sacrificing myself for the team just isn't the smart thing to do.
 
 We all respect the rules of the system. Let's say your company has quarterly bonuses, which are paid out to individual contributors on the basis of whether or not these individual people have fulfilled their own individual goals. I just don't see, what would motivate these individuals to put the team first, above their bonuses. 
 
