@@ -37,67 +37,114 @@ long: “It doesn’t have to be correct”, I was told, but I do have to give a
 
 **You will never be able to accurately estimate the time and effort it will take you to build a piece of software .. for as long as you keep doing new things.**
 
-As long as your projects don't resemble each other as your signatures do, you will not know how much effort it will take to finish a new project.
+It is impossible to estimate the time needed to do something you aren't familiar with it. If you haven't done a thing before and you don't have good statistics on how long these things usually take, what can you possibly base your estimate on?
 
-A lot has been said and written about software estimation, but one thing is clear: **predictions of future effort are always based on the amounts of past effort**.
+I know this is not the consensus among developers. Estimation is generally thought to be annoying, but doable. I've even met such devs that are very proud that _they_ can estimate projects pretty accurately. But then you look at research and research paints a different picture. 
+
+Research corroborates my personal experience, namely that developers are horrendous at estimating the required effort for software changed.
 
 <!--more-->
 
-#### The human vs the mathematical model
+The unfortunate truth is that **predictions of future effort are always based on the amounts of past effort**.
+
+You can only estimate projects that you are very familiar with. And only when they are executed by a team you are very familiar with. And also only if the circumstances are such that you are also very familiar with them.
+
+
+## The mathematical model that shall conquer the human model
 
 2 distinct approaches exist for measuring the future time and effort of software development:
 - asking a human expert for her opinion or
 - building a mathematical model and condensing the requirements of the software project to only the relevant parameters
 
-The approaches might seem radically different, **but the 2nd one is just trying to create a formal model of the 1st one**.
+The approaches might seem rather different, **but the 2nd one is just trying to create a formal model of the 1st one**.
 
-It is trying to cut out the human component of software estimation. It is trying to reduce an expert's decision process into a relatively simple and highly portable mathematical formula.
+It is trying to cut out the human component of software estimation. It is trying to reduce an expert's decision process into a relatively **simple** and highly **portable** mathematical formula.
 
-While it is doing this it is also often **pretending to be searching for a law of nature, for the natural relationship between software building and time, which is independent of the organization or the customer that the project is built for or by**.
+We want estimation to be as simple as putting in 5, 10, maybe 15 parameters and the robot must spits out the exact date that the code will be done. And we want the robot to be able to handle all projects, from building a web page to knitting a sweater to creating a new OS. And it shall work from now and till forever.
 
-However, the best mathematical models for software estimations are those that are **highly calibrated to the team they are measuring**.
+We have this notion that whatever is human is **flawed** and **biased**. And everything that is from-a-computer is not flawed and not biased. Which is of course utter nonsense. **Many studies have shown that we have absolutely no problem building our human flaws and biases directly into computer code.** 
 
-By "calibrated" I mean that the function for calculating the required effort is fitted to data produced by this team in past projects. **And so we are back to experiences.** If you have done this project before, then you will be able to estimate accurately how much effort it will take to do it again.
-
-
-#### Life is a moving target
+But still, we gravitate towards something that would transcend our mere humanity.
 
 
-But of course, life is a moving target. As you do the same thing again and again, you get better and faster at it. As the world around you changes: new versions of OSs, new browsers, new programming-language versions, ... you have to change too, which makes you slower again.
-
-As you lose or gain members on your project, the effort and time needed are also changed. And I haven't even begun listing any big changes: like having a harassing customer, getting a disruptive team member, having to comply with a new law, ... .
-
-It all boils down to whether or not you see the world as ever-unpredictable or ever-predictable.
-
-If it is ever predictable, then software estimation is perfectly possible and also works perfectly brilliantly.
-
-If, on the other hand, you see the world as ever-changing or you yourself are inclined to take on ever-changing projects, then any time or effort estimations are useless and deceiving.
-
-**Nobody has yet come up with a prediction system that is not based on existing past data.**
+## And the mathematical model that just copies humans
 
 
-## Is it even important?
+The math model is trying to beat the human by **pretending to be searching for a law of nature, for the natural relationship between software building and time, which is independent of the organization or the customer that the project is built for or by**.
+
+But then research shatters our idea of a superior robot, by proving that the best mathematical models for software estimations are those that are **highly calibrated to the team they are measuring**.
+
+By "calibrated" I mean that the function for calculating the required effort is fitted to data produced by this team in past projects. Or simpler: you need a team's statistics to be able to predict the team's future work.
+
+1. So, first you have to have a stable team. No team changes every year, no hiring no firing. 
+2. And then you need to measure the team's work, categorize every task and measure the time. 
+
+That is how you build yourself some good statistics, which you need to train your model.
+
+**And so we are back to experiences.** If you have done this project before AND have measured it before, then you will be able to estimate accurately how much effort it will take to do it again.
 
 
-Why are people even asking this question: "How long will it take to create this piece of software"? Because they don't have the resources to work on this forever. And this is understandable.
-
-But there is a secret message in that question as well. It is something that we understand so very, very well that we don't even think about it.
-
-The proposed piece of software doesn't need to be so complicated. It could be much simpler and still do its job.
-
-Simpler software will take fewer resources to produce. **But people don't want the simple software, they want the most that they can get for their budget.**
-
-The true question isn't: *How long will this take?*, but *What can you build for this much money?*.
+## Life is a moving target
 
 
-#### What can you build for this much money?
+But of course, life is a moving target. As you do the same thing again and again, you get better and faster at it. 
+
+As the world around you changes: new programming-language versions, new dev tool that everybody is talking about and you to apparently will have to try out, new testing requirements,  ... you have to change too, which makes you slower again.
+
+You can't stay static, you have to change too, but that makes you slower again.
+
+And I haven't even begun listing any big changes: 
+- getting new team members, who have to be trained,
+- losing team members, who were important for certain tasks,
+- having a harassing customer, who makes you re-do your work again and again until you become passive-agressive and start spending more and more of your time thinking of clever email answers to annoying comments,
+- getting a disruptive team member, who pissed of everybody on you team, who was so very productive up until just now,
+- having to comply with a new law, 
+- ... .
+
+It's a never ending tug of war. 
+
+**We are trying to stabilize the world, but the world is changing under our feet.** 
+
+**If you are a creative person, then it is even worse for your.**
+
+Creative people are inclined to take on ever-changing projects or to solve the same projects in ever new ways. Thereby never standardizing their work and thus sabotaging themselves at estimating the required effort majorly. 
+
+So, what can we do?! 
+
+
+## Why do you keep asking me for estimations?!
+
+Is it even important? Won't a task just take however long it takes?
+
+What happened last time our project took 2x as long as estimated? **Nothing.** And the time before that? Nothing either. 
+
+So, why are you even asking me: "How long will it take to create this piece of software"? 
+
+...
+
+**Because people don't have the resources to work on _this_ forever.** And this is understandable.
+
+But if the goal is to minimize resources, then let's just make the project simpler. 
+
+Whatever it is we are building, it could be built faster if we cut corners. Let's make it less pretty, less user-friendly, less error-safe. 
+
+**If we boil the project down to its minimum, then it will be done faster, thus cheaper.**
+
+But here is the catch: **people don’t want the simple software, they want the most that they can get for their budget.**
+
+The true question isn't: *How long will this take?*, but ***What can you build for this much money?*.**
+
+
+## Iteration to the rescue
 
 
 2 types of people ask this question: **managers and customers**.
 
-These 2 groups are pretty different, we communicate with them differently. **The core of answer for both of them is something along the lines of: *"Let's build it iteratively"*.**
+These 2 groups aren't the same. We communicate differently with them. Even though a certain air of professionalism is expected, we are still rather more honest with our managers than with our customers.
 
-Let's first organize the requirements by priority: what is core functionality and what is optional.
+But no matter how you will say it, the core of the answer to both of them is something along the lines of: **"Let's build it iteratively"**.
+
+Let's first organize the requirements by priority: **what is core functionality and what is optional.** And I know everything seems "core" at the beginning, but usually lots of things are more "nice to have" and less "must have".
 
 Let's then first build the foundations and the core functionality.
 
@@ -106,22 +153,26 @@ If we will then still have time and money left, let's continue.
 **And if we will then still have time and money left, let's continue.** And if we will then still have time and money left, ...
 
 
-#### Iterative solution
+## Wonky - 20 = still wonky
 
-For instance, let's say I am a freelancer creating simple web pages. A customer asks me to create their first web page, a simple presentation of who they are and what they do.
+For instance, let's say I am a freelancer creating simple web pages. A customer comes to me with a 100-pages spec of what exactly they want. They have all the details of what they like and what they don't. 
 
-They might come with a well-defined idea of what they like, with all kinds of details and requirements and a 100-page description document.
+They feel they've done all the work, all they want now is to find a person who can build it for them for the right price.
 
-They want to know how much this will cost and how long it will take.
+For me, this is nearly impossible to estimate. I didn't write the spec, it's hard for me to discern if the details are detailed enough, if all the weird cases are covered, if all functionalities are even possible.
 
-For me, this is nearly impossible to estimate. But let's say I still give them a number, which might be too big for them. So they might continue: "What about if we take these 20 pages out. How much does it cost then?".
+But let's say I do some work, I crunch the numbers, I do some push ups, I drink some coffee and I come up with a number.
 
-This doesn't make the job of estimating any easier. Even if I know exactly how much time it saves me to ignore those 20 pages, my estimation of the full 100 pages was wonky. So.. `wonky - 20 = still wonky`.
+And then they respond with: "What's too much for us, what if we take these 20 pages out. How much does it cost then?".
 
-It is much easier to start with a simpler page that can stand by itself, preferably one similar to something I've already built. After that, we can add more fancy functionalities if we will still want to.
+I don't know. I have to figure out again, how much effort those 20 pages alone are. Yes, sure, estimating 20 pages will probably produce a more accurate number than estimating 100 pages, but it is still a guess.
+
+Even if I know exactly how much time it saves me to ignore those 20 pages, my estimation of the full 100 pages was wonky. So.. `wonky - 20 = still wonky`.
+
+It is much easier to start with a simpler page that can stand by itself, preferably one similar to something I've already built. After that, we can add more fancy functionalities if we still want to.
 
 
-#### In reality every project is still a gamble
+## An electron cannot be split
 
 
 And what if the task cannot be split up? Because such things exist too: we either switch to a new system or we don't.
@@ -132,32 +183,45 @@ We have no experience doing it.
 
 **But here is a list of things we will gain and here is a list of risks we will take.**
 
-One of the risks is also that all this time and effort will go to waste. If this project is important enough, let's allocate a few resources to it so that somebody can start working on it. **If their work goes well, then let's continue, if it will still go well, then let's continue,** if it will still go well, then let's continue gradually increasing that somebody's resources.
+It is kinda funny how the tasks that are unsplitable also tend to be such that nobody has any experience with them.
+You would only ever upgrade a specific system from Python 2 to Python 3 once. So, before it is done, you haven't done it before and after it is done, it doesn't have to be done again. The only way to re-do this task is to find a similar system that is still on Python 2 and offer to upgrade it to Python 3.
 
-**But it could also not go well, in which case, we have to be prepared to stop work on this project and forget about it.**
+One of the risks of an un-splittable project is also that the project fails. With it all the time and effort wil go to waste. This is something that needs to be discussed before the project is started.
 
-**Just because we've already invested 20 person-months into this project, doesn't necessarily mean it makes sense to finish it.** Maybe it will be better to drop it. And maybe it will all go very well and we'll soon reap the rewards of starting this project.
+**Just because we've already invested 20 person-months into project X, doesn't necessarily mean it makes sense to finish it.** If we know project X is doomed, then let's stop wasting resources on it immediatelly. The fact that we've already lost 20 months doesn't mean wasting 21 months is the way to go.
+
+But maybe the project will all go very well and we'll soon reap the rewards of starting it.
+
+The way to split up an un-splittable project is to start slowly. Let's allocate only a few resources to it so that somebody can start working on it. **If their work goes well, then let's continue, if it will still go well, then let's continue,** if it will still go well, then let's continue gradually increasing that somebody's resources.
+
+In reality every project is still a gamble
 
 
-#### What are you going to do with the answer?
+## What are you going to do with the answer?
 
 
-The importance of this question is questionable. If you are asking your developers how long something will take because you will secretly send this number over to the customer as a binding offer, then stop doing it.
+And then there is the question: **What are you going to do with my answer?** What do you plan to do with "52 hours"?
 
-**Your developers are not freelancers,** they don't need to haggle with your customers over how much they pay you. That is your job.
+If you are asking your developers how long something will take because you will secretly send this number over to the customer as a binding offer, then stop doing it.
+
+**Your developers are not freelancers,** they don't need to haggle with your customers over how much the customer pays you. That is your job.
 
 If you are asking your developers for numbers to report to your superiors, then only ask for estimates of projects that are similar to existing projects they did.
 
-If you ask for estimates for projects they have no experience with, you will get made-up numbers, that you will have trouble defending later on.
+If you ask for estimates for projects the devs have no experience with, you will get made-up numbers, that you will have trouble defending later on.
 
 If you are asked this question by a customer and you are the one, who has to come up with answers to it, then try to split up the project into sub-projects that are similar to your experience.
 
 **There is no point in giving estimations that you can't stick to with a reasonable error margin.**
 
-But what if your projects are similar and you want to give estimation a go, what are your options?
+Estimations are tricky, don't use them just because. Use them when you can actually mitigate the risks.
 
 
 ## What are your options for estimation?
+
+Ok, so now we are finally at projects that we actually _can_ estimate.
+
+So, how does one go about doing this?
 
 All estimates usually take 2 things into account:
 
@@ -168,34 +232,53 @@ Unfortunately, none of these attributes is easy to assess.
 
 It would be great if I could say: "I have 4 developers and a project of size 75200. How long will it take to build the project?".
 
-But, what is *4* and what is *75200*?
+But what is 4 developers? Is every dev interchangeable? What is the avg dev's skill and motivation? Are we talking about junior/mid/senior, a new hire, a 1-year-old hire? How much is 1 dev? And am I 1 dev, 0.5 dev or 2 devs?
 
-This leaves you with 2 choices: **either you spend a looong time putting the *4* and the *75200* into some kind of perspective,** some kind of mathematical function, a prediction machine **or you ask a human to feel it,** to look at it and then say a number, from the gut, "What is your gut telling you?".
+And how does one measure the size and complexity? What is 75200? Lines of code? Number of files? Number of PRs? Number of tickets? Is 1 HTML form with 3 simple text input fields the same as 1 HTML form with 1 select field? Or is 1 select only worth 2 input fields? How does 1 GQL field compare? Is it the same as 1 HTML text input or the same as 3 or 5?
 
-Yes, these are your options. You can rely on a human or on a machine, each comes with a set of advantages and disadvantages.
+But, even if we do say 1 form is 5 somethings and 1 GQL field is 10 of those somethings. This is still not in days. 
+
+How many days is project of this size 725200 when divided by 4 developers?
+
+Somebody or something needs to specify what the relationship is between number of people and project size.
+
+And then also between people and time. How many hours does 1 average developer work? Officially 8, but practically she needs to go to meetings and needs to review other people's code and needs to answer questions and ...
+
+This leaves you with 2 choices: 
+- **either you spend a looong time putting the *4* and the *75200* into some kind of perspective,** some kind of mathematical function, a prediction machine 
+- **or you ask a human to feel it,** to look at it and then say a number, from the gut, "What is your gut telling you?".
+
+You can rely on a human or on a machine, each comes with a set of advantages and disadvantages.
 
 There have been studies comparing which is better: human or machine. The results are ... depends on who you ask. Sometimes it is the models that are better other times it is the humans.
 
 
-## Human Expert
+## Human Expert - is there such a person?
 
+Let's look at the Human Expert first.
 
-An expert would be someone, who knows how to build your project and has done it before and also knows the team. It is the complexity of the project in relation to the capabilities of the team that define the effort needed to finish the project. **This is a difficult person to find.**
+An expert would be someone, who knows how to build your project and has done it before and also knows the team. It is the complexity of the project in relation to the capabilities of the team that define the effort needed to finish the project. 
 
-**It has been known since the 70s that developers tend to give very optimistic estimations. Nothing has changed since then.**
+**This is a difficult person to find.**
 
-One of the reasons is that developers have to give lots of estimates, but then rarely track the actual effort that went into the tasks.
+**It has been known since the 70s that developers tend to give very optimistic estimations.**
 
-**If they don't track, then they can't review the initial estimate after the project is done**.
+**And unfortunately, nothing has changed since then.**
 
-Another is, that developers often estimate by breaking up the task into smaller tasks, estimate the sub-tasks and then just sum up the numbers.
+One of the reasons that nothing change is that developers **rarely track the actual effort that went into the tasks**. They estimate, but then the estimate kinda disappears into the void. The actual effort is rarely logged, so it can't truly be compared to the estimate. 
+
+**If you don't track, then you can't review the initial estimate after the project is done**. And cannot get better at estimating.
+
+Another reason for optimistic estimations is that developers often estimate by breaking up the task into smaller tasks and then they estimate the sub-tasks and then just sum up the numbers.
 
 But this way inevitably misses some tasks, while giving the estimator a really good feeling of having thought of everything.
 
-It is nearly impossible to come up with a complete list of every sub-task that will need to be done. We also tend to forget to include any unexpected problems. Problems we will only understand once we are staring them down.
+It is nearly impossible to come up with a complete list of every sub-task that will need to be done. 
+
+We especially tend to forget to include any unexpected problems. Problems we will only understand once we are staring them down. These are often called the unknown-unknowns. They are things we don't know will come up.
 
 
-#### Research proves that devs are really bad at estimating
+## Research shows that devs are horrendous at estimating
 
 
 The researchers M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold did a marvelous study of how developers badly under-estimate the required effort titled ***Better Sure Than Safe? Overconfidence in Judgment Based Software Development Effort Prediction Intervals***.
@@ -204,26 +287,55 @@ They observed how estimates are asked for, but then rarely reviewed after the pr
 
 > We investigated <u>more than 100 projects</u> from 6 development organizations and found that about <u>30% of the projects had applied effort prediction intervals</u> on the activity level. However, <u>only 3 of these projects had logged the actual effort</u> applying the same work break-down structure as used when estimating the effort. In fact, even these three projects had to split and combine some of the logged effort data to enable an analysis of the accuracy of the effort of PIs (tn: PI = prediction interval, a minimum - maximum effort).
 
-They also created 5 teams of developers and asked them to estimate the effort needed for a project.
+There is 1 specific excercise they did in this study that I particularly like.
 
-**The project was an actual past project of the company they worked for.**
+The researches went to one company and chose 20 participants and put them into 5 teams. Each team got 4 members: 
+- one developer
+- one project manager
+- one designer
+- and one "Engagement manager", a person who is responsible for the customer relationship.
 
-The original estimation for the project was 1240 hours, but the project took 2400 hours to be finished.
+So, only 2 people with a more technical know-how of creating software.
 
-The teams produced the following values as the Estimate of the most likely effort: 1100, 1500, 1550, 1339, 2251. **Just one of the teams came close to the actual number of hours spent, the other 4 had incredibly optimistic numbers.**
+Then the researches choose an old project that the company did in the past and none of the participants worked on. This past project had an original effort estimation of 1240 hours, but it took the team 2400 hours to finish. **The project was chosen because it was very typical for the company and because it didn't encounter any weird problems, which would explain why it took 100% more time than estimated.**
 
-Another interesting part of the experiment was that **the worse estimations were done by developers and project managers**. (So, please, project managers, stop pressuring the developers with statements like: "How can this take more than 1 day to create?". Such statements are just pure ignorance 🙄 )
+Then they asked the participants of the exercise to estimate the effort needed to complete the project, first by themselves and in teams.
+
+The teams produced the following values as the Estimate of the most likely effort: 
+- 1100h 
+- 1500h 
+- 1550h 
+- 1339h 
+- 2251h
+
+**Just one of the teams came close to the actual number of hours spent, the other 4 had incredibly optimistic numbers.**
+
+So, again, this was a typical project for this organization, nothing extraordinary has happened. The estimates are just too optimistic.
+
+The best part, however, come to light when you look at the individual estimations. It turns out that **the worse estimations were done by developers and project managers**.
+
+| Team                | Median estimate |
+|:--------------------|-----------------|
+| Developers          | 660h            |
+| Project Managers    | 960h            |
+| Designers           | 1260h           |
+| Engagement Managers | 1550h           |
+{:.table}
 
 > The lowest effort estimates were provided by the developers and the project managers, whereas the user interaction designers and the engagement managers gave generally higher estimates.<br>
 > ...<br>
 > As a result, technical background did not lead to better effort PIs (tn: PI = prediction interval, a minimum - maximum effort), only to more confidence in the estimates. This is in line with the distinction between an "inside" versus an "outside" view in predictions (Kahneman and Lovallo 1993).
 
-So.. what did Kahneman and Lovallo say about inside and outside predictions? Here is an excerpt of their paper *Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking*:
+Thus, maybe you can take this as a friendly remider to stop saying (even to yourself) "How can this take more than X?". It can, because it does. We are just too optimistic about our abilities.
+
+But let's look at the "Kahneman and Lovallo" who are mentioned aboe. What do they say about inside and outside predictions? 
+
+Here is an excerpt of their paper *Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking*:
 
 > An inside view forecast is generated by focusing on the case at hand, by considering the plan and the obstacles to its completion, by constructing scenarios of future progress, and by extrapolating current trends. The outside view is the one that the curriculum expert was encouraged to adopt. It essentially ignores the details of the case at hand, and involves no attempt at detailed forecasting of the future  history of the project. Instead, it focuses on the statistics of a class of cases chosen to be similar in relevant respects to the present one.
 
 
-#### "Could we do it in 4 months?" <br> "If we skip a few things and smash up a few others, maybe..probably.." <br> "Ok, let's put 3 months then".
+## "Could we do it in 4 months?" <br> "If we skip a few things and smash up a few others, maybe..probably.." <br> "Ok, let's put 3 months then".
 
 
 Another powerful reason for over-optimistic developer-estimates I would like to emphasize is the social component of estimation.
@@ -255,7 +367,7 @@ But I knew that 6 months was a perfectly optimistic number. Our app was huge and
 The +6-months number will stir up a lot of anxiety, but the project still needs to be done, it will be great, once it is done and anxiety is not helping anyone. And so we said: **"Could we do it in 4 months?", "If we skip a few things and smash up a few others, maybe..probably..", "Ok, let's put +3 months then".**
 
 
-#### Better to be precise than accurate
+## Better to be precise than accurate
 
 
 M. Jørgensen, K. Teigen and K. J. Moløkken-Østvold saw something similar in their research.
@@ -333,7 +445,7 @@ It has been shown that a model that is better fitted to the organization using i
 **But this again means that your organization must be producing similar projects with similar people**, that you have to first meticulously track the requirements and the effort invested into several projects and that you must be careful to not create a model that is over-fitted to your data.
 
 
-### Estimation variables
+## Estimation variables
 
 
 Producing a good model for your organization may legitimately be too complex or too time-consuming.
@@ -349,7 +461,7 @@ Figuring out which information produces the most accurate result is a difficult 
 Even if you have finished a very similar project, you still don't know how much more time you will need to add that 1 "tiny" change that is in the requirements.
 
 
-#### A metric must be defined together with the procedure to measure it
+## A metric must be defined together with the procedure to measure it
 
 
 In 1994 N. Fenton published an elegant paper titled *"Software Measurement: A Necessary Scientific Basis"*, in which he emphasized that we have to define metrics in an empirical way.
