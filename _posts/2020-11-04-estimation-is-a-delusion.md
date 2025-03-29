@@ -2,26 +2,29 @@
 title: Software estimation is a delusion
 excerpt_separator: <!--more-->
 biblio:
-  - title: "N. Fenton: Software measurement: a necessary scientific basis"
+  - title: "N. Fenton: Software measurement: a necessary scientific basis, 1994"
     link: "https://www.ipd.kit.edu/mitarbeiter/padberg/lehre/sqs07/FentonTSE1994.pdf"
-  - title: "M. Jørgensen: Estimation of Software Development Work Effort:Evidence on Expert Judgment and Formal Models"
+  - title: "M. Jørgensen: Estimation of Software Development Work Effort:Evidence on Expert Judgment and Formal Models, 2007"
     link: "https://www.simula.no/publications/estimation-software-development-work-effortevidence-expert-judgment-and-formal-models"
-  - title: "M. Jørgensen, S. Grimstad: The Impact of Irrelevant and Misleading Information on Software Development Effort Estimates: a Randomized Controlled Field Experiment"
+  - title: "M. Jørgensen, S. Grimstad: The Impact of Irrelevant and Misleading Information on Software Development Effort Estimates: a Randomized Controlled Field Experiment, 2011"
     link: https://www.simula.no/publications/impact-irrelevant-and-misleading-information-software-development-effort-estimates
-  - title: "COCOMO: Not worth serious attention"
+  - title: "M. Jørgensen and M. Shepperd: A Systematic Review of Software Development Cost Estimation Studies, 2007"
+    link: https://web-backend.simula.no/sites/default/files/publications/Jorgensen.2007.1.pdf
+  - title: "COCOMO: Not worth serious attention, 2016"
     link: "http://shape-of-code.coding-guidelines.com/2016/05/19/cocomo-how-not-to-fit-a-model-to-data/"
-  - title: "M. Jørgensen, M. Shepperd: Systematic Review of Software Development Cost Estimation Studies"
+  - title: "M. Jørgensen, M. Shepperd: Systematic Review of Software Development Cost Estimation Studies, 2007"
     link: "https://www.simula.no/publications/systematic-review-software-development-cost-estimation-studies"
-  - title: "M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold: Better Sure Than Safe? Overconfidence in Judgment Based Software Development Effort Prediction Intervals"
+  - title: "M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold: Better Sure Than Safe? Overconfidence in Judgment Based Software Development Effort Prediction Intervals, 2004"
     link: "https://www.simula.no/publications/better-sure-safe-overconfidence-judgment-based-software-development-effort-prediction"
-  - title: "S. Basha, P.Dhavachelvan: Analysis of Empirical Software Effort Estimation
-Models"
+  - title: "S. Basha, P.Dhavachelvan: Analysis of Empirical Software Effort Estimation Models, 2010"
     link: "https://www.researchgate.net/publication/43245283_Analysis_of_Empirical_Software_Effort_Estimation_Models"
   - title: "Estimation Techniques - Function Points"
     link: "https://www.tutorialspoint.com/estimation_techniques/estimation_techniques_function_points.htm"
-  - title: "Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking"
+  - title: "D. Kahneman and Dan Lovallo: Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking, 2000"
     link: "https://www.researchgate.net/publication/330960812_Timid_Choices_and_Bold_Forecasts_A_Cognitive_Perspective_on_Risk_Taking"
-  - title: "B.Boehm, C.Abts: Software Development Cost Estimation Approaches – A Survey"
+  - title: "Hareton Leung: Software Cost Estimation, 2001"
+    link: https://www.researchgate.net/publication/2406503_Software_Cost_Estimation
+  - title: "B.Boehm, C.Abts: Software Development Cost Estimation Approaches – A Survey, 2000"
     link: "https://www2.seas.gwu.edu/~mlancast/cs254/usccse2000-505.pdf"
   - title: "Wikipedia: Regression analysis"
     link: "https://en.wikipedia.org/wiki/Regression_analysis"
@@ -286,6 +289,9 @@ The researchers M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold did a marvelo
 They observed how estimates are asked for, but then rarely reviewed after the project:
 
 > We investigated <u>more than 100 projects</u> from 6 development organizations and found that about <u>30% of the projects had applied effort prediction intervals</u> on the activity level. However, <u>only 3 of these projects had logged the actual effort</u> applying the same work break-down structure as used when estimating the effort. In fact, even these three projects had to split and combine some of the logged effort data to enable an analysis of the accuracy of the effort of PIs (tn: PI = prediction interval, a minimum - maximum effort).
+<figcaption>
+&mdash; M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold, Better Sure Than Safe? Overconfidence in Judgment Based Software Development Effort Prediction Intervals
+</figcaption>
 
 There is 1 specific excercise they did in this study that I particularly like.
 
@@ -325,15 +331,18 @@ The best part, however, come to light when you look at the individual estimation
 > The lowest effort estimates were provided by the developers and the project managers, whereas the user interaction designers and the engagement managers gave generally higher estimates.<br>
 > ...<br>
 > As a result, technical background did not lead to better effort PIs (tn: PI = prediction interval, a minimum - maximum effort), only to more confidence in the estimates. This is in line with the distinction between an "inside" versus an "outside" view in predictions (Kahneman and Lovallo 1993).
+<figcaption>
+&mdash; M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold, Better Sure Than Safe? Overconfidence in Judgment Based Software Development Effort Prediction Intervals
+</figcaption>
 
 Thus, maybe you can take this as a friendly remider to stop saying (even to yourself) "How can this take more than X?". It can, because it does. We are just too optimistic about our abilities.
 
-But let's look at the "Kahneman and Lovallo" who are mentioned aboe. What do they say about inside and outside predictions? 
-
-Here is an excerpt of their paper *Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking*:
+But let's look at the "Kahneman and Lovallo" who are mentioned aboe. What do they say about inside and outside predictions?
 
 > An inside view forecast is generated by focusing on the case at hand, by considering the plan and the obstacles to its completion, by constructing scenarios of future progress, and by extrapolating current trends. The outside view is the one that the curriculum expert was encouraged to adopt. It essentially ignores the details of the case at hand, and involves no attempt at detailed forecasting of the future  history of the project. Instead, it focuses on the statistics of a class of cases chosen to be similar in relevant respects to the present one.
-
+<figcaption>
+&mdash; Kahneman and Lovallo, Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking
+</figcaption>
 
 ## "Could we do it in 4 months?" <br> "If we skip a few things and smash up a few others, maybe..probably.." <br> "Ok, let's put 3 months then".
 
@@ -395,6 +404,9 @@ The participants were then asked 3 questions. Here is how they answered the firs
 > The preference for D1 in the (a)-question means that nearly all the software professionals preferred the much too narrow intervals of D1 to the statistically more appropriate intervals of D2!<br>
 > ...<br>
 > Answers to question (b) revealed that wider intervals were believed to indicate less task knowledge.
+<figcaption>
+&mdash; M. Jørgensen, K. Teigen and K. J. Moløkken-Østvold, Better sure than safe? Overconfidence in judgment based software development effort prediction intervals, 2004
+</figcaption>
 
 From all this, we can say that a lot goes into producing an estimate. It is not just the number of resources that need to be reserved.
 
@@ -434,31 +446,57 @@ There is an incredible variety of mathematical models available:
 - ...
 
 
-All of them have been studied by researchers, but I could find no data about how often a mathematical approach is used in software companies.
+All of them have been studied by researchers. It was studied how accurate these methods are and how they compare to each other.
 
-Even worse, I did find this 2007 review of existing studies (A Systematic Review of Software Development Cost Estimation Studies by M.Jørgensen and M.J.Shepperd), which found **very few case studies of how estimation is actually performed in companies**:
+But then I came across this 1 paper that did a review of existing studies and found that **very few case studies exist on how estimation is actually performed in companies**:
 
 > The proportion of estimation studies where estimation methods are studied or evaluated in real-life situations is low. We could not, for example, find a single study on how software companies actually use formal estimation models. Our knowledge of the performance of formal estimation models is, therefore, limited to laboratory settings
+<figcaption>
+&mdash; M.Jørgensen and M.J.Shepperd, A Systematic Review of Software Development Cost Estimation Studies, 2007
+</figcaption>
 
-It has been shown that a model that is better fitted to the organization using it will produce better estimates. (By C.S.Murali and C.Sankar in "Issues in estimating real-time data communications software projects" in 1997 and R.Jeffery, M.Ruhe and I.Wieczorek in "Comparative study of two software development cost modeling techniques using multi-organizational and company-specific data" in 2000.)
+It is true that 2007 is quite some years ago, but still. 
 
-**But this again means that your organization must be producing similar projects with similar people**, that you have to first meticulously track the requirements and the effort invested into several projects and that you must be careful to not create a model that is over-fitted to your data.
+So, all these formal modals are created and tested and researched and compared, but nobody is actually using them? 
+
+We, devs, in our daily work, still prefer to estimate by gut feeling, by experience? 
+
+At least most, if not all, companies use the "Human expert"-approach and not the mathematical model approach.
+
+This means I could go on and on about how great neural networks are or how great Bayesian statistics are, but we, devs, don't seem to be truly interested in this. 
+
+What makes matters for these formal models even worse is that for each one you can for sure find studies praising it, but you can also find other studies pointing out their weaknesses and failures. 
+
+The more I read about these, the more I felt I was reading about nutrition. Which food is health for us? What can/should I eat? Research doesn't seem to agree. Fish is really healthy, except for the mercury. Vegetables are really healthy, except for the pesticides. Estimation algorithms seem to follow the same pattern.
+
+> Today, almost no model can estimate the cost of software with a high degree of accuracy. This state of the practice is created because
+> - (1) there are a large number of interrelated factors that influence the software development \[...\]
+> - (2) the development environment is evolving continuously
+> - (3) the lack of measurement that truly reflects the complexity of a software system
+> 
+> \[...\]
+> 
+> To improve the algorithmic models, there is a great need for the industry to collect projectdata on a wider scale.
+<figcaption>
+&mdash; Hareton Leung, "Software Cost Estimation", 2001
+</figcaption>
 
 
-## Estimation variables
+## Estimation variables - which information is even relative?
 
 
 Producing a good model for your organization may legitimately be too complex or too time-consuming.
 
-The biggest issue is how to get all the contextual information that is currently stored in the heads of your team  members into the model. Which information is even relative?
+The biggest issue is how to get all the contextual information that is currently stored in the heads of your teams into the model. Which information is even relative?
 
-**Given that there is no one estimation method that had been proven best, it seems safe to say that it is not the method itself that produces accurate results, but what information you feed it with.**
+**Given that there is no one estimation method that had been proven best, it seems safe to say that it is not the method itself that produces accurate results, but what information you feed it with.** This "information" is called "estimation variables".
 
-Figuring out which information produces the most accurate result is a difficult job and it is made even worse by the fact that all your numbers are fabricated.
-
-**You don't know how big a project will be once it is finished: how many lines of code you will create, how many tests, how many files.**
-
-Even if you have finished a very similar project, you still don't know how much more time you will need to add that 1 "tiny" change that is in the requirements.
+Estimation variables are the main parameters that define your project's required time and effort. It is things like: 
+- the LOC (lines of code) that will be produced for this project
+- the complexity of the product, which is usually just assessed as T-shirt sizes
+- the size of the database needed
+- how many "function points" is the project going to produce
+- ...
 
 
 ## A metric must be defined together with the procedure to measure it
@@ -466,19 +504,39 @@ Even if you have finished a very similar project, you still don't know how much 
 
 In 1994 N. Fenton published an elegant paper titled *"Software Measurement: A Necessary Scientific Basis"*, in which he emphasized that we have to define metrics in an empirical way.
 
-A metric has to be defined together with the procedure for determining the value.** It is not enough to say that a project's size can be small, medium or big. We must also define how to measure the project's size.**
+A metric has to be defined together with the procedure for determining the value. **It is not enough to say that a project's size can be small, medium or big. We must also define how to measure the project's size.**
 
-Do we look for the number of files, the number of lines, is 1000 lines a small project, is it medium?
+> For  predictive  measurement  the  model (tn: =metric)  alone  is  not  sufficient.  Additionally,  we  need  to  define  the  procedures  for 
+> - a) determining model parameters and 
+> - b) interpreting  the results.
+> \[...\]
+>
+> The model, together with procedures (a) and (b), is called a prediction system. Using  the same model  will generally yield  different results if  we  use different prediction procedures.
 
-This is especially important for predictions. Some mathematical models still exist that need the LOC (=lines of code) number to predict the time and effort for a software project. But it is impossible to know the LOC of a future project, **so we are replacing one guess with another**:
+If the model/metric is LOC(=lines of code), then we also need to define how to **unambiguously count** the lines of code and **unambiguously interpret** the result of. For LOC this means that formatting must be perfectly clear, so that the same project always produces the same number and that this number is always interpreted as the same project size.
+
+
+## The problem with estimation variables
+
+
+But the problem with **lots of these estimation variables is that you can only know these after the project is done**. How many lines of code will this project produce? Nobody knows.
+
+It is impossible to know the LOC of a future project, **so we are replacing one guess with another**:
 
 > ..  size is defined as the number of delivered source statements (tn: LOC), which is an attribute of the final implemented system. Since the prediction system is used at the specification phase, we have to predict the product attribute size in order to plug it into the model. This means that we are replacing one difficult prediction problem (effort prediction) with another prediction problem which may be no easier (size prediction).
+<figcaption>
+&mdash; N. Fenton, Software Measurement: A Necessary Scientific Basis, 1994
+</figcaption>
 
-A way to estimate the size and complexity of a project is **via function points (=FPs), which express the amount of functionality a program provides to its users**.
+Of course, not everything is based on LOC. Some estimations are based on **function points (=FPs), which express the amount of functionality a program provides to its users**.
 
 Once 1 FP is defined, it is theoretically easy to count all FPs a project will create by reading through the requirements.
 
 The time it takes to deliver 1 FP is calculated from previous projects. The theory has been developed into a few ISO standards, but it has also seen a lot of criticism and quite a few improvement attempts. **Whether it will work for you or not is ... unknown.** 😛
+
+Now, to be fair, behind every estimation variable is a whole spec for how to estimate it accurately, how to make it work for any project. And I don't want to go into those details.
+
+But this all feels to me like kicking the can down the road. We don't know how to estimate the project's deadline, so we try to estimate the projects's lines-of-code, but we don't know how to get that number, so we say, we can get this out of "function points" of the project, but we don't know how to get that number, so we'll count certain words in the technical specification for ht project, but we can't really take that for granted, so we'll try to compile a list of synonyms that should also be included, but we can't...
 
 
 ## Conclusion
@@ -486,9 +544,10 @@ The time it takes to deliver 1 FP is calculated from previous projects. The theo
 
 **It is easy to get pulled into the details of *how* these approaches work and completely forget that we haven't yet proven that they even *will* work**, that they will give you an accurate number. The research does not favor one approach over the others.
 
-B.Boehm and C. Abts say in *Software Development Cost Estimation Approaches – A Survey*:
-
 > The important lesson to take from this paper is that no one method or model should be preferred over all others. The key to arriving at sound estimates is to use a variety of methods and tools and then investigating the reasons why the estimates provided by one might differ significantly from those provided by another.
+<figcaption>
+&mdash; B.Boehm and C. Abts, Software Development Cost Estimation Approaches – A Survey, 2000
+</figcaption>
 
 But as we've seen, **maybe it isn't really accuracy that businesses and people are looking for. Maybe estimates are needed for the sole purpose of risk aversion.** People want to know what the risks of starting this project are.
 
