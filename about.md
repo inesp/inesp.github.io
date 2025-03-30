@@ -4,35 +4,30 @@ title: Who am I
 permalink: /about/
 ---
 
-Hi, my name is Ines Panker. I'm a software engineer by trade and an explorer at heart. 
+Hi, my name is Ines Panker. I'm a software engineer by trade and an explorer at heart.
 
-I'm currently making my living mostly as a Python Web Developer and a mentor for everything software-related. 
+I've been building software **for almost 2 decades**. In the last 10 years focusing on **Python**.
 
-My forte is **finding patterns**... in code, in systems, in data and in people. Must not forget the people 😉.
+I'm fascinated by elegant solutions to complex problems, **finding simple, straightforward patterns in** what at first glance appears to be **unorganized chaos**. 
 
-<small>- *I hate writing about myself. I've been writing this page for 5 years now. Even in the age of ChatGPT I still can't find the words to describe myself. The right words keep eluding me.*</small>
-
-I'm good at organizing chaos and also good at simplifying complexity to just the right level for every situation. 
+At the beginning, code often takes the form of 50 if-statements one after the other, but then it must evolve towards systems that hold their own meaning inside themselves, **systems that are intuitive to use and intuitive to maintain and extend**.
 
 **Think of me as the chaos whisperer.** I'm turning wild messes into smooth, scalable systems. 
 
 The best code systems are like well-designed cities: carefully planned, easy to navigate, and capable of growing without falling apart. The catch is to build **foundations** while creating solutions.
 
-My other passion lies with ***people*** and our motivations as we interact with code.
+My other passion is to observe the **human aspect** of software. 
 
-It all started with in a wrong lecture hall. I was heading to a lecture about some "very important, backend stuff" and ended up
-in the wrong room, where somebody just casually gave the best talk of the conference, 
-a talk about intuitive design to a half empty room.
+The IT profession wants to give the impression that code is at the center of everything, technical details rule our world. But as soon as you look closer, you can find **humans everywhere** - we build software for people to use it, we build software in teams of people, we are being watched by the society of people while we built it.
 
-And since then I can't stop thinking about: What's the point of the code we write? Who is it for? 
-What do they want and need from the software? How can we make it easier for them to use it?
+Building software is a deeply human endeavor. 
 
-But once you start thinking about people, you eventually realize developers and managers are also people.
+The questions start with: Who will use this code and how? How will they try to abuse it? 
 
-So, what do they want and need from code? Can we build code systems that take care of the bureaucratic aspects of code interactions: **let's automate everything** that isn't fun to do manually. Technology must work for us, not we for it. How do you build a **community**, a true team of people to replace the often autocratic default relationships inside companies? 
+But then quickly and silently transition into questions about our teams: How do I make other devs abopt new coding principals? How do I make the manager see that security is also essential and PR reviews prevent bugs? 
 
-What about the on-lookers?
-What is the point of the media in this whole equation? 
-Which **lies** are we telling ourselves and which do we gladly hear from industry leaders?
+And then gradually we also see that society is watching: Why is my doctor tentatively asking  me if AI will replace her? The news is talking about drones sending medicine to remote areas, is my code running on them?
 
-There are a million facets to building software. **My focus is creating solid architecture, maintainable, scalable and efficient while ensuring it aligns with the business goals and prioritizes users' needs.**
+There are a million facets to building software. Building software starts way before we open a code editor, it starts already in various meeting rooms and in meetups and conferences. And it ends way after we close the code editor, it ends in the hands of the users, in the hands of the society.
+
+**My focus is thus creating solid architecture, maintainable, scalable, safe and efficient while ensuring it aligns with the business goals and prioritizes users' needs.**
