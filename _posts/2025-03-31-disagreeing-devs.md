@@ -41,7 +41,7 @@ And you've also probably have already been at a meeting, where a new idea is pro
 
 The commentators will sound like this: _"I've though about this for full 5 mins and I *know* this is a bad idea. I've never done it before or have seen it being done, but I just know *you* are for sure not right."_
 
-## It's not because we are mean
+## Are we just mean people? 
 
 Here is why I think we argue soo much.
 
@@ -56,7 +56,7 @@ So, we either make up hard problems by arguing how the correct method name will 
 But why do we feel that we need to prove ourselves? Here are a few ideas:
 
 
-## Working alone, in silence
+## Working alone, in silence... possibly in a basement
 
 
 We spend so much time in our heads.
@@ -68,6 +68,7 @@ Reading.
 Writing and thinking again.
 
 By the time we open a PR, propose a solution, we often aren’t interested in feedback anymore. We’ve already thought and read and wrote.
+
 We are done now.
 
 
@@ -79,12 +80,14 @@ Another reason is our society that is obsessed with individual people,  who *sin
 We are all good students. If individualism is highly rewarded, then can we really be blamed for being individualistic?
 
 
-## Change? No thank you
+## Change? No, thank you
 
 
-The next problem is changing old ways. At the beginning we know nothing, but as we learn stuff, we want to keep believing this forever. Once you believe something, it is hard to stop believing it.
+The next problem is changing old ways. At the beginning we know nothing, but as we learn stuff, we want to keep believing it forever. 
 
-Let me quote some old research on opinion forming that I came across:
+Once you believe something, it is hard to stop believing it.
+
+Let me quote some a research paper on opinion forming that I came across:
 
 > The first result of our experiment is that participants exhibited a significant bias toward their own initial opinion rather than equally weighting all social information they were exposed to.
 > 
@@ -95,7 +98,7 @@ Let me quote some old research on opinion forming that I came across:
 &mdash; Moussaïd M, Kämmer JE, Analytis PP, Neth H., Social Influence and the Collective Dynamics of Opinion Formation, 2013
 </figcaption>
 
-Most of us will always first try to confirm we are right, before we even entertain the possibility that we are wrong.
+**Most of us will always first try to confirm we are right, before we even entertain the possibility that we are wrong.**
 
 
 ## 1.000.000 more reasons
