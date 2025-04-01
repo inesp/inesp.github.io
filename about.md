@@ -6,7 +6,10 @@ permalink: /about/
 
 Hi, my name is Ines Panker. I'm a software engineer by trade and an explorer at heart.
 
-I've been building software **for almost 2 decades**. In the last 10 years focusing on **Python**.
+I've been building software **for almost 2 decades** — writing code, shaping architecture, and leading teams. I started my journey in **Java**, surfed the PHP wave, and for the past decade, **Python** has been my weapon of choice.
+
+&nbsp;
+
 
 I'm fascinated by elegant solutions to complex problems, **finding simple, straightforward patterns in** what at first glance appears to be **unorganized chaos**. 
 
@@ -30,4 +33,4 @@ And then gradually we also see that society is watching: Why is my doctor tentat
 
 There are a million facets to building software. Building software starts way before we open a code editor, it starts already in various meeting rooms and in meetups and conferences. And it ends way after we close the code editor, it ends in the hands of the users, in the hands of the society.
 
-**My focus is thus creating solid architecture, maintainable, scalable, safe and efficient while ensuring it aligns with the business goals and prioritizes users' needs.**
+**My focus? Crafting solid architectures that are maintainable, secure and efficient while ensuring it aligns with the business goals and prioritizes users' needs.**
