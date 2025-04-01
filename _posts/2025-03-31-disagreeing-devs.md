@@ -1,6 +1,5 @@
 ---
-title: "Why do developers argue so much?"
-subtitle: "The never-ending debate or Code hard, argue harder"
+title: "Why do Developers Argue so Much? Code Hard, Argue Harder"
 excerpt_separator: <!--more-->
 biblio:
   - title: Moussaïd M, Kämmer JE, Analytis PP, Neth H., Social Influence and the Collective Dynamics of Opinion Formation, 2013
