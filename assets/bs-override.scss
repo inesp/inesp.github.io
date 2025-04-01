@@ -118,6 +118,13 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
   margin-bottom: 2rem;
 }
 
+.post-content .w-65{
+    width: 65%;
+    @media (max-width: 991.9px) {
+      width: 100%;
+    }
+}
+
 .post-excerpt {
   margin-bottom: 8rem;
 
