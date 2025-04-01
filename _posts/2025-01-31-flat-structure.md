@@ -1,5 +1,5 @@
 ---
-title: "Opinion: In Defence of Hierarchical Command Structures or Why Developers Argue all the Time"
+title: "Opinion: In Defence of Hierarchical Command Structures"
 excerpt_separator: <!--more-->
 biblio:
 tags: opinion people 
