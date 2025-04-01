@@ -27,6 +27,9 @@ I've heard(*) that 72% of developers believe that there is a right and a wrong w
 But the problem in this is that these 72% do not agree with each other at all.
 
 {% include image.html alt="Etsy" src="debate/72-percent.jpg" %}
+_(*) I made this up, but it sounds plausible, right?_
+
+## Great fights
 
 For instance, have you ever seen PR reviews that are full of nit-picking comments?
 
