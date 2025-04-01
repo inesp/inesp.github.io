@@ -94,13 +94,17 @@ Let me quote some old research on opinion forming that I came across:
 
 Most of us will always first try to confirm we are right, before we even entertain the possibility that we are wrong.
 
+
 ## 1.000.000 more reasons
+
 
 There's obviously more to it. 
 
 And it is curious that on average people, who are educated in academia tend to be more argumentative than people who are not. But, let's put this aside for a future discussion.
 
+
 ## How to get better?
+
 
 I believe, there is only 1 cure to this arguing epidemic.
 
