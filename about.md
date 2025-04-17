@@ -4,7 +4,7 @@ title: Who am I
 permalink: /about/
 ---
 
-Hi, my name is Ines Panker. I'm a software engineer by trade and an explorer at heart.
+Hi, my name is Ines Panker. I'm a Software Engineer by trade and an Explorer at heart.
 
 I've been building software **for almost 2 decades** — writing code, shaping architecture, and leading teams. I started my journey in **Java**, surfed the PHP wave, and for the past decade, **Python** has been my weapon of choice.
 
