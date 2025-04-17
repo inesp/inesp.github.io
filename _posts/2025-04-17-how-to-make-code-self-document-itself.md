@@ -27,9 +27,9 @@ The `assert ...`-statements are a weird concept. Officially, they are supposed t
 
 Given how flexible and type-unsafe and non-prescriptive Python code often is, it is nerve-wrecking to add `assert`-s to existing code that already runs in production. Add to this that there are basically never any `except AssertionError`-statements anywhere, so a failing `assert`-statement will crash the whole program.
 
-Thus, we often choose to avoid using `assert`-s entirely. Instead, we use `raise ValueError()` or `raise TypeError()` or `raise MyCustomException()`. It's just easier more consistent, cleaner that way.
+Thus, we often choose to avoid using `assert`-s entirely. Instead, we use `raise ValueError()` or `raise TypeError()` or `raise MyCustomException()`. It's just easier, more consistent, cleaner that way.
 
-**But, there is one niche where `assert`-s are actually the best choice. And that is as forceful documentation.** Assert-statements can be tripping wire for future code changes, they can prevent the code from being changed in ways that are not supported by all parties. Let me show you how.
+**But, there is one niche where `assert`-s are actually the best choice. And that is as forceful documentation.** Assert-statements can be a tripping wire for future code changes, they can prevent the code from being changed in ways that are not supported by all parties. Let me show you how.
 
 **IMPORTANT**: These `assert` statements must fail as soon as the code is written / imported, not only once the code is run. Thus, these are generally not inside functions, but alongside them.
 {:.box}
@@ -42,6 +42,8 @@ Our scenario: we have 2 "systems" (any 2 small pieces of code) that work togethe
 Solution: Add an `assert` that expresses this relationship. The assert should fail, if the 2 "systems" become out of sync.
 
 Code example:
+
+We let users connect various providers (GitHub, Jira, ...) into our app, some are connected via OAuth, others via API keys.
 
 ```python
 # File constants.py
@@ -83,11 +85,15 @@ Solution: Add an `assert` that expresses this limitation.
 
 Code example:
 
+We have `Action`-classes. Each action needs a global-slug, so we register them in a registry. 
+
 ```python
 # --- File base_action.py ---
 from abc import ABC
 from abc import abstractmethod
 from typing import TypeVar
+
+# The basic Action-class with the mandatory property "slug"
 
 class ActionABC(ABC):
     @property
@@ -100,10 +106,16 @@ TAnyAction = TypeVar("TAnyAction", bound=ActionABC)
 
 # --- File registry.py ---
 
+# Our registry of all defined Action-classes
 TActionSlug = str
 _registry: dict[TActionSlug, TAnyAction] = {}
 
 def register_action(action: TAnyAction) -> None:
+    # 
+    # Our magic assert:
+    #
+    # Here we make sure that no 2 action classes can ever have the same slug.
+    # 
     assert action.name not in _registry, (
         f"Action with name '{action.name}' is already registered. "
         f"Please use a different name for action class {action}."
@@ -113,6 +125,8 @@ def register_action(action: TAnyAction) -> None:
     return action
 
 # --- File sky_actions.py ---
+
+# Some action classes, that we define and register
 
 @register_action
 class CouldAction(ActionABC):
@@ -130,13 +144,15 @@ class BrightSunAction(ActionABC):
 
 ## Example 3: Mandatory style
 
-Our scenario: We have some code in prod and we kept running into the same kind of bugs. After some deliberation, we decided that the best way forward is to enforce a stricter coding style for these specific pieces of code. 
+Our scenario: We have some code in prod and we kept running into the same kind of bugs. After some deliberation, we decided that the best way forward is to **enforce a stricter coding style for these specific pieces of code.** 
 
 More specifically: let's say we are using Celery for running background tasks. Every task accepts any arbitrary list of arguments, but we now want all of these arguments to always be keyword arguments, never positional arguments, always `kwargs`.
 
 Solution: extend the Celery `task`-decorator (or the BaseCelery task) with an `assert` that demands `kwargs` only.
 
 Code example:
+
+We are defining Celery tasks and we want to allow only keyword arguments as task inputs.
 
 ```python
 # --- File celery.py ---
@@ -146,18 +162,22 @@ from typing import Any
 
 from celery import Celery
 
+# Initialize the Celery app
 app = Celery(...)
 
+# This decorator is used to register a new Celery task. Every func that wants to
+# be a Celery task will be decorated with this decorator.
 @functools.wraps(app.task)
 def celery_task(**kwargs: Any):
     def inner(func: Callable):
-        enforce_kwargs(func)
+        _enforce_kwargs(func)
 
         return app.task(**kwargs)(func)
 
     return inner
 
-def enforce_kwargs(func: Callable) -> None:
+def _enforce_kwargs(func: Callable) -> None:
+    # Here we check the args and kwargs of the wannaby Celery task
     func_name: str = func.__name__
     
     num_of_positional_args = func.__code__.co_argcount
@@ -169,6 +189,11 @@ def enforce_kwargs(func: Callable) -> None:
     # The only positional arg allowed is "self"
     all_positional_args = set(all_positional_args) - {"self"}
     
+    #
+    # Our magic assert:
+    # 
+    # Here we make sure that no positional args are defined for this function.
+    # 
     assert len(all_positional_args) == 0, (
         f"Celery task {func_name} accepts positional arguments {all_positional_args}. "
         "All task should accept just keyword args. "
@@ -176,6 +201,8 @@ def enforce_kwargs(func: Callable) -> None:
     )
 
 # --- File sky_task.py ---
+
+# Here we register some Celery tasks
 
 @celery_task(queue="sky", ...)
 def create_a_sky_task(*, num_of_clouds: int, num_of_suns: int) -> None:
