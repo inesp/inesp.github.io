@@ -1,5 +1,5 @@
 ---
-title: "Self-Documenting Code Idea 2: Error msgs with calls to action"
+title: "Self-Documenting Code Concept 2: Error msgs with calls to action"
 excerpt_separator: <!--more-->
 tags: self-documenting-code
 ---
@@ -8,15 +8,17 @@ To reiterate from the [previous chapter]({% post_url 2025-04-17-how-to-make-code
 
 Self-documenting code blocks are like **friendly tripping wire** or an alert for the future. The code will quietly listen and watch and when it sees a mistake, **it will reveal itself** and help fix the mistake.
 
+![Communicate via error messages](/assets/docs/errors-docs.jpg)
+
 <!--more-->
 
 ## Previous chapter
-⏮️ [Self-Documenting Code Idea 1: `assert` finds its calling]({% post_url 2025-04-17-how-to-make-code-self-document-itself %})
+⏮️ [Self-Documenting Code Concept 1: `assert` finds its calling]({% post_url 2025-04-17-how-to-make-code-self-document-itself %})
 
 In the previous chapter, we talked about using `assert`-s to kill new code even before it goes to production. Now we'll look at how to use error messages to help fix bugs that already made it to production.
 
 
-## 💡 Idea 2: Error messages with fixing instructions
+## 💡 Concept 2: Error messages with fixing instructions
 
 Errors logged in production have a certain level of **irritation** associated with them. 
 

@@ -1,5 +1,5 @@
 ---
-title: "Self-Documenting Code Idea 1: <code>assert</code> finds its calling"
+title: "Self-Documenting Code Concept 1: <code>assert</code> finds its calling"
 excerpt_separator: <!--more-->
 biblio:
   - title: "Python: The assert statement"
@@ -19,9 +19,12 @@ But, no worries, because I've been looking into self-documenting code for years 
 
 As the silly but melodious adage goes: Trust is good, control is better.
 
+![How to document with asserts](/assets/docs/assert-docs.jpg)
+
+
 <!--more-->
 
-## 💡 Idea 1: Assert finally finds its calling
+## 💡 Concept 1: Assert finally finds its calling
 
 The `assert ...`-statements are a weird concept. Officially, they are supposed to be debugging aids, but in reality they are often active in production code, in the production environment.
 
@@ -223,4 +226,4 @@ And that is how `assert` can be used to replace a bit of the documentation. Docs
 **Note on the side:** But, obviously, you can also just raise a `ValueError` or `TypeError` or `MyCustomException`. No need to specifically use `assert`-s. :smile:
 
 ## Next chapter
-⏭️ [Self-Documenting Code Idea 2: Error msgs with calls to action]({% post_url 2025-05-05-self-documented-code-part-II %})
+⏭️ [Self-Documenting Code Concept 2: Error msgs with calls to action]({% post_url 2025-05-05-self-documented-code-part-II %})
