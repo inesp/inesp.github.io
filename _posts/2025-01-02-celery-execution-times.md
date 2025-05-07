@@ -18,6 +18,8 @@ Firstly, it could be argued that there are 2 different "exec" times for every Ce
 
 The reason both are important is: **that our real motivation is understanding when _the thing_ is done.** 
 
+![Celery signals](/assets/celery-signals.png)
+
 <!--more-->
 
 We trigger a task, we want to know when that job is done and when to expect the results.

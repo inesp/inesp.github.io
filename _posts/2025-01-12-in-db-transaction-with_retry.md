@@ -17,6 +17,8 @@ There are actually **at least 4 possible second steps**:
   - ask the user for input
   - **retry** <- my personal favorite 💝
 
+![transaction retry](/assets/transaction-start.png)
+
 <!--more-->
 
 ## Most code just gives up

@@ -1,6 +1,7 @@
 ---
 title: "Git cheat-sheet: Aliases"
 tags: git
+excerpt_separator: <!--more-->
 biblio:
   - title: "StackOverflow: Pretty git branch graphs"
     link: "https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs?page=1&tab=votes#tab-top"
@@ -9,6 +10,10 @@ biblio:
 The only times, I feel like a hacker, a movie hacker, is when I suddenly notice that I've been writing git commands for "I don't know how long". Git is so simple and so easy to use and so elegant and I wouldn't call it too verbose at all and still, I am regularly caught up in between git commands.
 
 As much as I fancy looking like a TV hacker, I still decided to change the essays I write to command line into short poems.
+
+![Git aliases](/assets/git-alias.png)
+
+<!--more-->
 
 #### Level 1 aliases
 

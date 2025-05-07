@@ -20,6 +20,8 @@ Here I've started putting together a personal collection of building blocks.
 
 And I'm starting with: Code that isolates (insulates) code blocks. 
 
+![Isolating code blocks](/assets/isolate-code.png)
+
 <!--more-->
 
 **Hint**: The full function is [at the end of the page](#full-code).

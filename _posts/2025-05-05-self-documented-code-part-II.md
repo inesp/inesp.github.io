@@ -8,7 +8,7 @@ To reiterate from the [previous chapter]({% post_url 2025-04-17-how-to-make-code
 
 Self-documenting code blocks are like **friendly tripping wire** or an alert for the future. The code will quietly listen and watch and when it sees a mistake, **it will reveal itself** and help fix the mistake.
 
-![Communicate via error messages](/assets/docs/errors-docs.jpg)
+![Communicate via error messages](/assets/docs/errors-docs.png)
 
 <!--more-->
 
