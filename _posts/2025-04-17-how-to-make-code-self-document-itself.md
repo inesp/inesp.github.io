@@ -19,7 +19,7 @@ But, no worries, because I've been looking into self-documenting code for years 
 
 As the silly but melodious adage goes: Trust is good, control is better.
 
-![How to document with asserts](/assets/docs/assert-docs.png)
+![How to document with asserts](/assets/docs/assert-truth.png)
 
 
 <!--more-->

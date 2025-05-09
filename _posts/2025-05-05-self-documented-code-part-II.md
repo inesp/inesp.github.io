@@ -8,7 +8,7 @@ To reiterate from the [previous chapter]({% post_url 2025-04-17-how-to-make-code
 
 Self-documenting code blocks are like **friendly tripping wire** or an alert for the future. The code will quietly listen and watch and when it sees a mistake, **it will reveal itself** and help fix the mistake.
 
-![Communicate via error messages](/assets/docs/errors-docs.png)
+![Communicate via error messages](/assets/docs/errors-and-msgs.png)
 
 <!--more-->
 
@@ -292,4 +292,4 @@ There is a lot you can communicate in error messages and other logs.
 When something takes an unexpected turn, devs often go check the logs. They will read the logs, thus you should communicate via the logs. 
 
 ## Next
-⏭️ To be continued...
+⏭️ [Self-Documenting Code Concept 3: Abstract functions, patterns and interfaces]({% post_url 2025-05-09-self-documented-code-part-III %})
