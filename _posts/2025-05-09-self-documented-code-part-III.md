@@ -339,7 +339,7 @@ class GitLabRestClient(BaseRestClient[GitLabAccessData]):
 
 As you can see we are still able to concoct quite intricate rules for how things are meant to fit together. These patterns can serve us greatly as documentation that doesn't need to be read. The main difficulty of this approach is in making the patterns **future proof**. If the patterns are too stiff or too complex, then future devs won't follow and the patterns will quickly unravel. 
 
-In my experience, a good guideline for building code patterns is to keep them shallow. **Shallow code is easier to adjust and thus has a higher chance of surviving longer and serving us longer.** As we know the future is fikle and chances are tomorrow will reveal something that would make us want to rewrite today's code."
+In my experience, a good guideline for building code patterns is to keep them shallow. **Shallow code is easier to adjust and thus has a higher chance of surviving longer and serving us longer.** As we know the future is fikle and chances are tomorrow will reveal something that would make us want to rewrite today's code.
 
 
 ## Next
