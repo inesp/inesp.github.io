@@ -6,36 +6,40 @@
 
     <p>by {{ site.author }}</p>
 
+    <h3 class="mt-md-4 mt-lg-5">Who am I</h3>
+    <p class="mb-4">Hi, my name is  <a href="{{ '/about' | relative_link }}" class="my-name">Ines Panker</a>. Software Engineer by trade, Explorer at heart.<br>
+    I've been building software for almost 2 decades — writing code, shaping architecture, and leading teams.</p>
 
-      <ul class="social-icons">
-          {%- if site.social.github -%}
-            <li><a
-                href="https://github.com/{{ site.social.github | cgi_escape | escape }}"
-                title="{{ site.social.github | escape }}"
-                target="_blank"
-                ><img
-                  height="25"
-                  width="25"
-                  src="{{ '/assets/github.svg' | relative_link }}"
-                ></a></li>
-          {%- endif -%}
+    <p class="mb-4">
+      📢 <a href="/talks" class="talks-link">My Talks</a>
+      <br>Observations about the human at work, building software.
+    </p>
 
-          {%- if site.social.linkedin -%}
-            <li><a
-                href="https://www.linkedin.com/in/{{ site.social.linkedin | cgi_escape | escape }}"
-                title="{{ site.author | escape }}"
-                target="_blank"
-                ><img
-                  height="25"
-                  width="25"
-                  src="{{ '/assets/linkedin.svg' | relative_link }}"
-                ></a></li>
-          {%- endif -%}
+    <ul class="social-icons">
+      {%- if site.social.github -%}
+        <li><a
+            href="https://github.com/{{ site.social.github | cgi_escape | escape }}"
+            title="{{ site.social.github | escape }}"
+            target="_blank"
+            ><img
+              height="25"
+              width="25"
+              src="{{ '/assets/github.svg' | relative_link }}"
+            ></a></li>
+      {%- endif -%}
 
-      </ul>
+      {%- if site.social.linkedin -%}
+        <li><a
+            href="https://www.linkedin.com/in/{{ site.social.linkedin | cgi_escape | escape }}"
+            title="{{ site.author | escape }}"
+            target="_blank"
+            ><img
+              height="25"
+              width="25"
+              src="{{ '/assets/linkedin.svg' | relative_link }}"
+            ></a></li>
+      {%- endif -%}
+    </ul>
 
-      <h3 class="mt-md-4 mt-lg-5">Who am I</h3>
-      <p class="mb-5">Hi, my name is  <a href="{{ '/about' | relative_link }}" class="my-name">Ines Panker</a>. Software Engineer by trade, Explorer at heart.<br>
-      I've been building software for almost 2 decades — writing code, shaping architecture, and leading teams.</p>
   </div>
 </div>
