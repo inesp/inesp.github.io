@@ -343,4 +343,5 @@ In my experience, a good guideline for building code patterns is to keep them sh
 
 
 ## Next
-⏭️ To be continued...
+⏭️ [Self-Documenting Code Concept 4: Embrace Copy-Paste]({% post_url 2025-07-01-self-documented-code-part-IV %})
+
