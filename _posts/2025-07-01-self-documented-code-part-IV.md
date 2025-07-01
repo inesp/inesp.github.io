@@ -16,6 +16,8 @@ Who ever does that? It is more reasonable to expect them to skim your docs and c
 
 And we should take advantage of this behavior 😎.
 
+![Self-Documenting Code Concept 4: Embrace Copy-Paste - Set the Trap](/assets/docs/copy-paste.jpg)
+
 <!--more-->
 
 ## Previous chapter
