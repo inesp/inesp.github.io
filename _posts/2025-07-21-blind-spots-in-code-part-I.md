@@ -33,6 +33,8 @@ The word "bias" has become synonymous with movements for inclusion of people, bu
 
 Our biases are holding us all back. But it needn't be this way.
 
+{% include image.html alt="Anchoring" src="bias/anchor.jpg" ref="https://www.pexels.com/photo/freediver-ascending-in-blue-underwater-cave-33042384/" %}
+
 <!--more-->
 
 
@@ -168,7 +170,7 @@ We can get anchored in a million ways. Spotting them demands from us to be at le
 
 The first step to overcoming anchoring is to **be aware of it**. Once we know how the trick works, we can start taking precautions against it.
 
-In the next post I will talk about **confirmation bias** and **availability heuristic** in PRs and tests.
+In the next post (that is half written) I will talk about **confirmation bias** and **availability heuristic** in PRs and tests.
 
 
 ## Next
