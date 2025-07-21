@@ -21,9 +21,9 @@ programming, 2006"
 
 This might just be the original example of bias that we, developers, just can't seem to overcome when creating software.
 
-This point of view **limits us and the software** we are able to produce to the **teeny-tiny space that we occupy in this world right now**, to our own, physically limited set of experiences and skills, to the few solutions we remember the moment we write a bit of code.
+This mindset **confines us and the software** we are able to produce to the **teeny-tiny space that we occupy in this world right now**, to our own, physically limited set of experiences and skills, to the few solutions we remember the moment we write a bit of code.
 
-The word "bias" has become synonymous with movements for inclusion of people, but congnitive biases are a far bigger topic than just being about people exclusion. 
+The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion. 
 
 **Cognitive bias is everywhere around us.** Bias is:
 - when you only read articles (**listen to co-workers**) that support your world view (confirmation bias), 
@@ -42,7 +42,7 @@ Our biases are holding us all back. But it needn't be this way.
 
 After I've scared you a little bit, let me now present the flip side of the coin.
 
-**Congnitive biases are just shortcuts in decision-making.** 
+**Cognitive biases are just shortcuts in decision-making.** 
 
 **Biases make life possible.** They are needed because they make us choose faster. When a lion is chasing you, you can only survive if you find a solution fast. 
 
@@ -65,7 +65,7 @@ Maybe just the ones who already work in this field (debatable, but plausible). O
 
 Bias can quickly grow out of control. They generally start out as a rational shortcut, but they always have the potential to outgrow the rational space. **The rational and irrational have a very muddy border between them.**
 
-**Congnitive bias is a blind spot. It's the thing you don't pay attention to.** It's the thing where you give up control. And wouldn't you love to take back control over your own decisions?
+**Cognitive bias is a blind spot. It's the thing you don't pay attention to.** It's the thing where you give up control. And wouldn't you love to take back control over your own decisions?
 
 
 ## Exhibit A: Anchors are a chain with a weight at the end
@@ -81,7 +81,7 @@ This whole optimistic outlook is being painted in your head in a split second by
 
 All you need to do is just check if that query works for your data. And because checking something is obnoxious as it takes a surprising amount of mental energy, you most likely won't do your best job at it.
 
-**Even if the query won't immediatelly produce the correct result for you, you will still take this query as your starting point, you will try to tweak it, little by little, until it works for you.** Instead of writing a new query from scratch.
+**Even if the query won't immediately produce the correct result for you, you will still take this query as your starting point, you will try to tweak it, little by little, until it works for you.** Instead of writing a new query from scratch.
 
 **And that is how anchoring got you.**
 
@@ -104,7 +104,7 @@ Unfortunately, their end result generally fit less, not more.  Those who _didn�
 
 Starting from scratch led to more correct solutions. The group with no sample query had a **44.3% success rate**, while the group that got a sample query had only **21.5% success rate**. **Turns out, a ready-made starting point can quietly steer you in the wrong direction.**
 
-> Hypothesis 1 _(tn: Reuse of queries results in more errors than starting from scratch  )_ is supported.  This result is extremely compelling. It means that **when individuals compose queries from scratch they are more likely to product the correct answer than when they modify an existing query;** [...]  
+> Hypothesis 1 _(tn: Reuse of queries results in more errors than starting from scratch  )_ is supported.  This result is extremely compelling. It means that **when individuals compose queries from scratch they are more likely to product(tn: produce) the correct answer than when they modify an existing query;** [...]  
 > Average performance in our sample showed that subjects generated **the correct answer 44.3 percent** of the time when no sample query was presented and **only 21.5 percent** of the time when an example was available.
 > 
 > [...]
@@ -135,9 +135,16 @@ I am speculating here, but I'd say 2 things are happening:
 
 Either way, **the end-result is that you don't truly understand the expanse of the problem and thus have no reason to mistrust your simple solution**. From where you stand the problem looks simple, so you assume the solution is simple too.
 
-🤖 This also throws a curveball at the work of AI assistants, like Claude, Cursor or Copilot. Whatever the bot suggests, that is your anchor. And as we've seen, **anchoring leads to more bugs in the code** and also to **overconfidence in the correctness of that code**. 
+## AI will make everything better, right? right?
 
-Which... frankly, is also my personal experience with AI, code and devs. The overconfidence AI-generated-code-solutions instill in some developers is astonishing and truly hard to combat. **It's hard for me to convince you that your AI-generated code has major bugs, when neither I nor you actually did the work of understanding the problem.** _I only glanced over your PR, so I actually have no idea, if your AI-generated solution is good enough or not. But I wish we could at least agree that neither do you know if it's good enough, because you also only glanced at it._ (a bit on a side rant 🤪)
+
+🤖 This same pattern very much applies to working with AI assistants, like Claude, Cursor or Copilot. Whatever the bot suggests, that is your anchor. And as we've seen, **anchoring leads to more bugs in the code** and also to **overconfidence in the correctness of that code**. 
+
+Frankly, that’s been my personal experience too. AI-generated code solutions somehow instill an astonishing level of confidence in some developers.
+
+**It's hard to convince a dev that thair AI-generated code has major bugs, when neither of us actually did the work of understanding the problem.** 
+
+_I glanced over your PR. You skimmed over the problem. Now we’re both standing here pretending we know what’s going on. We do not._
 
 
 ## Experience sometimes helps
