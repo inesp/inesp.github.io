@@ -162,6 +162,10 @@ programming
 
 ## Conclusion
 
+When we are anchored, we write worse code, **code with more bugs. This has been proven.**
+
+We can get anchored in a million ways. Spotting them demands from us to be at least a bit over the top skeptical.
+
 The first step to overcoming anchoring is to **be aware of it**. Once we know how the trick works, we can start taking precautions against it.
 
 In the next post I will talk about **confirmation bias** and **availability heuristic** in PRs and tests.
