@@ -7,6 +7,7 @@
 $color-yellow: #fff283;
 $color-yellow-dark: #ffed50;
 $color-hover-red: #ff0040;  // #673e9c <- violet
+$color-red-bright: #ff7898;
 $color-text: #212529;
 $color-badge-text: #5c5200;
 
@@ -255,10 +256,10 @@ h5.external_links{
 
 
 .box{
-  border: 1px solid #ddd;
-  padding: 5px 10px;
-  border-left: 3px solid #ffd059;
-  margin-bottom:1rem;
+  border: 1px solid #ffe6e6;
+  border-left: 4px solid $color-red-bright;
+  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .source-link{
@@ -407,7 +408,7 @@ table{
     left: 0;
     width: 100%;
     height: 5px;
-    background-image: linear-gradient(90deg, #fff283, #ff0040);
+    background-image: linear-gradient(90deg, #fff283, $color-hover-red);
   }
 
   thead th {
@@ -425,7 +426,7 @@ table{
   }
   tbody tr:hover {
     background-color: #ffe6e6;
-    border-left: 4px solid #ff7898;
+    border-left: 4px solid $color-red-bright;
   }
 
   td {
@@ -470,7 +471,7 @@ table.talks {
   width: 100%;
 
   tbody tr:hover {
-    border-left: 4px solid #ff0040;
+    border-left: 4px solid $color-hover-red;
   }
 
   // 6th column for links
@@ -485,6 +486,6 @@ table.talks {
   td:nth-child(6) a:hover {
     transform: scale(1.3);
     text-decoration: underline;
-    color: #ff0040;
+    color: $color-hover-red;
   }
 }
