@@ -451,3 +451,75 @@ table.talks {
     color: #ff0040;
   }
 }
+
+/**
+ * Blog post table styles - simplified versions of the talks table
+ */
+
+/* Base blog table styling */
+.blog-table {
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  thead {
+    background-color: #fff9e6;
+    color: #5c5200;
+  }
+
+  thead th {
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #fff283;
+  }
+
+  tbody tr {
+    transition: background 0.15s ease-in-out;
+  }
+
+  tbody tr:hover {
+    background-color: #fffbf0;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+
+  tbody tr:nth-child(even):hover {
+    background-color: #fff7e6;
+  }
+
+  td {
+    padding: 0.75rem;
+    border-top: 1px solid #e8e8e8;
+    color: #212529;
+  }
+
+  // Links in tables
+  a {
+    color: #212529;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #ff0040;
+    }
+  }
+}
+
+/* 100% width version */
+.blog-table-full {
+  @extend .blog-table;
+  width: 100%;
+}
+
+/* Auto width version */
+.blog-table-auto {
+  @extend .blog-table;
+  width: auto;
+  max-width: 100%;
+}
