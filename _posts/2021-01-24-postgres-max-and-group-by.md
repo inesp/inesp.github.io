@@ -22,7 +22,7 @@ Very recently I stumbled upon a new and curious solution to a very minor, but ve
 | 1         | 10             | C    |
 | 2         | 50             | A    |
 | ...       | ...            | ...  |
-{:.table .table-sm}
+{:.table-small}
 
 And now somebody asks me: **"For every animal, can you tell me which area they prefer?"**.
 

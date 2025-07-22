@@ -326,7 +326,6 @@ The best part, however, come to light when you look at the individual estimation
 | Project Managers    | 960h            |
 | Designers           | 1260h           |
 | Engagement Managers | 1550h           |
-{:.table}
 
 > The lowest effort estimates were provided by the developers and the project managers, whereas the user interaction designers and the engagement managers gave generally higher estimates.<br>
 > ...<br>
