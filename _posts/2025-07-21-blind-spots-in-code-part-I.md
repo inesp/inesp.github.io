@@ -189,8 +189,7 @@ We can get anchored in a million ways. Spotting them demands from us to be at le
 
 The first step to overcoming anchoring is to **be aware of it**. Once we know how the trick works, we can start taking precautions against it.
 
-In the next post (that is half written) I will talk about **confirmation bias** and **availability heuristic** in PRs and tests.
-
 
 ## Next
-⏭️ A post about confirmation bias coming soon ...
+⏭️ [Blind Spots in Code Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)]({% post_url 2025-07-23-blind-spots-in-code-part-II %})
+
