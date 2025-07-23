@@ -431,7 +431,7 @@ table{
 
   td {
     padding: 1rem;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #fadb8d;
     color: #212529;
   }
 
@@ -449,9 +449,6 @@ table{
   tbody tr:nth-child(even):hover {
     background-color: #ffe6e6;
   }
-  td {
-    border-top: 1px solid #fadb8d;
-  }
 }
 
 .table-full {
@@ -465,6 +462,32 @@ table{
   }
 }
 
+
+/* Last column styling for totals/summary data */
+.last-column {
+  td:last-child, th:last-child {
+    font-weight: 600;
+    text-align: right;
+    border-left: 4px solid #fbe5ad;
+    position: relative;
+  }
+}
+/* Last row styling for totals/summary data */
+.last-row {
+  tbody tr:last-child td {
+    font-weight: 600;
+    border-top: 4px solid #fbe5ad;
+    position: relative;
+  }
+}
+/* First column styling for key data */
+.first-column {
+  td:first-child, th:first-child {
+    font-weight: 600;
+    text-align: left;
+    border-right: 2px solid #fbe5ad;
+  }
+}
 
 // ------------------------ TALKS
 table.talks {

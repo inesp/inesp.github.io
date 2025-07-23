@@ -73,23 +73,27 @@ Bias can quickly grow out of control. They generally start out as a rational sho
 
 Anchoring is a cognitive bias, where people rely too heavily on the **first piece of information** they see (the "anchor") when making decisions.
 
-So, if I give you a programming task: _"Compile me the top 10 list of winners in our latest game"_ and then I add: _"and here is the query we used for the same task with the previous game"_ **then I have just anchored you to that query**.
+What if I give you a programming task: _"Compile me the top 10 list of winners in our latest game"_ and then I add: _"and here is the query we used for the same task with the previous game"_. What will be yor next step?
 
-Surely, you will first inspect the existing query. You can already picture it: if that query works, then this task is 1/10 on the difficulty scale, then this task will be done in a jiffy, then you can go home early today.
+Surely, you will first inspect the existing query. 
 
-This whole optimistic outlook is being painted in your head in a split second by my words alone.
+You can already picture it: if my query works, then this task is 1/10 on the difficulty scale. This task will be done in a jiffy. You can go home early today.
 
-All you need to do is just check if that query works for your data. And because checking something is obnoxious as it takes a surprising amount of mental energy, you most likely won't do your best job at it.
+This whole optimistic outlook is being painted in your head in a split second... by my words alone.
 
-**Even if the query won't immediately produce the correct result for you, you will still take this query as your starting point, you will try to tweak it, little by little, until it works for you.** Instead of writing a new query from scratch.
+All you need to do is check if that query works for your data. And because checking something is obnoxious, as it takes a surprising amount of mental energy, you most likely won't do your _best_ job at it.
 
-**And that is how anchoring got you.**
+**Even if the query won't immediately produce the correct result for you, you will still take this query as your starting point. You will try to tweak it, little by little, until it works for you.** Instead of writing a new query from scratch.
+
+**And that is how anchoring got you to waste your time.** Who says that starting from my query will be faster than starting from scratch?!
+
 
 ## Code produced while anchored is less correct than code produced while floating freely
 
+
 What I described to you is very similar to an experiment conducted by G. Allen and B. J. Parsons for their paper "A Little Help can Be A Bad Thing: Anchoring and Adjustment in Adaptive Query Reuse".
 
-In their experiment, they asked participants to write SQL queries. Some participants were given a sample query (the "anchor") to "help" them with the task of writing a new query, while others were not given any sample query. All in all 157 participants took part in the experiment.
+In an experiment, they asked participants to write SQL queries. Some participants were given a sample query (the "anchor") to "help" them with the task of writing a new query, while others weren't given anything. All in all 157 participants took part in the experiment.
 
 The sample query was a functioning SQL query that was similar to the new task at hand, but it wasn't an outright solution.
 
@@ -100,11 +104,17 @@ The sample query was a functioning SQL query that was similar to the new task at
 
 As expected, the participants who received a sample query made use of it. They took the helpful example, adjusted it, and shaped it into something that (more or less) fit the task.
 
-Unfortunately, their end result generally fit less, not more.  Those who _didn’t_ get a sample query performed better than those who had. 
+Unfortunately, their end results generally fit less, not more.  Those who _didn’t_ get a sample query performed better than those who had. 
 
 Starting from scratch led to more correct solutions. The group with no sample query had a **44.3% success rate**, while the group that got a sample query had only **21.5% success rate**. **Turns out, a ready-made starting point can quietly steer you in the wrong direction.**
 
+|              | With sample query | Without sample query |
+|--------------|-------------------|----------------------|
+| Success rate | 21.5%             | 44.3%                |
+{:.first-column}
+
 > Hypothesis 1 _(tn: Reuse of queries results in more errors than starting from scratch  )_ is supported.  This result is extremely compelling. It means that **when individuals compose queries from scratch they are more likely to product(tn: produce) the correct answer than when they modify an existing query;** [...]  
+> 
 > Average performance in our sample showed that subjects generated **the correct answer 44.3 percent** of the time when no sample query was presented and **only 21.5 percent** of the time when an example was available.
 > 
 > [...]
@@ -131,7 +141,7 @@ In other words, the anchor didn’t just lead them astray, it also gave them a f
 
 I am speculating here, but I'd say 2 things are happening:
 1. anchoring narrows your view, if you stay in one place, you can only see what is visible from that one spot
-2. you never did a deep dive into the problem, you never tried to truly understood how deep it actually goes
+2. you never did a deep dive into the problem, you never tried to truly understand how deep it actually goes
 
 Either way, **the end-result is that you don't truly understand the expanse of the problem and thus have no reason to mistrust your simple solution**. From where you stand the problem looks simple, so you assume the solution is simple too.
 
