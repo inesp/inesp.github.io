@@ -10,6 +10,8 @@ biblio:
     link: https://en.wikipedia.org/wiki/Status_quo_bias
   - title: "Wikipedia: Confirmation bias"
     link: https://en.wikipedia.org/wiki/Confirmation_bias
+  - title: "Wikipedia: Anchoring effect"
+    link: https://en.wikipedia.org/wiki/Anchoring_effect
   - title: "G. Allen and B. J. Parsons, A Little Help can Be A Bad Thing: Anchoring and Adjustment in Adaptive Query Reuse, 2006"
     link: https://www.researchgate.net/publication/221598895_A_Little_Help_can_Be_A_Bad_Thing_Anchoring_and_Adjustment_in_Adaptive_Query_Reuse
   - title: "R. Jain, J. Muro, and K. Mohan, A cognitive perspective on pair
