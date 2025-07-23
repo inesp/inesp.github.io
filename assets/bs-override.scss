@@ -527,37 +527,37 @@ table.talks {
 /* Last column styling for totals/summary data */
 .last-column {
   td:last-child, th:last-child {
-    background-color: #e6f7ff;
+    background-color: #f6ffed;
     font-weight: 600;
     text-align: right;
-    border-left: 2px solid #91d5ff;
+    border-left: 2px solid #b7eb8f;
     position: relative;
   }
 
   tbody tr:hover td:last-child {
-    background-color: #bae7ff;
+    background-color: #d9f7be;
   }
 
   tbody tr:nth-child(even) td:last-child {
-    background-color: #d6f3ff;
+    background-color: #f0fff0;
   }
 
   tbody tr:nth-child(even):hover td:last-child {
-    background-color: #bae7ff;
+    background-color: #d9f7be;
   }
 }
 
 /* Last row styling for totals/summary data */
 .last-row {
   tbody tr:last-child td {
-    background-color: #e6f7ff;
+    background-color: #f6ffed;
     font-weight: 600;
-    border-top: 2px solid #91d5ff;
+    border-top: 2px solid #b7eb8f;
     position: relative;
   }
 
   tbody tr:last-child:hover td {
-    background-color: #bae7ff;
+    background-color: #d9f7be;
   }
 
   tbody tr:last-child td:first-child {
