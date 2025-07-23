@@ -523,3 +523,26 @@ table.talks {
   width: auto;
   max-width: 100%;
 }
+
+/* Last column styling for totals/summary data */
+.last-column {
+  td:last-child, th:last-child {
+    background-color: #fff9e6;
+    font-weight: 600;
+    text-align: right;
+    border-left: 2px solid #fff283;
+    position: relative;
+  }
+
+  tbody tr:hover td:last-child {
+    background-color: #fff283;
+  }
+
+  tbody tr:nth-child(even) td:last-child {
+    background-color: #fff6da;
+  }
+
+  tbody tr:nth-child(even):hover td:last-child {
+    background-color: #fff283;
+  }
+}
