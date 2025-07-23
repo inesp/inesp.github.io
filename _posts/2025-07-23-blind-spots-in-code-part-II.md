@@ -37,6 +37,7 @@ Why is fighting cognitive biases important? Because research shows cognitive bia
 &mdash; S. Chattopadhyay et al., A tale from the trenches: cognitive biases and software development
 </figcaption>
 
+{% include image.html alt="Cognitive biases" src="bias/confirm.png" ref="https://www.pexels.com/photo/worms-eye-view-of-spiral-stained-glass-decors-through-the-roof-161154/" %}
 
 <!--more-->
 
@@ -166,7 +167,7 @@ Surely, it is not that we don't know or don't care that unexpected input data mu
 
 If I'm testing the **login**-method, surely, it is clear that **at the very, very least we need 2 tests: a positive and a negative test, a test for a successful login and a test for a failed login.** Surely, the correct behavior of this method is to let in only people with correct credentials and to let them in only as themselves, right? But this demands more than 1 test. Even more than just 2 tests. 
 
-A paper called "A controlled experiment on time pressure and confirmation bias in functional software testing" researched this topic. Unfortunately, it found out that time pressure is downgrading our testing skills. We simply have very poor testing skills to begin with. Here's their conclusion:
+A paper called "A controlled experiment on time pressure and confirmation bias in functional software testing" researched this topic. Unfortunately, it found out that time pressure is downgrading our testing skills. **We simply have very poor testing skills** to begin with. Here's their conclusion:
 
 > We observed, overall, **participants designed significantly more confirmatory test cases as compared to disconfirmatory ones**, which is in line with previous research. However, **we did not observe time pressure as an antecedent (tn: cause)** to an increased rate of confirmatory testing behaviour.
 > 
@@ -185,7 +186,7 @@ The researchers presented the participants with the task to write tests specific
 
 Half of the participants were given 30 minutes to write the tests, while the other half had 60 minutes (before the experiment the researches tested that 45 mins is about enough to finish the task, thus the 60mins limit seemed very adequate). The 30-mins group also got 3 reminders about the time running out, this happened at the 15th, 20th and 25th minute. This was done to build the pressure.
 
-When we test only what we expect to work, we miss the opportunity to uncover corner cases or conflicting behaviors that can cause failures. Breaking free from confirmation bias means deliberately seeking out tests that challenge assumptions, which is the only way to build robust software.
+When we test only what we expect to work, **we miss the opportunity to uncover corner cases** or conflicting behaviors that can cause failures. Breaking free from confirmation bias means **deliberately seeking out tests that challenge assumptions, which is the only way to build robust software.**
 
 
 ## Next time, check that the couch doesn't stink
@@ -197,11 +198,11 @@ In the beginning, there is nothing. Then we create/buy something. **And we expec
 
 An example: I want to rent an apartment and I want it to have a couch. So, my test will be: does the apartment have a couch.
 
-After moving in, I see the couch is old and uncomfortable. So, for my next apartment my test will be: does the apartment have a couch that is comfortable to sit on.
+After moving in, I see the couch is old and uncomfortable. So, for my next apartment my test will be: _does the apartment have a couch that is comfortable to sit on_.
 
-After I move again, I see that the couch is now comfortable, but small. So, my next test will be: does the apartment have a couch that is comfortable to sit on and big enough for 3 people.
+After I move again, I see that the couch is now comfortable, but small. So, my next test will be: _does the apartment have a couch that is comfortable to sit on and big enough for 3 people_.
 
-After I move again, I see that the couch is now comfortable, big enough for 3 people, but it stinks. So, my next test will be: does the apartment have a couch that is comfortable to sit on, big enough for 3 people and does not stink.
+After I move again, I see that the couch is now comfortable, big enough for 3 people, but it stinks. So, my next test will be: _does the apartment have a couch that is comfortable to sit on, big enough for 3 people and does not stink_.
 
 And so on.
 
