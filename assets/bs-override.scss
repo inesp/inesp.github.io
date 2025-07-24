@@ -148,51 +148,57 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
   // Subtitle for post excerpts on home page
   .post-excerpt-subtitle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4;
     color: $color-text;
-    margin-top: -0.5rem;
-    margin-bottom: 1rem;
-    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-style: normal;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid $color-yellow-dark;
     
     @media (min-width: 768px) {
-      font-size: 1.4rem;
-      line-height: 1.6;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      margin-top: 0.75rem;
     }
   }
 }
 
 // Subtitle for individual post pages
 .post-subtitle {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.4;
   color: $color-text;
-  margin-top: -0.75rem;
-  margin-bottom: 1.5rem;
-  font-style: italic;
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
+  font-style: normal;
   position: relative;
+  padding: 0.75rem 0;
+  border-bottom: 3px solid $color-yellow-dark;
   
   @media (min-width: 768px) {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    margin-top: -1rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    padding: 1rem 0;
   }
   
-  // Add a subtle decorative element
+  // Add a prominent decorative element
   &::before {
     content: "";
     position: absolute;
     left: -2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1rem;
-    height: 2px;
-    background: linear-gradient(90deg, $color-yellow-dark, transparent);
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, $color-yellow-dark, $color-hover-red);
     
     @media (max-width: 767px) {
-      display: none;
+      left: -1rem;
+      width: 3px;
     }
   }
 }
