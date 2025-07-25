@@ -1,0 +1,132 @@
+
+@import "colors";
+
+table{
+  border-collapse: collapse;
+  border-radius: $standard-radius;
+  overflow: hidden;
+  margin-bottom: $standard-margin;
+
+  width: auto;
+  max-width: 100%;
+
+  thead {
+    position: relative;
+    background-color: #fff6da;
+    color: #5c5200;
+  }
+
+  // gradient bottom border
+  thead::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(90deg, #fff283, $color-hover-red);
+  }
+
+  thead th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+  }
+
+  tbody tr {
+    transition: background 0.2s ease-in-out;
+    border-left: 4px solid transparent;
+  }
+  tbody tr:hover {
+    background-color: #ffe6e6;
+    border-left: 4px solid $color-red-bright;
+  }
+
+  td {
+    padding: 1rem;
+    border-top: 1px solid #fadb8d;
+    color: #212529;
+  }
+
+  p {
+    font-size: inherit;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.post-content table {
+  tbody tr:nth-child(even) {
+    background-color: #fffcf3;
+  }
+  tbody tr:nth-child(even):hover {
+    background-color: #ffe6e6;
+  }
+}
+
+.table-full {
+  width: 100%;
+  min-width: 800px;
+}
+
+.table-small {
+  td {
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+/* Last column styling for totals/summary data */
+.last-column {
+  td:last-child, th:last-child {
+    font-weight: 600;
+    text-align: right;
+    border-left: 4px solid #fbe5ad;
+    position: relative;
+  }
+}
+/* Last row styling for totals/summary data */
+.last-row {
+  tbody tr:last-child td {
+    font-weight: 600;
+    border-top: 4px solid #fbe5ad;
+    position: relative;
+  }
+}
+/* First column styling for key data */
+.first-column {
+  td:first-child, th:first-child {
+    font-weight: 600;
+    text-align: left;
+    border-right: 2px solid #fbe5ad;
+  }
+}
+
+
+
+// ------------------------ TALKS
+table.talks {
+  width: 100%;
+
+  tbody tr:hover {
+    border-left: 4px solid $color-hover-red;
+  }
+
+  // 6th column for links
+  td:nth-child(6) a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    transition: all 0.2s;
+    display: inline-block
+  }
+
+  td:nth-child(6) a:hover {
+    transform: scale(1.3);
+    text-decoration: underline;
+    color: $color-hover-red;
+  }
+}
