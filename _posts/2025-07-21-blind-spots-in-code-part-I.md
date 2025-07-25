@@ -1,6 +1,7 @@
 ---
-title: "Blind Spots in Code Exhibit A: Because Writing a Fresh Query Is Too Much Work"
-conf_title: "Blind Spots in Code: How Bias is Holding Back Innovation"
+title: "Why do smart devs write silly code? Exhibit A: Because Writing a Fresh Query Is Too Much Work"
+conf_title: "Why do smart devs write silly code? Cognitive Biases Behind Everyday Coding Mistakes"
+conf_title_2: "Why do smart devs write silly code? How Invisible Biases Lead to Bugs, Delays, and Rollbacks"
 excerpt_separator: <!--more-->
 tags: bias-in-code
 biblio:

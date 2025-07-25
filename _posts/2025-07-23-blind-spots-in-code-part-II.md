@@ -1,5 +1,5 @@
 ---
-title: "Blind Spots in Code Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)"
+title: "Why do smart devs write silly code? Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)"
 excerpt_separator: <!--more-->
 tags: bias-in-code
 biblio:
