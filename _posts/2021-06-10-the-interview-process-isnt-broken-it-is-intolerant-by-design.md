@@ -101,15 +101,17 @@ Why is this belief so prevalent among us? We don't believe that everybody can be
 > Make interviewing everyone’s job
 >
 > ... Google wants interviewing to be part of every Googler’s job.
-
-<small>- [Google Guide: Train your interviewers](https://rework.withgoogle.com/guides/hiring-train-your-interviewers/steps/make-interviewing-everyones-job/){:target="_blank"}</small>
+<figcaption>
+&mdash; Google Guide: Train your interviewers
+</figcaption>
 
 
 To be honest, Google does add that they train their interviewers before they put them in charge of inspecting applicants.
 
 > ..., interviewers learn about desired attributes for candidates and review the interview process as a whole. The more interviewers understand what they’re looking for and how it fits into the larger picture, the more effective they can be.
-
-<small>- [Google Guide: Train your interviewers](https://rework.withgoogle.com/guides/hiring-train-your-interviewers/steps/make-interviewing-everyones-job/){:target="_blank"}</small>
+<figcaption>
+&mdash; Google Guide: Train your interviewers
+</figcaption>
 
 But, I do wonder, how well they really train them. Everybody does not make a good interviewer. Being good at interviewing is a skill and like every other skill, you get better as you practice. But you will suck at it for a long long time, before becoming good at it. Imagine how good a piano student is after 1 month of practice or even after the 1st year of practice. So, how long should you actively practice interviewing, before you can be trusted with a job candidate?
 
@@ -132,8 +134,9 @@ But what gives us the confidence that a diverse group of interviewers has divers
 In 2019 a company asked them to figure out why they had low promotion levels of female employees in some departments. It turned out that the problem wasn't bias of those, who reviewed the work of women, but the bias of those, who assigned tasks. **The women employees were reviewed favourably, the issue was simply that the tasks they got assigned were less important than the tasks assigned to a few men.**
 
 > Our analysis of performance reviews found no bias during performance review. Issue was disproportionate assigning of high impact project to a few (male) employees.
-
-<small>- [Field Report: Making Talent Decisions Less Biased II](https://medium.com/@gapjumpers/field-report-making-talent-decisions-less-biased-ii-8d3d23e38082){:target:_blank}</small>
+<figcaption>
+&mdash; Field Report: Making Talent Decisions Less Biased II
+</figcaption>
 
 Bias comes in many ways. **If our interview process is consistently producing teams of workers that are unquestionably less diverse than the overall population, then we absolutely are excluding some people from our jobs.**
 
@@ -144,8 +147,9 @@ Bias comes in many ways. **If our interview process is consistently producing te
 Not everybody can be an interviewer. I very strongly agree with this statement by Aline Lerner, the founder of `interviewing.io`:
 
 > Being a good interviewer takes time and effort and a fundamental willingness to get out of autopilot and engage meaningfully with the other person.
-
-<small>- [What do the best interviewers have in common? We looked at thousands of real interviews to find out.](https://blog.interviewing.io/what-do-the-best-interviewers-have-in-common-we-looked-at-thousands-of-real-interviews-to-find-out/){:target="_blank"}</small>
+<figcaption>
+&mdash; What do the best interviewers have in common? We looked at thousands of real interviews to find out.
+</figcaption>
 
 Interviewing is a skill. If you want to be good at it, you have to learn, you have to grow and you have to practice.
 
@@ -184,11 +188,12 @@ Their scores go from 1 to 4:
 >...a good amount of people who scored at least one 4 also scored at least one 1.
 >
 > If we look at high performers (mean of 3.3 or higher), we still see a fair amount of variation.
+<figcaption>
+&mdash; After a lot more data, technical interview performance really is kind of arbitrary.
+</figcaption>
 
-<small>- [After a lot more data, technical interview performance really is kind of arbitrary.](https://blog.interviewing.io/after-a-lot-more-data-technical-interview-performance-really-is-kind-of-arbitrary/){:target="_blank"} (Hover over the people icons to see their individual scores.)</small>
 
-
-#### We penalize those, who don't know how to play the game
+#### We penalize those who don't know how to play the game
 
 
 All of this builds up huge pressure on interviewees. Especially on 3 groups:
@@ -221,8 +226,9 @@ It so happened that I once had an opportunity to work with somebody, who I rejec
 I've also seen a very good dev, go to an interview, totally unprepared. **The result was a job offer for a low position with small pay.** `interviewing.io` also found a correlation between how good the interview goes and your eventual compensation (their data is for San Francisco):
 
 > Interview performance doesn’t just get you in the door or not: it can have a demonstrable connection to your eventual compensation. For instance, doing just a point better in your technical interview could be worth 10k or more, and with bonus, it could add 20k to your annual comp.
-
-<small>- [There is a real connection between technical interview performance and salary.](https://blog.interviewing.io/there-is-a-real-connection-between-technical-interview-performance-and-salary-heres-the-data/){:target="_blank"}</small>
+<figcaption>
+&mdash; There is a real connection between technical interview performance and salary.
+</figcaption>
 
 The interview doesn't just determine whether or not you get the job, it also **determines what you are going to be paid for the foreseeable future.**
 
@@ -269,8 +275,9 @@ You might think: let's eliminate the bias by creating an objective scoring syste
 > One of the first people to pass our process really impressed us. He was a superb, intelligent programmer. He solved hard algorithm problems like they were nothing, and understood JavaScript deeply. We introduced him to a company he was excited about, and sat back to watch him get a job. We were startled when he failed his first interview. The company told us they valued process more than raw ability, and he’d not written tests during the interview. He went on to get a bunch of offers from other companies, and one founder told us he was among the best programmers they had ever interviewed.
 >
 > This lack of agreement is the rule, not the exception. Almost no one passes all their programming interviews.
-
-<small>- [Who Y Combinator companies want](https://triplebyte.com/blog/who-y-combinator-companies-want){:target=_blank}</small>
+<figcaption>
+&mdash; Who Y Combinator companies want
+</figcaption>
 
 **The underlying problem is that no objective parameters for dev scoring exist.**
 
@@ -289,16 +296,18 @@ If somebody does not exhibit at least some of these characteristics, then they a
 **We are doing the "Princess on the pea"-test on job applicants.** Here's how the fairytale starts, I've replaced "princess" with "developer". What do you think? Does it fit our reality?
 
 > Once upon a time there was a *company* that wanted to find a *developer*; but *he* would have to be a real *developer*. They looked all over the world to find one, but nowhere could they get what they wanted. There were *developers* enough, but it was difficult to find out whether they were real ones. There was always something about them that was not as it should be. So they were sad, for they would have liked very much to have a real developer.
-
-<small>- [Hans Christian Andersen: The Princess and the Pea](http://www.eastoftheweb.com/short-stories/UBooks/PriPea.shtml)</small>
+<figcaption>
+&mdash; Hans Christian Andersen: The Princess and the Pea
+</figcaption>
 
 `Triplebyte` also found that what you feel and look and smell like counts a lot. **If there ever was an honest description of the hiring favouritism in IT I found it here:**
 
 > But company recruiter decisions are driven largely by pattern matching, so there is a strong argument that making yourself look like candidates who companies want will increase your pass rate. ...
 >
 > Reading bios of founders and applying to companies where the CTO shares your background is probably an effective job-search strategy.
-
-<small>- [Who Y Combinator companies want](https://triplebyte.com/blog/who-y-combinator-companies-want){:target=_blank}</small>
+<figcaption>
+&mdash; Who Y Combinator companies want
+</figcaption>
 
 
 ## What are we losing, by being snobbish

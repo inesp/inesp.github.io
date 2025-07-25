@@ -7,6 +7,7 @@
 @import "colors";
 @import "box";
 @import "tables";
+@import "quote";
 
 
 aside {
@@ -85,16 +86,16 @@ aside {
 p {
   line-height: 1.8;
   @media (min-width: 768px)  {
-    font-size:1.15rem;
-    line-height: 1.778;
+    font-size: $standard-font-size;
+    line-height: $standard-line-height;
     margin-bottom: $standard-margin;
   }
 }
 li {
   line-height: 1.8;
   @media (min-width: 768px)  {
-    font-size:1.15rem;
-    line-height: 1.778;
+    font-size: $standard-font-size;
+    line-height: $standard-line-height;
   }
 }
 ul{
