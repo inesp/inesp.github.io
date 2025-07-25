@@ -595,110 +595,156 @@ table.talks {
 
 // ------------------------ TALK PROPOSALS
 
-.proposal-status {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+.proposals-intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: lighten($color-yellow, 30%);
+  border-radius: 8px;
+  text-align: center;
   
-  &.delivered {
-    background: lighten($color-yellow, 10%);
-    color: $color-badge-text;
+  a {
+    color: $color-text;
+    font-weight: 600;
+    text-decoration: underline;
+    
+    &:hover {
+      color: $color-hover-red;
+    }
+  }
+}
+
+.proposals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.proposal-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+  position: relative;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
   
-  &.development {
-    background: lighten($color-red-bright, 20%);
-    color: darken($color-red-bright, 30%);
+  &.delivered {
+    border-left-color: $color-yellow-dark;
+    background: linear-gradient(135deg, #fffef7 0%, #fff9e6 100%);
   }
   
   &.concept {
-    background: #e9ecef;
-    color: #495057;
+    border-left-color: $color-red-bright;
+    background: linear-gradient(135deg, #fefefe 0%, #fff5f5 100%);
   }
   
-  &.research {
-    background: #d4edda;
-    color: #155724;
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    color: $color-text;
+    font-weight: 700;
   }
 }
 
-// Proposal sections
-.proposal {
-  margin-bottom: 4rem;
+.proposal-status {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: $color-yellow-dark;
+  color: $color-badge-text;
   
-  h2 {
-    border-bottom: 2px solid $color-yellow-dark;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
+  .concept & {
+    background: lighten($color-red-bright, 10%);
+    color: darken($color-red-bright, 30%);
   }
+}
+
+.proposal-summary {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: lighten($color-text, 5%);
+}
+
+.proposal-details {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  color: lighten($color-text, 15%);
   
-  h3 {
+  strong {
     color: $color-text;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
     font-weight: 600;
   }
   
-  .abstract {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background: lighten($color-yellow, 25%);
-    border-left: 4px solid $color-yellow-dark;
-    border-radius: 0 6px 6px 0;
-  }
-  
-  .notes ul {
-    margin-top: 0.5rem;
+  a {
+    color: $color-text;
+    text-decoration: underline;
     
-    li {
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
-  }
-  
-  .materials ul {
-    list-style: none;
-    padding-left: 0;
-    
-    li {
-      margin-bottom: 0.75rem;
-      font-size: 1rem;
-      
-      &::before {
-        content: "📎";
-        margin-right: 0.5rem;
-      }
-    }
-    
-    a {
-      font-weight: 500;
-      text-decoration: underline;
-      
-      &:hover {
-        color: $color-hover-red;
-      }
+    &:hover {
+      color: $color-hover-red;
     }
   }
 }
 
-// Page-specific styling
-.page-content {
-  .proposal-intro {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    margin-bottom: 3rem;
-    color: lighten($color-text, 10%);
+.proposal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  
+  a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: lighten($color-yellow, 20%);
+    color: $color-text;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background: $color-yellow-dark;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+.proposals-cta {
+  background: linear-gradient(135deg, $color-yellow 0%, lighten($color-yellow, 15%) 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 3rem;
+  
+  h3 {
+    margin: 0 0 1rem 0;
+    color: $color-text;
+    font-size: 1.5rem;
   }
   
-  hr {
-    border: none;
-    height: 2px;
-    background: linear-gradient(90deg, $color-yellow-dark, transparent);
-    margin: 3rem 0;
+  p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: lighten($color-text, 10%);
+    line-height: 1.6;
   }
 }
