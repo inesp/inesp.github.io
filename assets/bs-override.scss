@@ -1,15 +1,10 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One|Exo+2:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One|Exo+2:wght@400;600&Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
 @import "monokai.css";
-
-$color-yellow: #fff283;
-$color-yellow-dark: #ffed50;
-$color-hover-red: #ff0040;  // #673e9c <- violet
-$color-red-bright: #ff7898;
-$color-text: #212529;
-$color-badge-text: #5c5200;
+@import "emails";
+@import "colors";
 
 
 aside {
@@ -49,7 +44,7 @@ aside {
   .social-icons {
     list-style: none;
     margin-left: 0;
-    margin-bottom: 2rem;
+    margin-bottom: $standard-margin;
     padding-left: 0;
     display: table;
 
@@ -90,7 +85,7 @@ p {
   @media (min-width: 768px)  {
     font-size:1.15rem;
     line-height: 1.778;
-    margin-bottom:2rem;
+    margin-bottom: $standard-margin;
   }
 }
 li {
@@ -120,7 +115,7 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
   margin-top: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: $standard-margin;
 }
 
 .post-content .w-65{
@@ -178,7 +173,7 @@ a {
 
 
 .title-underscore{
-  background-color: #DADADA;
+  background-color: $color-gray;
   height: 1px;
 
   span{
@@ -295,7 +290,7 @@ h5.external_links{
 }
 
 .post-content ul{
-  margin-bottom:2rem;
+  margin-bottom: $standard-margin;
 }
 
 
@@ -389,7 +384,7 @@ table{
   border-collapse: collapse;
   border-radius: 6px;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: $standard-margin;
 
   width: auto;
   max-width: 100%;

@@ -30,7 +30,7 @@ social:
 # Build settings
 markdown: kramdown
 kramdown:
-  parse_block_html: true
+  parse_block_html: false
   math_engine: mathjax
   math_engine_opts:
     preview: true
