@@ -23,14 +23,31 @@ You are happy with your work, it took a lot of coordination between departments.
 
 Let's say you decide to write an email. How better to make everybody understand this new approach, then to tell them everything, the whole story, from start to finish
 
-<div class="box">
-Everybody,
-
-I’ve been consulting with DevOps a lot lately because I was writing a new command. And it turns out DevOps has a lot of problems running our existing commands, they can’t do … and … and they are frustrated with … . Another problem is the fact that our library …. is not maintained anymore, so we shouldn’t use it anymore. It is not super dangerous to use it, but we should switch to something more stable soon. Together we’ve come to the conclusion that the best way forward is to use approach …. . I've written documentation about how to use the new system for CLI commands. So the old way is now deprecated, please do not use the old way anymore. If you need any help with the new way, you can ping me. 
-
-Thank you,
-
-Me
+<div class="email">
+  <div class="email-header">
+    <div class="email-meta">
+      <div class="email-field">
+        <span class="field-label">From:</span>
+        <span class="field-value">me@company.com</span>
+      </div>
+      <div class="email-field">
+        <span class="field-label">To:</span>
+        <span class="field-value">dev-team@company.com</span>
+      </div>
+      <div class="email-field">
+        <span class="field-label">Subject:</span>
+        <span class="field-value">New CLI Command Development Process</span>
+      </div>
+    </div>
+  </div>
+  <div class="email-body">
+    <p>Everybody,</p>
+    
+    <p>I've been consulting with DevOps a lot lately because I was writing a new command. And it turns out DevOps has a lot of problems running our existing commands, they can't do … and … and they are frustrated with … . Another problem is the fact that our library …. is not maintained anymore, so we shouldn't use it anymore. It is not super dangerous to use it, but we should switch to something more stable soon. Together we've come to the conclusion that the best way forward is to use approach …. . I've written documentation about how to use the new system for CLI commands. So the old way is now deprecated, please do not use the old way anymore. If you need any help with the new way, you can ping me.</p>
+    
+    <p>Thank you,<br>
+    Me</p>
+  </div>
 </div>
 
 Great, done! Let's send it out. You have done everything and more. You've finished the ticket, you've communicated with everybody, you've even written docs and an email and everything. You are one great developer :relaxed: !
@@ -57,16 +74,21 @@ What did we expect to happen? People are not machines, we cannot insert a new if
 
 We should have started with instructions. First the TL;DR, then the explanation:
 
-<div class="box">
-Everybody,
-
-Please, read the following docs: http://....
-
-We have defined a new procedure for creating CLI commands. We must all adhere to it.
-
-Thank you,
-
-Me
+<div class="email-compact">
+  <div class="email-content">
+    <div class="email-to">To: dev-team@company.com</div>
+    <div class="email-message">
+      <p>Everybody,</p>
+      
+      <p>Please, read the following docs: http://....</p>
+      
+      <p>We have defined a new procedure for creating CLI commands. We must all adhere to it.</p>
+    </div>
+    <div class="email-closing">
+      Thank you,<br>
+      Me
+    </div>
+  </div>
 </div>
 
 This way of writing feels unnatural at the beginning. Intuitively, we would first explain the situation and then ask people to act. But we are all flooded with messages daily. I have recently realized, that I am being paid to read. I read emails, blogs, docs, specs, Slack, Confluence, JIRA, 15five, ... There is always more to read. The logical consequence is skimming all text. We no longer read, we skim, searching for a glimpse of relevance. 
