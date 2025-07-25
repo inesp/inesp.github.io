@@ -592,3 +592,113 @@ table.talks {
     color: $color-hover-red;
   }
 }
+
+// ------------------------ TALK PROPOSALS
+
+.proposal-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  
+  &.delivered {
+    background: lighten($color-yellow, 10%);
+    color: $color-badge-text;
+  }
+  
+  &.development {
+    background: lighten($color-red-bright, 20%);
+    color: darken($color-red-bright, 30%);
+  }
+  
+  &.concept {
+    background: #e9ecef;
+    color: #495057;
+  }
+  
+  &.research {
+    background: #d4edda;
+    color: #155724;
+  }
+}
+
+// Proposal sections
+.proposal {
+  margin-bottom: 4rem;
+  
+  h2 {
+    border-bottom: 2px solid $color-yellow-dark;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h3 {
+    color: $color-text;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .abstract {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: lighten($color-yellow, 25%);
+    border-left: 4px solid $color-yellow-dark;
+    border-radius: 0 6px 6px 0;
+  }
+  
+  .notes ul {
+    margin-top: 0.5rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  .materials ul {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+      
+      &::before {
+        content: "📎";
+        margin-right: 0.5rem;
+      }
+    }
+    
+    a {
+      font-weight: 500;
+      text-decoration: underline;
+      
+      &:hover {
+        color: $color-hover-red;
+      }
+    }
+  }
+}
+
+// Page-specific styling
+.page-content {
+  .proposal-intro {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: lighten($color-text, 10%);
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, $color-yellow-dark, transparent);
+    margin: 3rem 0;
+  }
+}
