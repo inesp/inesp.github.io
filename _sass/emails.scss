@@ -6,7 +6,7 @@
 */
 .email {
   border: 2px solid $color-red-bright;
-  border-radius: 8px;
+  border-radius: $standard-radius;
   margin: 2rem 0;
   font-family:  "Google Sans Code", monospace;
   max-width: 800px;
@@ -14,7 +14,7 @@
   .email-header {
     background: $color-red-light;
     border-bottom: 2px solid $color-red-bright;
-    border-radius: 8px 8px 0 0;
+    border-radius: $standard-radius $standard-radius 0 0;
     padding: 1rem 1.5rem;
 
     .email-meta {

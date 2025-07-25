@@ -12,7 +12,7 @@ The obvious advantage of striving for readability is to have code, which is easi
 
 Consequently, if you hope for your project to be long-lived or if you hope for it to grow with plenty of new features, there are benefits to be gained. If your code is easy to read and understand, then new developers can be onboarded quicker and will be valuable sooner. Arguable, they will also make fewer bugs, because it is far easier to make a mistake when dealing with code, which you barely understand than in straightforward code.  
 
-But, the biggest problem with readability is, that it is not objectively measurable. It is subjective in its nature. English, written with Japanese katakana letters, is not readable to me, because I am not fluent in katakana. For somebody else the opposite might be true, they are fluent in katakana, but not in English. None of these 2 examples is objectively more readable than the other.
+But the biggest problem with readability is that it is not objectively measurable. It is subjective in its nature. English, written with Japanese katakana letters, is not readable to me, because I am not fluent in katakana. For somebody else, the opposite might be true, they are fluent in katakana, but not in English. None of these 2 examples is objectively more readable than the other.
 
 Code will always be exquisitely more readable and maintainable to those, who wrote it, than to those, who came after them.
 

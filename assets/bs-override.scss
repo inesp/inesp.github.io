@@ -5,6 +5,7 @@
 @import "monokai.css";
 @import "emails";
 @import "colors";
+@import "box";
 
 
 aside {
@@ -249,14 +250,6 @@ h5.external_links{
 
 }
 
-
-.box{
-  border: 1px solid #ffe6e6;
-  border-left: 4px solid $color-red-bright;
-  padding: 1rem;
-  margin-bottom: 2rem;
-}
-
 .source-link{
   text-align:center;
 
@@ -382,7 +375,7 @@ figcaption{
 
 table{
   border-collapse: collapse;
-  border-radius: 6px;
+  border-radius: $standard-radius;
   overflow: hidden;
   margin-bottom: $standard-margin;
 
