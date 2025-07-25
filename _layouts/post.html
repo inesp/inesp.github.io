@@ -17,9 +17,6 @@ layout: default
 
 
     <h1 itemprop="name headline">{{ page.title }}</h1>
-    {%- if page.subtitle -%}
-      <h2 class="post-subtitle" itemprop="alternativeHeadline">{{ page.subtitle }}</h2>
-    {%- endif -%}
     <div class="tags">{%- for tag in page.tags -%}<span class="badge bg-yellow">{{ tag }}</span>{%- endfor -%}</div>
   </header>
 

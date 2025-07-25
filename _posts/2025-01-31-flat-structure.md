@@ -1,6 +1,5 @@
 ---
-title: "Opinion: In Defence of Hierarchical Command Structures"
-subtitle: "Why flat organizational structures might not be the silver bullet we think they are"
+title: "Opinion: In Defence of Hierarchical Command Structures<small>Why flat organizational structures might not be the silver bullet we think they are</small>"
 excerpt_separator: <!--more-->
 biblio:
 tags: opinion people 

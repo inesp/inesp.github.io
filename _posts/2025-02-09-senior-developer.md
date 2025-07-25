@@ -1,6 +1,5 @@
 ---
-title: "What is the most sought-after trait of a developer?"
-subtitle: "Exploring the essential qualities that make developers truly valuable"
+title: "What is the most sought-after trait of a developer?<small>Exploring the essential qualities that make developers truly valuable</small>"
 excerpt_separator: <!--more-->
 biblio:
 tags: opinion people
