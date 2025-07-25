@@ -43,7 +43,7 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 
 ## Previous chapter
 
-⏮️ [Blind Spots in Code Exhibit A: Because Writing a Fresh Query Is Too Much Work]({% post_url 2025-07-21-blind-spots-in-code-part-I %})
+⏮️ [Why do smart devs write silly code? Exhibit A: Because Writing a Fresh Query Is Too Much Work]({% post_url 2025-07-21-blind-spots-in-code-part-I %})
 
 
 ## Exhibit B: I just need to confirm something (but I'm pretty sure I'm right)

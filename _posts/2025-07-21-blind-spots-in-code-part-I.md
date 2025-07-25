@@ -192,5 +192,5 @@ The first step to overcoming anchoring is to **be aware of it**. Once we know ho
 
 
 ## Next
-⏭️ [Blind Spots in Code Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)]({% post_url 2025-07-23-blind-spots-in-code-part-II %})
+⏭️ [Why do smart devs write silly code? Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)]({% post_url 2025-07-23-blind-spots-in-code-part-II %})
 
