@@ -50,26 +50,39 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 
 **Confirmation bias** is about being deaf to everything that contradicts your beliefs. Your mind has been made up. This is unchangeable. It is
 
-> the tendency to search for, interpret, favor, and recall information in a way that confirms that confirms or supports one's prior beliefs or values.
+> the tendency to search for, interpret, favor, and recall information in a way that confirms or supports one's prior beliefs or values.
 <figcaption>
 &mdash; Wikipedia: Confirmation bias
 </figcaption>
 
-**Accessibility bias** is to truly, really truly trust your gut. _"I saw the problem and the first thing I thought of was Y, so Y must be the best solution."_ It's a cognitive bias, where people trust that 
+**Accessibility bias** is to truly, really truly trust your gut. _"When I saw the problem the first thing I thought of was Y, so Y must be the best solution."_ It's a cognitive bias, where people trust that 
 
 > if something can be recalled, it must be important, or at least more important than alternative solutions not as readily recalled, is inherently biased toward recently acquired information.
 <figcaption>
 &mdash; Wikipedia: Availability heuristic
 </figcaption>
 
-**We love to forget that software engineering combines the individual and the collective**, there are (most often) 2 steps in creating software. First, **we pour our technical knowledge into a solution**, alone with our thoughts and screens. But right after the code is written, **we go out into the collective to defend it, in the form of PR reviews**, meetings and discussions. The probability that we fail to solve the original problem is just as high at the first stage (creating a technical solution) as it is at the second stage (defending the solution in front of out peers).
 
-Our work is as social as it is technical, and all social activities are deeply affected by cognitive biases.
+## All social activities are deeply affected by cognitive biases
+
+IT work is just as social as it is technical. 
+
+**We love to forget that software engineering combines the individual and the collective**.
+
+There are 2 distinct phases in creating software: one is solitary and the other is social. 
+
+The solitary phase is the physical action of writing words into code, it is about **pouring our technical knowledge into a solution**. We do this alone with our thoughts and our screens. 
+
+The social phase is about the meetings and discussions that precede and also follow the solitary phase. Before we write some code, we often talk about it, about the expanse of the problem and the options for solutions. And after we write the code **we go out into the collective to defend it, in the form of PR reviews**.
+
+The probability that we fail to solve the original problem is just as high at the solitary stage (creating a technical solution) as it is at the social stage (defending the solution in front of out peers).
+
+And as soon as people talk about what the think, cognitive biases are immediately present.
 
 Let’s look at how we fall prey to them in software development.
 
 
-## A bias for me, a bias for you
+## Laser-focused on (only) what is immediately accessible
 
 
 When asked to start a new project, **which framework do we choose? A known one, of course.** Preferably one we've used before. We are hardly going to go researching for a new framework.
@@ -78,45 +91,49 @@ And if a team member suggests a new framework? We often jump to poke holes in it
 
 Or maybe we'll be even more generic and claim that using the good old framework is better, because **these new frameworks are not "mature enough"** and not "battle-tested" and anyway, aren't these new frameworks just "different, not better"?
 
-However, **the accessibility bias also works the other way**. The team member suggesting the new framework might just be excited **because she read about it last month.** She’s been itching to try it out somewhere, anywhere. Suddenly, all she can see is the glittering features of the new framework, the promise of easier work, the poetry of the new code... _"It's just going to be such a joy to work with the new framework"_.
+We, as the oldtimer, focus on the good-old-framework, because knowledge about it is the most accessible to us. **We mainly focus on collecting information that confirms our viewpoint and are reluctant to give pause to oposing views.** We see ourselves as very rational, but what if it's just bias that is keeping us in place. 
+
+However, **bias also works the other way**. The team member suggesting the new framework might just be excited **because she read about it in several places already.** This framwork seems to be the great new thing, the things that everybody will adopt sooner or later, so let's join the "sooner"-cohort. After reading soo much about it, all she can see is the glittering features of the new framework, the promise of easier work, the poetry of the new code... _"It's just going to be such a joy to work with the new framework"_.
 
 Always choosing the new thing or always sticking with the old, both tendencies often stem from biases.
 
 
-## I am not infallible, check my work
+## PR reviews are a spectacular breeding ground for biases
 
 Now, how do we review PRs?
 
-PR reviews are a spectacular breeding ground for biases. Because they’re a deeply social activity.
+PR reviews are a spectacular breeding ground for biases. Because they are a deeply social activity.
 
 The idea of PR reviewing is great, it's the same as peer-reviewing a scientific paper. **We need to double-check everybody's work, not because we don't trust people, but because we are wisely accepting our own imperfections.** Everybody can make mistakes, small typos or big, silly logic errors. If we work together, we can catch bugs in the making, before they reach our users.
 
 This is all in theory, however.
 
-In practice, PRs as well as scientific papers are often poorly peer-reviewed. The reason? **It is SOOOO MUCH WORK to review something!** And this is work that **isn't really appreciated, nor is it rewarded**. We neither care if you did a good nor are we going to award you for it.
+In practice, PRs as well as scientific papers (and all other types of reviews) are often poorly peer-reviewed. The reason? **It is SOOOO MUCH WORK to review something!** And this is work that **isn't really appreciated or rewarded**. 
+
+We neither care if you did a good job reviewing _this_ nor are we going to award you for it.
 
 There is basically nothing in it for you, no reason to do a good job at reviewing. 
 
-Spending a good amount of time and energy to deliver a thorough review can even hurt you substantially. **People dislike reviewing, even when it is about their own code. So if you are offering excellent reviews for free, then why should their brains not take this shortcut?** There really isn't any point in doing a wholesome review.
+Spending a good amount of time and energy to deliver a thorough review can even hurt you ... substantially. **People dislike reviewing, even when it is about their own code. So if you are offering excellent reviews for free, then why should they be diligent when writing code? We have tests and great reviews, those will catch any bugs.** They can just write what looks like working code, and you will then review the code and find all the bugs. There really isn't any point in doing a wholesome review.
 
-What do devs often do to reduce the load of reviewing? We apply shortcuts, the same ones that are classified as cognitive biases.
+What do we do to reduce the load of reviewing? We apply shortcuts, the same ones that are classified as cognitive biases.
 
 We:
-- focus on the author, **what are the things this author usually does wrong** (confirmation bias - what do we already believe about this author)
-- focus on **recent production bugs**, the bugs that are fresh in our minds and for which we can still easily remember the cause and solution (availability bias - what is fresh in our minds)
-- focus on our own recent code changes, **let's just double-check that the open PR plays nicely with our own newest code, others will review their own code too** (availability bias)
-- focus on the **existing PR comments**, thinking somebody else maybe already did this work for us (availability bias, bystander effect)
+- focus on the author, **what are the things this author usually does wrong** ➡️ confirmation bias - what do we already believe about this author
+- focus on **recent production bugs**, the bugs that are fresh in our minds and for which we can still easily remember the cause and solution ➡️ availability bias - what is fresh in our minds
+- focus on our own recent code changes, **let's just double-check that the open PR plays nicely with our own newest code, others will review their own code too** ➡️ availability bias
+- focus on the **existing PR comments**, thinking somebody else maybe already did this work for us ➡️ availability bias, bystander effect
 - ...
 
-Reviewing something is surely better than reviewing nothing 🤪. 
+At the end of the day, we are told: "Reviewing something is surely better than reviewing nothing" 🤪. But is it? 
 
 
-## Can you please revert your PR? We don't need those changes anymore
+## Cognitive biases lead to code reverting
 
 
-One of the most disheartening parts of software work is when **your code changes get deleted**. All the effort spent crafting that code was for nothing. **You might as well have gone for some icecream and a walk in the park.** The result would have been the same. 
+One of the most disheartening parts of software work is when **your code changes get deleted**. All the effort spent crafting that code was for nothing. **You might as well have gone for some icecream and a walk in the park.** The result would have been the same (actually, it would have been a better outcome).
 
-Sometimes it's about **whole projects being hyped as critical**. Their importance demands stress from you and your team, it demands heightened care, maybe even overtime. But not long after the work is done, maybe as soon as the code reached your customers, it turns out this project wasn't that consequential after all. Maybe the customers don't like it, or maybe it's worse: they don't care. This whole project was the product of somebody's cognitive bias. **Somebody up the chain really, really(!) believed that this _will_ be a valuable software solution... and they based this belief on nothing.** All the work and care you put into this project were superfluous. **Your code was born dead.**
+Sometimes it's about **whole projects being hyped as critical**. It's importance demands stress from you and your team, it demands heightened care, maybe even overtime. But not long after the work is done, maybe as soon as the code reached your customers, it turns out this project wasn't that consequential after all. Maybe the customers don't like it, or maybe it's worse: they don't care. This whole project was the product of somebody's cognitive bias. **Somebody up the chain really, really(!) believed that this _will_ be a valuable software solution... and they based this belief on nothing.** All the work and care you put into this project were superfluous. **Your code was born dead.**
 
 Other times it's about smaller changes. A bug happens in production. Two people look into it. One immediately "finds the culprit", one specific logic needs to be redone. The other person doesn't believe this theory and keeps looking. **The first person goes into overdrive** and spends hours fixing the logic, **then they push the logic to production only for the bug to not be affected**. The real culprit was found just minutes later by the second person. It was just a setting, hidden somewhere else in the code. Time to revert the first person's PR.
 
@@ -150,15 +167,15 @@ They show how much harm biased actions can cause. **Reversed actions took up 3.1
 
 Getting to the destination faster and with less effort is great, but only as long as we are running towards the right goal. Sometimes we run towards just any goal, just for the sake of running. 
 
-**It's healthy to slow down occasionally and double-check what we are running towards.**
+**The solution is to slow down occasionally ... and double-check what we are running towards.**
 
 
-## The test coverage is 200%, no!, 300%, so the code must be good
+## Testing, especially, is suffering from confirmation bias 
 
 
 How do we achieve a good test coverage? By testing the happy path, of course. **By testing the scenarios for how our code is supposed to work** instead of testing for how it can be broken.
 
-If I have the function `def send_email(msg: str, recipient: str)`, then I only need to write a test for `send_email("Hi!", "my@email.com")` right? No need to test for HTML-text of for an empty recipient (`recipient=""`) or for an invalid email address or for a **too long msg** or for a broken HTML msg or ...
+If I have the function `def send_email(msg: str, recipient: str)`, then I only need to write a test for `send_email("Hi!", "my@email.com")` right? No need to test for HTML-text or for an empty recipient (`recipient=""`) or for an invalid email address or for a **too long msg** or for a broken HTML msg or ...
 
 A surprisingly huge number of papers are researching cognitive biases in software testing. And they are concluding that we like testing almost only the expected behavior. **We prefer writing tests that confirm the code works, not tests that disprove it. Even among professional QA engineers, this is a common bias.**
 
@@ -168,7 +185,7 @@ Surely, it is not that we don't know or don't care that unexpected input data mu
 
 If I'm testing the **login**-method, surely, it is clear that **at the very, very least we need 2 tests: a positive and a negative test, a test for a successful login and a test for a failed login.** Surely, the correct behavior of this method is to let in only people with correct credentials and to let them in only as themselves, right? But this demands more than 1 test. Even more than just 2 tests. 
 
-A paper called "A controlled experiment on time pressure and confirmation bias in functional software testing" researched this topic. Unfortunately, it found out that time pressure is downgrading our testing skills. **We simply have very poor testing skills** to begin with. Here's their conclusion:
+A paper called "A controlled experiment on time pressure and confirmation bias in functional software testing" researched this topic. Unfortunately, it found out that time pressure is NOT downgrading our testing skills. **We simply have very poor testing skills** to begin with. Here's their conclusion:
 
 > We observed, overall, **participants designed significantly more confirmatory test cases as compared to disconfirmatory ones**, which is in line with previous research. However, **we did not observe time pressure as an antecedent (tn: cause)** to an increased rate of confirmatory testing behaviour.
 > 
@@ -190,7 +207,7 @@ Half of the participants were given 30 minutes to write the tests, while the oth
 When we test only what we expect to work, **we miss the opportunity to uncover corner cases** or conflicting behaviors that can cause failures. Breaking free from confirmation bias means **deliberately seeking out tests that challenge assumptions, which is the only way to build robust software.**
 
 
-## Next time, check that the couch doesn't stink
+## It is in our nature to assume the best
 
 
 My guess is that the thing driving us towards writing confirmatory tests is the natural world. We make this same mistake in practically everything we do.

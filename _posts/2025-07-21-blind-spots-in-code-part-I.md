@@ -24,7 +24,9 @@ programming, 2006"
 
 This might just be the original example of bias that we, developers, just can't seem to overcome when creating software.
 
-This mindset **confines us and the software** we are able to produce to the **teeny-tiny space that we occupy in this world right now**, to our own, physically limited set of experiences and skills, to the few solutions we remember the moment we write a bit of code.
+**We trust ourselves excessively.** And this mindset **confines us (and the software** we produce) to the **teeny-tiny space that we happen to occupy at this particular point in time**. When we are the great (and only) judge, our code is physically limited to the set of experiences and skills we have, to the few solutions we remember the moment we write that bit of code.
+
+We are not infallible. **We are not mathematical.** We make just as many mental shortcuts as anybody else. We fall pray to cognitive biases just the same as everybody else does. 
 
 The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion. 
 
@@ -47,11 +49,11 @@ After I've scared you a little bit, let me now present the flip side of the coin
 
 **Cognitive biases are just shortcuts in decision-making.** 
 
-**Biases make life possible.** They are needed because they make us choose faster. When a lion is chasing you, you can only survive if you find a solution fast. 
+**Biases make life possible.** They are needed because they make us choose faster. In this world, indecision can get you killed. When a lion is chasing you, you can only survive if you find a solution fast. **Will you take this job or not? You have to decide now. And with too little information.**
 
 Had we not developed biases, we wouldn't be alive, not as individuals, not as a species.
 
-Biases are just a little more advanced form of "last time I ate this thing and liked it, let's order the same thing today".
+Biases are just a little more advanced form of "last time I ate _This_ thing and liked it, let's order _This_ thing again today".
 
 
 ## Biases are bad
@@ -60,15 +62,18 @@ With speed come mistakes.
 
 **Biases speed up our decisions, but we pay for this speed with the loss of correctness.**
 
-Here's an example: I cannot review 1,000 job applications in a day if I treat every applicant like a beautifully complex human, even though they are one. 
+I cannot review 1,000 job applications in a day if I treat every applicant like a beautifully complex human, even though they are one. 
 
 But I can do it by applying a **handful of quick, slightly arbitrary criteria**, hoping they’ll shrink the list down to the "good-enough" candidates. Not the best candidates, just the good-enough candidates.
 
-Maybe just the ones who already work in this field (debatable, but plausible). Or maybe just the ones who went to one of the top 3 universities in the country (pseudo-intellectual). Or maybe just the ones who don't trigger my irrational dislike of certain fonts (arbitrary).
+The filter-biases start strong but their logic quickly dwindles, it might go like this:
+1. Let's filter the candidates to those who already work in this field. ➡️ debatable, but plausible
+2. Let's also filter to only the top 3 universities in the country. ➡️ pseudo-intellectual
+3. And of course, ugly fonts are a no-go. ➡️ arbitrary
 
 Bias can quickly grow out of control. They generally start out as a rational shortcut, but they always have the potential to outgrow the rational space. **The rational and irrational have a very muddy border between them.**
 
-**Cognitive bias is a blind spot. It's the thing you don't pay attention to.** It's the thing where you give up control. And wouldn't you love to take back control over your own decisions?
+The biggest problem with cognitive biases is that you (generally) don't see them. **Cognitive biases are blind spots. They are the thing you don't pay attention to.** They are in control, not you. And wouldn't you love to take back control over your own decisions?
 
 
 ## Exhibit A: Anchors are a chain with a weight at the end
@@ -153,7 +158,7 @@ Either way, **the end-result is that you don't truly understand the expanse of t
 
 🤖 This same pattern very much applies to working with AI assistants, like Claude, Cursor or Copilot. Whatever the bot suggests, that is your anchor. And as we've seen, **anchoring leads to more bugs in the code** and also to **overconfidence in the correctness of that code**. 
 
-Frankly, that’s been my personal experience too. AI-generated code solutions somehow instill an astonishing level of confidence in some developers.
+That’s been my personal experience too. AI-generated code solutions somehow instill an astonishing level of confidence in some developers.
 
 **It's hard to convince a dev that thair AI-generated code has major bugs, when neither of us actually did the work of understanding the problem.** 
 
