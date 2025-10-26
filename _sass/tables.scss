@@ -115,6 +115,12 @@ table.talks {
     border-left: 4px solid $color-hover-red;
   }
 
+  @media (min-width: 1200px) {
+    td:nth-child(6) {
+      white-space: nowrap;
+    }
+  }
+
   // 6th column for links
   td:nth-child(6) a {
     font-size: 1.2rem;
