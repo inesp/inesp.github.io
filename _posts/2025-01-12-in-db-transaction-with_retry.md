@@ -2,7 +2,7 @@
 title: "What to do when a DB transaction fails? Retry them ♻️"
 excerpt_separator: <!--more-->
 biblio:
-tags: ["Building Blocks collection", Database]
+tags: ["Building Blocks collection", "Database", "Code Patterns"]
 ---
 
 What do a good portion of database transactions do? They fail. But this is hardly surprising. 

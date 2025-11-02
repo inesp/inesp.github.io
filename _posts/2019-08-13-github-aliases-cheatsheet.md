@@ -1,6 +1,6 @@
 ---
 title: "Git cheat-sheet: Aliases"
-tags: "Git"
+tags: ["Git", "Tools"]
 excerpt_separator: <!--more-->
 biblio:
   - title: "StackOverflow: Pretty git branch graphs"

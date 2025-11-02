@@ -1,5 +1,6 @@
 ---
 title: "A couple of HTTP headers that devs don't seem to know about"
+tags: ["Networking"]
 excerpt_separator: <!--more-->
 biblio:
   - title: "MDN Web Docs: HTTP headers"

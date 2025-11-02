@@ -1,5 +1,6 @@
 ---
 title: How to estimate data requirements
+tags: ["System Design"]
 biblio:
   - 
     title: "Episode 06: Into to Architecture and Systems Design Interviews"

@@ -1,6 +1,6 @@
 ---
 title: "Celery task retry guide"
-tags: Celery
+tags: ["Celery", "Code Patterns"]
 biblio:
   - title: "Celery docs: Retry"
     link: "https://docs.celeryproject.org/en/stable/userguide/tasks.html?highlight=autoretry_for#retrying"

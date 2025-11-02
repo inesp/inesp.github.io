@@ -1,6 +1,7 @@
 ---
 title: Cheat Sheet of Python Mock
 image: /assets/mock_intro.png
+tags: ["Code Patterns"]
 biblio:
   - title: "Python docs: mock object library"
     link: "https://docs.python.org/3/library/unittest.mock.html"

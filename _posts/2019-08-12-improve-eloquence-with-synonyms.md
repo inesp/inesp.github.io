@@ -1,6 +1,6 @@
 ---
 title: How I use Thesaurus's Synonyms to write better (i.e. advance my articulation)
-tags: People
+tags: ["People", "Technical Writing"]
 excerpt_separator: <!--more-->
 biblio:
   -  title: "Thesaurus"

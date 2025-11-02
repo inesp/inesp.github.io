@@ -1,5 +1,6 @@
 ---
 title: "Simplicity over Complexity! Or is it the other way around?"
+tags: ["Opinion", "Software Design Principles", "Code Style"]
 biblio: 
   - link: "https://en.wikipedia.org/wiki/Minimum_viable_product"
     title: "Minimum viable product"

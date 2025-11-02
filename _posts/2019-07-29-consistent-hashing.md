@@ -1,5 +1,6 @@
 ---
 title: "Consistent Hashing in a Nutshell"
+tags: ["System Design"]
 biblio:
   -
     title: "Consistent Hashing: Algorithmic Tradeoffs"
