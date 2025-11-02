@@ -1,7 +1,7 @@
 ---
 title: "Self-Documenting Code Concept 2: Error msgs with calls to action"
 excerpt_separator: <!--more-->
-tags: self-documenting-code
+tags: ["Self-Documenting Code"]
 ---
 
 To reiterate from the [previous chapter]({% post_url 2025-04-17-how-to-make-code-self-document-itself %}): Why do we want self-documenting code? Because then future devs (and we) will use our code as it was intended, whether they read the docs or not. 

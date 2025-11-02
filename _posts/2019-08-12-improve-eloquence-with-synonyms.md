@@ -1,6 +1,6 @@
 ---
 title: How I use Thesaurus's Synonyms to write better (i.e. advance my articulation)
-tags: people
+tags: People
 excerpt_separator: <!--more-->
 biblio:
   -  title: "Thesaurus"
@@ -9,7 +9,7 @@ biblio:
 
 It turns out that a significant part of our work as developers is to write stuff down. Or to say it more eloquently, to outline, recount and illustrate our deliberations in writing. Given that English is not my first language I might be forgiven for lacking in expressive prowess, but everybody is sometimes just tired, annoyed or drained. Sometimes our literary capacities are narrowed down to only simple words, like "bad", "good", "ugly".
 
-In those moments I turn to Thesaurus's life saving (read: face-saving) [online synonyms' dictionary](https://www.thesaurus.com/browse/good){:target="_blank"}.
+In those moments I turn to Thesaurus's life-saving (read: face-saving) [online synonyms' dictionary](https://www.thesaurus.com/browse/good){:target="_blank"}.
 
 [![Synonyms' dictionary](/assets/Synonims-thesaurus.png)](https://www.thesaurus.com/browse/good){:target="_blank"}
 

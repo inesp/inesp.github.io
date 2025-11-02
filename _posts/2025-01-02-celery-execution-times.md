@@ -1,6 +1,6 @@
 ---
 title: "How do I measure the execution time of Celery tasks?"
-tags: building-blocks-collection celery
+tags: ["Building Blocks collection", "Celery"]
 excerpt_separator: <!--more-->
 biblio:
   - link: https://www.netdata.cloud/blog/introduction-to-statsd/#:~:text=StatsD%20is%20an%20industry%2Dstandard,to%20a%20central%20statsD%20server.

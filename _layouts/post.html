@@ -14,10 +14,10 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
     </p>
 
-
-
     <h1 itemprop="name headline">{{ page.title }}</h1>
-    <div class="tags">{%- for tag in page.tags -%}<span class="badge bg-yellow">{{ tag }}</span>{%- endfor -%}</div>
+    <div class="tags">{%- for tag in page.tags -%}
+      {% assign tag_slug = tag | slugify %}
+      <a href="{{ '/topic/' | append: tag_slug | relative_url }}"><span class="badge bg-yellow">{{ tag }}</span></a>{%- endfor -%}</div>
   </header>
 
   <div class="post-content {{ page.css | escape }}" itemprop="articleBody">

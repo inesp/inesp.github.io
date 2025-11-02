@@ -1,6 +1,6 @@
 ---
 title: "Build me a global <code>user_id</code> / <code>request_id</code> / <code>tenant_id</code>"
-tags: building-blocks-collection
+tags: ["Building Blocks collection"]
 excerpt_separator: <!--more-->
 biblio:
   - link: https://github.com/python/cpython/blob/3.13/Lib/_threading_local.py

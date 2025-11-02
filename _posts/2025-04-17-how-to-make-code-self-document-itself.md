@@ -4,7 +4,7 @@ excerpt_separator: <!--more-->
 biblio:
   - title: "Python: The assert statement"
     link: https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement
-tags: self-documenting-code
+tags: ["Self-Documenting Code"]
 ---
 
 **How much documentation, dev-documentation does you app have?** Presumably less than it should have. At least according to new hires. 
