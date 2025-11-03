@@ -339,10 +339,15 @@ figcaption{
 /**
  * Separator
  */
- .separator-space{
+ .aside-separator-space, .separator-space{
    padding-bottom: 200px;
    @media (max-width: 700px)  {
      padding-bottom: 300px;
+   }
+ }
+ .aside-separator-space{
+   @media (max-width: 991.9px) {
+     padding-bottom: 20px;
    }
  }
  .separator {

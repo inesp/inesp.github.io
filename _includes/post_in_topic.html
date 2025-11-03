@@ -1,0 +1,13 @@
+{% comment %}
+emoji: str
+tag_title: str
+tag_slug: str
+num_of_posts: int
+{% endcomment %}
+
+<li class="category">
+  {{ include.emoji }}
+  <a href="{{ '/topic/' | append: include.tag_slug | relative_url }}">{{ include.tag_title }}</a>
+  <span class="badge">({{ include.num_of_posts }} posts)</span>
+</li>
+
