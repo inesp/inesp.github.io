@@ -8,6 +8,8 @@
 @import "box";
 @import "tables";
 @import "quote";
+@import "topics";
+
 
 
 aside {
@@ -22,7 +24,7 @@ aside {
   }
 
   h3{
-    font-size: 1.2rem;
+    font-size: $h3-font-size !important;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -114,6 +116,9 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
     text-transform: none;
   }
 }
+h1, .h1{
+  font-size: $h1-font-size;
+}
 
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
@@ -132,7 +137,7 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
   margin-bottom: 8rem;
 
   h2 {
-    font-size: 2rem;
+    font-size: $h2-font-size;
     line-height: 1.625;
     text-decoration: none;
 
@@ -334,10 +339,15 @@ figcaption{
 /**
  * Separator
  */
- .separator-space{
+ .aside-separator-space, .separator-space{
    padding-bottom: 200px;
    @media (max-width: 700px)  {
      padding-bottom: 300px;
+   }
+ }
+ .aside-separator-space{
+   @media (max-width: 991.9px) {
+     padding-bottom: 20px;
    }
  }
  .separator {

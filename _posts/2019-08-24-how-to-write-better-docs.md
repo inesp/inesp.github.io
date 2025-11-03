@@ -1,6 +1,6 @@
 ---
 title: Why is sooooo.. much documentation a pain to read?
-tags: people
+tags: ["People", "Technical Writing"]
 biblio:
   - title: "5 Whys"
     link: "https://en.wikipedia.org/wiki/5_Whys"

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign tag = page.tags %}
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+<div class="colorful"></div>
+
+<div class="mt-4 separator-space">
+  {%- for post in site.tags[tag] -%}
+    <div class="topic-post mb-4">
+      <div><span class="text-muted">{{ post.date | date: "%Y %b" }}</span>: <b><a href="{{ post.url | relative_link }}">{{ post.title }}</a></b></div>
+      <div class="fst-italic">{{ post.excerpt | strip_html | truncatewords: 20 }}</div>
+    </div>
+  {%- endfor -%}
+</div>
+
+
+

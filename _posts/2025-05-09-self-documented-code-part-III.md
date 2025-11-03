@@ -1,7 +1,7 @@
 ---
 title: "Self-Documenting Code Concept 3: Abstract functions and code patterns"
 excerpt_separator: <!--more-->
-tags: self-documenting-code
+tags: ["Self-Documenting Code"]
 ---
 
 To reiterate, what do we want: to not read the docs, but still know everything the docs say.

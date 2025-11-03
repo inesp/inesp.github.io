@@ -1,6 +1,6 @@
 ---
 title: "Postgres: How to select additional columns when using <code>GROUP BY</code> together with <code>MAX</code>/<code>MIN</code>"
-tags: database
+tags: ["Database"]
 biblio:
   - title: "Postgresql Docs: 3.5 Window Functions"
     link: "https://www.postgresql.org/docs/9.4/tutorial-window.html"

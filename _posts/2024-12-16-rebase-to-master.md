@@ -1,6 +1,6 @@
 ---
 title: "Git script <code>git rebaseToMaster</code>"
-tags: git
+tags: ["Git", "Tools"]
 excerpt_separator: <!--more-->
 ---
 

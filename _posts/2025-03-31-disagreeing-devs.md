@@ -4,7 +4,7 @@ excerpt_separator: <!--more-->
 biblio:
   - title: Moussaïd M, Kämmer JE, Analytis PP, Neth H., Social Influence and the Collective Dynamics of Opinion Formation, 2013
     link: https://pmc.ncbi.nlm.nih.gov/articles/PMC3818331/
-tags: opinion people
+tags: ["Opinion", "People"] 
 ---
 
 So, have you also noticed that developers have a certain ... _fondness_ for arguing?

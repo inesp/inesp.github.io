@@ -2,7 +2,7 @@
 title: "What is the most sought-after trait of a developer?"
 excerpt_separator: <!--more-->
 biblio:
-tags: opinion people
+tags: ["Opinion", "People"] 
 ---
 
 This is so easy to answer! This post doesn't even need more than just an intro.

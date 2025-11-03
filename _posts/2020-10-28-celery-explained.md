@@ -1,6 +1,6 @@
 ---
 title: "Celery: A few gotchas explained"
-tags: celery
+tags: Celery
 excerpt_separator: <!--more-->
 biblio:
   - title: "Celery docs"

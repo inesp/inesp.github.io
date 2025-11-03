@@ -2,7 +2,7 @@
 title: "Opinion: In Defence of Hierarchical Command Structures"
 excerpt_separator: <!--more-->
 biblio:
-tags: opinion people 
+tags: ["Opinion", "People"] 
 ---
 
 Developers. Aren't we just a most ... argumentative bunch of ... people? We fight on pull requests, we fight on tech-specs, we fight in meetings. We just don't agree on anything. And we are very willing to die on many hills just to prove a point.

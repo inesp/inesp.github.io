@@ -1,6 +1,6 @@
 ---
 title: "How to <i><s>force</s></i> encourage developers to fix Python warnings for deprecated features"
-tags: people
+tags: ["Opinion", "People", "Code Patterns"]
 excerpt_separator: <!--more-->
 biblio: 
   - link: https://docs.pytest.org/en/stable/how-to/capture-warnings.html

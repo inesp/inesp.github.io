@@ -1,5 +1,6 @@
 ---
 title: "The layered world of web development: Why I need NGINX and uWSGI to run a Python app?"
+tags: ["Networking"]
 biblio:
   - title: "Full Stack Python"
     link: "https://www.fullstackpython.com/"

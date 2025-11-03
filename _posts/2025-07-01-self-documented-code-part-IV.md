@@ -1,7 +1,7 @@
 ---
 title: "Self-Documenting Code Concept 4: Embrace Copy-Paste"
 excerpt_separator: <!--more-->
-tags: self-documenting-code
+tags: ["Self-Documenting Code"]
 ---
 
 **What's the point of documentation?** To help other people use _your_ code.

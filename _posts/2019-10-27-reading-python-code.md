@@ -4,6 +4,7 @@ biblio:
   -
     title: "Python Marshmallow"
     link: "https://marshmallow.readthedocs.io/en/stable/"
+tags: ["Code Style", "Opinion", "People"]
 ---
 
 Code readability is a hot topic. We do not agree on what it looks like and we do not agree on how much of it is needed. It is rarely discussed on a new project and practically never on a project with only 1 developer. 

@@ -1,6 +1,6 @@
 ---
 title: How to build a successful team in a culture obsessed with lone heroes?
-tags: people
+tags: [People, "Engineering Research"]
 biblio:
   - title: "How to answer ‘Are you a team player?’ in an interview"
     link: "https://www.jobs.ie/job-talk/how-to-answer-are-you-a-team-player-in-an-interview/"

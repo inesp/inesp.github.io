@@ -1,6 +1,6 @@
 ---
 title: "The Interview Process isn't broken, it is intolerant by design"
-tags: people
+tags: ["People", "Opinion", "Engineering Research"]
 excerpt_separator: <!--more-->
 biblio:
   - title: "Google Guide: Train your interviewers"
