@@ -35,6 +35,10 @@
     background: $color-gray;
     margin: 0 1em;
     vertical-align: middle;
+
+    @media (max-width: 600px) {
+      width: 10px;
+    }
   }
 }
 
