@@ -1,4 +1,5 @@
 @import "colors";
+@import "font_sizes";
 
 /* Intro */
 .home-intro {
@@ -136,7 +137,6 @@
   padding: 2rem 0 2.5rem;
 
   h4 {
-    font-size: $h4-font-size;
     margin-bottom: 1rem;
   }
 

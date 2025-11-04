@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "font_sizes";
 @import "fonts";
 @import "monokai.css";
 @import "emails";
@@ -19,14 +20,12 @@ aside {
 
   h2{
     font-family: 'Saira Stencil One', cursive;
-    font-size: $h2-font-size !important;
     a {
       text-decoration: none;
     }
   }
 
   h3{
-    font-size: $h3-font-size !important;
     text-transform: uppercase;
     font-weight: bold;
   }
@@ -118,9 +117,6 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
     text-transform: none;
   }
 }
-h1, .h1{
-  font-size: $h1-font-size;
-}
 
 .post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
 .post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
@@ -139,7 +135,6 @@ h1, .h1{
   margin-bottom: 8rem;
 
   h2 {
-    font-size: $h2-font-size;
     line-height: 1.625;
     text-decoration: none;
 
