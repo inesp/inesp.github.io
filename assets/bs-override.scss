@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One|Exo+2:wght@400;600&Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+@import "fonts";
 @import "monokai.css";
 @import "emails";
 @import "colors";
@@ -9,6 +9,7 @@
 @import "tables";
 @import "quote";
 @import "topics";
+@import "home";
 
 
 
@@ -18,6 +19,7 @@ aside {
 
   h2{
     font-family: 'Saira Stencil One', cursive;
+    font-size: $h2-font-size !important;
     a {
       text-decoration: none;
     }
@@ -201,7 +203,7 @@ img {
   .post-content table {
     max-width: 100%;
   }
-  .highlight, p.post-edit-link, .post-excerpt, .title-underscore{
+  .highlight, p.post-edit-link, .post-excerpt, .title-underscore, .home{
     max-width: 800px;
 
     img {
@@ -263,8 +265,6 @@ h5.external_links{
 
 .post-meta {
   font-size: 90%;
-  line-height: 1.8;
-  margin-bottom: 1rem;
 }
 
 .post-content{
@@ -370,12 +370,18 @@ figcaption{
     background: $color-yellow-dark;
     color: $color-badge-text;
   }
-  margin-right: 0.75rem;
-}
-.tags{
-  margin-bottom: 1rem;
-  margin-top: -0.5rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.8rem;
 }
 
-
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline; /* aligns title text baseline with date */
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  gap: 0.15rem;
+}
 
