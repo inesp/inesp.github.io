@@ -15,7 +15,7 @@ layout: default
     </p>
 
     <h1 itemprop="name headline">{{ page.title }}</h1>
-    <div class="tags">{%- for tag in page.tags -%}
+    <div class="flex-row">{%- for tag in page.tags -%}
       {% assign tag_slug = tag | slugify %}
       <a href="{{ '/topic/' | append: tag_slug | relative_url }}"><span class="badge bg-yellow">{{ tag }}</span></a>{%- endfor -%}</div>
   </header>
