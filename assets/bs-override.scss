@@ -20,6 +20,7 @@ aside {
 
   h2{
     font-family: 'Saira Stencil One', cursive;
+    font-size: $h1-font-size;
     a {
       text-decoration: none;
     }
@@ -378,3 +379,14 @@ figcaption{
   gap: 0.5rem;
 }
 
+.colorful{
+  height: 5px;
+  width: 100%;
+  background-image: linear-gradient(90deg, $color-yellow, $color-hover-red);
+  margin-bottom: $standard-margin;
+}
+.about{
+  .colorful{
+    max-width: 800px;
+  }
+}

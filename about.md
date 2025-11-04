@@ -2,13 +2,14 @@
 layout: page
 title: Who am I
 permalink: /about/
+css: about
 ---
 
 Hi, my name is Ines Panker. I'm a Software Engineer by trade and an explorer at heart.
 
 I've been building software **for almost two decades**: writing code, shaping architecture, and leading teams. I started my journey with **Java**, surfed the PHP wave, and for the past decade, **Python** has been my weapon of choice.
 
-&nbsp;
+<div class="colorful"></div>
 
 I’m fascinated by elegant solutions to complex problems, **finding simple, straightforward patterns in** what might initially seem like **chaos**. You could say I’m an **interpreter of complexity**, helping make sense of tangled codebases and intricate systems.
 

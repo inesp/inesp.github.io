@@ -1,12 +1,7 @@
 @import "colors";
 
 
-.colorful{
-  height: 5px;
-  width: 100%;
-  background-image: linear-gradient(90deg, $color-yellow, $color-hover-red);
-  margin-bottom: $standard-margin;
-}
+
 
 .categories-list {
   list-style: none;
