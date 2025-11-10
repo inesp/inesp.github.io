@@ -167,6 +167,7 @@ a {
 .post-content a, .footer a, .post-edit-link a{
   color: $color-text;
   text-decoration: underline;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
     color: $color-hover-red;
@@ -287,8 +288,8 @@ h5.external_links{
 
 
 blockquote {
-  border-left: 10px solid $color-yellow;
-  margin: 1.5em 10px;
+  border-left: 6px solid $color-yellow;
+  margin: 1.5em 0;
   padding: 0.5em 10px;
   quotes: "\201C""\201D";
 
@@ -328,7 +329,7 @@ figcaption{
 
 .highlight {
   pre {
-    padding: 15px 20px;
+    padding: 1rem;
     border-radius: 5px;
   }
 }
