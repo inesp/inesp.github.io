@@ -53,9 +53,6 @@
     padding: 0;
   }
 
-  .post-meta{
-    margin: 0.5rem 0;
-  }
 }
 
 .topic-title {
@@ -83,20 +80,6 @@
   margin: 0.75rem auto 3rem;
 }
 
-.post-title {
-  font-size: $h4-font-size;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-
-  a {
-    text-decoration: none;
-    transition: color 0.2s ease;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
 
 .post-header {
   display: flex;
@@ -112,18 +95,8 @@
 
 .topic-block {
   margin: 5rem 0 5rem;
-
-  .post-item + .post-item {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e4e8ea;
-  }
 }
 
-.post-teaser {
-  color: $color-gray-4;
-  margin-top: 0.2rem;
-}
 
 /* More link */
 .topic-more {

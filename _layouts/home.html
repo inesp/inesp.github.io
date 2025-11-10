@@ -30,31 +30,7 @@ layout: default
   <!-- Latest -->
   <h2 class="home-section-title">Recent writings</h2>
   <section class="topic-block">
-    <ul>
-      {%- for post in latest_posts -%}
-        <li class="post-item">
-          <h3 class="post-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-
-          <div class="flex-row post-meta">
-            <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
-            {%- if post.tags -%}
-              <span class="sep">•</span>
-              {%- for tag in post.tags -%}
-                {% assign tag_slug = tag | slugify %}
-                <a href="{{ '/topic/' | append: tag_slug | relative_url }}"><span class="badge bg-yellow">{{ tag }}</span></a>
-              {%- endfor -%}
-            {%- endif -%}
-          </div>
-
-          {%- if post.excerpt -%}
-            <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-          {%- endif -%}
-        </li>
-      {%- endfor -%}
-    </ul>
-
+    {%- include posts_section.html posts=latest_posts -%}
     <p class="topic-more">
       <a href="/archive/">View whole archive</a>
     </p>

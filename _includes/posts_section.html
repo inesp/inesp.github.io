@@ -1,0 +1,29 @@
+{% comment %}
+- posts
+{% endcomment %}
+
+<ul>
+  {%- for post in include.posts -%}
+    <li class="post-item">
+      <h3 class="post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
+
+      <div class="flex-row post-meta">
+        <span class="text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {%- if post.tags -%}
+          <span>•</span>
+          {%- for tag in post.tags -%}
+            {% assign tag_slug = tag | slugify %}
+            <a href="{{ '/topic/' | append: tag_slug | relative_url }}"><span class="badge bg-yellow">{{ tag }}</span></a>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+
+      {%- if post.excerpt -%}
+        <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>
+

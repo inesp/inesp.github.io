@@ -1,0 +1,33 @@
+
+.post-item + .post-item {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e4e8ea;
+}
+
+.post-title {
+  font-size: $h4-font-size;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+
+  a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post-item {
+  .post-meta {
+    margin: 0.5rem 0;
+  }
+}
+
+
+.post-teaser {
+  color: $color-gray-4;
+  margin-top: 0.2rem;
+}
