@@ -26,19 +26,23 @@
   margin: 6rem 0 5rem;
   position: relative;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em; // space between lines and text
+  flex-wrap: wrap; // ensures that the text itself can wrap
+
   &::before,
   &::after {
     content: "";
-    display: inline-block;
-    width: 40px;
+    flex: 1 1 40px; // <-- flexible, starts at 40px but can shrink
     height: 1px;
     background: $color-gray;
-    margin: 0 1em;
-    vertical-align: middle;
+    min-width: 10px; // prevents disappearing entirely
+  }
 
-    @media (max-width: 600px) {
-      width: 10px;
-    }
+  @media (max-width: 600px) {
+    gap: 0.5em;
   }
 }
 
