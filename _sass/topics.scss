@@ -1,8 +1,5 @@
 @import "colors";
 
-
-
-
 .categories-list {
   list-style: none;
   padding: 0;
@@ -23,10 +20,4 @@
     background-color: $color-red-light;
     color: $color-red-darker;
   }
-}
-
-
-/*********** POSTS *************/
-.topic-post{
-  font-size: 120%;
 }

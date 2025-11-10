@@ -1,8 +1,12 @@
 {% comment %}
 - posts
+- teaser_length
+- show_archive_link
 {% endcomment %}
 
-<ul>
+{%- assign clean_teaser_length = include.teaser_length | default: 15 -%}
+
+<ul class="list-unstyled">
   {%- for post in include.posts -%}
     <li class="post-item">
       <h3 class="post-title">
@@ -21,9 +25,15 @@
       </div>
 
       {%- if post.excerpt -%}
-        <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: clean_teaser_length }}</p>
       {%- endif -%}
     </li>
   {%- endfor -%}
 </ul>
+
+{%- if include.show_archive_link -%}
+  <p class="topic-more">
+    <a href="/archive/">View whole archive</a>
+  </p>
+{%- endif -%}
 

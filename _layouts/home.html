@@ -20,20 +20,12 @@ layout: default
     <p class="intro-text">
       Notes from my years of building software.
     </p>
-    {% comment %}
-    <p class="intro-text">
-      Notes from years spent shaping systems. I study the patterns, I study the trends and observe the people entangled in it.
-    </p>
-    {% endcomment %}
   </section>
 
   <!-- Latest -->
   <h2 class="home-section-title">Recent writings</h2>
   <section class="topic-block">
-    {%- include posts_section.html posts=latest_posts -%}
-    <p class="topic-more">
-      <a href="/archive/">View whole archive</a>
-    </p>
+    {%- include posts_section.html posts=latest_posts teaser_length=30 show_archive_link=true -%}
   </section>
 
   <h2 class="home-section-title">Explore by topic</h2>
@@ -49,7 +41,7 @@ layout: default
         <h3 class="topic-title">{{ tag }}</h3>
         <p class="topic-intro">{{ topic_info.home_intro }}</p>
 
-        <ul>
+        <ul class="list-unstyled">
           {%- for post in posts limit:3 -%}
             <li class="post-item">
               <div class="post-header">
