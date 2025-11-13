@@ -1,0 +1,40 @@
+---
+layout: page
+title: Public Talks
+permalink: /talks/
+---
+
+<p>Observations about the human at work, building software.</p>
+
+{%- assign talks_info = site.data.talks -%}
+
+<table class="talks">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th></th>
+      <th>Location</th>
+      <th>Title</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for talk in talks_info -%}
+      <tr>
+        <td>{{ talk.date }}</td>
+        <td>{%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}</td>
+        <td>{{ talk.flag }}</td>
+        <td>{{ talk.location }}</td>
+        <td>{{ talk.title }}</td>
+        <td class="link-icons">{%- if talk.video_link -%}
+            <a href="{{ talk.video_link }}" title="Video" target="_blank">🎥</a>
+          {%- endif -%}{%- if talk.details_link -%}
+            <a href="{{ talk.details_link }}" title="Details" target="_blank">📅</a>
+          {%- endif -%}{%- if talk.slides_link -%}
+            <a href="{{ talk.slides_link }}" title="Slides" target="_blank">📑</a>
+          {%- endif -%}</td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
