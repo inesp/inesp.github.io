@@ -23,6 +23,16 @@ layout: default
     {%- include posts_section.html posts=posts show_archive_link=show_archive_link -%}
   </section>
 
+    <section class="other-topics">
+    <h4>All Topics</h4>
+    <div class="flex-row topic-list">
+      {%- assign all_topics = site.tags | sort -%}
+      {%- for t in all_topics -%}
+        <span><a href="/topic/{{ t[0] | slugify }}/">{{ t[0] | replace: "-", " " | capitalize }}</a></span>
+      {%- endfor -%}
+    </div>
+  </section>
+
 </div>
 
 
