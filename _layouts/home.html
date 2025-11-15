@@ -3,7 +3,20 @@ layout: default
 ---
 
 {%- assign featured_topics = "Engineering Research,People,Code Patterns" | split: "," -%}
-{%- assign latest_posts = site.posts | slice: 0, 4 -%}
+
+{%- assign excluded_latest_post_urls = "/2025/07/21/blind-spots-in-code-part-I.html,/2025/05/09/self-documented-code-part-III.html,/2025/05/05/self-documented-code-part-II.html,/2025/04/17/how-to-make-code-self-document-itself.html,/2025/03/31/disagreeing-devs.html" | split: "," -%}
+
+{%- assign latest_posts = "" | split: "" -%}
+{%- for post in site.posts -%}
+  {%- unless excluded_latest_post_urls contains post.url -%}
+    {%- assign latest_posts = latest_posts | push: post -%}
+
+    {%- if latest_posts.size >= 3 -%}
+      {% break %}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+
 {%- assign latest_urls = latest_posts | map: "url" -%}
 
 {%- assign filtered_posts = "" | split: "" -%}
