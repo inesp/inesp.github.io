@@ -5,20 +5,18 @@ permalink: /about/
 css: about
 ---
 
-Hi, my name is Ines Panker. I'm a Software Engineer by trade and an explorer at heart.
+Hi, I’m Ines Panker. I'm a software engineer and Python consultant helping teams bring clarity to complex systems.
 
-I've been building software **for almost two decades**: writing code, shaping architecture, and leading teams. I started my journey with **Java**, surfed the PHP wave, and for the past decade, **Python** has been my weapon of choice.
+My work spans architecture, backend development, and guiding teams through technical decisions. I began with **Java**, spent time in the world of PHP, and eventually focused my practice on **Python**, which has been at the centre of my work for several years now.
 
 <div class="colorful"></div>
 
-I’m fascinated by elegant solutions to complex problems, **finding simple, straightforward patterns in** what might initially seem like **chaos**. You could say I’m an **interpreter of complexity**, helping make sense of tangled codebases and intricate systems.
+I’m particularly interested in **simplifying complexity**: **improving existing codebases, clarifying system structure, and finding practical, maintainable solutions** to problems that have grown unwieldy over time. 
 
-To me, great software systems are like well-designed cities: thoughtfully planned, easy to navigate, and built to grow without falling apart. The key is building solid **foundations** while delivering real-world solutions.
+To me, great software systems are like well-designed cities: thoughtfully planned, easy to navigate, and built to scale gracefully. The key is building solid **foundations** and to focus on what genuinely matters to the people using and maintaining the system.
 
-My other passion is observing the **human side** of software.
-
-While the industry often treats code as the center of everything, I see software as deeply human: created by teams, used by people, and shaped by the society we live in.
-
-There are many facets to building software. It starts long before we open a code editor. It starts in meeting rooms, meetups, and conferences. It continues well after we close the editor by living on in the hands of users and society.
+I’m also drawn to the **human side** of software. Software reflects the people who build it, those who use it, and the society it exists in. I try to explore how technical decisions and human dynamics influence each other.
 
 In my talks and writing, I aim to make complex ideas clear and relevant, blending technical insight with a focus on the people around the code.
+
+If you’re working with Python and need support with architecture, refactoring, or making sense of complexity, I’m available for consulting and short-term collaborations.
