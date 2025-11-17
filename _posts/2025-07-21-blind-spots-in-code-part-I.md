@@ -28,9 +28,11 @@ This might just be the original example of bias that we, developers, just can't 
 
 We are not infallible. **We are not mathematical.** We make just as many mental shortcuts as anybody else. We fall pray to cognitive biases just the same as everybody else does. 
 
-The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion. 
+The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion...they are more about though exclusion.
 
-**Cognitive bias is everywhere around us.** Bias is:
+**Cognitive biases help us in our decision-making. They are thought habits.** They save us time and energy.
+
+**And they are everywhere around us:** They activate:
 - when you only read articles (**listen to co-workers**) that support your world view (confirmation bias), 
 - it's when you stick to buying coffe from the same place for 20 years (**stick with an old framework**), even though the coffe isn't even that great (status quo bias)
 - it's when you dislike French people (**Javascript**), because you had one bad experience (implicit bias),
