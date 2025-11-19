@@ -5,22 +5,29 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header>
+  <header class="post-heading text-center mb-2" itemscope itemtype="http://schema.org/BlogPosting">
 
     <p class="post-meta text-muted">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        Published: {{ page.date | date: site.date_format }}
+      Published: <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: site.date_format }}
       </time>
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author | escape }}</span>
     </p>
 
-    <h1 itemprop="name headline">{{ page.title }}</h1>
-    <div class="flex-row">{%- for tag in page.tags -%}
+    {% if page.collection_title %}
+      <div class="collection-title mb-1">
+        <a href="{{ page.collection_url }}">{{ page.collection_title }}</a>
+      </div>
+    {% endif %}
+
+    <h1 class=" mb-4" itemprop="name headline">{{ page.title }}</h1>
+
+    <div class="flex-row justify-content-center">{%- for tag in page.tags -%}
       {% assign tag_slug = tag | slugify %}
       <a href="{{ '/topic/' | append: tag_slug | relative_url }}"><span class="badge bg-yellow">{{ tag }}</span></a>{%- endfor -%}</div>
   </header>
 
-  <div class="post-content {{ page.css | escape }}" itemprop="articleBody">
+  <div class="article-body {{ page.css | escape }} my-5" itemprop="articleBody">
     {{ content }}
 
     {%- include biblio.html -%}

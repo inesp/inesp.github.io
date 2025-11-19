@@ -58,7 +58,7 @@ table{
   }
 }
 
-.post-content table {
+.article-body table {
   tbody tr:nth-child(even) {
     background-color: #fffcf3;
   }
@@ -121,17 +121,28 @@ table.talks {
     }
   }
 
+  .talk-conf{
+    font-weight: 500;
+  }
+
+  td a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
   td.link-icons a {
     font-size: $h3-font-size;
     text-decoration: none;
     margin-right: 0.5rem;
     transition: all 0.2s;
-    display: inline-block
-  }
+    display: inline-block;
 
-  td.link-icons a:hover {
-    transform: scale(1.3);
-    text-decoration: underline;
-    color: $color-hover-red;
+    &:hover {
+      transform: scale(1.3);
+      color: $color-hover-red;
+    }
   }
 }
+

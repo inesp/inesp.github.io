@@ -57,6 +57,12 @@ layout: default
         <ul class="list-unstyled">
           {%- for post in posts limit:3 -%}
             <li class="post-item">
+              {% if post.collection_title %}
+                <div class="post-collection-title text-muted mb-1">
+                  {{ post.collection_title }}
+                </div>
+              {% endif %}
+
               <div class="post-header">
                 <h3 class="post-title">
                   <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -64,9 +70,7 @@ layout: default
                 <span class="post-date text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
               </div>
 
-              {%- if post.excerpt -%}
-                <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-              {%- endif -%}
+              <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
             </li>
           {%- endfor -%}
         </ul>
@@ -77,14 +81,5 @@ layout: default
     {%- endif -%}
   {%- endfor -%}
 
-  <!-- Other Topics -->
-  <section class="other-topics">
-    <h4>All Topics</h4>
-    <div class="flex-row topic-list">
-      {%- assign all_topics = site.tags | sort -%}
-      {%- for t in all_topics -%}
-        <span><a href="/topic/{{ t[0] | slugify }}/">{{ t[0] | replace: "-", " " | capitalize }}</a></span>
-      {%- endfor -%}
-    </div>
-  </section>
+  {%- include all_topics.html -%}
 </div>

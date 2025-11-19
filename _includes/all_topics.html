@@ -1,0 +1,29 @@
+{%- assign all_topics = site.tags | sort -%}
+{%- comment -%}
+  topic[0] → the topic name, topic[1] → the array of posts under that topic
+{%- endcomment -%}
+
+<section class="other-topics">
+  <h4>Collections of posts 📦</h4>
+  <p>Occasionally, a topic is too broad for a single post, so I split it into a series of related posts.</p>
+  <div class="flex-row topic-list">
+    {%- for topic in all_topics -%}
+      {%- assign topic_name = topic[0] -%}
+      {%- if site.data.topics.collection_tags contains topic_name -%}
+        <span><a href="/topic/{{ topic[0] | slugify }}/">{{ topic[0] }}</a></span>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+<section class="other-topics">
+  <h4>All Topics</h4>
+  <div class="flex-row topic-list">
+    {%- for topic in all_topics -%}
+      {%- assign topic_name = topic[0] -%}
+      {%- unless site.data.topics.collection_tags contains topic_name -%}
+        <span><a href="/topic/{{ topic[0] | slugify }}/">{{ topic[0] }}</a></span>
+      {%- endunless -%}
+    {%- endfor -%}
+  </div>
+</section>

@@ -1,6 +1,7 @@
 ---
+collection_title: Building Blocks Collection
 title: "Isolate code blocks from each other?"
-tags: ["Building Blocks collection", "Code Patterns", "Code Style"]
+tags: ["Building Blocks Collection", "Code Patterns", "Code Style"]
 excerpt_separator: <!--more-->
 biblio:
   - link: https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager

@@ -1,6 +1,6 @@
 ---
-title: "Why do smart devs write silly code? Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)"
-excerpt_separator: <!--more-->
+collection_title: Why do smart devs write silly code?
+title: "Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)"
 tags: ["Cognitive Biases in Code", "Engineering Research"]
 biblio:
   - title: "R. Mohanani, I. Salman, B. Turhan P. Rodriguez & P. Ralph, Cognitive Biases in Software Engineering: A Systematic Mapping Study, 2020"

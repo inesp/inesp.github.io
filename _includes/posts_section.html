@@ -9,6 +9,13 @@
 <ul class="list-unstyled">
   {%- for post in include.posts -%}
     <li class="post-item">
+
+      {% if post.collection_title %}
+        <div class="post-collection-title text-muted mb-1">
+          {{ post.collection_title }}
+        </div>
+      {% endif %}
+
       <h3 class="post-title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h3>

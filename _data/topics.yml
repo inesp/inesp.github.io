@@ -1,4 +1,4 @@
-Building Blocks collection:
+Building Blocks Collection:
   home_intro: "A collections of small, reusable patterns for developers."
   emoji: "📦"
 
@@ -7,4 +7,10 @@ Engineering Research:
 
 People:
   home_intro: "...in the world of IT"
+
+collection_tags:
+  - Building Blocks Collection
+  - Self-Documenting Code
+  - Cognitive Biases in Code
+  - Untangling a Legacy System Collection
 

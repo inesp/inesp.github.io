@@ -1,5 +1,6 @@
 ---
-title: "Self-Documenting Code Concept 3: Abstract functions and code patterns"
+collection_title: Self-Documenting Code
+title: "Concept 3: Abstract functions and code patterns"
 excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]
 ---

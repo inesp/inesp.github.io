@@ -1,5 +1,6 @@
 ---
-title: "Self-Documenting Code Concept 1: <code>assert</code> finds its calling"
+collection_title: Self-Documenting Code
+title: "Concept 1: <code>assert</code> finds its calling"
 excerpt_separator: <!--more-->
 biblio:
   - title: "Python: The assert statement"

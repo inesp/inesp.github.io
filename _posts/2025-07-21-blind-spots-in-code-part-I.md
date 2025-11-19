@@ -1,8 +1,6 @@
 ---
-title: "Why do smart devs write silly code? Exhibit A: Because Writing a Fresh Query Is Too Much Work"
-conf_title: "Why do smart devs write silly code? Cognitive Biases Behind Everyday Coding Mistakes"
-conf_title_2: "Why do smart devs write silly code? How Invisible Biases Lead to Bugs, Delays, and Rollbacks"
-excerpt_separator: <!--more-->
+collection_title: Why do smart devs write silly code?
+title: "Exhibit A: Because Writing a Fresh Query Is Too Much Work"
 tags: ["Cognitive Biases in Code", "Engineering Research"]
 biblio:
   - title: "R. Mohanani, I. Salman, B. Turhan P. Rodriguez & P. Ralph, Cognitive Biases in Software Engineering: A Systematic Mapping Study, 2020"

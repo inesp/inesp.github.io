@@ -12,6 +12,7 @@
 @import "topics";
 @import "home";
 @import "posts_section";
+@import "post";
 
 
 
@@ -120,33 +121,17 @@ h1,h2,h3,h4,h5,h6, .h1, .h2, .h3, .h4, .h5, .h6{
   }
 }
 
-.post-content h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6,
-.post-content .h1, .post-content .h2, .post-content .h3, .post-content .h4, .post-content .h5, .post-content .h6{
+.article-body h2,.article-body h3,.article-body h4,.article-body h5,.article-body h6,
+.article-body .h1, .article-body .h2, .article-body .h3, .article-body .h4, .article-body .h5, .article-body .h6{
   margin-top: 4rem;
   margin-bottom: $standard-margin;
 }
 
-.post-content .w-65{
+.article-body .w-65{
     width: 65%;
     @media (max-width: 991.9px) {
       width: 100%;
     }
-}
-
-.post-excerpt {
-  margin-bottom: 8rem;
-
-  h2 {
-    line-height: 1.625;
-    text-decoration: none;
-
-    a{
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
 }
 
 a {
@@ -164,7 +149,7 @@ a {
   }
 }
 
-.post-content a, .footer a, .post-edit-link a{
+.article-body a, .footer a, .post-edit-link a{
   color: $color-text;
   text-decoration: underline;
   transition: color 0.2s ease-in-out;
@@ -193,17 +178,10 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .post-content{
-    p, hr, ul, ol{
-      max-width: 800px;
-    }
-  }
-  .post-content table {
+  .article-body table {
     max-width: 100%;
   }
   .highlight, p.post-edit-link, .post-excerpt, .title-underscore, .home, .topic-page{
-    max-width: 800px;
-
     img {
       max-width: 100%;
       height: auto;
@@ -262,29 +240,10 @@ h5.external_links{
 }
 
 .post-meta {
-  font-size: 90%;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
 }
 
-.post-content{
-  padding-top: 2rem;
-}
-
-.post-content img{
-  max-width: 100%;
-  height: auto;
-
-  &.full-width{
-    width:100%
-  }
-
-  &.yellow{
-    border: 1rem solid $color-yellow;
-  }
-}
-
-.post-content ul{
-  margin-bottom: $standard-margin;
-}
 
 
 blockquote {
@@ -365,12 +324,17 @@ figcaption{
   */
 .badge{
   &.bg-yellow{
-    background: $color-yellow-dark;
+    background: $color-yellow;
+    border: 1px solid $color-yellow-border;
     color: $color-badge-text;
   }
-  border-radius: 0.3rem;
-  padding: 0.1rem 0.4rem;
-  font-size: 0.8rem;
+  //font-family: "Noto Serif JP", serif;
+  //font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-size: 0.85rem;
+  padding: 0.25em 0.55em;
+  margin-right: 0.4rem;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
 }
 
 .flex-row {
@@ -378,7 +342,7 @@ figcaption{
   flex-direction: row;
   align-items: baseline; /* aligns title text baseline with date */
   flex-wrap: wrap; /* allows wrapping on small screens */
-  gap: 0.5rem;
+  gap: 0.35rem 0.45rem;
 }
 
 .colorful{
@@ -386,9 +350,4 @@ figcaption{
   width: 100%;
   background-image: linear-gradient(90deg, $color-yellow, $color-hover-red);
   margin-bottom: $standard-margin;
-}
-.about{
-  .colorful{
-    max-width: 800px;
-  }
 }

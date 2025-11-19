@@ -1,5 +1,6 @@
 ---
-title: "Self-Documenting Code Concept 2: Error msgs with calls to action"
+collection_title: Self-Documenting Code
+title: "Concept 2: Error msgs with calls to action"
 excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]
 ---

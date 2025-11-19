@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#ffde59">
 
   <title>{%- if page.title -%}
-      {{ page.title }}
+      {{ page.title }}{%- if page.collection_title -%} (Collection: {{ page.collection_title }}){%- endif -%}
     {%- else -%}
       {{ site.title }}
     {%- endif -%}&nbsp;by {{ site.author }}</title>

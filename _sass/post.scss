@@ -1,0 +1,33 @@
+.collection-title {
+  font-size: $h2-font-size;
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.11em; /* more airy to create separation */
+
+  a {
+    text-decoration: none;
+    font-weight: 300;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+  }
+}
+
+.article-body img{
+  max-width: 100%;
+  height: auto;
+
+  &.full-width{
+    width:100%
+  }
+
+  &.yellow{
+    border: 1rem solid $color-yellow;
+  }
+}
+
+.article-body ul{
+  margin-bottom: $standard-margin;
+}

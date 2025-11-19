@@ -2,6 +2,7 @@
 layout: page
 title: Public Talks
 permalink: /talks/
+fluid: true
 ---
 
 <p>Observations about the human at work, building software.</p>
@@ -23,10 +24,10 @@ permalink: /talks/
     {%- for talk in talks_info -%}
       <tr>
         <td>{{ talk.date }}</td>
-        <td>{%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}</td>
+        <td class="talk-conf">{%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}</td>
         <td>{{ talk.flag }}</td>
         <td>{{ talk.location }}</td>
-        <td>{{ talk.title }}</td>
+        <td class="talk-title">{{ talk.title }}</td>
         <td class="link-icons">{%- if talk.video_link -%}
             <a href="{{ talk.video_link }}" title="Video" target="_blank">🎥</a>
           {%- endif -%}{%- if talk.details_link -%}
