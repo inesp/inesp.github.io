@@ -1,30 +1,33 @@
 
 {% if page.next or page.previous %}
   <div class="other-posts separator-space">
-              <div class="container">
-            <div class="row">
-    <h4>Other posts you might also like: </h4>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <h4>Other posts you might also like: </h4>
 
-    <ul>
+          <ul>
 
-      {% if page.next %}
-        <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+            {% if page.next %}
+              <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
 
-        {% if page.next.next %}
-          <li><a href="{{ page.next.next.url }}">{{ page.next.next.title }}</a></li>
-        {% endif %}
+              {% if page.next.next %}
+                <li><a href="{{ page.next.next.url }}">{{ page.next.next.title }}</a></li>
+              {% endif %}
 
-      {% endif %}
+            {% endif %}
 
-    {% if page.previous %}
-      <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+          {% if page.previous %}
+            <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
 
-      {% if page.previous.previous %}
-        <li><a href="{{ page.previous.previous.url }}">{{ page.previous.previous.title }}</a></li>
-      {% endif %}
+            {% if page.previous.previous %}
+              <li><a href="{{ page.previous.previous.url }}">{{ page.previous.previous.title }}</a></li>
+            {% endif %}
 
-    {% endif %}
-    </ul>
-            </div></div>
+          {% endif %}
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 {% endif %}
