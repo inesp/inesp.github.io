@@ -1,0 +1,21 @@
+.footer {
+  background-color: #fff9e2; /* a soft, warm-white slightly tinted yellow */
+  color: #4a4a4a;
+
+  .footer-moto{
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+
+  .footer-stroke {
+    height: 6px;
+    background: linear-gradient(to right, $color-red-bright, $color-yellow, $color-yellow, rgba(255, 242, 131, 0));
+    /* or use a background-image of a subtle brushstroke graphic if you have one */
+  }
+
+  .footer-signature {
+    font-size: 1.5rem;
+    color: $color-red-darker;
+  }
+}

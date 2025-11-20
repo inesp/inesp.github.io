@@ -1,33 +1,68 @@
+{% if page.previous  or page.next %}
 
-{% if page.next or page.previous %}
-  <div class="other-posts separator-space">
+  {% comment %}
+  First collect other posts with the same tag. If too few, then add posts in chronological order.
+  {% endcomment %}
+
+  {% assign other_posts = "" | split: "" %}
+  {% assign other_posts_urls = "" | split: "" %}
+
+  {% for tag in page.tags %}
+    {% for post in site.tags[tag] %}
+      {% if post != page %}
+        {%- unless other_posts_urls contains post.url -%}
+          {% assign other_posts = other_posts | push: post %}
+          {% assign other_posts_urls = other_posts_urls | push: post.url %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% assign other_posts = other_posts | slice: 0, 3 %}
+
+  {%- if other_posts.size < 3 -%}
+    {% assign all_posts = site.posts | sort "date" | reverse %}
+
+    {% for post in all_posts %}
+      {%- unless other_posts_urls contains post.url -%}
+        {% assign other_posts = other_posts | push: post %}
+
+        {%- if other_posts.size >= 3 -%}
+          {% break %}
+        {%- endif -%}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+
+  <div class="post-end-art">🌸</div>
+
+  <section class="other-posts-frames">
+    <h2 class="text-center mb-5">Other posts you might also like</h2>
+
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-8">
-          <h4>Other posts you might also like: </h4>
+      <div class="row g-3">
 
-          <ul>
+        {%- for post in other_posts -%}
+          {% assign excerpt_length = 20 %}
+          {% if post.collection_title %}{% assign excerpt_length = 10 %}{% endif %}
 
-            {% if page.next %}
-              <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+          <div class="col-md-6 col-lg-4">
+            <a href="{{ post.url }}">
+              <div class="frame-post p-3 position-relative">
+                <div class="frame-corner"></div>
+                <div class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</div>
+                {% if post.collection_title %}
+                  <div class="post-collection-title text-muted">{{ post.collection_title }}</div>
+                {% endif %}
+                <h5 class="frame-post-title fw-semibold mb-1 text-dark">{{ post.title }}</h5>
+                <p class="text-muted small mb-0">{{ post.excerpt | strip_html | truncatewords: excerpt_length }}</p>
+              </div>
+            </a>
+          </div>
+        {%- endfor -%}
 
-              {% if page.next.next %}
-                <li><a href="{{ page.next.next.url }}">{{ page.next.next.title }}</a></li>
-              {% endif %}
-
-            {% endif %}
-
-          {% if page.previous %}
-            <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
-
-            {% if page.previous.previous %}
-              <li><a href="{{ page.previous.previous.url }}">{{ page.previous.previous.title }}</a></li>
-            {% endif %}
-
-          {% endif %}
-          </ul>
-        </div>
       </div>
     </div>
-  </div>
+  </section>
+
 {% endif %}

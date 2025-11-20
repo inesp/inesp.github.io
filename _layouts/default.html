@@ -1,12 +1,8 @@
 <!doctype html>
-<head lang="en">
-  <head>
+  <head lang="en">
     {%- include head.html -%}
 
     {%- include mathjax.html -%}
-
-  </head>
-
   <body>
 
     <div class="container-fluid">
@@ -19,7 +15,7 @@
         <div class="col-md-12 col-lg-9 main-padding">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="{%- unless page.fluid -%}col-12 col-lg-8{%- endunless -%}">
+              <div class="{%- unless page.fluid -%}reading-width{%- endunless -%}">
                 {{ content }}
               </div>
             </div>
@@ -28,24 +24,17 @@
           {%- include other_posts.html -%}
         </div>
 
-        <div class="separator">
-          <svg class="separator__svg" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#fff1b8" xmlns="http://www.w3.org/2000/svg">
-            <path d="M 100 100 V 65 L 0 100"/>
-            <path d="M 100 85 V 65 L 0 100 Z" fill="#ff6b6b" stroke-width="0"/>
-          </svg>
+        <footer class="footer py-5 position-relative">
+          <div class="footer-stroke position-absolute top-0 start-0 w-100"></div>
+          <div class="container text-center">
+            <p class="mb-1 footer-moto">Crafted by me, during odd hours</p>
+            <p class="text-muted small mb-0">© 2025 Ines Panker</p>
+            <div class="footer-signature mt-2">✍︎</div>
+          </div>
+        </footer>
 
-          <p style="background: #fff1b8;" class="text-center mb-0 pt-4 pb-5 footer">
-            <small>© {{ "now" | date: "%Y"}} {{ site.author }} -
-            Except when otherwise noted, the content of this page is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a> and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a>.
-            </small>
-          </p>
-        </div>
 
       </div>
-
     </div>
-
-
-	</body>
-
+  </body>
 </html>

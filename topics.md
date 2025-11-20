@@ -24,7 +24,7 @@ tag[0] → the tag name, tag[1] → the array of posts under that tag
 I loop over the lists 2x to first print out all the collections and after to print the other tags.
 {% endcomment %}
 
-<ul class="categories-list separator-space">
+<ul class="categories-list">
     {% for tag in tags_list %}
         {% assign tag_slug = tag[0] | slugify %}
         {% assign tag_title = tag[0] %}

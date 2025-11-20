@@ -1,0 +1,32 @@
+.post-end-art {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3rem 0 5rem;
+}
+
+.other-posts-frames {
+  margin: 3rem 0  6rem;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  .frame-post {
+    border-radius: 8px;
+  }
+
+  .frame-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border-left: 3px solid $color-red-bright;
+    border-top: 3px solid $color-red-bright;
+    border-radius: 2px;
+  }
+}
