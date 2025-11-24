@@ -1,5 +1,25 @@
 
+blockquote {
+  border-left: 6px solid $color-yellow;
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
+
+  &:before {
+    color: #ffeb41;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  p:last-child{
+    margin-bottom: 0;
+  }
+}
 figcaption{
+  font-style: italic;
   font-size: $standard-font-size;
   line-height: $standard-line-height;
   margin-bottom: $standard-margin;

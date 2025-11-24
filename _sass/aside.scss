@@ -1,0 +1,57 @@
+
+
+aside {
+  background: $color-yellow;
+  position:relative;
+
+  h2{
+    font-family: 'Saira Stencil One', cursive;
+    font-size: $h1-font-size;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  h3{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  @media (max-width: 991.9px) {
+    h2, h3, p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  a.my-name{font-family: 'Saira Stencil One', cursive;}
+
+  .talks-link {
+    font-weight: 600;
+    color: $color-text;
+    transition: color 0.2s ease;
+  }
+
+  /**
+   * Social media
+   */
+  .social-icons {
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: $standard-margin;
+    padding-left: 0;
+    display: table;
+
+    @media (min-width: 700px) and (max-width: 991.9px) {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    li {
+      float: left;
+      margin: 0 5px 0 0;
+    }
+  }
+
+
+}

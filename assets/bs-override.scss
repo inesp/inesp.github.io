@@ -9,6 +9,7 @@
 @import "box";
 @import "tables";
 @import "quote";
+@import "aside";
 @import "topics";
 @import "home";
 @import "posts_section";
@@ -18,61 +19,6 @@
 
 
 
-aside {
-  background: $color-yellow;
-  position:relative;
-
-  h2{
-    font-family: 'Saira Stencil One', cursive;
-    font-size: $h1-font-size;
-    a {
-      text-decoration: none;
-    }
-  }
-
-  h3{
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  @media (max-width: 991.9px) {
-    h2, h3, p {
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  a.my-name{font-family: 'Saira Stencil One', cursive;}
-
-  .talks-link {
-    font-weight: 600;
-    color: $color-text;
-    transition: color 0.2s ease;
-  }
-
-  /**
-   * Social media
-   */
-  .social-icons {
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: $standard-margin;
-    padding-left: 0;
-    display: table;
-
-    @media (min-width: 700px) and (max-width: 991.9px) {
-      position: absolute;
-      right: 1rem;
-      top: 1rem;
-    }
-
-    li {
-      float: left;
-      margin: 0 5px 0 0;
-    }
-  }
-
-
-}
 
 .aside-padding{
   padding-top: 0.5rem;
@@ -188,30 +134,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-
-
-blockquote {
-  border-left: 6px solid $color-yellow;
-  margin: 1.5em 0;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D";
-
-  &:before {
-    color: #ffeb41;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-
-  p:last-child{
-    margin-bottom: 0;
-  }
-}
-figcaption{
-  font-style: italic;
-}
 
 /**
  * Math highlighting styles
