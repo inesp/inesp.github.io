@@ -79,8 +79,15 @@
   margin: 0.75rem auto 3rem;
 }
 
-.post-collection-title{
+.post-collection-title {
   letter-spacing: 0.05em;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
 }
 
 .post-header {

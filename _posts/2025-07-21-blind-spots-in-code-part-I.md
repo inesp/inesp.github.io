@@ -1,5 +1,5 @@
 ---
-collection_title: Why do smart devs write silly code?
+series: Cognitive Biases in Code
 title: "Exhibit A: Because Writing a Fresh Query Is Too Much Work"
 tags: ["Cognitive Biases in Code", "Engineering Research"]
 biblio:

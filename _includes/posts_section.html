@@ -10,10 +10,12 @@
   {%- for post in include.posts -%}
     <li class="post-item">
 
-      {% if post.collection_title %}
-        <div class="post-collection-title text-muted mb-1">
-          {{ post.collection_title }}
-        </div>
+      {% if post.series %}
+        {% assign coll_data = site.data.topics[post.series] %}
+        {% assign coll_display = coll_data.display_title | default: post.series %}
+        {% assign series_slug = post.series | slugify %}
+        {% assign coll_url = '/topic/' | append: series_slug | append: '/' %}
+        <div class="post-collection-title text-muted mb-1"><a href="{{ coll_url | relative_url }}">{{ coll_display }}</a></div>
       {% endif %}
 
       <h3 class="post-title">

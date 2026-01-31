@@ -1,5 +1,5 @@
 ---
-collection_title: Self-Documenting Code
+series: Self-Documenting Code
 title: "Concept 1: <code>assert</code> finds its calling"
 excerpt_separator: <!--more-->
 biblio:

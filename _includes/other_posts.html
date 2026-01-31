@@ -44,15 +44,21 @@
 
         {%- for post in other_posts -%}
           {% assign excerpt_length = 20 %}
-          {% if post.collection_title %}{% assign excerpt_length = 10 %}{% endif %}
+          {% assign has_collection = false %}
+          {% if post.series %}
+            {% assign has_collection = true %}
+            {% assign coll_data = site.data.topics[post.series] %}
+            {% assign coll_title = coll_data.display_title | default: post.series %}
+          {% endif %}
+          {% if has_collection %}{% assign excerpt_length = 10 %}{% endif %}
 
           <div class="col-md-6 col-lg-4">
             <a href="{{ post.url }}">
               <div class="frame-post p-3 position-relative">
                 <div class="frame-corner"></div>
                 <div class="small text-muted">{{ post.date | date: "%b %-d, %Y" }}</div>
-                {% if post.collection_title %}
-                  <div class="post-collection-title text-muted">{{ post.collection_title }}</div>
+                {% if has_collection %}
+                  <div class="post-collection-title text-muted">{{ coll_title }}</div>
                 {% endif %}
                 <h5 class="frame-post-title fw-semibold mb-1 text-dark">{{ post.title }}</h5>
                 <p class="text-muted small mb-0">{{ post.excerpt | strip_html | truncatewords: excerpt_length }}</p>

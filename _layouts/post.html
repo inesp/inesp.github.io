@@ -14,9 +14,14 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author | escape }}</span>
     </p>
 
-    {% if page.collection_title %}
+    {% comment %}Look up collection display_title from topics.yml{% endcomment %}
+    {% if page.series %}
+      {% assign collection_data = site.data.topics[page.series] %}
+      {% assign collection_display = collection_data.display_title | default: page.series %}
+      {% assign series_slug = page.series | slugify %}
+      {% assign collection_url = '/topic/' | append: series_slug | append: '/' %}
       <div class="collection-title mb-1">
-        <a href="{{ page.collection_url }}">{{ page.collection_title }}</a>
+        <a href="{{ collection_url | relative_url }}">{{ collection_display }}</a>
       </div>
     {% endif %}
 

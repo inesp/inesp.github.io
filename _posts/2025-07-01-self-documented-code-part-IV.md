@@ -1,5 +1,5 @@
 ---
-collection_title: Self-Documenting Code
+series: Self-Documenting Code
 title: "Concept 4: Embrace Copy-Paste"
 excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]

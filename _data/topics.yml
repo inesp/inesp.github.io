@@ -1,6 +1,18 @@
 Building Blocks Collection:
-  home_intro: "A collections of small, reusable patterns for developers."
-  emoji: "📦"
+  display_title: "Building Blocks Collection"
+  home_intro: "A collection of small, reusable patterns"
+
+Self-Documenting Code:
+  display_title: "Self-Documenting Code"
+  home_intro: "Code that documents itself through smart use of asserts, types, structure, ..."
+
+Cognitive Biases in Code:
+  display_title: "Why do smart devs write silly code?"
+  home_intro: "How cognitive biases sneak into our code."
+
+API Resilience Patterns:
+  display_title: "API Resilience Patterns"
+  home_intro: "Patterns for handling rate limits, pagination failures, API outages, ..."
 
 Engineering Research:
   home_intro: "Posts that draw from research papers"
@@ -8,13 +20,9 @@ Engineering Research:
 People:
   home_intro: "...in the world of IT"
 
-API Resilience Patterns:
-  home_into: "     "
-
 collection_tags:
   - Building Blocks Collection
   - Self-Documenting Code
   - Cognitive Biases in Code
-  - Collection Untangling a Legacy System
   - API Resilience Patterns
 

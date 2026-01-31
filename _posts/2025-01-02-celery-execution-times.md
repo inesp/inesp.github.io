@@ -1,5 +1,5 @@
 ---
-collection_title: Building Blocks Collection
+series: Building Blocks Collection
 title: "How do I measure the execution time of Celery tasks?"
 tags: ["Building Blocks Collection", "Celery"]
 excerpt_separator: <!--more-->

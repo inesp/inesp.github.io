@@ -1,5 +1,5 @@
 ---
-collection_title: Building Blocks Collection
+series: Building Blocks Collection
 title: "Build me a global <code>user_id</code> / <code>request_id</code> / <code>tenant_id</code>"
 tags: ["Building Blocks Collection", "Code Patterns"]
 excerpt_separator: <!--more-->

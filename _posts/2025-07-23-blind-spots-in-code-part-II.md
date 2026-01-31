@@ -1,5 +1,5 @@
 ---
-collection_title: Why do smart devs write silly code?
+series: Cognitive Biases in Code
 title: "Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)"
 tags: ["Cognitive Biases in Code", "Engineering Research"]
 biblio:

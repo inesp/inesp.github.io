@@ -18,10 +18,9 @@ tag[0] → the tag name, tag[1] → the array of posts under that tag
 “Engineering Research” handles reasoned or research-backed insights.
 {% endcomment %}
 
-{% assign collection_tags = "building-blocks-collection,cognitive-biases-in-code,self-documenting-code" | split: "," %}
-
 {% comment %}
 I loop over the lists 2x to first print out all the collections and after to print the other tags.
+Collection tags are defined in _data/topics.yml under collection_tags.
 {% endcomment %}
 
 <ul class="categories-list">
@@ -29,7 +28,7 @@ I loop over the lists 2x to first print out all the collections and after to pri
         {% assign tag_slug = tag[0] | slugify %}
         {% assign tag_title = tag[0] %}
         {% assign num_of_posts = tag[1] | size %}
-        {% if collection_tags contains tag_slug %}
+        {% if site.data.topics.collection_tags contains tag_title %}
             {% include post_in_topic.html emoji="📦" tag_title=tag_title tag_slug=tag_slug num_of_posts=num_of_posts %}
         {% endif %}
     {% endfor %}
@@ -37,10 +36,9 @@ I loop over the lists 2x to first print out all the collections and after to pri
         {% assign tag_slug = tag[0] | slugify %}
         {% assign tag_title = tag[0] %}
         {% assign num_of_posts = tag[1] | size %}
-        {% if collection_tags contains tag_slug %}
-        {% else %}
+        {% unless site.data.topics.collection_tags contains tag_title %}
             {% include post_in_topic.html emoji="✨" tag_title=tag_title tag_slug=tag_slug num_of_posts=num_of_posts %}
-        {% endif %}
+        {% endunless %}
     {% endfor %}
 </ul>
 

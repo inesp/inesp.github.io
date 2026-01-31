@@ -1,5 +1,5 @@
 ---
-collection_title: Building Blocks Collection
+series: Building Blocks Collection
 title: "Isolate code blocks from each other?"
 tags: ["Building Blocks Collection", "Code Patterns", "Code Style"]
 excerpt_separator: <!--more-->

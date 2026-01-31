@@ -1,5 +1,5 @@
 ---
-collection_title: Building Blocks Collection
+series: Building Blocks Collection
 title: "What to do when a DB transaction fails? Retry it ♻️"
 excerpt_separator: <!--more-->
 biblio:
