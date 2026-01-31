@@ -11,9 +11,15 @@ layout: default
   {% assign show_archive_link = false %}
 {% endif %}
 
-<h1>{{ page.title }}</h1>
+<h1 class="text-center">{{ page.title }}</h1>
 
-{{ content }}
+<div class="flex-row justify-content-center">{%- for tag in page.tags -%}
+  {% assign tag_slug = tag | slugify %}
+  <span class="badge bg-yellow-washed-out">{{ tag }}</span>{%- endfor -%}</div>
+
+<div class="my-5">
+  {{ content }}
+</div>
 
 <div class="colorful"></div>
 

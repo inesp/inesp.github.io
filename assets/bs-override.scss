@@ -159,6 +159,11 @@ img {
     border: 1px solid $color-yellow-border;
     color: $color-badge-text;
   }
+  &.bg-yellow-washed-out{
+    background: #fff7b4;
+    border: 1px solid #f0e791;
+    color: #6c6319;
+  }
   //font-family: "Noto Serif JP", serif;
   //font-family: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   font-size: 0.85rem;
