@@ -22,8 +22,8 @@ fluid: true
   </thead>
   <tbody>
     {%- for talk in talks_info -%}
-      <tr>
-        <td>{{ talk.date }}</td>
+      <tr{% if talk.coming_soon %} class="coming-soon"{% endif %}>
+        <td>{% if talk.coming_soon %}<span title="coming soon">⏳</span> {% endif %}{{ talk.date }}</td>
         <td class="talk-conf">{%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}</td>
         <td>{{ talk.flag }}</td>
         <td>{{ talk.location }}</td>

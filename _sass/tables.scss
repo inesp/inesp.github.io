@@ -116,8 +116,16 @@ table.talks {
     border-left: 4px solid $color-hover-red;
   }
 
+  tbody tr.coming-soon:hover {
+    border-left-color: $color-red-bright;
+  }
+
+
   @media (min-width: 1200px) {
     td.link-icons {
+      white-space: nowrap;
+    }
+    td:first-child {
       white-space: nowrap;
     }
   }
