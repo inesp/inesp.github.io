@@ -13,4 +13,4 @@ But we get **stuck at authenticate** already, because everybody chooses their ow
 
 So... **hand-holding** ... that is the magic word. Every API has to be meticulous monitored when it's being integrated with and also after it has been let into production code.
 
-**This series distills various insights I've gathered as I was integrating various APIs into our 1 product.**
+**This series distills various insights I've gathered as I was integrating lots of APIs into our 1 product.**
