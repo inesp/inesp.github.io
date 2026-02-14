@@ -18,6 +18,8 @@ It's kinda hard to write code for handling a Rate-limit. The first problem is th
 - **_We, personally,_ never experience being rate limited when testing the API**. Because _we, personally_ generally test APIs manually. We build 1 API call at a time and then we intentively check the response before doing another API call. Thus, we might be averaging at less than 50 calls per hour...waaaaay below most rate limits. 
 - **The code can't be tested.** Even if we do build some rate-limit-handling code, this code just sits in production... for months, waiting for its opportunity. Does code that was never run really work? Technically, we could manufacture the rate-limit and test the code, we could just write a script that frantically calls the external API until we receive a _'429 Enough!'_. But, how often do we go to such lengths?
 
+![manual-vs-production](/assets/http/manual-vs-production.svg)
+
 And so it happens that the rate-limit response is usually handled in one of 2 ways:
 - option A): _Ups, totally forgot to handle any errors at all_ 
 - option B): _All errors are equal, all errors are bad, code stop_
@@ -68,6 +70,8 @@ Because, **our puny function doesn't have enough context to know what to do.** S
 
 Of course this makes no sense. The caller shouldn't have to know that this function even makes API calls. Some reasonable levels of layering have to exist, each layer should take care of its own errors.
 
+![no-error-handling](/assets/http/no-error-handling.svg)
+
 
 ## Option B): _All errors are equal, all errors are bad, code stop_
 
@@ -108,12 +112,15 @@ def fetch_all_user_repos() -> list[str]:
 
 This time, we don't let the `RequestException` bubble up to the caller, because we realize we _do_ have more context for handling _HTTP related problems_ than some code way up the chain that is just trying to populate a dropdown with all list of all options.
 
+![all-errors-equal](/assets/http/all-errors-equal.svg)
+
 ## But not all errors are made equal
 
 - A 500 response often means there is **nothing we can do** about it. Sometimes it can also mean our payload is invalid in a way that the developers in that other company didn't anticipate.
 - A 401 Unauthorized response means that **we can absolutely fix the problem**, but it will happen **outside of code**. We have to get the right token/permissions from somewhere.
 - A 429 Too Many Requests response also means **we can fix the problem**, and we should fix it **in code**. We should wait a bit and then send the API call again.
 
+![errors-not-equal](/assets/http/errors-not-equal.svg)
 
 ## What is a 429-Too Many Requests response made up of?
 
@@ -189,6 +196,8 @@ def new_session():
     session.mount("http://", adapter)
 ```
 
+![coordination-challenge](/assets/http/coordination-challenge.svg)
+
 ### Best next steps are:
 1. put the above code into the `http.py` file or `http` folder and
 2. call it with `http.new_session().get("http://api....")` or `http.new_session().post("http://api...", json={})`
@@ -234,7 +243,7 @@ Now, **we could build a complex, precise system** to handle this or ... we could
 
 The flow would go like this:
 
-![redis-429-flow](/assets/http/redis-429-flow.png)
+![redis-429-flow](/assets/http/redis-429-flow.svg)
 
 
 In summary: 
@@ -242,6 +251,8 @@ In summary:
 - after we make API calls, store the `Response` object in Redis if it is a 429-response with `TTL=<Retry-After> seconds`
 
 **This would work precisely because the `TTL` for the Redis `Response` object is precisely the "30 seconds window", precisely the number of seconds that we have to wait until we stop being rate-limited.**
+
+![429-ttl-window](/assets/http/429-ttl-window.svg)
 
 This solution also means that **we don't have to change any other code** (if we don't want to). The code that makes triggers the API calls, that calls `new_session().request("get", "http:...")` needs no change. It will receive the _very same_ response it would receive if we DID call the remote API.
 
@@ -263,7 +274,7 @@ I decided that extracting API authorizations will be **an ongoing task**.
 
 My code will look at all the places, where I know the authorization data can be. **If I find no authorization data, then I refuse to store anything to Redis and I log an error to nudge developers to research.**
 
-![redis-429-key-building](/assets/http/redis-429-key-building.png)
+![redis-429-key-building](/assets/http/redis-429-key-building.svg)
 
 ```python
 import hashlib

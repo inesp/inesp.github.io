@@ -1,0 +1,44 @@
+<svg viewBox="0 0 440 140" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="440" height="140" fill="#fff"/>
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- Extract authorization headers -->
+  <rect x="10" y="45" width="100" height="50" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="60" y="60" text-anchor="middle" font-size="8" fill="#212529" font-weight="bold">Extract all known</text>
+  <text x="60" y="72" text-anchor="middle" font-size="8" fill="#212529" font-weight="bold">authorization</text>
+  <text x="60" y="84" text-anchor="middle" font-size="8" fill="#212529" font-weight="bold">headers</text>
+
+  <!-- Arrow to decision -->
+  <line x1="110" y1="70" x2="148" y2="70" stroke="#212529" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Decision: Did we find any tokens? -->
+  <polygon points="210,70 270,105 210,140 150,105" fill="#fff" stroke="#212529" stroke-width="1" transform="translate(0, -35)"/>
+  <text x="210" y="65" text-anchor="middle" font-size="8" fill="#212529">Did we find</text>
+  <text x="210" y="77" text-anchor="middle" font-size="8" fill="#212529">any tokens?</text>
+
+  <!-- NO branch (up-right) -->
+  <line x1="210" y1="35" x2="210" y2="20" stroke="#212529" stroke-width="1"/>
+  <line x1="210" y1="20" x2="335" y2="20" stroke="#212529" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="220" y="30" font-size="8" fill="#212529" font-weight="bold">NO</text>
+
+  <!-- Log error box -->
+  <rect x="340" y="5" width="90" height="40" rx="4" fill="#fd456f" stroke="#ff0040" stroke-width="1"/>
+  <text x="385" y="18" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Log error &amp;</text>
+  <text x="385" y="28" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">refuse to store</text>
+  <text x="385" y="38" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">to Redis</text>
+
+  <!-- YES branch (down-right) -->
+  <line x1="210" y1="105" x2="210" y2="120" stroke="#212529" stroke-width="1"/>
+  <line x1="210" y1="120" x2="335" y2="120" stroke="#212529" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="220" y="115" font-size="8" fill="#212529" font-weight="bold">YES</text>
+
+  <!-- Build Redis key box -->
+  <rect x="340" y="100" width="90" height="35" rx="4" fill="#28a745" stroke="#1e7e34" stroke-width="1"/>
+  <text x="385" y="115" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Build</text>
+  <text x="385" y="127" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Redis key</text>
+</svg>

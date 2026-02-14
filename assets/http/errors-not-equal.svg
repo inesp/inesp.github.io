@@ -1,0 +1,38 @@
+<svg viewBox="0 0 650 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="650" height="200" fill="#fff"/>
+  <!-- Title -->
+  <text x="325" y="20" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Not All Errors Are Made Equal</text>
+
+  <!-- 500 Error -->
+  <rect x="30" y="45" width="180" height="140" rx="6" fill="#ffdddd" stroke="#fd456f" stroke-width="2"/>
+  <rect x="30" y="45" width="180" height="30" rx="6" fill="#fd456f"/>
+  <text x="120" y="65" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">500 Server Error</text>
+
+  <text x="120" y="95" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Nothing we can do</text>
+  <text x="120" y="115" text-anchor="middle" font-size="10" fill="#6c757d">Their server is broken</text>
+  <text x="120" y="130" text-anchor="middle" font-size="10" fill="#6c757d">or our payload is weird</text>
+
+  <text x="120" y="160" text-anchor="middle" font-size="10" fill="#fd456f" font-weight="bold">Action: Log and move on</text>
+
+  <!-- 401 Error -->
+  <rect x="235" y="45" width="180" height="140" rx="6" fill="#fff3cd" stroke="#ffc107" stroke-width="2"/>
+  <rect x="235" y="45" width="180" height="30" rx="6" fill="#ffc107"/>
+  <text x="325" y="65" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">401 Unauthorized</text>
+
+  <text x="325" y="95" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Fixable, but not in code</text>
+  <text x="325" y="115" text-anchor="middle" font-size="10" fill="#6c757d">Wrong token or</text>
+  <text x="325" y="130" text-anchor="middle" font-size="10" fill="#6c757d">missing permissions</text>
+
+  <text x="325" y="160" text-anchor="middle" font-size="10" fill="#856404" font-weight="bold">Action: Get better credentials</text>
+
+  <!-- 429 Error -->
+  <rect x="440" y="45" width="180" height="140" rx="6" fill="#ddffdd" stroke="#22a55e" stroke-width="2"/>
+  <rect x="440" y="45" width="180" height="30" rx="6" fill="#22a55e"/>
+  <text x="530" y="65" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">429 Too Many Requests</text>
+
+  <text x="530" y="95" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Fixable IN code!</text>
+  <text x="530" y="115" text-anchor="middle" font-size="10" fill="#6c757d">Just wait a bit</text>
+  <text x="530" y="130" text-anchor="middle" font-size="10" fill="#6c757d">and try again</text>
+
+  <text x="530" y="160" text-anchor="middle" font-size="10" fill="#22a55e" font-weight="bold">Action: Wait + Retry</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 580 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="580" height="160" fill="#fff"/>
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- LEFT SIDE: Manual Testing -->
+  <text x="140" y="18" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Manual Testing</text>
+
+  <!-- Timeline -->
+  <line x1="20" y1="130" x2="260" y2="130" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="250" y="148" font-size="8" fill="#6c757d">1 hour</text>
+
+  <!-- Sparse requests -->
+  <circle cx="40" cy="130" r="4" fill="#22a55e"/>
+  <line x1="40" y1="126" x2="40" y2="70" stroke="#22a55e" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="40" y="60" text-anchor="middle" font-size="7" fill="#6c757d">GET /repos</text>
+
+  <circle cx="100" cy="130" r="4" fill="#22a55e"/>
+  <line x1="100" y1="126" x2="100" y2="80" stroke="#22a55e" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="100" y="70" text-anchor="middle" font-size="7" fill="#6c757d">check response</text>
+
+  <circle cx="180" cy="130" r="4" fill="#22a55e"/>
+  <line x1="180" y1="126" x2="180" y2="70" stroke="#22a55e" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="180" y="60" text-anchor="middle" font-size="7" fill="#6c757d">GET /users</text>
+
+  <circle cx="230" cy="130" r="4" fill="#22a55e"/>
+
+  <!-- Counter -->
+  <rect x="20" y="30" width="60" height="22" rx="3" fill="#ddffdd" stroke="#22a55e" stroke-width="1.5"/>
+  <text x="50" y="45" text-anchor="middle" font-size="9" fill="#22a55e" font-weight="bold">4 calls</text>
+
+  <!-- Divider -->
+  <line x1="290" y1="10" x2="290" y2="150" stroke="#dee2e6" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- RIGHT SIDE: Production -->
+  <text x="435" y="18" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Production</text>
+
+  <!-- Timeline -->
+  <line x1="320" y1="130" x2="560" y2="130" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="550" y="148" font-size="8" fill="#6c757d">1 hour</text>
+
+  <!-- Dense requests - first batch -->
+  <circle cx="330" cy="130" r="3" fill="#212529"/>
+  <circle cx="335" cy="130" r="3" fill="#212529"/>
+  <circle cx="340" cy="130" r="3" fill="#212529"/>
+  <circle cx="345" cy="130" r="3" fill="#212529"/>
+  <circle cx="350" cy="130" r="3" fill="#212529"/>
+  <circle cx="355" cy="130" r="3" fill="#212529"/>
+  <circle cx="360" cy="130" r="3" fill="#212529"/>
+  <circle cx="365" cy="130" r="3" fill="#212529"/>
+  <circle cx="370" cy="130" r="3" fill="#fd456f"/>
+  <circle cx="375" cy="130" r="3" fill="#fd456f"/>
+  <circle cx="380" cy="130" r="3" fill="#fd456f"/>
+
+  <!-- 429 burst indicator -->
+  <line x1="375" y1="126" x2="375" y2="85" stroke="#fd456f" stroke-width="1"/>
+  <rect x="350" y="65" width="50" height="20" rx="3" fill="#ffdddd" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="375" y="79" text-anchor="middle" font-size="8" fill="#fd456f" font-weight="bold">429!</text>
+
+  <!-- More requests after -->
+  <circle cx="400" cy="130" r="3" fill="#212529"/>
+  <circle cx="405" cy="130" r="3" fill="#212529"/>
+  <circle cx="410" cy="130" r="3" fill="#212529"/>
+  <circle cx="415" cy="130" r="3" fill="#212529"/>
+  <circle cx="420" cy="130" r="3" fill="#212529"/>
+  <circle cx="440" cy="130" r="3" fill="#212529"/>
+  <circle cx="445" cy="130" r="3" fill="#212529"/>
+  <circle cx="450" cy="130" r="3" fill="#212529"/>
+  <circle cx="470" cy="130" r="3" fill="#212529"/>
+  <circle cx="475" cy="130" r="3" fill="#212529"/>
+  <circle cx="480" cy="130" r="3" fill="#212529"/>
+  <circle cx="485" cy="130" r="3" fill="#212529"/>
+  <circle cx="490" cy="130" r="3" fill="#212529"/>
+  <circle cx="510" cy="130" r="3" fill="#212529"/>
+  <circle cx="515" cy="130" r="3" fill="#212529"/>
+  <circle cx="520" cy="130" r="3" fill="#212529"/>
+  <circle cx="525" cy="130" r="3" fill="#212529"/>
+  <circle cx="530" cy="130" r="3" fill="#fd456f"/>
+  <circle cx="535" cy="130" r="3" fill="#fd456f"/>
+
+  <!-- Counter -->
+  <rect x="500" y="30" width="60" height="22" rx="3" fill="#ffdddd" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="530" y="45" text-anchor="middle" font-size="9" fill="#fd456f" font-weight="bold">847 calls</text>
+
+  <!-- Annotation -->
+  <text x="435" y="55" text-anchor="middle" font-size="8" fill="#6c757d">3 workers × 4 tasks × cron jobs</text>
+</svg>

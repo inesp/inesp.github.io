@@ -1,0 +1,67 @@
+<svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="420" height="340" fill="#fff"/>
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- HTTP REQUEST -->
+  <rect x="140" y="10" width="140" height="24" rx="4" fill="#fd456f" stroke="#ff0040" stroke-width="1.5"/>
+  <text x="210" y="25" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">HTTP Request</text>
+
+  <!-- Arrow down -->
+  <line x1="210" y1="34" x2="210" y2="55" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Decision 1: Cached 429? -->
+  <polygon points="210,60 300,95 210,130 120,95" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="210" y="92" text-anchor="middle" font-size="9" fill="#212529">Cached 429</text>
+  <text x="210" y="103" text-anchor="middle" font-size="9" fill="#212529">in Redis?</text>
+
+  <!-- YES branch (left) - Return cached -->
+  <line x1="120" y1="95" x2="55" y2="95" stroke="#212529" stroke-width="1.5"/>
+  <line x1="55" y1="95" x2="55" y2="300" stroke="#212529" stroke-width="1.5"/>
+  <line x1="55" y1="300" x2="135" y2="300" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="90" y="88" font-size="9" fill="#212529" font-weight="bold">YES</text>
+  <text x="60" y="150" font-size="8" fill="#6c757d">Skip</text>
+  <text x="60" y="162" font-size="8" fill="#6c757d">API</text>
+  <text x="60" y="174" font-size="8" fill="#6c757d">call</text>
+
+  <!-- NO branch (down) - Make API call -->
+  <line x1="210" y1="130" x2="210" y2="150" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="220" y="143" font-size="9" fill="#212529" font-weight="bold">NO</text>
+
+  <!-- Make API call box -->
+  <rect x="140" y="155" width="140" height="30" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="210" y="174" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Make API Call</text>
+
+  <!-- Arrow down -->
+  <line x1="210" y1="185" x2="210" y2="205" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Decision 2: Is 429? -->
+  <polygon points="210,210 290,240 210,270 130,240" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="210" y="238" text-anchor="middle" font-size="9" fill="#212529">Response</text>
+  <text x="210" y="249" text-anchor="middle" font-size="9" fill="#212529">is 429?</text>
+
+  <!-- YES branch (right) - Cache it -->
+  <line x1="290" y1="240" x2="330" y2="240" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="300" y="233" font-size="9" fill="#212529" font-weight="bold">YES</text>
+
+  <!-- Cache in Redis box -->
+  <rect x="335" y="220" width="70" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="370" y="237" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Cache</text>
+  <text x="370" y="250" text-anchor="middle" font-size="8" fill="#6c757d">TTL=Retry-After</text>
+
+  <!-- Arrow from cache down and left to return -->
+  <line x1="370" y1="260" x2="370" y2="300" stroke="#212529" stroke-width="1.5"/>
+  <line x1="370" y1="300" x2="285" y2="300" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- NO branch (down) -->
+  <line x1="210" y1="270" x2="210" y2="285" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="220" y="280" font-size="9" fill="#212529" font-weight="bold">NO</text>
+
+  <!-- RETURN RESPONSE -->
+  <rect x="140" y="290" width="140" height="24" rx="4" fill="#28a745" stroke="#1e7e34" stroke-width="1.5"/>
+  <text x="210" y="306" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Return Response</text>
+</svg>
