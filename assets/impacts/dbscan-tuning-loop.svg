@@ -1,0 +1,74 @@
+<svg viewBox="50 0 480 400" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="480" height="400" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="225" y="25" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">DBSCAN Tuning Loop</text>
+
+  <!-- Step 1: Calculate eps -->
+  <rect x="112" y="45" width="226" height="40" rx="4" fill="none" stroke="#212529" stroke-width="1"/>
+  <text x="225" y="62" text-anchor="middle" font-size="9" fill="#212529">Calculate eps</text>
+  <text x="225" y="76" text-anchor="middle" font-size="8" fill="#6c757d">(elbow method on k-distances)</text>
+
+  <!-- Arrow down -->
+  <line x1="225" y1="85" x2="225" y2="105" stroke="#212529" stroke-width="1"/>
+  <polygon points="225,110 220,102 230,102" fill="#212529"/>
+
+  <!-- Step 2: Run DBSCAN -->
+  <rect x="125" y="115" width="200" height="40" rx="4" fill="none" stroke="#212529" stroke-width="1"/>
+  <text x="225" y="132" text-anchor="middle" font-size="9" fill="#212529">Run DBSCAN</text>
+  <text x="225" y="146" text-anchor="middle" font-size="8" fill="#6c757d">(points with label -1 are outliers)</text>
+
+  <!-- Arrow down -->
+  <line x1="225" y1="155" x2="225" y2="175" stroke="#212529" stroke-width="1"/>
+  <polygon points="225,180 220,172 230,172" fill="#212529"/>
+
+  <!-- Decision 1: Too many outliers? -->
+  <polygon points="225,185 320,217 225,249 130,217" fill="#fff" stroke="#212529" stroke-width="1"/>
+  <text x="225" y="214" text-anchor="middle" font-size="8" fill="#212529">Outliers &gt; 10%</text>
+  <text x="225" y="226" text-anchor="middle" font-size="8" fill="#212529">of data?</text>
+
+  <!-- YES branch from decision 1 (right) - to shared box -->
+  <line x1="320" y1="217" x2="380" y2="217" stroke="#212529" stroke-width="1"/>
+  <line x1="380" y1="217" x2="380" y2="228" stroke="#212529" stroke-width="1"/>
+  <polygon points="380,233 375,226 385,226" fill="#212529"/>
+  <text x="355" y="207" font-size="8" fill="#22a522" font-weight="bold">YES</text>
+
+  <!-- NO branch (down) -->
+  <line x1="225" y1="249" x2="225" y2="269" stroke="#212529" stroke-width="1"/>
+  <polygon points="225,274 220,266 230,266" fill="#212529"/>
+  <text x="235" y="262" font-size="8" fill="#fd456f" font-weight="bold">NO</text>
+
+  <!-- Decision 2: Noisiness improved too much? -->
+  <polygon points="225,279 330,311 225,343 120,311" fill="#fff" stroke="#212529" stroke-width="1"/>
+  <text x="225" y="305" text-anchor="middle" font-size="8" fill="#212529">Noisiness dropped</text>
+  <text x="225" y="317" text-anchor="middle" font-size="8" fill="#212529">too much?</text>
+
+  <!-- YES branch from decision 2 (right) - to shared box -->
+  <line x1="330" y1="311" x2="380" y2="311" stroke="#212529" stroke-width="1"/>
+  <line x1="380" y1="311" x2="380" y2="268" stroke="#212529" stroke-width="1"/>
+  <polygon points="380,268 375,275 385,275" fill="#212529"/>
+  <text x="360" y="301" font-size="8" fill="#22a522" font-weight="bold">YES</text>
+
+  <!-- Shared increase eps box -->
+  <rect x="345" y="236" width="70" height="30" rx="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <text x="380" y="249" text-anchor="middle" font-size="8" fill="#212529" font-weight="bold">increase eps</text>
+  <text x="380" y="260" text-anchor="middle" font-size="7" fill="#6c757d">(midpoint to max)</text>
+
+  <!-- Arrow from shared box back up to Run DBSCAN -->
+  <line x1="415" y1="250" x2="435" y2="250" stroke="#212529" stroke-width="1"/>
+  <line x1="435" y1="250" x2="435" y2="135" stroke="#212529" stroke-width="1"/>
+  <line x1="435" y1="135" x2="330" y2="135" stroke="#212529" stroke-width="1"/>
+  <polygon points="325,135 333,130 333,140" fill="#212529"/>
+  <text x="410" y="145" text-anchor="middle" font-size="8" fill="#6c757d">(max 2 tries)</text>
+
+  <!-- NO branch (down) - Done! -->
+  <line x1="225" y1="343" x2="225" y2="353" stroke="#212529" stroke-width="1"/>
+  <polygon points="225,358 220,350 230,350" fill="#212529"/>
+  <text x="235" y="352" font-size="8" fill="#fd456f" font-weight="bold">NO</text>
+
+  <!-- Done box -->
+  <rect x="150" y="360" width="150" height="30" rx="15" fill="#22a522" stroke="#212529" stroke-width="1"/>
+  <text x="225" y="380" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Remove outliers</text>
+
+</svg>

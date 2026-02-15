@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420">
+  <style>
+    text { font-family: system-ui, -apple-system, sans-serif; }
+    .title { font-size: 14px; font-weight: 600; }
+    .label { font-size: 12px; }
+    .small { font-size: 10px; }
+    .mono { font-family: ui-monospace, monospace; font-size: 11px; }
+  </style>
+
+  <!-- Background -->
+  <rect width="700" height="420" fill="#fff"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-yellow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#e0a800"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#4a9c6d"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" class="title" fill="#212529">Centered vs Left-Padded Rolling Mean (window=5)</text>
+
+  <!-- ==================== CENTERED ==================== -->
+  <g transform="translate(30, 60)">
+    <text x="0" y="0" class="label" font-weight="600" fill="#e0a800">Centered (center=True)</text>
+
+    <!-- Original timeline -->
+    <text x="0" y="35" class="small" fill="#6c757d">Original:</text>
+    <g transform="translate(70, 22)">
+      <line x1="0" y1="12" x2="420" y2="12" stroke="#dadada" stroke-width="1"/>
+      <circle cx="0" cy="12" r="6" fill="#dadada"/>
+      <circle cx="60" cy="12" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+      <circle cx="120" cy="12" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+      <circle cx="180" cy="12" r="6" fill="#ffed50" stroke="#e0a800" stroke-width="2"/>
+      <circle cx="240" cy="12" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+      <circle cx="300" cy="12" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+      <circle cx="360" cy="12" r="6" fill="#dadada"/>
+      <circle cx="420" cy="12" r="6" fill="#dadada"/>
+
+      <!-- Window bracket -->
+      <rect x="52" y="0" width="256" height="24" rx="3" fill="#fff283" fill-opacity="0.4" stroke="#e0a800" stroke-width="2"/>
+
+      <!-- Time labels -->
+      <text x="0" y="35" text-anchor="middle" class="small" fill="#9f9f9f">t1</text>
+      <text x="60" y="35" text-anchor="middle" class="small" fill="#e0a800">t2</text>
+      <text x="120" y="35" text-anchor="middle" class="small" fill="#e0a800">t3</text>
+      <text x="180" y="35" text-anchor="middle" class="small" fill="#212529" font-weight="600">t4</text>
+      <text x="240" y="35" text-anchor="middle" class="small" fill="#e0a800">t5</text>
+      <text x="300" y="35" text-anchor="middle" class="small" fill="#e0a800">t6</text>
+      <text x="360" y="35" text-anchor="middle" class="small" fill="#9f9f9f">t7</text>
+      <text x="420" y="35" text-anchor="middle" class="small" fill="#9f9f9f">t8</text>
+    </g>
+
+    <!-- Arrow showing computation -->
+    <path d="M 250,62 C 250,85 250,85 250,100" stroke="#e0a800" stroke-width="2" fill="none" marker-end="url(#arrow-yellow)"/>
+
+    <!-- Result timeline -->
+    <text x="0" y="125" class="small" fill="#6c757d">Result:</text>
+    <g transform="translate(70, 112)">
+      <line x1="0" y1="12" x2="420" y2="12" stroke="#dadada" stroke-width="1"/>
+      <circle cx="0" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="60" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="120" cy="12" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+      <circle cx="180" cy="12" r="6" fill="#ffed50" stroke="#e0a800" stroke-width="2"/>
+      <circle cx="240" cy="12" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+      <circle cx="300" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="360" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="420" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+
+      <!-- Time labels -->
+      <text x="0" y="35" text-anchor="middle" class="small" fill="#dadada">t1</text>
+      <text x="60" y="35" text-anchor="middle" class="small" fill="#dadada">t2</text>
+      <text x="120" y="35" text-anchor="middle" class="small" fill="#e0a800">t3</text>
+      <text x="180" y="35" text-anchor="middle" class="small" fill="#212529" font-weight="600">t4</text>
+      <text x="240" y="35" text-anchor="middle" class="small" fill="#e0a800">t5</text>
+      <text x="300" y="35" text-anchor="middle" class="small" fill="#dadada">t6</text>
+      <text x="360" y="35" text-anchor="middle" class="small" fill="#dadada">t7</text>
+      <text x="420" y="35" text-anchor="middle" class="small" fill="#dadada">t8</text>
+    </g>
+
+    <!-- Explanation box -->
+    <g transform="translate(510, 50)">
+      <text x="0" y="0" class="small" fill="#6c757d">Window: t2-t6</text>
+      <text x="0" y="15" class="small" fill="#6c757d">→ assigned to t4</text>
+      <text x="0" y="35" class="small" fill="#e0a800" font-weight="500">Same timestamp</text>
+      <text x="0" y="75" class="small" fill="#9f9f9f">Can't compute</text>
+      <text x="0" y="90" class="small" fill="#9f9f9f">edges (t1,t2,t7,t8)</text>
+    </g>
+  </g>
+
+  <!-- ==================== LEFT-PADDED ==================== -->
+  <g transform="translate(30, 240)">
+    <text x="0" y="0" class="label" font-weight="600" fill="#4a9c6d">Left-padded (center=False)</text>
+
+    <!-- Original timeline -->
+    <text x="0" y="35" class="small" fill="#6c757d">Original:</text>
+    <g transform="translate(70, 22)">
+      <line x1="0" y1="12" x2="420" y2="12" stroke="#dadada" stroke-width="1"/>
+      <circle cx="0" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1"/>
+      <circle cx="60" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1"/>
+      <circle cx="120" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1"/>
+      <circle cx="180" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1"/>
+      <circle cx="240" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="2"/>
+      <circle cx="300" cy="12" r="6" fill="#dadada"/>
+      <circle cx="360" cy="12" r="6" fill="#dadada"/>
+      <circle cx="420" cy="12" r="6" fill="#dadada"/>
+
+      <!-- Window bracket -->
+      <rect x="-8" y="0" width="256" height="24" rx="3" fill="#e0f2e7" fill-opacity="0.6" stroke="#4a9c6d" stroke-width="2"/>
+
+      <!-- Time labels -->
+      <text x="0" y="35" text-anchor="middle" class="small" fill="#4a9c6d">t1</text>
+      <text x="60" y="35" text-anchor="middle" class="small" fill="#4a9c6d">t2</text>
+      <text x="120" y="35" text-anchor="middle" class="small" fill="#4a9c6d">t3</text>
+      <text x="180" y="35" text-anchor="middle" class="small" fill="#4a9c6d">t4</text>
+      <text x="240" y="35" text-anchor="middle" class="small" fill="#212529" font-weight="600">t5</text>
+      <text x="300" y="35" text-anchor="middle" class="small" fill="#9f9f9f">t6</text>
+      <text x="360" y="35" text-anchor="middle" class="small" fill="#9f9f9f">t7</text>
+      <text x="420" y="35" text-anchor="middle" class="small" fill="#9f9f9f">t8</text>
+    </g>
+
+    <!-- Arrow showing computation - goes to t5 position -->
+    <path d="M 190,62 C 190,75 310,75 310,100" stroke="#4a9c6d" stroke-width="2" fill="none" marker-end="url(#arrow-green)"/>
+
+    <!-- Result timeline -->
+    <text x="0" y="125" class="small" fill="#6c757d">Result:</text>
+    <g transform="translate(70, 112)">
+      <line x1="0" y1="12" x2="420" y2="12" stroke="#dadada" stroke-width="1"/>
+      <circle cx="0" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="60" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="120" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="180" cy="12" r="6" fill="none" stroke="#dadada" stroke-dasharray="2,2"/>
+      <circle cx="240" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="2"/>
+      <circle cx="300" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1"/>
+      <circle cx="360" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1"/>
+      <circle cx="420" cy="12" r="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1"/>
+
+      <!-- Time labels -->
+      <text x="0" y="35" text-anchor="middle" class="small" fill="#dadada">t1</text>
+      <text x="60" y="35" text-anchor="middle" class="small" fill="#dadada">t2</text>
+      <text x="120" y="35" text-anchor="middle" class="small" fill="#dadada">t3</text>
+      <text x="180" y="35" text-anchor="middle" class="small" fill="#dadada">t4</text>
+      <text x="240" y="35" text-anchor="middle" class="small" fill="#212529" font-weight="600">t5</text>
+      <text x="300" y="35" text-anchor="middle" class="small" fill="#4a9c6d">t6</text>
+      <text x="360" y="35" text-anchor="middle" class="small" fill="#4a9c6d">t7</text>
+      <text x="420" y="35" text-anchor="middle" class="small" fill="#4a9c6d">t8</text>
+    </g>
+
+    <!-- Explanation box -->
+    <g transform="translate(510, 50)">
+      <text x="0" y="0" class="small" fill="#6c757d">Window: t1-t5</text>
+      <text x="0" y="15" class="small" fill="#6c757d">→ assigned to t5</text>
+      <text x="0" y="35" class="small" fill="#4a9c6d" font-weight="500">Lagged by</text>
+      <text x="0" y="50" class="small" fill="#4a9c6d" font-weight="500">half window</text>
+      <text x="0" y="75" class="small" fill="#9f9f9f">Can't compute</text>
+      <text x="0" y="90" class="small" fill="#9f9f9f">start (t1-t4)</text>
+    </g>
+  </g>
+
+
+</svg>

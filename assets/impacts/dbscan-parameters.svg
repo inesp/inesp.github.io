@@ -1,0 +1,49 @@
+<svg viewBox="0 30 450 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="450" height="200" fill="#fff"/>
+
+  <!-- LEFT SIDE: Point with enough neighbors (forms cluster) -->
+
+  <!-- eps radius circle -->
+  <circle cx="110" cy="100" r="55" fill="none" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Central point -->
+  <circle cx="110" cy="100" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="2"/>
+
+  <!-- Neighbor points inside eps (enough neighbors = cluster) -->
+  <circle cx="85" cy="85" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <circle cx="130" cy="80" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <circle cx="140" cy="105" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <circle cx="125" cy="125" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <circle cx="95" cy="120" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <circle cx="75" cy="100" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+
+  <!-- eps label with arrow -->
+  <line x1="110" y1="100" x2="155" y2="70" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="160" y="60" font-size="10" fill="#fd456f" font-weight="600">eps radius</text>
+
+  <!-- Label below -->
+  <text x="110" y="175" text-anchor="middle" font-size="10" fill="#212529" font-weight="600">6 neighbors</text>
+  <text x="110" y="188" text-anchor="middle" font-size="9" fill="#6c757d">→ part of cluster</text>
+
+  <!-- RIGHT SIDE: Point with too few neighbors (noise) -->
+
+  <!-- eps radius circle -->
+  <circle cx="340" cy="100" r="55" fill="none" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Central point (will be noise) -->
+  <circle cx="340" cy="100" r="6" fill="#fd456f" stroke="#fd456f" stroke-width="2"/>
+
+  <!-- Only 2 neighbors inside eps -->
+  <circle cx="320" cy="85" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <circle cx="365" cy="110" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+
+  <!-- Distant points outside eps -->
+  <circle cx="280" cy="60" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <circle cx="400" cy="140" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+
+  <!-- Label below -->
+  <text x="340" y="175" text-anchor="middle" font-size="10" fill="#212529" font-weight="600">2 neighbors</text>
+  <text x="340" y="188" text-anchor="middle" font-size="9" fill="#fd456f">→ noise (outlier)</text>
+
+</svg>

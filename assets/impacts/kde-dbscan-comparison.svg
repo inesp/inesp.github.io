@@ -1,0 +1,135 @@
+<svg viewBox="0 0 650 240" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="650" height="240" fill="#fff"/>
+
+  <!-- ==================== KDE (left side) ==================== -->
+  <text x="155" y="20" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">KDE: Density Distribution</text>
+
+  <!-- Y axis (density) -->
+  <line x1="45" y1="40" x2="45" y2="180" stroke="#212529" stroke-width="1"/>
+  <text x="20" y="115" text-anchor="middle" font-size="8" fill="#212529" transform="rotate(-90, 20, 115)">density</text>
+
+  <!-- X axis (value) -->
+  <line x1="45" y1="180" x2="280" y2="180" stroke="#212529" stroke-width="1"/>
+  <text x="162" y="200" text-anchor="middle" font-size="8" fill="#212529">errors/min</text>
+
+  <!-- X axis labels -->
+  <text x="45" y="192" text-anchor="middle" font-size="7" fill="#6c757d">0</text>
+  <text x="68" y="192" text-anchor="middle" font-size="7" fill="#6c757d">2</text>
+  <text x="91" y="192" text-anchor="middle" font-size="7" fill="#6c757d">4</text>
+  <text x="114" y="192" text-anchor="middle" font-size="7" fill="#6c757d">6</text>
+  <text x="137" y="192" text-anchor="middle" font-size="7" fill="#6c757d">8</text>
+  <text x="160" y="192" text-anchor="middle" font-size="7" fill="#6c757d">10</text>
+
+  <!-- KDE curve - main peak at 0-2 -->
+  <path d="M45,180
+           Q50,45 55,45
+           Q60,45 68,170
+           Q75,178 91,179
+           Q100,179 114,179
+           Q125,179 130,179"
+        fill="none" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Second hump for major incident (8-10 range) -->
+  <path d="M130,179
+           Q135,179 140,165
+           Q145,155 150,155
+           Q155,155 160,165
+           Q165,175 170,179"
+        fill="none" stroke="#fd456f" stroke-width="2.5"/>
+
+  <!-- Shade under main peak -->
+  <path d="M45,180 Q50,45 55,45 Q60,45 68,170 Q75,178 80,180 Z"
+        fill="#ffed50" opacity="0.3"/>
+
+  <!-- Shade under second hump -->
+  <path d="M130,180 L130,179 Q135,179 140,165 Q145,155 150,155 Q155,155 160,165 Q165,175 170,179 L170,180 Z"
+        fill="#fd456f" opacity="0.3"/>
+
+  <!-- Annotations -->
+  <text x="55" y="38" text-anchor="middle" font-size="7" fill="#ffed50" font-weight="bold">normal</text>
+  <text x="55" y="48" text-anchor="middle" font-size="6" fill="#6c757d">(0-2)</text>
+
+  <text x="150" y="145" text-anchor="middle" font-size="7" fill="#fd456f" font-weight="bold">major</text>
+  <text x="150" y="153" text-anchor="middle" font-size="6" fill="#fd456f">outliers</text>
+
+  <!-- Minor outliers annotation -->
+  <line x1="91" y1="179" x2="91" y2="210" stroke="#6c757d" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="91" y="218" text-anchor="middle" font-size="6" fill="#6c757d">minor (no hump)</text>
+
+  <!-- ==================== DBSCAN K-distance plot (right side) ==================== -->
+  <text x="485" y="20" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">DBSCAN: K-Distance Plot (k=4)</text>
+  <text x="485" y="32" text-anchor="middle" font-size="8" fill="#6c757d">(without major outliers)</text>
+
+  <!-- Y axis (k-distance) -->
+  <line x1="345" y1="50" x2="345" y2="180" stroke="#212529" stroke-width="1"/>
+  <text x="325" y="115" text-anchor="middle" font-size="8" fill="#212529" transform="rotate(-90, 325, 115)">k-distance</text>
+
+  <!-- Y axis labels - scale 0 to 5 -->
+  <text x="340" y="180" text-anchor="end" font-size="7" fill="#6c757d">0</text>
+  <text x="340" y="154" text-anchor="end" font-size="7" fill="#6c757d">1</text>
+  <text x="340" y="128" text-anchor="end" font-size="7" fill="#6c757d">2</text>
+  <text x="340" y="102" text-anchor="end" font-size="7" fill="#6c757d">3</text>
+  <text x="340" y="76" text-anchor="end" font-size="7" fill="#6c757d">4</text>
+  <text x="340" y="50" text-anchor="end" font-size="7" fill="#6c757d">5</text>
+
+  <!-- X axis (points sorted by k-distance) -->
+  <line x1="345" y1="180" x2="620" y2="180" stroke="#212529" stroke-width="1"/>
+  <text x="482" y="200" text-anchor="middle" font-size="8" fill="#212529">points (sorted by k-distance)</text>
+
+  <!-- Grid lines -->
+  <line x1="345" y1="154" x2="620" y2="154" stroke="#eee" stroke-width="0.5"/>
+  <line x1="345" y1="128" x2="620" y2="128" stroke="#eee" stroke-width="0.5"/>
+  <line x1="345" y1="102" x2="620" y2="102" stroke="#eee" stroke-width="0.5"/>
+
+  <!-- K-distance curve -->
+  <!-- Normal points (0-2): k-distance ~0.5-1 (dense, neighbors close) -->
+  <!-- Outliers at 3,4,5,6,7: k-distances ~1.5, 2, 2.5, 3.5, 4.5 -->
+
+  <!-- Flat part: many normal points with small k-distance (~0.5-1) -->
+  <path d="M345,170
+           L355,170 L365,169 L375,169 L385,169 L395,168 L405,168
+           L415,168 L425,167 L435,167 L445,167 L455,166 L465,166
+           L475,166 L485,165 L495,165 L505,164 L515,163 L525,162
+           L535,160 L545,157"
+        fill="none" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Elbow/knee point -->
+  <circle cx="545" cy="157" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+
+  <!-- Gradual rise: outliers with increasing k-distances -->
+  <!-- Outlier at 3: k-dist ~1.5 (y=141) -->
+  <!-- Outlier at 4: k-dist ~2 (y=128) -->
+  <!-- Outlier at 5: k-dist ~2.5 (y=115) -->
+  <!-- Outlier at 6: k-dist ~3.5 (y=89) -->
+  <!-- Outlier at 7: k-dist ~4.5 (y=63) -->
+  <path d="M545,157
+           L560,141
+           L575,128
+           L590,115
+           L605,89
+           L620,63"
+        fill="none" stroke="#6c757d" stroke-width="2.5"/>
+
+  <!-- Minor outlier dots with labels -->
+  <circle cx="560" cy="141" r="4" fill="#6c757d"/>
+  <circle cx="575" cy="128" r="4" fill="#6c757d"/>
+  <circle cx="590" cy="115" r="4" fill="#6c757d"/>
+  <circle cx="605" cy="89" r="4" fill="#6c757d"/>
+  <circle cx="620" cy="63" r="4" fill="#6c757d"/>
+
+  <!-- Epsilon threshold line at ~1.2 -->
+  <line x1="345" y1="149" x2="620" y2="149" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="622" y="152" font-size="7" fill="#fd456f" font-weight="bold">eps</text>
+
+  <!-- Annotations -->
+  <text x="440" y="160" text-anchor="middle" font-size="7" fill="#ffed50" font-weight="bold">cluster</text>
+  <text x="440" y="188" text-anchor="middle" font-size="6" fill="#6c757d">neighbors within ~1</text>
+
+  <text x="590" y="185" text-anchor="middle" font-size="7" fill="#6c757d" font-weight="bold">noise</text>
+  <text x="590" y="193" text-anchor="middle" font-size="6" fill="#6c757d">far from cluster</text>
+
+  <!-- Elbow annotation -->
+  <line x1="545" y1="157" x2="545" y2="210" stroke="#212529" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="545" y="218" text-anchor="middle" font-size="6" fill="#212529">elbow → set eps here</text>
+</svg>

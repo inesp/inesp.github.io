@@ -1,0 +1,148 @@
+<svg viewBox="0 0 520 340" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="520" height="340" fill="#fff"/>
+
+  <!-- ======================= -->
+  <!-- TOP LEFT: Normal distribution (conceptual) -->
+  <!-- ======================= -->
+  <text x="130" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">What kurtosis measures</text>
+
+  <!-- Axis -->
+  <line x1="20" y1="120" x2="240" y2="120" stroke="#212529" stroke-width="1.5"/>
+  <line x1="20" y1="120" x2="20" y2="35" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Normal bell curve -->
+  <path d="M 30,120
+           Q 50,118 70,110
+           Q 90,95 110,70
+           Q 125,45 130,40
+           Q 135,45 150,70
+           Q 170,95 190,110
+           Q 210,118 230,120"
+        fill="rgba(255,237,80,0.2)" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Tail annotations (arrows pointing down to tails) -->
+  <text x="35" y="82" font-size="8" fill="#ff7898">tail</text>
+  <path d="M 45,88 Q 40,100 50,112" fill="none" stroke="#ff7898" stroke-width="1.2"/>
+  <polygon points="50,112 44,107 51,105" fill="#ff7898"/>
+
+  <text x="215" y="82" font-size="8" fill="#ff7898">tail</text>
+  <path d="M 215,88 Q 220,100 210,112" fill="none" stroke="#ff7898" stroke-width="1.2"/>
+  <polygon points="210,112 209,105 216,107" fill="#ff7898"/>
+
+  <!-- Center annotation -->
+  <line x1="130" y1="40" x2="130" y2="28" stroke="#ff7898" stroke-width="1.2"/>
+  <polygon points="130,40 127,33 133,33" fill="#ff7898"/>
+  <text x="130" y="25" text-anchor="middle" font-size="8" fill="#ff7898">center</text>
+
+  <!-- Caption -->
+  <text x="130" y="138" text-anchor="middle" font-size="9" fill="#6c757d">Kurtosis = ratio of data in</text>
+  <text x="130" y="150" text-anchor="middle" font-size="9" fill="#6c757d">tails vs center</text>
+
+  <!-- ======================= -->
+  <!-- TOP RIGHT: Low kurtosis (-0.98) -->
+  <!-- ======================= -->
+  <text x="390" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Low kurtosis</text>
+  <text x="390" y="32" text-anchor="middle" font-size="9" fill="#6c757d">kurtosis ≈ -1</text>
+
+  <!-- Axis -->
+  <line x1="280" y1="120" x2="500" y2="120" stroke="#212529" stroke-width="1.5"/>
+  <line x1="280" y1="120" x2="280" y2="35" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Data: [1,1,2,2,2,3,3,3,3,4,4,4,5,5] -->
+  <!-- 1: 2x, 2: 3x, 3: 4x, 4: 3x, 5: 2x -->
+  <rect x="300" y="88" width="30" height="32" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="315" y="133" text-anchor="middle" font-size="9" fill="#6c757d">1</text>
+
+  <rect x="340" y="72" width="30" height="48" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="355" y="133" text-anchor="middle" font-size="9" fill="#6c757d">2</text>
+
+  <rect x="380" y="56" width="30" height="64" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="395" y="133" text-anchor="middle" font-size="9" fill="#6c757d">3</text>
+
+  <rect x="420" y="72" width="30" height="48" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="435" y="133" text-anchor="middle" font-size="9" fill="#6c757d">4</text>
+
+  <rect x="460" y="88" width="30" height="32" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="475" y="133" text-anchor="middle" font-size="9" fill="#6c757d">5</text>
+
+  <!-- Caption -->
+  <text x="390" y="148" text-anchor="middle" font-size="9" fill="#6c757d">Evenly spread, light tails</text>
+
+  <!-- ======================= -->
+  <!-- BOTTOM LEFT: Higher kurtosis (7.56) -->
+  <!-- ======================= -->
+  <text x="130" y="178" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Higher kurtosis</text>
+  <text x="130" y="192" text-anchor="middle" font-size="9" fill="#6c757d">kurtosis ≈ 7.6</text>
+
+  <!-- Axis -->
+  <line x1="20" y1="280" x2="240" y2="280" stroke="#212529" stroke-width="1.5"/>
+  <line x1="20" y1="280" x2="20" y2="195" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Data: [3,3,3,3,3,3,3,3,3,3,3,3,1,10] -->
+  <!-- 1: 1x, 3: 12x, 10: 1x -->
+
+  <!-- Value 1: outlier -->
+  <rect x="40" y="273" width="25" height="7" fill="#ff7898" stroke="#e66b87" stroke-width="1"/>
+  <text x="52" y="293" text-anchor="middle" font-size="9" fill="#6c757d">1</text>
+  <text x="52" y="265" text-anchor="middle" font-size="7" fill="#ff7898">outlier</text>
+
+  <!-- Value 3: 12x -->
+  <rect x="105" y="205" width="50" height="75" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="130" y="293" text-anchor="middle" font-size="9" fill="#6c757d">3</text>
+  <text x="130" y="218" text-anchor="middle" font-size="8" fill="#6c757d">12x</text>
+
+  <!-- Value 10: outlier -->
+  <rect x="195" y="273" width="25" height="7" fill="#ff7898" stroke="#e66b87" stroke-width="1"/>
+  <text x="207" y="293" text-anchor="middle" font-size="9" fill="#6c757d">10</text>
+  <text x="207" y="265" text-anchor="middle" font-size="7" fill="#ff7898">outlier</text>
+
+  <!-- Caption -->
+  <text x="130" y="310" text-anchor="middle" font-size="9" fill="#6c757d">Sharp peak + some outliers</text>
+
+  <!-- ======================= -->
+  <!-- BOTTOM RIGHT: Very high kurtosis (~500) -->
+  <!-- ======================= -->
+  <text x="390" y="178" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Very high kurtosis</text>
+  <text x="390" y="192" text-anchor="middle" font-size="9" fill="#6c757d">kurtosis ≈ 500</text>
+
+  <!-- Axis -->
+  <line x1="280" y1="280" x2="500" y2="280" stroke="#212529" stroke-width="1.5"/>
+  <line x1="280" y1="280" x2="280" y2="195" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Data: ~1000x 3s, ~100x 2s, and outliers at 5,10,20,30 -->
+  <!-- Scale: values 2-30, mapped to x=290-490 (200px for 28 units ≈ 7px/unit) -->
+
+  <!-- Value 2: ~100x (small bar) at x≈290 -->
+  <rect x="290" y="268" width="15" height="12" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="297" y="293" text-anchor="middle" font-size="8" fill="#6c757d">2</text>
+
+  <!-- Value 3: ~1000x (huge bar) at x≈297 -->
+  <rect x="307" y="205" width="28" height="75" fill="#ffed50" stroke="#e6d647" stroke-width="1"/>
+  <text x="321" y="293" text-anchor="middle" font-size="8" fill="#6c757d">3</text>
+  <text x="321" y="218" text-anchor="middle" font-size="8" fill="#6c757d">1000x</text>
+
+  <!-- Outliers: 5, 10, 20, 30 (properly spaced) -->
+  <!-- 5 at x≈312 -->
+  <rect x="350" y="277" width="10" height="3" fill="#ff7898" stroke="#e66b87" stroke-width="1"/>
+  <text x="355" y="293" text-anchor="middle" font-size="7" fill="#6c757d">5</text>
+
+  <!-- 10 at x≈348 -->
+  <rect x="393" y="277" width="10" height="3" fill="#ff7898" stroke="#e66b87" stroke-width="1"/>
+  <text x="398" y="293" text-anchor="middle" font-size="7" fill="#6c757d">10</text>
+
+  <!-- 20 at x≈421 -->
+  <rect x="450" y="277" width="10" height="3" fill="#ff7898" stroke="#e66b87" stroke-width="1"/>
+  <text x="455" y="293" text-anchor="middle" font-size="7" fill="#6c757d">20</text>
+
+  <!-- 30 at x≈485 -->
+  <rect x="485" y="277" width="10" height="3" fill="#ff7898" stroke="#e66b87" stroke-width="1"/>
+  <text x="490" y="293" text-anchor="middle" font-size="7" fill="#6c757d">30</text>
+
+  <!-- Bracket for outliers -->
+  <path d="M 350,272 L 350,268 L 495,268 L 495,272" fill="none" stroke="#ff7898" stroke-width="1"/>
+  <text x="422" y="262" text-anchor="middle" font-size="7" fill="#ff7898">extreme outliers!</text>
+
+  <!-- Caption -->
+  <text x="390" y="310" text-anchor="middle" font-size="9" fill="#6c757d">Extreme values drive kurtosis sky-high</text>
+</svg>

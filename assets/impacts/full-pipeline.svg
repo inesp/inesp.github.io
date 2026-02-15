@@ -1,0 +1,95 @@
+<svg viewBox="0 0 480 540" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="480" height="540" fill="#fff"/>
+
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1: Collect Data -->
+  <rect x="170" y="15" width="140" height="40" rx="4" fill="#3498db" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="240" y="32" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Collect Metrics</text>
+  <text x="240" y="46" text-anchor="middle" font-size="8" fill="#fff" opacity="0.9">every 2 minutes</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="55" x2="240" y2="75" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Load 14 days -->
+  <rect x="170" y="80" width="140" height="40" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="240" y="97" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Load Training Data</text>
+  <text x="240" y="111" text-anchor="middle" font-size="8" fill="#6c757d">last 14 days</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="120" x2="240" y2="140" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Check pervasive -->
+  <polygon points="240,145 330,180 240,215 150,180" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="240" y="177" text-anchor="middle" font-size="9" fill="#212529">Median pervasive?</text>
+  <text x="240" y="190" text-anchor="middle" font-size="8" fill="#6c757d">(skip KDE if yes)</text>
+
+  <!-- Arrow down -->
+  <line x1="240" y1="215" x2="240" y2="235" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: KDE -->
+  <rect x="170" y="240" width="140" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="240" y="256" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">KDE</text>
+  <text x="240" y="270" text-anchor="middle" font-size="8" fill="#6c757d">remove major outliers</text>
+
+  <!-- Side note for KDE -->
+  <text x="320" y="255" font-size="7" fill="#6c757d" font-style="italic">bandwidth tuning</text>
+  <text x="320" y="265" font-size="7" fill="#6c757d" font-style="italic">up to 6 attempts</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="280" x2="240" y2="300" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: DBSCAN -->
+  <rect x="170" y="305" width="140" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="240" y="321" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">DBSCAN</text>
+  <text x="240" y="335" text-anchor="middle" font-size="8" fill="#6c757d">remove minor outliers</text>
+
+  <!-- Side note for DBSCAN -->
+  <text x="320" y="320" font-size="7" fill="#6c757d" font-style="italic">eps tuning</text>
+  <text x="320" y="330" font-size="7" fill="#6c757d" font-style="italic">up to 2 attempts</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="345" x2="240" y2="365" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 6: Calculate Borders -->
+  <rect x="170" y="370" width="140" height="40" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="240" y="386" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Calculate Borders</text>
+  <text x="240" y="400" text-anchor="middle" font-size="8" fill="#6c757d">mean+3s, 99.7th pct</text>
+
+  <!-- Arrow -->
+  <line x1="240" y1="410" x2="240" y2="430" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 7: Classify -->
+  <rect x="170" y="435" width="140" height="40" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="240" y="451" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Classify New Value</text>
+  <text x="240" y="465" text-anchor="middle" font-size="8" fill="#6c757d">compare to borders</text>
+
+  <!-- Three arrows to health states -->
+  <line x1="190" y1="475" x2="100" y2="495" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="240" y1="475" x2="240" y2="495" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="290" y1="475" x2="380" y2="495" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Health states -->
+  <rect x="40" y="500" width="80" height="16" rx="4" fill="#4a9c6d"/>
+  <text x="80" y="511" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">HEALTHY</text>
+
+  <rect x="200" y="500" width="80" height="16" rx="4" fill="#f5a623"/>
+  <text x="240" y="511" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">AILING</text>
+
+  <rect x="360" y="500" width="80" height="16" rx="4" fill="#fd456f"/>
+  <text x="400" y="511" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">UNHEALTHY</text>
+
+  <!-- Left side: cache indicator -->
+  <rect x="20" y="370" width="100" height="45" rx="4" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="70" y="388" text-anchor="middle" font-size="8" fill="#6c757d">Cached in Redis</text>
+  <text x="70" y="400" text-anchor="middle" font-size="7" fill="#6c757d">for 1 hour</text>
+
+  <!-- Arrow from cache to borders -->
+  <line x1="120" y1="390" x2="165" y2="390" stroke="#6c757d" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

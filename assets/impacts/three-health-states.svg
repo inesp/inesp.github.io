@@ -1,0 +1,24 @@
+<svg viewBox="20 30 390 80" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="420" height="160" fill="#fff"/>
+
+  <!-- HEALTHY -->
+  <text x="70" y="40" text-anchor="middle" font-size="12" fill="#28a745" font-weight="bold">HEALTHY</text>
+  <rect x="25" y="45" width="90" height="55" fill="#d4edda" stroke="#28a745" stroke-width="1.5" rx="4"/>
+  <text x="70" y="68" text-anchor="middle" font-size="18">:)</text>
+  <text x="70" y="88" text-anchor="middle" font-size="10" fill="#212529">all good</text>
+
+  <!-- AILING -->
+  <text x="210" y="40" text-anchor="middle" font-size="12" fill="#e6a000" font-weight="bold">AILING</text>
+  <rect x="160" y="45" width="100" height="55" fill="#fff283" stroke="#e7d749" stroke-width="1.5" rx="4"/>
+  <text x="210" y="68" text-anchor="middle" font-size="18">:/</text>
+  <text x="210" y="88" text-anchor="middle" font-size="10" fill="#212529">hmm, watch</text>
+
+  <!-- UNHEALTHY -->
+  <text x="350" y="40" text-anchor="middle" font-size="12" fill="#fd456f" font-weight="bold">UNHEALTHY</text>
+  <rect x="295" y="45" width="110" height="55" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5" rx="4"/>
+  <text x="350" y="68" text-anchor="middle" font-size="18">:(</text>
+  <text x="350" y="88" text-anchor="middle" font-size="10" fill="#212529">ALERT</text>
+
+
+</svg>

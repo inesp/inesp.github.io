@@ -1,0 +1,60 @@
+// ===========================================
+// Details/Summary Styling Options
+// Test each by adding the class to your <details> element
+// e.g., <details class="callout">
+// ===========================================
+
+@import "colors";
+
+details {
+  border: 6px solid $color-yellow-dark;
+  padding: 1rem;
+  margin-bottom: $half-standard-margin;
+
+  @media (min-width: 768px) {
+    line-height: $standard-line-height;
+  }
+
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    @media (min-width: 768px)  {
+      font-size: $standard-font-size;
+    }
+  }
+
+    &:open{
+      summary {
+        margin-bottom: $half-standard-margin;
+      }
+    }
+
+}
+
+// ===========================================
+// Rabbit Hole Variants
+// ===========================================
+
+details.rabbit-hole {
+  position: relative;
+  padding-top: 1rem;
+  margin-top: 3rem;
+
+  summary::before {
+    content: "🐰";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+    top: -5px;
+    left: -30px;
+    border-radius: 50%;
+  }
+  summary{
+    padding-left: 10px;
+
+  }
+}
+
+
+

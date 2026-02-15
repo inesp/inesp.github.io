@@ -1,0 +1,157 @@
+<svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="600" height="220" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="300" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="normal">Real Data: Errors / Minute</text>
+
+  <!-- Y axis -->
+  <line x1="45" y1="35" x2="45" y2="175" stroke="#212529" stroke-width="1"/>
+  <text x="18" y="110" text-anchor="middle" font-size="8" fill="#212529" transform="rotate(-90, 18, 110)">errors/min</text>
+
+  <!-- Y axis labels -->
+  <text x="40" y="175" text-anchor="end" font-size="7" fill="#fd456f">0</text>
+  <line x1="42" y1="175" x2="45" y2="175" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="40" y="147" text-anchor="end" font-size="7" fill="#fd456f">2</text>
+  <line x1="42" y1="147" x2="45" y2="147" stroke="#6c757d" stroke-width="1"/>
+  <line x1="45" y1="147" x2="570" y2="147" stroke="#eee" stroke-width="0.5"/>
+
+  <text x="40" y="119" text-anchor="end" font-size="7" fill="#fd456f">4</text>
+  <line x1="42" y1="119" x2="45" y2="119" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="40" y="91" text-anchor="end" font-size="7" fill="#fd456f">6</text>
+  <line x1="42" y1="91" x2="45" y2="91" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="40" y="63" text-anchor="end" font-size="7" fill="#fd456f">8</text>
+  <line x1="42" y1="63" x2="45" y2="63" stroke="#6c757d" stroke-width="1"/>
+  <line x1="45" y1="63" x2="570" y2="63" stroke="#eee" stroke-width="0.5"/>
+
+  <text x="40" y="42" text-anchor="end" font-size="7" fill="#fd456f">10</text>
+  <line x1="42" y1="42" x2="45" y2="42" stroke="#6c757d" stroke-width="1"/>
+
+  <!-- X axis -->
+  <line x1="45" y1="175" x2="570" y2="175" stroke="#212529" stroke-width="1"/>
+  <text x="307" y="200" text-anchor="middle" font-size="8" fill="#212529">Time</text>
+
+  <!-- Major incident shaded region -->
+  <rect x="360" y="35" width="55" height="140" fill="#fd456f" opacity="0.1"/>
+
+  <!-- Baseline dots BEFORE incident (0-2 values are normal/yellow) -->
+  <circle cx="50" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="54" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="58" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="62" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="66" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="70" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="74" cy="155" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="78" cy="165" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="82" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="86" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="90" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="94" cy="168" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="98" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="102" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <!-- minor outlier: value ~5 -->
+  <circle cx="106" cy="105" r="3.5" fill="#ff7898"/>
+  <circle cx="110" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="114" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="118" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="122" cy="164" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="126" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="130" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="134" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="138" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="142" cy="155" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="146" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="150" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="154" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="158" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="162" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="166" cy="168" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="174" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <!-- minor outlier: value ~3 -->
+  <circle cx="178" cy="133" r="3.5" fill="#ff7898"/>
+  <circle cx="182" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="186" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="190" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="194" cy="165" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="198" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="202" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="206" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="210" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="214" cy="164" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="218" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="222" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="226" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="230" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="234" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <!-- minor outlier: value ~7 -->
+  <circle cx="238" cy="77" r="3.5" fill="#ff7898"/>
+  <circle cx="242" cy="155" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="246" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="250" cy="165" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="254" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="258" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="262" cy="161" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="266" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="270" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="274" cy="155" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="278" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="282" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="286" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <!-- minor outlier: value ~4 -->
+  <circle cx="290" cy="119" r="3.5" fill="#ff7898"/>
+  <circle cx="294" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="298" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="302" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="306" cy="168" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="310" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="314" cy="155" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="318" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="322" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="326" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="330" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="334" cy="164" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="338" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <!-- minor outlier: value ~6 -->
+  <circle cx="342" cy="91" r="3.5" fill="#ff7898"/>
+  <circle cx="346" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="354" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="358" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+
+  <!-- Major incident dots (~8-10 errors/min, sustained cluster) -->
+  <circle cx="362" cy="63" r="3" fill="#fd456f"/>
+  <circle cx="366" cy="63" r="3" fill="#fd456f"/>
+  <circle cx="370" cy="63" r="3" fill="#fd456f"/>
+  <circle cx="374" cy="140" r="3" fill="#fd456f"/>
+  <circle cx="378" cy="49" r="3" fill="#fd456f"/>
+  <circle cx="382" cy="56" r="3" fill="#fd456f"/>
+  <circle cx="386" cy="56" r="3" fill="#fd456f"/>
+  <circle cx="390" cy="63" r="3" fill="#fd456f"/>
+  <circle cx="394" cy="56" r="3" fill="#fd456f"/>
+  <circle cx="398" cy="49" r="3" fill="#fd456f"/>
+  <circle cx="402" cy="42" r="3" fill="#fd456f"/>
+  <circle cx="406" cy="49" r="3" fill="#fd456f"/>
+  <circle cx="410" cy="49" r="3" fill="#fd456f"/>
+  <circle cx="414" cy="133" r="3" fill="#fd456f"/>
+
+  <!-- Back to baseline AFTER incident -->
+  <circle cx="418" cy="165" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="422" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="426" cy="155" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="430" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="434" cy="170" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="438" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="442" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="446" cy="165" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="450" cy="175" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+
+  <!-- Annotations -->
+  <text x="180" y="192" text-anchor="middle" font-size="7" fill="#212529">minor outliers (isolated)</text>
+
+  <text x="388" y="32" text-anchor="middle" font-size="8" fill="#fd456f" font-weight="bold">~9/min</text>
+  <text x="388" y="192" text-anchor="middle" font-size="7" fill="#fd456f">major incident</text>
+</svg>

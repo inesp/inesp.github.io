@@ -1,0 +1,166 @@
+<svg viewBox="0 0 450 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="450" height="200" fill="#fff"/>
+
+  <!-- Axes -->
+  <line x1="50" y1="165" x2="400" y2="165" stroke="#212529" stroke-width="1.5"/>
+  <line x1="50" y1="165" x2="50" y2="20" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Y-axis labels (CPU %) -->
+  <text x="40" y="28" text-anchor="end" font-size="11" fill="#212529">80</text>
+  <text x="40" y="62" text-anchor="end" font-size="11" fill="#212529">60</text>
+  <text x="40" y="96" text-anchor="end" font-size="11" fill="#212529">40</text>
+  <text x="40" y="130" text-anchor="end" font-size="11" fill="#212529">20</text>
+  <text x="40" y="164" text-anchor="end" font-size="11" fill="#212529">0</text>
+
+  <!-- Y-axis title -->
+  <text x="15" y="92" text-anchor="middle" font-size="11" fill="#212529" transform="rotate(-90, 15, 92)">CPU (%)</text>
+
+  <!-- X-axis labels (time) -->
+  <text x="80" y="180" text-anchor="middle" font-size="9" fill="#212529">Jan</text>
+  <text x="160" y="180" text-anchor="middle" font-size="9" fill="#212529">Feb</text>
+  <text x="240" y="180" text-anchor="middle" font-size="9" fill="#212529">Mar</text>
+  <text x="320" y="180" text-anchor="middle" font-size="9" fill="#212529">Apr</text>
+
+  <!-- Grid lines (subtle) -->
+  <line x1="50" y1="25" x2="400" y2="25" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="50" y1="59" x2="400" y2="59" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="50" y1="93" x2="400" y2="93" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="50" y1="127" x2="400" y2="127" stroke="#dadada" stroke-width="0.5"/>
+
+  <!-- Alert threshold line at 80% -->
+  <line x1="50" y1="25" x2="380" y2="25" stroke="#fd456f" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="385" y="28" font-size="9" fill="#fd456f">threshold</text>
+
+  <!-- JANUARY: tight band around 15-25% (y: 120-140) -->
+  <circle cx="52" cy="132" r="1.5" fill="#ffed50"/><circle cx="54" cy="128" r="1.5" fill="#ffed50"/>
+  <circle cx="56" cy="145" r="1.5" fill="#ffed50"/><circle cx="58" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="60" cy="120" r="1.5" fill="#ffed50"/><circle cx="62" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="64" cy="100" r="1.5" fill="#ffed50"/><circle cx="66" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="68" cy="131" r="1.5" fill="#ffed50"/><circle cx="70" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="72" cy="125" r="1.5" fill="#ffed50"/><circle cx="74" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="76" cy="125" r="1.5" fill="#ffed50"/><circle cx="78" cy="132" r="1.5" fill="#ffed50"/>
+  <circle cx="80" cy="130" r="1.5" fill="#ffed50"/><circle cx="82" cy="135" r="1.5" fill="#ffed50"/>
+  <circle cx="84" cy="131" r="1.5" fill="#ffed50"/><circle cx="86" cy="126" r="1.5" fill="#ffed50"/>
+  <circle cx="88" cy="133" r="1.5" fill="#ffed50"/><circle cx="90" cy="129" r="1.5" fill="#ffed50"/>
+  <circle cx="92" cy="136" r="1.5" fill="#ffed50"/><circle cx="94" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="96" cy="127" r="1.5" fill="#ffed50"/><circle cx="98" cy="134" r="1.5" fill="#ffed50"/>
+  <circle cx="100" cy="121" r="1.5" fill="#ffed50"/><circle cx="102" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="104" cy="122" r="1.5" fill="#ffed50"/><circle cx="106" cy="128" r="1.5" fill="#ffed50"/>
+  <circle cx="108" cy="125" r="1.5" fill="#ffed50"/><circle cx="110" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="112" cy="120" r="1.5" fill="#ffed50"/><circle cx="114" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="116" cy="129" r="1.5" fill="#ffed50"/><circle cx="118" cy="136" r="1.5" fill="#ffed50"/>
+
+  <!-- FEB -->
+  <circle cx="120" cy="118" r="1.5" fill="#ffed50"/><circle cx="122" cy="126" r="1.5" fill="#ffed50"/>
+  <circle cx="124" cy="134" r="1.5" fill="#ffed50"/><circle cx="126" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="128" cy="115" r="1.5" fill="#ffed50"/><circle cx="130" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="132" cy="129" r="1.5" fill="#ffed50"/><circle cx="134" cy="135" r="1.5" fill="#ffed50"/>
+  <circle cx="140" cy="133" r="1.5" fill="#ffed50"/><circle cx="142" cy="128" r="1.5" fill="#ffed50"/>
+  <circle cx="144" cy="104" r="1.5" fill="#ffed50"/><circle cx="146" cy="131" r="1.5" fill="#ffed50"/>
+  <circle cx="148" cy="108" r="1.5" fill="#ffed50"/><circle cx="150" cy="134" r="1.5" fill="#ffed50"/>
+  <circle cx="152" cy="120" r="1.5" fill="#ffed50"/><circle cx="154" cy="132" r="1.5" fill="#ffed50"/>
+  <circle cx="156" cy="127" r="1.5" fill="#ffed50"/><circle cx="158" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="160" cy="130" r="1.5" fill="#ffed50"/><circle cx="162" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="164" cy="122" r="1.5" fill="#ffed50"/><circle cx="166" cy="128" r="1.5" fill="#ffed50"/>
+  <circle cx="168" cy="135" r="1.5" fill="#ffed50"/><circle cx="170" cy="131" r="1.5" fill="#ffed50"/>
+  <circle cx="172" cy="113" r="1.5" fill="#ffed50"/><circle cx="174" cy="134" r="1.5" fill="#ffed50"/>
+  <circle cx="176" cy="129" r="1.5" fill="#ffed50"/><circle cx="178" cy="132" r="1.5" fill="#ffed50"/>
+  <circle cx="180" cy="116" r="1.5" fill="#ffed50"/><circle cx="182" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="184" cy="118" r="1.5" fill="#ffed50"/><circle cx="186" cy="128" r="1.5" fill="#ffed50"/>
+  <circle cx="188" cy="133" r="1.5" fill="#ffed50"/><circle cx="190" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="192" cy="121" r="1.5" fill="#ffed50"/><circle cx="194" cy="135" r="1.5" fill="#ffed50"/>
+  <circle cx="196" cy="111" r="1.5" fill="#ffed50"/><circle cx="198" cy="132" r="1.5" fill="#ffed50"/>
+  <circle cx="200" cy="110" r="1.5" fill="#ffed50"/><circle cx="202" cy="134" r="1.5" fill="#ffed50"/>
+  <circle cx="204" cy="99" r="1.5" fill="#ffed50"/><circle cx="206" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="208" cy="133" r="1.5" fill="#ffed50"/><circle cx="210" cy="128" r="1.5" fill="#ffed50"/>
+  <circle cx="212" cy="95" r="1.5" fill="#ffed50"/><circle cx="214" cy="131" r="1.5" fill="#ffed50"/>
+  <circle cx="216" cy="100" r="1.5" fill="#ffed50"/><circle cx="218" cy="132" r="1.5" fill="#ffed50"/>
+  <circle cx="220" cy="120" r="1.5" fill="#ffed50"/><circle cx="222" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="224" cy="125" r="1.5" fill="#ffed50"/><circle cx="226" cy="130" r="1.5" fill="#ffed50"/>
+  <!-- Feb: spikes reaching higher (30-40%) -->
+  <circle cx="145" cy="102" r="1.5" fill="#ffed50"/><circle cx="155" cy="108" r="1.5" fill="#ffed50"/>
+  <circle cx="165" cy="105" r="1.5" fill="#ffed50"/><circle cx="175" cy="105" r="1.5" fill="#ffed50"/>
+  <circle cx="185" cy="98" r="1.5" fill="#ffed50"/><circle cx="195" cy="102" r="1.5" fill="#ffed50"/>
+  <circle cx="205" cy="108" r="1.5" fill="#ffed50"/><circle cx="215" cy="100" r="1.5" fill="#ffed50"/>
+  <circle cx="225" cy="105" r="1.5" fill="#ffed50"/>
+
+  <circle cx="232" cy="122" r="1.5" fill="#ffed50"/><circle cx="234" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="236" cy="125" r="1.5" fill="#ffed50"/><circle cx="238" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="240" cy="116" r="1.5" fill="#ffed50"/><circle cx="242" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="244" cy="118" r="1.5" fill="#ffed50"/><circle cx="246" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="248" cy="131" r="1.5" fill="#ffed50"/><circle cx="250" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="252" cy="124" r="1.5" fill="#ffed50"/><circle cx="254" cy="129" r="1.5" fill="#ffed50"/>
+  <circle cx="256" cy="122" r="1.5" fill="#ffed50"/><circle cx="258" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="260" cy="125" r="1.5" fill="#ffed50"/><circle cx="262" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="264" cy="116" r="1.5" fill="#ffed50"/><circle cx="266" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="268" cy="118" r="1.5" fill="#ffed50"/><circle cx="270" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="272" cy="101" r="1.5" fill="#ffed50"/><circle cx="274" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="276" cy="104" r="1.5" fill="#ffed50"/><circle cx="278" cy="129" r="1.5" fill="#ffed50"/>
+  <circle cx="280" cy="92" r="1.5" fill="#ffed50"/><circle cx="282" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="284" cy="95" r="1.5" fill="#ffed50"/><circle cx="286" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="288" cy="86" r="1.5" fill="#ffed50"/><circle cx="290" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="292" cy="98" r="1.5" fill="#ffed50"/><circle cx="294" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="296" cy="131" r="1.5" fill="#ffed50"/><circle cx="298" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="300" cy="94" r="1.5" fill="#ffed50"/><circle cx="302" cy="129" r="1.5" fill="#ffed50"/>
+  <circle cx="304" cy="92" r="1.5" fill="#ffed50"/><circle cx="306" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="308" cy="85" r="1.5" fill="#ffed50"/><circle cx="310" cy="100" r="1.5" fill="#ffed50"/>
+  <circle cx="312" cy="106" r="1.5" fill="#ffed50"/><circle cx="314" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="316" cy="108" r="1.5" fill="#ffed50"/><circle cx="318" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="320" cy="131" r="1.5" fill="#ffed50"/><circle cx="322" cy="125" r="1.5" fill="#ffed50"/>
+  <!-- March: upper spikes now reaching 45-55% -->
+  <circle cx="235" cy="98" r="1.5" fill="#ffed50"/><circle cx="240" cy="90" r="1.5" fill="#ffed50"/>
+  <circle cx="248" cy="95" r="1.5" fill="#ffed50"/><circle cx="255" cy="85" r="1.5" fill="#ffed50"/>
+  <circle cx="262" cy="92" r="1.5" fill="#ffed50"/><circle cx="268" cy="80" r="1.5" fill="#ffed50"/>
+  <circle cx="275" cy="88" r="1.5" fill="#ffed50"/><circle cx="282" cy="75" r="1.5" fill="#ffed50"/>
+  <circle cx="288" cy="85" r="1.5" fill="#ffed50"/><circle cx="295" cy="70" r="1.5" fill="#ffed50"/>
+  <circle cx="302" cy="82" r="1.5" fill="#ffed50"/><circle cx="308" cy="68" r="1.5" fill="#ffed50"/>
+  <circle cx="315" cy="78" r="1.5" fill="#ffed50"/><circle cx="320" cy="65" r="1.5" fill="#ffed50"/>
+  <!-- mid-range fill -->
+  <circle cx="245" cy="110" r="1.5" fill="#ffed50"/><circle cx="260" cy="105" r="1.5" fill="#ffed50"/>
+  <circle cx="278" cy="100" r="1.5" fill="#ffed50"/><circle cx="292" cy="95" r="1.5" fill="#ffed50"/>
+  <circle cx="310" cy="90" r="1.5" fill="#ffed50"/>
+
+
+  <circle cx="328" cy="132" r="1.5" fill="#ffed50"/><circle cx="330" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="332" cy="105" r="1.5" fill="#ffed50"/><circle cx="334" cy="130" r="1.5" fill="#ffed50"/>
+  <circle cx="336" cy="106" r="1.5" fill="#ffed50"/><circle cx="338" cy="133" r="1.5" fill="#ffed50"/>
+  <circle cx="340" cy="128" r="1.5" fill="#ffed50"/><circle cx="342" cy="136" r="1.5" fill="#ffed50"/>
+  <circle cx="344" cy="131" r="1.5" fill="#ffed50"/><circle cx="346" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="348" cy="74" r="1.5" fill="#ffed50"/><circle cx="350" cy="129" r="1.5" fill="#ffed50"/>
+  <circle cx="352" cy="62" r="1.5" fill="#ffed50"/><circle cx="354" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="356" cy="55" r="1.5" fill="#ffed50"/><circle cx="358" cy="70" r="1.5" fill="#ffed50"/>
+  <circle cx="360" cy="126" r="1.5" fill="#ffed50"/><circle cx="362" cy="63" r="1.5" fill="#ffed50"/>
+  <circle cx="364" cy="128" r="1.5" fill="#ffed50"/><circle cx="366" cy="56" r="1.5" fill="#ffed50"/>
+  <circle cx="368" cy="41" r="1.5" fill="#ffed50"/><circle cx="370" cy="125" r="1.5" fill="#ffed50"/>
+  <circle cx="372" cy="94" r="1.5" fill="#ffed50"/><circle cx="374" cy="129" r="1.5" fill="#ffed50"/>
+  <circle cx="376" cy="92" r="1.5" fill="#ffed50"/><circle cx="378" cy="127" r="1.5" fill="#ffed50"/>
+  <circle cx="370" cy="85" r="1.5" fill="#ffed50"/><circle cx="352" cy="130" r="1.5" fill="#ffed50"/>
+  <!-- April: upper spikes now hitting and exceeding threshold -->
+  <circle cx="330" cy="60" r="1.5" fill="#ffed50"/><circle cx="335" cy="55" r="1.5" fill="#ffed50"/>
+  <circle cx="342" cy="50" r="1.5" fill="#ffed50"/><circle cx="348" cy="45" r="1.5" fill="#ffed50"/>
+  <circle cx="355" cy="52" r="1.5" fill="#ffed50"/><circle cx="360" cy="40" r="1.5" fill="#ffed50"/>
+  <circle cx="368" cy="48" r="1.5" fill="#ffed50"/><circle cx="375" cy="35" r="1.5" fill="#ffed50"/>
+  <circle cx="350" cy="42" r="1.5" fill="#ffed50"/><circle cx="348" cy="30" r="1.5" fill="#ffed50"/>
+  <circle cx="352" cy="38" r="1.5" fill="#ffed50"/><circle cx="368" cy="28" r="1.5" fill="#ffed50"/>
+  <!-- Above threshold - alert! -->
+  <circle cx="365" cy="24" r="1.5" fill="#fd456f"/><circle cx="378" cy="22" r="1.5" fill="#fd456f"/>
+  <circle cx="355" cy="20" r="1.5" fill="#fd456f"/><circle cx="375" cy="18" r="1.5" fill="#fd456f"/>
+  <circle cx="362" cy="24" r="1.5" fill="#fd456f"/>
+  <circle cx="368" cy="20" r="1.5" fill="#fd456f"/>
+  <!-- mid-range fill for April -->
+  <circle cx="332" cy="95" r="1.5" fill="#ffed50"/><circle cx="340" cy="85" r="1.5" fill="#ffed50"/>
+  <circle cx="350" cy="78" r="1.5" fill="#ffed50"/><circle cx="358" cy="70" r="1.5" fill="#ffed50"/>
+  <circle cx="340" cy="80" r="1.5" fill="#ffed50"/><circle cx="372" cy="65" r="1.5" fill="#ffed50"/>
+  <circle cx="350" cy="75" r="1.5" fill="#ffed50"/>
+  <circle cx="371" cy="60" r="1.5" fill="#ffed50"/>
+  <circle cx="345" cy="105" r="1.5" fill="#ffed50"/>
+  <circle cx="362" cy="95" r="1.5" fill="#ffed50"/>
+  <circle cx="365" cy="90" r="1.5" fill="#ffed50"/>
+  <circle cx="362" cy="85" r="1.5" fill="#ffed50"/>
+
+  <!-- Change annotation -->
+  <text x="210" y="160" text-anchor="middle" font-size="10" fill="#6c757d">start of change?</text>
+  <circle cx="150" cy="115" r="30" stroke="#fd456f" fill="none"/>
+  <line x1="210" y1="150" x2="178" y2="125" stroke="#6c757d" stroke-width="1"/>
+</svg>

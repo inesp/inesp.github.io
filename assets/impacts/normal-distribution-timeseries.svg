@@ -1,0 +1,129 @@
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="200" fill="#fff"/>
+
+  <!-- Axes -->
+  <line x1="50" y1="175" x2="470" y2="175" stroke="#212529" stroke-width="1.5"/>
+  <line x1="50" y1="175" x2="50" y2="15" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Y-axis labels (60 to 140, mean=100, σ=10) -->
+  <text x="40" y="18" text-anchor="end" font-size="9" fill="#212529">140</text>
+  <text x="40" y="38" text-anchor="end" font-size="9" fill="#212529">130</text>
+  <text x="40" y="58" text-anchor="end" font-size="9" fill="#212529">120</text>
+  <text x="40" y="78" text-anchor="end" font-size="9" fill="#212529">110</text>
+  <text x="40" y="98" text-anchor="end" font-size="9" fill="#212529">100</text>
+  <text x="40" y="118" text-anchor="end" font-size="9" fill="#212529">90</text>
+  <text x="40" y="138" text-anchor="end" font-size="9" fill="#212529">80</text>
+  <text x="40" y="158" text-anchor="end" font-size="9" fill="#212529">70</text>
+  <text x="40" y="178" text-anchor="end" font-size="9" fill="#212529">60</text>
+
+  <!-- Y-axis title -->
+  <text x="15" y="95" text-anchor="middle" font-size="10" fill="#212529" transform="rotate(-90, 15, 95)">Value</text>
+
+  <!-- X-axis label -->
+  <text x="260" y="192" text-anchor="middle" font-size="10" fill="#212529">Time</text>
+
+
+  <!-- ±1σ lines at 110/90 (y=75/115) -->
+  <line x1="50" y1="75" x2="470" y2="75" stroke="#9f9f9f" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="50" y1="115" x2="470" y2="115" stroke="#9f9f9f" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <text x="475" y="78" font-size="7" fill="#9f9f9f">+1σ</text>
+  <text x="475" y="118" font-size="7" fill="#9f9f9f">-1σ</text>
+
+  <!-- ±2σ lines at 120/80 (y=55/135) -->
+  <line x1="50" y1="55" x2="470" y2="55" stroke="#dadada" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <line x1="50" y1="135" x2="470" y2="135" stroke="#dadada" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="475" y="58" font-size="7" fill="#dadada">+2σ</text>
+  <text x="475" y="138" font-size="7" fill="#dadada">-2σ</text>
+
+  <!-- ±3σ lines at 130/70 (y=35/155) -->
+  <line x1="50" y1="35" x2="470" y2="35" stroke="#dadada" stroke-width="0.5" stroke-dasharray="1,2"/>
+  <line x1="50" y1="155" x2="470" y2="155" stroke="#dadada" stroke-width="0.5" stroke-dasharray="1,2"/>
+  <text x="475" y="38" font-size="7" fill="#dadada">+3σ</text>
+  <text x="475" y="158" font-size="7" fill="#dadada">-3σ</text>
+
+  <!-- ±4σ lines at 140/60 (y=15/175) - at the edges -->
+  <text x="475" y="18" font-size="7" fill="#dadada">+4σ</text>
+  <text x="475" y="178" font-size="7" fill="#dadada">-4σ</text>
+
+  <!-- Data points - DENSE around mean (y=95), symmetric spread -->
+  <!-- Core band: very dense around mean ±5 (y: 90-100) -->
+  <circle cx="55" cy="93" r="3.5" fill="#ffed50"/><circle cx="60" cy="97" r="3.5" fill="#ffed50"/>
+  <circle cx="65" cy="94" r="3.5" fill="#ffed50"/><circle cx="70" cy="96" r="3.5" fill="#ffed50"/>
+  <circle cx="75" cy="92" r="3.5" fill="#ffed50"/><circle cx="80" cy="98" r="3.5" fill="#ffed50"/>
+  <circle cx="85" cy="95" r="3.5" fill="#ffed50"/><circle cx="90" cy="93" r="3.5" fill="#ffed50"/>
+  <circle cx="95" cy="97" r="3.5" fill="#ffed50"/><circle cx="100" cy="94" r="3.5" fill="#ffed50"/>
+  <circle cx="105" cy="96" r="3.5" fill="#ffed50"/><circle cx="110" cy="92" r="3.5" fill="#ffed50"/>
+  <circle cx="115" cy="98" r="3.5" fill="#ffed50"/><circle cx="120" cy="95" r="3.5" fill="#ffed50"/>
+  <circle cx="125" cy="93" r="3.5" fill="#ffed50"/><circle cx="130" cy="97" r="3.5" fill="#ffed50"/>
+  <circle cx="135" cy="94" r="3.5" fill="#ffed50"/><circle cx="140" cy="96" r="3.5" fill="#ffed50"/>
+  <circle cx="145" cy="92" r="3.5" fill="#ffed50"/><circle cx="150" cy="98" r="3.5" fill="#ffed50"/>
+  <circle cx="155" cy="95" r="3.5" fill="#ffed50"/><circle cx="160" cy="93" r="3.5" fill="#ffed50"/>
+  <circle cx="165" cy="97" r="3.5" fill="#ffed50"/><circle cx="170" cy="94" r="3.5" fill="#ffed50"/>
+  <circle cx="175" cy="96" r="3.5" fill="#ffed50"/><circle cx="180" cy="92" r="3.5" fill="#ffed50"/>
+  <circle cx="185" cy="98" r="3.5" fill="#ffed50"/><circle cx="190" cy="95" r="3.5" fill="#ffed50"/>
+  <circle cx="195" cy="93" r="3.5" fill="#ffed50"/><circle cx="200" cy="97" r="3.5" fill="#ffed50"/>
+  <circle cx="205" cy="94" r="3.5" fill="#ffed50"/><circle cx="210" cy="96" r="3.5" fill="#ffed50"/>
+  <circle cx="215" cy="92" r="3.5" fill="#ffed50"/><circle cx="220" cy="98" r="3.5" fill="#ffed50"/>
+  <circle cx="225" cy="95" r="3.5" fill="#ffed50"/><circle cx="230" cy="93" r="3.5" fill="#ffed50"/>
+  <circle cx="235" cy="97" r="3.5" fill="#ffed50"/><circle cx="240" cy="94" r="3.5" fill="#ffed50"/>
+  <circle cx="245" cy="96" r="3.5" fill="#ffed50"/><circle cx="250" cy="92" r="3.5" fill="#ffed50"/>
+  <circle cx="255" cy="98" r="3.5" fill="#ffed50"/><circle cx="260" cy="95" r="3.5" fill="#ffed50"/>
+  <circle cx="265" cy="93" r="3.5" fill="#ffed50"/><circle cx="270" cy="97" r="3.5" fill="#ffed50"/>
+  <circle cx="275" cy="94" r="3.5" fill="#ffed50"/><circle cx="280" cy="96" r="3.5" fill="#ffed50"/>
+  <circle cx="285" cy="92" r="3.5" fill="#ffed50"/><circle cx="290" cy="98" r="3.5" fill="#ffed50"/>
+  <circle cx="295" cy="95" r="3.5" fill="#ffed50"/><circle cx="300" cy="93" r="3.5" fill="#ffed50"/>
+  <circle cx="305" cy="97" r="3.5" fill="#ffed50"/><circle cx="310" cy="94" r="3.5" fill="#ffed50"/>
+  <circle cx="315" cy="96" r="3.5" fill="#ffed50"/><circle cx="320" cy="92" r="3.5" fill="#ffed50"/>
+  <circle cx="325" cy="98" r="3.5" fill="#ffed50"/><circle cx="330" cy="95" r="3.5" fill="#ffed50"/>
+  <circle cx="335" cy="93" r="3.5" fill="#ffed50"/><circle cx="340" cy="97" r="3.5" fill="#ffed50"/>
+  <circle cx="345" cy="94" r="3.5" fill="#ffed50"/><circle cx="350" cy="96" r="3.5" fill="#ffed50"/>
+  <circle cx="355" cy="92" r="3.5" fill="#ffed50"/><circle cx="360" cy="98" r="3.5" fill="#ffed50"/>
+  <circle cx="365" cy="95" r="3.5" fill="#ffed50"/><circle cx="370" cy="93" r="3.5" fill="#ffed50"/>
+  <circle cx="375" cy="97" r="3.5" fill="#ffed50"/><circle cx="380" cy="94" r="3.5" fill="#ffed50"/>
+  <circle cx="385" cy="96" r="3.5" fill="#ffed50"/><circle cx="390" cy="92" r="3.5" fill="#ffed50"/>
+  <circle cx="395" cy="98" r="3.5" fill="#ffed50"/><circle cx="400" cy="95" r="3.5" fill="#ffed50"/>
+  <circle cx="405" cy="93" r="3.5" fill="#ffed50"/><circle cx="410" cy="97" r="3.5" fill="#ffed50"/>
+  <circle cx="415" cy="94" r="3.5" fill="#ffed50"/><circle cx="420" cy="96" r="3.5" fill="#ffed50"/>
+  <circle cx="425" cy="92" r="3.5" fill="#ffed50"/><circle cx="430" cy="98" r="3.5" fill="#ffed50"/>
+  <circle cx="435" cy="95" r="3.5" fill="#ffed50"/><circle cx="440" cy="93" r="3.5" fill="#ffed50"/>
+  <circle cx="445" cy="97" r="3.5" fill="#ffed50"/><circle cx="450" cy="94" r="3.5" fill="#ffed50"/>
+  <circle cx="455" cy="96" r="3.5" fill="#ffed50"/><circle cx="460" cy="95" r="3.5" fill="#ffed50"/>
+
+  <!-- 1σ band: less dense (y: 75-90 and 100-115) -->
+  <!-- Upper 1σ -->
+  <circle cx="72" cy="82" r="3.5" fill="#ffed50"/><circle cx="108" cy="78" r="3.5" fill="#ffed50"/>
+  <circle cx="145" cy="85" r="3.5" fill="#ffed50"/><circle cx="182" cy="80" r="3.5" fill="#ffed50"/>
+  <circle cx="218" cy="88" r="3.5" fill="#ffed50"/><circle cx="255" cy="76" r="3.5" fill="#ffed50"/>
+  <circle cx="292" cy="83" r="3.5" fill="#ffed50"/><circle cx="328" cy="79" r="3.5" fill="#ffed50"/>
+  <circle cx="365" cy="86" r="3.5" fill="#ffed50"/><circle cx="402" cy="81" r="3.5" fill="#ffed50"/>
+  <circle cx="438" cy="77" r="3.5" fill="#ffed50"/>
+  <!-- Lower 1σ -->
+  <circle cx="88" cy="108" r="3.5" fill="#ffed50"/><circle cx="125" cy="112" r="3.5" fill="#ffed50"/>
+  <circle cx="162" cy="105" r="3.5" fill="#ffed50"/><circle cx="198" cy="114" r="3.5" fill="#ffed50"/>
+  <circle cx="235" cy="110" r="3.5" fill="#ffed50"/><circle cx="272" cy="113" r="3.5" fill="#ffed50"/>
+  <circle cx="308" cy="107" r="3.5" fill="#ffed50"/><circle cx="345" cy="111" r="3.5" fill="#ffed50"/>
+  <circle cx="382" cy="106" r="3.5" fill="#ffed50"/><circle cx="418" cy="109" r="3.5" fill="#ffed50"/>
+  <circle cx="455" cy="108" r="3.5" fill="#ffed50"/>
+
+  <!-- 2σ band: sparse (y: 55-75 and 115-135) -->
+  <!-- Upper 2σ -->
+  <circle cx="95" cy="65" r="3.5" fill="#ffed50"/><circle cx="195" cy="60" r="3.5" fill="#ffed50"/>
+  <circle cx="295" cy="68" r="3.5" fill="#ffed50"/><circle cx="395" cy="62" r="3.5" fill="#ffed50"/>
+  <!-- Lower 2σ -->
+  <circle cx="135" cy="128" r="3.5" fill="#ffed50"/><circle cx="235" cy="132" r="3.5" fill="#ffed50"/>
+  <circle cx="335" cy="125" r="3.5" fill="#ffed50"/><circle cx="435" cy="130" r="3.5" fill="#ffed50"/>
+
+  <!-- 3σ band: rare (y: 35-55 and 135-155) -->
+  <!-- Upper 3σ -->
+  <circle cx="150" cy="42" r="3.5" fill="#ffed50"/><circle cx="310" cy="38" r="3.5" fill="#ffed50"/>
+  <circle cx="420" cy="45" r="3.5" fill="#ffed50"/>
+  <!-- Lower 3σ -->
+  <circle cx="100" cy="150" r="3.5" fill="#ffed50"/><circle cx="260" cy="148" r="3.5" fill="#ffed50"/>
+  <circle cx="380" cy="152" r="3.5" fill="#ffed50"/>
+
+  <!-- Mean line at 100 (y=95) -->
+  <line x1="50" y1="95" x2="470" y2="95" stroke="#ff7898" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <text x="475" y="98" font-size="10" fill="#e60038">mean</text>
+
+</svg>

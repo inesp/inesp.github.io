@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="400" height="200" fill="#fff"/>
+
+  <!-- Main peak curve -->
+  <path d="M 40 180
+           Q 80 180, 100 140
+           Q 120 100, 140 120
+           Q 160 135, 170 110
+           Q 200 60, 230 60
+           Q 260 60, 290 130
+           Q 320 180, 360 180"
+        fill="#ffed50"
+        fill-opacity="0.3"
+        stroke="#ffed50"
+        stroke-width="2.5"
+        stroke-linecap="round"/>
+
+
+  <!-- Arrow from "SOUND" to label -->
+  <path d="M 225 45 L 225 55" stroke="#fd456f" stroke-width="1.5"  marker-end="url(#arrow)"/>
+
+  <!-- Label: SOUND peak -->
+  <text x="225" y="40" text-anchor="middle" font-size="10" font-weight="600" fill="#fd456f">SOUND peak</text>
+
+  <!-- Arrow from "Inherits" to label -->
+  <path d="M 123 95 L 123 110" stroke="#fd456f" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Label: bump -->
+  <text x="123" y="90" text-anchor="middle" font-size="10" fill="#fd456f">Inherits SOUND</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#fd456f"/>
+    </marker>
+  </defs>
+</svg>

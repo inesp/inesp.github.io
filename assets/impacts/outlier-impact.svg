@@ -1,0 +1,70 @@
+<svg viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="480" height="160" fill="#fff"/>
+
+  <!-- LEFT: Without outlier -->
+  <text x="110" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Without outlier</text>
+
+  <!-- Axis -->
+  <line x1="30" y1="120" x2="190" y2="120" stroke="#212529" stroke-width="1.5"/>
+  <line x1="30" y1="120" x2="30" y2="25" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Y-axis labels -->
+  <text x="25" y="35" text-anchor="end" font-size="8" fill="#6c757d">300</text>
+  <text x="25" y="77" text-anchor="end" font-size="8" fill="#6c757d">200</text>
+  <text x="25" y="118" text-anchor="end" font-size="8" fill="#6c757d">100</text>
+
+  <!-- Data points: [100, 102, 98, 101, 99, 100] all clustered around y=115 -->
+  <circle cx="50" cy="115" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="70" cy="114" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="90" cy="116" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="110" cy="114" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="130" cy="115" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="150" cy="115" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+
+  <!-- Mean line at ~100 -->
+  <line x1="35" y1="115" x2="170" y2="115" stroke="#28a745" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="175" y="118" font-size="8" fill="#28a745">mean ≈ 100</text>
+
+  <!-- Caption -->
+  <text x="110" y="140" text-anchor="middle" font-size="9" fill="#6c757d">mean ≈ 100, std ≈ 1.4</text>
+  <text x="110" y="152" text-anchor="middle" font-size="9" fill="#28a745" font-weight="bold">Useful!</text>
+
+
+  <!-- RIGHT: With outlier -->
+  <text x="360" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">With one outlier</text>
+
+  <!-- Axis -->
+  <line x1="260" y1="120" x2="450" y2="120" stroke="#212529" stroke-width="1.5"/>
+  <line x1="260" y1="120" x2="260" y2="25" stroke="#212529" stroke-width="1.5"/>
+
+  <!-- Y-axis labels -->
+  <text x="255" y="35" text-anchor="end" font-size="8" fill="#6c757d">300</text>
+  <text x="255" y="77" text-anchor="end" font-size="8" fill="#6c757d">200</text>
+  <text x="255" y="118" text-anchor="end" font-size="8" fill="#6c757d">100</text>
+
+  <!-- Same 6 data points clustered around y=115 -->
+  <circle cx="280" cy="115" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="300" cy="114" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="320" cy="116" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="340" cy="114" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="360" cy="115" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="380" cy="115" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+
+  <!-- The outlier at 300 -->
+  <circle cx="410" cy="30" r="5" fill="#fd456f" stroke="#e60038" stroke-width="1.5"/>
+  <text x="422" y="34" font-size="8" fill="#fd456f" font-weight="bold">300</text>
+
+  <!-- Mean line shifted to ~129 (y ≈ 101) -->
+  <line x1="265" y1="101" x2="430" y2="101" stroke="#fd456f" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="435" y="104" font-size="8" fill="#fd456f">mean ≈ 129</text>
+
+  <!-- Arrow showing the shift -->
+  <line x1="330" y1="112" x2="330" y2="104" stroke="#6c757d" stroke-width="1"/>
+  <polygon points="330,104 327,109 333,109" fill="#6c757d"/>
+  <text x="345" y="110" font-size="7" fill="#6c757d">shifted!</text>
+
+  <!-- Caption -->
+  <text x="360" y="140" text-anchor="middle" font-size="9" fill="#6c757d">mean ≈ 129, std ≈ 70</text>
+  <text x="360" y="152" text-anchor="middle" font-size="9" fill="#fd456f" font-weight="bold">Wrecked!</text>
+</svg>

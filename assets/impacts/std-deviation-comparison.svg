@@ -1,0 +1,56 @@
+<svg viewBox="0 0 480 150" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="480" height="150" fill="#fff"/>
+
+  <!-- LEFT: Low standard deviation -->
+  <text x="110" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Low standard deviation</text>
+
+  <!-- Axis -->
+  <line x1="30" y1="110" x2="190" y2="110" stroke="#212529" stroke-width="1.5"/>
+  <line x1="30" y1="110" x2="30" y2="30" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="190,110 183,106 183,114" fill="#212529"/>
+  <text x="195" y="114" font-size="9" fill="#6c757d">value</text>
+
+  <!-- Narrow bell curve -->
+  <path d="M 50,110
+           Q 60,108 70,100
+           Q 80,85 90,55
+           Q 100,30 110,28
+           Q 120,30 130,55
+           Q 140,85 150,100
+           Q 160,108 170,110"
+        fill="none" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Mean line -->
+  <line x1="110" y1="110" x2="110" y2="25" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Caption -->
+  <text x="110" y="128" text-anchor="middle" font-size="9" fill="#6c757d">Values huddle close</text>
+  <text x="110" y="140" text-anchor="middle" font-size="9" fill="#6c757d">to the average</text>
+
+  <!-- RIGHT: High standard deviation -->
+  <text x="360" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">High standard deviation</text>
+
+  <!-- Axis -->
+  <line x1="260" y1="110" x2="460" y2="110" stroke="#212529" stroke-width="1.5"/>
+  <line x1="260" y1="110" x2="260" y2="30" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="460,110 453,106 453,114" fill="#212529"/>
+  <text x="465" y="114" font-size="9" fill="#6c757d">value</text>
+
+  <!-- Wide bell curve -->
+  <path d="M 270,110
+           Q 280,105 300,95
+           Q 320,80 340,70
+           Q 360,65 360,63
+           Q 360,65 380,70
+           Q 400,80 420,95
+           Q 440,105 450,110"
+        fill="none" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Mean line -->
+  <line x1="360" y1="110" x2="360" y2="60" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Caption -->
+  <text x="360" y="128" text-anchor="middle" font-size="9" fill="#6c757d">Values spread wide</text>
+  <text x="360" y="140" text-anchor="middle" font-size="9" fill="#6c757d">across the range</text>
+</svg>

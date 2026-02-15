@@ -1,0 +1,122 @@
+<svg viewBox="0 0 650 240" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="650" height="280" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="325" y="20" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">From Histogram to KDE</text>
+
+  <!-- ==================== Step 1: Histogram ==================== -->
+  <text x="110" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">1. Histogram (6 bins)</text>
+
+  <!-- Axes -->
+  <line x1="30" y1="180" x2="190" y2="180" stroke="#212529" stroke-width="1"/>
+  <line x1="30" y1="180" x2="30" y2="70" stroke="#212529" stroke-width="1"/>
+
+  <!-- Histogram bars - bimodal: peak at bins 1-2, smaller peak at bin 5 -->
+  <!-- Bin 1: height 3 -->
+  <rect x="35" y="120" width="24" height="60" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 2: height 4 -->
+  <rect x="61" y="100" width="24" height="80" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 3: height 1 -->
+  <rect x="87" y="160" width="24" height="20" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 4: height 0.5 -->
+  <rect x="113" y="170" width="24" height="10" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 5: height 2.5 -->
+  <rect x="139" y="130" width="24" height="50" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 6: height 2 -->
+  <rect x="165" y="140" width="24" height="40" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+
+  <text x="110" y="195" text-anchor="middle" font-size="8" fill="#6c757d">blocky bins</text>
+
+  <!-- Arrow -->
+  <path d="M200,125 L230,125" stroke="#212529" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- ==================== Step 2: Points with kernels ==================== -->
+  <text x="325" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2. Each point gets a kernel</text>
+
+  <!-- Axes -->
+  <line x1="240" y1="180" x2="410" y2="180" stroke="#212529" stroke-width="1"/>
+  <line x1="240" y1="180" x2="240" y2="70" stroke="#212529" stroke-width="1"/>
+
+  <!-- Individual kernels (gaussian bumps) - shown as overlapping curves -->
+  <!-- Cluster 1 kernels (yellow) -->
+  <ellipse cx="265" cy="180" rx="20" ry="50" fill="#ffed50" opacity="0.3"/>
+  <ellipse cx="275" cy="180" rx="20" ry="60" fill="#ffed50" opacity="0.3"/>
+  <ellipse cx="285" cy="180" rx="20" ry="55" fill="#ffed50" opacity="0.3"/>
+  <ellipse cx="290" cy="180" rx="20" ry="45" fill="#ffed50" opacity="0.3"/>
+  <ellipse cx="300" cy="180" rx="20" ry="40" fill="#ffed50" opacity="0.3"/>
+
+  <!-- Cluster 2 kernels (red) -->
+  <ellipse cx="365" cy="180" rx="20" ry="35" fill="#fd456f" opacity="0.3"/>
+  <ellipse cx="375" cy="180" rx="20" ry="40" fill="#fd456f" opacity="0.3"/>
+  <ellipse cx="385" cy="180" rx="20" ry="30" fill="#fd456f" opacity="0.3"/>
+
+  <!-- Data points on x-axis -->
+  <circle cx="265" cy="180" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="275" cy="180" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="285" cy="180" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="290" cy="180" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="300" cy="180" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="365" cy="180" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+  <circle cx="375" cy="180" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+  <circle cx="385" cy="180" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+
+  <text x="325" y="195" text-anchor="middle" font-size="8" fill="#6c757d">each point = a bump (kernel)</text>
+
+  <!-- Arrow -->
+  <path d="M420,125 L450,125" stroke="#212529" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- ==================== Step 3: KDE (summed) ==================== -->
+  <text x="545" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">3. Sum the kernels → KDE</text>
+
+  <!-- Axes -->
+  <line x1="460" y1="180" x2="630" y2="180" stroke="#212529" stroke-width="1"/>
+  <line x1="460" y1="180" x2="460" y2="70" stroke="#212529" stroke-width="1"/>
+
+  <!-- KDE curve - smooth bimodal -->
+  <path d="M460,180
+           Q470,180 480,175
+           Q490,160 500,120
+           Q510,90 520,85
+           Q530,90 540,130
+           Q550,160 560,175
+           Q570,178 580,175
+           Q590,165 600,140
+           Q610,150 620,165
+           Q625,175 630,180"
+        fill="none" stroke="#212529" stroke-width="2.5"/>
+
+  <!-- Shaded area under curve -->
+  <path d="M460,180
+           Q470,180 480,175
+           Q490,160 500,120
+           Q510,90 520,85
+           Q530,90 540,130
+           Q550,160 560,175
+           Q570,178 580,175
+           Q590,165 600,140
+           Q610,150 620,165
+           Q625,175 630,180
+           L630,180 L460,180 Z"
+        fill="#ffed50" opacity="0.3"/>
+
+  <!-- Color the second hump -->
+  <path d="M560,175
+           Q570,178 580,175
+           Q590,165 600,140
+           Q610,150 620,165
+           Q625,175 630,180
+           L630,180 L560,180 Z"
+        fill="#fd456f" opacity="0.3"/>
+
+  <text x="545" y="195" text-anchor="middle" font-size="8" fill="#6c757d">smooth curve</text>
+
+  <!-- Labels for the two humps -->
+  <text x="510" y="78" text-anchor="middle" font-size="7" fill="#212529">main peak</text>
+  <text x="600" y="133" text-anchor="middle" font-size="7" fill="#212529">2nd peak</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg viewBox="0 0 450 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="450" height="200" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="225" y="16" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Threshold for "Pervasive Median" vs Sample Count</text>
+
+  <!-- Y axis -->
+  <line x1="60" y1="30" x2="60" y2="150" stroke="#212529" stroke-width="1"/>
+  <text x="25" y="95" text-anchor="middle" font-size="9" fill="#212529" transform="rotate(-90, 25, 95)">Threshold %</text>
+
+  <!-- Y axis labels (90 to 100) - scale: 90=150, 100=30, so 1% = 12px -->
+  <text x="55" y="153" text-anchor="end" font-size="8" fill="#6c757d">90</text>
+  <line x1="57" y1="150" x2="60" y2="150" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="55" y="93" text-anchor="end" font-size="8" fill="#6c757d">95</text>
+  <line x1="57" y1="90" x2="60" y2="90" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="55" y="33" text-anchor="end" font-size="8" fill="#6c757d">100</text>
+  <line x1="57" y1="30" x2="60" y2="30" stroke="#6c757d" stroke-width="1"/>
+
+  <!-- 99.9% cap line -->
+  <!-- y = 150 - ((99.9-90)/10 * 120) = 150 - 118.8 = 31.2 -->
+  <line x1="60" y1="31.2" x2="400" y2="31.2" stroke="#fd456f" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="405" y="34" font-size="7" fill="#fd456f">99.9%</text>
+
+  <!-- X axis -->
+  <line x1="60" y1="150" x2="400" y2="150" stroke="#6c757d" stroke-width="1"/>
+  <text x="230" y="185" text-anchor="middle" font-size="9" fill="#212529">Number of samples</text>
+
+  <!-- X axis labels -->
+  <text x="60" y="165" text-anchor="middle" font-size="8" fill="#6c757d">0</text>
+  <line x1="60" y1="150" x2="60" y2="153" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="130" y="165" text-anchor="middle" font-size="8" fill="#6c757d">7k</text>
+  <line x1="130" y1="150" x2="130" y2="153" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="200" y="165" text-anchor="middle" font-size="8" fill="#6c757d">10k</text>
+  <line x1="200" y1="150" x2="200" y2="153" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="270" y="165" text-anchor="middle" font-size="8" fill="#6c757d">15k</text>
+  <line x1="270" y1="150" x2="270" y2="153" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="340" y="165" text-anchor="middle" font-size="8" fill="#6c757d">20k</text>
+  <line x1="340" y1="150" x2="340" y2="153" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="400" y="165" text-anchor="middle" font-size="8" fill="#6c757d">25k</text>
+  <line x1="400" y1="150" x2="400" y2="153" stroke="#6c757d" stroke-width="1"/>
+
+  <!-- The curve (y scale: 90=150, 100=30, so y = 150 - ((percent-90)/10 * 120)) -->
+  <!-- 95% -> y = 150 - (5/10 * 120) = 150 - 60 = 90 -->
+  <!-- 99.9% -> y = 31.2 -->
+
+  <!-- Flat at 95% from 0 to 7000 -->
+  <line x1="60" y1="90" x2="130" y2="90" stroke="#ffed50" stroke-width="3"/>
+
+  <!-- Quadratic curve from 7000 to ~20000 -->
+  <!-- 7000: 95% -> y=90
+       10000: 95.27% -> y=86.76
+       12000: 95.75% -> y=81
+       15000: 96.92% -> y=66.96
+       17000: 98% -> y=54
+       19000: 99.32% -> y=38.16
+       19780: 99.9% -> y=31.2 -->
+  <path d="M130,90 Q180,87 220,75 Q280,50 320,31.2" fill="none" stroke="#ffed50" stroke-width="3"/>
+
+  <!-- Flat at 99.9% cap -->
+  <line x1="320" y1="31.2" x2="400" y2="31.2" stroke="#ffed50" stroke-width="3"/>
+
+  <!-- Key points as dots -->
+  <circle cx="130" cy="90" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="320" cy="31.2" r="4" fill="#fd456f" stroke="#ff0040" stroke-width="1"/>
+
+  <!-- Formula annotation -->
+  <text x="95" y="80" text-anchor="middle" font-size="8" fill="#6c757d">95%</text>
+
+  <text x="260" y="95" font-size="8" fill="#212529">95 + 0.03x²</text>
+  <text x="260" y="107" font-size="7" fill="#6c757d">x = (samples - 7000) / 1000</text>
+  <line x1="250" y1="88" x2="220" y2="72" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,2"/>
+
+  <!-- Cap annotation -->
+  <text x="365" y="45" font-size="7" fill="#fd456f">capped at 99.9%</text>
+</svg>

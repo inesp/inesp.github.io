@@ -1,0 +1,50 @@
+<svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="120" fill="#fff"/>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1: Clean Data -->
+  <rect x="10" y="40" width="90" height="40" rx="4" fill="#28a745" stroke="#1e7e34" stroke-width="1.5"/>
+  <text x="55" y="56" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">Clean Data</text>
+  <text x="55" y="70" text-anchor="middle" font-size="8" fill="#d4edda">outliers removed</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="100" y1="60" x2="125" y2="60" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Set Health Borders -->
+  <rect x="130" y="40" width="100" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="180" y="56" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Set Borders</text>
+  <text x="180" y="70" text-anchor="middle" font-size="8" fill="#6c757d">mean + 3σ, 99.7%</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="230" y1="60" x2="255" y2="60" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Classify New Value -->
+  <rect x="260" y="40" width="100" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="310" y="56" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Classify Value</text>
+  <text x="310" y="70" text-anchor="middle" font-size="8" fill="#6c757d">compare to borders</text>
+
+  <!-- Arrow 3→outcomes -->
+  <line x1="360" y1="60" x2="385" y2="60" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Outcomes bracket -->
+  <rect x="390" y="15" width="100" height="90" rx="4" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Healthy -->
+  <rect x="400" y="22" width="80" height="22" rx="3" fill="#d4edda" stroke="#28a745" stroke-width="1"/>
+  <text x="440" y="37" text-anchor="middle" font-size="9" fill="#28a745" font-weight="bold">HEALTHY</text>
+
+  <!-- Ailing -->
+  <rect x="400" y="49" width="80" height="22" rx="3" fill="#fff283" stroke="#e6a000" stroke-width="1"/>
+  <text x="440" y="64" text-anchor="middle" font-size="9" fill="#e6a000" font-weight="bold">AILING</text>
+
+  <!-- Unhealthy -->
+  <rect x="400" y="76" width="80" height="22" rx="3" fill="#ffe6e6" stroke="#fd456f" stroke-width="1"/>
+  <text x="440" y="91" text-anchor="middle" font-size="9" fill="#fd456f" font-weight="bold">UNHEALTHY</text>
+</svg>

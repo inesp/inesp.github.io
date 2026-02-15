@@ -1,0 +1,67 @@
+<svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="160" fill="#fff"/>
+
+  <!-- LEFT: Timeseries -->
+  <text x="120" y="16" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Error Count Over Time</text>
+
+  <!-- Y axis -->
+  <line x1="30" y1="30" x2="30" y2="120" stroke="#212529" stroke-width="1"/>
+  <text x="22" y="38" text-anchor="end" font-size="8" fill="#6c757d">10</text>
+  <text x="22" y="68" text-anchor="end" font-size="8" fill="#6c757d">5</text>
+  <text x="22" y="118" text-anchor="end" font-size="8" fill="#6c757d">0</text>
+
+  <!-- X axis -->
+  <line x1="30" y1="120" x2="230" y2="120" stroke="#212529" stroke-width="1"/>
+  <text x="130" y="135" text-anchor="middle" font-size="8" fill="#6c757d">time</text>
+
+  <!-- Data points - mostly at 0 -->
+  <circle cx="40" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="50" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="60" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="70" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="80" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="90" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="100" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="110" cy="65" r="3" fill="#fd456f" stroke="#ff0040"/>
+  <circle cx="120" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="130" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="140" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="150" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="160" cy="35" r="3" fill="#fd456f" stroke="#ff0040"/>
+  <circle cx="170" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="180" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="190" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="200" cy="65" r="3" fill="#fd456f" stroke="#ff0040"/>
+  <circle cx="210" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+  <circle cx="220" cy="115" r="3" fill="#ffed50" stroke="#e7d749"/>
+
+  <!-- Label -->
+  <text x="180" y="148" font-size="8" fill="#6c757d">← 95% at zero</text>
+
+  <!-- RIGHT: KDE result -->
+  <text x="380" y="16" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">KDE sees this:</text>
+
+  <!-- Y axis (density) -->
+  <line x1="280" y1="30" x2="280" y2="120" stroke="#212529" stroke-width="1"/>
+  <text x="275" y="125" text-anchor="end" font-size="7" fill="#6c757d">density</text>
+
+  <!-- X axis (value) -->
+  <line x1="280" y1="120" x2="480" y2="120" stroke="#212529" stroke-width="1"/>
+  <text x="290" y="135" font-size="8" fill="#6c757d">0</text>
+  <text x="350" y="135" font-size="8" fill="#6c757d">5</text>
+  <text x="420" y="135" font-size="8" fill="#6c757d">10</text>
+
+  <!-- KDE curve - giant spike at 0 -->
+  <path d="M290,115 Q295,30 300,30 Q305,30 310,115 L320,118 L350,118 L420,118 L470,118"
+        fill="none" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Tiny bumps for the outliers -->
+  <path d="M345,118 Q350,112 355,118" fill="none" stroke="#fd456f" stroke-width="1.5"/>
+  <path d="M415,118 Q420,114 425,118" fill="none" stroke="#fd456f" stroke-width="1.5"/>
+
+  <!-- Speech bubble -->
+  <rect x="320" y="55" width="140" height="30" rx="4" fill="none" stroke="#dadada"/>
+  <text x="390" y="68" text-anchor="middle" font-size="8" fill="#6c757d">"One giant spike at 0.</text>
+  <text x="390" y="78" text-anchor="middle" font-size="8" fill="#6c757d">What do you want from me?"</text>
+</svg>

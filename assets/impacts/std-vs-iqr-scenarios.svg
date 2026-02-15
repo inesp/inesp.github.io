@@ -1,0 +1,99 @@
+<svg viewBox="0 0 650 180" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="650" height="320" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="325" y="20" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">Std vs IQR</text>
+
+  <!-- ==================== Scenario 1: Normal data ==================== -->
+  <text x="108" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Scenario 1: Normal Data</text>
+  <text x="108" y="65" text-anchor="middle" font-size="8" fill="#6c757d">[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</text>
+
+  <!-- Axis -->
+  <line x1="20" y1="100" x2="196" y2="100" stroke="#212529" stroke-width="1"/>
+
+  <!-- Data points -->
+  <circle cx="28" cy="100" r="4" fill="#6c757d"/>
+  <circle cx="46" cy="100" r="4" fill="#6c757d"/>
+  <circle cx="64" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="82" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="100" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="118" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="136" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="154" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="172" cy="100" r="4" fill="#6c757d"/>
+  <circle cx="190" cy="100" r="4" fill="#6c757d"/>
+
+  <!-- Labels -->
+  <text x="28" y="115" text-anchor="middle" font-size="7" fill="#6c757d">1</text>
+  <text x="100" y="115" text-anchor="middle" font-size="7" fill="#6c757d">5</text>
+  <text x="190" y="115" text-anchor="middle" font-size="7" fill="#6c757d">10</text>
+
+  <!-- Results box -->
+  <rect x="20" y="125" width="176" height="55" fill="none" stroke="#dee2e6" rx="4"/>
+  <text x="108" y="142" text-anchor="middle" font-size="9" fill="#212529">std = 2.9</text>
+  <text x="108" y="156" text-anchor="middle" font-size="9" fill="#212529">IQR = 5 → IQR/1.35 = 3.7</text>
+  <text x="108" y="173" text-anchor="middle" font-size="9" fill="#22a522" font-weight="bold">Similar! Both ~3</text>
+
+  <!-- ==================== Scenario 2: With outlier ==================== -->
+  <text x="325" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Scenario 2: One Outlier</text>
+  <text x="325" y="65" text-anchor="middle" font-size="8" fill="#6c757d">[1, 2, 3, 4, 5, 6, 7, 8, 9, 50]</text>
+
+  <!-- Axis -->
+  <line x1="237" y1="100" x2="413" y2="100" stroke="#212529" stroke-width="1"/>
+
+  <!-- Data points - compressed on left, outlier on right -->
+  <circle cx="245" cy="100" r="4" fill="#6c757d"/>
+  <circle cx="252" cy="100" r="4" fill="#6c757d"/>
+  <circle cx="259" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="266" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="273" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="280" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="287" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="294" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="301" cy="100" r="4" fill="#6c757d"/>
+  <!-- Outlier -->
+  <circle cx="405" cy="100" r="5" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+
+  <!-- Labels -->
+  <text x="245" y="115" text-anchor="middle" font-size="7" fill="#6c757d">1</text>
+  <text x="301" y="115" text-anchor="middle" font-size="7" fill="#6c757d">9</text>
+  <text x="405" y="115" text-anchor="middle" font-size="7" fill="#fd456f">50</text>
+
+  <!-- Results box -->
+  <rect x="237" y="125" width="176" height="55" fill="none" stroke="#dee2e6" rx="4"/>
+  <text x="325" y="142" text-anchor="middle" font-size="9" fill="#fd456f" font-weight="bold">std = 14.2 (wrecked!)</text>
+  <text x="325" y="156" text-anchor="middle" font-size="9" fill="#212529">IQR = 5 → IQR/1.35 = 3.7</text>
+  <text x="325" y="173" text-anchor="middle" font-size="9" fill="#fd456f" font-weight="bold">IQR wins - ignores outlier</text>
+
+  <!-- ==================== Scenario 3: Mostly zeros ==================== -->
+  <text x="542" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Scenario 3: Mostly Same</text>
+  <text x="542" y="65" text-anchor="middle" font-size="8" fill="#6c757d">[0, 0, 0, 0, 0, 0, 0, 0, 1, 1]</text>
+
+  <!-- Axis -->
+  <line x1="454" y1="100" x2="630" y2="100" stroke="#212529" stroke-width="1"/>
+
+  <!-- Data points - 8 zeros stacked, 2 ones -->
+  <circle cx="480" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="480" cy="91" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="480" cy="82" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="480" cy="73" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="489" cy="100" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="489" cy="91" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="489" cy="82" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="489" cy="73" r="4" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- The ones -->
+  <circle cx="600" cy="100" r="4" fill="#6c757d"/>
+  <circle cx="609" cy="100" r="4" fill="#6c757d"/>
+
+  <!-- Labels -->
+  <text x="485" y="115" text-anchor="middle" font-size="7" fill="#6c757d">0 (x8)</text>
+  <text x="605" y="115" text-anchor="middle" font-size="7" fill="#6c757d">1 (x2)</text>
+
+  <!-- Results box -->
+  <rect x="454" y="125" width="176" height="55" fill="none" stroke="#dee2e6" rx="4"/>
+  <text x="542" y="142" text-anchor="middle" font-size="9" fill="#212529">std = 0.4</text>
+  <text x="542" y="156" text-anchor="middle" font-size="9" fill="#fd456f" font-weight="bold">IQR = 0 (all middle = 0)</text>
+  <text x="542" y="173" text-anchor="middle" font-size="9" fill="#22a522" font-weight="bold">Std wins - sees the 1s</text>
+
+</svg>

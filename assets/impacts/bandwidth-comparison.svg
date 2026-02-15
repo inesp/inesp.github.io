@@ -1,0 +1,82 @@
+<svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="160" fill="#fff"/>
+
+  <!-- ==================== Small Bandwidth (left) ==================== -->
+  <text x="120" y="20" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Small Bandwidth</text>
+  <text x="120" y="32" text-anchor="middle" font-size="8" fill="#6c757d">(bumpy, overfitting)</text>
+
+  <!-- Axes -->
+  <line x1="30" y1="120" x2="210" y2="120" stroke="#212529" stroke-width="1"/>
+  <line x1="30" y1="120" x2="30" y2="45" stroke="#212529" stroke-width="1"/>
+
+  <!-- Bumpy KDE curve - lots of wiggles -->
+  <path d="M30,120
+           Q35,118 40,100
+           Q45,75 50,70
+           Q55,75 60,95
+           Q65,105 70,100
+           Q75,80 80,65
+           Q85,55 90,55
+           Q95,60 100,80
+           Q105,95 110,90
+           Q115,70 120,60
+           Q125,55 130,58
+           Q135,70 140,85
+           Q145,100 150,105
+           Q155,100 160,90
+           Q165,75 170,70
+           Q175,75 180,90
+           Q185,105 190,112
+           Q200,118 210,120"
+        fill="none" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Shaded area -->
+  <path d="M30,120
+           Q35,118 40,100
+           Q45,75 50,70
+           Q55,75 60,95
+           Q65,105 70,100
+           Q75,80 80,65
+           Q85,55 90,55
+           Q95,60 100,80
+           Q105,95 110,90
+           Q115,70 120,60
+           Q125,55 130,58
+           Q135,70 140,85
+           Q145,100 150,105
+           Q155,100 160,90
+           Q165,75 170,70
+           Q175,75 180,90
+           Q185,105 190,112
+           Q200,118 210,120 Z"
+        fill="#ffed50" fill-opacity="0.2"/>
+
+  <text x="120" y="140" text-anchor="middle" font-size="10" fill="#6c757d">details are overemphasized</text>
+
+  <!-- ==================== Large Bandwidth (right) ==================== -->
+  <text x="380" y="20" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Large Bandwidth</text>
+  <text x="380" y="32" text-anchor="middle" font-size="8" fill="#6c757d">(smooth, underfitting)</text>
+
+  <!-- Axes -->
+  <line x1="290" y1="120" x2="470" y2="120" stroke="#212529" stroke-width="1"/>
+  <line x1="290" y1="120" x2="290" y2="45" stroke="#212529" stroke-width="1"/>
+
+  <!-- Smooth KDE curve - one gentle hump -->
+  <path d="M290,120
+           Q310,118 330,100
+           Q350,75 380,60
+           Q410,75 430,100
+           Q450,118 470,120"
+        fill="none" stroke="#ffed50" stroke-width="2.5"/>
+
+  <!-- Shaded area -->
+  <path d="M290,120
+           Q310,118 330,100
+           Q350,75 380,60
+           Q410,75 430,100
+           Q450,118 470,120 Z"
+        fill="#ffed50" fill-opacity="0.2"/>
+
+  <text x="380" y="140" text-anchor="middle" font-size="10" fill="#6c757d">details are hidden</text>
+</svg>
