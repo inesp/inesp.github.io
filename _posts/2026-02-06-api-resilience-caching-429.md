@@ -10,25 +10,25 @@ biblio:
     link: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Retry-After
 ---
 
-This might come as a surprise, but **sooner or later you call to some external API will get rate-limited**. 
+This might come as a surprise, but **sooner or later your call to some external API will get rate-limited**. 
 
-It will probably happen sneakily. There will be a script that never had any problems fetching data from _that_ API? Until, suddenly, error start being logged. Usually lots of them. And then, a few minutes later, the flow of errors will stop and the data will flow again and the script will chug along as it did before, blissfully unaware that rate-limiting exists.
+It will probably happen sneakily. There will be a script that never had any problems fetching data from _that_ API? Until, suddenly, errors start being logged. Usually lots of them. And then, a few minutes later, the flow of errors will stop and the data will flow again and the script will chug along as it did before, blissfully unaware that rate-limiting exists.
 
 It's kinda hard to write code for handling a Rate-limit. The first problem is that we **often fail to even remember that most APIs _do have_ a limit**. At the very least the following 2 matters mess with us:
-- **_We, personally,_ never experience being rate limited when testing the API**. Because _we, personally_ generally test APIs manually. We build 1 API call at a time and then we intentively check the response before doing another API call. Thus, we might be averaging at less than 50 calls per hour...waaaaay below most rate limits. 
+- **_We, personally,_ never experience being rate limited when testing the API**. Because _we, personally_ generally test APIs manually. We build 1 API call at a time and then we attentively check the response before doing another API call. Thus, we might be averaging at less than 50 calls per hour...waaaaay below most rate limits. 
 - **The code can't be tested.** Even if we do build some rate-limit-handling code, this code just sits in production... for months, waiting for its opportunity. Does code that was never run really work? Technically, we could manufacture the rate-limit and test the code, we could just write a script that frantically calls the external API until we receive a _'429 Enough!'_. But, how often do we go to such lengths?
 
 ![manual-vs-production](/assets/http/manual-vs-production.svg)
 
 And so it happens that the rate-limit response is usually handled in one of 2 ways:
-- option A): _Ups, totally forgot to handle any errors at all_ 
+- option A): _Oops, totally forgot to handle any errors at all_ 
 - option B): _All errors are equal, all errors are bad, code stop_
 
-## Option A) _Ups, totally forgot to handle any errors at all_ 
+## Option A) _Oops, totally forgot to handle any errors at all_ 
 
 This is the easy-way-out. 
 
-It is also called the "happy path" or the "first iteration", but those names were picked just to make us feel better about this code. _"Yeah, I know this isn't handling errors, but that's just the first iteration, the proof or concept. Just wait a couple of weeks, we'll fix this soon."_
+It is also called the "happy path" or the "first iteration", but those names were picked just to make us feel better about this code. _"Yeah, I know this isn't handling errors, but that's just the first iteration, the proof of concept. Just wait a couple of weeks, we'll fix this soon."_
 
 Nevertheless, this is often production code.
 
@@ -37,7 +37,7 @@ from requests import Response
 import requests
 
 def fetch_all_user_repos() -> list[str]:
-    """Ups, totally forgot to handle errors"""
+    """Oops, totally forgot to handle errors"""
     response: Response = requests.get("https://api.github.com/user/repos")
     response_data: list = response.json()
     all_repos = [repo["full_name"] for repo in response_data]
@@ -110,7 +110,7 @@ def fetch_all_user_repos() -> list[str]:
     return all_repos
 ```
 
-This time, we don't let the `RequestException` bubble up to the caller, because we realize we _do_ have more context for handling _HTTP related problems_ than some code way up the chain that is just trying to populate a dropdown with all list of all options.
+This time, we don't let the `RequestException` bubble up to the caller, because we realize we _do_ have more context for handling _HTTP related problems_ than some code way up the chain that is just trying to populate a dropdown with a list of all options.
 
 ![all-errors-equal](/assets/http/all-errors-equal.svg)
 
@@ -147,7 +147,7 @@ Retry-After: 120
 
 **In practice, both the API owners and the API callers are disobeying the rules.**
 
-**The API owners** seem to dislike the `Retry-After` header and instead **love to invent their own**, custom names for **headers**. Because why follow the established standard, when we can just invent our own `X-Rate-Limit-Remaining-Seconds`-header or `X-RateLimit-Reset` and send the number of second in these headers. One has to be free to express oneself.
+**The API owners** seem to dislike the `Retry-After` header and instead **love to invent their own**, custom names for **headers**. Because why follow the established standard, when we can just invent our own `X-Rate-Limit-Remaining-Seconds`-header or `X-RateLimit-Reset` and send the number of seconds in these headers. One has to be free to express oneself.
 
 **The API callers**, however, mostly **ignore this header**, no matter what it is called. 
 
@@ -190,7 +190,7 @@ def new_session():
     # We mounted it onto 2 partial urls: http and https, because the idea
     # behind adapters is that they define the rules of interaction for
     # one, specific, external API. But by saying "http://" we are tying these
-    # rules the whole trafic (except ftp:// and such of course).
+    # rules to the whole traffic (except ftp:// and such of course).
     adapter = RateLimitAdapter()
     session.mount("https://", adapter)
     session.mount("http://", adapter)
@@ -254,7 +254,7 @@ In summary:
 
 ![429-ttl-window](/assets/http/429-ttl-window.svg)
 
-This solution also means that **we don't have to change any other code** (if we don't want to). The code that makes triggers the API calls, that calls `new_session().request("get", "http:...")` needs no change. It will receive the _very same_ response it would receive if we DID call the remote API.
+This solution also means that **we don't have to change any other code** (if we don't want to). The code that triggers the API calls, that calls `new_session().request("get", "http:...")` needs no change. It will receive the _very same_ response it would receive if we DID call the remote API.
 
 Yes, ideally, all calling code would also handle rate limit responses, but that is not a separate problem. 
 
@@ -266,7 +266,7 @@ Now, to iron out the details. The most delicate detail of this plan is how to de
 
 The Redis key must be unique for every token/authorization data. **But this means that when we are building the key, we must know _where every API stores their authorization data_ to be able to extract it.**
 
-In my mind this is annoying. This generic HTTP adapter class must now understand that there is a GitHub API and a Linear API and a Jira API and Cirlce API and ... and how each of these authorize their API users, which is ... silly. The HTTP adapters should be API agnostic. And when in 3 months another developer introduces a new external API, let's say PagerDuty's API, how will she know that she needs to modify our `RateLimitAdapter` class? It's not ideal, but, in this case, my stance is: _"such is life"_. This problem can be solved, code can be built to handle these connection, but I, for one, decided it isn't worth building a solution for this in our system. Your system might be different.
+In my mind this is annoying. This generic HTTP adapter class must now understand that there is a GitHub API and a Linear API and a Jira API and Circle API and ... and how each of these authorize their API users, which is ... silly. The HTTP adapters should be API agnostic. And when in 3 months another developer introduces a new external API, let's say PagerDuty's API, how will she know that she needs to modify our `RateLimitAdapter` class? It's not ideal, but, in this case, my stance is: _"such is life"_. This problem can be solved, code can be built to handle these connection, but I, for one, decided it isn't worth building a solution for this in our system. Your system might be different.
 
 ## How I build the Redis key
 
@@ -333,7 +333,7 @@ class RateLimitAdapter(HTTPAdapter):
 
 ## Safeguard: Why not take all HTTP headers?
 
-I could have just **packaged up all the HTTP headers**, but what some API call sent to tokens at all or didn't send them in HTTP headers? In this case it is better to not cache and call the API endpoints incessantly than to cache the wrong response.
+I could have just **packaged up all the HTTP headers**, but what if some API call sends no tokens at all or doesn't send them in HTTP headers? In this case it is better to not cache and call the API endpoints incessantly than to cache the wrong response.
 
 ## Safeguard: Include tenant information
 
@@ -347,7 +347,7 @@ We don't want the API tokens to just sit in Redis in their correct form. So, we 
 
 To get the TTL, we have a similar problem as with defining the Redis key, we again have to **check all the different HTTP headers where this information could possibly be**. The difference is that we can always use a default value, if we can't find this header. With the authorization data, we could not default to any value.
 
-The one safeguard I do recomend is: have a max value. **Even if the API sends you `Retry-After=<5h>`, I would ignore this and keep the max TTL relatively low, at maybe max 1 hour.**
+The one safeguard I do recommend is: have a max value. **Even if the API sends you `Retry-After=<5h>`, I would ignore this and keep the max TTL relatively low, at maybe max 1 hour.**
 
 ```python
 import logging
