@@ -1,6 +1,6 @@
 ---
 title: "Programming patterns: 2 counters in a loop"
-tags: ["Code Patterns"]
+tags: ["Code Patterns", "Algorithms"]
 excerpt_separator: <!--more-->
 biblio:
 ---
