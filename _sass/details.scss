@@ -33,26 +33,45 @@ details {
 }
 
 // ===========================================
-// Rabbit Hole Variants
+// Details with Icon (shared styles)
 // ===========================================
 
-details.rabbit-hole {
+%details-with-icon {
   position: relative;
   padding-top: 1rem;
+
+  summary {
+    padding-left: 10px;
+  }
+
+  summary::before {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+details.rabbit-hole {
+  @extend %details-with-icon;
   margin-top: 3rem;
 
   summary::before {
     content: "🐰";
-    position: absolute;
-    background: rgba(255, 255, 255, 0.5);
     font-size: 40px;
     top: -5px;
     left: -30px;
     border-radius: 50%;
   }
-  summary{
-    padding-left: 10px;
+}
 
+details.code-details {
+  @extend %details-with-icon;
+  margin-top: 2rem;
+
+  summary::before {
+    content: "📝";
+    font-size: 30px;
+    top: 5px;
+    left: -20px;
   }
 }
 
