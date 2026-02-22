@@ -1,3 +1,14 @@
+- conf: PyCon Italia 2026
+  link: https://2026.pycon.it/en
+  date: May 2026
+  flag: 🇮🇹
+  location: Bologna, Italy
+  title: "Stop asking me how long it will take"
+  coming_soon: true
+  details_link: https://2026.pycon.it/en/event/stop-asking-me-how-long-it-will-take
+  video_link:
+  slides_link:
+
 - conf: Codemotion Roma 2026
   link: https://conferences.codemotion.com/roma/
   date: Mar 2026
