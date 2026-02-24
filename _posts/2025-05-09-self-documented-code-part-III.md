@@ -2,6 +2,8 @@
 series: Self-Documenting Code
 title: "Concept 3: Abstract functions and code patterns"
 tags: ["Self-Documenting Code"]
+prev_post: 2025-05-05-self-documented-code-part-II
+next_post: 2025-07-01-self-documented-code-part-IV
 ---
 
 To reiterate, what do we want: to not read the docs, but still know everything the docs say.
@@ -11,10 +13,6 @@ Python is not strong on complex class structure with abstract properties and int
 Code patterns are documentation, they are the boilerplate. They let you concentrate on the essence of your code change. The context has already been built, everybody is just waiting for you to implement the one main function (or two).
 
 ![Abstracts or generics](/assets/docs/abstract-or-generic.png)
-
-
-## Previous chapter
-⏮️ [Self-Documenting Code Idea 2: Error msgs with calls to action]({% post_url 2025-05-05-self-documented-code-part-II %})
 
 
 ## 💡 Concept 3: Use abstract functions, interfaces, enforce code patterns
@@ -341,6 +339,4 @@ As you can see we are still able to concoct quite intricate rules for how things
 In my experience, a good guideline for building code patterns is to keep them shallow. **Shallow code is easier to adjust and thus has a higher chance of surviving longer and serving us longer.** As we know the future is fickle and chances are tomorrow will reveal something that would make us want to rewrite today's code.
 
 
-## Next
-⏭️ [Self-Documenting Code Concept 4: Embrace Copy-Paste]({% post_url 2025-07-01-self-documented-code-part-IV %})
 

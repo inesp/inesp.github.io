@@ -16,6 +16,7 @@ biblio:
   - title: "R. Jain, J. Muro, and K. Mohan, A cognitive perspective on pair
 programming, 2006"
     link: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=2e0461a5259134e8f59ac9eda1c5df185f607a3d
+next_post: 2025-07-23-blind-spots-in-code-part-II
 ---
 
 > It works on my machine.
@@ -195,6 +196,4 @@ We can get anchored in a million ways. Spotting them demands from us to be at le
 The first step to overcoming anchoring is to **be aware of it**. Once we know how the trick works, we can start taking precautions against it.
 
 
-## Next
-⏭️ [Why do smart devs write silly code? Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)]({% post_url 2025-07-23-blind-spots-in-code-part-II %})
 

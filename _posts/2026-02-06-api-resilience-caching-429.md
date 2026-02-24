@@ -2,7 +2,7 @@
 series: API Resilience Patterns
 title: "If the API Says Wait 60 Seconds, Actually Wait 60 Seconds"
 tags: ["API Resilience Patterns", "Code Patterns"]
-excerpt_separator: <!--more-->
+next_post: 2026-02-24-api-resilience-resumable-pagination
 biblio:
   - title: "HTTP 429 Too Many Requests"
     link: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/429
@@ -521,5 +521,3 @@ It is in our best interest to let the remote API be after they tell us to relax.
 
 And here is **this very simple solution** that can solve this annoying problem.
 
-## Next
-⏭️ To be continued...

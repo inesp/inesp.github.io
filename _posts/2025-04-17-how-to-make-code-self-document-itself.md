@@ -5,6 +5,7 @@ biblio:
   - title: "Python: The assert statement"
     link: https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement
 tags: ["Self-Documenting Code"]
+next_post: 2025-05-05-self-documented-code-part-II
 ---
 
 **How much documentation, dev-documentation does your app have?** Presumably less than it should have. At least according to new hires. 
@@ -224,5 +225,3 @@ And that is how `assert` can be used to replace a bit of the documentation. Docs
 
 **Note on the side:** But, obviously, you can also just raise a `ValueError` or `TypeError` or `MyCustomException`. No need to specifically use `assert`-s. :smile:
 
-## Next chapter
-⏭️ [Self-Documenting Code Concept 2: Error msgs with calls to action]({% post_url 2025-05-05-self-documented-code-part-II %})

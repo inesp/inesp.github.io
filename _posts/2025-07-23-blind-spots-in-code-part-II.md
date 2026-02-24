@@ -26,6 +26,7 @@ programming, 2006"
     link: https://sback.it/publications/icse2020.pdf
   - title: "S. Chattopadhyay, N. Nelson, A. Au, N. Morales, C. Sanchez, R. Pandita, and A. Sarma, A tale from the trenches: cognitive biases and software development, 2020"
     link: https://d1wqtxts1xzle7.cloudfront.net/92130960/ICSE2020_Bias-libre.pdf
+prev_post: 2025-07-21-blind-spots-in-code-part-I
 ---
 
 The previous chapter was all about anchoring bias, which makes us cling to the first idea we come across. This chapter is dedicated to **confirmation bias** and **accessibility bias**, which can inhibit innovation when they make us stubbornly stick to unproven ideas.
@@ -38,11 +39,6 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 </figcaption>
 
 {% include image.html alt="Cognitive biases" src="bias/confirm.png" ref="https://www.pexels.com/photo/worms-eye-view-of-spiral-stained-glass-decors-through-the-roof-161154/" %}
-
-
-## Previous chapter
-
-⏮️ [Why do smart devs write silly code? Exhibit A: Because Writing a Fresh Query Is Too Much Work]({% post_url 2025-07-21-blind-spots-in-code-part-I %})
 
 
 ## Exhibit B: I just need to confirm something (but I'm pretty sure I'm right)

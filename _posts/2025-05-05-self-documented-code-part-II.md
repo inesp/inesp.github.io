@@ -2,6 +2,8 @@
 series: Self-Documenting Code
 title: "Concept 2: Error msgs with calls to action"
 tags: ["Self-Documenting Code"]
+prev_post: 2025-04-17-how-to-make-code-self-document-itself
+next_post: 2025-05-09-self-documented-code-part-III
 ---
 
 To reiterate from the [previous chapter]({% post_url 2025-04-17-how-to-make-code-self-document-itself %}): Why do we want self-documenting code? Because then future devs (and we) will use our code as it was intended, whether they read the docs or not. 
@@ -10,9 +12,6 @@ Self-documenting code blocks are like **friendly tripping wire** or an alert for
 
 ![Communicate via error messages](/assets/docs/errors-and-msgs.png)
 
-
-## Previous chapter
-⏮️ [Self-Documenting Code Concept 1: `assert` finds its calling]({% post_url 2025-04-17-how-to-make-code-self-document-itself %})
 
 In the previous chapter, we talked about using `assert`-s to kill new code even before it goes to production. Now we'll look at how to use error messages to help fix bugs that already made it to production.
 
@@ -290,5 +289,3 @@ There is a lot you can communicate in error messages and other logs.
 
 When something takes an unexpected turn, devs often go check the logs. They will read the logs, thus you should communicate via the logs. 
 
-## Next
-⏭️ [Self-Documenting Code Concept 3: Abstract functions, patterns and interfaces]({% post_url 2025-05-09-self-documented-code-part-III %})

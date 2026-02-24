@@ -2,6 +2,7 @@
 series: Self-Documenting Code
 title: "Concept 4: Embrace Copy-Paste"
 tags: ["Self-Documenting Code"]
+prev_post: 2025-05-09-self-documented-code-part-III
 ---
 
 **What's the point of documentation?** To help other people use _your_ code.
@@ -18,9 +19,6 @@ And we should take advantage of this behavior 😎.
 
 ![Self-Documenting Code Concept 4: Embrace Copy-Paste - Set the Trap](/assets/docs/copy-paste.jpg)
 
-
-## Previous chapter
-⏮️ [Self-Documenting Code Concept 3: Abstract functions and code patterns]({% post_url 2025-05-09-self-documented-code-part-III %})
 
 ## Concept 4: Embrace Copy-Paste
 
