@@ -2,7 +2,6 @@
 series: Building Blocks Collection
 title: "Build me a global <code>user_id</code> / <code>request_id</code> / <code>tenant_id</code>"
 tags: ["Building Blocks Collection", "Code Patterns"]
-excerpt_separator: <!--more-->
 biblio:
   - link: https://github.com/python/cpython/blob/3.13/Lib/_threading_local.py
     title: "threading.local() in CPython"
@@ -22,7 +21,6 @@ We are surely not going to pass `user`/`request_id` as arguments to every functi
 
 So, how is this made?
 
-<!--more-->
 
 ## Let's learn from an example 
 
@@ -94,7 +92,7 @@ Once you have 2 threads, they will both execute code at the same time, but they 
 
 ## Level 2: Multi-threading apps can use `threading.local()`
 
-Pyhon's module `threading` handles all sorts of threading-related stuff. One of those things is handling data that is only visible to the current thread. That's exactly what we are after.
+Python's module `threading` handles all sorts of threading-related stuff. One of those things is handling data that is only visible to the current thread. That's exactly what we are after.
 
 > Thread-local objects support the management of thread-local data.
 > If you have data that you want to be local to a thread, simply create

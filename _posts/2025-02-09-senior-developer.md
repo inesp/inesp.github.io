@@ -1,6 +1,5 @@
 ---
 title: "What is the most sought-after trait of a developer?"
-excerpt_separator: <!--more-->
 biblio:
 tags: ["Opinion", "People"] 
 ---
@@ -13,7 +12,6 @@ It's **delivering** (really emphasis on delivering) results of **high-enough qua
 
 Ok, so how does one reach this?
 
-<!--more-->
 
 
 ## Does such a simple thing even need explaining?
@@ -83,7 +81,7 @@ The code runs and does the right thing, but
 
 ## Fourthly, do it faster (expert level)
 
-Speed has 2: finishing work in **a reasonable timeframe** and **cutting corners** when needed.
+Speed has 2 aspects: finishing work in **a reasonable timeframe** and **cutting corners** when needed.
 
 ### You can't take forever to finish the simplest of tasks
 

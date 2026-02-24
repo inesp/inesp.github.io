@@ -1,8 +1,8 @@
 ---
 series: Self-Documenting Code
 title: "Concept 4: Embrace Copy-Paste"
-excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]
+prev_post: 2025-05-09-self-documented-code-part-III
 ---
 
 **What's the point of documentation?** To help other people use _your_ code.
@@ -19,10 +19,6 @@ And we should take advantage of this behavior 😎.
 
 ![Self-Documenting Code Concept 4: Embrace Copy-Paste - Set the Trap](/assets/docs/copy-paste.jpg)
 
-<!--more-->
-
-## Previous chapter
-⏮️ [Self-Documenting Code Concept 3: Abstract functions and code patterns]({% post_url 2025-05-09-self-documented-code-part-III %})
 
 ## Concept 4: Embrace Copy-Paste
 
@@ -42,7 +38,7 @@ When I ask somebody to create a new DB Model class, they will most likely copy-p
 
 **And if all the DB Models / Graphql mutations / Y's ... are written in the same way, in the way that "is best", then the new code will just auto-magically also be written in "best" way.** No need to explain it or teach developers how to use it.
 
-We don't have to guarantee that everybody is educated in every detail of our code, we just have to guarantee that when they will inevitably copy-paste, they will copy-paste our preffered way of doing things.
+We don't have to guarantee that everybody is educated in every detail of our code, we just have to guarantee that when they will inevitably copy-paste, they will copy-paste our preferred way of doing things.
 
 
 ## Example 1: Mixins or The Silent Superpowers
@@ -60,7 +56,7 @@ class TimestampedMixin(models.Model):
     class Meta:
         abstract = True
 
-    # We gave both field meta_-prefix, to make the names very specific
+    # We gave both fields a meta_ prefix, to make the names very specific
     # and they don't crash with any other field.
     meta_created_on = models.DateTimeField(auto_now_add=True)
     meta_last_updated_on = models.DateTimeField(auto_now=True)

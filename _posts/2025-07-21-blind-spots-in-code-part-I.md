@@ -16,6 +16,7 @@ biblio:
   - title: "R. Jain, J. Muro, and K. Mohan, A cognitive perspective on pair
 programming, 2006"
     link: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=2e0461a5259134e8f59ac9eda1c5df185f607a3d
+next_post: 2025-07-23-blind-spots-in-code-part-II
 ---
 
 > It works on my machine.
@@ -24,15 +25,15 @@ This might just be the original example of bias that we, developers, just can't 
 
 **We trust ourselves excessively.** And this mindset **confines us (and the software** we produce) to the **teeny-tiny space that we happen to occupy at this particular point in time**. When we are the great (and only) judge, our code is physically limited to the set of experiences and skills we have, to the few solutions we remember the moment we write that bit of code.
 
-We are not infallible. **We are not mathematical.** We make just as many mental shortcuts as anybody else. We fall pray to cognitive biases just the same as everybody else does. 
+We are not infallible. **We are not mathematical.** We make just as many mental shortcuts as anybody else. We fall prey to cognitive biases just the same as everybody else does. 
 
-The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion...they are more about though exclusion.
+The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion...they are more about thought exclusion.
 
 **Cognitive biases help us in our decision-making. They are thought habits.** They save us time and energy.
 
 **And they are everywhere around us:** They activate:
 - when you only read articles (**listen to co-workers**) that support your world view (confirmation bias), 
-- it's when you stick to buying coffe from the same place for 20 years (**stick with an old framework**), even though the coffe isn't even that great (status quo bias)
+- it's when you stick to buying coffee from the same place for 20 years (**stick with an old framework**), even though the coffee isn't even that great (status quo bias)
 - it's when you dislike French people (**Javascript**), because you had one bad experience (implicit bias),
 - and sooooooo maaaaaaany more ...
 
@@ -40,7 +41,6 @@ Our biases are holding us all back. But it needn't be this way.
 
 {% include image.html alt="Anchoring" src="bias/anchor.jpg" ref="https://www.pexels.com/photo/freediver-ascending-in-blue-underwater-cave-33042384/" %}
 
-<!--more-->
 
 
 ## Biases are good
@@ -81,7 +81,7 @@ The biggest problem with cognitive biases is that you (generally) don't see them
 
 Anchoring is a cognitive bias, where people rely too heavily on the **first piece of information** they see (the "anchor") when making decisions.
 
-What if I give you a programming task: _"Compile me the top 10 list of winners in our latest game"_ and then I add: _"and here is the query we used for the same task with the previous game"_. What will be yor next step?
+What if I give you a programming task: _"Compile me the top 10 list of winners in our latest game"_ and then I add: _"and here is the query we used for the same task with the previous game"_. What will be your next step?
 
 Surely, you will first inspect the existing query. 
 
@@ -134,7 +134,7 @@ Starting from scratch led to more correct solutions. The group with no sample qu
 Anchoring limits your ability to think freely, to explore the problem space and all possible solutions. Consequently, it leads to **more bugs in your code**.
 
 
-## Anchoring makes your very confident
+## Anchoring makes you very confident
 
 The study also observed another very unfortunate side effect of anchoring: **overconfidence**.
 
@@ -160,7 +160,7 @@ Either way, **the end-result is that you don't truly understand the expanse of t
 
 That’s been my personal experience too. AI-generated code solutions somehow instill an astonishing level of confidence in some developers.
 
-**It's hard to convince a dev that thair AI-generated code has major bugs, when neither of us actually did the work of understanding the problem.** 
+**It's hard to convince a dev that their AI-generated code has major bugs, when neither of us actually did the work of understanding the problem.** 
 
 _I glanced over your PR. You skimmed over the problem. Now we’re both standing here pretending we know what’s going on. We do not._
 
@@ -196,6 +196,4 @@ We can get anchored in a million ways. Spotting them demands from us to be at le
 The first step to overcoming anchoring is to **be aware of it**. Once we know how the trick works, we can start taking precautions against it.
 
 
-## Next
-⏭️ [Why do smart devs write silly code? Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)]({% post_url 2025-07-23-blind-spots-in-code-part-II %})
 

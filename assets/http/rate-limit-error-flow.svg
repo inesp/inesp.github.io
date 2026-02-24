@@ -1,0 +1,62 @@
+<svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="520" height="200" fill="#fff"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#fd456f"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="260" y="20" text-anchor="middle" font-size="11" fill="#6c757d" >The error bubbles up</text>
+
+  <!-- sync_all_prs Celery task box -->
+  <rect x="10" y="50" width="90" height="45" rx="4" fill="#fff" stroke="#4a9c6d" stroke-width="2"/>
+  <text x="55" y="70" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">sync_all_prs</text>
+  <text x="55" y="83" text-anchor="middle" font-size="8" fill="#4a9c6d">(Celery task)</text>
+
+  <!-- Arrow: sync_all_prs -> fetch_all_prs -->
+  <line x1="100" y1="72" x2="125" y2="72" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- fetch_all_prs box -->
+  <rect x="130" y="50" width="90" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="175" y="70" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">fetch_all_prs</text>
+  <text x="175" y="83" text-anchor="middle" font-size="8" fill="#6c757d">(pagination)</text>
+
+  <!-- Arrow: fetch_all_prs -> fetch_page -->
+  <line x1="220" y1="72" x2="245" y2="72" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- fetch_page box -->
+  <rect x="250" y="50" width="90" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="295" y="70" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">fetch_page</text>
+  <text x="295" y="83" text-anchor="middle" font-size="8" fill="#6c757d">(API wrapper)</text>
+
+  <!-- Arrow: fetch_page -> make_request -->
+  <line x1="340" y1="72" x2="365" y2="72" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- make_request box -->
+  <rect x="370" y="50" width="90" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="415" y="70" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">make_request</text>
+  <text x="415" y="83" text-anchor="middle" font-size="8" fill="#6c757d">(HTTP client)</text>
+
+  <!-- 429 response indicator -->
+  <rect x="470" y="58" width="40" height="28" rx="4" fill="#fd456f"/>
+  <text x="490" y="76" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">429</text>
+
+  <!-- Arrow: 429 to make_request -->
+  <line x1="468" y1="72" x2="462" y2="72" stroke="#fd456f" stroke-width="1.5" marker-end="url(#arrow-red)"/>
+
+  <!-- Error bubbling up - dashed red line going back -->
+  <path d="M 370 80 L 355 80 Q 345 80 345 90 L 345 160 Q 345 170 335 170 L 65 170 Q 50 170 50 160 L 50 97"
+        fill="none" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow-red)"/>
+
+  <!-- Error label -->
+  <rect x="130" y="155" width="130" height="22" rx="4" fill="#fff" stroke="#fd456f" stroke-width="1"/>
+  <text x="195" y="170" text-anchor="middle" font-size="8" fill="#fd456f" font-weight="bold">RateLimitHitError</text>
+
+</svg>

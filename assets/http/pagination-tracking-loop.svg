@@ -1,0 +1,65 @@
+<svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="280" fill="#fff"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+  <defs>
+    <marker id="arrowgreen" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#4a9c6d"/>
+    </marker>
+  </defs>
+
+  <!-- === MAIN LOOP === -->
+
+  <!-- Input box: N (default: 1) -->
+  <rect x="50" y="10" width="80" height="40" rx="4" fill="#fff" stroke="#6c757d" stroke-width="1"/>
+  <text x="90" y="28" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">N</text>
+  <text x="90" y="40" text-anchor="middle" font-size="8" fill="#6c757d">defaults: 1</text>
+  <line x1="90" y1="50" x2="90" y2="66" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 1. Track Position (left, highlighted) -->
+  <rect x="30" y="70" width="120" height="45" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="2"/>
+  <text x="90" y="90" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Track Position</text>
+  <text x="90" y="105" text-anchor="middle" font-size="9" fill="#6c757d">page = N</text>
+
+  <!-- Arrow: Track -> Request -->
+  <line x1="150" y1="92" x2="185" y2="92" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 2. Request Page (center) -->
+  <rect x="190" y="70" width="120" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="250" y="90" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Request Page</text>
+  <text x="250" y="105" text-anchor="middle" font-size="9" fill="#6c757d">fetch(page=N)</text>
+
+  <!-- Arrow: Request -> Process -->
+  <line x1="310" y1="92" x2="345" y2="92" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 3. Process Data (right) -->
+  <rect x="350" y="70" width="120" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="410" y="90" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Process Data</text>
+  <text x="410" y="105" text-anchor="middle" font-size="9" fill="#6c757d">yield items</text>
+
+  <!-- Arrow: Process -> back to Track (curved, going down and left) -->
+  <path d="M 410 115 L 410 150 Q 410 170 390 170 L 110 170 Q 90 170 90 150 L 90 115"
+        fill="none" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- "N++" and "has more?" label on the loop -->
+  <text x="250" y="165" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">N++</text>
+  <text x="250" y="180" text-anchor="middle" font-size="9" fill="#6c757d" font-style="italic">has_more = True</text>
+
+  <!-- === WHAT WE SAVE === -->
+
+  <!-- Annotation box -->
+  <rect x="20" y="210" width="170" height="55" rx="4" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="105" y="230" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">This is what we save</text>
+  <text x="105" y="245" text-anchor="middle" font-size="9" fill="#212529">on rate limit:</text>
+  <text x="105" y="258" text-anchor="middle" font-size="9" fill="#4a9c6d" font-weight="bold">page, cursor, or offset</text>
+
+  <!-- Dashed line connecting Track to annotation -->
+  <line x1="80" y1="210" x2="80" y2="118" stroke="#4a9c6d" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowgreen)"/>
+
+</svg>

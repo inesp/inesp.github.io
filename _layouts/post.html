@@ -33,7 +33,23 @@ layout: default
   </header>
 
   <div class="article-body {{ page.css | escape }} my-5" itemprop="articleBody">
+
+    {% if page.prev_post %}
+      {% assign prev = site.posts | where_exp: "p", "p.path contains page.prev_post" | first %}
+      {% if prev %}
+      <p>⏮️ <b>Previous chapter:</b> <a href="{{ prev.url | relative_url }}">{{ prev.title }}</a></p>
+      {% endif %}
+    {% endif %}
+
     {{ content }}
+
+    {% if page.next_post %}
+      {% assign next = site.posts | where_exp: "p", "p.path contains page.next_post" | first %}
+      {% if next %}
+      <h2>Next chapter</h2>
+      <p>⏭️ <a href="{{ next.url | relative_url }}">{{ next.title }}</a></p>
+      {% endif %}
+    {% endif %}
 
     {%- include biblio.html -%}
   </div>

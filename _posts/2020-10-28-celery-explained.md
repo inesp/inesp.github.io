@@ -1,7 +1,6 @@
 ---
 title: "Celery: A few gotchas explained"
 tags: Celery
-excerpt_separator: <!--more-->
 biblio:
   - title: "Celery docs"
     link: "https://docs.celeryproject.org/en/stable/index.html"
@@ -25,7 +24,7 @@ Have you ever heard of the continuum of theory-before-practice VS. practice-befo
 
 {% include image.html alt="Children vector created by freepik - www.freepik.com" src="celery-watercolor-spectrum.png" ref="https://www.freepik.com/vectors/children" %}
 
- <!--more-->
+ 
 
 We all float in the continuum, none of us is stationary. Life-events nudge us to the left and to the right and sometimes fiercely sling us into one of the extremes as if we were pink-pong balls. Often we only want to study as much as is absolutely needed, because we equate Practice with joy and Theory with tediousness. And we are right to a degree: how much of a foreign language can you remember if you don't use it regularly. But then, sometimes, it turns out that we badly underestimate how much theory is "absolutely needed". And we have to go back, just like I had to go back to figure out Celery. My strategy of broadly getting it was only broadly enough. Now I had to go back and read all the theory.
 
@@ -69,7 +68,7 @@ So what are ETA tasks? They are scheduled tasks. ETA stands for "estimated time 
 To see which tasks are in the ETA-queue in Redis, run:
 
 ```bash
-redis-cli HGETAL unacked
+redis-cli HGETALL unacked
 ```
 
 You will get a list of keys and their values alternating, like this:
@@ -86,12 +85,12 @@ You will get a list of keys and their values alternating, like this:
 ## Tasks
 
 
-Tasks are sometimes also called messages. At its core, the message broker is just something that passes messages from one system to another. In our case, the message is a description of tasks: the task: the task name (a unique identifier), the input parameters, the ETA, the number of retries, ... .
+Tasks are sometimes also called messages. At its core, the message broker is just something that passes messages from one system to another. In our case, the message is a description of tasks: the task name (a unique identifier), the input parameters, the ETA, the number of retries, ... .
 
 In Celery the task is actually a class. So every time you decorate a function to make it a task, a class is created in the background. This means that each task has a `self`, unto which a lot of things are appended (i.e. `name`, `request`, `status`, `priority`, `retries`, [and more](https://github.com/celery/celery/blob/8c5e9888ae10288ae1b2113bdce6a4a41c47354b/celery/events/state.py#L247-L264){:target="_blank"}). Sometimes we need access to these properties. In those cases we use `bind=True`:
 
 ```python
-@shared_tas(bind=True,...)
+@shared_task(bind=True,...)
 def _send_one_email(self, email_type, user_id):
     ...
     num_of_retries = self.request.retries

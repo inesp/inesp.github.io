@@ -1,0 +1,83 @@
+<svg viewBox="0 0 480 450" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="480" height="470" fill="#fff"/>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- === FIRST RUN (left column) === -->
+  <text x="30" y="25" font-size="11" fill="#6c757d" font-style="italic">First run:</text>
+
+  <!-- Task starts (green) -->
+  <rect x="30" y="40" width="150" height="35" rx="4" fill="#4a9c6d"/>
+  <text x="105" y="63" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Task starts</text>
+
+  <!-- Arrow down -->
+  <line x1="105" y1="75" x2="105" y2="100" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Pagination box -->
+  <rect x="30" y="105" width="150" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="105" y="131" text-anchor="middle" font-size="10" fill="#212529">Fetch page 1, 2, 3...N</text>
+
+  <!-- Arrow down -->
+  <line x1="105" y1="150" x2="105" y2="175" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Rate limit hit (red) -->
+  <rect x="30" y="180" width="150" height="35" rx="4" fill="#fd456f"/>
+  <text x="105" y="203" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">429 Rate Limit</text>
+
+  <!-- Arrow down -->
+  <line x1="105" y1="215" x2="105" y2="240" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 1: Catch response (yellow) -->
+  <rect x="30" y="245" width="150" height="40" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="105" y="262" text-anchor="middle" font-size="9" fill="#212529" font-weight="normal">1. Extract retry-after</text>
+  <text x="105" y="277" text-anchor="middle" font-size="9" font-weight="normal" fill="#212529">and remember the last page</text>
+
+  <!-- Arrow down -->
+  <line x1="105" y1="285" x2="105" y2="305" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: Stop task (yellow) -->
+  <rect x="30" y="310" width="150" height="40" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="105" y="333" text-anchor="middle" font-size="9" fill="#212529" font-weight="normal">2. Gracefully stop the task</text>
+
+  <!-- Arrow down -->
+  <line x1="105" y1="350" x2="105" y2="365" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: Schedule retry (yellow) -->
+  <rect x="30" y="370" width="150" height="55" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="105" y="387" text-anchor="middle" font-size="9" fill="#212529" font-weight="normal">3. Schedule retry</text>
+  <text x="105" y="405" text-anchor="middle" font-size="9" fill="#212529" font-weight="normal">with pagination data</text>
+
+  <!-- === RETRY (right column) === -->
+
+  <text x="365" y="35" font-size="11" fill="#6c757d" font-weight="bold" text-anchor="start">.</text>
+  <text x="365" y="52" font-size="11" fill="#6c757d" font-weight="bold" text-anchor="start">.</text>
+  <text x="365" y="69" font-size="11" fill="#6c757d" font-weight="bold" text-anchor="start">.</text>
+
+  <text x="365" y="95" font-size="11" fill="#6c757d" font-style="italic" text-anchor="middle">Retry (60s later)</text>
+
+  <!-- Task starts with cursor (green) -->
+  <rect x="280" y="100" width="170" height="35" rx="4" fill="#4a9c6d"/>
+  <text x="365" y="123" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Task starts (with pagination)</text>
+
+  <!-- Arrow down -->
+  <line x1="365" y1="135" x2="365" y2="160" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Continues from page N -->
+  <rect x="280" y="165" width="170" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="365" y="185" text-anchor="middle" font-size="10" fill="#212529">page N, N+1, N+2...</text>
+  <text x="365" y="200" text-anchor="middle" font-size="10" fill="#212529">last page</text>
+
+  <!-- Arrow down -->
+  <line x1="365" y1="210" x2="365" y2="235" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Done (light green) -->
+  <rect x="280" y="240" width="170" height="35" rx="4" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="365" y="263" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Done</text>
+
+</svg>

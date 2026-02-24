@@ -1,6 +1,5 @@
 ---
 title: "Why do Developers Argue so Much? Code Hard, Argue Harder"
-excerpt_separator: <!--more-->
 biblio:
   - title: Moussaïd M, Kämmer JE, Analytis PP, Neth H., Social Influence and the Collective Dynamics of Opinion Formation, 2013
     link: https://pmc.ncbi.nlm.nih.gov/articles/PMC3818331/
@@ -11,7 +10,6 @@ So, have you also noticed that developers have a certain ... _fondness_ for argu
 
 If you haven't, I can assure you other people have, because they are selling t-shirts like this:
 
-<!--more-->
 
 
 {% include image.html alt="Etsy" src="debate/etsy-software-dev.jpg" ref="https://www.etsy.com/listing/1016820004/software-developer-t-shirt-funny" class="w-65" %}
@@ -37,9 +35,9 @@ Comments that request changes which are inconsequential to the actual solution a
 
 We make each other waste time re-doing work that has already been done, because we really are sure _our way_ is better. 
 
-And you've also probably have already been at a meeting, where a new idea is proposed only to be met with 100 reasons why this just won't work at all. 
+And you've also probably already been at a meeting, where a new idea is proposed only to be met with 100 reasons why this just won't work at all. 
 
-The commentators will sound like this: _"I've though about this for full 5 mins and I *know* this is a bad idea. I've never done it before or have seen it being done, but I just know *you* are for sure not right."_
+The commentators will sound like this: _"I've thought about this for full 5 mins and I *know* this is a bad idea. I've never done it before or have seen it being done, but I just know *you* are for sure not right."_
 
 ## Are we just mean people? 
 

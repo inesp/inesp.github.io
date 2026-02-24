@@ -34,7 +34,7 @@ Traditionally web servers are meant to serve static resources, static files. The
 
 In such a world each developer would devise their own protocol for communication between their selected web server and their Python code. This protocol, this code would only work for the selected web server and Python app. Creating a new app would mean writing the protocol-bit again as well. Moving to another team would mean learning a new protocol. Writing a web framework would be a much more difficult task. 
 
-To avoid this mess, WSGI was agreed upon (in PEP 333). WSGI is a simple API spec. It simply specifies how a web server and a Python script are to communicate with eatch other.
+To avoid this mess, WSGI was agreed upon (in PEP 333). WSGI is a simple API spec. It simply specifies how a web server and a Python script are to communicate with each other.
 
 WSGI defines a very clear boundary between your application and a web server. Changing the server will not affect the application and vice versa.
 
@@ -42,9 +42,9 @@ This is what uWSGI gives us. uWSGI knows how to talk to a Python app and knows h
 
 ## Can I then ditch NGINX?
 
-uWSGI could be used as a standalone web server in production, but that is not it's intentional use. It may sound odd, but uWSGI was always supposed to be a go-between a full-featured web server like NGINX and your Python files. One funny detail is that uWSGI isn't that good at serving static files.
+uWSGI could be used as a standalone web server in production, but that is not its intentional use. It may sound odd, but uWSGI was always supposed to be a go-between a full-featured web server like NGINX and your Python files. One funny detail is that uWSGI isn't that good at serving static files.
 
-NGINX is much more powerful than uWSGI. For starters, it is more secure. Its default security settings are already decent and they can be configured further. NGINX has better handling of static resources, which can significanlly reduce server and network load. It offers ways to cache your dynamic content and it communicates with CDNs better. It is a great load balancer. ... 
+NGINX is much more powerful than uWSGI. For starters, it is more secure. Its default security settings are already decent and they can be configured further. NGINX has better handling of static resources, which can significantly reduce server and network load. It offers ways to cache your dynamic content and it communicates with CDNs better. It is a great load balancer. ... 
 
 It is just more powerful and can support a wider range of uses.
 
@@ -58,7 +58,7 @@ Using both layers: a web server and a WSGI server gives us the future freedom to
 
 The way we do web development is becoming more and more layered. There is a constant stream of new tools entering our work environment with each tool providing a solution for one specific job. It is difficult to keep up. But a lot of these tools are genuinely useful. Because we are covering ever new problems with web development solutions, new ideas and new needs emerge. On the other hand, because we are constantly making progress, old ideas, which seemed too far fetched at the time, become possible now and thus spur the invention of new tools.
 
-Like it or now, new tools are here to stay. Setting up a new project is currently a real pain because so much background has to be set up. True, we have tools for this as well, meta-tools, but unfortunately those also have to be learnt :) 
+Like it or not, new tools are here to stay. Setting up a new project is currently a real pain because so much background has to be set up. True, we have tools for this as well, meta-tools, but unfortunately those also have to be learnt :) 
 
 Maybe, after our community matures a bit more, we will find a pleasant balance between having to manually tinker with every layer in the system and having no control over what happens beyond our implementation. But until then, we will have to resort to reading lots and lots of blog post to be kept in the loop about constant improvements in our very young profession.
 

@@ -1,14 +1,14 @@
 ---
 series: Self-Documenting Code
 title: "Concept 1: <code>assert</code> finds its calling"
-excerpt_separator: <!--more-->
 biblio:
   - title: "Python: The assert statement"
     link: https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement
 tags: ["Self-Documenting Code"]
+next_post: 2025-05-05-self-documented-code-part-II
 ---
 
-**How much documentation, dev-documentation does you app have?** Presumably less than it should have. At least according to new hires. 
+**How much documentation, dev-documentation does your app have?** Presumably less than it should have. At least according to new hires. 
 
 **How much documentation do your new devs actually read?** Presumably less than they should. At least according to old hires.
 
@@ -23,7 +23,6 @@ As the silly but melodious adage goes: Trust is good, control is better.
 ![How to document with asserts](/assets/docs/assert-truth.png)
 
 
-<!--more-->
 
 ## 💡 Concept 1: Assert finally finds its calling
 
@@ -226,5 +225,3 @@ And that is how `assert` can be used to replace a bit of the documentation. Docs
 
 **Note on the side:** But, obviously, you can also just raise a `ValueError` or `TypeError` or `MyCustomException`. No need to specifically use `assert`-s. :smile:
 
-## Next chapter
-⏭️ [Self-Documenting Code Concept 2: Error msgs with calls to action]({% post_url 2025-05-05-self-documented-code-part-II %})

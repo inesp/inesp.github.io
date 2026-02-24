@@ -2,7 +2,6 @@
 series: Building Blocks Collection
 title: "Isolate code blocks from each other?"
 tags: ["Building Blocks Collection", "Code Patterns", "Code Style"]
-excerpt_separator: <!--more-->
 biblio:
   - link: https://docs.python.org/3/library/contextlib.html#contextlib.contextmanager
     title: "Python: contextlib.contextmanager"
@@ -23,7 +22,6 @@ And I'm starting with: Code that isolates (insulates) code blocks.
 
 ![Isolating code blocks](/assets/isolate-code.png)
 
-<!--more-->
 
 **Hint**: The full function is [at the end of the page](#full-code).
 {:.box}

@@ -1,7 +1,6 @@
 ---
 title: "Git script <code>git rebaseToMaster</code>"
 tags: ["Git", "Tools"]
-excerpt_separator: <!--more-->
 ---
 
 There's too many people on my project. 😅
@@ -10,7 +9,6 @@ I'm not complaining, but I did have to `rebase` my code to `master` a LOT.
 
 And it's always the same 5 lines (or so), so I wrote myself a little shortcut and transformed it into a git "alias". 🍰
 
-<!--more-->
 
 Here's the excerpt from my `.gitconfig` file:
 ```bash

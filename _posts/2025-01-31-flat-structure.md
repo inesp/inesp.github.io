@@ -1,6 +1,5 @@
 ---
 title: "Opinion: In Defence of Hierarchical Command Structures"
-excerpt_separator: <!--more-->
 biblio:
 tags: ["Opinion", "People"] 
 ---
@@ -9,7 +8,6 @@ Developers. Aren't we just a most ... argumentative bunch of ... people? We figh
 
 ![Growing rice](/assets/hierarchy.png)
 
-<!--more-->
 
 
 ### How it all started

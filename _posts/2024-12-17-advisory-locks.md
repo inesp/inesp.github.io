@@ -1,7 +1,6 @@
 ---
 title: "Quick and easy: Add Postgres advisory locks to your Python code"
 tags: ["Database", "Code Patterns"]
-excerpt_separator: <!--more-->
 biblio: 
   - title: PostgreSQL's Advisory Locks
     link: https://www.postgresql.org/docs/17/explicit-locking.html#ADVISORY-LOCKS
@@ -18,7 +17,6 @@ The "can" is in italics (and underscored, to really make it stand out), because 
 This means the locks are only as good as you are 😉.
 
 
-<!--more-->
 
 
 **Does PG care about it?** No. Not at all. Not even a tiny bit. 
@@ -41,7 +39,6 @@ These locks can only be set. They live until the **transaction** is committed or
 Hint: use them only inside transactions. Makes it safer. DB transactions are short lived and have a very clear beginning and end inside Python code, so it's easy to know when the lock will be released.
 
 
-<!--more-->
 
 ## Use case example
 
@@ -77,7 +74,7 @@ But it will still raise an exception first, which we either
 
 ```python
 def handle_github_pr_has_been_created(event_data):
-    pr_id = data[...]
+    pr_id = event_data[...]
     
     # 1. we choose to set advisory locks only inside DB transactions (read more above)
     with start_db_transaction():

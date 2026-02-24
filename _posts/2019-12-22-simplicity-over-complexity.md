@@ -68,13 +68,13 @@ The real reason, why developers and managers don't care for this guideline, is *
 
 **If I’m in a meeting** and our biggest customer says they’ll walk unless we ship X by the end of the quarter, that instantly feels like a “drop everything, the company’s survival depends on this” kind of moment. And yeah, in that moment, adding complexity suddenly seems like a totally reasonable thing to do.
 
-**But if I’m the new developer** on the project looking at the software and seeing all the scars from passed rushed projects, I might also be convinced that if we do not act now and start paying for our past misjudgments, then this project is doomed either way. 
+**But if I’m the new developer** on the project looking at the software and seeing all the scars from past rushed projects, I might also be convinced that if we do not act now and start paying for our past misjudgments, then this project is doomed either way. 
 
 So what do we do?
 
 ## We plan ahead.
 
-What if we could avoid this situation entirely? We don't want to be in the position, where the complexity has grown to an extent where the project is difficult to maintaining.
+What if we could avoid this situation entirely? We don't want to be in the position, where the complexity has grown to an extent where the project is difficult to maintain.
 
 Planning ahead doesn’t mean predicting the future perfectly nor does it mean locking ourselves in rigid structures or spending months debating over every decision.
 

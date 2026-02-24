@@ -137,7 +137,7 @@ Next to `Mock` there is also `MagicMock`. `MagicMock` can do all the same things
 
 When we are mocking a deeply nested attribute, we don't need to explicitly create sub-`Mock`s at every level. As soon as we access an attribute/function/property, a new `Mock` will automatically be created, if none exists. And because calling the same attribute will return the same sub-`Mock` every time, we can use this to our advantage and simply say `mock_object.author.country().title = "Lichtenstein"` instead of `mock_object.author = Mock(country=Mock(return_value=...))`. But the rule of thumb is that the path must consist solely of functions and attributes. The `MagicMock` can handle a few more things in the path, like `[0]`.
 
-Examples of paths thatare ok:
+Examples of paths that are ok:
 {:.mb-0}
 - `book.get_review(sort="date", order="desc").reviewer.get_country().short_name`
 - `book()()()`

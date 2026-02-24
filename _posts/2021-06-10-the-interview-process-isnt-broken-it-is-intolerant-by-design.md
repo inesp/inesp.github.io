@@ -1,7 +1,6 @@
 ---
 title: "The Interview Process isn't broken, it is intolerant by design"
 tags: ["People", "Opinion", "Engineering Research"]
-excerpt_separator: <!--more-->
 biblio:
   - title: "Google Guide: Train your interviewers"
     link: https://rework.withgoogle.com/guides/hiring-train-your-interviewers/steps/make-interviewing-everyones-job/
@@ -18,7 +17,7 @@ biblio:
   - title: "Hans Christian Andersen: The Princess and the Pea"
     link: http://www.eastoftheweb.com/short-stories/UBooks/PriPea.shtml
   - title: "Invisible Women: Exposing Data Bias in a World Designed for Men"
-    linke: https://www.goodreads.com/book/show/41104077-invisible-women
+    link: https://www.goodreads.com/book/show/41104077-invisible-women
 ---
 
 At the moment, the IT industry is considered a pretty prestigious profession. It attracts lots and lots of people because the pay is good, the working conditions are good and the whole society is in awe of the masterful things programmers produce.
@@ -35,7 +34,6 @@ The answer is simple: **it produces "proper" IT teams**. It does not create grea
 
 We are mostly concerned with copy-pasting what we consciously or subconsciously believe is a good IT team: young, white, male, dressed in hoodies, socially awkward, having gone to the same universities we went to, having the same beer preferences we have, have had the same life experiences that we had, ... .
 
-<!--more-->
 
 ## Why do many claim the interview process is broken?
 
@@ -206,7 +204,7 @@ Playing the game is hard work. But that is not the real problem, **the real prob
 
 The IT interviewing process is a game when it shouldn't be.
 
-**This game has exact rules of behaviour and exact, unambiguous rules for winning.** Proof for this are all the "Cracking the Coding Interview."-books and courses, which will successfullly teach you how to win in interviews.
+**This game has exact rules of behaviour and exact, unambiguous rules for winning.** Proof for this are all the "Cracking the Coding Interview."-books and courses, which will successfully teach you how to win in interviews.
 
 
 If you want to be a master interviewee, you have to look up certain topics, that are considered "basic IT knowledge", approach problems in a constructive, "I fear you not"-way and you have to have an air around you that says "I have a wide range of experience", "I have smart things to say about your product", and of course you need a healthy amount of self-confidence, ... . **It's like Tinder, but for jobs.**

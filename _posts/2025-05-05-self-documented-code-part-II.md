@@ -1,8 +1,9 @@
 ---
 series: Self-Documenting Code
 title: "Concept 2: Error msgs with calls to action"
-excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]
+prev_post: 2025-04-17-how-to-make-code-self-document-itself
+next_post: 2025-05-09-self-documented-code-part-III
 ---
 
 To reiterate from the [previous chapter]({% post_url 2025-04-17-how-to-make-code-self-document-itself %}): Why do we want self-documenting code? Because then future devs (and we) will use our code as it was intended, whether they read the docs or not. 
@@ -11,10 +12,6 @@ Self-documenting code blocks are like **friendly tripping wire** or an alert for
 
 ![Communicate via error messages](/assets/docs/errors-and-msgs.png)
 
-<!--more-->
-
-## Previous chapter
-⏮️ [Self-Documenting Code Concept 1: `assert` finds its calling]({% post_url 2025-04-17-how-to-make-code-self-document-itself %})
 
 In the previous chapter, we talked about using `assert`-s to kill new code even before it goes to production. Now we'll look at how to use error messages to help fix bugs that already made it to production.
 
@@ -98,9 +95,9 @@ def send_email_about_abc(org: Organization) -> bool:
 Our scenario: our app listens to some events and sends Slack notifications when those events happen. We record every sent Slack message in a database table.
 We have a Postgres table `slack_msgs` with a JSON column called `extra_data`. In this column we store data that should be in the form of one of our defined dataclasses: `RainData`, `OutOfYogurtData`, ... .
 
-Our problem: It can happen that he `extra_data` is corrupted and it doesn't fit into the right dataclass, what do we do?
+Our problem: It can happen that the `extra_data` is corrupted and it doesn't fit into the right dataclass, what do we do?
 
-Solution: we log an error, but we also pretend the value is `None`, so the app doesn't brake.
+Solution: we log an error, but we also pretend the value is `None`, so the app doesn't break.
 
 ```py
 import dataclasses
@@ -266,7 +263,7 @@ def index_documents_in_batches():
 
     documents: list[Doc] = ....
     
-    batches: list[list[Doc]] = create_batceh_of_documents(documents, batch_size=100)
+    batches: list[list[Doc]] = create_batch_of_documents(documents, batch_size=100)
     num_of_batches: int = count(batches)
     
     for i, one_batch in enumerate(batches):
@@ -292,5 +289,3 @@ There is a lot you can communicate in error messages and other logs.
 
 When something takes an unexpected turn, devs often go check the logs. They will read the logs, thus you should communicate via the logs. 
 
-## Next
-⏭️ [Self-Documenting Code Concept 3: Abstract functions, patterns and interfaces]({% post_url 2025-05-09-self-documented-code-part-III %})
