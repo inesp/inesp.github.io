@@ -41,7 +41,7 @@ A new ETA is calculated. The ETA can be explicitly provided in the retry command
 To inspect this queue in Redis, call:
 
 ```bash
-redis-cli HGETAL unacked
+redis-cli HGETALL unacked
 ```
 
 ##### **2. The ETA time arrives**

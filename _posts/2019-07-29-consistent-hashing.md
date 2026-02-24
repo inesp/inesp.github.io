@@ -62,7 +62,7 @@ Let's say you have implemented a very successful online telephone book. Your use
 
   ![hash-space-circle](/assets/consistent-hashing-space-circle.jpg)
 
-  Every `key` belongs to the first `slot` to the right on the circle. In our case all keys 0 - 100 belong to Partition0, 101 - 400 to Partition1, 401 - 700 to Partition2, 701 - 900 to Partition3. And the keys, which are bigger than 900, where do they belong? Also to the next `slot` on the circle, which is Partiotion0.
+  Every `key` belongs to the first `slot` to the right on the circle. In our case all keys 0 - 100 belong to Partition0, 101 - 400 to Partition1, 401 - 700 to Partition2, 701 - 900 to Partition3. And the keys, which are bigger than 900, where do they belong? Also to the next `slot` on the circle, which is Partition0.
 
   ![hash-space-ranges](/assets/consistent-hashing-space-ranges.jpg)
 

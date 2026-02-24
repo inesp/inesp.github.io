@@ -152,7 +152,7 @@ In practice this is achieved by:
 - catching write exceptions on write operations (anticipating 2 threads trying to write the same thing)
 - checking if an object is as we think it is before we change it (ie: does it exist, before we delete it, or is its owner really NULL before we set the owner. For the last example, you could use `update ... where ... and owner is NULL` and then check what the response was.) 
 - catching the obvious exceptions like "object does not exist" 
-- refreshing data after acquiring a lock (it's possible we were waiting for a bit before we required the lock and another thread already changed DB data)
+- refreshing data after acquiring a lock (it's possible we were waiting for a bit before we acquired the lock and another thread already changed DB data)
 - checking if another thread already did our work
 - ... (whatever works for your code)
 

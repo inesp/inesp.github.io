@@ -34,7 +34,7 @@ class ZOOsConfigBuilder:
         return {
             "paris": {
                 "is_open_to_public": True,
-                "get_config": self:_build_paris_config(["girrafe", "lion", "ape"]),
+                "get_config": self._build_paris_config(["girrafe", "lion", "ape"]),
             },
             "vienna": {
                 "is_open_to_public": True,
@@ -139,7 +139,7 @@ class ZOOsConfigBuilder:
         return {
             "paris": ZooConfiguration(
                 is_open_to_public=True,
-                get_config=self:_build_paris_config(["girrafe", "lion", "ape"]),
+                get_config=self._build_paris_config(["girrafe", "lion", "ape"]),
             ),
             "vienna": ZooConfiguration(
                 is_open_to_public=True,

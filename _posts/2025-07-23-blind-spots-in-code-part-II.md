@@ -75,9 +75,9 @@ The solitary phase is the physical action of writing words into code, it is abou
 
 The social phase is about the meetings and discussions that precede and also follow the solitary phase. Before we write some code, we often talk about it, about the expanse of the problem and the options for solutions. And after we write the code **we go out into the collective to defend it, in the form of PR reviews**.
 
-The probability that we fail to solve the original problem is just as high at the solitary stage (creating a technical solution) as it is at the social stage (defending the solution in front of out peers).
+The probability that we fail to solve the original problem is just as high at the solitary stage (creating a technical solution) as it is at the social stage (defending the solution in front of our peers).
 
-And as soon as people talk about what the think, cognitive biases are immediately present.
+And as soon as people talk about what they think, cognitive biases are immediately present.
 
 Let’s look at how we fall prey to them in software development.
 
@@ -91,9 +91,9 @@ And if a team member suggests a new framework? We often jump to poke holes in it
 
 Or maybe we'll be even more generic and claim that using the good old framework is better, because **these new frameworks are not "mature enough"** and not "battle-tested" and anyway, aren't these new frameworks just "different, not better"?
 
-We, as the oldtimer, focus on the good-old-framework, because knowledge about it is the most accessible to us. **We mainly focus on collecting information that confirms our viewpoint and are reluctant to give pause to oposing views.** We see ourselves as very rational, but what if it's just bias that is keeping us in place. 
+We, as the oldtimer, focus on the good-old-framework, because knowledge about it is the most accessible to us. **We mainly focus on collecting information that confirms our viewpoint and are reluctant to give pause to opposing views.** We see ourselves as very rational, but what if it's just bias that is keeping us in place. 
 
-However, **bias also works the other way**. The team member suggesting the new framework might just be excited **because she read about it in several places already.** This framwork seems to be the great new thing, the things that everybody will adopt sooner or later, so let's join the "sooner"-cohort. After reading soo much about it, all she can see is the glittering features of the new framework, the promise of easier work, the poetry of the new code... _"It's just going to be such a joy to work with the new framework"_.
+However, **bias also works the other way**. The team member suggesting the new framework might just be excited **because she read about it in several places already.** This framework seems to be the great new thing, the things that everybody will adopt sooner or later, so let's join the "sooner"-cohort. After reading soo much about it, all she can see is the glittering features of the new framework, the promise of easier work, the poetry of the new code... _"It's just going to be such a joy to work with the new framework"_.
 
 Always choosing the new thing or always sticking with the old, both tendencies often stem from biases.
 

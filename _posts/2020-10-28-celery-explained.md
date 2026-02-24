@@ -69,7 +69,7 @@ So what are ETA tasks? They are scheduled tasks. ETA stands for "estimated time 
 To see which tasks are in the ETA-queue in Redis, run:
 
 ```bash
-redis-cli HGETAL unacked
+redis-cli HGETALL unacked
 ```
 
 You will get a list of keys and their values alternating, like this:
@@ -86,12 +86,12 @@ You will get a list of keys and their values alternating, like this:
 ## Tasks
 
 
-Tasks are sometimes also called messages. At its core, the message broker is just something that passes messages from one system to another. In our case, the message is a description of tasks: the task: the task name (a unique identifier), the input parameters, the ETA, the number of retries, ... .
+Tasks are sometimes also called messages. At its core, the message broker is just something that passes messages from one system to another. In our case, the message is a description of tasks: the task name (a unique identifier), the input parameters, the ETA, the number of retries, ... .
 
 In Celery the task is actually a class. So every time you decorate a function to make it a task, a class is created in the background. This means that each task has a `self`, unto which a lot of things are appended (i.e. `name`, `request`, `status`, `priority`, `retries`, [and more](https://github.com/celery/celery/blob/8c5e9888ae10288ae1b2113bdce6a4a41c47354b/celery/events/state.py#L247-L264){:target="_blank"}). Sometimes we need access to these properties. In those cases we use `bind=True`:
 
 ```python
-@shared_tas(bind=True,...)
+@shared_task(bind=True,...)
 def _send_one_email(self, email_type, user_id):
     ...
     num_of_retries = self.request.retries

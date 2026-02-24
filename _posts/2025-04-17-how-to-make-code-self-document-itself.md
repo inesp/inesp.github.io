@@ -8,7 +8,7 @@ biblio:
 tags: ["Self-Documenting Code"]
 ---
 
-**How much documentation, dev-documentation does you app have?** Presumably less than it should have. At least according to new hires. 
+**How much documentation, dev-documentation does your app have?** Presumably less than it should have. At least according to new hires. 
 
 **How much documentation do your new devs actually read?** Presumably less than they should. At least according to old hires.
 

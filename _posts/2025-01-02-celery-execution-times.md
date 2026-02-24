@@ -120,7 +120,7 @@ def task_postrun(*, task: Task, **kwargs):
 It can be as simple as adding a hard coded threshold to the above function:
 
 ```python
-if exec_time > timedelta(hour=1):
+if exec_time > timedelta(hours=1):
   logger.error(f"Task {task.name} took too long: {exec_time}. Check it out!")
 ```
 

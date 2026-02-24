@@ -95,7 +95,7 @@ I know, that additional `SUBSTRING(MAX.....` demands some explanation. 😁
    The string `0000000000` must have as many zeros as the biggest `num_of_animals` can have digits.
 2. `CONCAT(..., area_code)`: we append the area_code to the back like so: `0000000120A`, `0000000080B`, ...
 3. `MAX(..)`: we find the maximum values of these strings. Because the strings start with `num_of_animals`, their MAX will be the same as the MAX of `num_of_animals`.
-4. `SUBSTRING(..)`: we strip away zeros and the `num_of_values` to get only the `area_code`: `SUBSTRING(0000000120A, 12) => A`. ATTENTION: `to_char` creates white space at the beginning of the string, so we have to substract 12 chars, not just 10.
+4. `SUBSTRING(..)`: we strip away zeros and the `num_of_values` to get only the `area_code`: `SUBSTRING(0000000120A, 12) => A`. ATTENTION: `to_char` creates white space at the beginning of the string, so we have to subtract 12 chars, not just 10.
 
 I personally, like this approach, but again *"PROFILE YOUR QUERIES ON YOUR ACTUAL DATA before making a decision"*. It all depends on your data, the size of your table, the data types of your columns, your hardware, ...
 

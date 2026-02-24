@@ -98,9 +98,9 @@ def send_email_about_abc(org: Organization) -> bool:
 Our scenario: our app listens to some events and sends Slack notifications when those events happen. We record every sent Slack message in a database table.
 We have a Postgres table `slack_msgs` with a JSON column called `extra_data`. In this column we store data that should be in the form of one of our defined dataclasses: `RainData`, `OutOfYogurtData`, ... .
 
-Our problem: It can happen that he `extra_data` is corrupted and it doesn't fit into the right dataclass, what do we do?
+Our problem: It can happen that the `extra_data` is corrupted and it doesn't fit into the right dataclass, what do we do?
 
-Solution: we log an error, but we also pretend the value is `None`, so the app doesn't brake.
+Solution: we log an error, but we also pretend the value is `None`, so the app doesn't break.
 
 ```py
 import dataclasses
@@ -266,7 +266,7 @@ def index_documents_in_batches():
 
     documents: list[Doc] = ....
     
-    batches: list[list[Doc]] = create_batceh_of_documents(documents, batch_size=100)
+    batches: list[list[Doc]] = create_batch_of_documents(documents, batch_size=100)
     num_of_batches: int = count(batches)
     
     for i, one_batch in enumerate(batches):

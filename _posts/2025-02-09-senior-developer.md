@@ -83,7 +83,7 @@ The code runs and does the right thing, but
 
 ## Fourthly, do it faster (expert level)
 
-Speed has 2: finishing work in **a reasonable timeframe** and **cutting corners** when needed.
+Speed has 2 aspects: finishing work in **a reasonable timeframe** and **cutting corners** when needed.
 
 ### You can't take forever to finish the simplest of tasks
 

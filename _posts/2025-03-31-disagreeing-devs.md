@@ -37,9 +37,9 @@ Comments that request changes which are inconsequential to the actual solution a
 
 We make each other waste time re-doing work that has already been done, because we really are sure _our way_ is better. 
 
-And you've also probably have already been at a meeting, where a new idea is proposed only to be met with 100 reasons why this just won't work at all. 
+And you've also probably already been at a meeting, where a new idea is proposed only to be met with 100 reasons why this just won't work at all. 
 
-The commentators will sound like this: _"I've though about this for full 5 mins and I *know* this is a bad idea. I've never done it before or have seen it being done, but I just know *you* are for sure not right."_
+The commentators will sound like this: _"I've thought about this for full 5 mins and I *know* this is a bad idea. I've never done it before or have seen it being done, but I just know *you* are for sure not right."_
 
 ## Are we just mean people? 
 

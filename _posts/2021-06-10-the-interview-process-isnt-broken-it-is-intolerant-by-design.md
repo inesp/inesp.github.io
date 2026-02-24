@@ -18,7 +18,7 @@ biblio:
   - title: "Hans Christian Andersen: The Princess and the Pea"
     link: http://www.eastoftheweb.com/short-stories/UBooks/PriPea.shtml
   - title: "Invisible Women: Exposing Data Bias in a World Designed for Men"
-    linke: https://www.goodreads.com/book/show/41104077-invisible-women
+    link: https://www.goodreads.com/book/show/41104077-invisible-women
 ---
 
 At the moment, the IT industry is considered a pretty prestigious profession. It attracts lots and lots of people because the pay is good, the working conditions are good and the whole society is in awe of the masterful things programmers produce.
@@ -206,7 +206,7 @@ Playing the game is hard work. But that is not the real problem, **the real prob
 
 The IT interviewing process is a game when it shouldn't be.
 
-**This game has exact rules of behaviour and exact, unambiguous rules for winning.** Proof for this are all the "Cracking the Coding Interview."-books and courses, which will successfullly teach you how to win in interviews.
+**This game has exact rules of behaviour and exact, unambiguous rules for winning.** Proof for this are all the "Cracking the Coding Interview."-books and courses, which will successfully teach you how to win in interviews.
 
 
 If you want to be a master interviewee, you have to look up certain topics, that are considered "basic IT knowledge", approach problems in a constructive, "I fear you not"-way and you have to have an air around you that says "I have a wide range of experience", "I have smart things to say about your product", and of course you need a healthy amount of self-confidence, ... . **It's like Tinder, but for jobs.**

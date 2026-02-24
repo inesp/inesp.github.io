@@ -94,7 +94,7 @@ Once you have 2 threads, they will both execute code at the same time, but they 
 
 ## Level 2: Multi-threading apps can use `threading.local()`
 
-Pyhon's module `threading` handles all sorts of threading-related stuff. One of those things is handling data that is only visible to the current thread. That's exactly what we are after.
+Python's module `threading` handles all sorts of threading-related stuff. One of those things is handling data that is only visible to the current thread. That's exactly what we are after.
 
 > Thread-local objects support the management of thread-local data.
 > If you have data that you want to be local to a thread, simply create

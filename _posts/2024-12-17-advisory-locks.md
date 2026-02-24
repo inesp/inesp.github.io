@@ -77,7 +77,7 @@ But it will still raise an exception first, which we either
 
 ```python
 def handle_github_pr_has_been_created(event_data):
-    pr_id = data[...]
+    pr_id = event_data[...]
     
     # 1. we choose to set advisory locks only inside DB transactions (read more above)
     with start_db_transaction():
