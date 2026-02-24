@@ -1,0 +1,14 @@
+// Prism.js code block overrides
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: "Fira Code", "Consolas", "Monaco", monospace;
+  font-size: 0.9rem;
+  text-shadow: none;
+  line-height: 1.5;
+}
+
+// Inline code
+code:not([class*="language-"]) {
+  text-shadow: none;
+}

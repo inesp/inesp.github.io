@@ -35,11 +35,8 @@ kramdown:
   math_engine_opts:
     preview: true
     preview_as_code: true
-  syntax_highlighter: rouge
   syntax_highlighter_opts:
-    default_lang: python
-
-highlighter: rouge
+    disable: true
 
 plugins:
   - jekyll-feed
