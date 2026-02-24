@@ -52,6 +52,35 @@ This is where you put content that's interesting but tangential to the main poin
 
 ---
 
+### `.code-details` - Expandable Code/Implementation
+
+A collapsible details element with a `</>` code symbol, for full implementation details.
+
+**Usage:**
+```html
+<details class="code-details" markdown="1">
+<summary>Full implementation: description here</summary>
+
+# The full code goes here...
+
+</details>
+```
+
+**Example:**
+
+<details class="code-details" markdown="1">
+<summary>Full implementation: the complete function</summary>
+
+```python
+def example_function():
+    """This is where the full implementation goes."""
+    return "Hello, world!"
+```
+
+</details>
+
+---
+
 ## Table Classes
 
 ### `.table-small` - Compact Table

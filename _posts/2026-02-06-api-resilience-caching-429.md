@@ -276,6 +276,15 @@ My code will look at all the places, where I know the authorization data can be.
 
 ![redis-429-key-building](/assets/http/redis-429-key-building.svg)
 
+The key combines org ID (because I am working in a multi-tenant system), the API host, and a hashed auth token:
+
+```python
+key = f"http.rate_limits.{org_id}.{url.host}.{hashed_auth_token}"
+```
+
+<details class="code-details" markdown="1">
+<summary>Full implementation: extracting and hashing auth tokens</summary>
+
 ```python
 import hashlib
 import logging
@@ -291,10 +300,10 @@ class RateLimitAdapter(HTTPAdapter):
     ...
     def _get_auth_tokens_from_request(self, request: PreparedRequest) -> str | None:
         headers = request.headers
-        
+
         # Standard location for auth tokens
         auth_header = headers.get("Authorization")
-        
+
         dd_tokens = str(headers.get("DD-API-KEY", "")) + str(headers.get("DD-APPLICATION-KEY", ""))  # Datadog
         sf_token = headers.get("X-SF-Token")  # SignalFX
         gl_token = headers.get("PRIVATE-TOKEN")  # GitLab
@@ -308,11 +317,11 @@ class RateLimitAdapter(HTTPAdapter):
         # hash the access tokens, because we don't want to have customer's tokens plainly visible in Redis
         hashed_tokens = hashlib.sha256(f"various header tokens: {all_tokens}".encode()).hexdigest()
         return hashed_tokens
-    
+
     def _get_redis_key(self, request: PreparedRequest) -> str | None:
-        org_id = ... # get the tenant ID as you do 
+        org_id = ... # get the tenant ID as you do
         url: Url = parse_url(request.url)
-        
+
         hashed_auth_token: str | None = self._get_auth_tokens_from_request(request)
         if not hashed_auth_token:
             # The nudge to developers. The correct location for this would be when we actually
@@ -320,8 +329,8 @@ class RateLimitAdapter(HTTPAdapter):
             # must be present. Presumably no API will rate limit non-authenticated users.
             logger.log(
                 logging.WARNING, # or logging.ERROR
-                "Could not extract authorization info to build a Redis key " 
-                "for storing 429 response. " 
+                "Could not extract authorization info to build a Redis key "
+                "for storing 429 response. "
                 "We probably need to amend RateLimitAdapter._get_auth_tokens_from_request "
                 "and add a new way to extract the authorization info.",
                 extra={"url": url, ...}
@@ -330,6 +339,8 @@ class RateLimitAdapter(HTTPAdapter):
         key = f"http.rate_limits.{org_id}.{url.host}.{hashed_auth_token}"
         return key
 ```
+
+</details>
 
 ## Safeguard: Why not take all HTTP headers?
 
@@ -347,7 +358,15 @@ We don't want the API tokens to just sit in Redis in their correct form. So, we 
 
 To get the TTL, we have a similar problem as with defining the Redis key, we again have to **check all the different HTTP headers where this information could possibly be**. The difference is that we can always use a default value, if we can't find this header. With the authorization data, we could not default to any value.
 
-The one safeguard I do recommend is: have a max value. **Even if the API sends you `Retry-After=<5h>`, I would ignore this and keep the max TTL relatively low, at maybe max 1 hour.**
+The one safeguard I do recommend is: have a max value. **Even if the API sends you `Retry-After=<5h>`, I would ignore this and keep the max TTL relatively low, at maybe max 1 hour** or less of course.
+
+```python
+retry_after: int = int(response.headers.get("Retry-After"))
+retry_after_sec = min(retry_after, timedelta(minutes=60))
+```
+
+<details class="code-details" markdown="1">
+<summary>Full implementation: extracting sleep time from various headers</summary>
 
 ```python
 import logging
@@ -361,7 +380,7 @@ logger = logging.getLogger(__name__)
 class RateLimitAdapter(HTTPAdapter):
     DEFAULT_429_SLEEP_SEC = 5
     MAX_RETRY_AFTER = timedelta(minutes=60).total_seconds()
-    
+
     ...
     def _extract_sleep_time(self, response: Response) -> int | None:
         headers = response.headers
@@ -384,13 +403,15 @@ class RateLimitAdapter(HTTPAdapter):
         retry_after_sec = min(retry_after_sec, self.MAX_RETRY_AFTER)
         if retry_after_sec > 0:
             return retry_after_sec
-            
+
         logger.warning(
-            f"The {retry_after_sec=}, the value must be >0 ." 
+            f"The {retry_after_sec=}, the value must be >0 ."
             "Will not save to Redis.",
             extra={...}
         )
 ```
+
+</details>
 
 ## How to store an HTTP response in Redis
 
@@ -398,8 +419,21 @@ We can't store the `requests.Response` directly in Redis, we need to serialize i
 
 At the time I chose to use `marshmallow` for the serialization and deserialization.
 
-There is 1 important thing about the deserialization: we want to return a `requests.Response` object. Because that is what all the callers expect. We want the response from `redis.get()` to match the response from `requests.send()`, so that the calling code doesn't have to make any adjustments to our change. 
+There is 1 important thing about the deserialization: we want to return a `requests.Response` object. Because that is what all the callers expect. We want the response from `redis.get()` to match the response from `requests.send()`, so that the calling code doesn't have to make any adjustments to our change.
 
+```python
+# Dump requests.Response into a dict via ResponseSchema
+serialized_response = ResponseSchema().dumps(response)
+# Store with TTL = retry_after seconds
+redis.setex(key, retry_after_sec, serialized_response)
+
+# Retrieve and deserialize back to requests.Response 
+# with custom DeserializedResponse class
+response: Response = ResponseSchema().loads(redis.get(key))
+```
+
+<details class="code-details" markdown="1">
+<summary>Full implementation: serializing and deserializing HTTP responses</summary>
 
 ```python
 import logging
@@ -409,14 +443,32 @@ from marshmallow import post_load
 from requests.adapters import HTTPAdapter
 from requests.models import Response
 from requests.models import PreparedRequest
-from requests.utils import CaseInsensitiveDict
 
 logger = logging.getLogger(__name__)
 
 
+class DeserializedResponse(Response):
+    def __repr__(self):
+        return "<%s [%s]>" % (self.__class__.__name__, self.status_code)
+    
+class ResponseSchema(Schema):
+    status_code = fields.Int()
+    encoding = fields.Str()
+    reason = fields.Str(allow_none=True)
+
+    @post_load
+    def make_response_obj(self, data, **kwargs) -> DeserializedResponse:
+        response = DeserializedResponse()
+        response._content = b""  # We don't care what the content was
+        response.status_code = data["status_code"]
+        response.encoding = data["encoding"]
+        response.reason = data["reason"] or ""
+        return response
+
+
 class RateLimitAdapter(HTTPAdapter):
     ...
-    def _store_response(self, response: Response, key: str,retry_after_sec: int) -> bool:
+    def _store_response(self, response: Response, key: str, retry_after_sec: int) -> bool:
         # Before we write to Redis, we need to serialize
         try:
             serialized_response = ResponseSchema().dumps(response)
@@ -431,11 +483,11 @@ class RateLimitAdapter(HTTPAdapter):
             )
             return False
         return True
-    
+
     def _deserialize_redis_response(self, key: str, request: PreparedRequest) -> Response:
         # We want to deserialize the redis data right back into a requests.Response obj
         response_data: bytes = redis.get(key)
-        
+
         try:
             response: Response = ResponseSchema().loads(response_data)
         except Exception:
@@ -452,27 +504,9 @@ class RateLimitAdapter(HTTPAdapter):
         response.request = request
         response.url = request.url
         return response
-
-
-class ResponseSchema(Schema):
-    status_code = fields.Int()
-    encoding = fields.Str()
-    reason = fields.Str(allow_none=True)
-
-    @post_load
-    def make_response_obj(self, data, **kwargs) -> DeserializedResponse:
-        response = DeserializedResponse()
-        response._content = b""  # We don't care what the content was
-        response.status_code = data["status_code"]
-        response.encoding = data["encoding"]
-        response.reason = data["reason"] or ""
-        return response
-
-
-class DeserializedResponse(Response):
-    def __repr__(self):
-        return "<%s [%s]>" % (self.__class__.__name__, self.status_code)
 ```
+
+</details>
 
 
 ## Conclusion 
