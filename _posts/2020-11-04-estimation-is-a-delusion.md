@@ -1,7 +1,6 @@
 ---
 title: Software estimation is a delusion
 tags: ["Engineering Research"]
-excerpt_separator: <!--more-->
 biblio:
   - title: "N. Fenton: Software measurement: a necessary scientific basis, 1994"
     link: "https://www.ipd.kit.edu/mitarbeiter/padberg/lehre/sqs07/FentonTSE1994.pdf"
@@ -47,7 +46,6 @@ I know this is not the consensus among developers. Estimation is generally thoug
 
 Research corroborates my personal experience, namely that developers are horrendous at estimating the required effort for software changes.
 
-<!--more-->
 
 The unfortunate truth is that **predictions of future effort are always based on the amounts of past effort**.
 

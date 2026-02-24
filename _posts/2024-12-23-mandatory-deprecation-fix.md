@@ -1,7 +1,6 @@
 ---
 title: "How to <i><s>force</s></i> encourage developers to fix Python warnings for deprecated features"
 tags: ["Opinion", "People", "Code Patterns"]
-excerpt_separator: <!--more-->
 biblio: 
   - link: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
     title: "Pytest: How to capture warnings"
@@ -19,7 +18,6 @@ In the perfect world, we are a community and we all keep the libs upgraded to th
 
 Wrong! Devs need to be *softly* pushed to do the right thing. Yes, *softly*, so they don't notice they are being pushed 😉🚧🚧🚧.
 
-<!--more-->
 
 ## Step 1: First we need to listen to deprecation warnings
 

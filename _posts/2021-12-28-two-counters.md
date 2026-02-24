@@ -1,7 +1,6 @@
 ---
 title: "Programming patterns: 2 counters in a loop"
 tags: ["Code Patterns", "Algorithms"]
-excerpt_separator: <!--more-->
 biblio:
 ---
 
@@ -11,7 +10,7 @@ For example: I want to know which bird sings first every morning after sunrise. 
 
 {% include image.html alt="" src="2_counters.jpg" %}
 
- <!--more-->
+ 
 
 
 ## A 2-level loop will always work (but it will be the slowest)

@@ -1,7 +1,6 @@
 ---
 series: Self-Documenting Code
 title: "Concept 1: <code>assert</code> finds its calling"
-excerpt_separator: <!--more-->
 biblio:
   - title: "Python: The assert statement"
     link: https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement
@@ -23,7 +22,6 @@ As the silly but melodious adage goes: Trust is good, control is better.
 ![How to document with asserts](/assets/docs/assert-truth.png)
 
 
-<!--more-->
 
 ## 💡 Concept 1: Assert finally finds its calling
 

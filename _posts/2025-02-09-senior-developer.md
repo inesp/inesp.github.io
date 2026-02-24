@@ -1,6 +1,5 @@
 ---
 title: "What is the most sought-after trait of a developer?"
-excerpt_separator: <!--more-->
 biblio:
 tags: ["Opinion", "People"] 
 ---
@@ -13,7 +12,6 @@ It's **delivering** (really emphasis on delivering) results of **high-enough qua
 
 Ok, so how does one reach this?
 
-<!--more-->
 
 
 ## Does such a simple thing even need explaining?

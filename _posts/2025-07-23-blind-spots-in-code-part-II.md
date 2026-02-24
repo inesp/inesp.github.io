@@ -39,7 +39,6 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 
 {% include image.html alt="Cognitive biases" src="bias/confirm.png" ref="https://www.pexels.com/photo/worms-eye-view-of-spiral-stained-glass-decors-through-the-roof-161154/" %}
 
-<!--more-->
 
 ## Previous chapter
 

@@ -1,7 +1,6 @@
 ---
 title: "The Interview Process isn't broken, it is intolerant by design"
 tags: ["People", "Opinion", "Engineering Research"]
-excerpt_separator: <!--more-->
 biblio:
   - title: "Google Guide: Train your interviewers"
     link: https://rework.withgoogle.com/guides/hiring-train-your-interviewers/steps/make-interviewing-everyones-job/
@@ -35,7 +34,6 @@ The answer is simple: **it produces "proper" IT teams**. It does not create grea
 
 We are mostly concerned with copy-pasting what we consciously or subconsciously believe is a good IT team: young, white, male, dressed in hoodies, socially awkward, having gone to the same universities we went to, having the same beer preferences we have, have had the same life experiences that we had, ... .
 
-<!--more-->
 
 ## Why do many claim the interview process is broken?
 

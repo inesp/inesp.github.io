@@ -1,7 +1,6 @@
 ---
 title: How I use Thesaurus's Synonyms to write better (i.e. advance my articulation)
 tags: ["People", "Technical Writing"]
-excerpt_separator: <!--more-->
 biblio:
   -  title: "Thesaurus"
      link: "https://www.thesaurus.com/"
@@ -13,7 +12,6 @@ In those moments I turn to Thesaurus's life-saving (read: face-saving) [online s
 
 [![Synonyms' dictionary](/assets/Synonims-thesaurus.png)](https://www.thesaurus.com/browse/good){:target="_blank"}
 
-<!--more-->
 
 Let's look at some examples.
 

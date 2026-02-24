@@ -1,7 +1,6 @@
 ---
 title: "A couple of HTTP headers that devs don't seem to know about"
 tags: ["Networking"]
-excerpt_separator: <!--more-->
 biblio:
   - title: "MDN Web Docs: HTTP headers"
     link: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers"
@@ -19,7 +18,6 @@ But, ... fact is, for a web developer, which many, many of us are, not having so
 
 ![HTTP header](/assets/HTTP-header.jpg)
 
-<!--more-->
 
 
 ## What are HTTP headers anyway

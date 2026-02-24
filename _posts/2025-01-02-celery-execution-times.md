@@ -2,7 +2,6 @@
 series: Building Blocks Collection
 title: "How do I measure the execution time of Celery tasks?"
 tags: ["Building Blocks Collection", "Celery"]
-excerpt_separator: <!--more-->
 biblio:
   - link: https://www.netdata.cloud/blog/introduction-to-statsd/#:~:text=StatsD%20is%20an%20industry%2Dstandard,to%20a%20central%20statsD%20server.
     title: "Netdata: Introduction to StatsD"
@@ -21,7 +20,6 @@ The reason both are important is: **that our real motivation is understanding wh
 
 ![Celery signals](/assets/celery-signals.png)
 
-<!--more-->
 
 We trigger a task, we want to know when that job is done and when to expect the results.
 

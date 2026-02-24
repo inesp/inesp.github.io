@@ -1,7 +1,6 @@
 ---
 title: "Quick and easy: Add Postgres advisory locks to your Python code"
 tags: ["Database", "Code Patterns"]
-excerpt_separator: <!--more-->
 biblio: 
   - title: PostgreSQL's Advisory Locks
     link: https://www.postgresql.org/docs/17/explicit-locking.html#ADVISORY-LOCKS
@@ -18,7 +17,6 @@ The "can" is in italics (and underscored, to really make it stand out), because 
 This means the locks are only as good as you are 😉.
 
 
-<!--more-->
 
 
 **Does PG care about it?** No. Not at all. Not even a tiny bit. 
@@ -41,7 +39,6 @@ These locks can only be set. They live until the **transaction** is committed or
 Hint: use them only inside transactions. Makes it safer. DB transactions are short lived and have a very clear beginning and end inside Python code, so it's easy to know when the lock will be released.
 
 
-<!--more-->
 
 ## Use case example
 

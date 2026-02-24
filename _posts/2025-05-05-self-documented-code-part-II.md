@@ -1,7 +1,6 @@
 ---
 series: Self-Documenting Code
 title: "Concept 2: Error msgs with calls to action"
-excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]
 ---
 
@@ -11,7 +10,6 @@ Self-documenting code blocks are like **friendly tripping wire** or an alert for
 
 ![Communicate via error messages](/assets/docs/errors-and-msgs.png)
 
-<!--more-->
 
 ## Previous chapter
 ⏮️ [Self-Documenting Code Concept 1: `assert` finds its calling]({% post_url 2025-04-17-how-to-make-code-self-document-itself %})

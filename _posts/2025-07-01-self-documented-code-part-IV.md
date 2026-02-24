@@ -1,7 +1,6 @@
 ---
 series: Self-Documenting Code
 title: "Concept 4: Embrace Copy-Paste"
-excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]
 ---
 
@@ -19,7 +18,6 @@ And we should take advantage of this behavior 😎.
 
 ![Self-Documenting Code Concept 4: Embrace Copy-Paste - Set the Trap](/assets/docs/copy-paste.jpg)
 
-<!--more-->
 
 ## Previous chapter
 ⏮️ [Self-Documenting Code Concept 3: Abstract functions and code patterns]({% post_url 2025-05-09-self-documented-code-part-III %})

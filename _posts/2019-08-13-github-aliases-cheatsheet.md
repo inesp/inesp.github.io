@@ -1,7 +1,6 @@
 ---
 title: "Git cheat-sheet: Aliases"
 tags: ["Git", "Tools"]
-excerpt_separator: <!--more-->
 biblio:
   - title: "StackOverflow: Pretty git branch graphs"
     link: "https://stackoverflow.com/questions/1057564/pretty-git-branch-graphs?page=1&tab=votes#tab-top"
@@ -13,7 +12,6 @@ As much as I fancy looking like a TV hacker, I still decided to change the essay
 
 ![Git aliases](/assets/git-alias.png)
 
-<!--more-->
 
 #### Level 1 aliases
 

@@ -40,7 +40,6 @@ Our biases are holding us all back. But it needn't be this way.
 
 {% include image.html alt="Anchoring" src="bias/anchor.jpg" ref="https://www.pexels.com/photo/freediver-ascending-in-blue-underwater-cave-33042384/" %}
 
-<!--more-->
 
 
 ## Biases are good

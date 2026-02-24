@@ -1,7 +1,6 @@
 ---
 series: Building Blocks Collection
 title: "What to do when a DB transaction fails? Retry it ♻️"
-excerpt_separator: <!--more-->
 biblio:
 tags: ["Building Blocks Collection", "Database", "Code Patterns"]
 ---
@@ -20,7 +19,6 @@ There are actually **at least 4 possible second steps**:
 
 ![transaction retry](/assets/transaction-start.png)
 
-<!--more-->
 
 ## Most code just gives up
 

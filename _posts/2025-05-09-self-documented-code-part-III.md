@@ -1,7 +1,6 @@
 ---
 series: Self-Documenting Code
 title: "Concept 3: Abstract functions and code patterns"
-excerpt_separator: <!--more-->
 tags: ["Self-Documenting Code"]
 ---
 
@@ -13,7 +12,6 @@ Code patterns are documentation, they are the boilerplate. They let you concentr
 
 ![Abstracts or generics](/assets/docs/abstract-or-generic.png)
 
-<!--more-->
 
 ## Previous chapter
 ⏮️ [Self-Documenting Code Idea 2: Error msgs with calls to action]({% post_url 2025-05-05-self-documented-code-part-II %})

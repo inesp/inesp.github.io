@@ -1,6 +1,5 @@
 ---
 title: "Why do Developers Argue so Much? Code Hard, Argue Harder"
-excerpt_separator: <!--more-->
 biblio:
   - title: Moussaïd M, Kämmer JE, Analytis PP, Neth H., Social Influence and the Collective Dynamics of Opinion Formation, 2013
     link: https://pmc.ncbi.nlm.nih.gov/articles/PMC3818331/
@@ -11,7 +10,6 @@ So, have you also noticed that developers have a certain ... _fondness_ for argu
 
 If you haven't, I can assure you other people have, because they are selling t-shirts like this:
 
-<!--more-->
 
 
 {% include image.html alt="Etsy" src="debate/etsy-software-dev.jpg" ref="https://www.etsy.com/listing/1016820004/software-developer-t-shirt-funny" class="w-65" %}
