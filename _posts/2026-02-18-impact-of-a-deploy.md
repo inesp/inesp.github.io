@@ -472,7 +472,7 @@ So, if I removed detected outliers, but the noisiness of the remaining time seri
 
 ## Interpreting the KDE: Which Peaks Are Outliers?
 
-Once we have the KDE curve, we need to decide which peaks represent normal data and which represent outliers. This is a multi-step classification:
+Once we have the KDE curve, we need to decide **which peaks represent normal data and which represent outliers**. This is a multi-step classification:
 
 **Step 1: Find the tallest peak**
 
@@ -506,7 +506,7 @@ After classification, any data points that fall under `OUTLIER` peaks are remove
 
 ## Removing minor outliers with DBSCAN
 
-After KDE has removed all major clusters of outliers, we call DBSCAN to remove the individual outliers, outliers that are isolated from other data points.
+After KDE has removed all major clusters of outliers, **we call DBSCAN to remove the individual outliers**, outliers that are isolated from other data points.
 
 ## DBSCAN stands for Density-based spatial clustering of applications with noise
 
@@ -554,7 +554,7 @@ The DBSCAN algorithm needs just two parameters:
 
 If `min_samples = 5`, a point needs at least 5 neighbors within `eps` distance.
 
-I set `min_samples` to `12`. I experimented with a variable value, a value that increases as the number of data points increases, but it made no difference. So, I left the value at `12` and moved on. 
+I set `min_samples` to **`12`**. I experimented with a variable value, a value that increases as the number of data points increases, but it made no difference. So, I left the value at `12` and moved on. 
 
 
 <details markdown="1" class="rabbit-hole">
@@ -586,7 +586,7 @@ Once `eps` is chosen, we run DBSCAN on our data.
 
 Just as with KDE, there are built-in safety features. We check how much data was removed (identified as outliers) and what the noisiness of the remaining data is. 
 
-If more than 10% of data points are marked as outliers, we reject the result. 10% might seem little, but 10% of 1 day is 2.4 hours. If the metric spikes for 2.4 hours every day, then that is part of the normal pattern for this metric. 
+**If more than 10% of data points are marked as outliers, we reject the result.** 10% might seem little, but 10% of 1 day is 2.4 hours. If the metric spikes for 2.4 hours every day, then that is part of the normal pattern for this metric. 
 
 If the noisiness fell too far down, we also reject the result.
 
@@ -652,7 +652,7 @@ We repeat this check up to 3 times, pushing the border higher until at most 0.3%
 
 **The Unhealthy Border**
 
-For the unhealthy border I kinda cheated. I just set it **at the same distance from `AILING` as `AILING` is from the mean**.
+For the unhealthy border I kinda cheated. **I just set it at the same distance from `AILING` as `AILING` is from the mean.**
 
 ```python
 ailing_distance = ailing_border - mean
@@ -674,7 +674,7 @@ For these metrics, the logic is just flipped:
 
 ## Putting It All Together
 
-What we've built is a **self-tuning anomaly detection system**. Instead of asking you, the user, to choose thresholds, it trains itself to recognize `HEALTHY`. It also has the power to adapt. When your metric changes, because your traffic has changed or your system has changed, the algorithm calibrates new values for thresholds. 
+What we've built is a **self-tuning anomaly detection system**. Instead of asking you, the user, to choose thresholds, **it trains itself to figure out what is `HEALTHY`**. It also has the power to adapt. When your metric changes, because your traffic has changed or your system has changed, the algorithm calibrates new values for thresholds. 
 
 1. **Collect** metric values every 2 minutes
 2. **Check if the median is pervasive**
@@ -685,7 +685,7 @@ What we've built is a **self-tuning anomaly detection system**. Instead of askin
 
 ![full-pipeline](/assets/impacts/full-pipeline.svg)
 
-The whole analysis runs in milliseconds. We cache the borders in Redis so we don't recalculate them for every single metric value. The cache expires after 1 hour, ensuring the system adapts to changing patterns.
+**The whole analysis runs in milliseconds.** We cache the borders in Redis so we don't recalculate them for every single metric value. The cache expires after 1 hour, ensuring the algorithm adapts to changing patterns.
 
 ## Real world examples of results
 
