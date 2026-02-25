@@ -5,4 +5,4 @@ up-prod:
 	bundle exec jekyll serve
 
 upgrade:
-	bundle update --all
+	bundle update

@@ -7,3 +7,5 @@ _layouts/**/*.swp
 _includes/**/*.swp
 assets/**/*.swp
 .idea
+.bundle
+vendor
