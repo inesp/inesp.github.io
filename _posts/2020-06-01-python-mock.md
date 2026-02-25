@@ -1,6 +1,6 @@
 ---
 title: Cheat Sheet of Python Mock
-tags: ["Code Patterns", "Python"]
+tags: ["Code Patterns"]
 biblio:
   - title: "Python docs: mock object library"
     link: "https://docs.python.org/3/library/unittest.mock.html"
@@ -8,7 +8,7 @@ biblio:
 
 I always wanted to have this. The cool part of me wanted _me_ to be the one who writes it, the pragmatic part just wanted to have access to a list like this, and the hedonistic part kept whispering that surely there are greater joys in life than documenting the `mock` library... no matter how magnificent the result might eventually become.
 
-But here I am, some years later, in the wrath of the epidemic lockdown, re-running Python tests in an infinite loop until I figure out **which nobs and settings of this `mock` library I have to turn and set to get it to mock the damn remote calls**.
+But here I am, some years later, in the wrath of the epidemic lockdown, re-running Python tests in an infinite loop until I figure out **which knobs and settings of this `mock` library I have to turn and set to get it to mock the damn remote calls**.
 
 So I finally gave in and wrote this down. **This is the list I wish I had.**
 
@@ -43,7 +43,7 @@ book.title  # -> <Mock name='mock.title' id='...'>
 
 **Code: `book.author.first_name`**
 
-A property or a property is straightforward: 
+A property of a property is straightforward: 
 
 ```python
 book = Mock(author=Mock(first_name="Tatjana"))
@@ -130,7 +130,7 @@ book.data["reviews"].__len__.return_value = 120
 
 **Code: `book.get_review(type="oldest").reviewer.get("name", "unknown")`**
 
-The arguments of function calls aren't relevant for Mock by default. If you need them to be relevant, then what you are looking for are `side_effects` and I tlak about them further down.
+The arguments of function calls aren't relevant for Mock by default. If you need them to be relevant, then what you are looking for are `side_effects` and I talk about them further down.
 
 ```python
 book = Mock()
@@ -182,7 +182,7 @@ The mock literally tells you how to configure it.
 
 ## Making mocks stricter with `spec`
 
-By default, `Mock` returns a value for every call, every attribute, every method, even a typo. This is convenient most of the time, but sometimes you want to test code that a specific property does NOT exist. What does one do then?
+By default, `Mock` returns a value for every call, every attribute, every method, even a typo. This is convenient most of the time, but sometimes you want to test that a specific property does NOT exist. What does one do then?
 
 Introducing the `spec` parameter. `spec` restricts the mock to only allow attributes that exist on a real class or that you manually list.
 
@@ -199,7 +199,7 @@ mock_book.titl   # -> AttributeError! (not on Book)
 
 Now your mock fails fast when you access something that doesn't exist.
 
-Spec can be defined with a class, or it's instance:
+Spec can be defined with a class, or its instance:
 
 ```python
 mock_book = Mock(spec=Book("", ""))
@@ -229,9 +229,12 @@ mock_item = Mock(spec=["summary"], summary="A criminal story")
 hasattr(mock_item, "get_full_title")  # -> false
 # -> "A criminal story"
 ```
+
+When we call it with `spec` that includes `get_full_title`:
 ```python
-mock_item = Mock()
+mock_item = Mock(spec=["get_full_title"])
 mock_item.get_full_title.return_value = "My title"
+hasattr(mock_item, "get_full_title")  # -> true
 # -> "My title"
 ```
 
@@ -250,9 +253,11 @@ Say you're testing pagination logic that calls an API multiple times:
 def fetch_all_channels() -> list[str]:
     all_channels = []
     cursor = None
-    while has_pages:
+    while True:
         channels, cursor = fetch_page(cursor)
         all_channels.extend(channels)
+        if cursor is None:
+            break
     return all_channels
 ```
 
@@ -353,7 +358,7 @@ mock_func.assert_called_once()  # -> AssertionError!
 mock_func.assert_called_with(200, name="Evgenij")
 
 # Was it called with these args at ANY point?
-mock_func.assert_any_call(100, name="Alice")
+mock_func.assert_any_call(100, name="Natalia")
 ```
 
 ### When we want to make sure nothing happened
@@ -407,7 +412,7 @@ mock_func.assert_not_called()
 
 ## Patching: mocking things you can't reach
 
-Until now, we've been creating `Mock` objects directly, which is fine when you control the object you're passing in. But in real code, you often need to mock something that's imported deep inside the module you're testing, something you can't really acces and thus can't really pass in as an argument.
+Until now, we've been creating `Mock` objects directly, which is fine when you control the object you're passing in. But in real code, you often need to mock something that's imported deep inside the module you're testing, something you can't really access and thus can't really pass in as an argument.
 
 `patch` lets you replace an object at a specific import path.
 
@@ -578,7 +583,7 @@ def test_with_more_retries():
     ...
 ```
 
-Note: when using `new` no `mock_obj` passed into the test function. 
+Note: when using `new` no `mock_obj` is passed into the test function. 
 
 
 ## Quick reference
