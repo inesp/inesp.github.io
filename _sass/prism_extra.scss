@@ -1,5 +1,7 @@
 // Prism.js code block overrides
 
+@import "colors";
+
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: "Fira Code", "Consolas", "Monaco", monospace;
@@ -11,4 +13,17 @@ pre[class*="language-"] {
 // Inline code
 code:not([class*="language-"]) {
   text-shadow: none;
+}
+
+// comments in code
+code .token.comment{
+  color: $color-yellow-dark;
+}
+
+/** CODE ***/
+pre {
+  margin-bottom: $standard-margin !important;
+}
+pre:has(+ pre) {
+  margin-bottom: 0.1 * $standard-margin !important;
 }

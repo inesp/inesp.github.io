@@ -1,0 +1,41 @@
+<svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- slack_lib box (where it's defined) -->
+  <text x="125" y="18" text-anchor="middle" font-size="10" fill="#6c757d" font-weight="bold">WHERE IT'S DEFINED</text>
+  <rect x="20" y="25" width="200" height="75" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="125" y="45" text-anchor="middle" font-size="10" fill="#6c757d">slack_lib/api.py</text>
+  <text x="75" y="65" text-anchor="start" font-size="9" fill="#212529">def send_message(...):</text>
+  <text x="95" y="80" text-anchor="start" font-size="9" fill="#6c757d">...</text>
+
+  <!-- services box (where it's used) -->
+  <text x="350" y="18" text-anchor="middle" font-size="10" fill="#da4ada" font-weight="bold">WHERE IT'S USED</text>
+  <rect x="240" y="25" width="220" height="75" rx="4" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5"/>
+  <text x="350" y="45" text-anchor="middle" font-size="10" fill="#6c757d">my_app/services.py</text>
+  <text x="270" y="65" text-anchor="start" font-size="9" fill="#212529">from slack_lib.api import send_message</text>
+  <text x="270" y="80" text-anchor="start" font-size="9" fill="#212529">send_message(user, "Hi")</text>
+
+  <!-- Arrow -->
+  <path d="M 220 62 L 240 62" stroke="#6c757d" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#6c757d"/>
+    </marker>
+  </defs>
+
+  <!-- Wrong patch -->
+  <text x="120" y="118" text-anchor="middle" font-size="10" fill="#fd456f" font-weight="bold">WRONG</text>
+  <rect x="20" y="125" width="200" height="45" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="120" y="145" text-anchor="middle" font-size="9" fill="#212529">@patch("slack_lib.api.send_message")</text>
+  <text x="120" y="160" text-anchor="middle" font-size="8" fill="#fd456f">Patches original, won't work!</text>
+
+  <!-- Right patch -->
+  <text x="355" y="118" text-anchor="middle" font-size="10" fill="#28a745" font-weight="bold">CORRECT</text>
+  <rect x="240" y="125" width="220" height="45" rx="4" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="350" y="145" text-anchor="middle" font-size="9" fill="#212529">@patch("my_app.services.send_message")</text>
+  <text x="350" y="160" text-anchor="middle" font-size="8" fill="#28a745">Patches where it's looked up!</text>
+
+  <!-- Summary -->
+  <text x="240" y="195" text-anchor="middle" font-size="10" font-weight="bold" fill="#212529">Target = [module that imports it].[name after import]</text>
+</svg>
