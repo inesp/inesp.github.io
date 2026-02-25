@@ -5,18 +5,20 @@ permalink: /about/
 css: about
 ---
 
-Hi, I’m Ines Panker. I'm a software engineer and Python consultant helping teams bring clarity to complex systems.
+Hi, I'm Ines Panker. I'm a software engineer by trade and an explorer at heart.
 
-My work spans architecture, backend development, and guiding teams through technical decisions. I began with **Java**, spent time in the world of PHP, and eventually focused my practice on **Python**, which has been at the centre of my work for several years now.
+If you're reading this, you probably clicked through from a blog post and wondered who's behind it. (Or you're a conference organizer vetting whether I'm a real person: _hi! I am real :-)_.)
+
+I've been building software **for almost two decades**: writing code, shaping architecture, and leading teams. I started my journey with **Java**, surfed the PHP wave, and for the past decade, **Python** has been my weapon of choice.
 
 <div class="colorful"></div>
 
-I’m particularly interested in **simplifying complexity**: **improving existing codebases, clarifying system structure, and finding practical, maintainable solutions** to problems that have grown unwieldy over time. 
+I'm particularly interested in **simplifying complexity**, in improving existing codebases, clarifying system structure, finding practical solutions to problems that have grown unwieldy over time. 
 
-To me, great software systems are like well-designed cities: thoughtfully planned, easy to navigate, and built to scale gracefully. The key is building solid **foundations** and to focus on what genuinely matters to the people using and maintaining the system.
+To me, great software systems are like well-designed cities: thoughtfully planned, easy to navigate, and built to scale gracefully. The key is building solid **foundations** and focusing on what genuinely matters to the people using and maintaining the system.
 
 I’m also drawn to the **human side** of software. Software reflects the people who build it, those who use it, and the society it exists in. I try to explore how technical decisions and human dynamics influence each other.
 
 In my talks and writing, I aim to make complex ideas clear and relevant, blending technical insight with a focus on the people around the code.
 
-If you’re working with Python and need support with architecture, refactoring, or making sense of complexity, I’m available for consulting and short-term collaborations.
+If you're working with Python and need another pair of eyes on architecture or a tangled codebase, I do consulting too.
