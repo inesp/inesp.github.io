@@ -8,6 +8,7 @@
   details_link: https://2026.pycon.it/en/event/stop-asking-me-how-long-it-will-take
   video_link:
   slides_link:
+  post_slug: estimation-is-a-delusion
 
 - conf: Codemotion Roma 2026
   link: https://conferences.codemotion.com/roma/
@@ -19,6 +20,7 @@
   details_link:
   video_link:
   slides_link:
+  post_slug: estimation-is-a-delusion
 
 - conf: J-Fall 2025
   link: https://jfall.nl/
@@ -29,6 +31,7 @@
   details_link: https://jfall.nl/timetable-2025/
   video_link: https://www.youtube.com/watch?v=Kt9rddAR9YI
   slides_link: https://speakerdeck.com/inesp/your-brain-is-sabotaging-your-code-but-we-can-outsmart-it
+  series: Cognitive Biases in Code
 
 - conf: Swiss Python Summit 2025
   link: https://www.python-summit.ch/
@@ -39,6 +42,7 @@
   video_link: https://media.ccc.de/v/sps25-56448-software-estimation-false-se
   details_link: https://www.python-summit.ch/program/
   slides_link: https://speakerdeck.com/inesp/software-estimation-false-sense-of-certainty
+  post_slug: estimation-is-a-delusion
 
 - conf: Voxxed Days Luxembourg 2025
   link: https://luxembourg.voxxeddays.com/en/
@@ -49,6 +53,7 @@
   video_link: https://www.youtube.com/watch?v=B-4ega2uwEM
   details_link: https://mobile.devoxx.com/events/voxxedlu2025/talks/3575/details
   slides_link: https://speakerdeck.com/inesp/software-estimation-take-a-wild-guess-but-make-it-official
+  post_slug: estimation-is-a-delusion
 
 - conf: PyCon Austria 2025
   link: https://pycon.pyug.at/en/
@@ -59,12 +64,14 @@
   video_link:
   details_link: https://2025.pycon.at/talks/software-estimation-is-a-delusion-or-is-it-just-a-misused-tool/
   slides_link: https://speakerdeck.com/inesp/software-estimation-is-a-delusion
+  post_slug: estimation-is-a-delusion
 
 - date: Mar 2025
   conf: Meetup of Meetups
   flag: 🇸🇮
   location: Ljubljana, Slovenia
   title: Why do developers like to argue so much?
+  post_slug: disagreeing-devs
 
 - date: Sep 2019
   conf: Python Meetup Ljubljana
