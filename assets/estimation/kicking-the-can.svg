@@ -1,0 +1,61 @@
+<svg viewBox="0 0 500 130" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="130" fill="#fff"/>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#6c757d"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="250" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Kicking the can down the road</text>
+
+  <!-- Box 1: Deadline -->
+  <rect x="10" y="35" width="80" height="38" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="50" y="50" text-anchor="middle" font-size="8" fill="#212529">Estimate</text>
+  <text x="50" y="63" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Deadline</text>
+
+  <!-- Arrow -->
+  <line x1="90" y1="54" x2="105" y2="54" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: LOC -->
+  <rect x="110" y="35" width="80" height="38" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="150" y="50" text-anchor="middle" font-size="8" fill="#212529">Need to know</text>
+  <text x="150" y="63" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">LOC</text>
+
+  <!-- Arrow -->
+  <line x1="190" y1="54" x2="205" y2="54" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: Function Points -->
+  <rect x="210" y="35" width="80" height="38" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="250" y="50" text-anchor="middle" font-size="8" fill="#212529">Need to know</text>
+  <text x="250" y="63" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Func. Points</text>
+
+  <!-- Arrow -->
+  <line x1="290" y1="54" x2="305" y2="54" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 4: Word counts -->
+  <rect x="310" y="35" width="80" height="38" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="350" y="50" text-anchor="middle" font-size="8" fill="#212529">Need to know</text>
+  <text x="350" y="63" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Word counts</text>
+
+  <!-- Arrow -->
+  <line x1="390" y1="54" x2="405" y2="54" stroke="#6c757d" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 5: ... -->
+  <rect x="410" y="35" width="80" height="38" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="450" y="50" text-anchor="middle" font-size="8" fill="#212529">Need to know</text>
+  <text x="450" y="63" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">...</text>
+
+  <!-- Labels underneath -->
+  <text x="50" y="88" text-anchor="middle" font-size="8" fill="#fd456f" font-style="italic">don't know</text>
+  <text x="150" y="88" text-anchor="middle" font-size="8" fill="#fd456f" font-style="italic">don't know</text>
+  <text x="250" y="88" text-anchor="middle" font-size="8" fill="#fd456f" font-style="italic">don't know</text>
+  <text x="350" y="88" text-anchor="middle" font-size="8" fill="#fd456f" font-style="italic">don't know</text>
+  <text x="450" y="88" text-anchor="middle" font-size="8" fill="#fd456f" font-style="italic">don't know</text>
+
+  <!-- Subtitle -->
+  <text x="250" y="115" text-anchor="middle" font-size="9" fill="#6c757d" font-style="italic">Replacing one guess with another...</text>
+</svg>

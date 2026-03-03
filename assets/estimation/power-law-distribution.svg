@@ -1,0 +1,64 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+    </marker>
+  </defs>
+
+  <!-- Axes -->
+  <line x1="80" y1="230" x2="580" y2="230" stroke="#495057" stroke-width="1.5" marker-end="url(#a rrowhead)"/>
+  <line x1="80" y1="230" x2="80" y2="25" stroke="#495057" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Axis labels -->
+  <text x="340" y="275" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#212529">Cost escalation →</text>
+  <text x="18" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#212529" transform="rotate(-90, 18, 130)">Probability →</text>
+
+  <!-- X-axis markers -->
+  <line x1="80" y1="230" x2="80" y2="235" stroke="#495057" stroke-width="1"/>
+  <line x1="180" y1="230" x2="180" y2="235" stroke="#495057" stroke-width="1"/>
+  <line x1="280" y1="230" x2="280" y2="235" stroke="#495057" stroke-width="1"/>
+  <line x1="380" y1="230" x2="380" y2="235" stroke="#495057" stroke-width="1"/>
+  <line x1="480" y1="230" x2="480" y2="235" stroke="#495057" stroke-width="1"/>
+
+  <text x="80" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">0%</text>
+  <text x="180" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">50%</text>
+  <text x="280" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">100%</text>
+  <text x="380" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">200%</text>
+  <text x="480" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">400%</text>
+  <text x="550" y="250" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">...</text>
+
+  <!-- Normal distribution (green) - centered at 0%, drops to ~zero quickly -->
+  <path d="M 80 50
+           C 95 55, 110 100, 130 160
+           C 150 200, 170 220, 200 227
+           C 230 229, 260 229, 280 229"
+        fill="none" stroke="#28a745" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Power-law distribution (red) - also peaks near 0%, but long tail -->
+  <path d="M 80 50
+           C 95 55, 110 100, 130 150
+           C 160 190, 200 210, 250 220
+           C 320 225, 400 227, 480 228
+           C 530 228.5, 560 228.5, 575 228.5"
+        fill="none" stroke="#ff0040" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Legend box -->
+  <rect x="360" y="45" width="185" height="70" fill="#fff" stroke="#dadada" stroke-width="1" rx="4"/>
+
+  <line x1="375" y1="70" x2="415" y2="70" stroke="#28a745" stroke-width="3" stroke-linecap="round"/>
+  <text x="425" y="74" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#212529">Normal distribution</text>
+
+  <line x1="375" y1="95" x2="415" y2="95" stroke="#ff0040" stroke-width="3" stroke-linecap="round"/>
+  <text x="425" y="99" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#212529">Power-law distribution</text>
+
+  <!-- Annotation for the tail difference -->
+  <text x="420" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ff0040" font-style="italic">extreme events</text>
+  <text x="420" y="188" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ff0040" font-style="italic">keep happening</text>
+  <path d="M 410 180 C 380 195, 360 215, 350 225" fill="none" stroke="#ff0040" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Annotation showing normal drops to zero -->
+  <text x="250" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#28a745" font-style="italic">drops to ~zero</text>
+  <path d="M 265 160 C 270 185, 275 210, 278 225" fill="none" stroke="#28a745" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>
