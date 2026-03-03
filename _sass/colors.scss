@@ -17,11 +17,13 @@ $color-purple: #da4ada;
 $color-purple-light: #ffeaff;
 $color-green: #4a9c6d;
 $color-green-light: #e0f2e7;
+$color-green-dark: darken($color-green, 15%);
 $color-green-vivid: #28a745;
 $color-green-mint: #d4edda;
 $color-text: #212529;
 $color-badge-text: #5c5200;
 
+$quarter-standard-margin: 0.5rem;
 $half-standard-margin: 1rem;
 $standard-margin: 2rem;
 $standard-radius: 6px;

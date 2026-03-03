@@ -22,19 +22,47 @@ fluid: true
   </thead>
   <tbody>
     {%- for talk in talks_info -%}
+      {%- comment -%} Find related post by slug or series {%- endcomment -%}
+      {%- assign related_post = nil -%}
+      {%- assign related_post_label = nil -%}
+      {%- if talk.post_slug -%}
+        {%- for post in site.posts -%}
+          {%- if post.slug == talk.post_slug -%}
+            {%- assign related_post = post -%}
+            {%- assign related_post_label = "Read the related post" -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+
       <tr{% if talk.coming_soon %} class="coming-soon"{% endif %}>
         <td>{% if talk.coming_soon %}<span title="coming soon">⏳</span> {% endif %}{{ talk.date }}</td>
         <td class="talk-conf">{%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}</td>
         <td>{{ talk.flag }}</td>
         <td>{{ talk.location }}</td>
-        <td class="talk-title">{{ talk.title }}</td>
-        <td class="link-icons">{%- if talk.video_link -%}
-            <a href="{{ talk.video_link }}" title="Video" target="_blank">🎥</a>
-          {%- endif -%}{%- if talk.details_link -%}
-            <a href="{{ talk.details_link }}" title="Details" target="_blank">📅</a>
-          {%- endif -%}{%- if talk.slides_link -%}
-            <a href="{{ talk.slides_link }}" title="Slides" target="_blank">📑</a>
-          {%- endif -%}</td>
+        <td class="talk-title">
+          {{ talk.title }}
+          {%- if related_post -%}
+            <div class="talk-based-on">
+              <a href="{{ related_post.url }}">↳ {{ related_post_label }}</a>
+            </div>
+          {%- elsif talk.series -%}
+            <div class="talk-based-on">
+              <a href="/topic/{{ talk.series | slugify }}/">↳ Read the related series</a>
+            </div>
+          {%- endif -%}
+        </td>
+        <td class="link-texts">
+          {%- if talk.video_link -%}
+            <a href="{{ talk.video_link }}" target="_blank" class="link-video">Video</a>
+          {%- endif -%}
+          {%- if talk.slides_link -%}
+            <a href="{{ talk.slides_link }}" target="_blank" class="link-slides">Slides</a>
+          {%- endif -%}
+          {%- if talk.details_link -%}
+            <a href="{{ talk.details_link }}" target="_blank" class="link-schedule">Schedule</a>
+          {%- endif -%}
+        </td>
       </tr>
     {%- endfor -%}
   </tbody>
