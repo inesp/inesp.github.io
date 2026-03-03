@@ -1,0 +1,56 @@
+<svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="150" fill="#fff"/>
+
+  <!-- Arrowhead markers -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#28a745"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1: Prioritize -->
+  <rect x="15" y="50" width="85" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="57" y="66" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Prioritize</text>
+  <text x="57" y="80" text-anchor="middle" font-size="9" fill="#6c757d">core vs optional</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="100" y1="70" x2="125" y2="70" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Build -->
+  <rect x="130" y="50" width="70" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="165" y="74" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Build</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="200" y1="70" x2="225" y2="70" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Review -->
+  <rect x="230" y="50" width="70" height="40" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="265" y="74" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">Review</text>
+
+  <!-- Arrow 3→decision -->
+  <line x1="300" y1="70" x2="325" y2="70" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Decision diamond -->
+  <polygon points="370,40 415,70 370,100 325,70" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="370" y="67" text-anchor="middle" font-size="10" fill="#212529">Resources</text>
+  <text x="370" y="83" text-anchor="middle" font-size="10" fill="#212529">left?</text>
+
+  <!-- YES: loop back -->
+  <path d="M 370 40 L 370 20 L 165 20 L 165 45" fill="none" stroke="#28a745" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="380" y="30" font-size="10" fill="#28a745" font-weight="bold">YES</text>
+
+  <!-- NO: to Ship -->
+  <line x1="415" y1="70" x2="440" y2="70" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="420" y="63" font-size="10" fill="#6c757d">NO</text>
+
+  <!-- Ship! -->
+  <rect x="445" y="50" width="50" height="40" rx="4" fill="#28a745" stroke="#1e7e34" stroke-width="1.5"/>
+  <text x="470" y="74" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">Ship!</text>
+
+  <!-- Subtitle -->
+  <text x="250" y="130" text-anchor="middle" font-size="9" fill="#6c757d" font-style="italic">"And if we still have time and money left, let's continue..."</text>
+</svg>

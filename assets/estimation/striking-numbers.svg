@@ -1,0 +1,27 @@
+<svg viewBox="0 20 600 190" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="300" y="50" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#212529">4,677 IT projects</text>
+
+  <!-- Box 1: Most projects on budget -->
+  <rect x="30" y="75" width="165" height="100" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1.5" rx="6"/>
+  <text x="112" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4a9c6d" font-weight="bold">MOST PROJECTS</text>
+  <text x="112" y="110" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">Median</text>
+  <text x="112" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" fill="#28a745">~0%</text>
+  <text x="112" y="162" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#495057">overrun</text>
+
+  <!-- Box 2: Average -->
+  <rect x="217" y="75" width="165" height="100" fill="#fff8cd" stroke="#e7d749" stroke-width="1.5" rx="6"/>
+  <text x="300" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e6a000" font-weight="bold">AVERAGE</text>
+  <text x="300" y="110" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6c757d">Mean</text>
+  <text x="300" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" fill="#e6a000">80%</text>
+  <text x="300" y="162" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#495057">overrun</text>
+
+  <!-- Box 3: Worst case -->
+  <rect x="405" y="75" width="165" height="100" fill="#ffe6e6" stroke="#ff0040" stroke-width="1.5" rx="6"/>
+  <text x="487" y="105" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ff0040" font-weight="bold">WORST CASE</text>
+  <text x="487" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="bold" fill="#e60038">28,000%</text>
+  <text x="487" y="162" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#495057">overrun</text>
+
+</svg>

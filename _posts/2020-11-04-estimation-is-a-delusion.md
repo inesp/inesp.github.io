@@ -34,6 +34,8 @@ biblio:
     link: "https://en.wikipedia.org/wiki/Artificial_neural_network"
   - title: "Wikipedia: Bayes' theorem"
     link: "https://en.wikipedia.org/wiki/Bayes%27_theorem"
+  - title: "B. Flyvbjerg et al.: The Empirical Reality of IT Project Cost Overruns: Discovering A Power-Law Distribution, 2022"
+    link: "https://arxiv.org/abs/2210.01573"
 short: It has been known since the 70s that developers tend to give very optimistic estimations. We prefer to have exact numbers, even if that means they are wrong most of the time. But maybe it isn’t really accuracy people are looking for. Maybe it is all about risk aversion.
 long: “It doesn’t have to be correct”, I was told, but I do have to give a number. You will never be able to accurately estimate the time and effort it will take you to build a piece of software .. for as long as you keep doing *new* things. Searching for a good effort estimation method is too often compared to searching for a law of nature, for the natural relationship between software building and time, which is independent of the organization or the customer that the project is built for or by. However, the best mathematical models for software estimations are those that are highly calibrated to the team they are measuring. In research, developers admitted that they believe their managers will see them as less competent if they provide estimates with huge margins. But mathematically speaking providing a wider min-max interval means you will be right more often. But maybe it isn’t really accuracy that businesses and people are looking for. Maybe estimates are needed for the sole purpose of risk aversion. People want to know what the risks of starting this project are. Risk can be measured in other ways. Maybe it is time we stop estimating tasks left and right and instead start managing the project’s risk and customer’s expectations.
 ---
@@ -105,7 +107,9 @@ And I haven't even begun listing any big changes:
 
 It's a never ending tug of war. 
 
-**We are trying to stabilize the world, but the world is changing under our feet.** 
+**We are trying to stabilize the world, but the world is changing under our feet.**
+
+![moving-target](/assets/estimation/moving-target.svg)
 
 **If you are a creative person, then it is even worse for you.**
 
@@ -154,6 +158,8 @@ If we will then still have time and money left, let's continue.
 
 **And if we will then still have time and money left, let's continue.** And if we will then still have time and money left, ...
 
+![iteration-flow](/assets/estimation/iteration-flow.svg)
+
 
 ## Wonky - 20 = still wonky
 
@@ -196,8 +202,7 @@ But maybe the project will all go very well and we'll soon reap the rewards of s
 
 The way to split up an un-splittable project is to start slowly. Let's allocate only a few resources to it so that somebody can start working on it. **If their work goes well, then let's continue, if it will still go well, then let's continue,** if it will still go well, then let's continue gradually increasing that somebody's resources.
 
-In reality every project is still a gamble
-
+In reality every project is still a gamble.
 
 ## What are you going to do with the answer?
 
@@ -319,12 +324,7 @@ So, again, this was a typical project for this organization, nothing extraordina
 
 The best part, however, come to light when you look at the individual estimations. It turns out that **the worse estimations were done by developers and project managers**.
 
-| Team                | Median estimate |
-|:--------------------|-----------------|
-| Developers          | 660h            |
-| Project Managers    | 960h            |
-| Designers           | 1260h           |
-| Engagement Managers | 1550h           |
+![estimation-exercise](/assets/estimation/estimation-exercise.svg)
 
 > The lowest effort estimates were provided by the developers and the project managers, whereas the user interaction designers and the engagement managers gave generally higher estimates.<br>
 > ...<br>
@@ -406,12 +406,68 @@ The participants were then asked 3 questions. Here is how they answered the firs
 &mdash; M. Jørgensen, K. Teigen and K. J. Moløkken-Østvold, Better sure than safe? Overconfidence in judgment based software development effort prediction intervals, 2004
 </figcaption>
 
+![precision-vs-accuracy](/assets/estimation/precision-vs-accuracy.svg)
+
 From all this, we can say that a lot goes into producing an estimate. It is not just the number of resources that need to be reserved.
 
 **We prefer to have exact numbers, even if that means they are wrong most of the time.** We want to have certainty, the feeling that somebody knows, what is going on, somebody else has things under control. Or at least somebody should pretend to have things under control.
 
 We are definitely not rational beings, but emotional ones :)
 
+
+## The Black Swans of estimations
+
+Here's another interesting study, this one looked at thousands of IT projects to understand **cost performance (actual vs. estimated costs)**. Does this follow a normal distribution, meaning extreme overruns are very rare, so we can focus on the average?
+
+Turns out **cost escalation follows a power-law distribution**, not a normal distribution. This means:
+- many projects finish close to budget
+- but a significant number end up extremely over budget (200-400%+), this is called the "fat tail" of the distribution
+
+With **a normal distribution**, the more projects you measure, the more **the average settles down**. You estimate 50 projects, then 100, then 200... and at some point the average cost escalation just converges to a number. Extreme outliers are so rare that they get lost in a sea of average projects.
+
+But with **a power-law distribution, the more projects you look at, the more likely you are to hit a catastrophic one that blows up your average.**
+
+Your sample of 100 projects might show a 30% average overrun. But project #101 could be a 500% disaster that suddenly makes the average 35%. Then project #587 is a 2000% catastrophe and your average is at 54% ... 
+
+![power-law-distribution](/assets/estimation/power-law-distribution.svg)
+
+They looked at **4,677 IT projects** completed between 2002 and 2014, spanning **872 companies and 104 government agencies** in 66 countries. 
+
+They calculated the **average cost overrun to be 80% over budget**. 
+
+However, **1 in 10 projects** (10.6%) in the study had overruns of 100% or more. The worst case was a project that cost **280 times** its original estimate (it was a small workflow customization project budgeted at $1,500 that ended up costing $425,000).
+
+
+| Measure | Value                  |
+|---------|------------------------|
+| Mean    | 1.8× (80% overrun)     |
+| Median  | 1.0× (on budget)       |
+| Min     | 0.001× (99.9% under)   |
+| Max     | 280× (28,000% overrun) |
+| N       | 4,677 projects         |  
+
+**Extreme overruns are unavoidable. You can not estimate your way out of this.**
+
+> The extent to which an IT project is completed within budget is a key dimension of its performance and ROI. [...] our research shows that IT project cost overruns follow **a power-law distribution, with a large number of small overruns and a smaller, but significant, number of very large overruns** in
+a fat upper tail. Our research shows that IT projects have far greater cost risk than is commonly assumed. 
+> 
+> **Incorrectly assuming a normal (Gaussian) or near-normal (e.g., log normal) distribution for cost risk, as is common, increases organizations’ exposure to such risk by severely
+underestimating the probability of large cost overruns.** 
+> 
+> Moreover, decision-making theory suggests this is important because ignoring fat-tailed, high-impact risk is associated with riskier, suboptimal decision making, which may lead to undertaking highly risky IT projects – projects that would not have been started had the true risk been known.
+<figcaption>
+&mdash; Flyvbjerg et al., The Empirical Reality of IT Project Cost Overruns: Discovering A Power-Law Distribution, 2022
+</figcaption>
+
+![striking-numbers.svg](/assets/estimation/striking-numbers.svg)
+
+So what do we do with this information?
+
+Well, this is yet another reason why building in small iterations makes sense. If you are constantly reviewing your progress and your decisions and your discoveries, then you give yourself more opportunities to stop before you crash your budget, and possibly your company with it.
+
+Flyvbjerg mentions executives who lost their jobs over runaway IT projects: a Health Secretary and a bank CEO among them.
+
+**You can't predict which project will blow up.** But you can monitor and react quicker.
 
 ## Mathematical models
 
@@ -535,6 +591,8 @@ The time it takes to deliver 1 FP is calculated from previous projects. The theo
 Now, to be fair, behind every estimation variable is a whole spec for how to estimate it accurately, how to make it work for any project. And I don't want to go into those details.
 
 But this all feels to me like kicking the can down the road. We don't know how to estimate the project's deadline, so we try to estimate the projects's lines-of-code, but we don't know how to get that number, so we say, we can get this out of "function points" of the project, but we don't know how to get that number, so we'll count certain words in the technical specification for ht project, but we can't really take that for granted, so we'll try to compile a list of synonyms that should also be included, but we can't...
+
+![kicking-the-can](/assets/estimation/kicking-the-can.svg)
 
 
 ## Conclusion
