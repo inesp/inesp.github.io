@@ -10,6 +10,18 @@
   slides_link:
   post_slug: estimation-is-a-delusion
 
+- conf: VoxxedDays Amsterdam 2026
+  link: https://amsterdam.voxxeddays.com/
+  date: Apr 2026
+  flag: 🇳🇱
+  location: Amsterdam, Netherlands
+  title: "Why smart developers write silly code"
+  coming_soon: true
+  details_link:
+  video_link:
+  slides_link:
+  series: Cognitive Biases in Code
+
 - conf: Codemotion Roma 2026
   link: https://conferences.codemotion.com/roma/
   date: Mar 2026
