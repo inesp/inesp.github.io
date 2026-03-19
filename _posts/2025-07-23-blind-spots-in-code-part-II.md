@@ -70,11 +70,7 @@ The solitary phase is the physical action of writing words into code, it is abou
 
 The social phase is about the meetings and discussions that precede and also follow the solitary phase. Before we write some code, we often talk about it, about the expanse of the problem and the options for solutions. And after we write the code **we go out into the collective to defend it, in the form of PR reviews**.
 
-The probability that we fail to solve the original problem is just as high at the solitary stage (creating a technical solution) as it is at the social stage (defending the solution in front of our peers).
-
-And as soon as people talk about what they think, cognitive biases are immediately present.
-
-Let’s look at how we fall prey to them in software development.
+The probability that **we fail to solve the original problem is just as high at the solitary stage (creating a technical solution) as it is at the social stage (defending the solution in front of our peers)**.
 
 
 ## Laser-focused on (only) what is immediately accessible
@@ -103,36 +99,64 @@ The idea of PR reviewing is great, it's the same as peer-reviewing a scientific 
 
 This is all in theory, however.
 
-In practice, PRs as well as scientific papers (and all other types of reviews) are often poorly peer-reviewed. The reason? **It is SOOOO MUCH WORK to review something!** And this is work that **isn't really appreciated or rewarded**. 
+In practice, PRs as well as scientific papers (and all other types of reviews) are often poorly peer-reviewed. The reason? **It is SOOOO MUCH WORK to review something.** And this is work that **isn't really appreciated or rewarded**.
 
 We neither care if you did a good job reviewing _this_ nor are we going to award you for it.
 
-There is basically nothing in it for you, no reason to do a good job at reviewing. 
+There is basically nothing in it for you, no reason to do a good job at reviewing.
 
-Spending a good amount of time and energy to deliver a thorough review can even hurt you ... substantially. **People dislike reviewing, even when it is about their own code. So if you are offering excellent reviews for free, then why should they be diligent when writing code? We have tests and great reviews, those will catch any bugs.** They can just write what looks like working code, and you will then review the code and find all the bugs. There really isn't any point in doing a wholesome review.
+Spending a good amount of time and energy to deliver a thorough review can even hurt you. **People dislike reviewing, even when it is about their own code. So if you are offering excellent reviews for free, then why should they be diligent when writing code? We have tests and great reviews, those will catch any bugs.** They can just write what looks like working code, and you will then review the code and find all the bugs. There really isn't any point in doing a wholesome review.
 
 What do we do to reduce the load of reviewing? We apply shortcuts, the same ones that are classified as cognitive biases.
 
-We:
-- focus on the author, **what are the things this author usually does wrong** ➡️ confirmation bias - what do we already believe about this author
-- focus on **recent production bugs**, the bugs that are fresh in our minds and for which we can still easily remember the cause and solution ➡️ availability bias - what is fresh in our minds
-- focus on our own recent code changes, **let's just double-check that the open PR plays nicely with our own newest code, others will review their own code too** ➡️ availability bias
-- focus on the **existing PR comments**, thinking somebody else maybe already did this work for us ➡️ availability bias, bystander effect
-- ...
+| Shortcut                   | Bias                  | Inner monologue                                    |
+|----------------------------|-----------------------|----------------------------------------------------|
+| Author's past mistakes     | **Confirmation bias** | _"What do I already believe about this author?"_   |
+| Recent production bugs     | **Availability bias** | _"What can I think of without thinking too much?"_ |
+| My own recent code changes | **Availability bias** | _"I'm still thinking of my code anyway."_          |
+| Existing PR comments       | **Bystander effect**  | _"Let's just follow the crowd."_                   |
+| Author's seniority         | **Halo Effect**       | _"Superheroes are always right."_                  |
+| PR's age                   | **Sunk Cost Fallacy** | _"It's too late now, let's just merge it."_        |
 
-At the end of the day, we are told: "Reviewing something is surely better than reviewing nothing" 🤪. But is it? 
+At the end of the day, we are told: _"Reviewing something is surely better than reviewing nothing."_ But is it?
+
+![PR review shortcuts](/assets/bias/pr-review-shortcuts.svg)
+
+
+## Is there a solution for PRs?
+
+I think we need to have an honest conversation about how pull request reviews don't really work.
+
+PRs are a **group effort**, it's not something you can solve by yourself. 
+
+How many people are going to devote themselves to overcoming their reviewing biases? Very few, I'd say. 
+
+Think about the junior on your team, who just doesn't yet have meaningful insights to contribute. And of your boss, who still sometimes medles in PRs, although he sohudn't. Or the new hire, who says they did it differently at his previous company, and low-key suggests it was better there. 
+
+Reading about biases once won't make a difference. It takes continuous effort, constant self-reflection, and a genuine desire to improve. It is hard work to silence your opinionated ego. **Good reviewing is practically non-existent.** So maybe we shouldn't expect it from people.
+
+PRs might work for open source, where it solves an actual problem: who is decides what gets included into a library?
+
+In companies, however, each team generally owns one part of any repo. Gatekeeping with PRs is very much too late. The gatekeeping should have happened in meetings and instructions and planning stages. 
+
+**PRs just seem like a lost cause to me.**
+
+Maybe we should focus our energy elsewhere: on better testing, on pair programming, on automated checks, .... Because relying on humans to overcome their cognitive shortcuts in every single review, is wishful thinking.
 
 
 ## Cognitive biases lead to code reverting
 
+As I was researching this topic I stumbled upon a study that wanted to see cognitive biases in REAL life, not in laboratory settings, but as they happen in at developer's job.
 
-One of the most disheartening parts of software work is when **your code changes get deleted**. All the effort spent crafting that code was for nothing. **You might as well have gone for some icecream and a walk in the park.** The result would have been the same (actually, it would have been a better outcome).
+They found a very interesting connection between **biased actions and action reversals**.
 
-Sometimes it's about **whole projects being hyped as critical**. It's importance demands stress from you and your team, it demands heightened care, maybe even overtime. But not long after the work is done, maybe as soon as the code reached your customers, it turns out this project wasn't that consequential after all. Maybe the customers don't like it, or maybe it's worse: they don't care. This whole project was the product of somebody's cognitive bias. **Somebody up the chain really, really(!) believed that this _will_ be a valuable software solution... and they based this belief on nothing.** All the work and care you put into this project were superfluous. **Your code was born dead.**
+It is true, that the number of participants was rather small. Too small really, to make sweeping statements, but boy are the results satisfying to talk about.
 
-Other times it's about smaller changes. A bug happens in production. Two people look into it. One immediately "finds the culprit", one specific logic needs to be redone. The other person doesn't believe this theory and keeps looking. **The first person goes into overdrive** and spends hours fixing the logic, **then they push the logic to production only for the bug to not be affected**. The real culprit was found just minutes later by the second person. It was just a setting, hidden somewhere else in the code. Time to revert the first person's PR.
+The study was done by S. Chattopadhyay et al. and is called _A tale from the trenches: cognitive biases and software development_. 
 
-Chattopadhyay et al. observed this exact pattern **in real-life situations, not carefully crafted laboratory settings**. They showed that **actions triggered by biases are more likely to be reversed later**. And also that **actions that had to be reversed are, overwhelmingly, biased ones**.
+The researchers were observing a team of software professionals and wrote down **all the actions they saw and all the consequences.**
+
+What they found is, that **actions triggered by biases are more likely to be reversed later**. And also that **actions that had to be reversed are, overwhelmingly, biased ones**.
 
 > Figure 1a (tn: below) shows the distribution of developer actions (biased or non-biased), and whether it led to a negative outcome. There were 953 actions with biases, and 1131 without. Similarly, there were 1104 reversal actions and 980 non-reversal actions. **Reversal actions were more likely to occur with a bias - 68.75% (759/1104 cases), and biased actions were more likely to be reversed - 79.64% (759/953 cases).**
 <figcaption>
@@ -154,25 +178,90 @@ Chattopadhyay et al. observed this exact pattern **in real-life situations, not 
 | Total                                | 9676 sec (2.7h) | 11731 sec        |                  |
 {:.last-column .last-row .first-column}
 
-These two tables above are the _"Figure 1a"_ mentioned in the quote. 
+These two tables above are the _"Figure 1a"_ mentioned in the quote.
+
+![Biased actions get reversed](/assets/bias/reversal-bias-chart.svg)
 
 They show how much harm biased actions can cause. **Reversed actions took up 3.1h of work and 70% of these were biased actions.** So, if there were no bias, far fewer actions would need to be reversed, far less time would be wasted on reversing actions.
 
-**Cognitive biases are fast, they let us run towards the goal. This is their benefit and their trouble.** 
+The researchers calculated that **developers lost approximately 25% of their entire working time** to reversing biased actions.
 
-Getting to the destination faster and with less effort is great, but only as long as we are running towards the right goal. Sometimes we run towards just any goal, just for the sake of running. 
+**Cognitive biases are fast, they let us run towards the goal. This is their benefit and their trouble.**
 
 **The solution is to slow down occasionally ... and double-check what we are running towards.**
 
 
-## Testing, especially, is suffering from confirmation bias 
+## Sisyphus's Project
 
+This is one of the most disheartening parts of software work: writing code that gets deleted soon after. 
+
+All the effort spent crafting that solution was for nothing! You might as well have gone for some ice-cream and a walk in the park. The result would have been the same. But no! You were stuck in the office writing some silly code that will never be used now.
+
+Sometimes a whole project gets reverted. A whole, finished project.
+
+And often this happens to a project that started out as very important, very valuable. The importance was so great that your team better be stressed out about it. Maybe even do some overtime.
+
+But not long after the work is done, maybe as soon as the code reaches your customers, it turns out this project wasn't that consequential after all. Sometimes the customers just don't like it, but sometimes they don't care, which is arguably worse.
+
+**This whole project was most probably the product of somebody's cognitive bias.**
+
+Maybe it was somebody up the chain who really believed that this will be a valuable software solution. And they based this belief on... who knows what.
+
+Maybe it was **confirmation bias**: people didn't actually listen to what the customers said, they just tried to scrape enough of the answers together to confirm their own plan.
+
+Maybe it was **anchoring bias**: a different company also offers this feature, so it must be a feature that is valuable.
+
+Maybe it was the **bystander effect**: the boss mentioned this feature and nobody was brave enough to question the idea's validity.
+
+Maybe it was **optimism bias**: the team focused on the idea of how great this feature will be, how happy it will make the customers, and they ignored the reality of what is actually possible.
+
+Or it could have been any number of other biases.
+
+At the gebining, we were told AI is going to cure cancer. But now that we've let it into the real world, it is mostly producing more spam, more convincing fake videos, and more convincing phishing emails.
+
+**Just because it seems plausible for a new project idea to work, doesn't mean the project will actually turn out as hoped.**
+
+
+## Stress triggers biases
+
+Often biases are triggered by stress.
+
+The boss wants something done **now!**. Yesterday would also work. 
+
+We believe them...
+
+..and speed up our actions. But when we are moving fast, we rely on the subconscious more than the conscious, which mean we rely on our biases: _"Let's just copy what we did last time! No time to think."_
+
+But that is usually when we need to think more.
+
+Over the years, I've noticed that the projects that went poorly were often the very same projects that we started in stress mode. **People tend to overestimate the urgency of certain tasks.**
+
+And you, as the senior expert in your field, are in the meeting to **help** flesh out the true urgency and also true scope of the project (because scope and urgency do go hand in hand).
+
+Let me emphasize first that I am NOT advocating for devs to be gatekeepers. I believe we, developers, already have a problem with this sort of attitude.
+
+But as an expert, **you do need to start noticing when a project is being rushed without good foundations.** And this is when you can **constructively** push the conversation towards more planning and less running.
+
+Once we have a few things figured out, we can immediately start running. Because the worst is to run like crazy, but then arrive at the wrong destination.
+
+I've been taking this approach for quite some years now and I can truly say that it works like a charm. When I see a rushed project, **I focus a bit more on a written plan.** I want people to have a bit of time to think about it (preferably at least 24 hours, so they can sleep on it).
+
+It forces everybody to think about the details of what they want and how they think things will work. And it forces developers to consider a few more edge cases and ask for more clarifications.
+
+It really helps.
+
+
+## Testing is suffering especially from confirmation bias
+
+The last thing I want us to look at is testing.
 
 How do we achieve a good test coverage? By testing the happy path, of course. **By testing the scenarios for how our code is supposed to work** instead of testing for how it can be broken.
 
 If I have the function `def send_email(msg: str, recipient: str)`, then I only need to write a test for `send_email("Hi!", "my@email.com")` right? No need to test for HTML-text or for an empty recipient (`recipient=""`) or for an invalid email address or for a **too long msg** or for a broken HTML msg or ...
 
-A surprisingly huge number of papers are researching cognitive biases in software testing. And they are concluding that we like testing almost only the expected behavior. **We prefer writing tests that confirm the code works, not tests that disprove it. Even among professional QA engineers, this is a common bias.**
+![What we test vs. what we ignore](/assets/bias/email-edge-cases.svg)
+
+A surprisingly big number of papers are researching cognitive biases in software testing. And they are concluding that we like testing almost only the expected behavior. **We prefer writing tests that confirm the code works, not tests that disprove it. Even among professional QA engineers, this is a common bias.**
 
 Is it time pressure that causes this? 
 

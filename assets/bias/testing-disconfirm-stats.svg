@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="200" y="22" text-anchor="middle" font-weight="bold" font-size="11px" font-family="system-ui, -apple-system, sans-serif" fill="#212529">Disconfirmatory Tests Per Person</text>
+
+  <!-- Y-axis -->
+  <line x1="60" y1="45" x2="60" y2="145" stroke="#dadada" stroke-width="1"/>
+
+  <!-- Y-axis labels (0-8 scale, 100px height = 12.5px per unit) -->
+  <text x="52" y="145" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">0</text>
+  <text x="52" y="120" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">2</text>
+  <text x="52" y="95" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">4</text>
+  <text x="52" y="70" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">6</text>
+  <text x="52" y="45" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">8</text>
+
+  <!-- Grid lines -->
+  <line x1="60" y1="120" x2="340" y2="120" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="95" x2="340" y2="95" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="70" x2="340" y2="70" stroke="#f0f0f0" stroke-width="1"/>
+  <line x1="60" y1="45" x2="340" y2="45" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- X-axis -->
+  <line x1="60" y1="145" x2="340" y2="145" stroke="#dadada" stroke-width="1"/>
+
+  <!-- Time Pressure group -->
+  <!-- Values: Median 0, Min 0, Mean 1.1, Max 8 -->
+  <!-- Scale: 8 = 100px, so 1 = 12.5px -->
+  <rect x="80" y="145" width="20" height="0" rx="2" fill="#ff7898"/>
+  <text x="90" y="142" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#ff7898" font-weight="bold">0</text>
+
+  <rect x="105" y="145" width="20" height="0" rx="2" fill="#ffcf65"/>
+  <text x="115" y="142" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#e6a000" font-weight="bold">0</text>
+
+  <rect x="130" y="131" width="20" height="14" rx="2" fill="#06bdad"/>
+  <text x="140" y="128" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#00a89a" font-weight="bold">1.1</text>
+
+  <rect x="155" y="45" width="20" height="100" rx="2" fill="#35b0e8"/>
+  <text x="165" y="60" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#fff" font-weight="bold">8</text>
+
+  <!-- No Time Pressure group -->
+  <!-- Values: Median 1, Min 0, Mean 1.2, Max 6 -->
+  <rect x="220" y="132" width="20" height="13" rx="2" fill="#ff7898"/>
+  <text x="230" y="129" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#ff7898" font-weight="bold">1</text>
+
+  <rect x="245" y="145" width="20" height="0" rx="2" fill="#ffcf65"/>
+  <text x="255" y="142" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#e6a000" font-weight="bold">0</text>
+
+  <rect x="270" y="130" width="20" height="15" rx="2" fill="#06bdad"/>
+  <text x="280" y="127" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#00a89a" font-weight="bold">1.2</text>
+
+  <rect x="295" y="70" width="20" height="75" rx="2" fill="#35b0e8"/>
+  <text x="305" y="85" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#fff" font-weight="bold">6</text>
+
+  <!-- Group labels -->
+  <text x="130" y="162" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">Time Pressure</text>
+  <text x="270" y="162" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">No Time Pressure</text>
+
+  <!-- Legend -->
+  <rect x="75" y="180" width="10" height="10" rx="2" fill="#ff7898"/>
+  <text x="90" y="188" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">Median</text>
+  <rect x="135" y="180" width="10" height="10" rx="2" fill="#ffcf65"/>
+  <text x="150" y="188" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">Min</text>
+  <rect x="185" y="180" width="10" height="10" rx="2" fill="#06bdad"/>
+  <text x="200" y="188" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">Mean</text>
+  <rect x="245" y="180" width="10" height="10" rx="2" fill="#35b0e8"/>
+  <text x="260" y="188" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">Max</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="260" y="22" text-anchor="middle" font-weight="bold" font-size="12px" font-family="system-ui, -apple-system, sans-serif" fill="#212529">What we test vs. what we ignore</text>
+
+  <!-- Function signature box -->
+  <rect x="60" y="40" width="400" height="45" rx="6" fill="#2d2d2d"/>
+  <text x="75" y="58" font-size="11px" font-family="monospace" fill="#fff">
+    <tspan fill="#ff7898">def</tspan> <tspan fill="#4fc3f7">send_email</tspan>(msg: <tspan fill="#ff7898">str</tspan>, recipient: <tspan fill="#ff7898">str</tspan>):
+  </text>
+  <text x="95" y="75" font-size="11px" font-family="monospace" fill="#fff">...</text>
+
+  <!-- Happy path test - centered and highlighted -->
+  <rect x="140" y="105" width="240" height="35" rx="4" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="2"/>
+  <text x="260" y="127" text-anchor="middle" font-size="11px" font-family="monospace" fill="#316849">send_email(<tspan fill="#c62828">"Hi!"</tspan>, <tspan fill="#c62828">"my@email.com"</tspan>)</text>
+  <text x="260" y="155" text-anchor="middle" font-size="10px" font-family="system-ui, -apple-system, sans-serif" fill="#316849">The only test we write</text>
+
+  <!-- Ignored edge cases - floating around -->
+
+  <!-- Left side -->
+  <rect x="20" y="100" width="95" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="67" y="118" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">recipient = "" ?</text>
+
+  <rect x="20" y="145" width="95" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="67" y="163" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">HTML text?</text>
+
+  <!-- Right side -->
+  <rect x="405" y="100" width="100" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="455" y="118" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">invalid email?</text>
+
+  <rect x="405" y="145" width="100" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="455" y="163" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">msg too long?</text>
+
+  <!-- Bottom row of ignored cases -->
+  <rect x="60" y="190" width="100" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="110" y="208" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">broken HTML?</text>
+
+  <rect x="175" y="190" width="85" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="217" y="208" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">null values?</text>
+
+  <rect x="275" y="190" width="85" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="317" y="208" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">unicode chars?</text>
+
+  <rect x="375" y="190" width="85" height="30" rx="4" fill="#fff" stroke="#ff7898" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="417" y="208" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">special chars?</text>
+
+  <!-- Bottom label -->
+  <text x="260" y="245" text-anchor="middle" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#e60038">Edge cases we forget to test</text>
+</svg>

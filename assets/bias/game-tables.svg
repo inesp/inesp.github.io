@@ -1,0 +1,85 @@
+<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Table 1: users -->
+  <text x="110" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#da4ada" text-anchor="middle">users</text>
+
+  <!-- Header row -->
+  <rect x="20" y="35" width="180" height="28" rx="4" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5"/>
+  <text x="65" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#212529" text-anchor="middle">id</text>
+  <line x1="110" y1="35" x2="110" y2="63" stroke="#da4ada" stroke-width="1"/>
+  <text x="155" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#212529" text-anchor="middle">name</text>
+
+  <!-- Data rows -->
+  <rect x="20" y="63" width="180" height="24" fill="#fff" stroke="#dadada" stroke-width="1"/>
+  <text x="65" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">1</text>
+  <line x1="110" y1="63" x2="110" y2="87" stroke="#dadada" stroke-width="1"/>
+  <text x="155" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">Alice</text>
+
+  <rect x="20" y="87" width="180" height="24" fill="#fff" stroke="#dadada" stroke-width="1"/>
+  <text x="65" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">2</text>
+  <line x1="110" y1="87" x2="110" y2="111" stroke="#dadada" stroke-width="1"/>
+  <text x="155" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">Bob</text>
+
+  <rect x="20" y="111" width="180" height="24" fill="#fff" stroke="#dadada" stroke-width="1"/>
+  <text x="65" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">3</text>
+  <line x1="110" y1="111" x2="110" y2="135" stroke="#dadada" stroke-width="1"/>
+  <text x="155" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">Carol</text>
+
+  <text x="110" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9f9f9f" text-anchor="middle">...</text>
+
+  <!-- Table 2: scores -->
+  <text x="370" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#28a745" text-anchor="middle">scores</text>
+
+  <!-- Header row -->
+  <rect x="280" y="35" width="180" height="28" rx="4" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="310" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#212529" text-anchor="middle">id</text>
+  <line x1="340" y1="35" x2="340" y2="63" stroke="#4a9c6d" stroke-width="1"/>
+  <text x="370" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#212529" text-anchor="middle">user_id</text>
+  <line x1="400" y1="35" x2="400" y2="63" stroke="#4a9c6d" stroke-width="1"/>
+  <text x="430" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#212529" text-anchor="middle">score</text>
+
+  <!-- Data rows -->
+  <rect x="280" y="63" width="180" height="24" fill="#fff" stroke="#dadada" stroke-width="1"/>
+  <text x="310" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">1</text>
+  <line x1="340" y1="63" x2="340" y2="87" stroke="#dadada" stroke-width="1"/>
+  <text x="370" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">1</text>
+  <line x1="400" y1="63" x2="400" y2="87" stroke="#dadada" stroke-width="1"/>
+  <text x="430" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">850</text>
+
+  <rect x="280" y="87" width="180" height="24" fill="#fff" stroke="#dadada" stroke-width="1"/>
+  <text x="310" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">2</text>
+  <line x1="340" y1="87" x2="340" y2="111" stroke="#dadada" stroke-width="1"/>
+  <text x="370" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">2</text>
+  <line x1="400" y1="87" x2="400" y2="111" stroke="#dadada" stroke-width="1"/>
+  <text x="430" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">720</text>
+
+  <rect x="280" y="111" width="180" height="24" fill="#fff" stroke="#dadada" stroke-width="1"/>
+  <text x="310" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">3</text>
+  <line x1="340" y1="111" x2="340" y2="135" stroke="#dadada" stroke-width="1"/>
+  <text x="370" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">1</text>
+  <line x1="400" y1="111" x2="400" y2="135" stroke="#dadada" stroke-width="1"/>
+  <text x="430" y="128" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">920</text>
+
+  <rect x="280" y="135" width="180" height="24" fill="#fff" stroke="#dadada" stroke-width="1"/>
+  <text x="310" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">4</text>
+  <line x1="340" y1="135" x2="340" y2="159" stroke="#dadada" stroke-width="1"/>
+  <text x="370" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">3</text>
+  <line x1="400" y1="135" x2="400" y2="159" stroke="#dadada" stroke-width="1"/>
+  <text x="430" y="152" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#495057" text-anchor="middle">680</text>
+
+  <text x="370" y="176" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#9f9f9f" text-anchor="middle">...</text>
+
+  <!-- Join arrow -->
+  <defs>
+    <marker id="arrowJoin" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0,0 8,4 0,8" fill="#6c757d"/>
+    </marker>
+  </defs>
+  <path d="M 200 85 Q 240 85 240 75 Q 240 65 280 65" fill="none" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowJoin)"/>
+  <text x="240" y="56" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6c757d" text-anchor="middle">JOIN</text>
+
+  <!-- Task description -->
+  <rect x="60" y="185" width="360" height="28" rx="4" fill="#fff8cd" stroke="#e7d749" stroke-width="1"/>
+  <text x="240" y="203" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#5c5200" text-anchor="middle">Task: Get top 100 players by their BEST score (no duplicates)</text>
+</svg>

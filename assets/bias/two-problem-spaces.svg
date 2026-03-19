@@ -1,0 +1,43 @@
+<svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="250" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#212529" text-anchor="middle">When you start from an anchor...</text>
+
+  <!-- Left side: Starting fresh -->
+  <text x="125" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#28a745" text-anchor="middle">Starting Fresh</text>
+
+  <rect x="40" y="75" width="170" height="90" rx="6" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="125" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#212529" text-anchor="middle">Your Problem</text>
+  <text x="125" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d" text-anchor="middle">understand this</text>
+  <text x="125" y="150" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d" text-anchor="middle">↓</text>
+  <text x="125" y="158" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d" text-anchor="middle">solve it</text>
+
+  <text x="125" y="190" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#4a9c6d" text-anchor="middle">1 thing to understand</text>
+
+  <!-- Divider -->
+  <line x1="250" y1="55" x2="250" y2="200" stroke="#dadada" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Right side: Starting from anchor -->
+  <text x="375" y="60" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#ff0040" text-anchor="middle">Starting from Anchor</text>
+
+  <!-- Anchor's problem space -->
+  <rect x="290" y="75" width="170" height="55" rx="6" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="375" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#212529" text-anchor="middle">Anchor's Problem Space</text>
+  <text x="375" y="118" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6c757d" text-anchor="middle">what was IT solving?</text>
+
+  <!-- Your problem space -->
+  <rect x="290" y="140" width="170" height="55" rx="6" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="375" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#212529" text-anchor="middle">Your Problem Space</text>
+  <text x="375" y="183" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6c757d" text-anchor="middle">what are YOU solving?</text>
+
+  <!-- Plus sign between them -->
+  <text x="375" y="137" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#fd456f" text-anchor="middle">+</text>
+
+  <text x="375" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#ff0040" text-anchor="middle">2 things to understand</text>
+  <text x="375" y="232" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6c757d" text-anchor="middle">(and compare them!)</text>
+
+  <!-- Bottom insight -->
+  <rect x="50" y="250" width="400" height="24" rx="4" fill="#fff8cd" stroke="#e7d749" stroke-width="1"/>
+  <text x="250" y="266" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#5c5200" text-anchor="middle">The "shortcut" often costs MORE cognitive effort, not less</text>
+</svg>
