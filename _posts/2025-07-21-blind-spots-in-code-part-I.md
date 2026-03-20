@@ -32,9 +32,9 @@ The word "bias" has become synonymous with movements for inclusion of people, bu
 **Cognitive biases help us in our decision-making. They are thought habits.** They save us time and energy.
 
 **And they are everywhere around us:** They activate:
-- when you only read articles (**listen to co-workers**) that support your world view (confirmation bias), 
-- it's when you stick to buying coffee from the same place for 20 years (**stick with an old framework**), even though the coffee isn't even that great (status quo bias)
-- it's when you dislike French people (**Javascript**), because you had one bad experience (implicit bias),
+- when you only read articles (**listen to co-workers**) that support your world view (confirmation bias),
+- when you stick to buying coffee from the same place for 20 years (**stick with an old framework**), even though the coffee isn't even that great (status quo bias)
+- when you dislike French people (**Javascript**), because you had one bad experience (implicit bias),
 - and sooooooo maaaaaaany more ...
 
 Our biases are holding us all back. But it needn't be this way.
@@ -127,7 +127,7 @@ And that is how anchoring gets us. **Who ever said that taking the old query is 
 
 What I described to you is **very similar to an experiment** conducted by G. Allen and B. J. Parsons for their paper "**A Little Help can Be A Bad Thing**: Anchoring and Adjustment in Adaptive Query Reuse".
 
-In an experiment, they asked participants to write SQL queries. Some participants were given a sample query (the "anchor") to "help" them with the task of writing a new query, while others weren't given anything. All in all 157 participants took part in the experiment.
+In an experiment, they asked participants to write SQL queries. Some participants were given a sample query (the "anchor") to "help" them with the task of writing a new query, while others weren't given anything. All in all, 157 participants took part in the experiment.
 
 The sample query was a functioning SQL query that was similar to the new task at hand, but it wasn't an outright solution.
 
@@ -138,7 +138,7 @@ The sample query was a functioning SQL query that was similar to the new task at
 
 As expected, the participants who received a sample query made use of it. They took the helpful example, adjusted it, and shaped it into something that (more or less) fit the task.
 
-Unfortunately, their end results generally fit less, not more.  **Those who _didn’t_ get a sample query performed better than those who had.**
+Unfortunately, their end results generally fit less, not more.  **Those who _didn't_ get a sample query performed better than those who did.**
 
 Starting from scratch led to more correct solutions. The group with no sample query had a **44.3% success rate**, while the group that got a sample query had only **21.5% success rate**. **Turns out, a ready-made starting point can quietly steer you in the wrong direction.**
 
@@ -161,7 +161,7 @@ Anchoring limits your ability to think freely, to explore the problem space and 
 
 The study observed another very unfortunate side effect of anchoring: **overconfidence**.
 
-Participants who had an anchor ended up with fewer correct solutions, but they were just as sure they've solved the task correctly as those who started from scratch.
+Participants who had an anchor ended up with fewer correct solutions, but they were just as sure they'd solved the task correctly as those who started from scratch.
 
 Not only did the anchor lead to more buggy code, it also hid these bugs from the developers. The developers seemed to have lost some of their ability to judge the quality of the code. They got overconfident.
 

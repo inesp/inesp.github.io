@@ -9,6 +9,8 @@ biblio:
     link: https://en.wikipedia.org/wiki/Status_quo_bias
   - title: "Wikipedia: Confirmation bias"
     link: https://en.wikipedia.org/wiki/Confirmation_bias
+  - title: "Wikipedia: Availability heuristic"
+    link: https://en.wikipedia.org/wiki/Availability_heuristic
   - title: "Wikipedia: Anchoring effect"
     link: https://en.wikipedia.org/wiki/Anchoring_effect
   - title: "G. Allen and B. J. Parsons, A Little Help can Be A Bad Thing: Anchoring and Adjustment in Adaptive Query Reuse, 2006"
@@ -43,7 +45,7 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 
 ## Exhibit B: I just need to confirm something (but I'm pretty sure I'm right)
 
-**Confirmation bias** is about being deaf to everything that contradicts your beliefs. Your mind has been made up. This is unchangeable. It is
+**Confirmation bias** is about being deaf to everything that contradicts your beliefs. Your mind has been made up. This is unchangeable. It is:
 
 > the tendency to search for, interpret, favor, and recall information in a way that confirms or supports one's prior beliefs or values.
 <figcaption>
@@ -82,9 +84,9 @@ And if a team member suggests a new framework? We often jump to poke holes in it
 
 Or maybe we'll be even more generic and claim that using the good old framework is better, because **these new frameworks are not "mature enough"** and not "battle-tested" and anyway, aren't these new frameworks just "different, not better"?
 
-We, as the oldtimer, focus on the good-old-framework, because knowledge about it is the most accessible to us. **We mainly focus on collecting information that confirms our viewpoint and are reluctant to give pause to opposing views.** We see ourselves as very rational, but what if it's just bias that is keeping us in place. 
+We, as the oldtimer, focus on the good-old-framework, because knowledge about it is the most accessible to us. **We mainly focus on collecting information that confirms our viewpoint and are reluctant to give pause to opposing views.** We see ourselves as very rational, but what if it's just bias that is keeping us in place? 
 
-However, **bias also works the other way**. The team member suggesting the new framework might just be excited **because she read about it in several places already.** This framework seems to be the great new thing, the things that everybody will adopt sooner or later, so let's join the "sooner"-cohort. After reading soo much about it, all she can see is the glittering features of the new framework, the promise of easier work, the poetry of the new code... _"It's just going to be such a joy to work with the new framework"_.
+However, **bias also works the other way**. The team member suggesting the new framework might just be excited **because she read about it in several places already.** This framework seems to be the great new thing, the thing that everybody will adopt sooner or later, so let's join the "sooner"-cohort. After reading soo much about it, all she can see is the glittering features of the new framework, the promise of easier work, the poetry of the new code... _"It's just going to be such a joy to work with the new framework"_.
 
 Always choosing the new thing or always sticking with the old, both tendencies often stem from biases.
 
@@ -131,11 +133,11 @@ PRs are a **group effort**, it's not something you can solve by yourself.
 
 How many people are going to devote themselves to overcoming their reviewing biases? Very few, I'd say. 
 
-Think about the junior on your team, who just doesn't yet have meaningful insights to contribute. And of your boss, who still sometimes medles in PRs, although he sohudn't. Or the new hire, who says they did it differently at his previous company, and low-key suggests it was better there. 
+Think about the junior on your team, who just doesn't yet have meaningful insights to contribute. And of your boss, who still sometimes meddles in PRs, although he shouldn't. Or the new hire, who says they did it differently at his previous company, and low-key suggests it was better there. 
 
 Reading about biases once won't make a difference. It takes continuous effort, constant self-reflection, and a genuine desire to improve. It is hard work to silence your opinionated ego. **Good reviewing is practically non-existent.** So maybe we shouldn't expect it from people.
 
-PRs might work for open source, where it solves an actual problem: who is decides what gets included into a library?
+PRs might work for open source, where it solves an actual problem: who decides what gets included into a library?
 
 In companies, however, each team generally owns one part of any repo. Gatekeeping with PRs is very much too late. The gatekeeping should have happened in meetings and instructions and planning stages. 
 
@@ -146,7 +148,7 @@ Maybe we should focus our energy elsewhere: on better testing, on pair programmi
 
 ## Cognitive biases lead to code reverting
 
-As I was researching this topic I stumbled upon a study that wanted to see cognitive biases in REAL life, not in laboratory settings, but as they happen in at developer's job.
+As I was researching this topic I stumbled upon a study that wanted to see cognitive biases in REAL life, not in laboratory settings, but as they happen at a developer's job.
 
 They found a very interesting connection between **biased actions and action reversals**.
 
@@ -217,7 +219,7 @@ Maybe it was **optimism bias**: the team focused on the idea of how great this f
 
 Or it could have been any number of other biases.
 
-At the gebining, we were told AI is going to cure cancer. But now that we've let it into the real world, it is mostly producing more spam, more convincing fake videos, and more convincing phishing emails.
+**Look at AI,** at the beginning, we were told it's going to cure cancer. But now that we've let it into the real world, it is mostly producing more spam, more convincing fake videos, and more convincing phishing emails.
 
 **Just because it seems plausible for a new project idea to work, doesn't mean the project will actually turn out as hoped.**
 
@@ -230,7 +232,7 @@ The boss wants something done **now!**. Yesterday would also work.
 
 We believe them...
 
-..and speed up our actions. But when we are moving fast, we rely on the subconscious more than the conscious, which mean we rely on our biases: _"Let's just copy what we did last time! No time to think."_
+..and speed up our actions. But when we are moving fast, we rely on the subconscious more than the conscious, which means we rely on our biases: _"Let's just copy what we did last time! No time to think."_
 
 But that is usually when we need to think more.
 
@@ -261,13 +263,15 @@ If I have the function `def send_email(msg: str, recipient: str)`, then I only n
 
 ![What we test vs. what we ignore](/assets/bias/email-edge-cases.svg)
 
-A surprisingly big number of papers are researching cognitive biases in software testing. And they are concluding that we like testing almost only the expected behavior. **We prefer writing tests that confirm the code works, not tests that disprove it. Even among professional QA engineers, this is a common bias.**
+A surprising number of papers are researching cognitive biases in software testing. And they are concluding that we like testing almost only the expected behavior. **We prefer writing tests that confirm the code works, not tests that disprove it. Even among professional QA engineers, this is a common bias.**
 
 Is it time pressure that causes this? 
 
 Surely, it is not that we don't know or don't care that unexpected input data must also be tested?
 
-If I'm testing the **login**-method, surely, it is clear that **at the very, very least we need 2 tests: a positive and a negative test, a test for a successful login and a test for a failed login.** Surely, the correct behavior of this method is to let in only people with correct credentials and to let them in only as themselves, right? But this demands more than 1 test. Even more than just 2 tests. 
+If I'm testing the **login**-method, surely, it is clear that **at the very, very least we need 2 tests: a positive and a negative test, a test for a successful login and a test for a failed login.** Surely, the correct behavior of this method is to let in only people with correct credentials and to let them in only as themselves, right? But this demands more than 1 test. Even more than just 2 tests.
+
+![Testing login: The bare minimum](/assets/bias/login-tests-minimum.svg)
 
 A paper called "A controlled experiment on time pressure and confirmation bias in functional software testing" researched this topic. Unfortunately, it found out that time pressure is NOT downgrading our testing skills. **We simply have very poor testing skills** to begin with. Here's their conclusion:
 
@@ -286,29 +290,65 @@ They designed an experiment with 43 participants. All participants had little ex
 
 The researchers presented the participants with the task to write tests specification for a new app. The software development was to be test-driven, so the participants didn't need to write actual, passing tests, but only the test specifications, the test scenarios as input + expected output pairs.
 
-Half of the participants were given 30 minutes to write the tests, while the other half had 60 minutes (before the experiment the researches tested that 45 mins is about enough to finish the task, thus the 60mins limit seemed very adequate). The 30-mins group also got 3 reminders about the time running out, this happened at the 15th, 20th and 25th minute. This was done to build the pressure.
+Half of the participants were given 30 minutes to write the tests, while the other half had 60 minutes. 
+
+Before the experiment the researchers tested that 45 mins is about enough to finish the task, thus the 60mins limit seemed very adequate and 6 people from this group finished the task before the time was up. So, they definitely had enough time.
+
+The 30-mins group also got 3 reminders about the time running out: at the 15th, 20th and 25th minute. This was done to build the pressure.
+
+The results go like this: **both groups wrote almost the same number of negative tests**, 24 vs 26 tests. On average this amounts to a bit more than 1 per person.
+
+![Confirmatory vs Disconfirmatory Tests](/assets/bias/testing-bias-chart.svg)
+
+The minimum number of negative tests per person was 0 for **both** groups. Most people wrote zero or one disconfirmatory tests, regardless of time pressure. The median was 0 for the time-pressured group and just 1 for those with plenty of time.
+
+![Disconfirmatory Tests Per Person](/assets/bias/testing-disconfirm-stats.svg)
 
 When we test only what we expect to work, **we miss the opportunity to uncover corner cases** or conflicting behaviors that can cause failures. Breaking free from confirmation bias means **deliberately seeking out tests that challenge assumptions, which is the only way to build robust software.**
+
+**The point of tests is to try to break the code! And failing at it.**
 
 
 ## It is in our nature to assume the best
 
+I think this behavior of ours is really just our nature.
 
-My guess is that the thing driving us towards writing confirmatory tests is the natural world. We make this same mistake in practically everything we do.
+When we picture any solution, we always assume it's going to be a good solution.
 
-In the beginning, there is nothing. Then we create/buy something. **And we expect that thing to just be good enough.** We are focused on acquiring the thing, we don't expect it to be subpar or to need further improvements.
+When we first imagined democracy or the internet, we imagined they would encourage human cooperation. They will be superior to everything that came before, they will have no downsides, we will all be happier.
 
-An example: I want to rent an apartment and I want it to have a couch. So, my test will be: does the apartment have a couch.
+It seems to be that **it's hard for us to believe that something _can_ be built and also that we might build it poorly.** I mean, we plan to build it really well, why would it not work really well?
 
-After moving in, I see the couch is old and uncomfortable. So, for my next apartment my test will be: _does the apartment have a couch that is comfortable to sit on_.
+## The coffee machine conundrum
 
-After I move again, I see that the couch is now comfortable, but small. So, my next test will be: _does the apartment have a couch that is comfortable to sit on and big enough for 3 people_.
+Here's an example: you want to buy your first coffee machine.
 
-After I move again, I see that the couch is now comfortable, big enough for 3 people, but it stinks. So, my next test will be: _does the apartment have a couch that is comfortable to sit on, big enough for 3 people and does not stink_.
+Obviously you are going to read some reviews. You do that and then buy a good coffee machine. Easy-peasy. You buy the one with great reviews.
+
+But after using it a while, you find the machine is too loud. Originally, it didn't cross your mind to check the specs for decibels. So, you decide to give this one to your parents and buy a new one. This time a machine that makes good coffee and is quiet. You do that.
+
+But after a while you decide that the containers are just too hard to clean. So, you're giving this machine to your poor, student cousin and get yourself a new coffee machine. You want it to make good coffee, you want it to be quiet and containers need to be easy to clean. You find one and buy it.
+
+But after a while, you see that the new machine's coffee beans dispenser is simply too small, you need to refill this thing every day. Who has time for that?
 
 And so on.
 
+![The ever-growing list of requirements](/assets/bias/coffee-machine-requirements.svg)
+
 **It is only with lots and lots of experience that we can finally stretch our imagination to think of all the things that can go wrong, even though we've never yet seen them go wrong.**
+
+
+## Mathematics as a liability
+
+People who are educated in something adjacent to mathematics often become very skilled at delivering proof. We get trained on how to turn a hypothetical idea into a law.
+
+But this skill often becomes a liability. **The problem is that we trust ourselves too much.**
+
+And so we believe that our decisions are data-driven, purely rational. And if they are data-driven, well then they must be the best decisions a human can possibly make.
+
+But of course this isn't true. **We are not data-driven.** We are logical sometimes. But we want to believe we are logical all the time.
+
+When we make ourselves the sole judge of how code is done "right," our code becomes limited by whatever we happen to believe right then — by our current set of biases. **The software ends up being exactly as small as our current best guess is.**
 
 
 ## How to counteract
@@ -329,11 +369,9 @@ Are you choosing the best solution or just the familiar/fancy one? Have you fall
 
 **It helps to strategically pause projects.** I know they _said_ the project is super urgent, but what if _today_ you just **do some research and open up discussions** about possible solutions and their **repercussions**? 
 
-I've learnt this helps the project a lot. **In my experience, a breather creates space for good decisions to be made. It's always great, when good decisions are made _at the start of a project_, instead of after some code already needs to be reverted.** 
+I've learnt this helps the project a lot. **In my experience, giving a project time creates space for good decisions to be made. It's always great, when good decisions are made _at the start of a project_, instead of after some code already needs to be reverted.** 
 
 Generally, there is also other stuff to work on, so it's not like you are sitting, waiting and watching the paint dry during the pause.
-
-I love running, but let's just first make sure we all know which direction we are running towards and why.
 
 
 ## Next
