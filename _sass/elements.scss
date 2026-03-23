@@ -1,0 +1,44 @@
+/* ===== BASE ELEMENT STYLES ===== */
+
+p {
+  line-height: 1.8;
+  @media (min-width: 768px) {
+    font-size: $standard-font-size;
+    line-height: $standard-line-height;
+    margin-bottom: $standard-margin;
+  }
+}
+
+li {
+  line-height: 1.8;
+  @media (min-width: 768px) {
+    font-size: $standard-font-size;
+    line-height: $standard-line-height;
+  }
+}
+
+ul {
+  @media (min-width: 768px) {
+    margin-bottom: 1rem;
+  }
+}
+
+a {
+  color: $color-text;
+
+  &:hover {
+    color: $color-hover-red;
+  }
+
+  code {
+    color: $color-code;
+    &:hover {
+      color: $color-hover-red;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,48 +1,45 @@
+<div class="sidebar-content">
 
-<div class="container">
-  <div class="col-lg-12 col-xl-10 offset-xl-2 relative">
+  <h2><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h2>
 
-    <h2><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h2>
+  <p>by {{ site.author }}</p>
 
-    <p>by {{ site.author }}</p>
+  <h3 class="mt-md-4 mt-lg-5">Who am I</h3>
+  <p class="mb-4">Hi, my name is  <a href="{{ '/about' | relative_link }}" class="my-name">Ines Panker</a>. I'm a Python consultant focused on complex systems.</p>
 
-    <h3 class="mt-md-4 mt-lg-5">Who am I</h3>
-    <p class="mb-4">Hi, my name is  <a href="{{ '/about' | relative_link }}" class="my-name">Ines Panker</a>. I'm a Python consultant focused on complex systems.</p>
+  <p class="mb-4">
+    📢 <a href="/talks/" class="talks-link">My Talks</a>
+    <br>Observations about the human at work, building software.
+  </p>
 
-    <p class="mb-4">
-      📢 <a href="/talks/" class="talks-link">My Talks</a>
-      <br>Observations about the human at work, building software.
-    </p>
+  <p class="mb-4">
+    🗂️ <a href="/archive/" class="talks-link">Archive of all posts</a>
+  </p>
 
-    <p class="mb-4">
-      🗂️ <a href="/archive/" class="talks-link">Archive of all posts</a>
-    </p>
+  <ul class="social-icons">
+    {%- if site.social.github -%}
+      <li><a
+          href="https://github.com/{{ site.social.github | cgi_escape | escape }}"
+          title="{{ site.social.github | escape }}"
+          target="_blank"
+          ><img
+            height="25"
+            width="25"
+            src="{{ '/assets/github.svg' | relative_link }}"
+          ></a></li>
+    {%- endif -%}
 
-    <ul class="social-icons">
-      {%- if site.social.github -%}
-        <li><a
-            href="https://github.com/{{ site.social.github | cgi_escape | escape }}"
-            title="{{ site.social.github | escape }}"
-            target="_blank"
-            ><img
-              height="25"
-              width="25"
-              src="{{ '/assets/github.svg' | relative_link }}"
-            ></a></li>
-      {%- endif -%}
+    {%- if site.social.linkedin -%}
+      <li><a
+          href="https://www.linkedin.com/in/{{ site.social.linkedin | cgi_escape | escape }}"
+          title="{{ site.author | escape }}"
+          target="_blank"
+          ><img
+            height="25"
+            width="25"
+            src="{{ '/assets/linkedin.svg' | relative_link }}"
+          ></a></li>
+    {%- endif -%}
+  </ul>
 
-      {%- if site.social.linkedin -%}
-        <li><a
-            href="https://www.linkedin.com/in/{{ site.social.linkedin | cgi_escape | escape }}"
-            title="{{ site.author | escape }}"
-            target="_blank"
-            ><img
-              height="25"
-              width="25"
-              src="{{ '/assets/linkedin.svg' | relative_link }}"
-            ></a></li>
-      {%- endif -%}
-    </ul>
-
-  </div>
 </div>

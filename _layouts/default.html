@@ -5,36 +5,39 @@
     {%- include mathjax.html -%}
   <body>
 
-    <div class="container-fluid">
+    <div class="site-layout">
 
-      <div class="row position-relative" style="min-height:100vh">
-        <aside class="col-md-12 col-lg-3 aside-padding">
-          {%- include sidebar.html -%}
-        </aside>
+      <aside class="aside-padding">
+        {%- include sidebar.html -%}
+      </aside>
 
-        <div class="col-md-12 col-lg-9 main-padding">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="{%- unless page.fluid -%}reading-width{%- endunless -%}">
-                {{ content }}
-              </div>
+      <div class="site-main main-padding">
+        {%- if page.fluid -%}
+        <div class="content-fluid">
+          {{ content }}
+        </div>
+        {%- else -%}
+        <div class="content-centered">
+          <div class="content-justify-center">
+            <div class="reading-width">
+              {{ content }}
             </div>
           </div>
-
-          {%- include other_posts.html -%}
         </div>
+        {%- endif -%}
 
-        <footer class="footer py-5 position-relative">
-          <div class="footer-stroke position-absolute top-0 start-0 w-100"></div>
-          <div class="container text-center">
-            <p class="mb-1 footer-moto">Crafted by me, during odd hours</p>
-            <p class="text-muted small mb-0">© {{ "now" | date: "%Y"}} Ines Panker</p>
-            <div class="footer-signature mt-2">✍︎</div>
-          </div>
-        </footer>
-
-
+        {%- include other_posts.html -%}
       </div>
+
+      <footer class="site-footer footer py-5 position-relative">
+        <div class="footer-stroke position-absolute top-0 start-0 w-100"></div>
+        <div class="content-centered text-center">
+          <p class="mb-1 footer-moto">Crafted by me, during odd hours</p>
+          <p class="text-muted small mb-0 mt-0">© {{ "now" | date: "%Y"}} Ines Panker</p>
+          <div class="footer-signature mt-2">✍︎</div>
+        </div>
+      </footer>
+
     </div>
 
     <!-- Prism.js syntax highlighting -->

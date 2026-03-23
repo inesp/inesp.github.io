@@ -2,16 +2,8 @@
 layout: default
 ---
 
+<h1>{{ page.title | escape }}</h1>
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12">
-
-     <h1 class="">{{ page.title | escape }}</h1>
-
-     <div class="{{ page.css}}">
-       {{ content }}
-     </div>
-   </div>
- </div>
+<div class="{{ page.css}}">
+  {{ content }}
 </div>
