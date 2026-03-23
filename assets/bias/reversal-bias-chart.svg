@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 210">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <style>
+    .title { font: bold 12px system-ui, -apple-system, sans-serif; fill: #212529; }
+    .label { font: 10px system-ui, -apple-system, sans-serif; fill: #212529; }
+    .value { font: bold 15px system-ui, -apple-system, sans-serif; }
+    .small { font: 10px system-ui, -apple-system, sans-serif; fill: #6c757d; }
+    .stat { font: bold 10px system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <!-- Title -->
+  <text x="230" y="25" text-anchor="middle" class="title">Biased Actions Get Reversed</text>
+
+  <!-- Left stat: Reversals that were biased -->
+  <rect x="30" y="50" width="180" height="150" rx="8" fill="#fff" stroke="#ff7898" stroke-width="2"/>
+
+  <text x="120" y="75" text-anchor="middle" class="label">Of all reversed actions...</text>
+
+  <!-- Pie-ish visual: 69% = 248.4 degrees -->
+  <circle cx="120" cy="130" r="45" fill="#ffe6e6" stroke="#ff7898" stroke-width="1"/>
+  <path d="M 120 130 L 120 85 A 45 45 0 1 1 78.1 146.4 Z" fill="#ff7898"/>
+
+  <text x="130" y="148" text-anchor="middle" class="value" fill="#fff">69%</text>
+
+  <text x="120" y="190" text-anchor="middle" class="stat" fill="#ff7898">were biased</text>
+
+  <!-- Right stat: Biased actions that got reversed -->
+  <rect x="250" y="50" width="180" height="150" rx="8" fill="#fff" stroke="#ffcf65" stroke-width="2"/>
+
+  <text x="340" y="75" text-anchor="middle" class="label">Of all biased actions...</text>
+
+  <!-- Pie-ish visual: 80% = 288 degrees -->
+  <circle cx="340" cy="130" r="45" fill="#fff8cd" stroke="#ffcf65" stroke-width="1"/>
+  <path d="M 340 130 L 340 85 A 45 45 0 1 1 297.2 116.1 Z" fill="#ffcf65"/>
+
+  <text x="340" y="148" text-anchor="middle" class="value" fill="#fff">80%</text>
+
+  <text x="340" y="190" text-anchor="middle" class="stat" fill="#ffcf65">got reversed</text>
+</svg>

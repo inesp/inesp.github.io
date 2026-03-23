@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <style>
+    .title { font: bold 13px system-ui, -apple-system, sans-serif; fill: #212529; }
+    .label { font: 11px system-ui, -apple-system, sans-serif; fill: #212529; }
+    .small { font: 10px system-ui, -apple-system, sans-serif; fill: #6c757d; }
+    .bias { font: italic 9px system-ui, -apple-system, sans-serif;}
+  </style>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <polygon points="0,0 8,4 0,8" fill="#9f9f9f"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="260" y="25" text-anchor="middle" class="title">PR Review Shortcuts (Biased)</text>
+
+  <!-- Central PR box -->
+  <rect x="210" y="130" width="100" height="60" rx="6" fill="#fff" stroke="#495057" stroke-width="2"/>
+  <text x="260" y="155" text-anchor="middle" class="label">Pull Request</text>
+  <text x="260" y="172" text-anchor="middle" class="small">500 lines changed</text>
+
+  <!-- Reviewer icon -->
+  <circle cx="260" cy="290" r="15" fill="#9f9f9f"/>
+  <text x="260" y="315" text-anchor="middle" class="small">Reviewer</text>
+
+  <!-- Arrow from reviewer to PR -->
+  <line x1="260" y1="275" x2="260" y2="195" stroke="#9f9f9f" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Shortcut 1: Author history (top left) -->
+  <rect x="20" y="50" width="110" height="50" rx="4" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5"/>
+  <text x="75" y="70" text-anchor="middle" class="label">Author's past</text>
+  <text x="75" y="85" text-anchor="middle" class="label">mistakes</text>
+  <line x1="80" y1="120" x2="205" y2="140" stroke="#da4ada" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="75" y="115" text-anchor="middle" class="bias" fill="#da4ada">confirmation bias</text>
+
+  <!-- Shortcut 2: Recent bugs (top center-left) -->
+  <rect x="145" y="50" width="110" height="50" rx="4" fill="#fff8cd" stroke="#e6a000" stroke-width="1.5"/>
+  <text x="200" y="70" text-anchor="middle" class="label">Recent</text>
+  <text x="200" y="85" text-anchor="middle" class="label">production bugs</text>
+  <line x1="210" y1="120" x2="220" y2="125" stroke="#e6a000" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="200" y="115" text-anchor="middle" class="bias" fill="#e6a000">availability bias</text>
+
+  <!-- Shortcut 3: Own code (top center-right) -->
+  <rect x="270" y="50" width="110" height="50" rx="4" fill="#e0f2e7" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="325" y="70" text-anchor="middle" class="label">My own</text>
+  <text x="325" y="85" text-anchor="middle" class="label">recent changes</text>
+  <line x1="315" y1="120" x2="300" y2="125" stroke="#4a9c6d" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="325" y="115" text-anchor="middle" class="bias" fill="#4a9c6d">availability bias</text>
+
+  <!-- Shortcut 4: Existing comments (top right) -->
+  <rect x="395" y="50" width="110" height="50" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="450" y="70" text-anchor="middle" class="label">Existing PR</text>
+  <text x="450" y="85" text-anchor="middle" class="label">comments</text>
+  <line x1="445" y1="120" x2="315" y2="140" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="450" y="115" text-anchor="middle" class="bias" fill="#fd456f">bystander effect</text>
+
+  <!-- Shortcut 5: Author seniority (bottom left) -->
+  <rect x="55" y="210" width="110" height="50" rx="4" fill="#e6f3ff" stroke="#0066cc" stroke-width="1.5"/>
+  <text x="110" y="230" text-anchor="middle" class="label">Author's</text>
+  <text x="110" y="245" text-anchor="middle" class="label">seniority</text>
+  <line x1="165" y1="230" x2="205" y2="180" stroke="#0066cc" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="110" y="275" text-anchor="middle" class="bias" fill="#0066cc">Halo Effect</text>
+
+  <!-- Shortcut 6: PR age (bottom right) -->
+  <rect x="355" y="210" width="110" height="50" rx="4" fill="#f5e6ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="410" y="230" text-anchor="middle" class="label">PR's age</text>
+  <text x="410" y="245" text-anchor="middle" class="label">(3 weeks old)</text>
+  <line x1="355" y1="230" x2="315" y2="180" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="410" y="275" text-anchor="middle" class="bias" fill="#8b5cf6">Sunk Cost Fallacy</text>
+
+</svg>
