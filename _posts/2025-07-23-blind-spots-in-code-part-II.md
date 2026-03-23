@@ -2,6 +2,8 @@
 series: Cognitive Biases in Code
 title: "Exhibit B: I Just Need to Confirm Something (But I'm Pretty Sure I'm Right)"
 tags: ["Cognitive Biases in Code", "Engineering Research"]
+prev_post: 2025-07-21-blind-spots-in-code-part-I
+next_post: 2026-03-23-blind-spots-in-code-part-III
 biblio:
   - title: "R. Mohanani, I. Salman, B. Turhan P. Rodriguez & P. Ralph, Cognitive Biases in Software Engineering: A Systematic Mapping Study, 2020"
     link: https://www.researchgate.net/publication/328410759_Cognitive_Biases_in_Software_Engineering_A_Systematic_Mapping_Study
@@ -28,10 +30,9 @@ programming, 2006"
     link: https://sback.it/publications/icse2020.pdf
   - title: "S. Chattopadhyay, N. Nelson, A. Au, N. Morales, C. Sanchez, R. Pandita, and A. Sarma, A tale from the trenches: cognitive biases and software development, 2020"
     link: https://d1wqtxts1xzle7.cloudfront.net/92130960/ICSE2020_Bias-libre.pdf
-prev_post: 2025-07-21-blind-spots-in-code-part-I
 ---
 
-The previous chapter was all about anchoring bias, which makes us cling to the first idea we come across. This chapter is dedicated to **confirmation bias** and **accessibility bias**, which can inhibit innovation when they make us stubbornly stick to unproven ideas.
+The previous chapter was all about anchoring bias, which makes us cling to the first idea we come across. This chapter is dedicated to **confirmation bias** and **availability bias**, which can inhibit innovation when they make us stubbornly stick to unproven ideas.
 
 Why is fighting cognitive biases important? Because research shows they lead to more bugs and wasted time:
 
@@ -52,7 +53,7 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 &mdash; Wikipedia: Confirmation bias
 </figcaption>
 
-**Accessibility bias** is to truly, really truly trust your gut. _"When I saw the problem the first thing I thought of was Y, so Y must be the best solution."_ It's a cognitive bias, where people trust that 
+**Availability bias** is to truly, really truly trust your gut. _"When I saw the problem the first thing I thought of was Y, so Y must be the best solution."_ It's a cognitive bias where people believe that:
 
 > if something can be recalled, it must be important, or at least more important than alternative solutions not as readily recalled, is inherently biased toward recently acquired information.
 <figcaption>
@@ -133,7 +134,7 @@ PRs are a **group effort**, it's not something you can solve by yourself.
 
 How many people are going to devote themselves to overcoming their reviewing biases? Very few, I'd say. 
 
-Think about the junior on your team, who just doesn't yet have meaningful insights to contribute. And of your boss, who still sometimes meddles in PRs, although he shouldn't. Or the new hire, who says they did it differently at his previous company, and low-key suggests it was better there. 
+Think about the junior on your team, who just doesn't yet have meaningful insights to contribute. And of your boss, who still sometimes meddles in PRs, although he shouldn't. Or the new hire, who says they did it differently at their previous company, and low-key suggests it was better there. 
 
 Reading about biases once won't make a difference. It takes continuous effort, constant self-reflection, and a genuine desire to improve. It is hard work to silence your opinionated ego. **Good reviewing is practically non-existent.** So maybe we shouldn't expect it from people.
 
@@ -143,7 +144,7 @@ In companies, however, each team generally owns one part of any repo. Gatekeepin
 
 **PRs just seem like a lost cause to me.**
 
-Maybe we should focus our energy elsewhere: on better testing, on pair programming, on automated checks, .... Because relying on humans to overcome their cognitive shortcuts in every single review, is wishful thinking.
+Maybe we should focus our energy elsewhere: on better testing, on pair programming, on automated checks... Because relying on humans to overcome their cognitive shortcuts in every single review, is wishful thinking.
 
 
 ## Cognitive biases lead to code reverting
@@ -152,13 +153,13 @@ As I was researching this topic I stumbled upon a study that wanted to see cogni
 
 They found a very interesting connection between **biased actions and action reversals**.
 
-It is true, that the number of participants was rather small. Too small really, to make sweeping statements, but boy are the results satisfying to talk about.
+It is true that the number of participants was rather small. Too small really, to make sweeping statements, but boy are the results satisfying to talk about.
 
 The study was done by S. Chattopadhyay et al. and is called _A tale from the trenches: cognitive biases and software development_. 
 
 The researchers were observing a team of software professionals and wrote down **all the actions they saw and all the consequences.**
 
-What they found is, that **actions triggered by biases are more likely to be reversed later**. And also that **actions that had to be reversed are, overwhelmingly, biased ones**.
+What they found is that **actions triggered by biases are more likely to be reversed later**. And also that **actions that had to be reversed are, overwhelmingly, biased ones**.
 
 > Figure 1a (tn: below) shows the distribution of developer actions (biased or non-biased), and whether it led to a negative outcome. There were 953 actions with biases, and 1131 without. Similarly, there were 1104 reversal actions and 980 non-reversal actions. **Reversal actions were more likely to occur with a bias - 68.75% (759/1104 cases), and biased actions were more likely to be reversed - 79.64% (759/953 cases).**
 <figcaption>
@@ -228,7 +229,7 @@ Or it could have been any number of other biases.
 
 Often biases are triggered by stress.
 
-The boss wants something done **now!**. Yesterday would also work. 
+The boss wants something done **now!** Yesterday would also work. 
 
 We believe them...
 
@@ -315,7 +316,7 @@ I think this behavior of ours is really just our nature.
 
 When we picture any solution, we always assume it's going to be a good solution.
 
-When we first imagined democracy or the internet, we imagined they would encourage human cooperation. They will be superior to everything that came before, they will have no downsides, we will all be happier.
+When we first imagined democracy or the internet, we imagined they would encourage human cooperation. They would be superior to everything that came before, they would have no downsides, we would all be happier.
 
 It seems to be that **it's hard for us to believe that something _can_ be built and also that we might build it poorly.** I mean, we plan to build it really well, why would it not work really well?
 
@@ -369,12 +370,8 @@ Are you choosing the best solution or just the familiar/fancy one? Have you fall
 
 **It helps to strategically pause projects.** I know they _said_ the project is super urgent, but what if _today_ you just **do some research and open up discussions** about possible solutions and their **repercussions**? 
 
-I've learnt this helps the project a lot. **In my experience, giving a project time creates space for good decisions to be made. It's always great, when good decisions are made _at the start of a project_, instead of after some code already needs to be reverted.** 
+I've learnt this helps the project a lot. **In my experience, giving a project time creates space for good decisions to be made. It's always great when good decisions are made _at the start of a project_, instead of after some code already needs to be reverted.** 
 
 Generally, there is also other stuff to work on, so it's not like you are sitting, waiting and watching the paint dry during the pause.
 
-
-## Next
-
-⏭️ To be continued...
 

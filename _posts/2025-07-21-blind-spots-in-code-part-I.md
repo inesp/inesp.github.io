@@ -2,6 +2,7 @@
 series: Cognitive Biases in Code
 title: "Exhibit A: Because Writing a Fresh Query Is Too Much Work"
 tags: ["Cognitive Biases in Code", "Engineering Research"]
+next_post: 2025-07-23-blind-spots-in-code-part-II
 biblio:
   - title: "R. Mohanani, I. Salman, B. Turhan P. Rodriguez & P. Ralph, Cognitive Biases in Software Engineering: A Systematic Mapping Study, 2020"
     link: https://www.researchgate.net/publication/328410759_Cognitive_Biases_in_Software_Engineering_A_Systematic_Mapping_Study
@@ -16,7 +17,6 @@ biblio:
   - title: "R. Jain, J. Muro, and K. Mohan, A cognitive perspective on pair
 programming, 2006"
     link: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=2e0461a5259134e8f59ac9eda1c5df185f607a3d
-next_post: 2025-07-23-blind-spots-in-code-part-II
 ---
 
 > It works on my machine.
@@ -27,7 +27,7 @@ This might just be the original example of bias that we, developers, just can't 
 
 We are not infallible. **We are not mathematical.** We make just as many mental shortcuts as anybody else. We fall prey to cognitive biases just the same as everybody else does. 
 
-The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion...they are more about thought exclusion.
+The word "bias" has become synonymous with movements for inclusion of people, but cognitive biases are a far bigger topic than just being about people exclusion... they are more about thought exclusion.
 
 **Cognitive biases help us in our decision-making. They are thought habits.** They save us time and energy.
 
@@ -71,17 +71,16 @@ The filter-biases start strong but their logic quickly dwindles, it might go lik
 2. Let's also filter to only the top 3 universities in the country. ➡️ pseudo-intellectual
 3. And of course, ugly fonts are a no-go. ➡️ arbitrary
 
-Bias can quickly grow out of control. They generally start out as a rational shortcut, but they always have the potential to outgrow the rational space. **The rational and irrational have a very muddy border between them.**
+Biases can quickly grow out of control. They generally start out as rational shortcuts, but they always have the potential to outgrow the rational space. **The rational and irrational have a very muddy border between them.**
 
 The biggest problem with cognitive biases is that you (generally) don't see them. **Cognitive biases are blind spots. They are the thing you don't pay attention to.** They are in control, not you. And wouldn't you love to take back control over your own decisions?
 
 
 ## Exhibit A: Anchors are a chain with a weight at the end
 
+Anchoring is a cognitive bias where people rely too heavily on the **first piece of information** they see (the "anchor") when making decisions.
 
-Anchoring is a cognitive bias, where people rely too heavily on the **first piece of information** they see (the "anchor") when making decisions.
-
-## An example: You are a game-developer
+### An example: You are a game-developer
 
 Let's say **you're a developer** at a company that builds little **mini-games for users**. Last month, one such game went live and people loved it and played it a lot. The company announced that the top 100 players would get a reward... a t-shirt or plane tickets or something.
 

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <style>
+    .title { font: bold 14px system-ui, -apple-system, sans-serif; }
+    .label { font: 11px system-ui, -apple-system, sans-serif; fill: #495057; }
+    .small { font: 10px system-ui, -apple-system, sans-serif; fill: #6c757d; }
+    .week { font: bold 9px system-ui, -apple-system, sans-serif; fill: #495057; }
+    .month { font: 9px system-ui, -apple-system, sans-serif; fill: #6c757d; }
+    .thought { font: italic 11px system-ui, -apple-system, sans-serif; }
+    .vs { font: 12px system-ui, -apple-system, sans-serif; fill: #adb5bd; }
+  </style>
+
+  <!-- Inside View -->
+  <text x="125" y="24" text-anchor="middle" class="title" fill="#dc3545">Inside View</text>
+  <rect x="20" y="35" width="220" height="230" rx="6" fill="#fff" stroke="#dc3545" stroke-width="2"/>
+
+  <!-- Calendar header -->
+  <text x="130" y="55" text-anchor="middle" class="label" font-weight="bold">My Plan</text>
+
+  <!-- 2-week calendar -->
+  <rect x="35" y="65" width="190" height="90" rx="4" fill="#ffe8e8" stroke="#dc3545" stroke-width="1"/>
+
+  <!-- Week 1 -->
+  <text x="45" y="85" class="week">Week 1</text>
+  <rect x="90" y="72" width="125" height="18" rx="3" fill="#ffcdd2"/>
+  <text x="152" y="85" text-anchor="middle" class="small">Build core feature</text>
+
+  <!-- Week 2 -->
+  <text x="45" y="110" class="week">Week 2</text>
+  <rect x="90" y="97" width="80" height="18" rx="3" fill="#ffcdd2"/>
+  <text x="130" y="110" text-anchor="middle" class="small">Testing</text>
+  <rect x="175" y="97" width="40" height="18" rx="3" fill="#c8e6c9"/>
+  <text x="195" y="110" text-anchor="middle" class="small">Done!</text>
+
+  <!-- Week 3 - empty/future -->
+  <text x="45" y="135" class="week" fill="#ccc">Week 3</text>
+  <text x="90" y="135" class="small" fill="#ccc">free for next project...</text>
+
+  <!-- Sunny optimism -->
+  <circle cx="200" cy="178" r="15" fill="#ffd54f"/>
+  <g stroke="#ffd54f" stroke-width="2">
+    <line x1="200" y1="158" x2="200" y2="150"/>
+    <line x1="215" y1="163" x2="222" y2="158"/>
+    <line x1="220" y1="178" x2="228" y2="178"/>
+    <line x1="215" y1="193" x2="222" y2="198"/>
+  </g>
+
+  <text x="130" y="185" text-anchor="middle" class="thought" fill="#dc3545">"2 weeks, tops!"</text>
+
+  <!-- Reality note -->
+  <text x="130" y="210" text-anchor="middle" class="small">Focuses on the happy path</text>
+  <text x="130" y="225" text-anchor="middle" class="small">Assumes everything goes right</text>
+  <text x="130" y="250" text-anchor="middle" class="label" fill="#dc3545">Estimate: 80 hours</text>
+
+  <!-- VS -->
+  <text x="280" y="155" text-anchor="middle" class="vs">vs</text>
+
+  <!-- Outside View -->
+  <text x="415" y="24" text-anchor="middle" class="title" fill="#28a745">Outside View</text>
+  <rect x="320" y="35" width="220" height="230" rx="6" fill="#fff" stroke="#28a745" stroke-width="2"/>
+
+  <!-- Calendar header -->
+  <text x="430" y="55" text-anchor="middle" class="label" font-weight="bold">Last Similar Project</text>
+
+  <!-- 6-month calendar -->
+  <rect x="335" y="65" width="190" height="130" rx="4" fill="#e8f5e9" stroke="#28a745" stroke-width="1"/>
+
+  <!-- Months with crossed deadlines -->
+  <text x="345" y="85" class="month">Jan</text>
+  <rect x="375" y="72" width="140" height="14" rx="2" fill="#a5d6a7"/>
+  <text x="445" y="83" text-anchor="middle" class="small">Build core</text>
+
+  <text x="345" y="105" class="month">Feb</text>
+  <rect x="375" y="92" width="140" height="14" rx="2" fill="#a5d6a7"/>
+  <text x="445" y="103" text-anchor="middle" class="small">Still building...</text>
+  <!-- Crossed out deadline -->
+  <line x1="500" y1="99" x2="520" y2="99" stroke="#dc3545" stroke-width="2"/>
+  <line x1="505" y1="94" x2="515" y2="104" stroke="#dc3545" stroke-width="1.5"/>
+
+  <text x="345" y="125" class="month">Mar</text>
+  <rect x="375" y="112" width="100" height="14" rx="2" fill="#a5d6a7"/>
+  <text x="425" y="123" text-anchor="middle" class="small">Edge cases</text>
+  <!-- Crossed out deadline -->
+  <line x1="460" y1="119" x2="480" y2="119" stroke="#dc3545" stroke-width="2"/>
+  <line x1="465" y1="114" x2="475" y2="124" stroke="#dc3545" stroke-width="1.5"/>
+
+  <text x="345" y="145" class="month">Apr</text>
+  <rect x="375" y="132" width="80" height="14" rx="2" fill="#ffcc80"/>
+  <text x="415" y="143" text-anchor="middle" class="small">Bug fixing</text>
+
+  <text x="345" y="165" class="month">May</text>
+  <rect x="375" y="152" width="60" height="14" rx="2" fill="#ffcc80"/>
+  <text x="405" y="163" text-anchor="middle" class="small">Testing</text>
+
+  <text x="345" y="185" class="month">Jun</text>
+  <rect x="375" y="172" width="40" height="14" rx="2" fill="#81c784"/>
+  <text x="395" y="183" text-anchor="middle" class="small">Done</text>
+
+  <!-- Thought -->
+  <text x="430" y="210" text-anchor="middle" class="thought" fill="#28a745">"Last time took 6 months..."</text>
+
+  <text x="430" y="230" text-anchor="middle" class="small">Based on what actually happened</text>
+  <text x="430" y="250" text-anchor="middle" class="label" fill="#28a745">Estimate: ~400 hours</text>
+</svg>

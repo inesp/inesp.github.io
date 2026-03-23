@@ -297,7 +297,7 @@ They observed how estimates are asked for, but then rarely reviewed after the pr
 &mdash; M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold, Better Sure Than Safe? Overconfidence in Judgment Based Software Development Effort Prediction Intervals
 </figcaption>
 
-There is 1 specific excercise they did in this study that I particularly like.
+There is 1 specific exercise they did in this study that I particularly like.
 
 The researches went to one company and chose 20 participants and put them into 5 teams. Each team got 4 members: 
 - one developer
@@ -333,7 +333,7 @@ The best part, however, come to light when you look at the individual estimation
 &mdash; M. Jørgensen, K. Teigen, K. J. Moløkken-Østvold, Better Sure Than Safe? Overconfidence in Judgment Based Software Development Effort Prediction Intervals
 </figcaption>
 
-Thus, maybe you can take this as a friendly remider to stop saying (even to yourself) "How can this take more than X?". It can, because it does. We are just too optimistic about our abilities.
+Thus, maybe you can take this as a friendly reminder to stop saying (even to yourself) "How can this take more than X?". It can, because it does. We are just too optimistic about our abilities.
 
 But let's look at the "Kahneman and Lovallo" who are mentioned above. What do they say about inside and outside predictions?
 
@@ -341,6 +341,9 @@ But let's look at the "Kahneman and Lovallo" who are mentioned above. What do th
 <figcaption>
 &mdash; Kahneman and Lovallo, Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking
 </figcaption>
+
+![Inside vs Outside view](/assets/bias/inside-outside-view-D.svg)
+
 
 ## "Could we do it in 4 months?" <br> "If we skip a few things and smash up a few others, maybe..probably.." <br> "Ok, let's put 3 months then".
 
