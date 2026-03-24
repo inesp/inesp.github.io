@@ -39,8 +39,8 @@
   <section class="other-posts-frames">
     <h2 class="text-center mb-5">Other posts you might also like</h2>
 
-    <div class="container">
-      <div class="row g-3">
+    <div class="content-centered">
+      <div class="posts-grid">
 
         {%- for post in other_posts -%}
           {% assign excerpt_length = 20 %}
@@ -52,7 +52,7 @@
           {% endif %}
           {% if has_collection %}{% assign excerpt_length = 10 %}{% endif %}
 
-          <div class="col-md-6 col-lg-4">
+          <div>
             <a href="{{ post.url }}">
               <div class="frame-post p-3 position-relative">
                 <div class="frame-corner"></div>

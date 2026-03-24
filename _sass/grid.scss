@@ -1,0 +1,81 @@
+/* ===== BASE RESET ===== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* ===== LAYOUT GRID ===== */
+
+.site-layout {
+  min-height: 100vh;
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: 1fr auto;
+  }
+}
+
+.site-main {
+  @media (min-width: 992px) {
+    grid-column: 2;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+}
+
+.site-footer {
+  @media (min-width: 992px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.content-centered {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (min-width: 576px) { max-width: 540px; }
+  @media (min-width: 768px) { max-width: 720px; }
+  @media (min-width: 992px) { max-width: 960px; }
+  @media (min-width: 1200px) { max-width: 1140px; }
+  @media (min-width: 1400px) { max-width: 1320px; }
+}
+
+.content-fluid {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+
+  @media (min-width: 576px) { max-width: 540px; }
+  @media (min-width: 768px) { max-width: 720px; }
+  @media (min-width: 992px) { max-width: 960px; }
+  @media (min-width: 1200px) { max-width: 1140px; }
+  @media (min-width: 1400px) { max-width: 1320px; }
+}
+
+.content-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Other posts 3-column grid */
+.posts-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
