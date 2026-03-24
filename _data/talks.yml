@@ -17,7 +17,7 @@
   location: Amsterdam, Netherlands
   title: "Why smart developers write silly code"
   coming_soon: true
-  details_link:
+  details_link: https://m.devoxx.com/events/vdams26/talks/1759/why-smart-developers-write-silly-code
   video_link:
   slides_link:
   series: Cognitive Biases in Code
@@ -29,7 +29,7 @@
   location: Rome, Italy
   title: "It'll Take Two Weeks: Why Software Estimates Are a Pipe Dream"
   coming_soon: true
-  details_link:
+  details_link: https://conferences.codemotion.com/roma/speakers/#sz-speaker-a56cea70-f4e0-45b9-a2e8-470b71e73412
   video_link:
   slides_link:
   post_slug: estimation-is-a-delusion
