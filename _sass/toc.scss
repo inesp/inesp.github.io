@@ -43,4 +43,13 @@ details.toc {
       color: $color-hover-red;
     }
   }
+
+  // Rabbit hole items added by JS
+  .toc-rabbit-hole {
+    list-style: none;
+
+    .rabbit-emoji {
+      font-size: 0.8rem;
+    }
+  }
 }
