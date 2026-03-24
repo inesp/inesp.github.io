@@ -158,7 +158,7 @@ Interestingly, most fixes of resolved bugs came in less than 24h after the origi
 
 We are optimistic about how long things will take. We are optimistic about how risky a project is. We are optimistic about whether our code is done.
 
-And unfortunately, **knowing about optimism bias doesn't make it go away.** You can read this whole post, nod along, and still underestimate your next project by 70%. (Or you can become the pessimistic nay-sayer at your company whom nobody likes :-|.)
+And unfortunately, **knowing about optimism bias doesn't make it go away.** You can read this whole post, nod along, and still underestimate your next project by 70%. (Or you can become the pessimistic nay-sayer at your company whom nobody likes.)
 
 But maybe the goal of eliminating bias was always silly.
 
