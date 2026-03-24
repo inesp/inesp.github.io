@@ -33,6 +33,8 @@ Celery is actually full of gotcha-s. Partly because we are dealing with processe
 So, here it is, all kinds of basic and advanced concepts around Celery.
 
 
+{% include toc.html %}
+
 ## Workers and brokers
 
 First, let me explain some basic concepts, under which Celery operates.

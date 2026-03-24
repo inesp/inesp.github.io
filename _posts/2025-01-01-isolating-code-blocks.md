@@ -26,7 +26,9 @@ And I'm starting with: Code that isolates (insulates) code blocks.
 **Hint**: The full function is [at the end of the page](#full-code).
 {:.box}
 
-### Example: I'm sending emails to all team members. 
+{% include toc.html %}
+
+## Example: I'm sending emails to all team members. 
 
 If 1 person's email causes a bug, I want the code to skip this person and continue sending emails to others.
 
@@ -49,7 +51,7 @@ def send_all_emails(users: list[User]):
             send_report_email_to_user(user)
 ```
 
-### What `suppress_and_log_exc` does
+## What `suppress_and_log_exc` does
 
 - it catches some `Exception` class
 - logs it properly
@@ -73,7 +75,7 @@ def suppress_and_log_exc(
         )
 ```
 
-### Possible use cases
+## Possible use cases
 
 This code comes in handy whenever you have a list of actions that are independent of each other.
 
@@ -93,7 +95,7 @@ If the code for creating a Celery task for customer number 5 has a problem, we s
 It would be silly, if our code were to fail at...,  say sending out the monthly bill, with customer number 5 and then not even try to send it to customer number 6 and 7 and so on. 
 
 
-### Adding more settings to the contextmanager
+## Adding more settings to the contextmanager
 
 We can make the function more customizable by adding a setting for:
 1. the log level - some things are in reality just a warning or an info
@@ -104,7 +106,6 @@ We can make the function more customizable by adding a setting for:
 6. .. whatever your heart desires .. 💖
 
 So, here is now the full code:
-
 
 ## <a name="full-code"></a>Full code:
 
@@ -184,7 +185,7 @@ def suppress_and_log_exc_decorator(
 
 ```
 
-### Fin: All together now
+## Fin: All together now
 
 Our Example code could now look like this:
 

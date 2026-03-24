@@ -15,6 +15,8 @@ biblio:
 
 Consistent hashing is a strategy most notably used by distributed databases for determining to which `slot` a `key` belongs. Its main advantage is that if a new `slot` needs to be added, only `K/n` objects need to be moved  (`K`=number of all keys, `n`=the number of `slots`). And this means adding and removing slots is relatively inexpensive.
 
+{% include toc.html %}
+
 ## In Practice
 
 Let's say you have implemented a very successful online telephone book. Your users enter a person's name and get their telephone number. You already have millions of person-phone mappings and more are added every day. Your DB server will soon not be able to handle the number of requests, thus you decided to partition the database.

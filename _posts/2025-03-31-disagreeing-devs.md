@@ -27,6 +27,8 @@ But the problem in this is that these 72% do not agree with each other at all.
 {% include image.html alt="Etsy" src="debate/72-percent.jpg" %}
 _(*) I made this up, but it sounds plausible, right?_
 
+{% include toc.html %}
+
 ## Great fights
 
 For instance, have you ever seen PR reviews that are full of nit-picking comments?

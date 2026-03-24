@@ -23,6 +23,8 @@ biblio:
 So I had to read a few docs and a few standards to really, truly understand what to do with missing timezones and whether the datetime I am creating is really and truly the exact datetime I want and not one that is 1h before or ahead (my timezone is +01:00, which is very easy to mistake for +00:00).
 
 
+{% include toc.html %}
+
 ## <small>What is</small> UTC time
 
 UTC is a global time standard. It defined how time will be measured and coordinated between everybody. But UTC is also used as a **successor of GMT** (=Greenwich Mean Time) to describe the time at the 0° meridian.

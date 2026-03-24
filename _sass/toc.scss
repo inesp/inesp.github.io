@@ -1,0 +1,46 @@
+// ===========================================
+// Table of Contents
+// ===========================================
+
+@import "colors";
+
+details.toc {
+  border: none;
+  border-left: 4px solid $color-yellow-dark;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  background: $color-yellow-light;
+
+  summary {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: $color-yellow-dark-2;
+  }
+
+  ol, ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+
+    li {
+      margin-bottom: 0.3rem;
+      padding-left: 0.25rem;
+    }
+
+    // Nested levels
+    ol, ul {
+      margin-top: 0.3rem;
+      padding-left: 1.25rem;
+      list-style-type: circle;
+    }
+  }
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-hover-red;
+    }
+  }
+}

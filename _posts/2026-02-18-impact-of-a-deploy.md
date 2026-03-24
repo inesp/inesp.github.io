@@ -47,7 +47,7 @@ Wouldn't it be great if we could detect these changes soon after a code change i
 
 Welcome to the wonderful world of **automated health detection**, where we teach Python to answer the eternal question: *"Does my code have undesired side effects?"*
 
----
+{% include toc.html %}
 
 ## A Quick Confession
 

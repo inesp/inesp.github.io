@@ -44,6 +44,8 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 {% include image.html alt="Cognitive biases" src="bias/confirm.png" ref="https://www.pexels.com/photo/worms-eye-view-of-spiral-stained-glass-decors-through-the-roof-161154/" %}
 
 
+{% include toc.html %}
+
 ## Exhibit B: I just need to confirm something (but I'm pretty sure I'm right)
 
 **Confirmation bias** is about being deaf to everything that contradicts your beliefs. Your mind has been made up. This is unchangeable. It is:

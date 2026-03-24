@@ -44,6 +44,8 @@ The previous chapters covered anchoring bias and confirmation bias. This chapter
 In software, **we like to underestimate how long things will take, how many bugs we'll have to fix, how complex the project will be**. We downplay the risks and plan for a sure and swift victory.
 
 
+{% include toc.html %}
+
 ## Optimism bias & estimations
 
 Optimism bias is best seen when we estimate projects.

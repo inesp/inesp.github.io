@@ -21,6 +21,8 @@ To me, *"simplicity over complexity"* is a pragmatic answer to questions of many
 - it gives me confidence into my decision because it is backed up by so many other theorems, principles, rules and guidelines.
 
 
+{% include toc.html %}
+
 ## What is "simple"?
 
 **Simple**: Solutions that are easy to understand, maintain, and scale. It's the kind of solution that makes you nod appreciatively when you revisit it six months later. It’s easy to grasp, easy to tweak **and doesn’t require a flowchart to explain**. Fewer moving parts, cleaner logic and far less swearing.

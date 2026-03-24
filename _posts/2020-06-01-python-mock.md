@@ -15,6 +15,8 @@ So I finally gave in and wrote this down. **This is the list I wish I had.**
 There are people out there who will tell you that you should never mock anything, ever, that mocking is a code smell and you should refactor until you don't need mocks. Handle their stance like you would any absolutist: with suspicion. **Writing tests is** less about moral purity and more **about preventing bugs before your users find them**.
 
 
+{% include toc.html %}
+
 ## Creating Mock objects
 
 The docs tell of all the ways mock objects can be created, but they don't make it obvious what the practical differences are between them. So, let's remedy this now. We have 3 mock classes:

@@ -25,6 +25,8 @@ From where I stand, I see too many too loosely defined variables to see any real
 
 So, even if the result can have no real-world value, let's say that we absolutely must come up with a plausible number, a ballpark figure. How would we go about doing it?
 
+{% include toc.html %}
+
 ## Let's talk over coffee
 
 For starters, we need to take the scariness out of this interview question.

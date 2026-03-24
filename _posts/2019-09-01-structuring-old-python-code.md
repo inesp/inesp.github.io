@@ -9,6 +9,8 @@ tags: ["Code Patterns", "Software Design Principles", "Code Style"]
 Every project inevitably gravitates towards messy code. As long as you are adding features to a project, you can be pretty sure its total "messiness" is not decreasing. Developers are notoriously bad at removing features, there is only ever going to be more logic and in Python, this means more dictionaries and more tuples being passed around. While we may not be able to win in the long run, we surely can fight it for a long time.
 
 
+{% include toc.html %}
+
 ## The ZOO of configs
 
 Just last week I had to modify some old code in which (for some phantom reason) half of the variables were named with some conjugation of `config`. 

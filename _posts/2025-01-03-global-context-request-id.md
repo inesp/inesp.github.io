@@ -22,6 +22,8 @@ We are surely not going to pass `user`/`request_id` as arguments to every functi
 So, how is this made?
 
 
+{% include toc.html %}
+
 ## Let's learn from an example 
 
 Let's build `get_current_request_id()` as an example. I'm assuming we are talking about HTTP requests.

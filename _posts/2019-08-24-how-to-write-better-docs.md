@@ -15,6 +15,8 @@ Because it is written in a boring, counterproductive style. But why is that? Bec
 
 Learning is easiest through experience, thus let's start with a practical exercise. We will write an email.
 
+{% include toc.html %}
+
 ## Imagine the following scenario. 
 
 It is Thursday, the 4th day of your 1-week sprint. You have just finished a ticket and have opened up a pull request. The ticket was about developing a new way to create CLI commands. The existing commands were all built on a now-defunct library.
@@ -46,7 +48,7 @@ Let's say you decide to write an email. How better to make everybody understand 
   </div>
 </div>
 
-Great, done! Let's send it out. You have done everything and more. You've finished the ticket, you've communicated with everybody, you've even written docs and an email and everything. You are one great developer :relaxed: !
+Great, done! Let's send it out. You have done everything and more. You've finished the ticket, you've communicated with everybody, you've even written docs and an email and everything. You are one great developer 😌!
 
 But, are you really done? 
 

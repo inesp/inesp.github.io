@@ -20,6 +20,8 @@ biblio:
 
 Nginx is *"a web server which can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache"*. uWSGI is an implementation of the WSGI spec, which describes how a web server should communicate with a web app, which makes uWSGI also a type of web server. So, why does a typical server setup for a Python app consists of 2 web servers?
 
+{% include toc.html %}
+
 ## Can I ditch uWSGI?
 
 Given the fact that Nginx is the [2nd most popular web server (right after Apache)](https://w3techs.com/technologies/cross/web_server/ranking){:.target=_blank} and uWSGI's website does an absolutely horrible job at explaining what uWSGI is or what it provides, I feel inclined to ditching uWSGI. I mean, just look at this description:
