@@ -6,3 +6,10 @@ up-prod:
 
 upgrade:
 	bundle update
+
+upgrade-ruby:
+	@echo "Fetching GitHub Pages Ruby version..."
+	@curl -s https://pages.github.com/versions.json | grep -o '"ruby":"[^"]*"' | cut -d'"' -f4 > .ruby-version
+	@echo "Updated .ruby-version to $$(cat .ruby-version)"
+
+upgrade-all: upgrade-ruby upgrade
