@@ -282,11 +282,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-feed
-  jekyll-seo-tag
-  jekyll-sitemap
-  jemoji
-  minima (~> 2.0)
 
 BUNDLED WITH
-   2.5.23
+   2.5.11
