@@ -24,6 +24,8 @@ As the silly but melodious adage goes: Trust is good, control is better.
 
 
 
+{% include toc.html %}
+
 ## 💡 Concept 1: Assert finally finds its calling
 
 The `assert ...`-statements are a weird concept. Officially, they are supposed to be debugging aids, but in reality they are often active in production code, in the production environment.

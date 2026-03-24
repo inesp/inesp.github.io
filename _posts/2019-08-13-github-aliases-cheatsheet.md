@@ -12,8 +12,9 @@ As much as I fancy looking like a TV hacker, I still decided to change the essay
 
 ![Git aliases](/assets/git-alias.png)
 
+{% include toc.html %}
 
-#### Level 1 aliases
+## Level 1 aliases
 
 These are just about replacing 1-short-word with 1-shorter-word.
 
@@ -43,11 +44,11 @@ The results of this change are commands like `g br` instead of `git branch` and 
 
 To get a list of your existing aliases, call: `g config --global --list` or you can directly open your global config file `~/.gitconfig`.
 
-#### Level 2 aliases
+## Level 2 aliases
 
 These are a bit more advanced.
 
-##### `git lg`
+### `git lg`
 
 The most famous one is probably the `lg` command. Everybody is using it and I have absolutely no idea, where I got it from. Several versions of it exist, but they are all visualizing the git history as a graph:
 
@@ -69,7 +70,7 @@ Alternatively, a slightly different print is bellow:
 
 ![git lg 2](/assets/Git-lg-2.png)
 
-##### `git afa`
+### `git afa`
 
 A common workflow at my current team is to amend existing commits. We strive to create a clean git history by squashing certain commits together. The only problem is that it takes a few commands to accomplish this and it gets awfully repetitive over time.
 
@@ -120,7 +121,7 @@ But as I said, this is a lengthy affair, thus I have set up the following aliase
 ```
  `g f xxx` only creates the desired commit, `g fa xxx` also triggers a rebase and `g afa xxx` first commits all files before it creates a fixup-commit and triggers a rebase.
 
-##### Always have `autosquash` on
+### Always have `autosquash` on
 
 In my experience this git setting should always be turned on. It is annoying to have to remember to add  `--autosquash` to your `rebase` commands. Whenever you do a rebase, git should check if you've marked any commits as `fixup`s and offer to merge them. By default this setting is off, but to turn it one, just do:
 
@@ -128,7 +129,7 @@ In my experience this git setting should always be turned on. It is annoying to 
 git config --global rebase.autosquash true
 ```
 
-##### `git cog`
+### `git cog`
 
 Last but not least is my grep-ified checkout command:
 

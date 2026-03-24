@@ -26,6 +26,8 @@ We trigger a task, we want to know when that job is done and when to expect the 
 It's like project estimation. The manager truly wants to know when the project will be out of the house and not
 really, that it can be done in 1 week, but nobody is free to do it for the next 6 months. 👷‍♀️
 
+{% include toc.html %}
+
 ## Signals 🎺
 
 As far as I can see, we just need to time the tasks ourselves. Our weapon of choice are Celery signals.

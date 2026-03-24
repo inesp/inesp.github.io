@@ -16,6 +16,8 @@ Self-documenting code blocks are like **friendly tripping wire** or an alert for
 In the previous chapter, we talked about using `assert`-s to kill new code even before it goes to production. Now we'll look at how to use error messages to help fix bugs that already made it to production.
 
 
+{% include toc.html %}
+
 ## 💡 Concept 2: Error messages with fixing instructions
 
 Errors logged in production have a certain level of **irritation** associated with them. 

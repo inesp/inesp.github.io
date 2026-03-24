@@ -20,6 +20,8 @@ There are actually **at least 4 possible second steps**:
 ![transaction retry](/assets/transaction-start.png)
 
 
+{% include toc.html %}
+
 ## Most code just gives up
 
 The msg "use DB transactions" is spread far enough that transactions are present in most codebases (where applicable, of course). But then, there is no error handling, no retry, no nothing.

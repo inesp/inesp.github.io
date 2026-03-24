@@ -19,6 +19,8 @@ In the perfect world, we are a community and we all keep the libs upgraded to th
 Wrong! Devs need to be *softly* pushed to do the right thing. Yes, *softly*, so they don't notice they are being pushed 😉🚧🚧🚧.
 
 
+{% include toc.html %}
+
 ## Step 1: First we need to listen to deprecation warnings
 
 We are using `pytest`, so this step is easy-peasy for us.  

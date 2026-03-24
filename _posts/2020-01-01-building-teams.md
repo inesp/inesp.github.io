@@ -22,6 +22,8 @@ The first person to walk on the Moon was Neil Armstrong. I knew this before I kn
 
 ![](/assets/frontman-teams.png)
 
+{% include toc.html %}
+
 ## Are you a team player?
 
 Have you ever been asked this question? Did you notice that etiquette rules determine how to answer it. We are not supposed to wing it, we are supposed to know the answer by heart. You first firmly say *"yes"* and then add a vague, but believable proof of your ability to perform exceptionally inside a team. A million articles on the internet explain how to answer in a sophisticated, educated way, without revealing anything personal. 

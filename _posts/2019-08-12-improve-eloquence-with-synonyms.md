@@ -10,7 +10,7 @@ It turns out that a significant part of our work as developers is to write stuff
 
 In those moments I turn to Thesaurus's life-saving (read: face-saving) [online synonyms' dictionary](https://www.thesaurus.com/browse/good){:target="_blank"}.
 
-[![Synonyms' dictionary](/assets/Synonims-thesaurus.png)](https://www.thesaurus.com/browse/good){:target="_blank"}
+[![Synonyms' dictionary](/assets/synonims/Synonims-thesaurus.png)](https://www.thesaurus.com/browse/good){:target="_blank"}
 
 
 Let's look at some examples.
@@ -23,7 +23,7 @@ To avert this calamity, let's see, what else we can say. We need to find somethi
 
 There is a whole list of possible alternatives: foolish, futile, ill-advised, shortsighted, rash, ... 
 
-![Synonyms of stupid](/assets/Synonyms-stupid.png)
+![Synonyms of stupid](/assets/synonims/Synonyms-stupid.png)
 
 We can look deeper, at 2nd level synonyms (=synonyms of the synonyms of stupid) and extend the list with: daring, imprudent, wild, brash, unwise, incautious, ... 
 
@@ -35,7 +35,7 @@ There is nothing particularly wrong with this sentence per se. But we might have
 
 There is an assemblage of delightful words to choose from:
 
-![Synonyms of careful](/assets/Synonyms-careful.png)
+![Synonyms of careful](/assets/synonims/Synonyms-careful.png)
 
 For instance: **"We should be more vigilant (when assessing third-party libraries)"**. Doesn't this sound as if we know what we are talking about?
 
@@ -55,4 +55,4 @@ However, communication is difficult, particularly written communication, since w
 When writing something down, there is the problem of the author not having succeeded in expressing what she wanted to, the problem of us not having all the context, the problem of us not having succeeded in expressing what we wanted to and the problem of this sentence being written down forever and ever and ever and ... (When are any comments, any emails ever deleted?). It is simply prudent to bit a bit more meticulous when creating your legacy.
 
 
-![Writings last](/assets/Synonyms-da-vinci.jpg){:.full-width}
+![Writings last](/assets/synonims/Synonyms-da-vinci.jpg){:.full-width}

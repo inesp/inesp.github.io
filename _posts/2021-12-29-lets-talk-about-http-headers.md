@@ -20,6 +20,8 @@ But, ... fact is, for a web developer, which many, many of us are, not having so
 
 
 
+{% include toc.html %}
+
 ## What are HTTP headers anyway
 
 

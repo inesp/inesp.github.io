@@ -10,6 +10,8 @@ biblio:
 
 Celery never retries your tasks, unless you tell it to. Here is how you can tell her to:
 
+{% include toc.html %}
+
 ## The Basics
 
 There are a few basic terms and procedures that you need to know about Celery, to understand this article. All of them can be found here:
@@ -34,7 +36,7 @@ All the retry-related settings:
 
 By default, Celery executes each task only once. Retrying is fully supported, but it has to be manually triggered (`my_task.retry()`) or explicitly setup.
 
-##### **1. A retry is triggered.**
+### 1. A retry is triggered.
 
 A new ETA is calculated. The ETA can be explicitly provided in the retry command: `my_task.retry(countdown=..)` or `my_Task.retry(eta=..)` or it will be calculated from the settings of the task. After this, the task is **assigned to the same worker as has executed the task last time** and is then put **into the ETA queue**. This queue is not really a queue, but more an ordered list of tasks with ETA. Each worker has a list like that (if there are any ETA tasks, of course). In the broker, this list is stored under the key `unacked`.
 
@@ -44,7 +46,7 @@ To inspect this queue in Redis, call:
 redis-cli HGETALL unacked
 ```
 
-##### **2. The ETA time arrives**
+### 2. The ETA time arrives
 
 The task will still need to wait for its worker to have free processes/threads to execute it. This means that there can sometimes be a big difference between the ETA time and the actual execution start. You might want to keep an eye on that difference. The way we did it is that we:
 
@@ -82,18 +84,18 @@ The task will still need to wait for its worker to have free processes/threads t
            statsd.timing(f"celery.task.{key}", value, tags=[f"task:{task.name}"])
     ```
 
-##### **3. A worker finds a free process.**
+### 3. A worker finds a free process.
 
 The worker starts executing the task and either finishes it with the status `SUCCESS` (no exception and no retry occur) or `FAILURE` (an exception occurs, but no retry) or a new retry.
 
-##### **4. The max retries is reached.**
+### 4. The max retries is reached.
 
 If a retry is triggered, but it turns out that there are no more retries. The task's status is set to `FAILURE` and `MaxRetriesExceededError` is raised.
 
 
 ## Common settings
 
-#### Explicit manual retry
+### Explicit manual retry
 
 This task will only retry if that `if`-statement's body is reached. At that point the task will stop, the `retry()` behaves like a `return` statement. An ETA will be created for `30` seconds into the future. The task will be run up to **4** times: the first time + 3 retries.
 
@@ -106,7 +108,7 @@ def generate_and_send_email(user_id: int, event_name: str):
 ```
 
 
-#### Retry on Exception
+### Retry on Exception
 
 This task will be retried whenever either the exception `EmailServerNotReachable` or `SomeEmailException` occurs (or any of its subclasses). We could just say `autoretry_for=(Exception,)` and the task would retry for EVERY exception. But my experience showed me that most exceptions are not worth a task retry. Most of the time the exception that occurs will not go away with a new retry. Think of exceptions like `TypeError` because some code is trying to do `None + 3`. We can re-try this many times, but as long as something doesn't change (the input data, the code, ...), the result will end with `TypeError`.
 
@@ -119,7 +121,7 @@ def generate_and_send_email(user_id: int, event_name: str):
 
 ```
 
-#### Retry with backoff
+### Retry with backoff
 
 This scenario is especially common when we are dealing with an HTTP request in a task. We want to make the HTTP request again because we weren't able to get data from the remote service, but we don't want to overwhelm the remote service. To make the task user friendly, we might want to retry the HTTP request fairly soon: let's say in 30 seconds. But if the 2nd attempt fails as well, then something bigger is probably wrong. We want to wait a bit before we ping them again: let's say 60 seconds. If this attempt fails again, then let's wait even longer: maybe 2 minutes. And so on. This is called an "exponential backoff".
 
@@ -159,7 +161,7 @@ I think most developers don't make this calculation most of the time. And why wo
 To save us, there is `retry_backoff_max`.
 
 
-#### Always retry with `retry_backoff_max`
+### Always retry with `retry_backoff_max`
 
 To avoid retry-backoff spinning out of control, use `retry_backoff_max`. This example limits the backoff-interval to 5 min. The intervals will go like this: `[30, 60, 120, 240, 300, 300, 300, 300, 300, 300]`.
 
@@ -180,7 +182,7 @@ This completely changes the graph. Even if this task runs all 11 times, it is re
 {% include image.html alt="Num of retries with retry_backoff_max" src="retry-num-of-minutes-max.jpg" ref="https://www.canva.com/" ref_intro="Created with " %}
 
 
-#### Retrying with jitter
+### Retrying with jitter
 
 This setting is useful for a very specific type of situation: when you have several clients starting your task at the same time. This task has an HTTP request and the task has to be retried. If all of your clients started the task at the same time, then they will all try to retry it at the same time, which is not optimal for your resources. This is where we introduce `jitter`. By setting `retry_jitter=True`, we allow randomness into the calculation of the next ETA. The next ETA won't be the exact number as calculated by `retry_backoff`, instead, it will be a random number of the interval between 0 and the calculated number: `random.randrange(new_num_of_seconds + 1))`.
 

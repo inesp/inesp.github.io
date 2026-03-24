@@ -20,6 +20,8 @@ And we should take advantage of this behavior 😎.
 ![Self-Documenting Code Concept 4: Embrace Copy-Paste - Set the Trap](/assets/docs/copy-paste.jpg)
 
 
+{% include toc.html %}
+
 ## Concept 4: Embrace Copy-Paste
 
 The various schools that care of us from a young age have made us blind to the fact that **copy-paste is a valid way of learning**. I would even go so far as to say it is by far the most common and effective way of learning ... anything really.

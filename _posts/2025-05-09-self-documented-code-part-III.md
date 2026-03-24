@@ -15,6 +15,8 @@ Code patterns are documentation, they are the boilerplate. They let you concentr
 ![Abstracts or generics](/assets/docs/abstract-or-generic.png)
 
 
+{% include toc.html %}
+
 ## 💡 Concept 3: Use abstract functions, interfaces, enforce code patterns
 
 The Python community puts a heavy emphasis on simplicity. **You should use the simplest tool for every job.** 

@@ -24,6 +24,8 @@ And so it happens that the rate-limit response is usually handled in one of 2 wa
 - option A): _Oops, totally forgot to handle any errors at all_ 
 - option B): _All errors are equal, all errors are bad, code stop_
 
+{% include toc.html %}
+
 ## Option A) _Oops, totally forgot to handle any errors at all_ 
 
 This is the easy-way-out. 

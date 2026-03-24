@@ -40,6 +40,8 @@ Hint: use them only inside transactions. Makes it safer. DB transactions are sho
 
 
 
+{% include toc.html %}
+
 ## Use case example
 
 We have a multithreaded system.

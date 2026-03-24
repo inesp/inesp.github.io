@@ -19,6 +19,8 @@ Code will always be exquisitely more readable and maintainable to those, who wro
 
 Nevertheless, you can do a lot to help your successors understand your intentions. Here are my 3 random illustrations.
 
+{% include toc.html %}
+
 ## Use the more common default
 
 **Problem** 

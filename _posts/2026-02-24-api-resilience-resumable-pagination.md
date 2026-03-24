@@ -18,6 +18,8 @@ If it worked like this:
 
 **... and! if we could include this somewhat generically into all existing and future Celery tasks?**
 
+{% include toc.html %}
+
 ## The common approach
 
 Commonly, if we even consider re-running Celery tasks, we set them up like so:

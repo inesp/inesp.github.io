@@ -11,6 +11,8 @@ biblio:
 
 Very recently I stumbled upon a new and curious solution to a very minor, but very annoying problem that I occasionally bump into with PostgreSQL. Admittedly, a perfectly adequate solution already exists for this problem and Postgres's limitations of the `GROUP BY`-logic, which are causing this problem make perfect sense to me and I support them fully. *But* (and doesn't every rule always trigger a *"but can you make an exception this time"*), I never liked that solution, because it is so verbose and difficult to read. Is there a better way?
 
+{% include toc.html %}
+
 ## How to select additional columns when using GROUP BY together with MAX/MIN
 
 (For the purposes of this story, ) I am a wildlife researcher and I count how many animals live where. I also have a small Postgres table, where I record the number of animals I've counted. Here it is:
@@ -43,7 +45,7 @@ But how do I get the area? How do I get the value of the area column, in the sam
 I can't just add `, area_code` to the list of `SELECT` columns, because I will get the error: `column "animals.area_code" must appear in the GROUP BY clause or be used in an aggregate function`. And this makes sense, but unfortunatelly no aggregate function exists that could do what I want it to. I don't want to know the `MAX(area_code)`, nor the `COUNT(area_code)`, I want to know something like this `SAME_ROW_VALUE(area_code, column=max_num)`.
 
 
-### The standard solution (and possibly the fastest, most optimized and most boring solution of them all)
+## The standard solution (and possibly the fastest, most optimized and most boring solution of them all)
 
 One of the standard solutions is to use a subquery: we `INNER JOIN` the 1st query with the `animals` table to identify the rows where the `animal_id` and `max_num` match:
 
@@ -72,7 +74,7 @@ Let me be honest here, if you have a huge table with lots of data and you care a
 But, if this long-winded letter of a SELECT-statement irks you out, let me introduce you to other, more funky solutions 😏.
 
 
-### My favorite solution (very hacky, but so short)
+## My favorite solution (very hacky, but so short)
 
 Here is the solution I like better. I'd like to emphasize I am not the author of the idea, I am just spreading the word. I found this solution in a StackOverflow post, but I don't know which one and I've just spent half an hour searching StackOverflow for it with no luck.
 
@@ -99,7 +101,7 @@ I know, that additional `SUBSTRING(MAX.....` demands some explanation. 😁
 
 I personally, like this approach, but again *"PROFILE YOUR QUERIES ON YOUR ACTUAL DATA before making a decision"*. It all depends on your data, the size of your table, the data types of your columns, your hardware, ...
 
-### My friend's solution (because "the above solution is so hacky, that it should only be used in the context of MySQL" :P - hat tip to MySQL for being the most popular database platform)
+## My friend's solution (because "the above solution is so hacky, that it should only be used in the context of MySQL" :P - hat tip to MySQL for being the most popular database platform)
 
 ```sql
 SELECT

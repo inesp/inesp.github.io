@@ -43,6 +43,8 @@ Our biases are holding us all back. But it needn't be this way.
 
 
 
+{% include toc.html %}
+
 ## Biases are good
 
 After I've scared you a little bit, let me now present the flip side of the coin.
