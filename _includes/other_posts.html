@@ -1,18 +1,28 @@
 {% if page.previous  or page.next %}
 
   {% comment %}
-  First collect other posts with the same tag. If too few, then add posts in chronological order.
+  Collect related posts, prioritizing those with more tag overlap.
   {% endcomment %}
 
   {% assign other_posts = "" | split: "" %}
   {% assign other_posts_urls = "" | split: "" %}
+  {% assign page_tags = page.tags | join: "||" %}
 
-  {% for tag in page.tags %}
-    {% for post in site.tags[tag] %}
-      {% if post != page %}
+  {% comment %} Iterate by overlap count: 3+ tags, then 2, then 1 {% endcomment %}
+  {% for min_overlap in (1..3) reversed %}
+    {% for post in site.posts %}
+      {% if post != page and other_posts.size < 3 %}
         {%- unless other_posts_urls contains post.url -%}
-          {% assign other_posts = other_posts | push: post %}
-          {% assign other_posts_urls = other_posts_urls | push: post.url %}
+          {% assign overlap = 0 %}
+          {% for tag in post.tags %}
+            {% if page_tags contains tag %}
+              {% assign overlap = overlap | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% if overlap >= min_overlap %}
+            {% assign other_posts = other_posts | push: post %}
+            {% assign other_posts_urls = other_posts_urls | push: post.url %}
+          {% endif %}
         {% endunless %}
       {% endif %}
     {% endfor %}
