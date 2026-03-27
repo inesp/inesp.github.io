@@ -1,0 +1,62 @@
+<svg viewBox="0 0 650 270" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <defs>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#da4ada"/>
+    </marker>
+  </defs>
+
+  <!-- Column headers -->
+  <text x="20" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6c757d" letter-spacing="0.5">SCENARIO</text>
+  <text x="220" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6c757d" letter-spacing="0.5">WHAT GITHUB DOES</text>
+  <text x="420" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#6c757d" letter-spacing="0.5">WHAT THE WORKER EXPERIENCES</text>
+
+  <line x1="20" y1="32" x2="650" y2="32" stroke="#dadada" stroke-width="1"/>
+
+  <!-- ============ ROW 1: UNREACHABLE ============ -->
+  <text x="20" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#da4ada">1.</text>
+  <text x="40" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#212529">Unreachable</text>
+  <text x="40" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">server dead, packets dropped</text>
+
+  <!-- ghosted github box -->
+  <rect x="220" y="48" width="170" height="40" rx="4" fill="#fff" stroke="#9f9f9f" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="305" y="73" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9f9f9f">…silence…</text>
+
+  <text x="420" y="64" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#212529">blocks 30s on read timeout</text>
+  <text x="420" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">worker can't do anything else for 30s</text>
+
+  <line x1="20" y1="100" x2="650" y2="100" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- ============ ROW 2: UP BUT UNHEALTHY ============ -->
+  <text x="20" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#da4ada">2.</text>
+  <text x="40" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#212529">Up but unhealthy</text>
+  <text x="40" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">database / upstream broken</text>
+
+  <!-- solid github box with 500 -->
+  <rect x="220" y="116" width="170" height="40" rx="4" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5"/>
+  <text x="305" y="141" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#da4ada">500 in ~100ms</text>
+
+  <text x="420" y="132" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#212529">fails fast, retries instantly</text>
+  <text x="420" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">we hammer GitHub while it's trying to recover</text>
+
+  <line x1="20" y1="168" x2="650" y2="168" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- ============ ROW 3: OVERLOADED ============ -->
+  <text x="20" y="198" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#da4ada">3.</text>
+  <text x="40" y="198" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#212529">Overloaded</text>
+  <text x="40" y="216" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">slow, queues full, mixed responses</text>
+
+  <!-- mixed responses box -->
+  <rect x="220" y="184" width="170" height="40" rx="4" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="305" y="201" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#da4ada">slow 200 · slow 500</text>
+  <text x="305" y="215" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#da4ada">· timeout · repeat</text>
+
+  <text x="420" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#212529">all of the above, at once</text>
+  <text x="420" y="216" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">can't even tell what's wrong</text>
+
+  <line x1="20" y1="236" x2="650" y2="236" stroke="#dadada" stroke-width="1"/>
+
+  <!-- footer -->
+  <text x="310" y="258" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#6c757d">Types of outages</text>
+</svg>

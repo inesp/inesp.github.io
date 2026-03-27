@@ -1,0 +1,60 @@
+<svg viewBox="0 0 500 115" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- ============== HEADERS ============== -->
+  <text x="65" y="14" text-anchor="middle" font-size="10" font-weight="bold" fill="#fd456f">OPEN</text>
+  <text x="155" y="14" text-anchor="middle" font-size="10" font-weight="bold" fill="#fd456f">OPEN</text>
+  <text x="245" y="14" text-anchor="middle" font-size="10" font-weight="bold" fill="#fd456f">OPEN</text>
+  <text x="335" y="14" text-anchor="middle" font-size="10" font-weight="bold" fill="#fd456f">OPEN</text>
+  <text x="425" y="14" text-anchor="middle" font-size="10" font-weight="bold" fill="#28a745">CLOSED</text>
+
+  <!-- ============== OPEN BOX 1: 1s ============== -->
+  <rect x="30" y="20" width="70" height="50" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="65" y="51" text-anchor="middle" font-size="17" font-weight="700" fill="#212529">1s</text>
+
+  <!-- HO joint 1 -->
+  <rect x="100" y="30" width="20" height="30" rx="6" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+
+  <!-- ============== OPEN BOX 2: 2s ============== -->
+  <rect x="120" y="20" width="70" height="50" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="155" y="51" text-anchor="middle" font-size="17" font-weight="700" fill="#212529">2s</text>
+
+  <!-- HO joint 2 -->
+  <rect x="190" y="30" width="20" height="30" rx="6" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+
+  <!-- ============== OPEN BOX 3: 4s ============== -->
+  <rect x="210" y="20" width="70" height="50" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="245" y="51" text-anchor="middle" font-size="17" font-weight="700" fill="#212529">4s</text>
+
+  <!-- HO joint 3 -->
+  <rect x="280" y="30" width="20" height="30" rx="6" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+
+  <!-- ============== OPEN BOX 4: 8s ============== -->
+  <rect x="300" y="20" width="70" height="50" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="335" y="51" text-anchor="middle" font-size="17" font-weight="700" fill="#212529">8s</text>
+
+  <!-- HO joint 4 (the one that succeeds) -->
+  <rect x="370" y="30" width="20" height="30" rx="6" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+
+  <!-- ============== CLOSED BOX ============== -->
+  <rect x="390" y="20" width="70" height="50" rx="4" fill="#d4edda" stroke="#28a745" stroke-width="1.5"/>
+  <text x="425" y="51" text-anchor="middle" font-size="17" font-weight="700" fill="#212529">:)</text>
+
+  <!-- ============== HALF-OPEN ANNOTATIONS BELOW JOINTS ============== -->
+
+  <!-- HO 1 label (failure) -->
+  <text x="110" y="87" text-anchor="middle" font-size="8" font-weight="bold" fill="#e6a000">HALF-OPEN</text>
+  <text x="110" y="100" text-anchor="middle" font-size="9" fill="#fd456f">probe ✗ × 2</text>
+
+  <!-- HO 2 label (failure) -->
+  <text x="200" y="87" text-anchor="middle" font-size="8" font-weight="bold" fill="#e6a000">HALF-OPEN</text>
+  <text x="200" y="100" text-anchor="middle" font-size="9" fill="#fd456f">probe ✗ × 2</text>
+
+  <!-- HO 3 label (failure) -->
+  <text x="290" y="87" text-anchor="middle" font-size="8" font-weight="bold" fill="#e6a000">HALF-OPEN</text>
+  <text x="290" y="100" text-anchor="middle" font-size="9" fill="#fd456f">probe ✗ × 2</text>
+
+  <!-- HO 4 label (success) -->
+  <text x="380" y="87" text-anchor="middle" font-size="8" font-weight="bold" fill="#e6a000">HALF-OPEN</text>
+  <text x="380" y="100" text-anchor="middle" font-size="9" fill="#28a745">probe ✓</text>
+</svg>

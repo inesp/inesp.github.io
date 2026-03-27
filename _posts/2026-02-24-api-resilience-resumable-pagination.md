@@ -1,8 +1,9 @@
 ---
 series: API Resilience Patterns
-title: "When your Celery task gets rate-limited on page 47"
+title: "Pattern #2: Retrying Celery Tasks from Page 47"
 tags: ["API Resilience Patterns", "Code Patterns", "Celery"]
 prev_post: 2026-02-06-api-resilience-caching-429
+next_post: 2026-03-27-api-resilience-circuit-breakers
 biblio:
   - title: "Celery: Retrying tasks"
     link: https://docs.celeryq.dev/en/stable/userguide/tasks.html#retrying
