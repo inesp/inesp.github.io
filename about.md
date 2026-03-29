@@ -5,7 +5,7 @@ permalink: /about/
 css: about
 ---
 
-Hi, I'm Ines Panker. I'm a software engineer by trade and an explorer at heart.
+Hi, I'm Ines Panker. I'm a software engineer by trade and an explorer at heart (and a poetry reader by night).
 
 If you're reading this, you probably clicked through from a blog post and wondered who's behind it. (Or you're a conference organizer vetting whether I'm a real person: _hi! I am real :-)_.)
 
@@ -17,7 +17,7 @@ I'm particularly interested in **simplifying complexity**, in improving existing
 
 To me, great software systems are like well-designed cities: thoughtfully planned, easy to navigate, and built to scale gracefully. The key is building solid **foundations** and focusing on what genuinely matters to the people using and maintaining the system.
 
-I’m also drawn to the **human side** of software. Software reflects the people who build it, those who use it, and the society it exists in. I try to explore how technical decisions and human dynamics influence each other.
+I’m also drawn to the **human side** of software. Software reflects the people who build it, those who use it, and the society it exists in. I try to explore how technical decisions and human dynamics influence each other. Outside of software, I find myself drawn to poetry, to how words, arranged in a specific way, can make something complex suddenly feel obvious.
 
 In my talks and writing, I aim to make complex ideas clear and relevant, blending technical insight with a focus on the people around the code.
 
