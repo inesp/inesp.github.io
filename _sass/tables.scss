@@ -166,23 +166,139 @@ table.talks {
     }
   }
 
-  .talk-based-on {
-    font-size: 90%;
-    margin-top: $quarter-standard-margin;
+  // Mobile card layout
+  @media (max-width: 767px) {
+    border: none;
 
-    a {
-      color: $color-green-dark;
-      font-weight: 500;
-      padding: 0.15rem 0.5rem;
-      background: $color-green-light;
-      border-radius: 0.75rem;
-      transition: all 0.2s ease;
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: block;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: $standard-radius;
+      border: 1px solid $color-gray;
+      border-left: 4px solid $color-yellow-dark;
+      background: #fff;
 
       &:hover {
-        background: $color-green;
-        color: #fff;
+        border-left-color: $color-hover-red;
+      }
+
+      &.coming-soon {
+        border-left-color: $color-yellow;
       }
     }
+
+    td {
+      display: block;
+      padding: 0.25rem 0;
+      border: none;
+
+      // Date cell - inline with location
+      &:first-child {
+        display: inline;
+        font-size: 0.9rem;
+        color: $color-text-muted;
+
+        &::after {
+          content: " · ";
+        }
+      }
+
+      // Event name
+      &.talk-conf {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        order: -2;
+      }
+
+      // Flag - float right on first line
+      &:nth-child(3) {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+      }
+
+      // Location - inline with date
+      &:nth-child(4) {
+        display: inline;
+        font-size: 0.9rem;
+        color: $color-text-muted;
+      }
+
+      // Title
+      &.talk-title {
+        font-weight: 500;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      // Links
+      &.link-texts {
+        margin-top: 0.5rem;
+      }
+    }
+
+    // Position relative for flag absolute positioning
+    tbody tr {
+      position: relative;
+    }
   }
+
+}
+
+.talk-based-on {
+  font-size: 90%;
+  margin-top: $quarter-standard-margin;
+
+  a {
+    color: $color-green-dark;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    background: $color-green-light;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+      background: $color-green;
+      color: #fff;
+    }
+  }
+}
+
+// ------------------------ TALK CATALOGUE
+.talk-catalogue {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 5px solid $color-teal;
+  margin-bottom: 8rem;
+
+  > p {
+    color: $color-text-muted;
+  }
+}
+
+.talk-catalogue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.talk-catalogue-item {
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+
 }
 

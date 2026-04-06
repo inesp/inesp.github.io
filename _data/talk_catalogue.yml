@@ -1,0 +1,20 @@
+- title: Software Estimation is a Delusion
+  post_slug: estimation-is-a-delusion
+  description: Software estimation has turned into ritualized guessing. We are pushed to estimate, but nobody is teaching us how to do it. Our estimates are deemed crucial, but the project's specs keep changing mid-work. It's time we abandoned long-term estimates and focus instead on managing project risks.
+
+- title: Nobody Cares What You Built
+  post_slug:
+  series:
+  description: There's an entire field dedicated to getting people to read what you write, developers just aren't in it. We're trained in precision and completeness. Marketers know people only skim, they decide in 3 seconds, and only care about what's relevant to them. This talk steals their tricks for standups, PRs, proposals, and that email nobody answered.
+
+- title: Did My Deploy Break Production?
+  post_slug: impact-of-a-deploy
+  description: When you deploy some code, do you know its impact on your production stats, like memory usage, request duration, error rates? If you wanted to know if your code improved or deteriorated the speed of SQL queries, would you know where to get this data? In this talk, I’ll walk through a real-world system we built to automatically detect pattern changes to metrics without having to set thresholds manually. (And with no LLMs.)
+
+- title: Why smart developers write silly code
+  series: Cognitive Biases in Code
+  description: Knowing about cognitive biases is like debugging our brain. Devs spend tons of time fixing bugs in code, but biases are the mental bugs that mess with our decisions. They make us overconfident, they make us ignore users and fight for bad ideas. But it needn't be this way.
+
+- title: API Resilience Patterns
+  series: API Resilience Patterns
+  description: Every API is doing its own thing. Authorization, headers, rate limiting (devs are creative people, so we just like to invent our own rules). After integrating 40+ APIs into the same product, I have a lot to say about handling failures of remote APIs.
