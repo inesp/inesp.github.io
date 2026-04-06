@@ -166,6 +166,93 @@ table.talks {
     }
   }
 
+  // Mobile card layout
+  @media (max-width: 767px) {
+    border: none;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: block;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: $standard-radius;
+      border: 1px solid $color-gray;
+      border-left: 4px solid $color-yellow-dark;
+      background: #fff;
+
+      &:hover {
+        border-left-color: $color-hover-red;
+      }
+
+      &.coming-soon {
+        border-left-color: $color-yellow;
+      }
+    }
+
+    td {
+      display: block;
+      padding: 0.25rem 0;
+      border: none;
+
+      // Date cell - inline with location
+      &:first-child {
+        display: inline;
+        font-size: 0.9rem;
+        color: $color-text-muted;
+
+        &::after {
+          content: " · ";
+        }
+      }
+
+      // Event name
+      &.talk-conf {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        order: -2;
+      }
+
+      // Flag - float right on first line
+      &:nth-child(3) {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+      }
+
+      // Location - inline with date
+      &:nth-child(4) {
+        display: inline;
+        font-size: 0.9rem;
+        color: $color-text-muted;
+      }
+
+      // Title
+      &.talk-title {
+        font-weight: 500;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      // Links
+      &.link-texts {
+        margin-top: 0.5rem;
+      }
+    }
+
+    // Position relative for flag absolute positioning
+    tbody tr {
+      position: relative;
+    }
+  }
+
 }
 
 .talk-based-on {
