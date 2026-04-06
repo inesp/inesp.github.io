@@ -67,3 +67,31 @@ fluid: true
     {%- endfor -%}
   </tbody>
 </table>
+
+<section class="talk-catalogue">
+  <h2>Talk Catalogue</h2>
+  <p>Interested in having me speak at your event? Here's what I talk about.</p>
+
+  <div class="talk-catalogue-list">
+    {%- for talk in site.data.talk_catalogue -%}
+    <div class="talk-catalogue-item">
+      <h3>{{ talk.title }}</h3>
+      {%- if talk.post_slug -%}
+        {%- for post in site.posts -%}
+          {%- if post.slug == talk.post_slug -%}
+            <div class="talk-based-on">
+              <a href="{{ post.url }}">↳ Read the related post</a>
+            </div>
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- elsif talk.series -%}
+        <div class="talk-based-on">
+          <a href="/topic/{{ talk.series | slugify }}/">↳ Read the related series</a>
+        </div>
+      {%- endif -%}
+      {{ talk.description | markdownify }}
+    </div>
+    {%- endfor -%}
+  </div>
+</section>

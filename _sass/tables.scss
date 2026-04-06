@@ -166,23 +166,52 @@ table.talks {
     }
   }
 
-  .talk-based-on {
-    font-size: 90%;
-    margin-top: $quarter-standard-margin;
+}
 
-    a {
-      color: $color-green-dark;
-      font-weight: 500;
-      padding: 0.15rem 0.5rem;
-      background: $color-green-light;
-      border-radius: 0.75rem;
-      transition: all 0.2s ease;
+.talk-based-on {
+  font-size: 90%;
+  margin-top: $quarter-standard-margin;
 
-      &:hover {
-        background: $color-green;
-        color: #fff;
-      }
+  a {
+    color: $color-green-dark;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    background: $color-green-light;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+      background: $color-green;
+      color: #fff;
     }
   }
+}
+
+// ------------------------ TALK CATALOGUE
+.talk-catalogue {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 5px solid $color-teal;
+  margin-bottom: 8rem;
+
+  > p {
+    color: $color-text-muted;
+  }
+}
+
+.talk-catalogue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.talk-catalogue-item {
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+
 }
 
