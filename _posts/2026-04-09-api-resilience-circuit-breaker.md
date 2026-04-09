@@ -76,9 +76,9 @@ It has 3 states:
   - `OPEN`: all requests are blocked, it immediately raises a `CircuitBreakerExc` 
   - `HALF-OPEN`: it allows 1 request through to test if the remote API is working already. If this 1 request fails, we go back into `OPEN`, else we go into `CLOSED`.
 
-A note on the naming: Circuit breakers come from electrical circuits, they are physical switches that control the flow of electricity. This is why a `CLOSED` breaker means "everything is flowing normally" and an `OPEN` breaker means "blocked".
+A note on the naming: Circuit breakers come from electrical circuits. They are physical switches that control the flow of electricity. This is why a `CLOSED` breaker means "everything is flowing normally" and an `OPEN` breaker means "blocked".
 
-A note about `HALF-OPEN` state: it actually lets at least 1 request through. It lets as many requests through as arrive until the first response causes the breaker to transition to either `CLOSED` or `OPEN` state. If the probe succeeded the breaker goes into `CLOSED`, otherwise it goes back to `OPEN`, but with a doubled timeout.
+A note about `HALF-OPEN` state: it actually lets at least 1 request through. It lets as many requests through as arrive until the first response causes the breaker to transition to either `CLOSED` or `OPEN` state. If the probe succeeds, the breaker goes into `CLOSED`, otherwise it goes back to `OPEN`, but with a doubled timeout.
 
 ![assets/http/circuit-breaker-states-compact.svg](/assets/http/circuit-breaker-states-compact.svg)
 
@@ -101,7 +101,7 @@ Usually the code starts off with the above rule, but then grows as we interact w
 
 <details markdown="1" class="rabbit-hole">
 <summary>Rabbit hole: How many failures make an API outage?</summary>
-Next, we must define the threshold for an API being degraded?
+Next, we must define the threshold for an API being degraded.
 
 I went with a very simple 5 failures per minute. (At first it was 10 per minute, but after testing, 5/min worked better in _our system_.) 
 
@@ -117,7 +117,7 @@ The absolute count reacts faster, the error rate seems more correct. It's on you
 
 The `OPEN` state is always initiated with a timeout. For the duration of the timeout, no HTTP requests will be allowed through. We will `raise CircuitBreakerExc` instead of making the requests. Usually, this timeout is set to a fairly small number, like **1 second**.
 
-After the timeout (the 1 second) is over, we change the state to `HALF-OPEN`, in this state the breaker treats the next request as **a probe**. If the probe succeeds (=we don't receive a failure), then the breaker goes back into `CLOSED`. Whereas, if it fails, then the breaker goes back into `OPEN`, but this time with **a doubled timeout**. If we started with a timeout of 1s, then the next timeout is 2s, the next is 4s, next is 8s.
+After the timeout (the 1 second) is over, we change the state to `HALF-OPEN`. In this state the breaker treats the next request as **a probe**. If the probe succeeds (=we don't receive a failure), then the breaker goes back into `CLOSED`. Whereas, if it fails, then the breaker goes back into `OPEN`, but this time with **a doubled timeout**. If we started with a timeout of 1s, then the next timeout is 2s, the next is 4s, next is 8s.
 
 At this point it is smart to select a **maximum timeout**. We've set it to 5 minutes. This way, if an API is down for 2h and then comes back, we will know **at the latest 5 mins after they solve their problems**.
 
@@ -144,7 +144,7 @@ Thus, we store just 4 Redis keys, all with domain names in the keys:
 - `http.breaker.github.com.open_start` stores the timestamp
 - `http.breaker.github.com.open_timeout` stores number of seconds
 
-We also set a `2h`-TTL to each of these keys. If no requests are made to some domain, then an `OPEN` breaker automatically closes. After all, failures from two days ago shouldn't be allowed to harm requests today.
+We also set a `2h`-TTL on each of these keys. If no requests are made to some domain, then an `OPEN` breaker automatically closes. After all, failures from two days ago shouldn't be allowed to harm requests today.
 
 ## Add a quick dashboard
 
@@ -156,7 +156,7 @@ I'd also want to know when new requests will be allowed again.
 
 This is especially useful in the testing period, but it becomes equally helpful later on, when support needs to maintain the app.
 
-Here's a simple example. All we can see here is the list of failures, other values would appear if an API would actually be degraded:
+Here's a simple example. All we can see here is the list of failures, other values would appear if an API were actually degraded:
 ![circuit_breaker_state.png](/assets/http/circuit_breaker_state.png){:.yellow}
 
 ## Plugging it into your HTTP calls
@@ -193,7 +193,7 @@ def new_session():
     #  like setting headers or retry strategy or ...
     
     # ↓ Here our adapter is "mounted" onto the session object.
-    # We mounted it onto 2 partial urls: http and https, because the idea
+    # We mounted it onto 2 partial URLs: http and https, because the idea
     # behind adapters is that they define the rules of interaction for
     # one, specific, external API. But by saying "http://" we are tying these
     # rules to the whole traffic (except ftp:// and such of course).
@@ -232,13 +232,13 @@ For this reason, we need to insert our breaker into the retry logic. And we do t
 import urllib3
 
 class RetryAndTellTheBreaker(urllib3.Retry):
-  def increment(self, method=None, url=None, response=None, error=None, _pool=None, _stacktrace=None):
-      new_retry = super().increment(method, url, response, error, _pool, _stacktrace)
-      if _pool and isinstance(_pool, urllib3.HTTPConnectionPool):
-          CircuitBreaker(_pool, request_path=url).check_response_and_adjust_breaker(
-              response=response, error=error
-          )
-      return new_retry   
+    def increment(self, method=None, url=None, response=None, error=None, _pool=None, _stacktrace=None):
+        new_retry = super().increment(method, url, response, error, _pool, _stacktrace)
+        if _pool and isinstance(_pool, urllib3.HTTPConnectionPool):
+            CircuitBreaker(_pool, request_path=url).check_response_and_adjust_breaker(
+                response=response, error=error
+            )
+        return new_retry
 ```
 
 The `increment()` method is called once per retry attempt, and the breaker records the response every time. The original adapter-level breaker is still needed, but so is this fix to the retry logic.
@@ -268,7 +268,7 @@ The circuit breaker had a big effect on our resources.
 
 As soon as we let it into production, we experienced fewer Celery issues.
 
-The most important thing is that the blast radius of any one downed API got smaller. It didn't have the knock on effect of overwhelming our Celery workers and blocking other code.
+The most important thing is that the blast radius of any one downed API got smaller. It didn't have the knock-on effect of overwhelming our Celery workers and blocking other code.
 
 It's ironic how this thing that looked like nothing more than "good manners", like something that would benefit some external API but not us, turned out to be very much an act of self-defence for our app. It turned out to be crucial for our code and our resources.
 
