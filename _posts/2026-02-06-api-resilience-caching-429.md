@@ -1,6 +1,6 @@
 ---
 series: API Resilience Patterns
-title: "If the API Says Wait 60 Seconds, Actually Wait 60 Seconds"
+title: "Pattern #1: Caching Rate Limits (in Redis)"
 tags: ["API Resilience Patterns", "Code Patterns"]
 next_post: 2026-02-24-api-resilience-resumable-pagination
 biblio:

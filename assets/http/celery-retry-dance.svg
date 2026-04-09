@@ -1,0 +1,62 @@
+<svg viewBox="0 0 540 330" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <defs>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#008378"/>
+    </marker>
+  </defs>
+
+  <!-- Background ghost circles — other workers doing the same dance -->
+  <g fill="none" stroke="#06bdad" stroke-width="1.5">
+    <circle cx="305" cy="175" r="85" opacity="0.22"/>
+    <circle cx="220" cy="180" r="85" opacity="0.16"/>
+    <circle cx="290" cy="135" r="85" opacity="0.12"/>
+    <circle cx="240" cy="130" r="85" opacity="0.09"/>
+    <circle cx="320" cy="195" r="85" opacity="0.17"/>
+  </g>
+
+  <!-- Main circle: white fill so it sits in front of the ghosts -->
+  <circle cx="260" cy="155" r="85" fill="#fff"/>
+
+  <!-- Four arc segments — each starts just after one step and ends just before the next, so the arrowhead is visible in the gap -->
+  <!-- Step 1 → Step 2 (top → right) -->
+  <path d="M 238 73 A 85 85 0 0 1 342 133" fill="none" stroke="#06bdad" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+  <!-- Step 2 → Step 3 (right → bottom) -->
+  <path d="M 342 177 A 85 85 0 0 1 282 237" fill="none" stroke="#06bdad" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+  <!-- Step 3 → Step 4 (bottom → left) -->
+  <path d="M 238 237 A 85 85 0 0 1 178 177" fill="none" stroke="#06bdad" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+  <!-- Step 4 → Step 1 (left → top) -->
+  <path d="M 178 133 A 85 85 0 0 1 240 72" fill="none" stroke="#06bdad" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+  <!-- Step nodes: solid teal circles overlaying the cardinal points -->
+  <g fill="#008378" stroke="#fff" stroke-width="2">
+    <circle cx="260" cy="70" r="18"/>
+    <circle cx="345" cy="155" r="18"/>
+    <circle cx="260" cy="240" r="18"/>
+    <circle cx="175" cy="155" r="18"/>
+  </g>
+
+  <!-- Step numbers -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">
+    <text x="260" y="75">1</text>
+    <text x="345" y="160">2</text>
+    <text x="260" y="245">3</text>
+    <text x="175" y="160">4</text>
+  </g>
+
+  <!-- Step labels (outside the circle) -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#212529">
+    <text x="260" y="42" text-anchor="middle" font-weight="600">Send request</text>
+    <text x="370" y="152" text-anchor="start" font-weight="600">Block 30s on socket</text>
+    <text x="370" y="167" text-anchor="start" font-size="11" fill="#008378">(doing nothing)</text>
+    <text x="260" y="278" text-anchor="middle" font-weight="600">TimeoutError</text>
+    <text x="150" y="152" text-anchor="end" font-weight="600">Celery reschedules</text>
+    <text x="150" y="167" text-anchor="end" font-size="11" fill="#6c757d">(go to 1)</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="270" y="315" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6c757d">
+    <tspan font-weight="600" fill="#008378">× 500 processes</tspan>, all essentially just waiting
+  </text>
+</svg>

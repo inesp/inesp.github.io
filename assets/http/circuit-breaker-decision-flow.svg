@@ -1,0 +1,172 @@
+<svg viewBox="0 0 760 905" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <defs>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#495057"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#28a745"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <polygon points="0,0 10,5 0,10" fill="#e60038"/>
+    </marker>
+  </defs>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 1: Your code -->
+  <!-- ============================================================ -->
+  <rect x="300" y="15" width="160" height="38" rx="4" fill="#fff" stroke="#0288d1" stroke-width="1.8"/>
+  <text x="380" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#0288d1">Your code</text>
+
+  <path d="M 380 53 L 380 75" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 2: Circuit breaker (read state) -->
+  <!-- ============================================================ -->
+  <rect x="270" y="78" width="220" height="50" rx="4" fill="#fff8cd" stroke="#e6a000" stroke-width="2"/>
+  <text x="380" y="98" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#996600">Circuit breaker</text>
+  <text x="380" y="115" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-style="italic" fill="#996600">read state</text>
+
+  <path d="M 380 128 L 380 150" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 3: state? diamond -->
+  <!-- ============================================================ -->
+  <polygon points="380,150 460,195 380,240 300,195" fill="#fff8cd" stroke="#e6a000" stroke-width="2"/>
+  <text x="380" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#996600">state?</text>
+
+  <!-- ============ OPEN branch (right) ============ -->
+  <path d="M 460 195 L 510 195" stroke="#e60038" stroke-width="1.8" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="485" y="187" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#e60038">OPEN</text>
+
+  <rect x="510" y="173" width="225" height="44" rx="4" fill="#ffe6e6" stroke="#e60038" stroke-width="1.8"/>
+  <text x="622" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#c8002f">raise CircuitBreakerExc</text>
+
+  <!-- ============ CLOSED branch (left curve down to API) ============ -->
+  <path d="M 340 222 C 340 280, 380 275, 380 305" stroke="#28a745" stroke-width="1.8" fill="none"/>
+  <text x="285" y="265" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#28a745">CLOSED</text>
+
+  <!-- ============ HALF-OPEN branch (right curve down to API) ============ -->
+  <path d="M 420 222 C 420 280, 380 275, 380 305" stroke="#28a745" stroke-width="1.8" fill="none"/>
+  <text x="475" y="265" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#28a745">HALF-OPEN</text>
+
+  <!-- Convergence arrow into API call -->
+  <path d="M 380 295 L 380 318" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 4: External API call -->
+  <!-- ============================================================ -->
+  <rect x="290" y="320" width="180" height="42" rx="4" fill="#fff" stroke="#008378" stroke-width="1.8"/>
+  <text x="380" y="346" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#008378">External API call</text>
+
+  <path d="M 380 362 L 380 388" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+  <text x="395" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-style="italic" fill="#6c757d">response (or error)</text>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 5: Circuit breaker (observe result) -->
+  <!-- ============================================================ -->
+  <rect x="260" y="390" width="240" height="50" rx="4" fill="#fff8cd" stroke="#e6a000" stroke-width="2"/>
+  <text x="380" y="410" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#996600">Circuit breaker</text>
+  <text x="380" y="427" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-style="italic" fill="#996600">observe result</text>
+
+  <path d="M 380 440 L 380 462" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 6: was this a probe? diamond -->
+  <!-- ============================================================ -->
+  <polygon points="380,462 470,505 380,548 290,505" fill="#fff8cd" stroke="#e6a000" stroke-width="2"/>
+  <text x="380" y="503" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#996600">was this</text>
+  <text x="380" y="518" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#996600">a probe?</text>
+
+  <!-- NO branch (left, was CLOSED) -->
+  <path d="M 290 505 C 240 505, 200 525, 200 558" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+  <text x="240" y="495" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#212529">no</text>
+
+  <!-- YES branch (right, was HALF-OPEN) -->
+  <path d="M 470 505 C 520 505, 560 525, 560 558" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+  <text x="520" y="495" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#212529">yes</text>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 7a: response ok? diamond (left, CLOSED case) -->
+  <!-- ============================================================ -->
+  <polygon points="200,558 270,598 200,638 130,598" fill="#fff8cd" stroke="#e6a000" stroke-width="2"/>
+  <text x="200" y="595" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#996600">response</text>
+  <text x="200" y="609" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#996600">ok?</text>
+
+  <!-- yes → return -->
+  <path d="M 130 598 C 90 598, 80 640, 80 666" stroke="#28a745" stroke-width="1.8" fill="none" marker-end="url(#arrow-green)"/>
+  <text x="80" y="630" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#28a745">yes</text>
+
+  <!-- no → record failure -->
+  <path d="M 270 598 C 290 598, 290 640, 290 666" stroke="#e60038" stroke-width="1.8" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="305" y="625" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e60038">no</text>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 7b: probe ok? diamond (right, HALF-OPEN case) -->
+  <!-- ============================================================ -->
+  <polygon points="560,558 630,598 560,638 490,598" fill="#fff8cd" stroke="#e6a000" stroke-width="2"/>
+  <text x="560" y="595" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#996600">probe</text>
+  <text x="560" y="609" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#996600">ok?</text>
+
+  <!-- yes → close breaker -->
+  <path d="M 490 598 C 470 598, 470 640, 470 666" stroke="#28a745" stroke-width="1.8" fill="none" marker-end="url(#arrow-green)"/>
+  <text x="455" y="625" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#28a745">yes</text>
+
+  <!-- no → re-open -->
+  <path d="M 630 598 C 660 598, 670 640, 670 666" stroke="#e60038" stroke-width="1.8" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="685" y="625" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e60038">no</text>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 8: outcome boxes (4 of them) -->
+  <!-- ============================================================ -->
+
+  <!-- return -->
+  <rect x="15" y="668" width="130" height="42" rx="4" fill="#fff" stroke="#28a745" stroke-width="1.8"/>
+  <text x="80" y="694" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#28a745">return</text>
+
+  <!-- record failure -->
+  <rect x="210" y="668" width="160" height="42" rx="4" fill="#fff" stroke="#6c757d" stroke-width="1.5"/>
+  <text x="290" y="687" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#212529">record failure</text>
+  <text x="290" y="702" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#6c757d">in Redis</text>
+
+  <!-- close breaker -->
+  <rect x="400" y="668" width="140" height="42" rx="4" fill="#fff8cd" stroke="#e6a000" stroke-width="1.5"/>
+  <text x="470" y="687" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#996600">close breaker</text>
+  <text x="470" y="702" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#996600">→ CLOSED</text>
+
+  <!-- re-open with doubled timeout -->
+  <rect x="585" y="668" width="170" height="42" rx="4" fill="#ffe6e6" stroke="#e60038" stroke-width="1.5"/>
+  <text x="670" y="687" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#c8002f">re-open with</text>
+  <text x="670" y="702" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#c8002f">doubled timeout</text>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 9: more than 5 / min? diamond (under record failure) -->
+  <!-- ============================================================ -->
+  <path d="M 290 710 L 290 730" stroke="#495057" stroke-width="1.8" fill="none" marker-end="url(#arrow-gray)"/>
+
+  <polygon points="290,730 380,772 290,814 200,772" fill="#fff8cd" stroke="#e6a000" stroke-width="2"/>
+  <text x="290" y="769" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#996600">more than</text>
+  <text x="290" y="784" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#996600">5 / min?</text>
+
+  <!-- yes → flip breaker to OPEN -->
+  <path d="M 200 772 C 150 772, 90 800, 90 830" stroke="#e60038" stroke-width="1.8" fill="none" marker-end="url(#arrow-red)"/>
+  <text x="135" y="762" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e60038">yes</text>
+
+  <!-- no → carry on -->
+  <path d="M 380 772 C 430 772, 490 800, 490 830" stroke="#495057" stroke-width="1.5" stroke-dasharray="4,3" fill="none" marker-end="url(#arrow-gray)"/>
+  <text x="435" y="762" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#212529">no</text>
+
+  <!-- ============================================================ -->
+  <!-- LEVEL 10: final outcomes -->
+  <!-- ============================================================ -->
+
+  <!-- flip breaker to OPEN -->
+  <rect x="20" y="832" width="140" height="44" rx="4" fill="#ffe6e6" stroke="#e60038" stroke-width="1.8"/>
+  <text x="90" y="852" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#c8002f">flip breaker</text>
+  <text x="90" y="867" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#c8002f">to OPEN</text>
+
+  <!-- carry on (no box, just text) -->
+  <text x="490" y="847" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-style="italic" fill="#6c757d">carry on,</text>
+  <text x="490" y="862" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-style="italic" fill="#6c757d">breaker stays CLOSED</text>
+</svg>
