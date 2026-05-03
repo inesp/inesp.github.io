@@ -1,3 +1,27 @@
+- conf: Heapcon
+  link: https://heapcon.io/2026
+  date: Nov 2026
+  flag: 🇷🇸
+  location: Belgrade, Serbia
+  title: "Software Estimates and the Illusion of Control"
+  coming_soon: true
+  video_link:
+  details_link:
+  slides_link:
+  post_slug: estimation-is-a-delusion
+
+- conf: Voxxed Days Luxembourg 2026
+  link: https://luxembourg.voxxeddays.com/en/
+  date: Jun 2026
+  flag: 🇱🇺
+  location: Mondorf-les-Bains, Luxembourg
+  title: "Did My Deploy Degrade Production?"
+  coming_soon: true
+  video_link:
+  details_link:
+  slides_link:
+  post_slug: impact-of-a-deploy
+
 - conf: PyCon Italia 2026
   link: https://2026.pycon.it/en
   date: May 2026
