@@ -26,7 +26,13 @@
   <!-- Bin 6: height 2 -->
   <rect x="165" y="140" width="24" height="40" fill="#fd456f" stroke="#212529" stroke-width="1"/>
 
-  <text x="110" y="195" text-anchor="middle" font-size="8" fill="#6c757d">blocky bins</text>
+  <!-- Bin range labels -->
+  <text x="47" y="192" text-anchor="middle" font-size="7" fill="#6c757d">0-2</text>
+  <text x="73" y="192" text-anchor="middle" font-size="7" fill="#6c757d">2-4</text>
+  <text x="99" y="192" text-anchor="middle" font-size="7" fill="#6c757d">4-6</text>
+  <text x="125" y="192" text-anchor="middle" font-size="7" fill="#6c757d">6-8</text>
+  <text x="151" y="192" text-anchor="middle" font-size="7" fill="#6c757d">8-10</text>
+  <text x="177" y="192" text-anchor="middle" font-size="7" fill="#6c757d">10-12</text>
 
   <!-- Arrow -->
   <path d="M200,125 L230,125" stroke="#212529" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
@@ -66,7 +72,14 @@
   <circle cx="375" cy="180" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
   <circle cx="385" cy="180" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
 
-  <text x="325" y="195" text-anchor="middle" font-size="8" fill="#6c757d">each point = a bump (kernel)</text>
+  <!-- X-axis tick labels -->
+  <text x="240" y="192" text-anchor="middle" font-size="7" fill="#6c757d">0</text>
+  <text x="268" y="192" text-anchor="middle" font-size="7" fill="#6c757d">2</text>
+  <text x="297" y="192" text-anchor="middle" font-size="7" fill="#6c757d">4</text>
+  <text x="325" y="192" text-anchor="middle" font-size="7" fill="#6c757d">6</text>
+  <text x="353" y="192" text-anchor="middle" font-size="7" fill="#6c757d">8</text>
+  <text x="382" y="192" text-anchor="middle" font-size="7" fill="#6c757d">10</text>
+  <text x="410" y="192" text-anchor="middle" font-size="7" fill="#6c757d">12</text>
 
   <!-- Arrow -->
   <path d="M420,125 L450,125" stroke="#212529" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
@@ -86,8 +99,9 @@
            Q530,90 540,130
            Q550,160 560,175
            Q570,178 580,175
-           Q590,165 600,140
-           Q610,150 620,165
+           Q588,168 593,155
+           Q598,142 605,145
+           Q612,150 620,165
            Q625,175 630,180"
         fill="none" stroke="#212529" stroke-width="2.5"/>
 
@@ -99,8 +113,9 @@
            Q530,90 540,130
            Q550,160 560,175
            Q570,178 580,175
-           Q590,165 600,140
-           Q610,150 620,165
+           Q588,168 593,155
+           Q598,142 605,145
+           Q612,150 620,165
            Q625,175 630,180
            L630,180 L460,180 Z"
         fill="#ffed50" opacity="0.3"/>
@@ -108,13 +123,21 @@
   <!-- Color the second hump -->
   <path d="M560,175
            Q570,178 580,175
-           Q590,165 600,140
-           Q610,150 620,165
+           Q588,168 593,155
+           Q598,142 605,145
+           Q612,150 620,165
            Q625,175 630,180
            L630,180 L560,180 Z"
         fill="#fd456f" opacity="0.3"/>
 
-  <text x="545" y="195" text-anchor="middle" font-size="8" fill="#6c757d">smooth curve</text>
+  <!-- X-axis tick labels -->
+  <text x="460" y="192" text-anchor="middle" font-size="7" fill="#6c757d">0</text>
+  <text x="488" y="192" text-anchor="middle" font-size="7" fill="#6c757d">2</text>
+  <text x="517" y="192" text-anchor="middle" font-size="7" fill="#6c757d">4</text>
+  <text x="545" y="192" text-anchor="middle" font-size="7" fill="#6c757d">6</text>
+  <text x="573" y="192" text-anchor="middle" font-size="7" fill="#6c757d">8</text>
+  <text x="602" y="192" text-anchor="middle" font-size="7" fill="#6c757d">10</text>
+  <text x="630" y="192" text-anchor="middle" font-size="7" fill="#6c757d">12</text>
 
   <!-- Labels for the two humps -->
   <text x="510" y="78" text-anchor="middle" font-size="7" fill="#212529">main peak</text>

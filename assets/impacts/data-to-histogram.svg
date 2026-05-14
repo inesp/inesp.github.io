@@ -1,0 +1,110 @@
+<svg viewBox="0 0 540 240" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- ==================== Left: Timeseries ==================== -->
+  <text x="165" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Time Series</text>
+
+  <!-- Y axis -->
+  <line x1="45" y1="180" x2="45" y2="70" stroke="#212529" stroke-width="1"/>
+  <!-- X axis -->
+  <line x1="45" y1="180" x2="290" y2="180" stroke="#212529" stroke-width="1"/>
+  <text x="165" y="195" text-anchor="middle" font-size="8" fill="#6c757d">time</text>
+
+  <!-- Y-axis tick labels and bin boundary lines -->
+  <!-- y range 70-180 = 110px, values 0-12, bins of width 2 -->
+  <text x="40" y="183" text-anchor="end" font-size="7" fill="#6c757d">0</text>
+  <line x1="42" y1="180" x2="45" y2="180" stroke="#6c757d" stroke-width="1"/>
+
+  <text x="40" y="165" text-anchor="end" font-size="7" fill="#6c757d">2</text>
+  <line x1="42" y1="162" x2="45" y2="162" stroke="#6c757d" stroke-width="1"/>
+  <line x1="45" y1="162" x2="290" y2="162" stroke="#ddd" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="40" y="146" text-anchor="end" font-size="7" fill="#6c757d">4</text>
+  <line x1="42" y1="143" x2="45" y2="143" stroke="#6c757d" stroke-width="1"/>
+  <line x1="45" y1="143" x2="290" y2="143" stroke="#ddd" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="40" y="128" text-anchor="end" font-size="7" fill="#6c757d">6</text>
+  <line x1="42" y1="125" x2="45" y2="125" stroke="#6c757d" stroke-width="1"/>
+  <line x1="45" y1="125" x2="290" y2="125" stroke="#ddd" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="40" y="110" text-anchor="end" font-size="7" fill="#6c757d">8</text>
+  <line x1="42" y1="107" x2="45" y2="107" stroke="#6c757d" stroke-width="1"/>
+  <line x1="45" y1="107" x2="290" y2="107" stroke="#ddd" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="40" y="91" text-anchor="end" font-size="7" fill="#6c757d">10</text>
+  <line x1="42" y1="88" x2="45" y2="88" stroke="#6c757d" stroke-width="1"/>
+  <line x1="45" y1="88" x2="290" y2="88" stroke="#ddd" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="40" y="73" text-anchor="end" font-size="7" fill="#6c757d">12</text>
+  <line x1="42" y1="70" x2="45" y2="70" stroke="#6c757d" stroke-width="1"/>
+
+  <!-- Connecting line -->
+  <polyline points="55,170 72,152 89,155 106,175 123,148 140,135 157,95 174,82 191,100 208,78 225,92 242,115 259,158 276,168"
+            fill="none" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Data points -->
+  <!-- Bin 1 values (y 162-180): 3 points -->
+  <circle cx="55" cy="170" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="106" cy="175" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="276" cy="168" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+
+  <!-- Bin 2 values (y 143-162): 4 points -->
+  <circle cx="72" cy="152" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="89" cy="155" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="123" cy="148" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <circle cx="259" cy="158" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+
+  <!-- Bin 3 values (y 125-143): 1 point -->
+  <circle cx="140" cy="135" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+
+  <!-- Bin 4 values (y 107-125): 1 point -->
+  <circle cx="242" cy="115" r="3" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+
+  <!-- Bin 5 values (y 88-107): 3 points -->
+  <circle cx="157" cy="95" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+  <circle cx="191" cy="100" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+  <circle cx="225" cy="92" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+
+  <!-- Bin 6 values (y 70-88): 2 points -->
+  <circle cx="174" cy="82" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+  <circle cx="208" cy="78" r="3" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+
+  <!-- Arrow -->
+  <path d="M300,125 L330,125" stroke="#212529" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- ==================== Right: Histogram (6 bins) ==================== -->
+  <text x="440" y="50" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Histogram (6 bins)</text>
+
+  <!-- Axes -->
+  <line x1="350" y1="180" x2="510" y2="180" stroke="#212529" stroke-width="1"/>
+  <line x1="350" y1="180" x2="350" y2="70" stroke="#212529" stroke-width="1"/>
+
+  <!-- Histogram bars - bimodal: peak at bins 1-2, smaller peak at bin 5 -->
+  <!-- Bin 1: height 3 -->
+  <rect x="355" y="120" width="24" height="60" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 2: height 4 -->
+  <rect x="381" y="100" width="24" height="80" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 3: height 1 -->
+  <rect x="407" y="160" width="24" height="20" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 4: height 0.5 -->
+  <rect x="433" y="170" width="24" height="10" fill="#ffed50" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 5: height 2.5 -->
+  <rect x="459" y="130" width="24" height="50" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+  <!-- Bin 6: height 2 -->
+  <rect x="485" y="140" width="24" height="40" fill="#fd456f" stroke="#212529" stroke-width="1"/>
+
+  <!-- Bin range labels -->
+  <text x="367" y="192" text-anchor="middle" font-size="7" fill="#6c757d">0-2</text>
+  <text x="393" y="192" text-anchor="middle" font-size="7" fill="#6c757d">2-4</text>
+  <text x="419" y="192" text-anchor="middle" font-size="7" fill="#6c757d">4-6</text>
+  <text x="445" y="192" text-anchor="middle" font-size="7" fill="#6c757d">6-8</text>
+  <text x="471" y="192" text-anchor="middle" font-size="7" fill="#6c757d">8-10</text>
+  <text x="497" y="192" text-anchor="middle" font-size="7" fill="#6c757d">10-12</text>
+</svg>

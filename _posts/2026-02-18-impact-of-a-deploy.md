@@ -254,7 +254,9 @@ Ok, so what is KDE and how does it work?
 
 KDE is closely related to histograms. A KDE chart is in a way just a smoothed histogram.
 
-To create a histogram from some data points, we need to pick the number and size of bins and then put each data point into the correct bin.
+To create a histogram from some data points, we just group all values into a few bins. We first pick the number and their size/their borders and then put each data point into the correct bin.
+
+![data-to-histogram](/assets/impacts/data-to-histogram.svg)
 
 **With KDE** we do this too, but instead of dropping data points into rigid bins, **each point creates a small "bump" (called: kernel). The bumps overlap and add up.**
 
