@@ -31,7 +31,7 @@
   coming_soon: true
   video_link:
   details_link:
-  slides_link:
+  slides_link: https://speakerdeck.com/inesp/did-my-deploy-degrade-production
   post_slug: impact-of-a-deploy
 
 - conf: PyCon Italia 2026
@@ -42,7 +42,7 @@
   title: "Stop asking me how long it will take"
   details_link: https://2026.pycon.it/en/event/stop-asking-me-how-long-it-will-take
   video_link:
-  slides_link:
+  slides_link: https://speakerdeck.com/inesp/itll-take-two-weeks
   post_slug: estimation-is-a-delusion
 
 - conf: VoxxedDays Amsterdam 2026
