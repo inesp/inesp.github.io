@@ -32,7 +32,7 @@
   title: "Did My Deploy Degrade Production?"
   coming_soon: true
   video_link:
-  details_link:
+  details_link: https://m.devoxx.com/events/voxxedlu2026/talks/9002/details
   slides_link: https://speakerdeck.com/inesp/did-my-deploy-degrade-production
   post_slug: impact-of-a-deploy
 
