@@ -1,19 +1,23 @@
 ---
-title: How to build a successful team in a culture obsessed with lone heroes?
+title: "How to build a successful team in a culture obsessed with lone heroes?"
 tags: [People, "Engineering Research"]
 biblio:
   - title: "How to answer ‘Are you a team player?’ in an interview"
     link: "https://www.jobs.ie/job-talk/how-to-answer-are-you-a-team-player-in-an-interview/"
-  - title: " Jared Diamond: The world until yesterday"
+  - title: "Jared Diamond: The world until yesterday"
     link: "https://www.goodreads.com/book/show/15766601-the-world-until-yesterday"
   - title: "Liz Fosslien, Mollie West Duffy: No hard feelings"
     link: "https://www.goodreads.com/book/show/42734244-no-hard-feelings"
   - title: "W.Felps, T.Mitchell, E.Byington: How, When, and Why Bad Apples Spoil the Barrel: Negative Group Members and Dysfunctional Groups"
     link: "https://s3-us-west-2.amazonaws.com/oww-files-public/a/a5/Final_BA_ROB.pdf"
-  - title: "C.Pearson, L.Andersson, C.Porath: Assessing an attacking workplace incivility"
+  - title: "C.Pearson, L.Andersson, C.Porath: Assessing and Attacking Workplace Incivility"
     link: "https://www.researchgate.net/publication/228079608_Assessing_an_attacking_workplace_incivility"
   - title: "A.Woolley, C.Chabris, A.Pentland, N.Hashmi, T.Malone: Evidence of a Collective Intelligence Factor in the Performance of Human Groups"
     link: "http://www.cs.cmu.edu/~ab/Salon/research/Woolley_et_al_Science_2010-2.pdf"
+  - title: "Amy C. Edmondson: Psychological Safety and Learning Behavior in Work Teams"
+    link: "https://www.jstor.org/stable/2666999"
+  - title: "Google re:Work: Guide - Understand team effectiveness (Project Aristotle)"
+    link: "https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness"
   - title: "What Google Learned From Its Quest to Build the Perfect Team"
     link: "https://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html"
 ---
@@ -97,16 +101,15 @@ By looking at all the answers again through the lens of social dynamics, Google 
 
 Some teams in an organization will be successful and others will not. The later are governed by the team members with poor social skills. To improve a team's dynamic, better social skills need to be developed, people have to start giving social interactions more value. This, however, is not something that can be achieved by sending them to after-work drinks or to the yearly Christmas party.
 
-Truth is, we see work as the professional realm. A place away from the broader society, a place we only show about 10% of our actual self. Which is ludicrous. Given that on average we sleep 8 hours, work 8 hours and relax for 8 hours, we spend about 50% of our waking hours at work. Are we really prepared to pretend we are robots for half of our life? A machine with no desires, no wishes, no thoughts outside of the company's goals?
+Truth is, we see work as the professional realm. A place away from the broader society, a place we only show about 10% of our actual self. Which is ludicrous. Given that on average we sleep 8 hours, work 8 hours and relax for 8 hours, we spend about 50% of our waking hours at work. Are we really prepared to pretend we are robots for half of our life? A machine with no desires, no wishes, no thoughts outside the company's goals?
 
-As a society, we might not yet be emotionally mature enough to be able to handle emotions at work, our own and those of the others. But just because we might refuse to handle them, does not mean 
-we don't all come to work with broad emotional needs. The relationships we form at work affect our motivations, our health, our self-esteem. We start our days with work and then the stress or satisfaction we experienced at work affect the way we treat our family and friends later in the day.
+As a society, we might not yet be emotionally mature enough to be able to handle emotions at work, our own and those of the others. But just because we might refuse to handle them, does not mean we don't all come to work with broad emotional needs. The relationships we form at work affect our motivations, our health, our self-esteem. We start our days with work and then the stress or satisfaction we experienced at work affect the way we treat our family and friends later in the day.
 
 I always found that knowledge is power. Knowing what affects and motivates you and also what affects and motivates others around you is like a power-up. Suddenly you have access to this whole other dimension. Suddenly you see, how things are connected, you see that the information was always there, things were always clear and logical, it was just you, who decided to keep your eyes closed. 
 
 ## How team-spirit works amongst the Kaulong people of New Britain, Papua New Guinea
 
-A few years ago, I read a marvellous book called The World Until Yesterday by Jared Diamond. I love it because (unless you are all about anthropology) it broadens your perspective. It explores how tribal people live, how they approach essential human problems, from health and diet to conflict resolution and language. These traditional societies offer a window into how our ancestors lived for most of human history.
+A few years ago, I read a marvelous book called The World Until Yesterday by Jared Diamond. I love it because (unless you are all about anthropology) it broadens your perspective. It explores how tribal people live, how they approach essential human problems, from health and diet to conflict resolution and language. These traditional societies offer a window into how our ancestors lived for most of human history.
 
 Here we might be talking about teamwork and team goals and team contributions. But under the surface, we are all allowed and encouraged to advance ourselves at the cost of the team. Especially, when at work, we are to increase our company's profit, even when that has detrimental effects on our own communities. Money, prestige, influence come before relationships and people. Just as work is to be started in the morning and be finished before we can play with our kids.
 
