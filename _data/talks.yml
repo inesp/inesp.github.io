@@ -1,5 +1,5 @@
 
-- conf: Heapcon
+- conf: Heapcon 2026
   link: https://heapcon.io/2026
   date: Nov 2026
   flag: 🇷🇸
@@ -11,7 +11,7 @@
   slides_link:
   post_slug: estimation-is-a-delusion
 
-- conf: TDC
+- conf: TDC 2026
   link: https://2026.trondheimdc.no/en/
   date: Oct 2026
   flag: 🇳🇴
@@ -30,7 +30,6 @@
   flag: 🇱🇺
   location: Mondorf-les-Bains, Luxembourg
   title: "Did My Deploy Degrade Production?"
-  coming_soon: true
   video_link:
   details_link: https://m.devoxx.com/events/voxxedlu2026/talks/9002/details
   slides_link: https://speakerdeck.com/inesp/did-my-deploy-degrade-production
