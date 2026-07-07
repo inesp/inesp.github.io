@@ -18,3 +18,6 @@
 - title: API Resilience Patterns
   series: API Resilience Patterns
   description: Every API is doing its own thing. Authorization, headers, rate limiting (devs are creative people, so we just like to invent our own rules). After integrating 40+ APIs into the same product, I have a lot to say about handling failures of remote APIs.
+
+- title: How Many Tests Is Enough?
+  description: What makes us really calm when deploying code to production? A green test suite with 100% test coverage. But then we merge, deploy, go to lunch... and somewhere out there a user does something so creative that production goes down anyway. There's no amount of tests that makes the bugs go away. This talk digs into what our tests actually catch, why we keep reaching for one comforting number, and why feeling safe is usually right about when we get sloppy.
