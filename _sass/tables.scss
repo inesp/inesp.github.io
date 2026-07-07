@@ -147,7 +147,9 @@ table.talks {
 
   td.link-texts {
     a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
       font-size: 0.85rem;
       font-weight: 500;
       text-decoration: none;
@@ -158,6 +160,12 @@ table.talks {
       background: $color-green-light;
       border-radius: 0.75rem;
       border: 1px solid $color-green;
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+        flex-shrink: 0;
+      }
 
       &:hover {
         background: $color-green;

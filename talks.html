@@ -54,13 +54,32 @@ fluid: true
         </td>
         <td class="link-texts">
           {%- if talk.video_link -%}
-            <a href="{{ talk.video_link }}" target="_blank" class="link-video">Video</a>
+            <a href="{{ talk.video_link }}" target="_blank" class="link-video" title="Watch the video" aria-label="Watch the video">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <polygon points="10,8 16,12 10,16" fill="currentColor"/>
+              </svg>
+              <span>Video</span>
+            </a>
           {%- endif -%}
           {%- if talk.slides_link -%}
-            <a href="{{ talk.slides_link }}" target="_blank" class="link-slides">Slides</a>
+            <a href="{{ talk.slides_link }}" target="_blank" class="link-slides">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <rect x="3" y="2.5" width="14" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="7" y="8.5" width="14" height="13" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <span>Slides</span>
+            </a>
           {%- endif -%}
           {%- if talk.details_link -%}
-            <a href="{{ talk.details_link }}" target="_blank" class="link-schedule">Schedule</a>
+            <a href="{{ talk.details_link }}" target="_blank" class="link-schedule">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                <path d="M9 3.5 h6 M9 20.5 h6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="12" cy="12" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 9 v3 h2.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Schedule</span>
+            </a>
           {%- endif -%}
         </td>
       </tr>
