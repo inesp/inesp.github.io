@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1152" height="744" viewBox="0 0 1152 744" font-family="Lato, system-ui, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="13" flood-color="#1f2933" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1152" height="744" fill="#ffffff"/>
+
+  <!-- card -->
+  <rect x="16" y="12" width="1120" height="692" rx="24" fill="#ffffff" filter="url(#cardShadow)"/>
+
+  <!-- header -->
+  <text x="72" y="96" font-size="30" font-weight="800" fill="#2b2f36" letter-spacing="-0.3">APP-1187 · Fix repo sync for self-hosted Git</text>
+  <text x="72" y="130" font-size="17" fill="#8a919c">deployed 4 h 20 min ago · production</text>
+
+  <!-- flag chip -->
+  <rect x="760" y="64" width="320" height="42" rx="21" fill="#fbe3ec"/>
+  <text x="920" y="91" font-size="13" font-weight="700" letter-spacing="1.5" fill="#b52560" text-anchor="middle">FLAGGED · 22 MIN AFTER ROLLOUT</text>
+
+  <!-- health since deploy -->
+  <text x="72" y="198" font-size="13" font-weight="700" letter-spacing="2" fill="#8a919c">HEALTH SINCE DEPLOY</text>
+  <text x="1080" y="198" font-size="13" font-weight="700" letter-spacing="2" fill="#8a919c" text-anchor="end">4 H 20 MIN</text>
+
+  <rect x="72"  y="214" width="684" height="24" rx="12" fill="#14a68c"/>
+  <rect x="762" y="214" width="180" height="24" rx="12" fill="#f59e4b"/>
+  <rect x="948" y="214" width="132" height="24" rx="12" fill="#d6336c"/>
+
+  <g font-size="16" fill="#2b2f36">
+    <circle cx="78" cy="277" r="6" fill="#14a68c"/>
+    <text x="94" y="283"><tspan font-weight="800">68%</tspan> healthy <tspan fill="#8a919c" font-size="14">· 2 h 57 min</tspan></text>
+    <circle cx="396" cy="277" r="6" fill="#f59e4b"/>
+    <text x="412" y="283"><tspan font-weight="800">18%</tspan> ailing <tspan fill="#8a919c" font-size="14">· 48 min</tspan></text>
+    <circle cx="668" cy="277" r="6" fill="#d6336c"/>
+    <text x="684" y="283"><tspan font-weight="800">13%</tspan> unhealthy <tspan fill="#8a919c" font-size="14">· 35 min</tspan></text>
+  </g>
+
+  <!-- metric verdicts -->
+  <text x="72" y="344" font-size="13" font-weight="700" letter-spacing="2" fill="#8a919c">METRIC VERDICTS</text>
+  <text x="1080" y="344" font-size="13" font-weight="700" letter-spacing="2" fill="#8a919c" text-anchor="end">NOW</text>
+
+  <!-- row 1 -->
+  <g>
+    <rect x="72" y="362" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="92" y="392" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">VM CPU UTILIZATION</text>
+    <rect x="92" y="406" width="96" height="24" rx="12" fill="#fbe3ec"/>
+    <text x="140" y="423" font-size="13" font-weight="700" fill="#b52560" text-anchor="middle">unhealthy</text>
+    <text x="92" y="462" font-size="28" font-weight="800" fill="#2b2f36">74.2<tspan font-size="15" font-weight="400" fill="#8a919c"> %</tspan></text>
+    <text x="92" y="484" font-size="14" font-weight="600" fill="#b52560">+38.1 above normal</text>
+  </g>
+  <g>
+    <rect x="328" y="362" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="348" y="392" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">APP ERRORS</text>
+    <rect x="348" y="406" width="96" height="24" rx="12" fill="#fbe3ec"/>
+    <text x="396" y="423" font-size="13" font-weight="700" fill="#b52560" text-anchor="middle">unhealthy</text>
+    <text x="348" y="462" font-size="28" font-weight="800" fill="#2b2f36">17.5<tspan font-size="15" font-weight="400" fill="#8a919c"> /min</tspan></text>
+    <text x="348" y="484" font-size="14" font-weight="600" fill="#b52560">+17.5 above normal</text>
+  </g>
+  <g>
+    <rect x="584" y="362" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="604" y="392" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">LB 5XX RESPONSES</text>
+    <rect x="604" y="406" width="96" height="24" rx="12" fill="#fbe3ec"/>
+    <text x="652" y="423" font-size="13" font-weight="700" fill="#b52560" text-anchor="middle">unhealthy</text>
+    <text x="604" y="462" font-size="28" font-weight="800" fill="#2b2f36">22<tspan font-size="15" font-weight="400" fill="#8a919c"> /min</tspan></text>
+    <text x="604" y="484" font-size="14" font-weight="600" fill="#b52560">+22 above normal</text>
+  </g>
+  <g>
+    <rect x="840" y="362" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="860" y="392" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">QUEUED JOBS, 5 MIN</text>
+    <rect x="860" y="406" width="68" height="24" rx="12" fill="#fdeeda"/>
+    <text x="894" y="423" font-size="13" font-weight="700" fill="#a8621c" text-anchor="middle">ailing</text>
+    <text x="860" y="462" font-size="28" font-weight="800" fill="#2b2f36">290</text>
+    <text x="860" y="484" font-size="14" font-weight="600" fill="#a8621c">+230 above normal</text>
+  </g>
+
+  <!-- row 2 -->
+  <g>
+    <rect x="72" y="518" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="92" y="548" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">POSTGRES CPU</text>
+    <rect x="92" y="562" width="68" height="24" rx="12" fill="#fdeeda"/>
+    <text x="126" y="579" font-size="13" font-weight="700" fill="#a8621c" text-anchor="middle">ailing</text>
+    <text x="92" y="618" font-size="28" font-weight="800" fill="#2b2f36">71.0<tspan font-size="15" font-weight="400" fill="#8a919c"> %</tspan></text>
+    <text x="92" y="640" font-size="14" font-weight="600" fill="#a8621c">+28.6 above normal</text>
+  </g>
+  <g>
+    <rect x="328" y="518" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="348" y="548" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">STATUS PAGE</text>
+    <rect x="348" y="562" width="84" height="24" rx="12" fill="#dcf2ee"/>
+    <text x="390" y="579" font-size="13" font-weight="700" fill="#0d7a67" text-anchor="middle">healthy</text>
+    <text x="348" y="618" font-size="28" font-weight="800" fill="#2b2f36">ok</text>
+    <text x="348" y="640" font-size="14" font-weight="600" fill="#8a919c">no change</text>
+  </g>
+  <g>
+    <rect x="584" y="518" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="604" y="548" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">UPTIME PROBE</text>
+    <rect x="604" y="562" width="84" height="24" rx="12" fill="#dcf2ee"/>
+    <text x="646" y="579" font-size="13" font-weight="700" fill="#0d7a67" text-anchor="middle">healthy</text>
+    <text x="604" y="618" font-size="28" font-weight="800" fill="#2b2f36">100<tspan font-size="15" font-weight="400" fill="#8a919c"> %</tspan></text>
+    <text x="604" y="640" font-size="14" font-weight="600" fill="#8a919c">no change</text>
+  </g>
+  <g>
+    <rect x="840" y="518" width="240" height="136" rx="16" fill="#ffffff" stroke="#eef0f3"/>
+    <text x="860" y="548" font-size="12" font-weight="700" letter-spacing="1.2" fill="#8a919c">SYNTHETIC CHECKOUT</text>
+    <rect x="860" y="562" width="84" height="24" rx="12" fill="#dcf2ee"/>
+    <text x="902" y="579" font-size="13" font-weight="700" fill="#0d7a67" text-anchor="middle">healthy</text>
+    <text x="860" y="618" font-size="28" font-weight="800" fill="#2b2f36">ok</text>
+    <text x="860" y="640" font-size="14" font-weight="600" fill="#8a919c">no change</text>
+  </g>
+</svg>

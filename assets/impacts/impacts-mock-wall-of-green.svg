@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1152" height="576" viewBox="0 0 1152 576" font-family="Lato, system-ui, sans-serif">
+  <defs>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="13" flood-color="#1f2933" flood-opacity="0.10"/>
+    </filter>
+    <filter id="tipShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="13" flood-color="#1f2933" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1152" height="576" fill="#ffffff"/>
+
+  <!-- card -->
+  <rect x="16" y="12" width="1120" height="540" rx="24" fill="#ffffff" filter="url(#cardShadow)"/>
+
+  <!-- title -->
+  <text x="72" y="94" font-size="32" font-weight="800" fill="#2b2f36" letter-spacing="-0.3">Health of Production Environment</text>
+  <text x="72" y="128" font-size="17" fill="#8a919c">last 24 hours</text>
+
+  <!-- tooltip -->
+  <rect x="424" y="152" width="430" height="244" rx="20" fill="#ffffff" stroke="#f1f2f4" filter="url(#tipShadow)"/>
+  <text x="448" y="188" font-size="15" font-weight="700" fill="#2b2f36">8 July, 10:00 – 11:00</text>
+
+  <!-- rows: name left, pill right (pill right edge at x=830) -->
+  <text x="448" y="226" font-size="16" font-weight="600" fill="#2b2f36">VM CPU utilization</text>
+  <rect x="678" y="208" width="152" height="26" rx="13" fill="#fbe3ec"/>
+  <text x="754" y="226" font-size="14" font-weight="700" fill="#b52560" text-anchor="middle">unhealthy · 74.2</text>
+
+  <text x="448" y="262" font-size="16" font-weight="600" fill="#2b2f36">App errors</text>
+  <rect x="678" y="244" width="152" height="26" rx="13" fill="#fbe3ec"/>
+  <text x="754" y="262" font-size="14" font-weight="700" fill="#b52560" text-anchor="middle">unhealthy · 17.5</text>
+
+  <text x="448" y="298" font-size="16" font-weight="600" fill="#2b2f36">Queued jobs, 5 min</text>
+  <rect x="694" y="280" width="136" height="26" rx="13" fill="#fdeeda"/>
+  <text x="762" y="298" font-size="14" font-weight="700" fill="#a8621c" text-anchor="middle">ailing · 123</text>
+
+  <text x="448" y="334" font-size="16" font-weight="600" fill="#2b2f36">Postgres CPU</text>
+  <rect x="692" y="316" width="138" height="26" rx="13" fill="#dcf2ee"/>
+  <text x="761" y="334" font-size="14" font-weight="700" fill="#0d7a67" text-anchor="middle">healthy · 42.4</text>
+
+  <text x="448" y="370" font-size="16" font-weight="600" fill="#2b2f36">LB 5xx responses</text>
+  <rect x="718" y="352" width="112" height="26" rx="13" fill="#dcf2ee"/>
+  <text x="774" y="370" font-size="14" font-weight="700" fill="#0d7a67" text-anchor="middle">healthy · 0</text>
+
+  <!-- stem from tooltip to hovered dot -->
+  <line x1="639" y1="400" x2="639" y2="431" stroke="#d6336c" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- dots: 1h each, r=16, pitch 42, centers y=458 -->
+  <g>
+    <circle cx="93"  cy="458" r="16" fill="#14a68c"/>
+    <circle cx="135" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="177" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="219" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="261" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="303" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="345" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="387" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="429" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="471" cy="458" r="16" fill="#f59e4b"/>
+    <circle cx="513" cy="458" r="16" fill="#f59e4b"/>
+    <circle cx="555" cy="458" r="16" fill="#d6336c"/>
+    <circle cx="597" cy="458" r="16" fill="#d6336c"/>
+    <circle cx="639" cy="458" r="16" fill="#d6336c"/>
+    <circle cx="639" cy="458" r="23" fill="none" stroke="#d6336c" stroke-width="3"/>
+    <circle cx="681" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="723" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="765" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="807" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="849" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="891" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="933" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="975" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="1017" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="1059" cy="458" r="16" fill="#14a68c"/>
+  </g>
+
+  <!-- axis labels -->
+  <text x="77" y="514" font-size="15" fill="#8a919c">24 hours ago</text>
+  <text x="1075" y="514" font-size="15" fill="#8a919c" text-anchor="end">now</text>
+</svg>
