@@ -1,3 +1,9 @@
+- title: How We Lie to Each Other with Data
+  description: "Of course, we learned statistics. We went to university, there was a course, there was an exam, we passed it. But we don't really use it at work... when writing code, except.... that we love proving a point with a good chart. That would be a harmless quirk if we were bakers, but our code now decides who gets a loan, whose claim gets approved, when the doctor sees you. Software engineers have somehow become some of the most consequential decision-makers in society, and we cope with it by pretending we're just typing."
+
+- title: How Many Tests Is Enough?
+  description: "What makes us really calm when deploying code to production? A green test suite with 100% test coverage. But then we merge, deploy, go to lunch... and somewhere out there a user does something so creative that production goes down anyway. There's no amount of tests that makes the bugs go away. We wish test coverage was a magic number, just like we want to believe in the power of other metrics (LOC, story points, DORA, ...). This talk grapples with two questions: what our tests actually catch, and why we keep reaching for these numbers."
+
 - title: Software Estimation is a Delusion
   post_slug: estimation-is-a-delusion
   description: Software estimation has turned into ritualized guessing. We are pushed to estimate, but nobody is teaching us how to do it. Our estimates are deemed crucial, but the project's specs keep changing mid-work. It's time we abandoned long-term estimates and focus instead on managing project risks.
@@ -18,6 +24,3 @@
 - title: API Resilience Patterns
   series: API Resilience Patterns
   description: Every API is doing its own thing. Authorization, headers, rate limiting (devs are creative people, so we just like to invent our own rules). After integrating 40+ APIs into the same product, I have a lot to say about handling failures of remote APIs.
-
-- title: How Many Tests Is Enough?
-  description: What makes us really calm when deploying code to production? A green test suite with 100% test coverage. But then we merge, deploy, go to lunch... and somewhere out there a user does something so creative that production goes down anyway. There's no amount of tests that makes the bugs go away. This talk digs into what our tests actually catch, why we keep reaching for one comforting number, and why feeling safe is usually right about when we get sloppy.
