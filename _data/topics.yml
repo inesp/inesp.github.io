@@ -14,6 +14,10 @@ API Resilience Patterns:
   display_title: "API Resilience Patterns"
   home_intro: "Patterns for handling rate limits, pagination failures, API outages, ..."
 
+The Algorithm Decided:
+  display_title: "The Algorithm Decided"
+  home_intro: ""
+
 Engineering Research:
   home_intro: "Posts that draw from research papers"
 
@@ -25,4 +29,5 @@ collection_tags:
   - Self-Documenting Code
   - Cognitive Biases in Code
   - API Resilience Patterns
+  - The Algorithm Decided
 

@@ -1,0 +1,61 @@
+<svg viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="460" height="300" fill="#fff"/>
+
+  <!-- Dashboard card frame -->
+  <rect x="8" y="8" width="444" height="284" fill="none" rx="6" stroke="#dadada" stroke-width="1"/>
+
+  <!-- Title block -->
+  <text x="230" y="34" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Change failure rate</text>
+  <text x="230" y="50" font-size="9" fill="#6c757d" text-anchor="middle">by engineer, last 90 days, all systems</text>
+
+  <!-- Header row -->
+  <text x="56" y="78" font-size="8" fill="#6c757d" letter-spacing="0.08em">ENGINEER</text>
+  <text x="230" y="78" font-size="8" fill="#6c757d" text-anchor="end" letter-spacing="0.08em">DEPLOYS</text>
+  <text x="310" y="78" font-size="8" fill="#6c757d" text-anchor="end" letter-spacing="0.08em">FAILED</text>
+  <text x="396" y="78" font-size="8" fill="#6c757d" text-anchor="end" letter-spacing="0.08em">RATE</text>
+  <line x1="20" y1="86" x2="440" y2="86" stroke="#212529" stroke-width="1"/>
+
+  <!-- Ranked rows, best to worst; Ana flagged red -->
+  <text x="28" y="104" font-size="9" fill="#6c757d">#1</text>
+  <text x="56" y="104" font-size="11" fill="#212529">Nils</text>
+  <text x="230" y="104" font-size="10" fill="#212529" text-anchor="end">80</text>
+  <text x="310" y="104" font-size="10" fill="#212529" text-anchor="end">9</text>
+  <text x="396" y="104" font-size="10" fill="#212529" text-anchor="end">11%</text>
+  <line x1="20" y1="112" x2="440" y2="112" stroke="#dadada" stroke-width="0.5"/>
+  <text x="28" y="130" font-size="9" fill="#6c757d">#2</text>
+  <text x="56" y="130" font-size="11" fill="#212529">Tomasz</text>
+  <text x="230" y="130" font-size="10" fill="#212529" text-anchor="end">90</text>
+  <text x="310" y="130" font-size="10" fill="#212529" text-anchor="end">12</text>
+  <text x="396" y="130" font-size="10" fill="#212529" text-anchor="end">13%</text>
+  <line x1="20" y1="138" x2="440" y2="138" stroke="#dadada" stroke-width="0.5"/>
+  <text x="28" y="156" font-size="9" fill="#6c757d">#3</text>
+  <text x="56" y="156" font-size="11" fill="#212529">Chiara</text>
+  <text x="230" y="156" font-size="10" fill="#212529" text-anchor="end">72</text>
+  <text x="310" y="156" font-size="10" fill="#212529" text-anchor="end">10</text>
+  <text x="396" y="156" font-size="10" fill="#212529" text-anchor="end">14%</text>
+  <line x1="20" y1="164" x2="440" y2="164" stroke="#dadada" stroke-width="0.5"/>
+  <text x="28" y="182" font-size="9" fill="#6c757d">#4</text>
+  <text x="56" y="182" font-size="11" fill="#212529">Greta</text>
+  <text x="230" y="182" font-size="10" fill="#212529" text-anchor="end">60</text>
+  <text x="310" y="182" font-size="10" fill="#212529" text-anchor="end">9</text>
+  <text x="396" y="182" font-size="10" fill="#212529" text-anchor="end">15%</text>
+  <line x1="20" y1="190" x2="440" y2="190" stroke="#dadada" stroke-width="0.5"/>
+  <text x="28" y="208" font-size="9" fill="#6c757d">#5</text>
+  <text x="56" y="208" font-size="11" fill="#212529">Jonas</text>
+  <text x="230" y="208" font-size="10" fill="#212529" text-anchor="end">45</text>
+  <text x="310" y="208" font-size="10" fill="#212529" text-anchor="end">7</text>
+  <text x="396" y="208" font-size="10" fill="#212529" text-anchor="end">16%</text>
+  <line x1="20" y1="216" x2="440" y2="216" stroke="#dadada" stroke-width="0.5"/>
+  <text x="28" y="234" font-size="9" fill="#6c757d">#6</text>
+  <text x="56" y="234" font-size="11" fill="#212529">Matej</text>
+  <text x="230" y="234" font-size="10" fill="#212529" text-anchor="end">70</text>
+  <text x="310" y="234" font-size="10" fill="#212529" text-anchor="end">11</text>
+  <text x="396" y="234" font-size="10" fill="#212529" text-anchor="end">16%</text>
+  <line x1="20" y1="242" x2="440" y2="242" stroke="#dadada" stroke-width="0.5"/>
+  <rect x="20" y="244" width="420" height="24" fill="#ffe6e6" rx="3" stroke="#fd456f" stroke-width="1"/>
+  <text x="28" y="260" font-size="9" fill="#6c757d">#7</text>
+  <text x="56" y="260" font-size="11" fill="#fd456f" font-weight="bold">Ana</text>
+  <text x="230" y="260" font-size="10" fill="#fd456f" text-anchor="end">100</text>
+  <text x="310" y="260" font-size="10" fill="#fd456f" text-anchor="end">19</text>
+  <text x="396" y="260" font-size="10" fill="#fd456f" font-weight="bold" text-anchor="end">19%</text>
+</svg>
