@@ -1,15 +1,4 @@
 
-- conf: Devoxx Belgium 2026
-  link: https://devoxx.be/
-  date: Oct 2026
-  flag: 🇧🇪
-  location: Antwerp, Belgium
-  title: "Their API Went Down. So Why Is My App on Fire?"
-  coming_soon: true
-  video_link:
-  details_link: https://m.devoxx.com/events/dvbe26/talks/7035/their-api-went-down-so-why-is-my-app-on-fire
-  slides_link:
-  post_slug:
 
 - conf: Heapcon 2026
   link: https://heapcon.io/2026
@@ -35,6 +24,18 @@
   slides_link:
   post_slug: impact-of-a-deploy
 
+
+- conf: Devoxx Belgium 2026
+  link: https://devoxx.be/
+  date: Oct 2026
+  flag: 🇧🇪
+  location: Antwerp, Belgium
+  title: "Their API Went Down. So Why Is My App on Fire?"
+  coming_soon: true
+  video_link:
+  details_link: https://m.devoxx.com/events/dvbe26/talks/7035/their-api-went-down-so-why-is-my-app-on-fire
+  slides_link:
+  post_slug:
 
 - conf: Voxxed Days Luxembourg 2026
   link: https://luxembourg.voxxeddays.com/en/
