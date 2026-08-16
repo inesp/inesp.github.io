@@ -12,11 +12,15 @@ A circuit breaker was _not_ the first thing we wrote for our HTTP requests. It t
 
 A circuit breaker seems like a "good-manners"-type of thing. A thing you do, to make life easier for a _different_ company, not yourself. Soooo, obviously, it is only rarely built. :-P
 
+[...??? credit where due, this isn't my idea or even a Java idea: Michael Nygard named the circuit breaker (and the bulkhead) in _Release It!_ back in 2007. Worth saying up front so it doesn't read as homegrown. ...]
+
 {% include toc.html %}
 
 ## What is a Circuit Breaker pattern?
 
 A circuit breaker is a check that stops my app from repeatedly sending API requests to somebody else's app, when I detect that the external API is down.
+
+[...??? Martin Fowler's "CircuitBreaker" bliki is the cleanest one-page version of the three states if a reader wants the canonical writeup. ...]
 
 On the face of it, it has basically no benefits for us. If some external API is overwhelmed or down, but we keep calling it, then that API returns some sort of 500-responses. My code is already written in a way that it can handle 500 responses, an API can be perfectly healthy and still return a 500-response, so 500 responses are already taken care of. So, if I'm handling 500-responses just fine, if 500-responses don't hurt my app at all, then why would I bother building a circuit breaker?
 
@@ -54,6 +58,8 @@ Without a circuit breaker, every single one of those tasks does the same dance: 
 ![celery-retry-dance.svg](/assets/http/celery-retry-dance.svg)
 
 GitHub's outage has suddenly, unexpectedly become our partial outage.
+
+[...??? the heaviest-hitting references belong right here, this paragraph IS the thesis: the "Metastable Failures in Distributed Systems" paper (HotOS 2021) named this exact self-sustaining state, the follow-up (OSDI 2022) found at least 4 of AWS's 15 biggest outages in a decade were this pattern, and the AWS DynamoDB 2015 postmortem says retries kept the metadata service from recovering. Plus the old "thundering herd" name for the stampede. ...]
 
 **This is what the circuit breaker is for.** It saves our resources, so we aren't wasting them on pointless requests.
 
@@ -118,6 +124,8 @@ The absolute count reacts faster, the error rate seems more correct. It's on you
 The `OPEN` state is always initiated with a timeout. For the duration of the timeout, no HTTP requests will be allowed through. We will `raise CircuitBreakerExc` instead of making the requests. Usually, this timeout is set to a fairly small number, like **1 second**.
 
 After the timeout (the 1 second) is over, we change the state to `HALF-OPEN`. In this state the breaker treats the next request as **a probe**. If the probe succeeds (=we don't receive a failure), then the breaker goes back into `CLOSED`. Whereas, if it fails, then the breaker goes back into `OPEN`, but this time with **a doubled timeout**. If we started with a timeout of 1s, then the next timeout is 2s, the next is 4s, next is 8s.
+
+[...??? accuracy caveat worth a line: this timeout-doubling is a common enhancement, NOT part of Nygard's or Fowler's canonical breaker (theirs uses a fixed timeout before HALF-OPEN). Frame it as "a common addition" so nobody calls it out. ...]
 
 At this point it is smart to select a **maximum timeout**. We've set it to 5 minutes. This way, if an API is down for 2h and then comes back, we will know **at the latest 5 mins after they solve their problems**.
 
@@ -271,6 +279,8 @@ As soon as we let it into production, we experienced fewer Celery issues.
 The most important thing is that the blast radius of any one downed API got smaller. It didn't have the knock-on effect of overwhelming our Celery workers and blocking other code.
 
 It's ironic how this thing that looked like nothing more than "good manners", like something that would benefit some external API but not us, turned out to be very much an act of self-defence for our app. It turned out to be crucial for our code and our resources.
+
+[...??? "the industry took this seriously" close: Netflix wrapped basically every external call in a breaker with Hystrix (now in maintenance mode, they point to resilience4j), and Chaos Monkey kills prod servers on purpose so resilience isn't optional. And you don't build it from scratch in Python anyway, `pybreaker` and `circuitbreaker` on PyPI both cite the same Nygard book. ...]
 
 ## Next
 ⏭️ To be continued...

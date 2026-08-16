@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impact talk — "in prod" example mockups</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; color:#212529; max-width: 860px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+  h1 { font-size: 1.6rem; }
+  h2 { margin-top: 2.4rem; font-size: 1.2rem; border-top: 1px solid #dadada; padding-top: 1.4rem; }
+  .note { color:#6c757d; font-size: .95rem; }
+  svg { border: 1px solid #f0f0f0; border-radius: 6px; margin-top: .6rem; max-width:100%; height:auto; }
+</style>
+</head>
+<body>
+<h1>"How it behaves in prod" — six mockups to picture</h1>
+<p class="note">All drawn in your house SVG style. Numbers are invented; the <em>shapes</em> are what you'd show. Best-first-ish: #1 is the centerpiece, #2 is the most persuasive new slide.</p>
+
+<!-- ============================================================ -->
+<h2>1. Environment-health swimlane (the centerpiece)</h2>
+<p class="note">Top row = the whole environment (red if <strong>any</strong> metric is red). Rows below = the metrics that put it there. One deploy, one story: ship → red → some recover, one doesn't → rollback → all green.</p>
+<svg viewBox="0 0 780 330" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+    <marker id="a1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0, 7 3, 0 6" fill="#6c757d"/></marker>
+  </defs>
+  <text x="20" y="28" font-size="14" font-weight="700" fill="#212529">Environment health over time</text>
+
+  <!-- time axis -->
+  <line x1="160" y1="290" x2="740" y2="290" stroke="#dadada" stroke-width="1.5"/>
+  <text x="160" y="308" font-size="11" fill="#6c757d">2:30</text>
+  <text x="353" y="308" font-size="11" fill="#6c757d">2:40</text>
+  <text x="546" y="308" font-size="11" fill="#6c757d">2:50</text>
+  <text x="724" y="308" font-size="11" fill="#6c757d">3:00pm</text>
+
+  <!-- deploy + rollback markers -->
+  <line x1="199" y1="55" x2="199" y2="290" stroke="#0288d1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="203" y="52" font-size="11" font-weight="700" fill="#0288d1">deploy 2:32</text>
+  <line x1="507" y1="55" x2="507" y2="290" stroke="#316849" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="430" y="52" font-size="11" font-weight="700" fill="#316849">rollback 2:48</text>
+
+  <!-- ENV row -->
+  <text x="20" y="78" font-size="12" font-weight="700" fill="#212529">ENVIRONMENT</text>
+  <rect x="160" y="64" width="580" height="26" rx="4" fill="#e0f2e7" stroke="#dadada"/>
+  <rect x="225" y="64" width="282" height="26" rx="4" fill="#e60038"/>
+  <text x="232" y="81" font-size="11" font-weight="700" fill="#fff">IN THE RED</text>
+
+  <!-- metric rows -->
+  <text x="20" y="135" font-size="12" fill="#495057">error rate</text>
+  <rect x="160" y="122" width="580" height="22" rx="4" fill="#e0f2e7" stroke="#dadada"/>
+  <rect x="225" y="122" width="282" height="22" rx="4" fill="#fd456f"/>
+  <text x="512" y="137" font-size="10" fill="#e60038">stayed red till rollback</text>
+
+  <text x="20" y="173" font-size="12" fill="#495057">p95 latency</text>
+  <rect x="160" y="160" width="580" height="22" rx="4" fill="#e0f2e7" stroke="#dadada"/>
+  <rect x="230" y="160" width="123" height="22" rx="4" fill="#fd456f"/>
+  <text x="358" y="175" font-size="10" fill="#316849">✓ recovered on its own</text>
+
+  <text x="20" y="211" font-size="12" fill="#495057">queue depth</text>
+  <rect x="160" y="198" width="580" height="22" rx="4" fill="#e0f2e7" stroke="#dadada"/>
+  <rect x="232" y="198" width="102" height="22" rx="4" fill="#fd456f"/>
+  <text x="340" y="213" font-size="10" fill="#316849">✓ recovered on its own</text>
+
+  <text x="20" y="249" font-size="12" fill="#495057">throughput</text>
+  <rect x="160" y="236" width="580" height="22" rx="4" fill="#e0f2e7" stroke="#dadada"/>
+  <text x="380" y="251" font-size="10" fill="#4a9c6d">never went unhealthy</text>
+
+  <text x="160" y="278" font-size="11" fill="#6c757d" font-style="italic">"Are we red right now? Yes — and here's exactly who's responsible."</text>
+</svg>
+
+<!-- ============================================================ -->
+<h2>2. Fixed threshold vs. learned border (most persuasive new slide)</h2>
+<p class="note">Same spiky metric, drawn twice. A hand-set flat line either screams at normal spikes or sits too high to catch the real one. The learned border hugs the metric's own noise and flags <em>only</em> the true regression.</p>
+<svg viewBox="0 0 780 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <!-- left: fixed -->
+  <text x="20" y="26" font-size="13" font-weight="700" fill="#e60038">Fixed threshold — set by hand</text>
+  <rect x="20" y="40" width="350" height="210" rx="4" fill="#fff" stroke="#f0f0f0"/>
+  <line x1="40" y1="230" x2="360" y2="230" stroke="#dadada"/>
+  <!-- fixed line too low -->
+  <line x1="40" y1="120" x2="360" y2="120" stroke="#e60038" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="300" y="114" font-size="10" fill="#e60038">threshold</text>
+  <!-- spiky data -->
+  <polyline fill="none" stroke="#35b0e8" stroke-width="1.5"
+    points="40,190 60,185 80,100 100,188 120,182 140,105 160,186 180,184 200,98 220,188 240,60 260,186 280,183 300,108 320,187 340,185 360,189"/>
+  <!-- false alarms (normal spikes above the line) -->
+  <circle cx="80" cy="100" r="9" fill="none" stroke="#e6a000" stroke-width="1.5"/>
+  <circle cx="140" cy="105" r="9" fill="none" stroke="#e6a000" stroke-width="1.5"/>
+  <circle cx="200" cy="98" r="9" fill="none" stroke="#e6a000" stroke-width="1.5"/>
+  <circle cx="300" cy="108" r="9" fill="none" stroke="#e6a000" stroke-width="1.5"/>
+  <text x="40" y="270" font-size="11" fill="#e6a000">4 false alarms — these are just normal spikes 😤</text>
+
+  <!-- right: learned -->
+  <text x="410" y="26" font-size="13" font-weight="700" fill="#28a745">Learned border — same data</text>
+  <rect x="410" y="40" width="350" height="210" rx="4" fill="#fff" stroke="#f0f0f0"/>
+  <line x1="430" y1="230" x2="750" y2="230" stroke="#dadada"/>
+  <!-- border band hugging the spikes -->
+  <path d="M430,88 L750,88" stroke="#28a745" stroke-width="1.5" stroke-dasharray="5 3" fill="none"/>
+  <text x="690" y="82" font-size="10" fill="#28a745">border</text>
+  <polyline fill="none" stroke="#35b0e8" stroke-width="1.5"
+    points="430,190 450,185 470,100 490,188 510,182 530,105 550,186 570,184 590,98 610,188 630,60 650,186 670,183 690,108 710,187 730,185 750,189"/>
+  <!-- only the real one flagged -->
+  <circle cx="630" cy="60" r="10" fill="none" stroke="#e60038" stroke-width="2"/>
+  <text x="430" y="270" font-size="11" fill="#28a745">1 real regression flagged — the spikes are forgiven ✓</text>
+</svg>
+
+<!-- ============================================================ -->
+<h2>3. Blast-radius fingerprint of one bad deploy</h2>
+<p class="note">A bad deploy has a <em>shape</em>: several metrics move together at the same instant. Errors up, latency up, throughput down — all hinged on the deploy line.</p>
+<svg viewBox="0 0 780 320" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="20" y="24" font-size="13" font-weight="700" fill="#212529">One deploy, three metrics react at once</text>
+  <!-- shared deploy line -->
+  <line x1="360" y1="40" x2="360" y2="300" stroke="#0288d1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="364" y="52" font-size="11" font-weight="700" fill="#0288d1">deploy</text>
+
+  <!-- errors/min: jumps up -->
+  <text x="20" y="86" font-size="11" fill="#495057">errors/min</text>
+  <polyline fill="none" stroke="#fd456f" stroke-width="1.5"
+    points="120,100 180,98 240,102 300,99 360,100 380,70 440,55 520,60 600,52 700,58"/>
+  <text x="610" y="48" font-size="10" fill="#e60038">▲ up</text>
+
+  <!-- p95: jumps up -->
+  <text x="20" y="176" font-size="11" fill="#495057">p95 latency</text>
+  <polyline fill="none" stroke="#da4ada" stroke-width="1.5"
+    points="120,190 180,188 240,192 300,189 360,190 390,165 460,150 540,158 620,148 700,152"/>
+  <text x="610" y="140" font-size="10" fill="#da4ada">▲ up</text>
+
+  <!-- throughput: drops down -->
+  <text x="20" y="266" font-size="11" fill="#495057">throughput</text>
+  <polyline fill="none" stroke="#008378" stroke-width="1.5"
+    points="120,250 180,252 240,248 300,251 360,250 390,275 460,288 540,282 620,290 700,286"/>
+  <text x="610" y="305" font-size="10" fill="#008378">▼ down</text>
+</svg>
+
+<!-- ============================================================ -->
+<h2>4. The metric zoo (proves "same math, any metric")</h2>
+<p class="note">Six metrics that look nothing alike — each with its <em>own</em> learned border (shaded band). One slide that retires the whole "but my metric is different" objection.</p>
+<svg viewBox="0 0 780 360" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- errors/min spiky -->
+  <text x="20" y="24" font-size="11" font-weight="700" fill="#0288d1">errors/min — spiky</text>
+  <rect x="20" y="32" width="230" height="86" rx="4" fill="#e1f5fe" opacity="0.5"/>
+  <polyline fill="none" stroke="#35b0e8" stroke-width="1.5" points="30,100 50,98 70,55 90,100 110,96 130,60 150,99 170,97 190,52 210,100 230,95"/>
+
+  <!-- CPU smooth -->
+  <text x="280" y="24" font-size="11" font-weight="700" fill="#28a745">CPU % — smooth</text>
+  <rect x="280" y="50" width="230" height="52" rx="4" fill="#e0f2e7" opacity="0.6"/>
+  <polyline fill="none" stroke="#4a9c6d" stroke-width="1.5" points="290,80 320,76 350,72 380,75 410,70 440,74 470,71 500,76"/>
+
+  <!-- signups/day seasonal -->
+  <text x="540" y="24" font-size="11" font-weight="700" fill="#da4ada">signups/day — seasonal</text>
+  <rect x="540" y="36" width="220" height="78" rx="4" fill="#ffeaff" opacity="0.6"/>
+  <polyline fill="none" stroke="#da4ada" stroke-width="1.5" points="550,95 575,70 600,50 625,70 650,95 675,70 700,50 725,70 750,95"/>
+
+  <!-- memory sawtooth -->
+  <text x="20" y="200" font-size="11" font-weight="700" fill="#e6a000">memory % — sawtooth</text>
+  <rect x="20" y="210" width="230" height="80" rx="4" fill="#fff8cd" opacity="0.7"/>
+  <polyline fill="none" stroke="#e6a000" stroke-width="1.5" points="30,280 70,225 72,278 110,222 112,278 150,220 152,278 190,224 192,278 230,226"/>
+
+  <!-- p95 fat tail -->
+  <text x="280" y="200" font-size="11" font-weight="700" fill="#008378">p95 latency — fat tail</text>
+  <rect x="280" y="232" width="230" height="58" rx="4" fill="#e0f7f5" opacity="0.7"/>
+  <polyline fill="none" stroke="#008378" stroke-width="1.5" points="290,280 320,278 350,275 380,260 410,279 440,277 470,250 500,279"/>
+
+  <!-- throughput steady -->
+  <text x="540" y="200" font-size="11" font-weight="700" fill="#0288d1">throughput — steady</text>
+  <rect x="540" y="245" width="220" height="40" rx="4" fill="#e1f5fe" opacity="0.6"/>
+  <polyline fill="none" stroke="#0288d1" stroke-width="1.5" points="550,265 580,263 610,266 640,264 670,265 700,263 730,266 750,265"/>
+
+  <text x="20" y="330" font-size="11" fill="#6c757d" font-style="italic">Different scales, units, shapes, noise. Nobody set any of these borders by hand.</text>
+</svg>
+
+<!-- ============================================================ -->
+<h2>5. Aggregate stats (makes it feel like a system that's been alive)</h2>
+<p class="note">Zoom out from one chart to the track record. The big numbers humanize it; the duration histogram shows most "red"s are short blips and the rare long one is the real deal.</p>
+<svg viewBox="0 0 780 280" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <!-- big numbers -->
+  <text x="20" y="36" font-size="13" font-weight="700" fill="#212529">This environment, last 90 days</text>
+  <text x="30" y="100" font-size="44" font-weight="700" fill="#e60038">23</text>
+  <text x="30" y="122" font-size="12" fill="#6c757d">times it went red</text>
+  <text x="30" y="180" font-size="44" font-weight="700" fill="#0288d1">6 min</text>
+  <text x="30" y="202" font-size="12" fill="#6c757d">median time in the red</text>
+  <text x="30" y="250" font-size="20" font-weight="700" fill="#316849">1 lasted 2 days</text>
+  <text x="30" y="268" font-size="12" fill="#6c757d">…that one was the real incident</text>
+
+  <!-- histogram -->
+  <text x="430" y="36" font-size="12" font-weight="700" fill="#495057">how long each "red" lasted</text>
+  <line x1="430" y1="230" x2="755" y2="230" stroke="#dadada" stroke-width="1.5"/>
+  <rect x="440" y="90"  width="34" height="140" rx="3" fill="#35b0e8"/>
+  <rect x="482" y="120" width="34" height="110" rx="3" fill="#35b0e8"/>
+  <rect x="524" y="165" width="34" height="65"  rx="3" fill="#35b0e8"/>
+  <rect x="566" y="195" width="34" height="35"  rx="3" fill="#35b0e8"/>
+  <rect x="608" y="210" width="34" height="20"  rx="3" fill="#35b0e8"/>
+  <rect x="650" y="216" width="34" height="14"  rx="3" fill="#9f9f9f"/>
+  <rect x="715" y="150" width="34" height="80"  rx="3" fill="#e60038"/>
+  <text x="440" y="246" font-size="9" fill="#6c757d">&lt;5m</text>
+  <text x="486" y="246" font-size="9" fill="#6c757d">~10m</text>
+  <text x="528" y="246" font-size="9" fill="#6c757d">~20m</text>
+  <text x="572" y="246" font-size="9" fill="#6c757d">~1h</text>
+  <text x="717" y="246" font-size="9" fill="#e60038">2 days</text>
+  <text x="700" y="140" font-size="10" fill="#e60038" font-weight="700">the real one</text>
+</svg>
+
+<!-- ============================================================ -->
+<h2>6. One honest near-miss (buys you the room's trust)</h2>
+<p class="note">Don't show three clean wins — that reads like a sales deck. Show one where it flagged and you investigated and it was fine. "Here's where it cried wolf, and here's why I forgive it" lands as <em>true</em>.</p>
+<svg viewBox="0 0 780 250" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="20" y="26" font-size="13" font-weight="700" fill="#212529">requests/sec — flagged 11:04, turned out fine</text>
+  <line x1="40" y1="200" x2="750" y2="200" stroke="#dadada" stroke-width="1.5"/>
+  <!-- learned border band -->
+  <path d="M40,90 L750,90" stroke="#28a745" stroke-width="1.5" stroke-dasharray="5 3" fill="none"/>
+  <text x="690" y="84" font-size="10" fill="#28a745">border</text>
+  <polyline fill="none" stroke="#35b0e8" stroke-width="1.5"
+    points="40,150 110,148 180,152 250,149 320,150 360,60 400,150 470,151 540,148 610,150 680,149 750,151"/>
+  <!-- the flagged point -->
+  <circle cx="360" cy="60" r="10" fill="none" stroke="#e6a000" stroke-width="2"/>
+  <text x="300" y="44" font-size="11" font-weight="700" fill="#e6a000">flagged ⚠</text>
+  <!-- honest annotation -->
+  <rect x="410" y="40" width="320" height="46" rx="4" fill="#fff8cd" stroke="#e7d749"/>
+  <text x="424" y="60" font-size="11" fill="#5c5200">…it was a scheduled load test, not a regression.</text>
+  <text x="424" y="76" font-size="11" fill="#5c5200">The system can't know that. I can. That's fine.</text>
+</svg>
+
+<p class="note" style="margin-top:2.4rem;">— These are mockups to react to. Tell me which to keep, and I'll generate the real versions through the pipeline (synthetic data, real KDE/DBSCAN borders) so the numbers are honest.</p>
+</body>
+</html>

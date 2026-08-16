@@ -130,6 +130,8 @@ In theory, when an API wants to communicate that you are sending it too many req
 - the HTTP **status code 429** and
 - the **HTTP header `Retry-After`** with information (number of seconds or HTTP date) about how long we have to wait until we make another request.
 
+[...??? the standard is older and clearer than people think: RFC 6585 defined 429 back in 2012, and RFC 9110 defines Retry-After (HTTP-date or delay-seconds). There's even an active IETF draft, draft-ietf-httpapi-ratelimit-headers, trying to standardize the headers themselves. The standard exists, everyone ignores it. ...]
+
 The idea is that the caller will respect `Retry-After` and diligently wait before making further API calls, **because they have nothing to gain from not respecting it.** Surely, they aren't trying to DDoS the external API, right?!
 
 ```http
@@ -150,6 +152,8 @@ Retry-After: 120
 **In practice, both the API owners and the API callers are disobeying the rules.**
 
 **The API owners** seem to dislike the `Retry-After` header and instead **love to invent their own**, custom names for **headers**. Because why follow the established standard, when we can just invent our own `X-Rate-Limit-Remaining-Seconds`-header or `X-RateLimit-Reset` and send the number of seconds in these headers. One has to be free to express oneself.
+
+[...??? real lineup to prove nobody agrees, not even on the hyphens: GitHub uses `x-ratelimit-remaining`/`x-ratelimit-reset`, X/Twitter uses `x-rate-limit-remaining` (with dashes), Stripe ships a bespoke `Stripe-Rate-Limited-Reason` (a reason, not a counter), Shopify uses a leaky bucket with 429 + Retry-After. ...]
 
 **The API callers**, however, mostly **ignore this header**, no matter what it is called. 
 
@@ -520,6 +524,8 @@ This solution could be polished further if we needed it to be better. It can als
 It is in our best interest to let the remote API be after they tell us to relax. Otherwise, 
 - **we are wasting our own resources**: CPU time, network traffic both ways, storing logs is expensive
 - **our app could get banned entirely**: some APIs punish repeat offenders with IP blocks and revoked API keys
+
+[...??? the deeper reason, the thesis of the whole series: not honoring backoff is how their bad day becomes ours. Marc Brooker (AWS) calls retries "selfish"; the Google SRE book has a whole chapter on retry amplification. Could seed it here and pay it off in the circuit-breaker post. ...]
 
 And here is **this very simple solution** that can solve this annoying problem.
 

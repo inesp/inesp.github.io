@@ -11,6 +11,8 @@ biblio:
 
 You're syncing 5,000 records from GitHub. Your Celery task is on page 12 when the API says **"429 - slow down" (you are rate-limited)**. The task fails. If you've thought about rate-limits, then you have retries set up, so Celery reruns your task a few seconds later and the task, of course, starts from page 1 again. Which means the task wastes your resources by **re-fetching and re-processing the 11 pages that were already successfully fetched and processed** the last time. 
 
+[...??? this re-doing of work is the work-side version of retry amplification: every restart multiplies the load we throw at an already-struggling API. The Google SRE chapter on cascading failures and Marc Brooker's "retries are selfish" both name this. ...]
+
 Wouldn't it be nice **if the task continued from page 12 after it gets restarted**?
 
 If it worked like this:
