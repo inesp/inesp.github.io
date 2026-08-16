@@ -25,3 +25,6 @@ draft-all:  ## back up all branches to the private drafts repo
 publish:  ## push master to the public GitHub Pages repo
 	git push origin master
 
+rebase:  ## rebase current draft branch onto latest master
+	git fetch origin master:master
+	git rebase master

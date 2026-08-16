@@ -97,10 +97,19 @@ If `git remote -v` already lists `private`, setup is done.
 ```bash
 make draft      # push the branch you are on to the private repo
 make draft-all  # back up all local branches to the private repo
+make rebase     # rebase the branch you are on onto latest master
 make publish    # push master to origin = deploy the public site
 ```
 
 Rule of thumb: work on a draft branch, `make draft` as often as you like, and only merge to `master` + `make publish` when the post is ready for the world. Nothing reaches the public repo unless you explicitly push to `origin`.
+
+### Rebasing a draft
+
+When master has moved on (a post got published) and a draft branch is behind, check out the draft and run `make rebase`. It fast-forwards local `master` from GitHub and replays the draft on top, no need to check out master yourself.
+
+If the rebase hits conflicts, git stops mid-rebase and waits: fix the conflicted files, `git add` them, then `git rebase --continue`. To bail out and return to exactly where you were, `git rebase --abort`.
+
+A rebase rewrites the draft's commits, so the next `make draft` has to overwrite the branch in the private repo. The `draft` target uses `--force-with-lease` for this: it only overwrites what this machine last saw, which is safe in a single-person backup repo.
 
 ### Maintenance
 
