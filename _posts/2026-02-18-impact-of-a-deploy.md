@@ -51,7 +51,7 @@ Welcome to the wonderful world of **automated health detection**, where we teach
 
 ## A Quick Confession
 
-I'm **not a data scientist**. I don't have a PhD in statistics or in math. I'm just a regular Python developer who, one day at a small startup, heard the words: *"Wouldn't it be neat if we could automatically detect when deploys deteriorate production? Not directly break it, just degrade our memory or CPU usage."*
+I'm **not a data scientist**. I don't have a PhD in statistics or in math. I'm just a regular Python developer who, one day, in the year 2020, when the first wave of covid was upon us and I was working at a small startup of 6 people, I heard the words: *"Wouldn't it be neat if we could automatically detect when deploys deteriorate production? Not directly break it, just degrade our memory or CPU usage."*
 
 And like any reasonable person, I said: *"Can I try solving this?"*
 
@@ -98,10 +98,16 @@ But we don't want "no users". Which means we can't have 0 errors and 0 incidents
 
 **So... how many errors are then ok for our particular system?** Users come and go to/from our site, so we have to accept spikes as a fact of life.
 
+The classical solution to this messy real world is: ask an experienced developer. Or, nowadays, ask an LLM. But... why should a senior developer just know?? Why should an LLM just know?! **Both of them will be guessing.** They will both look at the data for a while and then propose some alerts. And, maybe most importantly, **the analysis needs to be redone regularly... because the data changes.** Sometimes because we deployed an optimization, sometimes because we have more users, which is a good thing, right?... but it does increase the absolute number of errors in the system. And on every such occasion, the thresholds should be set again.
+
+We also can't cheat our way out by just setting the thresholds REALLY high. If the alert only fires when the CPU is at 100%, we are already out of maneuvering space. There is no time anymore to profile and optimize some page load or some DB query. At that point, the best thing we can do is turn off the most problematic feature, to at least give the rest of the app a chance to not crash. **We want the thresholds to be set as LOW as possible... while avoiding false panic**, because alerts that cry wolf get ignored.
+
 
 ## The Goal: A system that can learn from the past
 
 The goal is to build a system that can **quickly be trained on our past data** (quickly as in: a few milliseconds) and that can **make a judgment call on new metric values**, are they "healthy" or "unhealthy"?
+
+No more tribal knowledge about metrics. No more asking that one developer, who's been with the company for years, if "it's normal that the CPU spiked right after my deploy". The health detector will just run in the background, invisibly and reliably, monitoring changes in the metrics... so you can concentrate on new features.
 
 Work on this system started in 2020. **No LLM was used in this project :-)**.
 
@@ -240,6 +246,8 @@ I decided to separate outliers into 2 categories: major and minor.
 
 ![major-vs-minor-outliers](/assets/impacts/major-vs-minor-outliers.svg)
 
+There is one thing that is very well hidden in every picture of a timeseries: the pictures can't show how many data points overlap each other. An incident might look like it holds about the same number of data points as the normal data around it, but once you zoom in, that "big" incident cluster turns out to be less than 50 points sitting next to 400 points of normal data. **Even when outliers look many, they can't ever be that many.** Because if they represented a good chunk of the data... then they wouldn't be the weird data, they wouldn't be outliers... they would be THE NORM.
+
 These two are so different that they need different approaches to find them.
 
 KDE is great for finding major outliers, while unable to actually see the minor outliers. DBSCAN is great at finding minor outliers, because it is specialized in finding data points that have few/distant neighbors.
@@ -279,6 +287,8 @@ For the kernel, we can choose its shape, but usually people go with the Gaussian
 Before we even run KDE, we smooth the data with a **rolling mean** (1-hour window, so 30 data points at 2-min intervals).
 
 We do this to avoid having to deal with short-lived spikes. We are interested in the overall trend of the data, thus we immediately start by ignoring lonely outliers. The smoothing preserves the 1-hour long incident, but it smooths away the broken 4-minute window.
+
+But wait, isn't cutting away the extreme values dangerous? Aren't the extreme values exactly what we are looking for? It's ok for us, because we are dealing with server metrics. One advantage server metrics have over many other types of metrics is that one end of the spectrum has GOOD numbers and the other end has BAD numbers. Low memory consumption is good, high memory consumption is bad. When our algorithm is done with its work, it will say something like "if the value is above 60, then your metric is unhealthy". So it won't matter that the average has cut away the one lonely 99% CPU data point. And if there were LOTS of 99% data points, then they will still show up in the average... since the average only cuts away narrow spikes.
 
 <details markdown="1" class="rabbit-hole">
 <summary>Rabbit hole: We actually use 2 type of rolling means</summary>
@@ -375,6 +385,18 @@ It turned out that 1.35 works just fine. In all the years this algorithm has bee
 
 </details>
 
+## There will be no human oversight
+
+The biggest problem with building this algorithm was that **everything needed to happen automatically**. All decisions, for all steps, had to be made by the code.
+
+In standard statistics, there is always a human overseeing the analysis of the data. The human can look at the raw data or at the result and decide to skip a step, or add a step, or modify a parameter and re-run a step. I had to forgo this safety net. My algorithm will run every 2 minutes, for every registered metric, for every customer. If the company is successful, it will run hundreds of times every second on hundreds of different data sets. There were 6 of us in the company... there will be no human oversight.
+
+Some companies (basically all major companies) use a nifty solution for this problem: they literally hire people in countries with low wages to manually help their algorithms. Companies love to market their services as being driven by advanced algorithms, when in reality they also rely on millions of low-paid "ghost workers" who execute some of the work manually.
+
+We didn't and couldn't resort to this tactic. For one, it's a shady practice... for another, we were a poor startup with limited funds. And for still another... developing this algorithm and making it work well, completely independently of a human touch, was actually great fun! It is rare to get a project like this in business IT.
+
+So, what I did to simulate the human touch is: **I added a step of review, and the possibility of re-running individual steps with different parameters.**
+
 ## But one bandwidth isn't enough
 
 Real-life data is still too unpredictable. Sometimes Silverman's rule fits, other times it doesn't.
@@ -392,6 +414,8 @@ After each KDE run I either:
 
 I retry up to 2 times, so Step 1 builds at most 3 KDEs.
 
+Yes, I multiply by 5, but divide by 3. I intentionally chose different numbers, because this means I can multiply by 5, then divide by 3, and still end up with a bandwidth I haven't tried yet.
+
 **Level 2: Re-run on cleaned data (up to 3 more KDEs)**
 
 If after Step 1 the data is still too noisy, I:
@@ -406,6 +430,8 @@ This second pass can find outliers that were hidden before - removing the bigges
 ![bandwidth-tuning-loop](/assets/impacts/bandwidth-tuning-loop.svg)
 
 So if the first attempt with `bandwidth=1.0` doesn't work, we might try `5`, then `25` or we might try `1/3`, then `1/9` until we find a bandwidth that produces sensible results.
+
+There is one guiding principle behind all these accept/reject decisions. Sometimes a KDE run removes only a handful of data points and to a human eye the result looks perfectly fine, I'd look at it and say: yes! I'm happy with this, let's use it. But the numbers say we removed almost all the diversity from the data, the standard deviation dropped to almost 0, the IQR IS 0. Seeing this, my algorithm gets cold feet and rejects the result, because it assumes it removed too much. Since this is running automatically, with no human oversight, it is better to reject a too eager outlier-removal than to keep it. **When in doubt, reject the result.**
 
 <details markdown="1" class="rabbit-hole">
 <summary>Rabbit hole: Most peaks are outliers</summary>
@@ -484,9 +510,13 @@ The tallest peak is our reference point. It represents the most common values in
 
 Find the tallest peak. Mark that peak as `SOUND` (=normal). Next find all peaks that are at least **10% as tall**, these are also considered `SOUND`. These peaks are where most data is, they are the significant clusters of data.
 
+The 10% rule... I made that up. This algorithm was born from lots and lots of experimenting. I started this project with about 20 timeseries collected in production from our real customers, and the threshold had to be drawn somewhere. This 10% rule... it just worked.
+
 **Step 3: Mark lonely peaks as `OUTLIERS`**
 
-For the remaining peaks, we check their **prominence**. Prominence measures how much a peak "stands out" from its surroundings. It is the height from the peak down to the lowest valley before you hit a taller peak.
+For the remaining peaks, we check their **prominence**. Prominence measures how much a peak "stands out" from its surroundings. It is the height from the peak down to the lowest valley before you hit a taller peak. In mountaineering terms: the prominence of a hill is how far DOWN you have to go... to then start climbing a higher peak.
+
+I chose this metric because I wanted to find the TRUE mountains... as opposed to hills that just happened to be on a mountain. There is no definition of "lonely" in statistics, but prominence comes pretty close: if a peak is far away from all other data, then it ain't healthy.
 
 If a peak's prominence is **≥70% of its height**, it's a lonely, isolated peak, thus an `OUTLIER`.
 
@@ -576,6 +606,10 @@ Luckily, a good `eps` can be estimated with the **elbow method**.
 ![dbscan-elbow](/assets/impacts/dbscan-elbow.svg)
 
 Points before the elbow have neighbors at similar, short distances. Points after the elbow have distant neighbors. The elbow is the natural boundary between "normal density" and "too sparse".
+
+And how does one actually find the elbow? You find a library that can do it. Doing it manually is harder than it looks... trust me, I've tried.
+
+I should also mention: the elbow method has a mixed reputation. It is considered both subjective AND unreliable, in many practical applications the choice of an "elbow" is highly ambiguous. But I gave it a try, mostly because it looked promising... and it turns out that in the context of my algorithm, it works just fine.
 
 However, this isn't a foolproof method. I use the calculated `eps`, then remove the outliers and again compare the noisiness of the leftover time series. If I'm not happy with the result, I increase the `eps` and try again. 
 </details>
@@ -689,6 +723,18 @@ What we've built is a **self-tuning anomaly detection system**. Instead of askin
 
 **The whole analysis runs in milliseconds.** We cache the borders in Redis so we don't recalculate them for every single metric value. The cache expires after 1 hour, ensuring the algorithm adapts to changing patterns.
 
+## But... is it correct?
+
+Amazing, right?! It just works perfectly.
+
+... I really practiced saying this convincingly, but I can't.
+
+The funniest thing about this whole project is that **there is no way to tell how correct the end result is**. On the one hand, you look at the borders and they look pretty good. But the longer you look, the easier it is to see fault in the results... maybe it's not good enough, maybe it could be better... let me just tweak the parameters again...
+
+This is somewhat unusual in business IT. It's common in research, but much less so in app making and web page making and server script making. Usually, we can judge how close to the real solution we are. Usually, we know what could make the code better. But here... I don't know.
+
+This is A solution. That's all I can say about it.
+
 ## Real world examples of results
 
 Here are some examples from real production data showing how the pipeline handles different patterns.
@@ -703,7 +749,7 @@ This is typical error data with scattered spikes throughout. KDE identifies the 
 
 ### Continuous metric with incident
 
-This is memory usage from a Celery worker. The algorithm finds 1 incident spike with KDE and removes it.
+This is memory usage from a Celery worker. On every deploy we restart the workers, which means that for a moment we use less memory, that's why the data has these regular dips. The algorithm finds the 1 incident spike with KDE and removes it, and it also identifies the values generated by every deploy as outlier values. The resulting border makes sense: everything above 56 is ailing.
 
 ![Continuous metric with incident example](/assets/impacts/metric_1_blog_charts.png)
 
@@ -734,3 +780,17 @@ The new `AILING` is `>= 61.80` and `UNHEALTHY` is `>= 117.62`.
 Here we can see 2 significant incidents that lasted for a while. Still, KDE identifies them as outliers, not as the new normal.
 
 ![Sustained incident example](/assets/impacts/errors_5_blog_charts.png)
+
+## Epilogue: Did anybody even want this?
+
+Now that we've seen that it worked just fine, let's talk about how thrilled our users were to get this feature...
+
+They couldn't care less.
+
+Well, some found it really neat... cute... sleek... just, you know... not really worth paying for. And this is why this product will go the way of the dodo. It wasn't enough that it worked.
+
+Maybe we were too early, maybe people just don't agree that it's useful to catch a deploy that will ruin your memory usage BEFORE the usage is ruined. Or maybe we were too late, maybe the time of dev tools is over. Maybe, if we had made this available 15 years ago, this would by now be Sentry or Atlassian or Datadog... Buuuut at the end of the day, it really doesn't matter what the reasons were. I'm sure there are millions of products like this, products that are really amazing, but which just never found a community of supporters.
+
+One more thing I want to say about this project: at one point during this work, I did try some of the out-of-the-box anomaly detection models that were available in 2020. And even though they were all very sophisticated, very advanced, waaay better than anything I could build... they just weren't built with THIS problem in mind. People are creative, we can think of very unique applications... so at the end of the day, if you have a unique idea, you just have to build it yourself.
+
+And at the very least... this algorithm makes a good topic for a conference talk :). So, all is not lost.
