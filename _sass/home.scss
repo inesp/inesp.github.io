@@ -1,18 +1,171 @@
 @import "colors";
 @import "font_sizes";
 
-/* Intro */
-.home-intro {
+/* Hero */
+.home-hero {
   text-align: center;
-  margin: 0 0 2rem;
+  margin: 1rem 0 0;
 
-  .intro-text {
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    display: block;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-name {
+    font-family: "Noto Serif JP", serif;
+    font-size: $h1-font-size;
+    margin: 0 0 1.5rem;
+  }
+
+  .hero-tagline {
     font-family: "Noto Serif JP", serif;
     font-size: $h4-font-size;
     color: $color-gray-4;
-    margin: 0 auto;
     line-height: 1.6;
     letter-spacing: 0.01em;
+    margin: 0 auto 1.5rem;
+  }
+
+  .hero-flavor {
+    font-family: "Noto Serif JP", serif;
+    font-style: italic;
+    color: $color-gray-2;
+    margin: 0 auto 1.5rem;
+  }
+
+  .hero-facts {
+    color: $color-text-muted;
+    max-width: 40rem;
+    margin: 0 auto 1rem;
+  }
+
+  .hero-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 34rem;
+    margin: 0 auto 1.5rem;
+  }
+
+}
+
+// Shared by the homepage hero and the about page
+.hero-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin: 2rem 0 0;
+
+  // About-page variant: left-aligned, links styled as outlined buttons
+  &.hero-links-left {
+    justify-content: flex-start;
+    margin: 2rem 0;
+
+    a {
+      display: inline-block;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      background: #fff;
+      border: 3px solid $color-yellow-dark;
+      border-radius: $standard-radius;
+      text-decoration: none;
+
+      &:hover {
+        background: $color-yellow-dark;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+/* What I do */
+.home-hats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .hat-icon {
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .hat-title {
+    font-family: "Noto Serif JP", serif;
+    font-size: $h4-font-size;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 3px;
+      margin: 0.5rem 0 0;
+      background: linear-gradient(to right, $color-hover-red, $color-yellow);
+      border-radius: 2px;
+    }
+  }
+
+  p {
+    color: $color-gray-4;
+    margin: 0;
+  }
+}
+
+/* Selected writing: compact list with topic badges */
+.home-writing {
+  .post-item + .post-item {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+
+  .post-teaser {
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* Speaking strip */
+.home-talk-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.75rem;
+
+  .home-talk-date {
+    flex: 0 0 6.5rem;
+    white-space: nowrap;
+  }
+
+  .home-talk-conf {
+    flex: 0 0 15rem;
+  }
+
+  .home-talk-title {
+    flex: 1;
+  }
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+
+    .home-talk-conf {
+      flex: 1 1 auto;
+    }
+
+    .home-talk-title {
+      flex: 1 1 100%;
+    }
   }
 }
 
@@ -23,7 +176,7 @@
   letter-spacing: 0.15em;
   color: $color-gray-2;
   text-align: center;
-  margin: 6rem 0 5rem;
+  margin: 3.5rem 0 2rem;
   position: relative;
 
   display: flex;
@@ -104,7 +257,7 @@
 }
 
 .topic-block {
-  margin: 5rem 0 5rem;
+  margin: 0 0 2rem;
 }
 
 

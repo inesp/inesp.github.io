@@ -2,60 +2,92 @@
 layout: default
 ---
 
-{%- assign featured_topics = "Engineering Research,People,Code Patterns" | split: "," -%}
-
-{%- assign excluded_latest_post_urls = "/2025/07/21/blind-spots-in-code-part-I.html,/2025/05/09/self-documented-code-part-III.html,/2025/05/05/self-documented-code-part-II.html,/2025/04/17/how-to-make-code-self-document-itself.html,/2025/03/31/disagreeing-devs.html" | split: "," -%}
-
-{%- assign latest_posts = "" | split: "" -%}
-{%- for post in site.posts -%}
-  {%- unless excluded_latest_post_urls contains post.url -%}
-    {%- assign latest_posts = latest_posts | push: post -%}
-
-    {%- if latest_posts.size >= 3 -%}
-      {% break %}
-    {%- endif -%}
-  {%- endunless -%}
-{%- endfor -%}
-
-{%- assign latest_urls = latest_posts | map: "url" -%}
-
-{%- assign filtered_posts = "" | split: "" -%}
-{%- for post in site.posts -%}
-  {%- unless latest_urls contains post.url -%}
-    {%- assign filtered_posts = filtered_posts | push: post -%}
-  {%- endunless -%}
-{%- endfor -%}
-
+{%- assign selected_slugs = "impact-of-a-deploy,api-resilience-circuit-breaker,blind-spots-in-code-part-I,disagreeing-devs,estimation-is-a-delusion" | split: "," -%}
 
 <div class="home">
 
-  <section class="home-intro">
-    <p class="intro-text">
-      Notes from my years of building software.
+  <section class="home-hero">
+    <img class="hero-photo" src="/assets/photos/ines-panker-460.jpeg" alt="Ines Panker" width="460" height="460">
+    <h1 class="hero-name">Hi, I'm Ines Panker.</h1>
+    <p class="hero-tagline">I'm a senior staff engineer at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a SaaS observability platform (the first engineer they hired, de-facto architect), and a conference speaker on the human side of engineering, from Slovenia.</p>
+    <p class="hero-flavor">I take complicated systems and find the arrangement that makes them work like poetry.</p>
+    <p class="hero-facts">Almost two decades of building software. The last decade in Python.</p>
+    <p class="hero-facts">Multi-tenant architecture. Circuit breakers guarding over a million API calls a day. Real-time anomaly detection for hundreds of clients. Lately: an LLM pipeline, a RAG system, and testing how much of my own work LLM agents can carry.</p>
+    <p class="hero-badges">
+      <span class="badge bg-yellow">Python</span>
+      <span class="badge bg-yellow">Django</span>
+      <span class="badge bg-yellow">Celery</span>
+      <span class="badge bg-yellow">PostgreSQL</span>
+      <span class="badge bg-yellow">Redis</span>
+      <span class="badge bg-yellow">Elasticsearch</span>
+      <span class="badge bg-yellow">LLM agents</span>
+      <a href="/talks/"><span class="badge bg-yellow">Conference speaking</span></a>
+    </p>
+    <p class="hero-facts">How to contact me: <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a> works best, or catch me at one of the conferences below.</p>
+    <p class="hero-links">
+      <a href="/about/">More about me</a>
+      <a href="/cv/">My CV</a>
+      <a href="/talks/">My talks</a>
     </p>
   </section>
 
-  <!-- Latest -->
-  <h2 class="home-section-title">Recent writings</h2>
-  <section class="topic-block">
-    {%- include posts_section.html posts=latest_posts teaser_length=30 show_archive_link=true -%}
+  <!-- What I do -->
+  <h2 class="home-section-title">What I do</h2>
+  <section class="topic-block home-hats">
+    <div class="hat">
+      <svg class="hat-icon" viewBox="0 0 48 48" width="42" height="42" aria-hidden="true">
+        <path d="M15 14 L5 24 L15 34" fill="none" stroke="#35b0e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33 14 L43 24 L33 34" fill="none" stroke="#35b0e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="27" y1="11" x2="21" y2="37" stroke="#0288d1" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <h3 class="hat-title">Build software</h3>
+      <p>Almost two decades of writing code: <b>Java</b> first, then <b>PHP</b>, then a decade of <b>Python</b>. Backends, data models, the architecture around them.</p>
+    </div>
+    <div class="hat">
+      <svg class="hat-icon" viewBox="0 0 48 48" width="42" height="42" aria-hidden="true">
+        <path d="M4 30 C7 14 13 13 17 24 C20 32 24 33 26 26 C28 19 31 19 33 24 L44 24" fill="none" stroke="#06bdad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M39 19 L44 24 L39 29" fill="none" stroke="#008378" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 class="hat-title">Untangle systems</h3>
+      <p>I take codebases that have outgrown their teams and make them <b>understandable again</b>. Like reverse-engineering the undocumented data layer of a compliance platform and rebuilding its model layer.</p>
+    </div>
+    <div class="hat">
+      <svg class="hat-icon" viewBox="0 0 48 48" width="42" height="42" aria-hidden="true">
+        <path d="M6 20 L26 11 L26 33 L6 24 Z" fill="none" stroke="#e6a000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 26 L10 36 L16 36 L16 27" fill="none" stroke="#e6a000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33 17 C36 20 36 24 33 27" fill="none" stroke="#ff0040" stroke-width="3" stroke-linecap="round"/>
+        <path d="M38 13 C43 17 43 27 38 31" fill="none" stroke="#ff0040" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <h3 class="hat-title">Speak &amp; teach</h3>
+      <p>Lots of <b>conference talks across Europe</b>, all on my own time: software estimation, detecting bad deploys with math, API resilience, cognitive biases in code.</p>
+    </div>
   </section>
 
-  <h2 class="home-section-title">Explore by topic</h2>
+  <!-- Speaking -->
+  <h2 class="home-section-title">Speaking</h2>
+  <section class="topic-block">
+    <p class="topic-intro">I speak in my free time: no sponsors, no employer agenda, just topics I care about.</p>
+    <ul class="list-unstyled">
+      {%- for talk in site.data.talks limit:5 -%}
+        <li class="home-talk-item">
+          <span class="home-talk-date text-muted">{% if talk.coming_soon %}<span title="coming soon">⏳</span> {% endif %}{{ talk.date }}</span>
+          <span class="home-talk-conf">{% if talk.link %}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{% else %}{{ talk.conf }}{% endif %} {{ talk.flag }}</span>
+          <span class="home-talk-title">{{ talk.title }}</span>
+        </li>
+      {%- endfor -%}
+    </ul>
+    <p class="topic-more">
+      <a href="/talks/">All talks and the talk catalogue</a>
+    </p>
+  </section>
 
-  <!-- Topics -->
-  {%- for tag in featured_topics -%}
-    {%- assign posts = filtered_posts | where_exp: "p", "p.tags contains tag" -%}
-    {%- assign tag_slug = tag | slugify -%}
-    {%- assign topic_info = site.data.topics[tag] -%}
-
-    {%- if posts.size > 0 -%}
-      <section class="topic-block">
-        <h3 class="topic-title">{{ tag }}</h3>
-        <p class="topic-intro">{{ topic_info.home_intro }}</p>
-
-        <ul class="list-unstyled">
-          {%- for post in posts limit:3 -%}
+  <!-- Selected writing -->
+  <h2 class="home-section-title">Selected writing</h2>
+  <section class="topic-block">
+    <ul class="list-unstyled home-writing">
+      {%- for slug in selected_slugs -%}
+        {%- for post in site.posts -%}
+          {%- if post.slug == slug -%}
             <li class="post-item">
               {% if post.series %}
                 {% assign coll_data = site.data.topics[post.series] %}
@@ -69,19 +101,24 @@ layout: default
                 <h3 class="post-title">
                   <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                 </h3>
-                <span class="post-date text-muted">{{ post.date | date: "%b %-d, %Y" }}</span>
               </div>
 
               <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+              <p class="post-topics mb-0">
+                {%- for tag in post.tags -%}
+                  {%- assign tag_slug = tag | slugify -%}
+                  <a href="{{ '/topic/' | append: tag_slug | append: '/' | relative_url }}"><span class="badge bg-teal">{{ tag }}</span></a>
+                {%- endfor -%}
+              </p>
             </li>
-          {%- endfor -%}
-        </ul>
-        <p class="topic-more">
-          <a href="/topic/{{ tag_slug }}/">More posts on this topic</a>
-        </p>
-      </section>
-    {%- endif -%}
-  {%- endfor -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </ul>
+    <p class="topic-more">
+      <a href="/archive/">All {{ site.posts | size }} posts, by topic and by date</a>
+    </p>
+  </section>
 
-  {%- include all_topics.html -%}
 </div>

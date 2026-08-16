@@ -38,3 +38,10 @@
 @media (min-width: 992px) {
   .mt-lg-5 { margin-top: 3rem; }
 }
+
+/* Marks a link that leaves the site: appends a small ↗ */
+.remote-link::after {
+  content: "\2197";
+  font-size: 0.8em;
+  margin-left: 0.15em;
+}

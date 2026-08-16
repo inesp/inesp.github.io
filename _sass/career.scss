@@ -1,0 +1,181 @@
+@import "colors";
+
+/* About page photo */
+.about-photo {
+  float: right;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0 1rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: 576px) {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+/* CV page: keep a lead-in paragraph close to the list it introduces */
+.cv p:has(+ ul) {
+  margin-bottom: 0.75rem;
+
+  & + ul {
+    margin-top: 0;
+  }
+}
+
+/* CV page: the fact strip under the title */
+.cv-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+  margin: $standard-margin 0;
+  padding: 1.25rem 1.5rem;
+  background: $color-teal-light;
+  border-left: 5px solid $color-teal;
+  border-radius: $standard-radius;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  dt {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-teal-dark;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-teal-dark; // the global pink hover clashes with teal
+    }
+  }
+}
+
+/* Career list (about page, CV) */
+.career-list {
+  margin: $standard-margin 0;
+
+  .career-item {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 1.25rem;
+    padding: 1rem 0;
+
+    & + .career-item {
+      border-top: 1px solid #fadb8d; // same hairline as the talks table
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      row-gap: 0.25rem;
+    }
+  }
+
+  // Skill rows pair a label with badges instead of a title, so the title-driven offsets misalign them
+  &.career-skills {
+    .career-item {
+      align-items: center;
+      padding: 0.45rem 0; // one line of badges does not need a full job-entry row
+    }
+
+    .career-years {
+      padding-top: 0;
+    }
+
+    .career-body .career-tech {
+      margin-top: 0;
+    }
+  }
+
+  // CV rows carry a date range next to the icon, so they need a wider left column
+  &.career-wide .career-item {
+    grid-template-columns: 8rem 1fr;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .career-next {
+    background: $color-yellow-light;
+    border-radius: $standard-radius;
+    padding: 1rem;
+
+    & + .career-item {
+      border-top: none;
+    }
+
+    .career-years {
+      font-weight: 700;
+      color: $color-badge-text;
+    }
+  }
+
+  .career-years {
+    color: $color-text-muted;
+    white-space: nowrap;
+    text-align: right;
+    padding-top: 0.25rem; // compensates the h3's taller line box so year and title share a line
+  }
+
+  .career-icon {
+    width: 21px;
+    height: 21px;
+    vertical-align: -0.25em;
+    margin-right: 0.4em;
+  }
+
+  .career-body {
+    h3 {
+      font-size: $standard-font-size;
+      font-weight: 600;
+      margin: 0 0 0.3rem;
+    }
+
+    .career-place {
+      font-weight: 400;
+      color: $color-text-muted;
+    }
+
+    p {
+      margin: 0;
+      color: $color-gray-4;
+    }
+
+    p a,
+    li a {
+      background: $color-teal-light; // marker-highlight so links stand out without faking a bigger font
+      padding: 0 0.2em;
+
+      &:hover {
+        color: $color-text; // the global pink hover clashes with teal
+        background: $color-teal;
+      }
+    }
+
+    .career-points {
+      margin: 0.5rem 0 0;
+      padding-left: 1.2rem;
+      color: $color-gray-4;
+
+      li::marker {
+        color: $color-yellow-dark-2;
+      }
+    }
+
+    .career-tech {
+      margin-top: 0.5rem;
+    }
+  }
+}
