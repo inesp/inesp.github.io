@@ -75,3 +75,33 @@ After upgrading, commit `Gemfile.lock` and `.ruby-version`.
 ## Deployment
 
 Pushes to `master` automatically deploy via GitHub Actions (`.github/workflows/deploy.yml`).
+
+## Draft branches and the private backup repo
+
+This repo is public (GitHub Pages requires it), so every branch pushed to `origin` is public, including half-written drafts. To keep drafts private but still backed up off this machine, there is a second, private repo: `inesp/blog-drafts`. It is just a dumb bucket for branches, it never deploys anything.
+
+### One-time setup (new machine, or if the private repo is gone)
+
+```bash
+# create the private repo (empty, no README - it must have no history of its own)
+gh repo create inesp/blog-drafts --private
+
+# register it as a second remote named "private"
+git remote add private git@github.com:inesp/blog-drafts.git
+```
+
+If `git remote -v` already lists `private`, setup is done.
+
+### Day to day
+
+```bash
+make draft      # push the branch you are on to the private repo
+make draft-all  # back up all local branches to the private repo
+make publish    # push master to origin = deploy the public site
+```
+
+Rule of thumb: work on a draft branch, `make draft` as often as you like, and only merge to `master` + `make publish` when the post is ready for the world. Nothing reaches the public repo unless you explicitly push to `origin`.
+
+### Maintenance
+
+The private repo accumulates old branches forever, and that is fine. If it bothers you, delete merged ones with `git push private --delete <branch>`. If the two repos ever feel out of sync, run `make draft-all` and the private repo is complete again, it needs no other care.

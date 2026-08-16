@@ -15,3 +15,13 @@ upgrade-ruby:
 	rbenv install --skip-existing
 
 upgrade-all: upgrade-ruby upgrade
+
+draft:  ## push current branch to the private drafts repo
+	git push private HEAD
+
+draft-all:  ## back up all branches to the private drafts repo
+	git push private --all
+
+publish:  ## push master to the public GitHub Pages repo
+	git push origin master
+
