@@ -14,8 +14,6 @@ fluid: true
     <tr>
       <th>Date</th>
       <th>Event</th>
-      <th></th>
-      <th>Location</th>
       <th>Title</th>
       <th>Materials</th>
     </tr>
@@ -37,9 +35,10 @@ fluid: true
 
       <tr{% if talk.coming_soon %} class="coming-soon"{% endif %}>
         <td>{% if talk.coming_soon %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date }}</td>
-        <td class="talk-conf">{%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}</td>
-        <td>{{ talk.flag }}</td>
-        <td>{{ talk.location }}</td>
+        <td class="talk-conf">
+          {%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}
+          <div class="talk-place"><span class="talk-flag">{{ talk.flag }}</span> {{ talk.location }}</div>
+        </td>
         <td class="talk-title">
           {{ talk.title }}
           {%- if related_post -%}

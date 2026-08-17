@@ -138,6 +138,18 @@ table.talks {
     font-weight: 500;
   }
 
+  .talk-place {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: $color-gray-4;
+    margin-top: 0.2rem;
+
+    .talk-flag {
+      font-size: 1.25em; // the flags carry the travel story, let them show
+      margin-right: 0.1em;
+    }
+  }
+
   td a{
     text-decoration: none;
     &:hover{
@@ -209,37 +221,17 @@ table.talks {
       padding: 0.25rem 0;
       border: none;
 
-      // Date cell - inline with location
+      // Date cell
       &:first-child {
-        display: inline;
         font-size: 0.9rem;
         color: $color-text-muted;
-
-        &::after {
-          content: " · ";
-        }
       }
 
-      // Event name
+      // Event name (its .talk-place sub-line already holds flag + city)
       &.talk-conf {
         font-size: 1.1rem;
         font-weight: 600;
         margin-bottom: 0.25rem;
-        order: -2;
-      }
-
-      // Flag - float right on first line
-      &:nth-child(3) {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-      }
-
-      // Location - inline with date
-      &:nth-child(4) {
-        display: inline;
-        font-size: 0.9rem;
-        color: $color-text-muted;
       }
 
       // Title
@@ -253,11 +245,6 @@ table.talks {
       &.link-texts {
         margin-top: 0.5rem;
       }
-    }
-
-    // Position relative for flag absolute positioning
-    tbody tr {
-      position: relative;
     }
   }
 
@@ -296,17 +283,43 @@ table.talks {
 }
 
 .talk-catalogue-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .talk-catalogue-item {
+  background: #fff;
+  border: 1px solid $color-gray;
+  border-top: 5px solid $color-teal; // each card gets its own accent below
+  border-radius: $double-radius;
+  padding: 1.25rem 1.5rem;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px) rotate(-0.4deg);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  // accent colors cycle through the milestone-icon palette
+  &:nth-child(6n + 2) { border-top-color: $color-hover-red; }
+  &:nth-child(6n + 3) { border-top-color: $color-blue; }
+  &:nth-child(6n + 4) { border-top-color: $color-purple; }
+  &:nth-child(6n + 5) { border-top-color: $color-green-vivid; }
+  &:nth-child(6n + 6) { border-top-color: $color-yellow-dark-2; }
+
   h3 {
     font-size: 1.2rem;
     margin-bottom: 0.2rem;
   }
 
-
+  p {
+    margin-bottom: 0; // the card's padding is the spacing
+    color: $color-gray-4;
+  }
 }
 
