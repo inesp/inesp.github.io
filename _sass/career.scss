@@ -17,6 +17,14 @@
   }
 }
 
+/* Small inline icons (career lists, sidebar), rendered via _includes/career_icon.html */
+.career-icon {
+  width: 21px;
+  height: 21px;
+  vertical-align: -0.25em;
+  margin-right: 0.4em;
+}
+
 /* CV page: keep a lead-in paragraph close to the list it introduces */
 .cv p:has(+ ul) {
   margin-bottom: 0.75rem;
@@ -127,13 +135,6 @@
     white-space: nowrap;
     text-align: right;
     padding-top: 0.25rem; // compensates the h3's taller line box so year and title share a line
-  }
-
-  .career-icon {
-    width: 21px;
-    height: 21px;
-    vertical-align: -0.25em;
-    margin-right: 0.4em;
   }
 
   .career-body {

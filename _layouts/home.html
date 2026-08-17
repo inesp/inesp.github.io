@@ -53,10 +53,9 @@ layout: default
     </div>
     <div class="hat">
       <svg class="hat-icon" viewBox="0 0 48 48" width="42" height="42" aria-hidden="true">
-        <path d="M6 20 L26 11 L26 33 L6 24 Z" fill="none" stroke="#e6a000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M10 26 L10 36 L16 36 L16 27" fill="none" stroke="#e6a000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M33 17 C36 20 36 24 33 27" fill="none" stroke="#ff0040" stroke-width="3" stroke-linecap="round"/>
-        <path d="M38 13 C43 17 43 27 38 31" fill="none" stroke="#ff0040" stroke-width="3" stroke-linecap="round"/>
+        <rect x="19" y="5" width="10" height="20" rx="5" fill="none" stroke="#ff0040" stroke-width="3"/>
+        <path d="M11 21 a13 13 0 0 0 26 0" fill="none" stroke="#e6a000" stroke-width="3" stroke-linecap="round"/>
+        <path d="M24 34 V41 M17 41 H31" fill="none" stroke="#e6a000" stroke-width="3" stroke-linecap="round"/>
       </svg>
       <h3 class="hat-title">Speak &amp; teach</h3>
       <p>Lots of <b>conference talks across Europe</b>, all on my own time: software estimation, detecting bad deploys with math, API resilience, cognitive biases in code.</p>
@@ -70,7 +69,7 @@ layout: default
     <ul class="list-unstyled">
       {%- for talk in site.data.talks limit:5 -%}
         <li class="home-talk-item">
-          <span class="home-talk-date text-muted">{% if talk.coming_soon %}<span title="coming soon">⏳</span> {% endif %}{{ talk.date }}</span>
+          <span class="home-talk-date text-muted">{% if talk.coming_soon %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date }}</span>
           <span class="home-talk-conf">{% if talk.link %}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{% else %}{{ talk.conf }}{% endif %} {{ talk.flag }}</span>
           <span class="home-talk-title">{{ talk.title }}</span>
         </li>
@@ -117,7 +116,7 @@ layout: default
       {%- endfor -%}
     </ul>
     <p class="topic-more">
-      <a href="/archive/">All {{ site.posts | size }} posts, by topic and by date</a>
+      <a href="/archive/">Archive of all posts</a>
     </p>
   </section>
 
