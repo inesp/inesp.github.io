@@ -65,6 +65,7 @@
   flag: 🇳🇱
   location: Amsterdam, Netherlands
   title: "Why smart developers write silly code"
+  featured_video: true  # which recording the talks page showcases at the top
   details_link: https://m.devoxx.com/events/vdams26/talks/1759/why-smart-developers-write-silly-code
   video_link: https://www.youtube.com/watch?v=KPaamLqH1hY
   slides_link: https://speakerdeck.com/inesp/why-do-smart-devs-write-silly-bugs

@@ -184,6 +184,37 @@ table.talks {
         color: #fff;
       }
     }
+
+    // secondary links collapse to their icon; the label unfolds on hover
+    a.link-slides,
+    a.link-schedule {
+      gap: 0;
+
+      span {
+        max-width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: max-width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+      }
+
+      &:hover span {
+        max-width: 6rem;
+        margin-left: 0.3rem;
+      }
+    }
+
+    // recordings are the strongest proof, so the video chip gets the site's
+    // look-here yellow instead of blending in with the green chips
+    a.link-video {
+      color: $color-badge-text;
+      background: $color-yellow;
+      border-color: $color-yellow-border;
+
+      &:hover {
+        background: $color-yellow-dark;
+        color: $color-text;
+      }
+    }
   }
 
   // Mobile card layout
@@ -241,9 +272,14 @@ table.talks {
         margin-bottom: 0.5rem;
       }
 
-      // Links
+      // Links: no hover on touch screens, so labels stay visible
       &.link-texts {
         margin-top: 0.5rem;
+
+        a span {
+          max-width: none;
+          margin-left: 0.3rem;
+        }
       }
     }
   }
@@ -266,6 +302,71 @@ table.talks {
     &:hover {
       background: $color-green;
       color: #fff;
+    }
+  }
+}
+
+// ------------------------ FEATURED VIDEO (talks page)
+.featured-video {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: $color-yellow-light; // same highlight language as the CV's "next" card
+  border-radius: $standard-radius;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-text; // the card darkens instead of the global pink text hover
+    background: $color-yellow;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  .featured-video-thumb {
+    position: relative;
+    flex-shrink: 0;
+    width: 240px;
+    border-radius: $standard-radius;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .featured-video-thumb {
+      width: 100%;
+    }
+  }
+
+  .featured-video-text {
+    display: block;
+
+    b {
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    span {
+      color: $color-gray-4;
     }
   }
 }
@@ -298,12 +399,6 @@ table.talks {
   border-top: 5px solid $color-teal; // each card gets its own accent below
   border-radius: $double-radius;
   padding: 1.25rem 1.5rem;
-  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-  &:hover {
-    transform: translateY(-3px) rotate(-0.4deg);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  }
 
   // accent colors cycle through the milestone-icon palette
   &:nth-child(6n + 2) { border-top-color: $color-hover-red; }
