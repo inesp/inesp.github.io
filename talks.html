@@ -9,13 +9,36 @@ fluid: true
 
 {%- assign talks_info = site.data.talks -%}
 
+{%- assign featured = talks_info | where: "featured_video", true | first -%}
+{%- if featured and featured.video_link -%}
+<a class="featured-video" href="{{ featured.video_link }}" target="_blank">
+  {%- if featured.video_link contains "youtube.com" -%}
+    {%- assign ytid = featured.video_link | split: "v=" | last | split: "&" | first -%}
+    <span class="featured-video-thumb">
+      <img src="https://img.youtube.com/vi/{{ ytid }}/mqdefault.jpg" alt="" width="320" height="180" loading="lazy">
+      <svg viewBox="0 0 48 48" width="42" height="42" aria-hidden="true">
+        <circle cx="24" cy="24" r="21" fill="rgba(255, 255, 255, 0.85)" stroke="#ff0040" stroke-width="3"/>
+        <polygon points="19,15 34,24 19,33" fill="#ff0040"/>
+      </svg>
+    </span>
+  {%- else -%}
+    <svg viewBox="0 0 48 48" width="42" height="42" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="none" stroke="#ff0040" stroke-width="3"/>
+      <polygon points="19,15 34,24 19,33" fill="#ff0040"/>
+    </svg>
+  {%- endif -%}
+  <span class="featured-video-text">
+    <b>Want to see me on stage?</b>
+    <span>Watch "{{ featured.title }}" from {{ featured.conf }}, recorded live.</span>
+  </span>
+</a>
+{%- endif -%}
+
 <table class="talks">
   <thead>
     <tr>
       <th>Date</th>
       <th>Event</th>
-      <th></th>
-      <th>Location</th>
       <th>Title</th>
       <th>Materials</th>
     </tr>
@@ -36,10 +59,11 @@ fluid: true
       {%- endif -%}
 
       <tr{% if talk.coming_soon %} class="coming-soon"{% endif %}>
-        <td>{% if talk.coming_soon %}<span title="coming soon">⏳</span> {% endif %}{{ talk.date }}</td>
-        <td class="talk-conf">{%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}</td>
-        <td>{{ talk.flag }}</td>
-        <td>{{ talk.location }}</td>
+        <td>{% if talk.coming_soon %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date }}</td>
+        <td class="talk-conf">
+          {%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}
+          <div class="talk-place"><span class="talk-flag">{{ talk.flag }}</span> {{ talk.location }}</div>
+        </td>
         <td class="talk-title">
           {{ talk.title }}
           {%- if related_post -%}

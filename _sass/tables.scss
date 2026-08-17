@@ -138,6 +138,18 @@ table.talks {
     font-weight: 500;
   }
 
+  .talk-place {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: $color-gray-4;
+    margin-top: 0.2rem;
+
+    .talk-flag {
+      font-size: 1.25em; // the flags carry the travel story, let them show
+      margin-right: 0.1em;
+    }
+  }
+
   td a{
     text-decoration: none;
     &:hover{
@@ -170,6 +182,37 @@ table.talks {
       &:hover {
         background: $color-green;
         color: #fff;
+      }
+    }
+
+    // secondary links collapse to their icon; the label unfolds on hover
+    a.link-slides,
+    a.link-schedule {
+      gap: 0;
+
+      span {
+        max-width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: max-width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+      }
+
+      &:hover span {
+        max-width: 6rem;
+        margin-left: 0.3rem;
+      }
+    }
+
+    // recordings are the strongest proof, so the video chip gets the site's
+    // look-here yellow instead of blending in with the green chips
+    a.link-video {
+      color: $color-badge-text;
+      background: $color-yellow;
+      border-color: $color-yellow-border;
+
+      &:hover {
+        background: $color-yellow-dark;
+        color: $color-text;
       }
     }
   }
@@ -209,37 +252,17 @@ table.talks {
       padding: 0.25rem 0;
       border: none;
 
-      // Date cell - inline with location
+      // Date cell
       &:first-child {
-        display: inline;
         font-size: 0.9rem;
         color: $color-text-muted;
-
-        &::after {
-          content: " · ";
-        }
       }
 
-      // Event name
+      // Event name (its .talk-place sub-line already holds flag + city)
       &.talk-conf {
         font-size: 1.1rem;
         font-weight: 600;
         margin-bottom: 0.25rem;
-        order: -2;
-      }
-
-      // Flag - float right on first line
-      &:nth-child(3) {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-      }
-
-      // Location - inline with date
-      &:nth-child(4) {
-        display: inline;
-        font-size: 0.9rem;
-        color: $color-text-muted;
       }
 
       // Title
@@ -249,15 +272,15 @@ table.talks {
         margin-bottom: 0.5rem;
       }
 
-      // Links
+      // Links: no hover on touch screens, so labels stay visible
       &.link-texts {
         margin-top: 0.5rem;
-      }
-    }
 
-    // Position relative for flag absolute positioning
-    tbody tr {
-      position: relative;
+        a span {
+          max-width: none;
+          margin-left: 0.3rem;
+        }
+      }
     }
   }
 
@@ -283,6 +306,71 @@ table.talks {
   }
 }
 
+// ------------------------ FEATURED VIDEO (talks page)
+.featured-video {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: $color-yellow-light; // same highlight language as the CV's "next" card
+  border-radius: $standard-radius;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-text; // the card darkens instead of the global pink text hover
+    background: $color-yellow;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  .featured-video-thumb {
+    position: relative;
+    flex-shrink: 0;
+    width: 240px;
+    border-radius: $standard-radius;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .featured-video-thumb {
+      width: 100%;
+    }
+  }
+
+  .featured-video-text {
+    display: block;
+
+    b {
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    span {
+      color: $color-gray-4;
+    }
+  }
+}
+
 // ------------------------ TALK CATALOGUE
 .talk-catalogue {
   margin-top: 4rem;
@@ -296,17 +384,37 @@ table.talks {
 }
 
 .talk-catalogue-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .talk-catalogue-item {
+  background: #fff;
+  border: 1px solid $color-gray;
+  border-top: 5px solid $color-teal; // each card gets its own accent below
+  border-radius: $double-radius;
+  padding: 1.25rem 1.5rem;
+
+  // accent colors cycle through the milestone-icon palette
+  &:nth-child(6n + 2) { border-top-color: $color-hover-red; }
+  &:nth-child(6n + 3) { border-top-color: $color-blue; }
+  &:nth-child(6n + 4) { border-top-color: $color-purple; }
+  &:nth-child(6n + 5) { border-top-color: $color-green-vivid; }
+  &:nth-child(6n + 6) { border-top-color: $color-yellow-dark-2; }
+
   h3 {
     font-size: 1.2rem;
     margin-bottom: 0.2rem;
   }
 
-
+  p {
+    margin-bottom: 0; // the card's padding is the spacing
+    color: $color-gray-4;
+  }
 }
 

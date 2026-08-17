@@ -20,6 +20,7 @@
 @import "footer";
 @import "other_posts";
 @import "details";
+@import "career";
 @import "toc";
 @import "prism_extra";
 
@@ -112,6 +113,11 @@
     background: $color-yellow;
     border: 1px solid $color-yellow-border;
     color: $color-badge-text;
+  }
+  &.bg-teal{
+    background: $color-teal-light;
+    border: 1px solid $color-teal;
+    color: $color-teal-dark;
   }
   &.bg-yellow-washed-out{
     background: #fff7b4;
