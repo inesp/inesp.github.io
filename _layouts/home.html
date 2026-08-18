@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{%- assign selected_slugs = "impact-of-a-deploy,api-resilience-circuit-breaker,blind-spots-in-code-part-I,disagreeing-devs,estimation-is-a-delusion" | split: "," -%}
+{%- assign selected_slugs = "the-algorithm-decided-intro,impact-of-a-deploy,api-resilience-circuit-breaker,blind-spots-in-code-part-I,disagreeing-devs,estimation-is-a-delusion" | split: "," -%}
 
 <div class="home">
 
@@ -29,6 +29,19 @@ layout: default
       <a href="/cv/">My CV</a>
       <a href="/talks/">My talks</a>
     </p>
+  </section>
+
+  <!-- Latest post -->
+  {%- assign latest = site.posts.first -%}
+  <section class="home-latest">
+    <a class="home-latest-card" href="{{ latest.url | relative_url }}">
+      <span class="home-latest-top">
+        <span class="home-latest-label">Latest post</span>
+        <span class="home-latest-meta text-muted">{{ latest.date | date: site.date_format }}{% if latest.series %} · {{ site.data.topics[latest.series].display_title | default: latest.series }}{% endif %}</span>
+      </span>
+      <span class="home-latest-title">{{ latest.title }}</span>
+      <span class="home-latest-teaser">{{ latest.excerpt | strip_html | truncatewords: 30 }}</span>
+    </a>
   </section>
 
   <!-- What I do -->

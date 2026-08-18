@@ -86,6 +86,58 @@
   }
 }
 
+/* Latest post banner */
+.home-latest {
+  margin: 2.5rem 0 0;
+
+  .home-latest-card {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    background: $color-yellow-light;
+    border: 1px solid $color-yellow-border;
+    border-radius: $standard-radius;
+    text-decoration: none;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+      background: $color-yellow;
+
+      .home-latest-title {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .home-latest-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-latest-label {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: $color-gray-2;
+  }
+
+  .home-latest-title {
+    display: block;
+    font-size: $h4-font-size;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .home-latest-teaser {
+    display: block;
+    color: $color-gray-4;
+  }
+}
+
 /* What I do */
 .home-hats {
   display: grid;
