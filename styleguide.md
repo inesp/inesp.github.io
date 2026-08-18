@@ -230,6 +230,17 @@ Sets image to 100% width.
 
 ---
 
+### `.breakout` - Wider Than the Reading Column
+
+Lets an image break out of the 800px reading column: up to 12rem wider (6rem per side), centered, capped at the viewport. Falls back to normal 100% width on screens under 992px. For wide figures (dashboards, side-by-side tables) whose text gets too small at column width.
+
+**Usage:**
+```markdown
+![my-figure](/assets/some-series/my-figure.svg){:.breakout}
+```
+
+---
+
 ### `.yellow` - Yellow Border
 
 Adds a thick yellow border around the image.

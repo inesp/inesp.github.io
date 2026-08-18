@@ -1,0 +1,49 @@
+<svg viewBox="0 0 420 215" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="420" height="215" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="20" y="28" font-size="14" fill="#212529" font-weight="bold">Whickham survey: alive 20 years later?</text>
+  <text x="20" y="44" font-size="9" fill="#6c757d">1,314 women, smokers vs non-smokers (Appleton 1996)</text>
+
+  <!-- Row bands: dead = pale magenta, alive = pale blue (blog blues, no good/bad verdict colors) -->
+  <rect x="30" y="104" width="360" height="22" fill="#ffeaff" rx="3" stroke="#da4ada" stroke-width="1"/>
+  <rect x="30" y="130" width="360" height="22" fill="#e1f5fe" rx="3" stroke="#35b0e8" stroke-width="1"/>
+
+  <!-- Super-header: SMOKER spans the yes/no columns -->
+  <text x="235.0" y="68" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle" letter-spacing="0.08em">SMOKER</text>
+  <line x1="170" y1="74" x2="300" y2="74" stroke="#dadada" stroke-width="0.5"/>
+
+  <!-- Column headers -->
+  <text x="200" y="92" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle" letter-spacing="0.05em">YES</text>
+  <text x="270" y="92" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle" letter-spacing="0.05em">NO</text>
+  <text x="345" y="92" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle" letter-spacing="0.05em">TOTAL</text>
+  <line x1="30" y1="100" x2="390" y2="100" stroke="#dadada" stroke-width="0.5"/>
+
+  <!-- Hairline setting the TOTAL column apart (echoes the blog's .last-column) -->
+  <line x1="307.5" y1="80" x2="307.5" y2="179" stroke="#dadada" stroke-width="0.5"/>
+
+  <!-- Counts -->
+  <text x="36" y="118" font-size="10" fill="#da4ada" font-weight="bold">Dead</text>
+  <text x="200" y="118" font-size="10" fill="#212529" text-anchor="middle">139</text>
+  <text x="270" y="118" font-size="10" fill="#212529" text-anchor="middle">230</text>
+  <text x="345" y="118" font-size="10" fill="#212529" text-anchor="middle">369</text>
+  <text x="36" y="144" font-size="10" fill="#0288d1" font-weight="bold">Alive</text>
+  <text x="200" y="144" font-size="10" fill="#212529" text-anchor="middle">443</text>
+  <text x="270" y="144" font-size="10" fill="#212529" text-anchor="middle">502</text>
+  <text x="345" y="144" font-size="10" fill="#212529" text-anchor="middle">945</text>
+
+  <!-- Totals row -->
+  <line x1="30" y1="158" x2="390" y2="158" stroke="#212529" stroke-width="1"/>
+  <text x="36" y="174" font-size="10" fill="#212529" font-weight="bold">Total</text>
+  <text x="200" y="174" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">582</text>
+  <text x="270" y="174" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">732</text>
+  <text x="345" y="174" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">1,314</text>
+
+  <!-- The punchline row: smokers died LESS, 24% vs 31% get yellow pills -->
+  <rect x="179" y="184" width="42" height="20" fill="#fff283" rx="3" stroke="#e7d749" stroke-width="1"/>
+  <rect x="249" y="184" width="42" height="20" fill="#fff283" rx="3" stroke="#e7d749" stroke-width="1"/>
+  <text x="36" y="198" font-size="10" fill="#212529" font-weight="bold">Share dead</text>
+  <text x="200" y="198" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">24%</text>
+  <text x="270" y="198" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">31%</text>
+  <text x="345" y="198" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">28%</text>
+</svg>

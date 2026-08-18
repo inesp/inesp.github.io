@@ -1,4 +1,5 @@
 - title: How We Lie to Each Other with Data
+  series: "The Algorithm Decided"
   description: "Of course, we learned statistics. We went to university, there was a course, there was an exam, we passed it. But we don't really use it at work... when writing code, except.... that we love **proving a point with a good chart**. That would be a harmless quirk if we were bakers, but our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you. Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing."
 
 - title: How Many Tests Is Enough?

@@ -41,6 +41,18 @@
     width:100%
   }
 
+  // Break out of the 800px reading column, up to 12rem wider (6rem per side),
+  // but never wider than the main column (9/12 of the viewport, minus padding).
+  // On screens without whitespace around the reading column this is a no-op.
+  &.breakout{
+    @media (min-width: 992px) {
+      width: clamp(100%, calc(75vw - 3rem), calc(100% + 12rem));
+      max-width: none;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   &.yellow{
     border: 1rem solid $color-yellow;
   }
