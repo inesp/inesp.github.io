@@ -84,7 +84,7 @@ layout: default
       {%- for talk in site.data.talks limit:5 -%}
         <li class="home-talk-item">
           <span class="home-talk-date text-muted">{% if talk.coming_soon %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date }}</span>
-          <span class="home-talk-conf">{% if talk.link %}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{% else %}{{ talk.conf }}{% endif %} {{ talk.flag }}</span>
+          <span class="home-talk-conf">{% if talk.link %}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{% else %}{{ talk.conf }}{% endif %} <img class="talk-flag" src="/assets/flags/{{ talk.flag }}.svg" alt="" loading="lazy"></span>
           <span class="home-talk-title">{{ talk.title }}</span>
         </li>
       {%- endfor -%}

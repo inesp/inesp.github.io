@@ -3,7 +3,7 @@
 - conf: Heapcon 2026
   link: https://heapcon.io/2026
   date: Nov 2026
-  flag: 🇷🇸
+  flag: serbia
   location: Belgrade, Serbia
   title: "Software Estimates and the Illusion of Control"
   coming_soon: true
@@ -15,7 +15,7 @@
 - conf: TDC 2026
   link: https://2026.trondheimdc.no/en/
   date: Oct 2026
-  flag: 🇳🇴
+  flag: norway
   location: Trondheim, Norway
   title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math"
   coming_soon: true
@@ -28,7 +28,7 @@
 - conf: Devoxx Belgium 2026
   link: https://devoxx.be/
   date: Oct 2026
-  flag: 🇧🇪
+  flag: belgium
   location: Antwerp, Belgium
   title: "Their API Went Down. So Why Is My App on Fire?"
   coming_soon: true
@@ -40,7 +40,7 @@
 - conf: Voxxed Days Luxembourg 2026
   link: https://luxembourg.voxxeddays.com/en/
   date: Jun 2026
-  flag: 🇱🇺
+  flag: luxembourg
   location: Mondorf-les-Bains, Luxembourg
   title: "Did My Deploy Degrade Production?"
   video_link: https://www.youtube.com/watch?v=9cEn-7RzsYU&list=PLJgwPhYIR6h4&index=48
@@ -51,7 +51,7 @@
 - conf: PyCon Italia 2026
   link: https://2026.pycon.it/en
   date: May 2026
-  flag: 🇮🇹
+  flag: italy
   location: Bologna, Italy
   title: "Stop asking me how long it will take"
   details_link: https://2026.pycon.it/en/event/stop-asking-me-how-long-it-will-take
@@ -62,7 +62,7 @@
 - conf: VoxxedDays Amsterdam 2026
   link: https://amsterdam.voxxeddays.com/
   date: Apr 2026
-  flag: 🇳🇱
+  flag: netherlands
   location: Amsterdam, Netherlands
   title: "Why smart developers write silly code"
   featured_video: true  # which recording the talks page showcases at the top
@@ -74,7 +74,7 @@
 - conf: Codemotion Roma 2026
   link: https://conferences.codemotion.com/roma/
   date: Mar 2026
-  flag: 🇮🇹
+  flag: italy
   location: Rome, Italy
   title: "It'll Take Two Weeks: Why Software Estimates Are a Pipe Dream"
   details_link: https://conferences.codemotion.com/roma/speakers/#sz-speaker-a56cea70-f4e0-45b9-a2e8-470b71e73412
@@ -85,7 +85,7 @@
 - conf: J-Fall 2025
   link: https://jfall.nl/
   date: Nov 2025
-  flag: 🇳🇱
+  flag: netherlands
   location: Ede, Netherlands
   title: Your Brain Is Sabotaging Your Code, But We Can Outsmart It
   details_link: https://jfall.nl/timetable-2025/
@@ -96,7 +96,7 @@
 - conf: Swiss Python Summit 2025
   link: https://www.python-summit.ch/
   date: Oct 2025
-  flag: 🇨🇭
+  flag: switzerland
   location: Rapperswil, Switzerland
   title: "Software estimation: False sense of certainty"
   video_link: https://media.ccc.de/v/sps25-56448-software-estimation-false-se
@@ -107,7 +107,7 @@
 - conf: Voxxed Days Luxembourg 2025
   link: https://luxembourg.voxxeddays.com/en/
   date: Jun 2025
-  flag: 🇱🇺
+  flag: luxembourg
   location: Mondorf-les-Bains, Luxembourg
   title: Software estimation is a delusion
   video_link: https://www.youtube.com/watch?v=B-4ega2uwEM
@@ -118,7 +118,7 @@
 - conf: PyCon Austria 2025
   link: https://pycon.pyug.at/en/
   date: Apr 2025
-  flag: 🇦🇹
+  flag: austria
   location: Eisenstadt, Austria
   title: Software Estimation is a Delusion (or Maybe Just a Misused Tool)
   video_link:
@@ -128,7 +128,7 @@
 
 - date: Mar 2025
   conf: Meetup of Meetups
-  flag: 🇸🇮
+  flag: slovenia
   location: Ljubljana, Slovenia
   title: Why do developers like to argue so much?
   post_slug: disagreeing-devs
@@ -136,7 +136,7 @@
 - date: Sep 2019
   conf: Python Meetup Ljubljana
   link: https://www.meetup.com/ljubljana-python-group/events/264578339/?eventOrigin=group_calendar
-  flag: 🇸🇮
+  flag: slovenia
   location: Ljubljana, Slovenia
   title: Applying Marketing Techniques to Developers' day-to-day
   slides_link: https://speakerdeck.com/inesp/applying-marketing-techniques-to-developers-day-to-day
@@ -144,14 +144,14 @@
 - date: Oct 2017
   conf: Python Meetup Ljubljana
   link: https://www.meetup.com/ljubljana-python-group/events/243772267/?eventOrigin=group_calendar
-  flag: 🇸🇮
+  flag: slovenia
   location: Ljubljana, Slovenia
   title: "Fluent Python: How to write Python as if it were your first programming language"
 
 - date: Apr 2017
   conf: WebCamp Ljubljana 2017
   link: https://2017.webcamp.si/
-  flag: 🇸🇮
+  flag: slovenia
   location: Ljubljana, Slovenia
   title: Conquering JSONB in PostgreSQL
   video_link: https://www.youtube.com/watch?v=Agi7WWEZBNM&list=PLIZtfj-D-vQyHICP4U2rave3u8Tmzc7pZ
@@ -161,7 +161,7 @@
 - date: Oct 2016
   conf: StripeCon 2016
   link: https://2016.stripecon.eu/
-  flag: 🇸🇮
+  flag: slovenia
   location: Ljubljana, Slovenia
   title: 10-ish Things I Learned from Programming an E-Shop for a Year
   slides_link: https://www.slideshare.net/slideshow/10ish-things-i-learned-from-programming-an-eshop-for-a-year/75541385

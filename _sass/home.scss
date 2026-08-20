@@ -202,6 +202,11 @@
 
   .home-talk-conf {
     flex: 0 0 15rem;
+
+    .talk-flag {
+      width: 1.2em;
+      vertical-align: -0.2em;
+    }
   }
 
   .home-talk-title {

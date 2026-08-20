@@ -145,7 +145,8 @@ table.talks {
     margin-top: 0.2rem;
 
     .talk-flag {
-      font-size: 1.25em; // the flags carry the travel story, let them show
+      width: 1.35em; // the flags carry the travel story, let them show
+      vertical-align: -0.2em;
       margin-right: 0.1em;
     }
   }
