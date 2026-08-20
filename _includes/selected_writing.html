@@ -42,7 +42,7 @@
           {%- endfor -%}
         {%- endif -%}
         {%- if post -%}
-          <li class="post-item">
+          <li class="post-item{% if entry == 'latest' %} post-item-latest{% endif %}">
             {% if post.series %}
               {% assign coll_data = site.data.topics[post.series] %}
               {% assign coll_display = coll_data.display_title | default: post.series %}

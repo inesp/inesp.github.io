@@ -192,6 +192,12 @@
     font-weight: 400;
     white-space: nowrap;
   }
+
+  .post-item-latest {
+    background: rgba($color-yellow-light, 0.5);
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+  }
 }
 
 /* Speaking strip */
