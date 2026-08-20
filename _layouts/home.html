@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{%- assign selected_slugs = "the-algorithm-decided-intro,impact-of-a-deploy,api-resilience-circuit-breaker,blind-spots-in-code-part-I,disagreeing-devs,estimation-is-a-delusion" | split: "," -%}
-
 <div class="home">
 
   <section class="home-hero">
@@ -95,43 +93,6 @@ layout: default
   </section>
 
   <!-- Selected writing -->
-  <h2 class="home-section-title">Selected writing</h2>
-  <section class="topic-block">
-    <ul class="list-unstyled home-writing">
-      {%- for slug in selected_slugs -%}
-        {%- for post in site.posts -%}
-          {%- if post.slug == slug -%}
-            <li class="post-item">
-              {% if post.series %}
-                {% assign coll_data = site.data.topics[post.series] %}
-                {% assign coll_display = coll_data.display_title | default: post.series %}
-                {% assign series_slug = post.series | slugify %}
-                {% assign coll_url = '/topic/' | append: series_slug | append: '/' %}
-                <div class="post-collection-title text-muted mb-1"><a href="{{ coll_url | relative_url }}">{{ coll_display }}</a></div>
-              {% endif %}
-
-              <div class="post-header">
-                <h3 class="post-title">
-                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                </h3>
-              </div>
-
-              <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-              <p class="post-topics mb-0">
-                {%- for tag in post.tags -%}
-                  {%- assign tag_slug = tag | slugify -%}
-                  <a href="{{ '/topic/' | append: tag_slug | append: '/' | relative_url }}"><span class="badge bg-teal">{{ tag }}</span></a>
-                {%- endfor -%}
-              </p>
-            </li>
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
-      {%- endfor -%}
-    </ul>
-    <p class="topic-more">
-      <a href="/archive/">Archive of all posts</a>
-    </p>
-  </section>
+  {% include selected_writing.html %}
 
 </div>

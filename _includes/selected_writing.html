@@ -1,0 +1,72 @@
+{%- comment -%}Entries: "latest" (newest post), "series:<Tag Name>" / "tag:<Tag Name>" (card linking to the topic page with all its posts), or a post slug{%- endcomment -%}
+{%- assign selected_writing = "latest,series:API Resilience Patterns,tag:Celery,impact-of-a-deploy,series:Building Blocks Collection,series:Cognitive Biases in Code,estimation-is-a-delusion" | split: "," -%}
+
+<h2 class="home-section-title">Selected writing</h2>
+<section class="topic-block">
+  <ul class="list-unstyled home-writing">
+    {%- for entry in selected_writing -%}
+      {%- if entry contains "series:" or entry contains "tag:" -%}
+        {%- assign tag_name = entry | remove_first: "series:" | remove_first: "tag:" -%}
+        {%- assign coll_data = site.data.topics[tag_name] -%}
+        {%- assign tag_slug = tag_name | slugify -%}
+        {%- assign coll_url = '/topic/' | append: tag_slug | append: '/' -%}
+        {%- assign topic_page = site.pages | where: "url", coll_url | first -%}
+        {%- assign coll_display = coll_data.display_title | default: topic_page.title | default: tag_name -%}
+        {%- assign tag_posts = site.tags[tag_name] -%}
+        <li class="post-item">
+          <div class="post-collection-title text-muted mb-1">{% if site.data.topics.collection_tags contains tag_name %}Series{% else %}Topic{% endif %} · {{ tag_posts | size }} posts</div>
+
+          <div class="post-header">
+            <h3 class="post-title">
+              <a href="{{ coll_url | relative_url }}">{{ coll_display }}</a>
+            </h3>
+          </div>
+
+          {%- if topic_page -%}
+          <p class="post-teaser">{{ topic_page.content | markdownify | strip_html | truncatewords: 30 }}</p>
+          {%- endif -%}
+        </li>
+      {%- else -%}
+        {%- if entry == "latest" -%}
+          {%- assign post = site.posts.first -%}
+        {%- else -%}
+          {%- assign post = nil -%}
+          {%- for p in site.posts -%}
+            {%- if p.slug == entry -%}
+              {%- assign post = p -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+        {%- if post -%}
+          <li class="post-item">
+            {% if post.series %}
+              {% assign coll_data = site.data.topics[post.series] %}
+              {% assign coll_display = coll_data.display_title | default: post.series %}
+              {% assign series_slug = post.series | slugify %}
+              {% assign coll_url = '/topic/' | append: series_slug | append: '/' %}
+              <div class="post-collection-title text-muted mb-1"><a href="{{ coll_url | relative_url }}">{{ coll_display }}</a></div>
+            {% endif %}
+
+            <div class="post-header">
+              <h3 class="post-title">
+                {% if entry == "latest" %}<span class="badge bg-yellow">Latest</span> {% endif %}<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+            </div>
+
+            <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+            <p class="post-topics mb-0">
+              {%- for tag in post.tags -%}
+                {%- assign tag_slug = tag | slugify -%}
+                <a href="{{ '/topic/' | append: tag_slug | append: '/' | relative_url }}"><span class="badge bg-teal">{{ tag }}</span></a>
+              {%- endfor -%}
+            </p>
+          </li>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+  <p class="topic-more">
+    <a href="/archive/">Archive of all posts</a>
+  </p>
+</section>
