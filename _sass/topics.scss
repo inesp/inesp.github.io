@@ -1,5 +1,12 @@
 @import "colors";
 
+/* Topic page title icon: scale with the h1 instead of the 21px default */
+h1 .career-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+}
+
 .categories-list {
   list-style: none;
   padding: 0;

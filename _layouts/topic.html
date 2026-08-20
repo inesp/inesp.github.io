@@ -11,7 +11,10 @@ layout: default
   {% assign show_archive_link = false %}
 {% endif %}
 
-<h1 class="text-center">{{ page.title }}</h1>
+{% if tag %}
+  {% if site.data.topics.collection_tags contains tag %}{% assign topic_icon = "stack" %}{% else %}{% assign topic_icon = "tag" %}{% endif %}
+{% endif %}
+<h1 class="text-center">{% if topic_icon %}{% include career_icon.html name=topic_icon %}{% endif %}{{ page.title }}</h1>
 
 <div class="flex-row justify-content-center">{%- for tag in page.tags -%}
   {% assign tag_slug = tag | slugify %}

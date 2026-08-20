@@ -14,11 +14,14 @@
         {%- assign coll_display = coll_data.display_title | default: topic_page.title | default: tag_name -%}
         {%- assign tag_posts = site.tags[tag_name] -%}
         <li class="post-item">
-          <div class="post-collection-title text-muted mb-1">{% if site.data.topics.collection_tags contains tag_name %}Series{% else %}Topic{% endif %} · {{ tag_posts | size }} posts</div>
-
           <div class="post-header">
             <h3 class="post-title">
-              <a href="{{ coll_url | relative_url }}">{{ coll_display }}</a>
+              {%- if site.data.topics.collection_tags contains tag_name -%}
+                {%- assign card_kind = "series" -%}{%- assign card_icon = "stack" -%}
+              {%- else -%}
+                {%- assign card_kind = "topic" -%}{%- assign card_icon = "tag" -%}
+              {%- endif -%}
+              <a href="{{ coll_url | relative_url }}">{% include career_icon.html name=card_icon %}{{ coll_display }}</a> <span class="post-title-note text-muted">· a {{ card_kind }} of {{ tag_posts | size }} posts</span>
             </h3>
           </div>
 
