@@ -48,7 +48,7 @@ My software life, told as a timeline of firsts:
   <div class="career-item">
     <div class="career-years"><svg class="career-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9.5" y="2.5" width="5" height="10" rx="2.5" fill="none" stroke="#ff0040" stroke-width="2"/><path d="M5.5 10.5 a6.5 6.5 0 0 0 13 0" fill="none" stroke="#ff0040" stroke-width="2" stroke-linecap="round"/><path d="M12 17 V20.5 M8.5 20.5 H15.5" fill="none" stroke="#ff0040" stroke-width="2" stroke-linecap="round"/></svg> 2025</div>
     <div class="career-body">
-      <h3>First big conference talk</h3>
+      <h3>First conference talk on a big stage</h3>
       <p>Voxxed Days Luxembourg: "Software Estimation Is a Delusion". <a class="remote-link" href="https://www.youtube.com/watch?v=B-4ega2uwEM" target="_blank">The recording is on YouTube.</a></p>
     </div>
   </div>
