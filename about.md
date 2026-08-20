@@ -18,6 +18,7 @@ I've been building software for almost <b>two decades</b>. These days <b>Python<
   <span class="badge bg-yellow">Celery</span>
   <span class="badge bg-yellow">PostgreSQL</span>
   <span class="badge bg-yellow">Redis</span>
+  <span class="badge bg-yellow">RabbitMQ</span>
   <span class="badge bg-yellow">Elasticsearch</span>
   <span class="badge bg-yellow">LLM agents</span>
   <a href="/talks/"><span class="badge bg-yellow">Conference speaking</span></a>

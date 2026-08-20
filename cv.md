@@ -55,7 +55,7 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
   <div class="career-item">
     <div class="career-years">Core</div>
     <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">Elasticsearch</span></p>
+      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span></p>
     </div>
   </div>
   <div class="career-item">
@@ -102,7 +102,7 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
       <p>The first engineer they hired, and the <b>de-facto architect</b> ever since. A prototype grew into a multi-tenant <b>SaaS observability platform</b> for DORA metrics, environment health and real-time anomalies, and the company to about 40 people.</p>
       <ul class="career-points">
         <li><b>Architecture from zero</b>: the multi-tenant data model, tenant isolation, service boundaries, API contracts, and the integration framework behind 30+ third-party services.</li>
-        <li><b>Resilience</b>: a circuit breaker system guarding, at peak, <b>2-3 million API calls a day</b>, PostgreSQL advisory locks and Redis distributed locks for cluster-wide concurrency, and transaction-aware Celery tasks across 7 queues.</li>
+        <li><b>Resilience</b>: a circuit breaker system guarding, at peak, <b>2-3 million API calls a day</b>, PostgreSQL advisory locks and Redis distributed locks for cluster-wide concurrency, and transaction-aware Celery tasks across 7 RabbitMQ queues.</li>
         <li><b>The MTTR engine</b>: attributes deploys to incident episodes with a two-pointer matching algorithm, which is where the platform's mean-time-to-recovery number comes from.</li>
         <li><b>Applied ML</b>: a self-tuning anomaly detector for customer metrics, a fresh data point every 2 minutes, running for hundreds of clients for years without hand-tuning. <a href="/2026/02/18/impact-of-a-deploy.html">How it works, explained with pictures.</a></li>
         <li><b>LLM work</b>: the pipeline behind Sleuth's AI-usage analytics, and the small RAG behind the product's AI assistant.</li>
