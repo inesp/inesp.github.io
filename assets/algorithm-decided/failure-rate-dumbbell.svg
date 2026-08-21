@@ -1,69 +1,74 @@
-<svg viewBox="0 0 520 355" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <rect width="520" height="355" fill="#fff"/>
+<svg viewBox="0 0 520 378" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="378" fill="#fff"/>
 
   <!-- Title block -->
   <text x="260" y="28" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Where each engineer's overall rate really sits</text>
   <text x="260" y="44" font-size="9" fill="#6c757d" text-anchor="middle">line spans low-risk to high-risk failure rate; the black dot is the overall rate</text>
 
-  <!-- Legend -->
-  <circle cx="24.0" cy="62.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <text x="32" y="65" font-size="9" fill="#6c757d">low-risk rate</text>
-  <circle cx="110.0" cy="62.0" r="4" fill="#fd456f"/>
-  <text x="118" y="65" font-size="9" fill="#6c757d">high-risk rate</text>
-  <circle cx="200.0" cy="62.0" r="3" fill="#212529"/>
-  <text x="208" y="65" font-size="9" fill="#6c757d">overall rate (all deploys together)</text>
+  <!-- Legend, both rows centered on the canvas -->
+  <circle cx="91" cy="62" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="99" y="65" font-size="9" fill="#6c757d">low-risk rate</text>
+  <circle cx="177" cy="62" r="4" fill="#fd456f"/>
+  <text x="185" y="65" font-size="9" fill="#6c757d">high-risk rate</text>
+  <circle cx="267" cy="62" r="3" fill="#212529"/>
+  <text x="275" y="65" font-size="9" fill="#6c757d">overall rate (all deploys together)</text>
+  <!-- size legend: dot area = number of deploys -->
+  <circle cx="140" cy="83" r="2.5" fill="none" stroke="#6c757d" stroke-width="1"/>
+  <circle cx="152" cy="83" r="4.5" fill="none" stroke="#6c757d" stroke-width="1"/>
+  <circle cx="168" cy="83" r="7" fill="none" stroke="#6c757d" stroke-width="1"/>
+  <text x="180" y="85" font-size="9" fill="#6c757d">dot size = number of deploys behind that rate</text>
 
   <!-- Vertical gridlines with % ticks -->
-  <line x1="169.0909090909091" y1="84" x2="169.0909090909091" y2="292" stroke="#dadada" stroke-width="0.5"/>
-  <text x="169.0909090909091" y="306" font-size="8" fill="#6c757d" text-anchor="middle">10%</text>
-  <line x1="238.1818181818182" y1="84" x2="238.1818181818182" y2="292" stroke="#dadada" stroke-width="0.5"/>
-  <text x="238.1818181818182" y="306" font-size="8" fill="#6c757d" text-anchor="middle">20%</text>
-  <line x1="307.27272727272725" y1="84" x2="307.27272727272725" y2="292" stroke="#dadada" stroke-width="0.5"/>
-  <text x="307.27272727272725" y="306" font-size="8" fill="#6c757d" text-anchor="middle">30%</text>
-  <line x1="376.3636363636364" y1="84" x2="376.3636363636364" y2="292" stroke="#dadada" stroke-width="0.5"/>
-  <text x="376.3636363636364" y="306" font-size="8" fill="#6c757d" text-anchor="middle">40%</text>
-  <line x1="445.45454545454544" y1="84" x2="445.45454545454544" y2="292" stroke="#dadada" stroke-width="0.5"/>
-  <text x="445.45454545454544" y="306" font-size="8" fill="#6c757d" text-anchor="middle">50%</text>
+  <line x1="169.0909090909091" y1="114" x2="169.0909090909091" y2="322" stroke="#dadada" stroke-width="0.5"/>
+  <text x="169.0909090909091" y="336" font-size="8" fill="#6c757d" text-anchor="middle">10%</text>
+  <line x1="238.1818181818182" y1="114" x2="238.1818181818182" y2="322" stroke="#dadada" stroke-width="0.5"/>
+  <text x="238.1818181818182" y="336" font-size="8" fill="#6c757d" text-anchor="middle">20%</text>
+  <line x1="307.27272727272725" y1="114" x2="307.27272727272725" y2="322" stroke="#dadada" stroke-width="0.5"/>
+  <text x="307.27272727272725" y="336" font-size="8" fill="#6c757d" text-anchor="middle">30%</text>
+  <line x1="376.3636363636364" y1="114" x2="376.3636363636364" y2="322" stroke="#dadada" stroke-width="0.5"/>
+  <text x="376.3636363636364" y="336" font-size="8" fill="#6c757d" text-anchor="middle">40%</text>
+  <line x1="445.45454545454544" y1="114" x2="445.45454545454544" y2="322" stroke="#dadada" stroke-width="0.5"/>
+  <text x="445.45454545454544" y="336" font-size="8" fill="#6c757d" text-anchor="middle">50%</text>
 
-  <!-- Dumbbells, one per engineer; Ana highlighted -->
-  <text x="24" y="95" font-size="11" fill="#212529">Nils</text>
-  <line x1="170.86247086247084" y1="92" x2="445.45454545454544" y2="92" stroke="#dadada" stroke-width="2"/>
-  <circle cx="170.9" cy="92.0" r="4.5" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <circle cx="445.5" cy="92.0" r="4.5" fill="#fd456f"/>
-  <circle cx="177.7" cy="92.0" r="3" fill="#212529"/>
-  <text x="24" y="125" font-size="11" fill="#212529">Tomasz</text>
-  <line x1="177.72727272727272" y1="122" x2="307.27272727272725" y2="122" stroke="#dadada" stroke-width="2"/>
-  <circle cx="177.7" cy="122.0" r="4.5" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <circle cx="307.3" cy="122.0" r="4.5" fill="#fd456f"/>
-  <circle cx="192.1" cy="122.0" r="3" fill="#212529"/>
-  <text x="24" y="155" font-size="11" fill="#212529">Chiara</text>
-  <line x1="180.6060606060606" y1="152" x2="272.72727272727275" y2="152" stroke="#dadada" stroke-width="2"/>
-  <circle cx="180.6" cy="152.0" r="4.5" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <circle cx="272.7" cy="152.0" r="4.5" fill="#fd456f"/>
-  <circle cx="196.0" cy="152.0" r="3" fill="#212529"/>
-  <text x="24" y="185" font-size="11" fill="#212529">Greta</text>
-  <line x1="182.90909090909088" y1="182" x2="307.27272727272725" y2="182" stroke="#dadada" stroke-width="2"/>
-  <circle cx="182.9" cy="182.0" r="4.5" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <circle cx="307.3" cy="182.0" r="4.5" fill="#fd456f"/>
-  <circle cx="203.6" cy="182.0" r="3" fill="#212529"/>
-  <text x="24" y="215" font-size="11" fill="#212529">Jonas</text>
-  <line x1="186.36363636363637" y1="212" x2="376.3636363636364" y2="212" stroke="#dadada" stroke-width="2"/>
-  <circle cx="186.4" cy="212.0" r="4.5" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <circle cx="376.4" cy="212.0" r="4.5" fill="#fd456f"/>
-  <circle cx="207.5" cy="212.0" r="3" fill="#212529"/>
-  <text x="24" y="245" font-size="11" fill="#212529">Matej</text>
-  <line x1="187.93388429752065" y1="242" x2="284.24242424242425" y2="242" stroke="#dadada" stroke-width="2"/>
-  <circle cx="187.9" cy="242.0" r="4.5" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <circle cx="284.2" cy="242.0" r="4.5" fill="#fd456f"/>
-  <circle cx="208.6" cy="242.0" r="3" fill="#212529"/>
-  <rect x="16" y="260" width="488" height="24" fill="#d4edda" rx="3" stroke="#4a9c6d" stroke-width="1"/>
-  <text x="24" y="275" font-size="11" fill="#28a745" font-weight="bold">Ana</text>
-  <line x1="146.06060606060606" y1="272" x2="246.3101604278075" y2="272" stroke="#dadada" stroke-width="2"/>
-  <circle cx="146.1" cy="272.0" r="4.5" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
-  <circle cx="246.3" cy="272.0" r="4.5" fill="#fd456f"/>
-  <circle cx="231.3" cy="272.0" r="3" fill="#212529"/>
+  <!-- Dumbbells, one per engineer; yellow/pink dot area = deploys in that bucket; Ana highlighted -->
+  <text x="24" y="125" font-size="11" fill="#212529">Nils</text>
+  <line x1="170.86247086247087" y1="122" x2="445.45454545454544" y2="122" stroke="#dadada" stroke-width="2"/>
+  <circle cx="170.9" cy="122" r="9.3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="445.5" cy="122" r="2.5" fill="#fd456f"/>
+  <circle cx="177.7" cy="122" r="3" fill="#212529" stroke="#fff" stroke-width="1.5"/>
+  <text x="24" y="155" font-size="11" fill="#212529">Tomasz</text>
+  <line x1="177.72727272727275" y1="152" x2="307.27272727272725" y2="152" stroke="#dadada" stroke-width="2"/>
+  <circle cx="177.7" cy="152" r="9.4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="307.3" cy="152" r="3.3" fill="#fd456f"/>
+  <circle cx="192.1" cy="152" r="3" fill="#212529" stroke="#fff" stroke-width="1.5"/>
+  <text x="24" y="185" font-size="11" fill="#212529">Chiara</text>
+  <line x1="180.60606060606062" y1="182" x2="272.72727272727275" y2="182" stroke="#dadada" stroke-width="2"/>
+  <circle cx="180.6" cy="182" r="8.1" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="272.7" cy="182" r="3.6" fill="#fd456f"/>
+  <circle cx="196.0" cy="182" r="3" fill="#212529" stroke="#fff" stroke-width="1.5"/>
+  <text x="24" y="215" font-size="11" fill="#212529">Greta</text>
+  <line x1="182.9090909090909" y1="212" x2="307.27272727272725" y2="212" stroke="#dadada" stroke-width="2"/>
+  <circle cx="182.9" cy="212" r="7.4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="307.3" cy="212" r="3.3" fill="#fd456f"/>
+  <circle cx="203.6" cy="212" r="3" fill="#212529" stroke="#fff" stroke-width="1.5"/>
+  <text x="24" y="245" font-size="11" fill="#212529">Jonas</text>
+  <line x1="186.36363636363637" y1="242" x2="376.3636363636364" y2="242" stroke="#dadada" stroke-width="2"/>
+  <circle cx="186.4" cy="242" r="6.6" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="376.4" cy="242" r="2.5" fill="#fd456f"/>
+  <circle cx="207.5" cy="242" r="3" fill="#212529" stroke="#fff" stroke-width="1.5"/>
+  <text x="24" y="275" font-size="11" fill="#212529">Matej</text>
+  <line x1="187.93388429752065" y1="272" x2="284.24242424242425" y2="272" stroke="#dadada" stroke-width="2"/>
+  <circle cx="187.9" cy="272" r="7.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="284.2" cy="272" r="4.1" fill="#fd456f"/>
+  <circle cx="208.6" cy="272" r="3" fill="#212529" stroke="#fff" stroke-width="1.5"/>
+  <rect x="16" y="290" width="488" height="24" fill="#d4edda" rx="3" stroke="#4a9c6d" stroke-width="1"/>
+  <text x="24" y="305" font-size="11" fill="#28a745" font-weight="bold">Ana</text>
+  <line x1="146.06060606060606" y1="302" x2="246.3101604278075" y2="302" stroke="#dadada" stroke-width="2"/>
+  <circle cx="146.1" cy="302" r="4.1" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="246.3" cy="302" r="9.7" fill="#fd456f"/>
+  <circle cx="231.3" cy="302" r="3" fill="#212529" stroke="#fff" stroke-width="1.5"/>
 
   <!-- Annotation: the mechanism -->
-  <text x="231.27272727272725" y="322" font-size="9" fill="#6c757d" text-anchor="middle">85 of Ana's 100 deploys are high-risk,</text>
-  <text x="231.27272727272725" y="334" font-size="9" fill="#6c757d" text-anchor="middle">so her overall dot lives at the red end</text>
+  <text x="271.27" y="356" font-size="9" fill="#6c757d" text-anchor="middle">85 of Ana's 100 deploys are high-risk,</text>
+  <text x="271.27" y="368" font-size="9" fill="#6c757d" text-anchor="middle">so her overall dot lives at the red end</text>
 </svg>
