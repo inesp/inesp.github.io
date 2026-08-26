@@ -1,4 +1,14 @@
-
+- conf: BuildStuff 2026
+  link: https://buildstuff.events/
+  date: Dec 2026
+  flag: lithuania
+  location: Vilnius, Lithuania
+  title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math, Not AI"
+  coming_soon: true
+  video_link:
+  details_link:
+  slides_link:
+  post_slug: impact-of-a-deploy
 
 - conf: Heapcon 2026
   link: https://heapcon.io/2026
