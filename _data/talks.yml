@@ -34,7 +34,6 @@
   slides_link:
   post_slug: impact-of-a-deploy
 
-
 - conf: Devoxx Belgium 2026
   link: https://devoxx.be/
   date: Oct 2026
@@ -45,7 +44,15 @@
   video_link:
   details_link: https://m.devoxx.com/events/dvbe26/talks/7035/their-api-went-down-so-why-is-my-app-on-fire
   slides_link:
-  post_slug:
+  series: API Resilience Patterns
+
+- date: Sep 2026
+  conf: Python Meetup Ljubljana
+  link: https://www.meetup.com/ljubljana-python-group/events/315532949/
+  flag: slovenia
+  location: Ljubljana, Slovenia
+  title: "Their API Went Down, So Why is My App on Fire?"
+  series: API Resilience Patterns
 
 - conf: Voxxed Days Luxembourg 2026
   link: https://luxembourg.voxxeddays.com/en/
