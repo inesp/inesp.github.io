@@ -1,0 +1,51 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="500" height="300" fill="#fff"/>
+
+  <defs>
+    <linearGradient id="jobBar" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="350" y2="0">
+      <stop offset="0%" stop-color="#4a9c6d"/><stop offset="100%" stop-color="#1aa891"/>
+    </linearGradient>
+  </defs>
+  <text x="200" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">The retry can only happen at the top.</text>
+
+  <!-- the retry, back into the job -->
+  <path d="M34 48 V42 H200 V50" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="200,58 195,48 205,48" fill="#212529"/>
+  <rect x="214" y="34" width="110" height="17" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="269" y="46" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">retry in 240s</text>
+
+  <!-- the background job -->
+  <rect x="50" y="58" width="300" height="224" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <path d="M50 62 a4 4 0 0 1 4 -4 h292 a4 4 0 0 1 4 4 v30 h-300 z" fill="url(#jobBar)"/>
+  <text x="200" y="81" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold" font-family="monospace">The Background Task</text>
+
+  <!-- our code: each frame is one call deeper -->
+  <rect x="64" y="104" width="272" height="166" rx="4" fill="#fff" stroke="#9f9f9f" stroke-width="1.5"/>
+  <text x="76" y="121" font-size="9" fill="#6c757d" font-family="monospace">sync_repos()</text>
+
+  <rect x="78" y="132" width="244" height="126" rx="4" fill="#fff" stroke="#9f9f9f" stroke-width="1.5"/>
+  <text x="90" y="149" font-size="9" fill="#6c757d" font-family="monospace">...</text>
+
+  <rect x="92" y="160" width="216" height="86" rx="4" fill="#fff" stroke="#9f9f9f" stroke-width="1.5"/>
+  <text x="104" y="177" font-size="9" fill="#6c757d" font-family="monospace">fetch_one_page_of_repos()</text>
+
+  <!-- the HTTP call -->
+  <rect x="106" y="188" width="188" height="46" rx="4" fill="#ff2870"/>
+  <text x="200" y="208" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold" font-family="monospace">session.get()</text>
+  <text x="200" y="222" text-anchor="middle" font-size="9" fill="#fff">page 47</text>
+
+  <!-- the remote -->
+  <ellipse cx="415" cy="211" rx="48" ry="28" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="415" y="215" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">GitHub</text>
+  <line x1="296" y1="200" x2="358" y2="200" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="366,200 356,195 356,205" fill="#212529"/>
+  <line x1="364" y1="222" x2="304" y2="222" stroke="#ff2870" stroke-width="1.5"/>
+  <polygon points="296,222 306,217 306,227" fill="#ff2870"/>
+  <rect x="340" y="229" width="28" height="15" rx="4" fill="#ff2870"/>
+  <text x="354" y="240" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">429</text>
+
+  <!-- the climb: all the way out before anything can act on it -->
+  <path d="M106 222 H34 V56" fill="none" stroke="#ff2870" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <polygon points="34,48 29,58 39,58" fill="#ff2870"/>
+  <text x="34" y="240" text-anchor="middle" font-size="9" fill="#ff2870" font-weight="bold">429</text>
+</svg>

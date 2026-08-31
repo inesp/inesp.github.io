@@ -1,0 +1,32 @@
+<svg viewBox="0 0 540 262" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="540" height="262" fill="#fff"/>
+  <text x="270.0" y="20" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Not all errors are made equal</text>
+  <!-- 1. our bug -->
+  <rect x="20" y="40" width="200" height="42" rx="4" fill="#fff8cd" stroke="#e6a000" stroke-width="1.5"/>
+  <text x="32" y="58" font-size="9.5" fill="#212529" font-weight="bold">Our code is faulty</text>
+  <text x="32" y="72" font-size="8" fill="#6c757d">a bug. a developer fixes it.</text>
+  <!-- 2. the user gave us junk -->
+  <rect x="20" y="92" width="200" height="42" rx="4" fill="#fff8cd" stroke="#e6a000" stroke-width="1.5"/>
+  <text x="32" y="110" font-size="9.5" fill="#212529" font-weight="bold">The user gave us bad data</text>
+  <text x="32" y="124" font-size="8" fill="#6c757d">a person fixes it. tell them how.</text>
+  <!-- 3. the remote is at fault -> splits -->
+  <rect x="20" y="144" width="200" height="42" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="32" y="162" font-size="9.5" fill="#212529" font-weight="bold">The remote is at fault</text>
+  <text x="32" y="176" font-size="8" fill="#6c757d">...and this one splits in two</text>
+
+  <!-- the split -->
+  <line x1="220" y1="165.0" x2="232" y2="165.0" stroke="#212529" stroke-width="1.5"/>
+  <line x1="232" y1="153.0" x2="232" y2="219.0" stroke="#212529" stroke-width="1.5"/>
+  <line x1="232" y1="153.0" x2="244" y2="153.0" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="250,153.0 242,149.0 242,157.0" fill="#212529"/>
+  <line x1="232" y1="219.0" x2="244" y2="219.0" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="250,219.0 242,215.0 242,223.0" fill="#212529"/>
+  <!-- 3a. nothing we can do -->
+  <rect x="250" y="130" width="270" height="46" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="264" y="150" font-size="9.5" fill="#6c757d" font-weight="bold">We can&#8217;t do anything about it</text>
+  <text x="264" y="165" font-size="8" fill="#6c757d">a 500. their bug, their fix. we just carry on.</text>
+  <!-- 3b. THE ONE THIS TALK IS ABOUT -->
+  <rect x="250" y="196" width="270" height="46" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="264" y="216" font-size="9.5" fill="#212529" font-weight="bold">They are telling us to change OUR behavior</text>
+  <text x="264" y="231" font-size="8" fill="#212529">a 429. the code can fix this, and only the code can.</text>
+</svg>

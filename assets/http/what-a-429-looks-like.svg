@@ -1,0 +1,28 @@
+<svg viewBox="0 0 520 234" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="234" fill="#fff"/>
+  <!-- the response, on the terminal it arrived in -->
+  <rect x="26" y="16" width="300" height="190" rx="4" fill="#212529"/>
+  <rect x="26" y="30" width="3" height="15" fill="#ff2870"/>
+  <rect x="26" y="58" width="3" height="15" fill="#fff283"/>
+
+  <text x="42" y="40" font-family="monospace" font-size="9" fill="#9f9f9f">HTTP/1.1 <tspan fill="#ff2870" font-weight="bold">429 Too Many Requests</tspan></text>
+  <text x="42" y="54" font-family="monospace" font-size="9" fill="#9f9f9f">Content-Type: text/html</text>
+  <text x="42" y="68" font-family="monospace" font-size="9" fill="#fff283" font-weight="bold">Retry-After: 120</text>
+  <!-- the body: HTML, which is the whole problem -->
+  <text x="42" y="96" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">&lt;html lang="en-US"&gt;</text>
+  <text x="42" y="110" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">  &lt;head&gt;</text>
+  <text x="42" y="124" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">    &lt;title&gt;Too Many Requests&lt;/title&gt;</text>
+  <text x="42" y="138" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">  &lt;/head&gt;</text>
+  <text x="42" y="152" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">  &lt;body&gt;</text>
+  <text x="42" y="166" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">    &lt;h1&gt;Too Many Requests&lt;/h1&gt;</text>
+  <text x="42" y="180" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">  &lt;/body&gt;</text>
+  <text x="42" y="194" font-family="monospace" font-size="9" fill="#6c757d" xml:space="preserve">&lt;/html&gt;</text>
+  <!-- what to actually look at -->
+  <line x1="326" y1="37" x2="336" y2="37" stroke="#ff2870" stroke-width="1.5"/>
+  <text x="342" y="40" font-size="9" fill="#ff2870" font-weight="bold">You have been rate-limited</text>
+  <line x1="326" y1="65" x2="336" y2="65" stroke="#e6a000" stroke-width="1.5"/>
+  <text x="342" y="68" font-size="9" fill="#e6a000" font-weight="bold">Wait for 120 seconds</text>
+  <line x1="326" y1="121" x2="336" y2="121" stroke="#6c757d" stroke-width="1.5"/>
+  <text x="342" y="124" font-size="9" fill="#6c757d" font-weight="bold">Sometimes HTML,</text>
+  <text x="342" y="137" font-size="9" fill="#6c757d" font-weight="bold">sometimes JSON</text>
+</svg>
