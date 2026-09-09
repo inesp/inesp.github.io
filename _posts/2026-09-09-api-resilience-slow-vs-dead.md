@@ -23,8 +23,12 @@ biblio:
       link: https://man7.org/linux/man-pages/man7/tcp.7.html
     - title: "TCP_RTO_MIN, TCP_RTO_MAX and tcp_retries2"
       link: https://pracucci.com/linux-tcp-rto-min-max-and-tcp-retries2.html
+    - title: "Overriding the default Linux kernel connect() timeout (tcp_syn_retries)"
+      link: https://willbryant.net/overriding_the_default_linux_kernel_20_second_tcp_socket_connect_timeout
     - title: "TCP Keepalive HOWTO"
       link: https://tldp.org/HOWTO/TCP-Keepalive-HOWTO/usingkeepalive.html
+    - title: "SO_KEEPALIVE socket option (Winsock) — disabled by default"
+      link: https://learn.microsoft.com/en-us/windows/win32/winsock/so-keepalive
 ---
 
 Let's do a deep dive on the following scenario: **you are calling a third-party API, the API becomes degraded,** it's still kinda working, but **it is slow**. Now my question is: **how _exactly_ can a degraded third-party API cause your app to become unresponsive?**
