@@ -1,0 +1,43 @@
+<svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="160" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="250" y="18" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Request Timeouts</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- The overarching total deadline: one big stopwatch over the whole race -->
+  <path d="M 60 50 L 60 42 L 440 42 L 440 50" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <text x="250" y="40" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Total timeout</text>
+
+  <!-- Track: three phases, back to back -->
+  <rect x="60" y="65" width="127" height="40" fill="#d4edda" stroke="#4a9c6d" stroke-width="1.5"/>
+  <rect x="187" y="65" width="126" height="40" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <rect x="313" y="65" width="127" height="40" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5"/>
+
+  <!-- Phase names and captions -->
+  <text x="123.5" y="82" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">CONNECT</text>
+  <text x="123.5" y="96" text-anchor="middle" font-size="8" fill="#212529">the handshake</text>
+
+  <text x="250" y="82" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">WRITE</text>
+  <text x="250" y="96" text-anchor="middle" font-size="8" fill="#212529">sending our bytes</text>
+
+  <text x="376.5" y="82" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">READ</text>
+  <text x="376.5" y="96" text-anchor="middle" font-size="8" fill="#212529">waiting on them</text>
+
+  <!-- Start marker -->
+  <line x1="60" y1="65" x2="60" y2="105" stroke="#212529" stroke-width="1.5"/>
+  <text x="60" y="127" text-anchor="middle" font-size="8" fill="#6c757d">start</text>
+
+  <!-- Finish: a pennant flag on a pole, matching the box height -->
+  <line x1="447" y1="65" x2="447" y2="105" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="447,65 472,75 447,85" fill="#4a9c6d" stroke="#212529" stroke-width="1"/>
+  <text x="453" y="127" text-anchor="middle" font-size="8" fill="#6c757d">response!</text>
+
+</svg>

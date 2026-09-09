@@ -1,0 +1,49 @@
+<svg viewBox="0 0 500 310" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="500" height="310" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="250" y="20" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">How Long Will We Wait, With No Timeouts Set?</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowred" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#fd456f"/>
+    </marker>
+  </defs>
+
+  <!-- Row 1: port refused, nothing listening -->
+  <text x="150" y="49" text-anchor="end" font-size="8" fill="#6c757d">port refused</text>
+  <text x="150" y="60" text-anchor="end" font-size="8" fill="#6c757d">(nothing listening)</text>
+  <rect x="160" y="40" width="30" height="28" rx="4" fill="#d4edda" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="197" y="58" font-size="9" fill="#4a9c6d" font-weight="bold">instant</text>
+
+  <!-- Row 2: the handshake itself, SYN packets lost along the way -->
+  <text x="150" y="99" text-anchor="end" font-size="8" fill="#6c757d">handshake itself</text>
+  <text x="150" y="110" text-anchor="end" font-size="8" fill="#6c757d">(SYN packets lost)</text>
+  <rect x="160" y="90" width="90" height="28" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="257" y="108" font-size="9" fill="#212529" font-weight="bold">instant &#8594; ~2 min</text>
+
+  <!-- Row 3: peer disappears, data still unACKed -->
+  <text x="150" y="149" text-anchor="end" font-size="8" fill="#6c757d">peer disappears</text>
+  <text x="150" y="160" text-anchor="end" font-size="8" fill="#6c757d">(data still unACKed)</text>
+  <rect x="160" y="140" width="150" height="28" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="317" y="158" font-size="9" fill="#212529" font-weight="bold">~15 min</text>
+
+  <!-- Row 4: peer disappears, already ACKed (idle) -->
+  <text x="150" y="199" text-anchor="end" font-size="8" fill="#6c757d">peer disappears</text>
+  <text x="150" y="210" text-anchor="end" font-size="8" fill="#6c757d">(already ACKed, idle)</text>
+  <rect x="160" y="190" width="260" height="28" rx="4" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.5"/>
+  <line x1="420" y1="204" x2="460" y2="204" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="3,3" marker-end="url(#arrowred)"/>
+  <text x="468" y="210" font-size="16" fill="#fd456f" font-weight="bold">&#8734;</text>
+
+  <!-- Row 5: async, we hit our own fd limit -->
+  <text x="150" y="249" text-anchor="end" font-size="8" fill="#6c757d">async, we hit</text>
+  <text x="150" y="260" text-anchor="end" font-size="8" fill="#6c757d">our own fd limit</text>
+  <rect x="160" y="240" width="30" height="28" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="197" y="258" font-size="9" fill="#e6a000" font-weight="bold">instant</text>
+  <text x="248" y="258" font-size="8" fill="#6c757d" font-style="italic">but only for new API calls and we are already in deep trouble</text>
+
+  <!-- Footer note -->
+  <text x="250" y="293" text-anchor="middle" font-size="8" fill="#6c757d" font-style="italic">(bars are not to scale, the real gap is orders of magnitude)</text>
+</svg>

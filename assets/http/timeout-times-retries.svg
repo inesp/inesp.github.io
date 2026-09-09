@@ -1,0 +1,53 @@
+<svg viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="460" height="150" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="230" y="18" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">Timeout &#215; Retries: The Real Worst Case</text>
+  <text x="230" y="32" text-anchor="middle" font-size="8" fill="#6c757d">configured: timeout=30s per attempt, 3 attempts, exponential backoff</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#fd456f"/>
+    </marker>
+  </defs>
+
+  <!-- The actual worst case, spanning everything -->
+  <text x="230" y="46" text-anchor="middle" font-size="10" fill="#fd456f" font-weight="bold">actual worst case: 93s</text>
+  <path d="M 60 58 L 60 52 L 390 52 L 390 58" fill="none" stroke="#fd456f" stroke-width="1.5"/>
+
+  <!-- Small gap labels -->
+  <text x="165" y="66" text-anchor="middle" font-size="7" fill="#6c757d">1s</text>
+  <text x="280" y="66" text-anchor="middle" font-size="7" fill="#6c757d">2s</text>
+
+  <!-- The three attempts, each a full timeout, separated by backoff gaps -->
+  <rect x="60" y="70" width="100" height="36" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
+  <rect x="160" y="70" width="10" height="36" fill="#f0f0f0"/>
+  <rect x="170" y="70" width="100" height="36" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
+  <rect x="270" y="70" width="20" height="36" fill="#f0f0f0"/>
+  <rect x="290" y="70" width="100" height="36" fill="#e1f5fe" stroke="#0288d1" stroke-width="1.5"/>
+
+  <!-- Labels inside each attempt -->
+  <text x="110" y="86" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">attempt 1</text>
+  <text x="110" y="99" text-anchor="middle" font-size="8" fill="#212529">30s timeout</text>
+
+  <text x="220" y="86" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">attempt 2</text>
+  <text x="220" y="99" text-anchor="middle" font-size="8" fill="#212529">30s timeout</text>
+
+  <text x="340" y="86" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">attempt 3</text>
+  <text x="340" y="99" text-anchor="middle" font-size="8" fill="#212529">30s timeout</text>
+
+  <!-- What a NORMAL response actually needs: a sliver at the very start of attempt 1 -->
+  <line x1="62" y1="70" x2="62" y2="106" stroke="#4a9c6d" stroke-width="2"/>
+  <line x1="62" y1="66" x2="62" y2="70" stroke="#4a9c6d" stroke-width="1" stroke-dasharray="1,1"/>
+  <text x="15" y="62" text-anchor="start" font-size="7" fill="#4a9c6d" font-weight="bold">a normal response only needs 0.2s</text>
+
+  <!-- End marker: gives up -->
+  <line x1="390" y1="70" x2="390" y2="110" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="390" y="124" text-anchor="middle" font-size="8" fill="#fd456f" font-weight="bold">gives up</text>
+
+  <!-- Annotation: what you actually configured is just one of these blocks -->
+  <line x1="110" y1="106" x2="110" y2="128" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="80" y="140" font-size="8" fill="#6c757d">read timeout = 30s</text>
+</svg>

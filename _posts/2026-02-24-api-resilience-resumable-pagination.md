@@ -17,6 +17,9 @@ If it worked like this:
 
 ![pagination-retry-flow](/assets/http/pagination-retry-flow-idea.svg)
 
+instead of like this: 
+![broken-retry-wasted-bars](/assets/http/broken-retry-wasted-bars.svg)
+
 **... and! if we could include this somewhat generically into all existing and future Celery tasks?**
 
 {% include toc.html %}

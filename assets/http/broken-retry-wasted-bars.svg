@@ -1,0 +1,66 @@
+<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="520" height="280" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="260" y="20" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">Every Attempt Starts From Page 1</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+  <defs>
+    <marker id="arrowred" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#fd456f"/>
+    </marker>
+  </defs>
+
+  <!-- Page-to-x mapping: page 1 -> x=90, page 15 -> x=430 (24.29px per page) -->
+
+  <!-- === Attempt 1: reaches page 12 === -->
+  <text x="90" y="39" font-size="9" fill="#6c757d" font-weight="bold">Attempt 1</text>
+  <rect x="90" y="45" width="267" height="26" rx="4" fill="#d4edda" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="223" y="62" text-anchor="middle" font-size="10" fill="#212529">page 1 &#8594; 12</text>
+  <rect x="363" y="45" width="34" height="26" rx="4" fill="#fd456f"/>
+  <text x="380" y="62" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">429</text>
+
+  <!-- === Attempt 2: reaches page 14 (60s later) === -->
+  <text x="90" y="89" font-size="9" fill="#6c757d" font-weight="bold">Attempt 2 (60s later)</text>
+  <rect x="90" y="95" width="316" height="26" rx="4" fill="#d4edda" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="248" y="112" text-anchor="middle" font-size="10" fill="#212529">page 1 &#8594; 14</text>
+  <rect x="412" y="95" width="34" height="26" rx="4" fill="#fd456f"/>
+  <text x="429" y="112" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">429</text>
+
+  <!-- === Attempt 3: reaches only page 10 (60s later) === -->
+  <text x="90" y="139" font-size="9" fill="#6c757d" font-weight="bold">Attempt 3 (60s later)</text>
+  <rect x="90" y="145" width="219" height="26" rx="4" fill="#d4edda" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="199" y="162" text-anchor="middle" font-size="10" fill="#212529">page 1 &#8594; 10</text>
+  <rect x="315" y="145" width="34" height="26" rx="4" fill="#fd456f"/>
+  <text x="332" y="162" text-anchor="middle" font-size="9" fill="#fff" font-weight="bold">429</text>
+
+  <!-- Axis -->
+  <line x1="90" y1="190" x2="430" y2="190" stroke="#212529" stroke-width="1"/>
+  <line x1="90" y1="186" x2="90" y2="194" stroke="#6c757d" stroke-width="1"/>
+  <line x1="187" y1="186" x2="187" y2="194" stroke="#6c757d" stroke-width="1"/>
+  <line x1="309" y1="186" x2="309" y2="194" stroke="#6c757d" stroke-width="1"/>
+  <line x1="430" y1="186" x2="430" y2="194" stroke="#6c757d" stroke-width="1"/>
+  <text x="90" y="206" text-anchor="middle" font-size="8" fill="#6c757d">1</text>
+  <text x="187" y="206" text-anchor="middle" font-size="8" fill="#6c757d">5</text>
+  <text x="309" y="206" text-anchor="middle" font-size="8" fill="#6c757d">10</text>
+  <text x="430" y="206" text-anchor="middle" font-size="8" fill="#6c757d">15</text>
+  <text x="270" y="220" text-anchor="middle" font-size="9" fill="#6c757d">page number</text>
+
+  <!-- Axis trails off, dashed, toward the real goal: page 40 (way beyond any attempt) -->
+  <line x1="430" y1="190" x2="478" y2="190" stroke="#6c757d" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="495" y1="183" x2="495" y2="197" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="495" y="175" text-anchor="middle" font-size="8" fill="#4a9c6d" font-weight="bold">goal</text>
+  <text x="495" y="206" text-anchor="middle" font-size="9" fill="#4a9c6d" font-weight="bold">40</text>
+
+  <!-- Bracket over the guaranteed-wasted range: pages 1-10, the shortest attempt -->
+  <path d="M 90 232 L 90 239 L 309 239 L 309 232" fill="none" stroke="#fd456f" stroke-width="1.5"/>
+  <line x1="199" y1="239" x2="199" y2="249" stroke="#fd456f" stroke-width="1.5" marker-end="url(#arrowred)"/>
+  <text x="199" y="264" text-anchor="middle" font-size="10" fill="#fd456f" font-weight="bold">pages 1&#8211;10: refetched</text>
+  <text x="199" y="277" text-anchor="middle" font-size="10" fill="#fd456f" font-weight="bold">on every single attempt</text>
+</svg>
