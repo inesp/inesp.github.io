@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="200" y="20" text-anchor="middle" font-size="12" fill="#212529" font-weight="bold">The Naive Retry Loop</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- Box 1: Task starts (green) -->
+  <rect x="110" y="35" width="180" height="40" rx="4" fill="#4a9c6d"/>
+  <text x="200" y="59" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">Task starts (page 1)</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="75" x2="200" y2="95" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 2: Fetch pages (white/ink) -->
+  <rect x="100" y="100" width="200" height="45" rx="4" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <text x="200" y="120" text-anchor="middle" font-size="10" fill="#212529">Fetch page 1, 2, 3... 12</text>
+  <text x="200" y="135" text-anchor="middle" font-size="8" fill="#6c757d">(11 pages already done before)</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="145" x2="200" y2="165" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Box 3: 429 Rate Limit (red) -->
+  <rect x="110" y="170" width="180" height="40" rx="4" fill="#fd456f"/>
+  <text x="200" y="194" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">429 Rate Limit</text>
+
+  <!-- Loop-back path: right side of 429 box, up and over, into right side of Task starts box -->
+  <path d="M 290 190 L 345 190 L 345 55 L 290 55" fill="none" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Loop label -->
+  <text x="352" y="100" font-size="9" fill="#212529" font-weight="bold" text-anchor="start">Retry</text>
+  <text x="352" y="113" font-size="8" fill="#6c757d" text-anchor="start">(60s later)</text>
+  <text x="352" y="130" font-size="9" fill="#fd456f" font-weight="bold" text-anchor="start">back to</text>
+  <text x="352" y="143" font-size="9" fill="#fd456f" font-weight="bold" text-anchor="start">page 1</text>
+
+  <!-- Footer caption -->
+  <text x="200" y="240" text-anchor="middle" font-size="10" fill="#6c757d">If the API is still rate-limited when we retry,</text>
+  <text x="200" y="255" text-anchor="middle" font-size="10" fill="#6c757d">this loop repeats... and repeats... and repeats.</text>
+</svg>
