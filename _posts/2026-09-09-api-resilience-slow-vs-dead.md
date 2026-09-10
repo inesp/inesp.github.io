@@ -2,13 +2,12 @@
 series: API Resilience Patterns
 title: "Deep-dive #1: Why a Slow API Is Worse Than a Dead One"
 tags: ["API Resilience Patterns", "Networking", "System Design"]
-next_post: 2026-02-06-api-resilience-caching-429
+prev_post: 2026-04-09-api-resilience-circuit-breaker
 biblio:
     - title: "RFC 9110 — HTTP Semantics"
       link: https://www.rfc-editor.org/rfc/rfc9110
     - title: "RFC 9112 — HTTP/1.1"
       link: https://www.rfc-editor.org/info/rfc9112/
-
     - title: "Release It! (2nd edition) — Michael T. Nygard"
       link: https://pragprog.com/titles/mnee2/release-it-second-edition/
     - title: "Requests: Timeouts (official docs)"

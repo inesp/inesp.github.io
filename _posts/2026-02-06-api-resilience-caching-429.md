@@ -2,7 +2,6 @@
 series: API Resilience Patterns
 title: "Pattern #1: Caching Rate Limits (in Redis)"
 tags: ["API Resilience Patterns", "Code Patterns"]
-prev_post: 2026-09-09-api-resilience-slow-vs-dead
 next_post: 2026-02-24-api-resilience-resumable-pagination
 biblio:
   - title: "HTTP 429 Too Many Requests"
