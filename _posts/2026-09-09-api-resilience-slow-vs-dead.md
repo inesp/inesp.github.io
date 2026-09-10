@@ -161,7 +161,7 @@ The queue length is actually optimistic, it assumes nothing major breaks and **o
 
 The problem is that our app isn't only doing API calls and it isn't calling just the 1 degraded API. 
 
-With blocking requests, we eventually run out of workers, and that means **no code can be executed at all**, not even code that has nothing to do with APIs. With non-blocking requests, we instead run out of file descriptors (or memory), and the failure looks different: **no more _new_ connections can be opened**, often this includes our own ability to accept new incoming requests, but everything already running keeps running. This is how a problem with one dependency spreads to code that has nothing to do with it.
+With blocking requests, we eventually run out of workers, and that means **no code can be executed at all**, not even code that has nothing to do with APIs. With non-blocking requests, we instead run out of file descriptors (or memory), this means: **no more _new_ connections can be opened**, often this includes our own ability to accept new incoming requests, but everything already running keeps running. This is how a problem with one dependency spreads to code that has nothing to do with it.
 
 This is sometimes called a **cascading failure**: a failure in one part of the system has cascaded into other parts of the system.
 
