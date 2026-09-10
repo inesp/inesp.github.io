@@ -94,7 +94,9 @@ Retries can make this exact situation, the topic of this post, way, way worse. B
 
 ![timeout-times-retries](/assets/http/timeout-times-retries.svg)
 
-If we set only these 3 we should be good. But, what should we set them to? 
+There are more timeouts to set, but if we set only the 3 settings above, we should be good. 
+
+Now comes the bigger question: what should we set them to? 
 
 Usually, a good rule of thumb is to see how long your API calls usually take and set the timeouts to help guide you. But my experience is.. you set the timeouts globally, and then you call 50 different APIs, from 50 different companies, so... what does an average even mean in this case?
 
