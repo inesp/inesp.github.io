@@ -219,11 +219,11 @@ Let's go back to the original question: **what are the mechanics of this process
 3. If a shared resource runs out (a DB connection), it (usually) cascades into every connected "system", every code that needs it.
 4. Retries can make this worse, but we can't live without them.
 
-It's funny, how there are no clean solutions. Of course, you need timeouts, but they possibly won't help at all. Of course, you need to retry API calls, but that can also be the cause for your incident.
+**It's funny, how there are no clean solutions. Of course, you need timeouts, but they possibly won't help at all. Of course, you need to retry API calls, but that can also be the cause for your incident.**
 
 Here's an excerpt from "Release It!" about one particular incident where the regular retry used to work brilliantly, until one day it didn't anymore:
 
-> Ultimately, the calling layer was using 100 percent of its CPU making calls to the lower layer and logging failures in calls to te lower layer. 
+> Ultimately, the calling layer was using 100 percent of its CPU making calls to the lower layer and logging failures in calls to the lower layer. 
 <figcaption>
 &mdash; Michael Nygard, Release It!
 </figcaption>
@@ -231,7 +231,7 @@ Here's an excerpt from "Release It!" about one particular incident where the reg
 
 ## Solutions
 
-The question is not _if_ you will experience an incident, but _how fast_ you will recover, once the inevitable happens.
+**The question is not _if_ you will experience an incident, but _how fast_ you will recover, once the inevitable happens.**
 
 There is no magic bullet. But, what helps is: 
 
