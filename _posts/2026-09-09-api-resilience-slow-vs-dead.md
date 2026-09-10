@@ -214,7 +214,7 @@ But now the question becomes: what does our code do when the API timeouts? **If 
 
 Let's go back to the original question: **what are the mechanics of this process?** 
 
-1. A slow API response holds a resource hostage: a worker if we're blocking, a file descriptor if we're not. Even a non-blocking request hits this wall, but the ceiling is higher, so more tasks can pile up before the same thing happens.
+1. A slow API response holds a resource hostage: a worker if we're blocking, a file descriptor if we're not. Even a non-blocking request have a hard limit, but the ceiling is higher, so more tasks can pile up before the same thing happens.
 2. Some resources are shared and finite, like (usually) the DB connections pool, while also being crucial for every task. 
 3. If a shared resource runs out (a DB connection), it (usually) cascades into every connected "system", every code that needs it.
 4. Retries can make this worse, but we can't live without them.
