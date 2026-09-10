@@ -61,6 +61,7 @@
             {% assign coll_title = coll_data.display_title | default: post.series %}
           {% endif %}
           {% if has_collection %}{% assign excerpt_length = 10 %}{% endif %}
+          {% assign excerpt_length = post.intro_truncatewords | default: excerpt_length %}
 
           <div>
             <a href="{{ post.url }}">

@@ -39,7 +39,8 @@ layout: default
         <span class="home-latest-meta text-muted">{{ latest.date | date: site.date_format }}{% if latest.series %} · {{ site.data.topics[latest.series].display_title | default: latest.series }}{% endif %}</span>
       </span>
       <span class="home-latest-title">{{ latest.title }}</span>
-      <span class="home-latest-teaser">{{ latest.excerpt | strip_html | truncatewords: 30 }}</span>
+      {%- assign latest_teaser_length = latest.intro_truncatewords | default: 30 -%}
+      <span class="home-latest-teaser">{{ latest.excerpt | strip_html | truncatewords: latest_teaser_length }}</span>
     </a>
   </section>
 

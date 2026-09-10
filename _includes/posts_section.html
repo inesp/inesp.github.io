@@ -34,7 +34,8 @@
       </div>
 
       {%- if post.excerpt -%}
-        <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: clean_teaser_length }}</p>
+        {%- assign post_teaser_length = post.intro_truncatewords | default: clean_teaser_length -%}
+        <p class="post-teaser">{{ post.excerpt | strip_html | truncatewords: post_teaser_length }}</p>
       {%- endif -%}
     </li>
   {%- endfor -%}

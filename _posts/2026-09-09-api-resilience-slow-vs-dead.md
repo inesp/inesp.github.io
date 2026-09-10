@@ -3,6 +3,7 @@ series: API Resilience Patterns
 title: "Deep-dive #1: Why a Slow API Is Worse Than a Dead One"
 tags: ["API Resilience Patterns", "Networking", "System Design"]
 prev_post: 2026-04-09-api-resilience-circuit-breaker
+intro_truncatewords: 35
 biblio:
     - title: "RFC 9110 — HTTP Semantics"
       link: https://www.rfc-editor.org/rfc/rfc9110
@@ -30,7 +31,7 @@ biblio:
       link: https://learn.microsoft.com/en-us/windows/win32/winsock/so-keepalive
 ---
 
-Let's do a deep dive on the following scenario: **you are calling a third-party API, the API becomes degraded,** it's still kinda working, but **it is slow**. Now my question is: **how _exactly_ can a degraded third-party API cause your app to become unresponsive?**
+**You are calling a third-party API, the API becomes degraded,** it's still kinda working, but **it is slow**. Now my question is: **how _exactly_ can a degraded third-party API cause your app to become unresponsive?**
 
 I mean, I get the general **gist of it:** as the API calls become slow, **things pile up** and once more things pile up than can be processed everybody waits. 
 
