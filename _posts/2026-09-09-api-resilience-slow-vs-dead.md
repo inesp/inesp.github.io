@@ -201,11 +201,11 @@ But, let's lower the timeout to 1s. Now every API call will timeout. We will ret
 
 **A much lower timeout means that every API call fails. But we are still doing them.** 
 
-Working API: $throughput = 100 \frac{calls}{second}$ and all workers work.
+Working API: $$throughput = 100 \frac{calls}{second}$$ and all workers work.
 
-Slow API, but the timeout is not triggered: $throughput = 2.5 \frac{calls}{second}$ and our workers are slow, eventually it will crash.
+Slow API, but the timeout is not triggered: $$throughput = 2.5 \frac{calls}{second}$$ and our workers are slow, eventually it will crash.
 
-Slow API and a low timeout: $throughput = 0$, but our workers are fast. 
+Slow API and a low timeout: $$throughput = 0$$, but our workers are fast. 
 
 But now the question becomes: what does our code do when the API timeouts? **If we just retry immediately, then we are just scheduling dead tasks.** We are creating phantom tasks that will accomplish no work at all.
 
