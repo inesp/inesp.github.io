@@ -7,6 +7,9 @@ up-prod:
 upgrade:
 	bundle update
 
+check-links:  ## verify all prev_post/next_post series links point to real, reciprocal posts
+	ruby scripts/check_series_links.rb
+
 upgrade-ruby:
 	@echo "Fetching GitHub Pages Ruby version..."
 	@curl -s https://pages.github.com/versions.json | grep -o '"ruby":"[^"]*"' | cut -d'"' -f4 > .ruby-version
@@ -21,9 +24,6 @@ draft:  ## push current branch to the private drafts repo
 
 draft-all:  ## back up all branches to the private drafts repo
 	git push private --all
-
-publish:  ## push master to the public GitHub Pages repo
-	git push origin master
 
 rebase:  ## rebase current draft branch onto latest master
 	git fetch origin master:master

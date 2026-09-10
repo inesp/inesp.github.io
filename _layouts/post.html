@@ -49,6 +49,9 @@ layout: default
       <h2>Next chapter</h2>
       <p>⏭️ <a href="{{ next.url | relative_url }}">{{ next.title }}</a></p>
       {% endif %}
+    {% elsif page.prev_post %}
+      <h2>Next chapter</h2>
+      <p>⏭️ <em>To be continued...</em></p>
     {% endif %}
 
     {%- include biblio.html -%}

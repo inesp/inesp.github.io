@@ -3,6 +3,7 @@ series: API Resilience Patterns
 title: "Pattern #3: Circuit Breaker design pattern"
 tags: ["API Resilience Patterns", "Code Patterns"]
 prev_post: 2026-02-24-api-resilience-resumable-pagination
+next_post: 2026-09-09-api-resilience-slow-vs-dead
 biblio:
   - title: "Wikipedia: Circuit breaker design pattern"
     link: https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern
@@ -272,5 +273,3 @@ The most important thing is that the blast radius of any one downed API got smal
 
 It's ironic how this thing that looked like nothing more than "good manners", like something that would benefit some external API but not us, turned out to be very much an act of self-defence for our app. It turned out to be crucial for our code and our resources.
 
-## Next
-⏭️ To be continued...

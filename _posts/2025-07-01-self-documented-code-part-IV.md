@@ -166,5 +166,3 @@ Copy-paste is good. People will copy-paste. Let's write our code to be copy-past
 
 The old pattern has been erased from history and future devs will just copy-paste the new pattern.
 
-## Next
-⏭️ To be continued...
