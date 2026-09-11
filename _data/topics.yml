@@ -1,3 +1,10 @@
+# Optional fields per topic:
+#   display_title: shown instead of the raw key
+#   home_intro: short blurb (currently unused, kept for future use)
+#   icon: name of a career_icon.html icon to use instead of the default
+#         "stack" icon on collection/series pages. See _includes/career_icon.html
+#         for the full list of available names.
+
 Building Blocks Collection:
   display_title: "Building Blocks Collection"
   home_intro: "A collection of small, reusable patterns"
@@ -12,6 +19,7 @@ Cognitive Biases in Code:
 
 API Resilience Patterns:
   display_title: "API Resilience Patterns"
+  icon: "api"
   home_intro: "Patterns for handling rate limits, pagination failures, API outages, ..."
 
 The Algorithm Decided:

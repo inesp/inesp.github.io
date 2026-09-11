@@ -12,7 +12,11 @@ layout: default
 {% endif %}
 
 {% if tag %}
-  {% if site.data.topics.collection_tags contains tag %}{% assign topic_icon = "stack" %}{% else %}{% assign topic_icon = "tag" %}{% endif %}
+  {% if site.data.topics.collection_tags contains tag %}
+    {% assign topic_icon = site.data.topics[tag].icon | default: "stack" %}
+  {% else %}
+    {% assign topic_icon = "tag" %}
+  {% endif %}
 {% endif %}
 <h1 class="text-center">{% if topic_icon %}{% include career_icon.html name=topic_icon %}{% endif %}{{ page.title }}</h1>
 

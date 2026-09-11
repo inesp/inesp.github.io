@@ -310,3 +310,43 @@ A styled email visualization for illustrating email-related content.
     <p>Thanks!</p>
   </div>
 </div>
+
+---
+
+## Career Icons
+
+Small inline icons defined in `_includes/career_icon.html`, used on the CV timeline, the sidebar, and topic/series pages.
+
+**Usage:**
+{% raw %}
+```liquid
+{% include career_icon.html name="stack" %}
+```
+{% endraw %}
+
+**Available icons:**
+
+<style>
+.icon-styleguide-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+.icon-styleguide-list li { display: flex; align-items: center; }
+</style>
+
+<ul class="icon-styleguide-list">
+<li>{% include career_icon.html name="nodes" %} <code>nodes</code></li>
+<li>{% include career_icon.html name="magnifier" %} <code>magnifier</code></li>
+<li>{% include career_icon.html name="cart" %} <code>cart</code></li>
+<li>{% include career_icon.html name="receipt" %} <code>receipt</code></li>
+<li>{% include career_icon.html name="blackboard" %} <code>blackboard</code></li>
+<li>{% include career_icon.html name="robot" %} <code>robot</code></li>
+<li>{% include career_icon.html name="pen" %} <code>pen</code></li>
+<li>{% include career_icon.html name="diamond" %} <code>diamond</code></li>
+<li>{% include career_icon.html name="mic" %} <code>mic</code></li>
+<li>{% include career_icon.html name="hourglass" %} <code>hourglass</code></li>
+<li>{% include career_icon.html name="safe" %} <code>safe</code></li>
+<li>{% include career_icon.html name="briefcase" %} <code>briefcase</code></li>
+<li>{% include career_icon.html name="person" %} <code>person</code></li>
+<li>{% include career_icon.html name="stack" %} <code>stack</code></li>
+<li>{% include career_icon.html name="tag" %} <code>tag</code></li>
+<li>{% include career_icon.html name="cap" %} <code>cap</code></li>
+<li>{% include career_icon.html name="api" %} <code>api</code></li>
+</ul>

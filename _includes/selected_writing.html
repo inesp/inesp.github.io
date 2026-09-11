@@ -17,7 +17,7 @@
           <div class="post-header">
             <h3 class="post-title">
               {%- if site.data.topics.collection_tags contains tag_name -%}
-                {%- assign card_kind = "series" -%}{%- assign card_icon = "stack" -%}
+                {%- assign card_kind = "series" -%}{%- assign card_icon = coll_data.icon | default: "stack" -%}
               {%- else -%}
                 {%- assign card_kind = "topic" -%}{%- assign card_icon = "tag" -%}
               {%- endif -%}
