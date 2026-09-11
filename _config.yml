@@ -69,11 +69,16 @@ feed:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # The github-pages gem auto-excludes CNAME from the build, but only when this
+  # list matches Jekyll's untouched default exactly. Setting our own list (to add
+  # "docs" above) opts out of that, so it has to be listed explicitly here too.
+  - CNAME

@@ -1,5 +1,6 @@
 Ines's Blog.
 
+For how to add a post, a series, or an icon, see [docs/](docs/README.md). This file covers dev environment setup, running, upgrading, and deploying.
 
 ## Setup dev env
 
@@ -56,8 +57,9 @@ GitHub Pages does NOT support the latest Ruby nor the latest Jekyll nor every Je
 ### Running locally
 
 ```bash
-make up        # Dev server with future posts, live reload
-make up-prod   # Production-like (no future posts)
+make up          # Dev server with future posts, live reload
+make up-prod     # Production-like (no future posts)
+make check-links # Verify prev_post/next_post series links are valid and reciprocal
 ```
 
 Site will be at http://localhost:4000
