@@ -25,6 +25,7 @@ API Resilience Patterns:
 The Algorithm Decided:
   display_title: "The Algorithm Decided"
   home_intro: ""
+  icon: "gavel"
 
 Engineering Research:
   home_intro: "Posts that draw from research papers"

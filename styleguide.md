@@ -349,4 +349,5 @@ Small inline icons defined in `_includes/career_icon.html`, used on the CV timel
 <li>{% include career_icon.html name="tag" %} <code>tag</code></li>
 <li>{% include career_icon.html name="cap" %} <code>cap</code></li>
 <li>{% include career_icon.html name="api" %} <code>api</code></li>
+<li>{% include career_icon.html name="gavel" %} <code>gavel</code></li>
 </ul>
