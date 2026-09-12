@@ -62,9 +62,9 @@ And let's keep this in mind: a simple API call is usually a few hundred ms, let'
 {:.box}
 
 - The remote server refuses the connection, nothing is listening at our port. => Instant rejection, **no wait time**.
-- The TCP handshake takes a long time, because some of our `SYN` packets get lost. => Linux will retry a backoff, so the handshake either succeeds at some point, or we get a connect error after **roughly ~2 minutes**.
+- The TCP handshake takes a long time, because some of our `SYN` packets get lost. => Linux will retry with a backoff, so the handshake either succeeds at some point, or we get a connect error after **roughly ~2 minutes**.
 - The remote server disappears mid-conversation **AND** it never sent `ACK` for our last message. => TCP protocol will notice this and act. It will re-transmit a fixed number of tries, and it will back off between attempts. But the default timeout on Linux machines for this scenario is a whopping **15 minutes**.
-- The remote disappears mid-conversation, **but** it already sent `ACK` for everything we sent. => TCP doesn't do anything, because nothing on the connection looks of. We will **wait forever**. 
+- The remote disappears mid-conversation, **but** it already sent `ACK` for everything we sent. => TCP doesn't do anything, because nothing on the connection looks off. We will **wait forever**. 
 - We're running `async` code, the API calls are non-blocking. => We still keep piling up more and more stuck connections and hit the resource limit. It is only then that every **new API call will fail immediately, but the old calls are still waiting forever**.
 
 ![how-long-is-eventually](/assets/http/how-long-is-eventually.svg)
@@ -113,7 +113,7 @@ Blocking was the original mode. It meant that a process would send the API call 
 
 But, as the internet expanded and we now routinely expect (and wish for) millions of users per day to any humble app, we adopted the non-blocking mode. Instead of the process (or thread) waiting, it can do other stuff. Maybe send another hundred API calls to several providers.
 
-In the blocking mode, the OS suspends the thread that made the API call. It will only wake up once the call resolves to something, anything. For this reason we resolve to spinning up lots of worker threads, so users don't need to wait for one another.
+In the blocking mode, the OS suspends the thread that made the API call. It will only wake up once the call resolves to something, anything. For this reason we resort to spinning up lots of worker threads, so users don't need to wait for one another.
 
 In the non-blocking mode, there's no pool of worker threads anymore. The single thread makes all the API calls, because it doesn't wait for a response. It gets back to processing the response only once the response arrives. When the response takes a longer time to arrive, we are technically free to execute other tasks, that is if we have these other tasks that need to be executed.
 
@@ -125,11 +125,11 @@ If we use blocking API calls, then we are limited by how many threads we can rea
 
 If we use non-blocking API calls, then we are still limited by the shared resources, like the database.
 
-But in either case, we are always limited by the max number of allowed open connections. Every open connection is still a **file descriptor**, and every OS process has a limit on how many it can have open at once (`ulimit -n`). You can raise that limit to thousands or even millions, but you can't make it go away.
+But in either case, we are always limited by the max number of allowed open connections. Every open connection is still a **file descriptor**, and every OS process has a limit on how many it can have open at once (`ulimit -n`). You can raise that limit to thousands or even a million, but you can't make it go away.
 
 ## Example with numbers
 
-Say we run a pool of **20 workers**, we run blocking calls, and a normal call to this API **takes 200ms**. 
+Say we run a pool of **20 workers**, we run blocking calls, and a normal call to this API **takes 200ms**.
 
 One worker can do max $$\frac{1s}{0.2s} = 5 \frac{calls}{second}$$. Twenty workers, running in parallel, can do:
 
@@ -157,6 +157,8 @@ But, let's say new requests only keep arriving at **20 requests per second**. So
 | 5 min | 750       | 5.25 K   |
 | 1 h   | 9 K       | 63 K     |
 | 3 h   | 27 K      | 189 K    |
+
+Don't focus on the scale of the numbers, focus on the relationships between them.
 
 The queue length is actually optimistic, it assumes nothing major breaks and **our code isn't retrying any API calls**. But, let's be honest, the code probably re-tries failed API calls, that is like API calling 101.
 
@@ -197,11 +199,11 @@ The main problem of timeouts is that they have to be set to a few times the aver
 
 Sure, our average API call is done in 200 ms, but we get some regular responses also at 2s. (Some of the fault here might be ours, a cold TCP connection for every call makes us slower, because TCP starts every new connection cautiously (slow start) and likes to hold back small packets (Nagle's algorithm). One more reason to keep a connection pool open, but that's a different post.) Which means we will set the timeout to a few seconds, let's say 5s. And we have to have re-tries, at least 1 retry, to handle the occasional transient API error. So, then we are in reality at `timeout = 10s`.
 
-But our system is set out to handle API calls that on average take 0.2s, but suddenly the average is closer to 10s (50x more).
+But our system is set up to handle API calls that on average take 0.2s, but suddenly the average is closer to 10s (50x more).
 
 **Unfortunately, our generous timeout does nothing for a slow-but-under-the-limit response.**
 
-But, let's lower the timeout to 1s. Now every API call will timeout. We will retry and that will also timeout. 
+But, let's lower the timeout to 1s. Now every API call will time out. We will retry and that will also time out. 
 
 **A much lower timeout means that every API call fails. But we are still doing them.** 
 
@@ -211,16 +213,16 @@ Slow API, but the timeout is not triggered: $$throughput = 2.5 \frac{calls}{seco
 
 Slow API and a low timeout: $$throughput = 0$$, but our workers are fast. 
 
-But now the question becomes: what does our code do when the API timeouts? **If we just retry immediately, then we are just scheduling dead tasks.** We are creating phantom tasks that will accomplish no work at all.
+But now the question becomes: what does our code do when the API times out? **If we just retry immediately, then we are just scheduling dead tasks.** We are creating phantom tasks that will accomplish no work at all.
 
 
 ## Flow summary
 
 Let's go back to the original question: **what are the mechanics of this process?** 
 
-1. A slow API response holds a resource hostage: a worker if we're blocking, a file descriptor if we're not. Even a non-blocking request have a hard limit, but the ceiling is higher, so more tasks can pile up before the same thing happens.
+1. A slow API response holds a resource hostage: a worker if we're blocking, a file descriptor if we're not. Non-blocking requests have a limit too, just a much higher one, so more tasks pile up before the same thing happens.
 2. Some resources are shared and finite, like (usually) the DB connections pool, while also being crucial for every task. 
-3. If a shared resource runs out (a DB connection), it (usually) cascades into every connected "system", every code that needs it.
+3. If a shared resource runs out (a DB connection), it (usually) cascades into every connected "system", all the code that needs it.
 4. Retries can make this worse, but we can't live without them.
 
 **It's funny, how there are no clean solutions. Of course, you need timeouts, but they possibly won't help at all. Of course, you need to retry API calls, but that can also be the cause for your incident.**
@@ -231,6 +233,19 @@ Here's an excerpt from "Release It!" about one particular incident where the reg
 <figcaption>
 &mdash; Michael Nygard, Release It!
 </figcaption>
+
+
+## What if the API was just dead?
+
+Let's compare this to the boring case: the API is completely down.
+
+If it's down explicitly (nothing is listening, the connection is refused, DNS doesn't resolve), then every call fails **instantly**. Our workers are free again within milliseconds. Our throughput doesn't drop at all, it's just that every call fails. The queue never grows. The feature that needs this API is broken, sure, but the rest of the app doesn't even notice.
+
+If it's down implicitly (the host is unreachable, packets vanish into a black hole), then without timeouts we're back to waiting 2 minutes or 15 minutes or forever. So, this is exactly the case timeouts were made for. We can set a connect timeout and a read timeout and make the implicitly dead API becomes an explicitly dead one, with every call failing in a predictable few seconds.
+
+**So a dead API is a problem we can fully solve with timeouts. A slow API is not.** A response that arrives in 8 seconds when the timeout is 10 looks perfectly healthy to every safety mechanism we have, and it still holds our worker hostage for 40x longer than it should.
+
+It is simply that a dead API fails fast, while a downgraded API lingers.
 
 
 ## Solutions
@@ -248,4 +263,6 @@ In Celery, this could mean a dedicated queue. It can also be a dedicated HTTP co
 I wrote up how we actually built one of these in [Pattern #3]({% post_url 2026-04-09-api-resilience-circuit-breaker %}).
 
 **Anything that caps how many requests are allowed per API provider.** You can really be as creative at this as you want. Some solutions are more watertight, but they are also more expensive to maintain. You have to figure out what the right balance is for you.
+
+And if you look closely, you can see, that all our "solutions" are just making a degraded API look like a dead API. Because, what we are really after is just to protect our workers, not to cover for the broken API.
 
