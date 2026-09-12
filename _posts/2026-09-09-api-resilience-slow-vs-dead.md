@@ -30,21 +30,25 @@ biblio:
       link: https://tldp.org/HOWTO/TCP-Keepalive-HOWTO/usingkeepalive.html
     - title: "SO_KEEPALIVE socket option (Winsock) — disabled by default"
       link: https://learn.microsoft.com/en-us/windows/win32/winsock/so-keepalive
+    - title: "Wikipedia: TCP congestion control — slow start"
+      link: https://en.wikipedia.org/wiki/TCP_congestion_control#Slow_start
+    - title: "Wikipedia: Nagle's algorithm"
+      link: https://en.wikipedia.org/wiki/Nagle%27s_algorithm
 ---
 
-**You are calling a third-party API, the API becomes degraded,** it's still kinda working, but **it is slow**. Now my question is: **how _exactly_ can a degraded third-party API cause your app to become unresponsive?**
+**You run a service with inbound traffic you don't control (users, webhooks, a queue), and to serve each request you have to call a third-party API.** Then this API becomes degraded, it's still kinda working, but **it is slow**. Now my question is: **how _exactly_ can this degraded external API cause your app to become unresponsive?**
 
-I mean, I get the general **gist of it:** as the API calls become slow, **things pile up** and once more things pile up than can be processed everybody waits. 
+I mean, I get the general **gist of it:** as the API calls become slow, **things pile up** and once more things pile up than can be processed everybody waits. And since we have no control over the inbound traffic that is triggering the API calls, we can't just stop making them.
 
-But then, is the solution to simply move API calls to dedicated workers? So, that when things pile up, only the workers doing API calls die. Can we solve the problem with more `async` code? Surely scheduling a million non-blocking API calls can also kill us.
+**But what exactly piles up and what are the mechanisms we can use to handle the pile up?**
 
-**What are the mechanics of this process?**
-
-Disclaimer: we don't care what exactly is wrong with the remote API. Our request is probably stuck in some queue on their end, it could be waiting for a **free worker**, it could be waiting for **DB access** while a worker is already processing it, or it could even be in the **TCP accept queue**, an OS-owned queue and their app doesn't even yet know a request is waiting.
+Disclaimer: we don't care what exactly is wrong with the remote API. Our request is probably stuck in some queue on their end, it could be waiting for a **free worker**, it could be waiting for **DB access** while a worker is already processing it, or it could even be in the **TCP accept queue**, an OS-owned queue and their app doesn't even yet know a request is waiting. Whatever it is, we don't care. We only care about what our side can do.
 
 {% include toc.html %}
 
 ## No default timeouts
+
+First the basics: if we are waiting for a slow API, **how long are we expected to wait?**
 
 **There are, technically speaking, no default timeouts defined by HTTP protocol itself.** So, technically, we could be waiting forever.
 
@@ -121,7 +125,7 @@ If we use blocking API calls, then we are limited by how many threads we can rea
 
 If we use non-blocking API calls, then we are still limited by the shared resources, like the database.
 
-But in either case, we are always limited by the max number of allowed open connections. Every open connection is still a **file descriptor**, and every OS process has a hard cap on how many it can have open at once (`ulimit -n`, often 1024 by default).
+But in either case, we are always limited by the max number of allowed open connections. Every open connection is still a **file descriptor**, and every OS process has a limit on how many it can have open at once (`ulimit -n`). You can raise that limit to thousands or even millions, but you can't make it go away.
 
 ## Example with numbers
 
@@ -163,7 +167,7 @@ The problem is that our app isn't only doing API calls and it isn't calling just
 
 With blocking requests, we eventually run out of workers, with non-blocking requests, we eventually run out of file descriptors. Or it could also be memory or DB connections or something else. Either way, at that point **no _new_ tasks can be executed**, no extra work can be done and the old workers/threads/processes are stuck waiting. 
 
-In blocking mode, new requests are stuck in a queue waiting for a free worker. In non-blocking, they are immediately rejected, because the file-descriptor limit is a hard limit.
+In blocking mode, new requests are stuck in a queue waiting for a free worker. In non-blocking, they are immediately rejected, because the OS simply refuses to open one more connection.
 
 But, we are now in the situation, where our app can't execute new code, code that has nothing to do with API calling.
 
@@ -191,7 +195,7 @@ They are very helpful, you should always set them. But, they aren't a miracle so
 
 The main problem of timeouts is that they have to be set to a few times the average expected regular request time.
 
-Sure, our average API call is done in 200 ms, but we get some regular responses also at 2s. Which means we will set the timeout to a few seconds, let's say 5s. And we have to have re-tries, at least 1 retry, to handle the occasional transient API error. So, then we are in reality at `timeout = 10s`.
+Sure, our average API call is done in 200 ms, but we get some regular responses also at 2s. (Some of the fault here might be ours, a cold TCP connection for every call makes us slower, because TCP starts every new connection cautiously (slow start) and likes to hold back small packets (Nagle's algorithm). One more reason to keep a connection pool open, but that's a different post.) Which means we will set the timeout to a few seconds, let's say 5s. And we have to have re-tries, at least 1 retry, to handle the occasional transient API error. So, then we are in reality at `timeout = 10s`.
 
 But our system is set out to handle API calls that on average take 0.2s, but suddenly the average is closer to 10s (50x more).
 
