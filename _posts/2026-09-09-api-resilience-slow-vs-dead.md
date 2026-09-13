@@ -254,15 +254,17 @@ It is simply that a dead API fails fast, while a downgraded API lingers.
 
 There is no magic bullet. But, what helps is: 
 
-**Bulkheads**: give each external dependency its own pool, its own thread or connection budget, so a slow GitHub can't starve work that has nothing to do with GitHub.
-
-In Celery, this could mean a dedicated queue. It can also be a dedicated HTTP connection pool, something that limits the number of concurrent calls to the same API, but then you still have to handle the waiting somewhere. 
+**Bulkheads**: give each external dependency its own pool, so a slow GitHub can't starve work that has nothing to do with GitHub. In Celery this can mean a dedicated queue per provider.
 
 **Circuit breakers**: listen for API failures and stop calling them when they are broken. The advantage is already the simple fact that you immediately know the API is down, you don't need to wait for any timeout to be reached. Calls to this specific API still fail, but your workers are free again instantly, so throughput for everything *else* isn't hurt. But you have to again handle the retry yourself.
 
 I wrote up how we actually built one of these in [Pattern #3]({% post_url 2026-04-09-api-resilience-circuit-breaker %}).
 
-**Anything that caps how many requests are allowed per API provider.** You can really be as creative at this as you want. Some solutions are more watertight, but they are also more expensive to maintain. You have to figure out what the right balance is for you.
+**Concurrency limiter**: a plain semaphore per API provider that limits the number of concurrent calls to some API. It doesn't care if the API is slow or dead, it just refuses to let one provider hold more than 5 of our workers.
+
+**Load shedding**: give every queued task an expiry. If a slow API has built up a backlog that we can't drain in time, we drop the stale tasks instead of dutifully processing old work.
+
+**Anything else that caps how many requests are allowed per API provider.** You can really be as creative at this as you want. Some solutions are more watertight, but they are also more expensive to maintain. You have to figure out what the right balance is for you.
 
 And if you look closely, you can see, that all our "solutions" are just making a degraded API look like a dead API. Because, what we are really after is just to protect our workers, not to cover for the broken API.
 
