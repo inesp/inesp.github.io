@@ -1,7 +1,6 @@
 {% comment %}
 - posts
 - teaser_length
-- show_archive_link
 {% endcomment %}
 
 {%- assign clean_teaser_length = include.teaser_length | default: 15 -%}
@@ -40,10 +39,4 @@
     </li>
   {%- endfor -%}
 </ul>
-
-{%- if include.show_archive_link -%}
-  <p class="topic-more">
-    <a href="/archive/">View whole archive</a>
-  </p>
-{%- endif -%}
 

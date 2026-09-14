@@ -5,10 +5,8 @@ layout: default
 {% assign tag = page.tags %}
 {% if tag %}
   {% assign posts = site.tags[tag] %}
-  {% assign show_archive_link = true %}
 {% else %}
   {% assign posts = site.posts %}
-  {% assign show_archive_link = false %}
 {% endif %}
 
 {% if tag %}
@@ -33,7 +31,7 @@ layout: default
 <div class="topic-page">
 
   <section>
-    {%- include posts_section.html posts=posts show_archive_link=show_archive_link -%}
+    {%- include posts_section.html posts=posts -%}
 
   {%- if site.data.topics.collection_tags contains tag -%}
     {%- comment -%}Every source cited by any post in this series, sorted by title, duplicates removed{%- endcomment -%}
