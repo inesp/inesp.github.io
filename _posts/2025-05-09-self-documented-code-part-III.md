@@ -4,6 +4,13 @@ title: "Concept 3: Abstract functions and code patterns"
 tags: ["Self-Documenting Code"]
 prev_post: 2025-05-05-self-documented-code-part-II
 next_post: 2025-07-01-self-documented-code-part-IV
+biblio:
+  - title: "Jeff Atwood: Falling Into The Pit of Success"
+    link: https://blog.codinghorror.com/falling-into-the-pit-of-success/
+  - title: "Refactoring Guru: Template Method pattern in Python"
+    link: https://refactoring.guru/design-patterns/template-method/python/example
+  - title: "PEP 695: Type Parameter Syntax"
+    link: https://peps.python.org/pep-0695/
 ---
 
 To reiterate, what do we want: to not read the docs, but still know everything the docs say.
