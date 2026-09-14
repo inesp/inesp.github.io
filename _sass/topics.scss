@@ -46,3 +46,29 @@ h1 .career-icon {
     font-size: $h4-font-size;
   }
 }
+
+/* Series page: merged sources of every post in the series, same left accent as .categories-list hover.
+   The top rule matches the divider between .post-item entries so it reads as a new entry, not more of the last post. */
+.series-sources {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e4e8ea;
+
+  .series-sources-inner {
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    border-left: 4px solid $color-red-bright;
+  }
+
+  h4 {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
+  }
+}

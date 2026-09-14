@@ -42,7 +42,7 @@ Field-by-field:
 - `title`: Post title.
 - `tags`: Array of tag names (e.g. `["API Resilience Patterns", "Code Patterns"]`); each tag becomes a `/topic/<slug>/` page.
 - `series`: Optional series/collection name; must match a key in `_data/topics.yml` exactly. Adds a collection link above the title and groups the post under a shared topic page. See [add-a-series.md](add-a-series.md).
-- `biblio`: Optional array of `{title, link}` objects, rendered as an "External sources" section.
+- `biblio`: Optional array of `{title, link}` objects, rendered as an "External sources" section. On a series page (see [add-a-series.md](add-a-series.md)) the `biblio` lists of all posts in that series are merged, de-duplicated and sorted by title into an "All sources in this series" section.
 - `prev_post` / `next_post`: Optional post slugs linking chapters within a series. Verify with `make check-links`.
 - `intro_truncatewords`: Optional override for how many words of the excerpt to show in post listings.
 - `image`: Optional path to a social/OG preview image, picked up by the jekyll-seo-tag plugin.

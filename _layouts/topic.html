@@ -34,6 +34,35 @@ layout: default
 
   <section>
     {%- include posts_section.html posts=posts show_archive_link=show_archive_link -%}
+
+  {%- if site.data.topics.collection_tags contains tag -%}
+    {%- comment -%}Every source cited by any post in this series, sorted by title, duplicates removed{%- endcomment -%}
+    {%- assign series_biblio = "" | split: "" -%}
+    {%- assign seen_links = "" | split: "" -%}
+    {%- for post in posts -%}
+      {%- if post.series == tag and post.biblio -%}
+        {%- for source in post.biblio -%}
+          {%- unless seen_links contains source.link -%}
+            {%- assign seen_links = seen_links | push: source.link -%}
+            {%- assign series_biblio = series_biblio | push: source -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign series_biblio = series_biblio | sort_natural: "title" -%}
+    {%- if series_biblio.size > 0 -%}
+    <div class="series-sources">
+      <div class="series-sources-inner">
+        <h4>Sources cited in this series 📚</h4>
+        <ul>
+          {%- for source in series_biblio -%}
+            <li><a href="{{ source.link }}" target="_blank">{{ source.title }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    {%- endif -%}
+  {%- endif -%}
   </section>
 
   {%- include all_topics.html -%}
