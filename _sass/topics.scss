@@ -30,19 +30,92 @@ h1 .career-icon {
 }
 
 
-/* Other Topics section */
-.other-topics {
+/* "Where next?" footer menu: series with icons, then plain topics as chips */
+.where-next {
   margin: 6rem 0 5rem;
   padding-top: 2rem;
   border-top: 3px solid $color-yellow-dark;
 
-
   h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .topic-list {
-    gap: 0.8rem 1rem;
-    font-size: $h4-font-size;
+  .where-next-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  .where-next-label {
+    flex: 0 0 4.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-gray-4;
+  }
+
+  .where-next-series {
+    gap: 0.6rem 1.75rem;
+    align-items: center;
+  }
+
+  .where-next-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover,
+    &.is-current {
+      text-decoration: underline;
+      text-decoration-color: $color-yellow-dark-2;
+      text-decoration-thickness: 3px;
+    }
+  }
+
+  .where-next-topics {
+    gap: 0.5rem 0.2rem;
+
+    .badge.is-current {
+      background: $color-yellow;
+      border-color: $color-yellow-border;
+    }
+    .badge:hover {
+      background: $color-yellow;
+    }
+  }
+}
+
+/* Series page: merged sources of every post in the series, same left accent as .categories-list hover.
+   The top rule matches the divider between .post-item entries so it reads as a new entry, not more of the last post. */
+.series-sources {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e4e8ea;
+
+  .series-sources-inner {
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    border-left: 4px solid $color-red-bright;
+  }
+
+  h4 {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
   }
 }
