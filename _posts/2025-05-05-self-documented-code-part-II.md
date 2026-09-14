@@ -4,6 +4,11 @@ title: "Concept 2: Error msgs with calls to action"
 tags: ["Self-Documenting Code"]
 prev_post: 2025-04-17-how-to-make-code-self-document-itself
 next_post: 2025-05-09-self-documented-code-part-III
+biblio:
+  - title: "Elm: Compiler Errors for Humans"
+    link: https://elm-lang.org/news/compiler-errors-for-humans
+  - title: "Python: BaseException.add_note()"
+    link: https://docs.python.org/3/library/exceptions.html#BaseException.add_note
 ---
 
 To reiterate from the [previous chapter]({% post_url 2025-04-17-how-to-make-code-self-document-itself %}): Why do we want self-documenting code? Because then future devs (and we) will use our code as it was intended, whether they read the docs or not. 
