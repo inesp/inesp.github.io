@@ -101,9 +101,9 @@ With agents, code now gets written faster than it gets understood. So lately my 
     <div class="career-years">{% include career_icon.html name="nodes" %} 2020 – now</div>
     <div class="career-body">
       <h3>Senior Staff Software Engineer, <a href="https://www.sleuth.io" target="_blank">Sleuth</a> <span class="career-place">(San Francisco, remote)</span></h3>
-      <p>The first engineer they hired, and the <b>de-facto architect</b> ever since. A prototype grew into a multi-tenant <b>SaaS observability platform</b> for DORA metrics, environment health and real-time anomalies, and the company to about 40 people, with around 15 engineers building on that architecture at the peak.</p>
+      <p>The first engineer they hired, and the <b>de-facto architect</b> ever since. Sleuth is a multi-tenant <b>SaaS observability platform</b> for DORA metrics, environment health and real-time anomalies, fed by 30+ third-party services. I joined when it was two coding founders and a small codebase; the company grew to about 40 people, with around 15 engineers building on that architecture at the peak.</p>
       <ul class="career-points">
-        <li><b>Architecture from zero</b>: the multi-tenant data model, tenant isolation, service boundaries, API contracts, and the integration framework behind webhook and API ingestion from 30+ third-party services (Datadog, Sentry, PagerDuty, GitHub...).</li>
+        <li><b>Architecture</b>: the multi-tenant data model, tenant isolation, service boundaries, API contracts, and the integration framework behind webhook and API ingestion from 30+ third-party services (Datadog, Sentry, PagerDuty, GitHub...).</li>
         <li><b>Resilience</b>: a circuit breaker system guarding, at peak, <b>2-3 million API calls a day</b>, PostgreSQL advisory locks and Redis distributed locks for cluster-wide concurrency, and transaction-aware Celery tasks to prevent race conditions.</li>
         <li><b>The MTTR engine</b>: attributes deploys to incident episodes, which is where the platform's mean-time-to-recovery number comes from.</li>
         <li><b>Applied ML</b>: a self-tuning anomaly detector for customer metrics, a fresh data point every 2 minutes, running for hundreds of clients for years without hand-tuning. <a href="/2026/02/18/impact-of-a-deploy.html">How it works, explained with pictures.</a></li>

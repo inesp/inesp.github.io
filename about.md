@@ -64,7 +64,7 @@ My software life, told as a timeline of firsts:
     <div class="career-years"><svg class="career-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21 V3" fill="none" stroke="#0288d1" stroke-width="2" stroke-linecap="round"/><path d="M6 4 L17.5 7.5 L6 11 Z" fill="none" stroke="#0288d1" stroke-width="2" stroke-linejoin="round"/></svg> 2020</div>
     <div class="career-body">
       <h3>First job as a startup's first engineer</h3>
-      <p>Joined Sleuth when it was a prototype (<b>Python</b>). Everything that grew after that had my fingerprints on it.</p>
+      <p>Joined Sleuth when it was two coding founders and a small codebase (<b>Python</b>). Everything that grew after that had my fingerprints on it.</p>
     </div>
   </div> 
   <div class="career-item">
