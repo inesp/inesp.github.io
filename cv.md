@@ -6,91 +6,12 @@ css: cv
 ---
 
 
-Ines Panker, <b>senior staff software engineer</b> and <b><a href="/talks/">conference speaker</a></b>. 
+Ines Panker, <b>senior staff software engineer</b> and <b><a href="/talks/">conference speaker</a></b>. 16 years in software, the last 6 as the first engineer and <b>de-facto architect</b> of a SaaS observability platform. At the peak, around 15 engineers were building on what I designed, and I stayed the person the teams call when something breaks.
 
-I build backends and the architecture around them, and I have a habit of picking up whatever the job is missing:
-- the <b>circuit breakers</b> when our 30+ integrations started flaking
-- the <b>anomaly-detection algorithm</b> when customer metrics needed watching
-- the <b>profiling middleware</b> when production slowed down
-- the <b>team training sessions</b>, which eventually outgrew the company and became conference talks
+Lately my work has turned toward LLMs: I've worked on the <b>LLM pipeline</b> for our AI-usage analytics tool (a tool that gives insights into what your team does with AI). I've shipped my first <b>RAG</b>, written many Claude skills and rules and have <b>built several agents for my own tooling</b>.
 
-With agents, code now gets written faster than it gets understood. So lately my speciality is <b>breaking code I didn't write</b>: it's the quickest way to understand it.
+I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>Python Italia</b>. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ...
 
-<dl class="cv-meta">
-  <div>
-    <dt>Based in</dt>
-    <dd>Ljubljana, Slovenia (EU citizen)</dd>
-  </div>
-  <div>
-    <dt>Working</dt>
-    <dd>Remote since 2017, mostly with US teams</dd>
-  </div>
-  <div>
-    <dt>Writing code since</dt>
-    <dd>2010, Python since 2017, Go since 2025</dd>
-  </div>
-  <div>
-    <dt>Find me</dt>
-    <dd><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>, <a href="https://github.com/{{ site.social.github }}" target="_blank">GitHub</a></dd>
-  </div>
-  <div>
-    <dt>Languages</dt>
-    <dd>Slovenian (native)<br>English (fluent)<br>German (fluent)<br>French (basic)</dd>
-  </div>
-</dl>
-
-<div class="career-list career-wide">
-  <div class="career-item career-next">
-    <div class="career-years">next</div>
-    <div class="career-body">
-      <h3>What I'm looking for</h3>
-      <p>Helping teams make sense of complex systems: a <b>staff engineering role</b>, <b>architecture work</b>, <b>untangling a codebase</b> that's outgrown its team, or <b>developer-facing work</b> where explaining clearly is the job. <br>Reach me on <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>.</p>
-    </div>
-  </div>
-</div>
-
-<div class="colorful"></div>
-
-## What I work with
-
-<div class="career-list career-wide career-skills">
-  <div class="career-item">
-    <div class="career-years">Core</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Go</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Systems</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Multi-tenant SaaS</span> <span class="badge bg-teal">Circuit breakers</span> <span class="badge bg-teal">Distributed locking</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Data</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Pandas</span> <span class="badge bg-teal">Anomaly detection</span> <span class="badge bg-teal">Time series</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">LLMs</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">LLM agents</span> <span class="badge bg-teal">Context engineering</span> <span class="badge bg-teal">RAG</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Explaining</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Technical writing</span> <span class="badge bg-teal">Documentation</span> <span class="badge bg-teal">Teaching</span> <span class="badge bg-teal">Conference talks</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Earlier</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-yellow-washed-out">PHP</span> <span class="badge bg-yellow-washed-out">MySQL</span> <span class="badge bg-yellow-washed-out">JavaScript</span> <span class="badge bg-yellow-washed-out">C#</span> <span class="badge bg-yellow-washed-out">Java</span></p>
-    </div>
-  </div>
-</div>
 
 <div class="colorful"></div>
 
@@ -105,6 +26,7 @@ With agents, code now gets written faster than it gets understood. So lately my 
       <ul class="career-points">
         <li><b>Architecture</b>: the multi-tenant data model, tenant isolation, service boundaries, API contracts, and the integration framework behind webhook and API ingestion from 30+ third-party services (Datadog, Sentry, PagerDuty, GitHub...).</li>
         <li><b>Resilience</b>: a circuit breaker system guarding, at peak, <b>2-3 million API calls a day</b>, PostgreSQL advisory locks and Redis distributed locks for cluster-wide concurrency, and transaction-aware Celery tasks to prevent race conditions.</li>
+        <li><b>Background jobs</b>: set up and maintained the Celery workers that run all of Sleuth's background work, with separate queues for each kind of work, and led the project that made them reliable when jobs kept failing halfway and customer data went missing, including the move from Redis to RabbitMQ.</li>
         <li><b>The MTTR engine</b>: attributes deploys to incident episodes, which is where the platform's mean-time-to-recovery number comes from.</li>
         <li><b>Applied ML</b>: a self-tuning anomaly detector for customer metrics, a fresh data point every 2 minutes, running for hundreds of clients for years without hand-tuning. <a href="/2026/02/18/impact-of-a-deploy.html">How it works, explained with pictures.</a></li>
         <li><b>LLM work</b>: the pipeline behind Sleuth's AI-usage analytics, and the small RAG behind the product's AI assistant.</li>
@@ -182,7 +104,7 @@ With agents, code now gets written faster than it gets understood. So lately my 
     <div class="career-years">{% include career_icon.html name="mic" %} 2006 – now</div>
     <div class="career-body">
       <h3>Teaching, and later conference speaking</h3>
-      <p>I started teaching before I learned programming. Lately, I speak at conferences like Devoxx Belgium, J-Fall and PyCon Italia, all in my own time, no sponsors and no employer agenda. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ... <a href="/talks/">The full record and the talk catalogue.</a></p>
+      <p>I started teaching before I learned programming. Lately, I speak at big developer conferences like <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>PyCon Italia</b>, all in my own time, no sponsors and no employer agenda. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ... <a href="/talks/">The full record and the talk catalogue.</a></p>
     </div>
   </div>
 </div>
@@ -200,6 +122,86 @@ With agents, code now gets written faster than it gets understood. So lately my 
     </div>
   </div>
 </div>
+
+
+<div class="colorful"></div>
+
+## What I work with
+
+<div class="career-list career-wide career-skills">
+  <div class="career-item">
+    <div class="career-years">Core</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Go</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Systems</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Multi-tenant SaaS</span> <span class="badge bg-teal">Circuit breakers</span> <span class="badge bg-teal">Distributed locking</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Data</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Pandas</span> <span class="badge bg-teal">Anomaly detection</span> <span class="badge bg-teal">Time series</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">LLMs</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">LLM agents</span> <span class="badge bg-teal">Context engineering</span> <span class="badge bg-teal">RAG</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Explaining</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Technical writing</span> <span class="badge bg-teal">Documentation</span> <span class="badge bg-teal">Teaching</span> <span class="badge bg-teal">Conference talks</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Earlier</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-yellow-washed-out">PHP</span> <span class="badge bg-yellow-washed-out">MySQL</span> <span class="badge bg-yellow-washed-out">JavaScript</span> <span class="badge bg-yellow-washed-out">C#</span> <span class="badge bg-yellow-washed-out">Java</span></p>
+    </div>
+  </div>
+</div>
+
+
+<dl class="cv-meta">
+  <div>
+    <dt>Based in</dt>
+    <dd>Ljubljana, Slovenia (EU citizen)</dd>
+  </div>
+  <div>
+    <dt>Working</dt>
+    <dd>Remote since 2017, mostly with US teams</dd>
+  </div>
+  <div>
+    <dt>Writing code since</dt>
+    <dd>2010, Python since 2017, Go since 2025</dd>
+  </div>
+  <div>
+    <dt>Find me</dt>
+    <dd><a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>, <a href="https://github.com/{{ site.social.github }}" target="_blank">GitHub</a></dd>
+  </div>
+  <div>
+    <dt>Languages</dt>
+    <dd>Slovenian (native)<br>English (fluent)<br>German (fluent)<br>French (basic)</dd>
+  </div>
+</dl>
+
+<div class="career-list career-wide">
+  <div class="career-item career-next">
+    <div class="career-years">next</div>
+    <div class="career-body">
+      <h3>What I'm looking for</h3>
+      <p>Helping teams make sense of complex systems: a <b>staff engineering role</b>, <b>architecture work</b>, <b>untangling a codebase</b> that's outgrown its team, or <b>developer-facing work</b> where explaining clearly is the job. <br>Reach me on <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>.</p>
+    </div>
+  </div>
+</div>
+
+
 
 <p class="hero-links hero-links-left">
   <a href="/talks/">List of my talks</a>
