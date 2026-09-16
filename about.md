@@ -10,10 +10,11 @@ css: about
 
 Hi, I'm Ines Panker. I'm a <b>senior staff engineer</b> at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a SaaS observability platform (the first engineer they hired, de-facto architect), and a <a href="/talks/"><b>conference speaker</b></a> on the human side of engineering, working remotely from Slovenia.
 
-I've been building software for almost <b>two decades</b>. These days <b>Python</b> is my weapon of choice.
+I've been building software for almost <b>two decades</b>, mostly in <b>Python</b> these days, and lately <b>Go</b>.
 
 <p>
   <span class="badge bg-yellow">Python</span>
+  <span class="badge bg-yellow">Go</span>
   <span class="badge bg-yellow">Django</span>
   <span class="badge bg-yellow">Celery</span>
   <span class="badge bg-yellow">PostgreSQL</span>
@@ -24,7 +25,7 @@ I've been building software for almost <b>two decades</b>. These days <b>Python<
   <a href="/talks/"><span class="badge bg-yellow">Conference speaking</span></a>
 </p>
 
-Anything tangled, a codebase, an argument, a hard idea, has a shape that makes it feel obvious. I'm good at finding that shape. With agents, code now gets written faster than it gets understood. And so my speciality has become <b>breaking code I didn't write</b>: it's the quickest way to find its shape.
+Anything tangled, a codebase, an argument, a hard idea, has a shape that makes it feel obvious. I'm good at finding that shape. With agents, code now gets written faster than it gets understood. And so my speciality has become <b>breaking code I didn't write</b>: it's the quickest way to understand it.
 
 How to contact me: <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank"><img src="/assets/linkedin.svg" width="18" height="18" alt="" style="vertical-align: -0.2em; margin-right: 0.2em;">LinkedIn</a> works best.
 
@@ -55,14 +56,14 @@ My software life, told as a timeline of firsts:
   <div class="career-item">
     <div class="career-years"><svg class="career-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 14.5 H6 L8.5 11.5 L10.5 17 L13 4 L15.5 20 L17.5 12.5 H22" fill="none" stroke="#35b0e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 2020</div>
     <div class="career-body">
-      <h3>First data-science excursion to reach production</h3>
+      <h3>First data-science system in production</h3>
       <p>A <b>self-tuning anomaly detector</b> for customer metrics: an algorithm that watches your production metrics and pings you when you deploy something that deteriorates them. It needs no manual calibration and has been running for many customers for years without hand-tuning. <a href="/2026/02/18/impact-of-a-deploy.html">How it works, explained with pictures.</a></p>
     </div>
   </div>
   <div class="career-item">
     <div class="career-years"><svg class="career-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21 V3" fill="none" stroke="#0288d1" stroke-width="2" stroke-linecap="round"/><path d="M6 4 L17.5 7.5 L6 11 Z" fill="none" stroke="#0288d1" stroke-width="2" stroke-linejoin="round"/></svg> 2020</div>
     <div class="career-body">
-      <h3>First time being engineer #1</h3>
+      <h3>First job as a startup's first engineer</h3>
       <p>Joined Sleuth when it was a prototype (<b>Python</b>). Everything that grew after that had my fingerprints on it.</p>
     </div>
   </div> 

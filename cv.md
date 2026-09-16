@@ -8,11 +8,13 @@ css: cv
 
 Ines Panker, <b>senior staff software engineer</b> and <b><a href="/talks/">conference speaker</a></b>. 
 
-I build backends and the architecture around them, in <b>Python</b>, and I have a habit of picking up whatever the job is missing:
+I build backends and the architecture around them, and I have a habit of picking up whatever the job is missing:
 - the <b>circuit breakers</b> when our 30+ integrations started flaking
 - the <b>anomaly-detection algorithm</b> when customer metrics needed watching
 - the <b>profiling middleware</b> when production slowed down
 - the <b>team training sessions</b>, which eventually outgrew the company and became conference talks
+
+With agents, code now gets written faster than it gets understood. So lately my speciality is <b>breaking code I didn't write</b>: it's the quickest way to understand it.
 
 <dl class="cv-meta">
   <div>
@@ -99,14 +101,14 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
     <div class="career-years">{% include career_icon.html name="nodes" %} 2020 – now</div>
     <div class="career-body">
       <h3>Senior Staff Software Engineer, <a href="https://www.sleuth.io" target="_blank">Sleuth</a> <span class="career-place">(San Francisco, remote)</span></h3>
-      <p>The first engineer they hired, and the <b>de-facto architect</b> ever since. A prototype grew into a multi-tenant <b>SaaS observability platform</b> for DORA metrics, environment health and real-time anomalies, and the company to about 40 people.</p>
+      <p>The first engineer they hired, and the <b>de-facto architect</b> ever since. A prototype grew into a multi-tenant <b>SaaS observability platform</b> for DORA metrics, environment health and real-time anomalies, and the company to about 40 people, with around 15 engineers building on that architecture at the peak.</p>
       <ul class="career-points">
         <li><b>Architecture from zero</b>: the multi-tenant data model, tenant isolation, service boundaries, API contracts, and the integration framework behind webhook and API ingestion from 30+ third-party services (Datadog, Sentry, PagerDuty, GitHub...).</li>
-        <li><b>Resilience</b>: a circuit breaker system guarding, at peak, <b>2-3 million API calls a day</b>, PostgreSQL advisory locks and Redis distributed locks for cluster-wide concurrency, and transaction-aware Celery tasks across 7 RabbitMQ queues.</li>
-        <li><b>The MTTR engine</b>: attributes deploys to incident episodes with a two-pointer matching algorithm, which is where the platform's mean-time-to-recovery number comes from.</li>
+        <li><b>Resilience</b>: a circuit breaker system guarding, at peak, <b>2-3 million API calls a day</b>, PostgreSQL advisory locks and Redis distributed locks for cluster-wide concurrency, and transaction-aware Celery tasks to prevent race conditions.</li>
+        <li><b>The MTTR engine</b>: attributes deploys to incident episodes, which is where the platform's mean-time-to-recovery number comes from.</li>
         <li><b>Applied ML</b>: a self-tuning anomaly detector for customer metrics, a fresh data point every 2 minutes, running for hundreds of clients for years without hand-tuning. <a href="/2026/02/18/impact-of-a-deploy.html">How it works, explained with pictures.</a></li>
         <li><b>LLM work</b>: the pipeline behind Sleuth's AI-usage analytics, and the small RAG behind the product's AI assistant.</li>
-        <li><b>Go tooling</b>: <a class="remote-link" href="https://github.com/sleuth-io/sx" target="_blank">sx</a>, an open-source CLI (300+ GitHub stars) for sharing AI skills across a team. Support for Copilot, Codex, Gemini, Cline and Kiro, plus team scoping and role-based access.</li>
+        <li><b>Go tooling</b>: <a class="remote-link" href="https://github.com/sleuth-io/sx" target="_blank">sx</a>, an open-source CLI (300+ GitHub stars) that gives a whole team the same AI skills and rules in whichever coding tool each person uses: Copilot, Codex, Gemini, Cline, Kiro. Plus team scoping and role-based access.</li>
       </ul>
       <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Go</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span> <span class="badge bg-teal">Pandas</span></p>
     </div>
@@ -166,7 +168,7 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
     <div class="career-years">{% include career_icon.html name="pen" %} 2019 – now</div>
     <div class="career-body">
       <h3>Writing this blog</h3>
-      <p>I aim to make complex ideas clear and relevant, blending technical insight with a focus on the people around the code.</p>
+      <p>Either production problems I had to solve, written up with diagrams: rate limits, circuit breakers, spotting a bad deploy. Or observations about humans interacting with code: cognitive biases that make smart devs write silly code, how we lie to each other with stats, ...</p>
     </div>
   </div>
   <div class="career-item">
@@ -180,7 +182,7 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
     <div class="career-years">{% include career_icon.html name="mic" %} 2006 – now</div>
     <div class="career-body">
       <h3>Teaching, and later conference speaking</h3>
-      <p>I started teaching before I learned programming, and I never stopped. I've given several talks all over Europe, all in my own time, no sponsors and no employer agenda. The subjects that interest me most are the lies we tell ourselves: how we estimate, how we argue, how we misuse statistics, ... <a href="/talks/">The full record and the talk catalogue.</a></p>
+      <p>I started teaching before I learned programming. Lately, I speak at conferences like Devoxx Belgium, J-Fall and PyCon Italia, all in my own time, no sponsors and no employer agenda. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ... <a href="/talks/">The full record and the talk catalogue.</a></p>
     </div>
   </div>
 </div>
