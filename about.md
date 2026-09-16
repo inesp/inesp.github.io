@@ -8,7 +8,7 @@ css: about
 
 <img class="about-photo" src="/assets/photos/ines-panker-460.jpeg" alt="Ines Panker" width="460" height="460">
 
-Hi, I'm Ines Panker. I'm a <b>senior staff engineer</b> at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a SaaS observability platform (the first engineer they hired, de-facto architect), and a <a href="/talks/"><b>conference speaker</b></a> on the human side of engineering, working remotely from Slovenia.
+Hi, I'm Ines Panker. I'm a <b>senior staff engineer</b> at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a multi-tenant SaaS observability platform. I was the first engineer they hired and became its <b>de-facto architect</b>, from the data model and the army of Celery workers to the anomaly detection and the circuit breakers guarding 2-3 million third-party API calls a day. I also speak at <a href="/talks/"><b>developer conferences</b></a> like Devoxx Belgium and J-Fall, and I work remotely from Slovenia.
 
 I've been building software for almost <b>two decades</b>, mostly in <b>Python</b> these days, and lately <b>Go</b>.
 
