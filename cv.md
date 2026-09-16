@@ -25,7 +25,7 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
   </div>
   <div>
     <dt>Writing code since</dt>
-    <dd>2010, Python since 2017</dd>
+    <dd>2010, Python since 2017, Go since 2025</dd>
   </div>
   <div>
     <dt>Find me</dt>
@@ -55,7 +55,7 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
   <div class="career-item">
     <div class="career-years">Core</div>
     <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span></p>
+      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Go</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span></p>
     </div>
   </div>
   <div class="career-item">
@@ -106,8 +106,9 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
         <li><b>The MTTR engine</b>: attributes deploys to incident episodes with a two-pointer matching algorithm, which is where the platform's mean-time-to-recovery number comes from.</li>
         <li><b>Applied ML</b>: a self-tuning anomaly detector for customer metrics, a fresh data point every 2 minutes, running for hundreds of clients for years without hand-tuning. <a href="/2026/02/18/impact-of-a-deploy.html">How it works, explained with pictures.</a></li>
         <li><b>LLM work</b>: the pipeline behind Sleuth's AI-usage analytics, and the small RAG behind the product's AI assistant.</li>
+        <li><b>Go tooling</b>: <a class="remote-link" href="https://github.com/sleuth-io/sx" target="_blank">sx</a>, an open-source CLI (300+ GitHub stars) for sharing AI skills across a team. Support for Copilot, Codex, Gemini, Cline and Kiro, plus team scoping and role-based access.</li>
       </ul>
-      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span> <span class="badge bg-teal">Pandas</span></p>
+      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Go</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span> <span class="badge bg-teal">Pandas</span></p>
     </div>
   </div>
   <div class="career-item">
@@ -137,7 +138,7 @@ I build backends and the architecture around them, in <b>Python</b>, and I have 
     <div class="career-body">
       <h3>Software Engineer, Infonova <span class="career-place">(Ljubljana)</span></h3>
       <p>First full-time job: an automated monthly invoicing system, from the calculation logic to the rendered documents.</p>
-      <p class="career-tech"><span class="badge bg-teal">C#</span> <span class="badge bg-teal">JavaScript</span></p>
+      <p class="career-tech"><span class="badge bg-teal">C#</span> <span class="badge bg-teal">Java</span> <span class="badge bg-teal">JavaScript</span></p>
     </div>
   </div>
   <div class="career-item">
