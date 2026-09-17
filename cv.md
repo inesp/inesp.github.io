@@ -8,9 +8,9 @@ css: cv
 
 Ines Panker, <b>senior staff software engineer</b> and <b><a href="/talks/">conference speaker</a></b>. 16 years in software, the last 6 as the first engineer and <b>de-facto architect</b> of a SaaS observability platform. The engineering teams built on what I designed, and I led the response when complex incidents crossed system boundaries.
 
-Lately my work has turned toward LLMs: I've worked on the <b>LLM pipeline</b> for our AI-usage analytics tool (a tool that gives insights into what your team does with AI). I've shipped my first <b>RAG</b>, written many Claude skills and rules and have <b>built several agents for my own tooling</b>.
+Lately my work has turned toward LLMs: I've worked on the <b>LLM pipeline</b> for our AI-usage analytics tool (a tool that gives insights into what your team does with AI). I've built the small <b>RAG</b> behind our product's AI assistant, written many Claude skills and rules and have <b>built several agents for my own tooling</b>.
 
-I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>Python Italia</b>. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ...
+I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>PyCon Italia</b>. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ...
 
 
 <dl class="cv-meta">
@@ -31,49 +31,6 @@ I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ develope
     <dd>Slovenian (native)<br>English (fluent)<br>German (fluent)<br>French (basic)</dd>
   </div>
 </dl>
-
-<div class="colorful"></div>
-
-## What I work with
-
-<div class="career-list career-wide career-skills">
-  <div class="career-item">
-    <div class="career-years">Core</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Go</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Systems</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Multi-tenant SaaS</span> <span class="badge bg-teal">Circuit breakers</span> <span class="badge bg-teal">Distributed locking</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Data</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Pandas</span> <span class="badge bg-teal">Anomaly detection</span> <span class="badge bg-teal">Time series</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">LLMs</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">LLM agents</span> <span class="badge bg-teal">Context engineering</span> <span class="badge bg-teal">RAG</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Explaining</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-teal">Technical writing</span> <span class="badge bg-teal">Documentation</span> <span class="badge bg-teal">Teaching</span> <span class="badge bg-teal">Conference talks</span></p>
-    </div>
-  </div>
-  <div class="career-item">
-    <div class="career-years">Earlier</div>
-    <div class="career-body">
-      <p class="career-tech"><span class="badge bg-yellow-washed-out">PHP</span> <span class="badge bg-yellow-washed-out">MySQL</span> <span class="badge bg-yellow-washed-out">JavaScript</span> <span class="badge bg-yellow-washed-out">C#</span> <span class="badge bg-yellow-washed-out">Java</span></p>
-    </div>
-  </div>
-</div>
 
 <div class="colorful"></div>
 
@@ -132,6 +89,49 @@ I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ develope
     <div class="career-body">
       <h3>Lecturer (student job), Housing Co. <span class="career-place">(Ljubljana)</span></h3>
       <p>Taught adults the basics of computers and Microsoft Office. The explaining-things career started before the engineering one.</p>
+    </div>
+  </div>
+</div>
+
+<div class="colorful"></div>
+
+## What I work with
+
+<div class="career-list career-wide career-skills">
+  <div class="career-item">
+    <div class="career-years">Core</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Go</span> <span class="badge bg-teal">Django</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">Celery</span> <span class="badge bg-teal">PostgreSQL</span> <span class="badge bg-teal">Redis</span> <span class="badge bg-teal">RabbitMQ</span> <span class="badge bg-teal">Elasticsearch</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Systems</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Multi-tenant SaaS</span> <span class="badge bg-teal">Circuit breakers</span> <span class="badge bg-teal">Distributed locking</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Data</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Pandas</span> <span class="badge bg-teal">Anomaly detection</span> <span class="badge bg-teal">Time series</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">LLMs</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">LLM agents</span> <span class="badge bg-teal">Context engineering</span> <span class="badge bg-teal">RAG</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Explaining</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-teal">Technical writing</span> <span class="badge bg-teal">Documentation</span> <span class="badge bg-teal">Teaching</span> <span class="badge bg-teal">Conference talks</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">Earlier</div>
+    <div class="career-body">
+      <p class="career-tech"><span class="badge bg-yellow-washed-out">PHP</span> <span class="badge bg-yellow-washed-out">MySQL</span> <span class="badge bg-yellow-washed-out">JavaScript</span> <span class="badge bg-yellow-washed-out">C#</span> <span class="badge bg-yellow-washed-out">Java</span></p>
     </div>
   </div>
 </div>
