@@ -58,9 +58,11 @@ I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ develope
     <div class="career-years">{% include career_icon.html name="magnifier" %} 2017 – 2019</div>
     <div class="career-body">
       <h3>Software Engineer, Reciprocity <span class="career-place">(now ZenGRC, San Francisco, remote)</span></h3>
+      <p>Contract engineer on ZenGRC, a SaaS platform for governance, risk and compliance.</p>
       <ul class="career-points">
-        <li>Reverse-engineered the legacy query patterns, mapped the hidden dependencies, and <b>rebuilt the model layer</b> on top of what I found.</li>
-        <li>Ran internal training sessions on development environments, performance work and code practices.</li>
+        <li><b>Core data layer</b>: a data layer originally built for CSV import had spread until the whole app queried through it instead of the SQLAlchemy models. Made the case for moving off it, got it approved, and planned an <b>incremental migration</b>. Reverse-engineered the undocumented layer to map hidden dependencies and risks, then moved the app back onto the models piece by piece, with the product live.</li>
+        <li><b>Platform</b>: built product features, resolved production issues, and moved production code from Python 2 to Python 3.</li>
+        <li><b>Mentoring</b>: advised the team on design and code questions, and ran internal workshops on development environments, Python practices and cross-team communication.</li>
       </ul>
       <p class="career-tech"><span class="badge bg-teal">Python</span> <span class="badge bg-teal">Flask</span> <span class="badge bg-teal">SQLAlchemy</span> <span class="badge bg-teal">PostgreSQL</span></p>
     </div>
