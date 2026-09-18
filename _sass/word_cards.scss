@@ -1,0 +1,81 @@
+@import "colors";
+
+// ------------------------ WORD CARDS
+// A 2-column markdown table (word | meaning), shown as a grid of cards.
+// Usage: put {:.word-cards} on the line before the table.
+// Notes inside a meaning, in this order:
+//   <span class="confuse">{% include career_icon.html name="confuse" %}Not the same as...</span>
+//   <span class="watch">{% include career_icon.html name="watch" %}The trap.</span>
+//   {% include post_link.html slug="scaling-a-system-reads" %}
+.article-body table.word-cards {
+  display: block;
+  overflow: visible;
+  border-radius: 0;
+
+  // Break out of the 800px reading column, same as img.breakout in post.scss.
+  @media (min-width: 992px) {
+    width: clamp(100%, calc(75vw - 3rem), calc(100% + 12rem));
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(270px, 100%), 1fr));
+    gap: $half-standard-margin;
+  }
+
+  tbody tr,
+  tbody tr:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid $color-gray;
+    border-top: 4px solid $color-yellow-dark;
+    border-radius: $standard-radius;
+    padding: 1rem 1.25rem;
+  }
+
+  tbody tr:hover,
+  tbody tr:nth-child(even):hover {
+    background-color: $color-gray-lightest;
+    border-left: 1px solid $color-gray;
+  }
+
+  td {
+    display: block;
+    padding: 0;
+    border-top: none;
+  }
+
+  td:first-child {
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+
+  .watch,
+  .confuse {
+    display: block;
+    margin-top: 0.75rem;
+    padding-top: 0.6rem;
+    border-top: 1px dashed $color-gray;
+    color: $color-gray-4;
+
+    .career-icon {
+      width: 1.1em;
+      height: 1.1em;
+      margin-right: 0.35em;
+    }
+  }
+
+  .more {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.9em;
+  }
+}

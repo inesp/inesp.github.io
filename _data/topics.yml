@@ -27,6 +27,9 @@ The Algorithm Decided:
   home_intro: ""
   icon: "gavel"
 
+Scaling a System:
+  display_title: "Scaling a System"
+
 Engineering Research:
   home_intro: "Posts that draw from research papers"
 
@@ -39,4 +42,5 @@ collection_tags:
   - Cognitive Biases in Code
   - API Resilience Patterns
   - The Algorithm Decided
+  - Scaling a System
 
