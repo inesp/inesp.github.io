@@ -1,0 +1,13 @@
+{%- comment -%}
+  A "More in <post title>" link at the bottom of a glossary word card.
+  Finds the post by its slug (the filename without the date), so rescheduling a post doesn't break it.
+  Prints nothing until the post is published (future-dated posts aren't in site.posts),
+  so unlike post_url it can point at posts that aren't out yet without breaking the build.
+  Usage: {% include post_link.html slug="scaling-a-system-reads" %}
+{%- endcomment -%}
+{%- for p in site.posts -%}
+{%- if p.slug == include.slug -%}
+<span class="more">More in <a href="{{ p.url | relative_url }}">{{ p.title | remove_first: "Scaling a System, " }}</a></span>
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
