@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 334" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+    <marker id="a-teal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#06bdad"/></marker>
+  </defs>
+  <text x="20" y="26" font-size="14" text-anchor="start"><tspan fill="#008378" font-weight="bold" letter-spacing="1">WRITES</tspan><tspan fill="#6c757d"> · how much comes in</tspan></text>
+
+  <!-- Boxes -->
+  <rect x="20" y="44" width="140" height="90" rx="4" fill="#e0f7f5" stroke="#06bdad" stroke-width="1.5"/>
+  <text x="90.0" y="87" font-size="28" fill="#212529" font-weight="bold" text-anchor="middle">100</text>
+  <text x="90.0" y="113" font-size="14" fill="#6c757d" text-anchor="middle">customers</text>
+  <rect x="290" y="44" width="140" height="90" rx="4" fill="#e0f7f5" stroke="#06bdad" stroke-width="1.5"/>
+  <text x="360.0" y="87" font-size="28" fill="#212529" font-weight="bold" text-anchor="middle">200k</text>
+  <text x="360.0" y="113" font-size="14" fill="#6c757d" text-anchor="middle">users/day</text>
+  <rect x="560" y="44" width="140" height="90" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="630.0" y="87" font-size="28" fill="#212529" font-weight="bold" text-anchor="middle">10M</text>
+  <text x="630.0" y="113" font-size="14" fill="#495057" text-anchor="middle">events/day</text>
+  <rect x="20" y="232" width="140" height="90" rx="4" fill="#e0f7f5" stroke="#06bdad" stroke-width="1.5"/>
+  <text x="90.0" y="275" font-size="28" fill="#212529" font-weight="bold" text-anchor="middle">115</text>
+  <text x="90.0" y="301" font-size="14" fill="#6c757d" text-anchor="middle">events/s</text>
+  <rect x="290" y="232" width="140" height="90" rx="4" fill="#ffcf65" stroke="#e6a000" stroke-width="1.5"/>
+  <text x="360.0" y="275" font-size="28" fill="#212529" font-weight="bold" text-anchor="middle">350</text>
+  <text x="360.0" y="301" font-size="14" fill="#495057" text-anchor="middle">events/s at peak</text>
+  <rect x="560" y="232" width="140" height="90" rx="4" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="630.0" y="275" font-size="28" fill="#212529" font-weight="bold" text-anchor="middle">35</text>
+  <text x="630.0" y="301" font-size="14" fill="#495057" text-anchor="middle">requests/s</text>
+
+  <!-- Arrows -->
+  <line x1="160" y1="89.0" x2="288" y2="89.0" stroke="#06bdad" stroke-width="2.5" marker-end="url(#a-teal)"/>
+  <text x="224.0" y="79.0" font-size="14" fill="#008378" font-weight="bold" text-anchor="middle">× 2k users</text>
+  <line x1="430" y1="89.0" x2="558" y2="89.0" stroke="#06bdad" stroke-width="2.5" marker-end="url(#a-teal)"/>
+  <text x="494.0" y="79.0" font-size="14" fill="#008378" font-weight="bold" text-anchor="middle">× 50 events</text>
+  <line x1="160" y1="277.0" x2="288" y2="277.0" stroke="#06bdad" stroke-width="2.5" marker-end="url(#a-teal)"/>
+  <text x="224.0" y="267.0" font-size="14" fill="#008378" font-weight="bold" text-anchor="middle">× 3 at peak</text>
+  <line x1="430" y1="277.0" x2="558" y2="277.0" stroke="#06bdad" stroke-width="2.5" marker-end="url(#a-teal)"/>
+  <text x="494.0" y="267.0" font-size="14" fill="#008378" font-weight="bold" text-anchor="middle">÷ 10 per batch</text>
+  <path d="M630.0,134 V180 H90.0 V230" fill="none" stroke="#06bdad" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#a-teal)"/>
+  <text x="360.0" y="171" font-size="14" fill="#008378" font-weight="bold" text-anchor="middle">÷ 86,400 seconds in a day</text>
+</svg>

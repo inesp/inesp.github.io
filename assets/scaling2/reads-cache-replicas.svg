@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075 486" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="1075" height="486" fill="#fff"/>
+  <defs>
+    <marker id="a-write" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#06bdad"/></marker>
+    <marker id="a-read" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#35b0e8"/></marker>
+    <marker id="a-repl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#e6a000"/></marker>
+    <marker id="a-old" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#dadada"/></marker>
+  </defs>
+
+  <!-- Arrows -->
+  <path d="M140,82 H178" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M230,82 H268" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M432,82 H468" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M545,110 V150" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M632,192 H690" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M730,217 V256" fill="none" stroke="#06bdad" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-write)"/>
+  <text x="738" y="242" font-size="12" fill="#008378" font-weight="bold" text-anchor="start">rollups, every few min</text>
+  <path d="M610,152 V128 H990 V112" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M140,302 H178" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M230,302 H268" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M790,374 V410" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M420,302 H468" fill="none" stroke="#35b0e8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-read)"/>
+  <path d="M545,330 V404" fill="none" stroke="#35b0e8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-read)"/>
+  <text x="553" y="372" font-size="12" fill="#0288d1" font-weight="bold" text-anchor="start">on a miss</text>
+  <path d="M710,374 V440 H634" fill="none" stroke="#e6a000" stroke-width="2" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#a-repl)"/>
+  <text x="718" y="397" font-size="12" fill="#e6a000" font-weight="bold" text-anchor="start">replication</text>
+  <path d="M80,164 V114" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M80,220 V272" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <text x="20" y="22" font-size="12" fill="#9f9f9f" text-anchor="start">gray = from earlier parts, color = new in this part</text>
+
+  <!-- Everything from parts 1 and 2, in gray -->
+  <rect x="20" y="54" width="120" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="80.0" y="79.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">SDK</text>
+  <text x="80.0" y="97.0" font-size="12" fill="#9f9f9f" text-anchor="middle">in their app</text>
+  <rect x="20" y="274" width="120" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="80.0" y="299.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Their team</text>
+  <text x="80.0" y="317.0" font-size="12" fill="#9f9f9f" text-anchor="middle">in a browser</text>
+  <rect x="180" y="54" width="50" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="205.0" y="86.66666666666667" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">LB</text>
+  <rect x="180" y="274" width="50" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="205.0" y="306.6666666666667" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">LB</text>
+  <rect x="282" y="42" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <rect x="276" y="48" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <rect x="270" y="54" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="345.0" y="79.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Ingestion API ×3</text>
+  <text x="345.0" y="97.0" font-size="12" fill="#9f9f9f" text-anchor="middle">one per zone</text>
+  <rect x="276" y="268" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <rect x="270" y="274" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="345.0" y="299.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Dashboard app ×2+</text>
+  <text x="345.0" y="317.0" font-size="12" fill="#9f9f9f" text-anchor="middle">across zones</text>
+  <rect x="482" y="152" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <rect x="476" y="158" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <rect x="470" y="164" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="545.0" y="189.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Workers ×N</text>
+  <text x="545.0" y="207.0" font-size="12" fill="#9f9f9f" text-anchor="middle">across zones</text>
+  <rect x="680" y="150" width="220" height="224" rx="8" fill="none" stroke="#dadada" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="680" y="142" font-size="13" fill="#9f9f9f" font-weight="bold" text-anchor="start" letter-spacing="1">POSTGRES · PRIMARY</text>
+  <rect x="470" y="54" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="545.0" y="79.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Queue (SQS)</text>
+  <text x="545.0" y="97.0" font-size="12" fill="#9f9f9f" text-anchor="middle">keeps the batch</text>
+  <rect x="692" y="167" width="196" height="50" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="790.0" y="189.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">events</text>
+  <text x="790.0" y="207.0" font-size="12" fill="#9f9f9f" text-anchor="middle">all raw events</text>
+  <rect x="692" y="316" width="196" height="46" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="790.0" y="336.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">app data</text>
+  <text x="790.0" y="354.0" font-size="12" fill="#9f9f9f" text-anchor="middle">customers, dashboards</text>
+  <rect x="640" y="164" width="24" height="210" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="652.0" y="273.0" font-size="12" fill="#9f9f9f" font-weight="bold" text-anchor="middle" transform="rotate(-90, 652.0, 269.0)">PgBouncer</text>
+  <rect x="692" y="412" width="196" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="790.0" y="437.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Standby</text>
+  <text x="790.0" y="455.0" font-size="12" fill="#9f9f9f" text-anchor="middle">another zone, takes over</text>
+
+  <!-- NEW: rollups, precomputed counts -->
+  <rect x="692" y="258" width="196" height="46" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="790.0" y="278.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">hourly_counts</text>
+  <text x="790.0" y="296.0" font-size="12" fill="#6c757d" text-anchor="middle">the rollups</text>
+
+  <!-- NEW: a cache for finished charts, and read replicas for the dashboards -->
+  <rect x="470" y="274" width="150" height="56" rx="4" fill="#e1f5fe" stroke="#35b0e8" stroke-width="1.5"/>
+  <text x="545.0" y="299.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Cache</text>
+  <text x="545.0" y="317.0" font-size="12" fill="#6c757d" text-anchor="middle">finished charts</text>
+  <rect x="476" y="406" width="150" height="56" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <rect x="470" y="412" width="150" height="56" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="545.0" y="437.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Read replicas</text>
+  <text x="545.0" y="455.0" font-size="12" fill="#6c757d" text-anchor="middle">the dashboards read here</text>
+
+  <!-- CDN for the static files, S3 for the raw copies -->
+  <rect x="20" y="164" width="120" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="80.0" y="189.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">CDN</text>
+  <text x="80.0" y="207.0" font-size="12" fill="#9f9f9f" text-anchor="middle">static files</text>
+  <rect x="925" y="54" width="130" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="990.0" y="79.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">S3</text>
+  <text x="990.0" y="97.0" font-size="12" fill="#9f9f9f" text-anchor="middle">raw batches</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 350" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <defs>
+
+  </defs>
+  <text x="80" y="30" font-size="18" fill="#212529" font-weight="bold" text-anchor="start">Events per day, per customer</text>
+  <text x="80" y="52" font-size="14" fill="#6c757d" text-anchor="start">10M a day in total, a typical long tail</text>
+
+  <!-- Grid lines and y axis -->
+  <line x1="80" y1="252.5" x2="760" y2="252.5" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="257.5" font-size="14" fill="#6c757d" text-anchor="end">0.5M</text>
+  <line x1="80" y1="195" x2="760" y2="195" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="200" font-size="14" fill="#6c757d" text-anchor="end">1M</text>
+  <line x1="80" y1="137.5" x2="760" y2="137.5" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="142.5" font-size="14" fill="#6c757d" text-anchor="end">1.5M</text>
+  <line x1="80" y1="80" x2="760" y2="80" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="70" y="85" font-size="14" fill="#6c757d" text-anchor="end">2M</text>
+  <text x="70" y="315" font-size="14" fill="#6c757d" text-anchor="end">0</text>
+
+  <!-- Bars: biggest customer in red, the long tail in gray -->
+  <rect x="80.8" y="80.0" width="5.2" height="230.0" fill="#fd456f"/>
+  <rect x="87.6" y="196.4" width="5.2" height="113.6" fill="#9f9f9f"/>
+  <rect x="94.4" y="234.9" width="5.2" height="75.1" fill="#9f9f9f"/>
+  <rect x="101.2" y="253.9" width="5.2" height="56.1" fill="#9f9f9f"/>
+  <rect x="108.0" y="265.3" width="5.2" height="44.7" fill="#9f9f9f"/>
+  <rect x="114.8" y="272.9" width="5.2" height="37.1" fill="#9f9f9f"/>
+  <rect x="121.6" y="278.3" width="5.2" height="31.7" fill="#9f9f9f"/>
+  <rect x="128.4" y="282.3" width="5.2" height="27.7" fill="#9f9f9f"/>
+  <rect x="135.2" y="285.5" width="5.2" height="24.5" fill="#9f9f9f"/>
+  <rect x="142.0" y="287.9" width="5.2" height="22.1" fill="#9f9f9f"/>
+  <rect x="148.8" y="290.0" width="5.2" height="20.0" fill="#9f9f9f"/>
+  <rect x="155.6" y="291.7" width="5.2" height="18.3" fill="#9f9f9f"/>
+  <rect x="162.4" y="293.1" width="5.2" height="16.9" fill="#9f9f9f"/>
+  <rect x="169.2" y="294.3" width="5.2" height="15.7" fill="#9f9f9f"/>
+  <rect x="176.0" y="295.4" width="5.2" height="14.6" fill="#9f9f9f"/>
+  <rect x="182.8" y="296.3" width="5.2" height="13.7" fill="#9f9f9f"/>
+  <rect x="189.6" y="297.2" width="5.2" height="12.8" fill="#9f9f9f"/>
+  <rect x="196.4" y="297.9" width="5.2" height="12.1" fill="#9f9f9f"/>
+  <rect x="203.2" y="298.5" width="5.2" height="11.5" fill="#9f9f9f"/>
+  <rect x="210.0" y="299.1" width="5.2" height="10.9" fill="#9f9f9f"/>
+  <rect x="216.8" y="299.6" width="5.2" height="10.4" fill="#9f9f9f"/>
+  <rect x="223.6" y="300.1" width="5.2" height="9.9" fill="#9f9f9f"/>
+  <rect x="230.4" y="300.6" width="5.2" height="9.4" fill="#9f9f9f"/>
+  <rect x="237.2" y="301.0" width="5.2" height="9.0" fill="#9f9f9f"/>
+  <rect x="244.0" y="301.3" width="5.2" height="8.7" fill="#9f9f9f"/>
+  <rect x="250.8" y="301.7" width="5.2" height="8.3" fill="#9f9f9f"/>
+  <rect x="257.6" y="302.0" width="5.2" height="8.0" fill="#9f9f9f"/>
+  <rect x="264.4" y="302.3" width="5.2" height="7.7" fill="#9f9f9f"/>
+  <rect x="271.2" y="302.5" width="5.2" height="7.5" fill="#9f9f9f"/>
+  <rect x="278.0" y="302.8" width="5.2" height="7.2" fill="#9f9f9f"/>
+  <rect x="284.8" y="303.0" width="5.2" height="7.0" fill="#9f9f9f"/>
+  <rect x="291.6" y="303.3" width="5.2" height="6.7" fill="#9f9f9f"/>
+  <rect x="298.4" y="303.5" width="5.2" height="6.5" fill="#9f9f9f"/>
+  <rect x="305.2" y="303.7" width="5.2" height="6.3" fill="#9f9f9f"/>
+  <rect x="312.0" y="303.8" width="5.2" height="6.2" fill="#9f9f9f"/>
+  <rect x="318.8" y="304.0" width="5.2" height="6.0" fill="#9f9f9f"/>
+  <rect x="325.6" y="304.2" width="5.2" height="5.8" fill="#9f9f9f"/>
+  <rect x="332.4" y="304.3" width="5.2" height="5.7" fill="#9f9f9f"/>
+  <rect x="339.2" y="304.5" width="5.2" height="5.5" fill="#9f9f9f"/>
+  <rect x="346.0" y="304.6" width="5.2" height="5.4" fill="#9f9f9f"/>
+  <rect x="352.8" y="304.8" width="5.2" height="5.2" fill="#9f9f9f"/>
+  <rect x="359.6" y="304.9" width="5.2" height="5.1" fill="#9f9f9f"/>
+  <rect x="366.4" y="305.0" width="5.2" height="5.0" fill="#9f9f9f"/>
+  <rect x="373.2" y="305.1" width="5.2" height="4.9" fill="#9f9f9f"/>
+  <rect x="380.0" y="305.2" width="5.2" height="4.8" fill="#9f9f9f"/>
+  <rect x="386.8" y="305.3" width="5.2" height="4.7" fill="#9f9f9f"/>
+  <rect x="393.6" y="305.4" width="5.2" height="4.6" fill="#9f9f9f"/>
+  <rect x="400.4" y="305.5" width="5.2" height="4.5" fill="#9f9f9f"/>
+  <rect x="407.2" y="305.6" width="5.2" height="4.4" fill="#9f9f9f"/>
+  <rect x="414.0" y="305.7" width="5.2" height="4.3" fill="#9f9f9f"/>
+  <rect x="420.8" y="305.8" width="5.2" height="4.2" fill="#9f9f9f"/>
+  <rect x="427.6" y="305.9" width="5.2" height="4.1" fill="#9f9f9f"/>
+  <rect x="434.4" y="306.0" width="5.2" height="4.0" fill="#9f9f9f"/>
+  <rect x="441.2" y="306.0" width="5.2" height="4.0" fill="#9f9f9f"/>
+  <rect x="448.0" y="306.1" width="5.2" height="3.9" fill="#9f9f9f"/>
+  <rect x="454.8" y="306.2" width="5.2" height="3.8" fill="#9f9f9f"/>
+  <rect x="461.6" y="306.3" width="5.2" height="3.7" fill="#9f9f9f"/>
+  <rect x="468.4" y="306.3" width="5.2" height="3.7" fill="#9f9f9f"/>
+  <rect x="475.2" y="306.4" width="5.2" height="3.6" fill="#9f9f9f"/>
+  <rect x="482.0" y="306.4" width="5.2" height="3.6" fill="#9f9f9f"/>
+  <rect x="488.8" y="306.5" width="5.2" height="3.5" fill="#9f9f9f"/>
+  <rect x="495.6" y="306.6" width="5.2" height="3.4" fill="#9f9f9f"/>
+  <rect x="502.4" y="306.6" width="5.2" height="3.4" fill="#9f9f9f"/>
+  <rect x="509.2" y="306.7" width="5.2" height="3.3" fill="#9f9f9f"/>
+  <rect x="516.0" y="306.7" width="5.2" height="3.3" fill="#9f9f9f"/>
+  <rect x="522.8" y="306.8" width="5.2" height="3.2" fill="#9f9f9f"/>
+  <rect x="529.6" y="306.8" width="5.2" height="3.2" fill="#9f9f9f"/>
+  <rect x="536.4" y="306.9" width="5.2" height="3.1" fill="#9f9f9f"/>
+  <rect x="543.2" y="306.9" width="5.2" height="3.1" fill="#9f9f9f"/>
+  <rect x="550.0" y="307.0" width="5.2" height="3.0" fill="#9f9f9f"/>
+  <rect x="556.8" y="307.0" width="5.2" height="3.0" fill="#9f9f9f"/>
+  <rect x="563.6" y="307.0" width="5.2" height="3.0" fill="#9f9f9f"/>
+  <rect x="570.4" y="307.1" width="5.2" height="2.9" fill="#9f9f9f"/>
+  <rect x="577.2" y="307.1" width="5.2" height="2.9" fill="#9f9f9f"/>
+  <rect x="584.0" y="307.2" width="5.2" height="2.8" fill="#9f9f9f"/>
+  <rect x="590.8" y="307.2" width="5.2" height="2.8" fill="#9f9f9f"/>
+  <rect x="597.6" y="307.2" width="5.2" height="2.8" fill="#9f9f9f"/>
+  <rect x="604.4" y="307.3" width="5.2" height="2.7" fill="#9f9f9f"/>
+  <rect x="611.2" y="307.3" width="5.2" height="2.7" fill="#9f9f9f"/>
+  <rect x="618.0" y="307.3" width="5.2" height="2.7" fill="#9f9f9f"/>
+  <rect x="624.8" y="307.4" width="5.2" height="2.6" fill="#9f9f9f"/>
+  <rect x="631.6" y="307.4" width="5.2" height="2.6" fill="#9f9f9f"/>
+  <rect x="638.4" y="307.4" width="5.2" height="2.6" fill="#9f9f9f"/>
+  <rect x="645.2" y="307.5" width="5.2" height="2.5" fill="#9f9f9f"/>
+  <rect x="652.0" y="307.5" width="5.2" height="2.5" fill="#9f9f9f"/>
+  <rect x="658.8" y="307.5" width="5.2" height="2.5" fill="#9f9f9f"/>
+  <rect x="665.6" y="307.6" width="5.2" height="2.4" fill="#9f9f9f"/>
+  <rect x="672.4" y="307.6" width="5.2" height="2.4" fill="#9f9f9f"/>
+  <rect x="679.2" y="307.6" width="5.2" height="2.4" fill="#9f9f9f"/>
+  <rect x="686.0" y="307.6" width="5.2" height="2.4" fill="#9f9f9f"/>
+  <rect x="692.8" y="307.7" width="5.2" height="2.3" fill="#9f9f9f"/>
+  <rect x="699.6" y="307.7" width="5.2" height="2.3" fill="#9f9f9f"/>
+  <rect x="706.4" y="307.7" width="5.2" height="2.3" fill="#9f9f9f"/>
+  <rect x="713.2" y="307.7" width="5.2" height="2.3" fill="#9f9f9f"/>
+  <rect x="720.0" y="307.8" width="5.2" height="2.2" fill="#9f9f9f"/>
+  <rect x="726.8" y="307.8" width="5.2" height="2.2" fill="#9f9f9f"/>
+  <rect x="733.6" y="307.8" width="5.2" height="2.2" fill="#9f9f9f"/>
+  <rect x="740.4" y="307.8" width="5.2" height="2.2" fill="#9f9f9f"/>
+  <rect x="747.2" y="307.9" width="5.2" height="2.1" fill="#9f9f9f"/>
+  <rect x="754.0" y="307.9" width="5.2" height="2.1" fill="#9f9f9f"/>
+  <line x1="80" y1="310" x2="760" y2="310" stroke="#9f9f9f" stroke-width="1.5"/>
+
+  <!-- Average line -->
+  <line x1="80" y1="298.5" x2="760" y2="298.5" stroke="#35b0e8" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="760" y="290.5" font-size="14" fill="#0288d1" font-weight="bold" text-anchor="end">average: 0.1M a day</text>
+  <text x="760" y="268.5" font-size="14" fill="#6c757d" text-anchor="end">82 of 100 customers are below the average</text>
+  <text x="100" y="96" font-size="18" fill="#e60038" font-weight="bold" text-anchor="start">Biggest customer: 2M a day</text>
+  <text x="100" y="118" font-size="14" fill="#212529" text-anchor="start">20× the average</text>
+  <text x="100" y="138" font-size="14" fill="#212529" text-anchor="start">a 90-day chart comes from 180 M rows</text>
+  <text x="420" y="336" font-size="14" fill="#6c757d" text-anchor="middle">100 customers, from biggest to smallest</text>
+</svg>
