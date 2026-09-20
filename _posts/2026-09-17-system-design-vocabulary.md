@@ -2,6 +2,7 @@
 title: "System Design Vocabulary"
 tags: ["Scaling a System", "System Design"]
 series: Scaling a System
+next_post: 2026-09-20-scaling-a-system-I
 biblio:
   - title: "Designing Data-Intensive Applications (Martin Kleppmann)"
     link: https://dataintensive.net/

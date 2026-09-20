@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075 480" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="1075" height="480" fill="#fff"/>
+  <defs>
+    <marker id="a-old" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#dadada"/></marker>
+  </defs>
+
+  <!-- The day-one map, gray: it is only the backdrop here -->
+  <rect x="20" y="104" width="120" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="80.0" y="129.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">SDK</text>
+  <text x="80.0" y="147.0" font-size="12" fill="#9f9f9f" text-anchor="middle">in their app</text>
+  <rect x="20" y="324" width="120" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="80.0" y="349.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Their team</text>
+  <text x="80.0" y="367.0" font-size="12" fill="#9f9f9f" text-anchor="middle">in a browser</text>
+  <rect x="270" y="104" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="345.0" y="129.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Ingestion API</text>
+  <text x="345.0" y="147.0" font-size="12" fill="#9f9f9f" text-anchor="middle">store, answer 202</text>
+  <rect x="270" y="324" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="345.0" y="349.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Dashboard app</text>
+  <text x="345.0" y="367.0" font-size="12" fill="#9f9f9f" text-anchor="middle">log in, look at charts</text>
+  <rect x="470" y="104" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="545.0" y="129.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Queue</text>
+  <text x="545.0" y="147.0" font-size="12" fill="#9f9f9f" text-anchor="middle">keeps the batch</text>
+  <rect x="470" y="214" width="150" height="56" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="545.0" y="239.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">Workers</text>
+  <text x="545.0" y="257.0" font-size="12" fill="#9f9f9f" text-anchor="middle">parse, enrich, dedupe</text>
+  <rect x="692" y="217" width="196" height="50" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="790.0" y="239.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">events</text>
+  <text x="790.0" y="257.0" font-size="12" fill="#9f9f9f" text-anchor="middle">all raw events</text>
+  <rect x="692" y="308" width="196" height="46" rx="4" fill="#fff" stroke="#dadada" stroke-width="1.5"/>
+  <text x="790.0" y="328.0" font-size="14" fill="#9f9f9f" font-weight="bold" text-anchor="middle">app data</text>
+  <text x="790.0" y="346.0" font-size="12" fill="#9f9f9f" text-anchor="middle">customers, dashboards</text>
+
+  <!-- Only Postgres gets a container here: the ONE APP frame is noise in a metrics figure -->
+  <rect x="680" y="200" width="220" height="168" rx="8" fill="none" stroke="#dadada" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="680" y="192" font-size="13" fill="#9f9f9f" font-weight="bold" text-anchor="start" letter-spacing="1">POSTGRES</text>
+
+  <!-- Write path, then read path -->
+  <path d="M140,132 H268" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M420,132 H468" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M545,160 V212" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M620,242 H690" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M140,352 H268" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+  <path d="M420,352 H678" fill="none" stroke="#dadada" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-old)"/>
+
+  <!-- Each metric sits on the box it is measured at -->
+  <rect x="4.450000000000003" y="50" width="151.1" height="26" rx="13" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="80" y="67.0" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">volume per customer</text>
+  <path d="M80,76 V104" stroke="#e7d749" stroke-width="2"/>
+  <rect x="262.55" y="50" width="164.9" height="26" rx="13" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="345" y="67.0" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">p99 latency, 5xx rate</text>
+  <path d="M345,76 V104" stroke="#e7d749" stroke-width="2"/>
+  <rect x="462.55" y="50" width="164.9" height="26" rx="13" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="545" y="67.0" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">length, age of oldest</text>
+  <path d="M545,76 V104" stroke="#e7d749" stroke-width="2"/>
+  <rect x="476.35" y="14" width="137.3" height="26" rx="13" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="545" y="31.0" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">dead-letter depth</text>
+  <rect x="479.8" y="288" width="130.4" height="26" rx="13" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="545" y="305.0" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">events in vs out</text>
+  <path d="M545,288 V270" stroke="#e7d749" stroke-width="2"/>
+  <rect x="704.1" y="392" width="171.8" height="26" rx="13" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="790" y="409.0" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">disk growth, days left</text>
+  <path d="M790,392 V368" stroke="#e7d749" stroke-width="2"/>
+  <rect x="252.2" y="400" width="185.60000000000002" height="26" rx="13" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="345" y="417.0" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">p99 query time, timeouts</text>
+  <path d="M345,400 V390" stroke="#e7d749" stroke-width="2"/>
+
+  <!-- The end-to-end check spans the whole picture, so it gets a bracket -->
+  <path d="M80,448 V458 H790 V448" fill="none" stroke="#e7d749" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="435" y="442" font-size="12" fill="#6c757d" font-weight="bold" text-anchor="middle">end-to-end: a test event, timed until a chart shows it</text>
+</svg>

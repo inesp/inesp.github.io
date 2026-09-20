@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075 350" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="1075" height="350" fill="#fff"/>
+  <defs>
+    <marker id="a-write" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#06bdad"/></marker>
+    <marker id="a-read" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#35b0e8"/></marker>
+    <marker id="a-repl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#e6a000"/></marker>
+    <marker id="a-old" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><polygon points="0,0 10,5 0,10" fill="#dadada"/></marker>
+  </defs>
+
+  <!-- Write path -->
+  <path d="M140,82 H268" fill="none" stroke="#06bdad" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-write)"/>
+  <text x="204" y="74" font-size="12" fill="#008378" font-weight="bold" text-anchor="middle">batches</text>
+  <path d="M420,82 H468" fill="none" stroke="#06bdad" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-write)"/>
+  <path d="M545,110 V162" fill="none" stroke="#06bdad" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-write)"/>
+  <text x="553" y="140" font-size="12" fill="#008378" font-weight="bold" text-anchor="start">take</text>
+  <path d="M620,192 H690" fill="none" stroke="#06bdad" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-write)"/>
+  <text x="655" y="184" font-size="12" fill="#008378" font-weight="bold" text-anchor="middle">insert</text>
+  <path d="M600,164 V128 H990 V112" fill="none" stroke="#06bdad" stroke-width="4" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#a-write)"/>
+  <text x="790" y="122" font-size="12" fill="#008378" font-weight="bold" text-anchor="middle">raw copies, for safekeeping</text>
+
+  <!-- Read path -->
+  <path d="M140,302 H268" fill="none" stroke="#35b0e8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-read)"/>
+  <text x="204" y="294" font-size="12" fill="#0288d1" font-weight="bold" text-anchor="middle">opens a chart</text>
+  <path d="M420,302 H678" fill="none" stroke="#35b0e8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-read)"/>
+  <text x="545" y="294" font-size="12" fill="#0288d1" font-weight="bold" text-anchor="middle">queries</text>
+  <path d="M80,164 V114" fill="none" stroke="#35b0e8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-read)"/>
+  <path d="M80,220 V272" fill="none" stroke="#35b0e8" stroke-width="2" stroke-linejoin="round" marker-end="url(#a-read)"/>
+
+  <!-- Customers' world: SDK and their team -->
+  <rect x="20" y="54" width="120" height="56" rx="4" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5"/>
+  <text x="80.0" y="79.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">SDK</text>
+  <text x="80.0" y="97.0" font-size="12" fill="#6c757d" text-anchor="middle">in their app</text>
+  <rect x="20" y="274" width="120" height="56" rx="4" fill="#ffeaff" stroke="#da4ada" stroke-width="1.5"/>
+  <text x="80.0" y="299.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Their team</text>
+  <text x="80.0" y="317.0" font-size="12" fill="#6c757d" text-anchor="middle">in a browser</text>
+
+  <!-- One stateless app: ingestion endpoints and dashboards -->
+  <rect x="270" y="54" width="150" height="56" rx="4" fill="#e0f7f5" stroke="#06bdad" stroke-width="1.5"/>
+  <text x="345.0" y="79.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Ingestion API</text>
+  <text x="345.0" y="97.0" font-size="12" fill="#6c757d" text-anchor="middle">store, answer 202</text>
+  <rect x="270" y="274" width="150" height="56" rx="4" fill="#e1f5fe" stroke="#35b0e8" stroke-width="1.5"/>
+  <text x="345.0" y="299.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Dashboard app</text>
+  <text x="345.0" y="317.0" font-size="12" fill="#6c757d" text-anchor="middle">log in, look at charts</text>
+  <rect x="256" y="40" width="178" height="304" rx="8" fill="none" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="256" y="32" font-size="13" fill="#6c757d" font-weight="bold" text-anchor="start" letter-spacing="1">ONE APP</text>
+  <rect x="470" y="164" width="150" height="56" rx="4" fill="#e0f7f5" stroke="#06bdad" stroke-width="1.5"/>
+  <text x="545.0" y="189.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Workers</text>
+  <text x="545.0" y="207.0" font-size="12" fill="#6c757d" text-anchor="middle">parse, enrich, dedupe</text>
+
+  <!-- The queue, and Postgres for everything else -->
+  <rect x="680" y="150" width="220" height="168" rx="8" fill="none" stroke="#e7d749" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="680" y="142" font-size="13" fill="#e6a000" font-weight="bold" text-anchor="start" letter-spacing="1">POSTGRES</text>
+  <rect x="470" y="54" width="150" height="56" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="545.0" y="79.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Queue (SQS)</text>
+  <text x="545.0" y="97.0" font-size="12" fill="#6c757d" text-anchor="middle">keeps the batch</text>
+  <rect x="692" y="167" width="196" height="50" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="790.0" y="189.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">events</text>
+  <text x="790.0" y="207.0" font-size="12" fill="#6c757d" text-anchor="middle">all raw events</text>
+  <rect x="692" y="258" width="196" height="46" rx="4" fill="#fff283" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="790.0" y="278.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">app data</text>
+  <text x="790.0" y="296.0" font-size="12" fill="#6c757d" text-anchor="middle">customers, dashboards</text>
+
+  <!-- CDN for the static files, S3 for the raw copies -->
+  <rect x="20" y="164" width="120" height="56" rx="4" fill="#e1f5fe" stroke="#35b0e8" stroke-width="1.5"/>
+  <text x="80.0" y="189.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">CDN</text>
+  <text x="80.0" y="207.0" font-size="12" fill="#6c757d" text-anchor="middle">static files</text>
+  <rect x="925" y="54" width="130" height="56" rx="4" fill="#fff283" stroke="#e6a000" stroke-width="3" stroke-dasharray="8 5"/>
+  <text x="990.0" y="79.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">S3</text>
+  <text x="990.0" y="97.0" font-size="12" fill="#6c757d" text-anchor="middle">raw batches</text>
+  <text x="990.0" y="40" font-size="15" fill="#e6a000" font-weight="bold" text-anchor="middle" letter-spacing="1">OPTIONAL</text>
+</svg>
