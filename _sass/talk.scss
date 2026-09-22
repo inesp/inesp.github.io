@@ -1,0 +1,131 @@
+/* Per-talk landing page (/talk/<slug>/): the page behind the QR code on the closing slide.
+   Holds the talk's appearances, the writing it is based on, its references, and who gave it. */
+
+/* The hero reuses .home-hero, trimmed: someone standing in a conference hallway
+   gets a smaller photo and a tighter block before the talk itself. */
+.talk-hero {
+  margin-bottom: 2.5rem;
+
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+
+  .hero-name {
+    font-size: $h2-font-size;
+    margin-bottom: 1rem;
+  }
+
+  .hero-tagline {
+    font-size: var(--h5-size);
+    max-width: 44rem;
+  }
+
+  .talk-open {
+    font-weight: 500;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .hero-links {
+    margin-top: 1.5rem;
+  }
+}
+
+.talk-heading {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.talk-intro {
+  margin-bottom: 3rem;
+
+  // the first paragraph is the hook, let it carry a bit more weight
+  > p:first-child {
+    font-size: 1.15rem;
+  }
+}
+
+/* The closing slide promised references. Whatever else is on this page, they
+   are one tap away. */
+.talk-jump {
+  margin: 0 0 1.5rem;
+
+  a {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.35rem 0.8rem;
+    color: $color-green-dark;
+    background: $color-green-light;
+    border: 1px solid $color-green;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $color-green;
+      color: #fff;
+    }
+  }
+}
+
+/* Anchor target: don't let the heading hide under the top of the viewport */
+.talk-references {
+  scroll-margin-top: 1.5rem;
+}
+
+/* References sit above the writing: the QR code promised them, so they are what lands. */
+.talk-references,
+.talk-no-references {
+  margin-bottom: 3rem;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 4px solid $color-red-bright;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+    margin: 0;
+  }
+
+  li + li {
+    margin-top: 0.4rem;
+  }
+}
+
+/* One button per piece of writing the talk draws on: the series, the posts, or both. */
+/* A talk with nothing written up yet still gets the section, just not a list. */
+.talk-no-references {
+  border-left-color: $color-yellow-dark;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.talk-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 3rem;
+
+  a {
+    display: inline-block;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    background: $color-yellow;
+    border: 3px solid $color-yellow-dark;
+    border-radius: $standard-radius;
+    text-decoration: none;
+    color: $color-text;
+
+    &:hover {
+      background: $color-yellow-dark;
+    }
+  }
+}

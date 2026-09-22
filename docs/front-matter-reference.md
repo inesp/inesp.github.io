@@ -88,3 +88,40 @@ collection_tags:
 - `home_intro`: Short blurb field (currently unused, reserved for future use).
 
 The `collection_tags` key lists which tag names count as a "series" (collection icon, "part of a series" framing) rather than a plain topic.
+
+## Talks (`_data/talk_catalogue.yml`)
+
+One entry per talk, and it holds everything: the pitch shown on `/talks/`, and the landing page at `/talk/<key>/` that the QR code on the closing slide points at.
+
+```yaml
+- key: api-resilience
+  title: "Their API Went Down. So Why Is My App on Fire?"
+  series: API Resilience Patterns
+  post_slugs:
+    - impact-of-a-deploy
+  description: Every API is doing its own thing...
+  abstract: |
+    Third-party APIs are fickle and entirely out of your control...
+
+    You have a chart on your home page...
+```
+
+- `key`: Stable id, and the URL: `/talk/api-resilience/`. Don't change it once a QR code is printed.
+- `title`: The one title of the talk. There is no subtitle.
+- `description`: The short pitch, shown on the `/talks/` catalogue cards, and on the talk page when there's no `abstract`. Markdown.
+- `abstract`: Optional longer text for the talk's own page, markdown, usually several paragraphs.
+- `series`: Optional series name, exactly as in `_data/topics.yml`. Every post in it contributes to the reference list.
+- `post_slugs`: Optional list of post slugs (the filename without the date prefix and extension). Use it alongside `series`, instead of it, or with several posts.
+- `page: false`: Optional. Skips the landing page for a talk that shouldn't have one yet.
+
+The reference list on the page is collected from the `biblio` of every post named by `series` and `post_slugs` together, deduplicated by link and sorted by title. The series and each named post also get a button at the bottom of the page.
+
+### The pages under `talk/`
+
+`talk/<key>.md` is **generated** — run `make talk-pages` after adding or renaming a talk. The files carry nothing but `layout`, `permalink`, `talk` (the catalogue key) and `title`; `_layouts/talk.html` reads everything else back out of the catalogue. They exist only because a Jekyll generator plugin would be ignored: the `github-pages` gem runs Jekyll in safe mode, so `_plugins/` never loads.
+
+Removing a talk from the catalogue and re-running the script deletes its page too.
+
+## Appearances (`_data/talks.yml`)
+
+One entry per time a talk was given. `talk: <key>` points at the catalogue entry, which is what puts the "↳ Talk page" link in the table on `/talks/`. Leave it out for an old talk that has no catalogue entry. The per-appearance `title` is the title as delivered at that event, which often differs from the catalogue title.

@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+{%- comment -%}
+Landing page for one talk, meant for the QR code on the closing slide.
+
+There is no file behind this page: _plugins/talk_pages.rb generates one page per
+entry in _data/talk_catalogue.yml, and that entry is where everything comes from
+(title, description, abstract, series, post_slugs). page.talk holds its key.
+
+Someone scanning that QR code has just watched me for 45 minutes and knows
+nothing about me, so the page opens with who I am and gets to the talk after.
+{%- endcomment -%}
+
+{%- assign talk = nil -%}
+{%- for entry in site.data.talk_catalogue -%}
+  {%- if entry.key == page.talk -%}
+    {%- assign talk = entry -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}The writing this talk draws on: a series, a handful of posts, or both.
+related_posts feeds the reference list, named_posts feeds the links at the bottom.{%- endcomment -%}
+{%- assign related_posts = "" | split: "" -%}
+{%- assign named_posts = "" | split: "" -%}
+{%- assign seen_urls = "" | split: "" -%}
+
+{%- if talk.series -%}
+  {%- for post in site.tags[talk.series] -%}
+    {%- unless seen_urls contains post.url -%}
+      {%- assign seen_urls = seen_urls | push: post.url -%}
+      {%- assign related_posts = related_posts | push: post -%}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- if talk.post_slugs -%}
+  {%- for slug in talk.post_slugs -%}
+    {%- for post in site.posts -%}
+      {%- if post.slug == slug -%}
+        {%- assign named_posts = named_posts | push: post -%}
+        {%- unless seen_urls contains post.url -%}
+          {%- assign seen_urls = seen_urls | push: post.url -%}
+          {%- assign related_posts = related_posts | push: post -%}
+        {%- endunless -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endif -%}
+
+<section class="home-hero talk-hero">
+  <img class="hero-photo" src="/assets/photos/ines-panker-460.jpeg" alt="Ines Panker" width="460" height="460">
+  <h1 class="hero-name">Hi, I'm Ines Panker.</h1>
+  {{ site.data.bio.talk }}
+  {% include badges.html class="hero-badges" %}
+  <p class="hero-links">
+    <a href="/cv/">Read my CV</a>
+    <a href="/talks/">All my talks</a>
+    <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>
+  </p>
+</section>
+
+<div class="colorful"></div>
+
+<div class="topic-page talk-page">
+
+  {%- comment -%}Every source cited by the related writing, sorted by title, duplicates removed.
+  Gathered up here so the jump link below the title knows whether there is anything to jump to.{%- endcomment -%}
+  {%- assign talk_biblio = "" | split: "" -%}
+  {%- assign seen_links = "" | split: "" -%}
+  {%- for post in related_posts -%}
+    {%- if post.biblio -%}
+      {%- for source in post.biblio -%}
+        {%- unless seen_links contains source.link -%}
+          {%- assign seen_links = seen_links | push: source.link -%}
+          {%- assign talk_biblio = talk_biblio | push: source -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign talk_biblio = talk_biblio | sort_natural: "title" -%}
+
+  <h2 class="talk-heading">{% include career_icon.html name="mic" %}{{ page.title }}</h2>
+
+  <div class="talk-intro">
+    {%- if talk.abstract -%}
+      {{ talk.abstract | markdownify }}
+    {%- else -%}
+      {{ talk.description | markdownify }}
+    {%- endif -%}
+  </div>
+
+  {%- if talk_biblio.size > 0 -%}
+  <section class="talk-references" id="references">
+    <h2>References for this talk 📚</h2>
+    <ul>
+      {%- for source in talk_biblio -%}
+        <li><a href="{{ source.link }}" target="_blank">{{ source.title }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  {%- else -%}
+  <section class="talk-no-references" id="references">
+    <h2>References for this talk 📚</h2>
+    <p>None yet, I haven't written this one up. Accept me at your conference and I'll finally have the time to build it.</p>
+  </section>
+  {%- endif -%}
+
+  {%- comment -%}Links to the writing, not a second copy of it{%- endcomment -%}
+  {%- if talk.series or named_posts.size > 0 -%}
+  <div class="talk-sources">
+    {%- if talk.series -%}
+    <a href="/topic/{{ talk.series | slugify }}/">Read the whole series: {{ talk.series }} &#8594;</a>
+    {%- endif -%}
+    {%- for post in named_posts -%}
+    <a href="{{ post.url | relative_url }}">{% if talk.series or named_posts.size > 1 %}Read: {{ post.title }}{% else %}Read the post behind the talk: {{ post.title }}{% endif %} &#8594;</a>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
+</div>

@@ -45,17 +45,10 @@ fluid: true
   </thead>
   <tbody>
     {%- for talk in talks_info -%}
-      {%- comment -%} Find related post by slug or series {%- endcomment -%}
-      {%- assign related_post = nil -%}
-      {%- assign related_post_label = nil -%}
-      {%- if talk.post_slug -%}
-        {%- for post in site.posts -%}
-          {%- if post.slug == talk.post_slug -%}
-            {%- assign related_post = post -%}
-            {%- assign related_post_label = "Read the related post" -%}
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
+      {%- comment -%} talk: is the catalogue key, and the page is always /talk/<key>/ {%- endcomment -%}
+      {%- assign talk_page = nil -%}
+      {%- if talk.talk -%}
+        {%- assign talk_page = "/talk/" | append: talk.talk | append: "/" -%}
       {%- endif -%}
 
       <tr{% if talk.coming_soon %} class="coming-soon"{% endif %}>
@@ -66,13 +59,9 @@ fluid: true
         </td>
         <td class="talk-title">
           {{ talk.title }}
-          {%- if related_post -%}
+          {%- if talk_page -%}
             <div class="talk-based-on">
-              <a href="{{ related_post.url }}">↳ {{ related_post_label }}</a>
-            </div>
-          {%- elsif talk.series -%}
-            <div class="talk-based-on">
-              <a href="/topic/{{ talk.series | slugify }}/">↳ Read the related series</a>
+              <a href="{{ talk_page }}">↳ Talk page</a>
             </div>
           {%- endif -%}
         </td>
@@ -118,21 +107,7 @@ fluid: true
   <div class="talk-catalogue-list">
     {%- for talk in site.data.talk_catalogue -%}
     <div class="talk-catalogue-item">
-      <h3>{{ talk.title }}</h3>
-      {%- if talk.post_slug -%}
-        {%- for post in site.posts -%}
-          {%- if post.slug == talk.post_slug -%}
-            <div class="talk-based-on">
-              <a href="{{ post.url }}">↳ Read the related post</a>
-            </div>
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
-      {%- elsif talk.series -%}
-        <div class="talk-based-on">
-          <a href="/topic/{{ talk.series | slugify }}/">↳ Read the related series</a>
-        </div>
-      {%- endif -%}
+      <h3>{%- if talk.key -%}<a href="/talk/{{ talk.key }}/">{{ talk.title }}</a>{%- else -%}{{ talk.title }}{%- endif -%}</h3>
       {{ talk.description | markdownify }}
     </div>
     {%- endfor -%}
