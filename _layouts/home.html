@@ -7,10 +7,7 @@ layout: default
   <section class="home-hero">
     <img class="hero-photo" src="/assets/photos/ines-panker-460.jpeg" alt="Ines Panker" width="460" height="460">
     <h1 class="hero-name">Hi, I'm Ines Panker.</h1>
-    <p class="hero-tagline">I'm a senior staff engineer at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a SaaS observability platform (the first engineer they hired, de-facto architect), and a conference speaker on the human side of engineering, from Slovenia.</p>
-    <p class="hero-flavor">I take complicated systems and find the arrangement that makes them work like poetry.</p>
-    <p class="hero-facts">Almost two decades of building software.</p>
-    <p class="hero-facts">Multi-tenant architecture. Circuit breakers guarding over a million API calls a day. Real-time anomaly detection for hundreds of clients. An LLM pipeline, a RAG system, and a running experiment: how much of my own work can LLM agents carry.</p>
+    {{ site.data.bio.home }}
     {% include badges.html class="hero-badges" %}
     <p class="hero-facts">How to contact me: <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a> works best, or catch me at one of the conferences below.</p>
     <p class="hero-links">

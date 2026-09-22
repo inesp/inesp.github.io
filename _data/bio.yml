@@ -1,0 +1,13 @@
+# Every version of the bio, in one file, so they can be edited together and kept
+# honest against each other. Each key is the whole block a page prints.
+
+# /about/ — the long one, the only place that gets the whole story
+about: |
+  <p>Hi, I'm <b>Ines Panker</b>. I'm a <b>senior staff engineer</b> at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a multi-tenant SaaS observability platform. I was the first engineer they hired and became its <b>de-facto architect</b>, from the data model and the army of Celery workers to the anomaly detection and the circuit breakers guarding <b>2-3 million third-party API calls a day</b> across about <b>40 external APIs</b>. I also speak at <a href="/talks/"><b>developer conferences</b></a> like Devoxx Belgium and J-Fall, and I work remotely from Slovenia.</p>
+
+# Home page hero (_layouts/home.html), above the badges
+home: |
+  <p class="hero-tagline">I'm a senior staff engineer at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a SaaS observability platform (the first engineer they hired, de-facto architect), and a conference speaker on the human side of engineering, from Slovenia.</p>
+  <p class="hero-flavor">I take complicated systems and find the arrangement that makes them work like poetry.</p>
+  <p class="hero-facts">Almost two decades of building software.</p>
+  <p class="hero-facts">Multi-tenant architecture. Circuit breakers guarding over a million API calls a day. Real-time anomaly detection for hundreds of clients. An LLM pipeline, a RAG system, and a running experiment: how much of my own work can LLM agents carry.</p>

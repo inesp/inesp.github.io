@@ -27,6 +27,8 @@ Guides:
 | Update the CV / career timeline | `cv.md` |
 | Add/update a talk you've given or scheduled | `_data/talks.yml` |
 | Add/update a talk pitch (not yet given, shown in the "Talk Catalogue") | `_data/talk_catalogue.yml` |
+| Change the tech badges on the home page, `/about/` and the talk pages | `_data/badges.yml` |
+| Change any version of the bio (home hero, `/about/`, talk pages) | `_data/bio.yml` |
 | Put images for a post somewhere | `assets/<topic-slug>/`, referenced via `_includes/image.html` |
 | Change site-wide settings (title, permalink structure, plugins) | `_config.yml` (needs a server restart to take effect) |
 | Run a local dev server, upgrade dependencies, deploy, work on drafts | root [README.md](../README.md) |
