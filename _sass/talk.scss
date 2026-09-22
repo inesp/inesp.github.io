@@ -4,7 +4,7 @@
 /* The hero reuses .home-hero, trimmed: someone standing in a conference hallway
    gets a smaller photo and a tighter block before the talk itself. */
 .talk-hero {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem; // let the block breathe before the talk itself starts
 
   .hero-photo {
     width: 140px;

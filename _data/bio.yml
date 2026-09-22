@@ -17,4 +17,3 @@ talk: |
   <p class="hero-tagline">I'm a senior staff engineer at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a SaaS observability platform (the first engineer they hired, de-facto architect), and the person who just gave this talk.</p>
   <p class="hero-facts">Almost two decades of building software.</p>
   <p class="hero-facts">Multi-tenant architecture. Circuit breakers guarding 2-3 million third-party API calls a day across about 40 external APIs. Real-time anomaly detection for hundreds of clients.</p>
-  <p class="talk-open">Always open to interesting conversations about hard backend problems.</p>
