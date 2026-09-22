@@ -1,0 +1,10 @@
+{%- comment -%}
+The tech badges, from _data/badges.yml.
+
+  class  optional class for the wrapping <p>
+{%- endcomment -%}
+<p{% if include.class %} class="{{ include.class }}"{% endif %}>
+  {%- for badge in site.data.badges %}
+  {% if badge.link %}<a href="{{ badge.link }}"><span class="badge bg-yellow">{{ badge.name }}</span></a>{% else %}<span class="badge bg-yellow">{{ badge.name }}</span>{% endif %}
+  {%- endfor %}
+</p>

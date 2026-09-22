@@ -8,7 +8,7 @@
   video_link:
   details_link:
   slides_link:
-  post_slug: impact-of-a-deploy
+  talk: deploy-impact
 
 - conf: Heapcon 2026
   link: https://heapcon.io/2026
@@ -20,7 +20,7 @@
   video_link:
   details_link: https://heapcon.io/2026/speakers/ines-panker
   slides_link:
-  post_slug: estimation-is-a-delusion
+  talk: estimation
 
 - conf: TDC 2026
   link: https://2026.trondheimdc.no/en/
@@ -32,7 +32,7 @@
   video_link:
   details_link: https://2026.trondheimdc.no/en/#program
   slides_link:
-  post_slug: impact-of-a-deploy
+  talk: deploy-impact
 
 - conf: Devoxx Belgium 2026
   link: https://devoxx.be/
@@ -44,7 +44,7 @@
   video_link:
   details_link: https://m.devoxx.com/events/dvbe26/talks/7035/their-api-went-down-so-why-is-my-app-on-fire
   slides_link:
-  series: API Resilience Patterns
+  talk: api-resilience
 
 - date: Sep 2026
   conf: Python Meetup Ljubljana
@@ -52,7 +52,7 @@
   flag: slovenia
   location: Ljubljana, Slovenia
   title: "Their API Went Down, So Why is My App on Fire?"
-  series: API Resilience Patterns
+  talk: api-resilience
 
 - conf: Voxxed Days Luxembourg 2026
   link: https://luxembourg.voxxeddays.com/en/
@@ -63,7 +63,7 @@
   video_link: https://www.youtube.com/watch?v=9cEn-7RzsYU&list=PLJgwPhYIR6h4&index=48
   details_link: https://m.devoxx.com/events/voxxedlu2026/talks/9002/details
   slides_link: https://speakerdeck.com/inesp/did-my-deploy-degrade-production
-  post_slug: impact-of-a-deploy
+  talk: deploy-impact
 
 - conf: PyCon Italia 2026
   link: https://2026.pycon.it/en
@@ -74,7 +74,7 @@
   details_link: https://2026.pycon.it/en/event/stop-asking-me-how-long-it-will-take
   video_link: https://www.youtube.com/watch?v=SRN2jdKDAO8
   slides_link: https://speakerdeck.com/inesp/itll-take-two-weeks
-  post_slug: estimation-is-a-delusion
+  talk: estimation
 
 - conf: VoxxedDays Amsterdam 2026
   link: https://amsterdam.voxxeddays.com/
@@ -86,7 +86,7 @@
   details_link: https://m.devoxx.com/events/vdams26/talks/1759/why-smart-developers-write-silly-code
   video_link: https://www.youtube.com/watch?v=KPaamLqH1hY
   slides_link: https://speakerdeck.com/inesp/why-do-smart-devs-write-silly-bugs
-  series: Cognitive Biases in Code
+  talk: cognitive-biases
 
 - conf: Codemotion Roma 2026
   link: https://conferences.codemotion.com/roma/
@@ -97,7 +97,7 @@
   details_link: https://conferences.codemotion.com/roma/speakers/#sz-speaker-a56cea70-f4e0-45b9-a2e8-470b71e73412
   video_link:
   slides_link: https://speakerdeck.com/inesp/itll-take-two-weeks
-  post_slug: estimation-is-a-delusion
+  talk: estimation
 
 - conf: J-Fall 2025
   link: https://jfall.nl/
@@ -108,7 +108,7 @@
   details_link: https://jfall.nl/timetable-2025/
   video_link: https://www.youtube.com/watch?v=Kt9rddAR9YI
   slides_link: https://speakerdeck.com/inesp/your-brain-is-sabotaging-your-code-but-we-can-outsmart-it
-  series: Cognitive Biases in Code
+  talk: cognitive-biases
 
 - conf: Swiss Python Summit 2025
   link: https://www.python-summit.ch/
@@ -119,7 +119,7 @@
   video_link: https://media.ccc.de/v/sps25-56448-software-estimation-false-se
   details_link: https://www.python-summit.ch/program/
   slides_link: https://speakerdeck.com/inesp/software-estimation-false-sense-of-certainty
-  post_slug: estimation-is-a-delusion
+  talk: estimation
 
 - conf: Voxxed Days Luxembourg 2025
   link: https://luxembourg.voxxeddays.com/en/
@@ -130,7 +130,7 @@
   video_link: https://www.youtube.com/watch?v=B-4ega2uwEM
   details_link: https://mobile.devoxx.com/events/voxxedlu2025/talks/3575/details
   slides_link: https://speakerdeck.com/inesp/software-estimation-take-a-wild-guess-but-make-it-official
-  post_slug: estimation-is-a-delusion
+  talk: estimation
 
 - conf: PyCon Austria 2025
   link: https://pycon.pyug.at/en/
@@ -141,7 +141,7 @@
   video_link:
   details_link: https://2025.pycon.at/talks/software-estimation-is-a-delusion-or-is-it-just-a-misused-tool/
   slides_link: https://speakerdeck.com/inesp/software-estimation-is-a-delusion
-  post_slug: estimation-is-a-delusion
+  talk: estimation
 
 - date: Mar 2025
   conf: Meetup of Meetups

@@ -10,6 +10,9 @@ upgrade:
 check-links:  ## verify all prev_post/next_post series links point to real, reciprocal posts
 	ruby scripts/check_series_links.rb
 
+talk-pages:  ## regenerate talk/*.md from _data/talk_catalogue.yml (run after adding or renaming a talk)
+	ruby scripts/generate_talk_pages.rb
+
 upgrade-ruby:
 	@echo "Fetching GitHub Pages Ruby version..."
 	@curl -s https://pages.github.com/versions.json | grep -o '"ruby":"[^"]*"' | cut -d'"' -f4 > .ruby-version
