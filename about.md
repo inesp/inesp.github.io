@@ -10,20 +10,9 @@ css: about
 
 Hi, I'm Ines Panker. I'm a <b>senior staff engineer</b> at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a multi-tenant SaaS observability platform. I was the first engineer they hired and became its <b>de-facto architect</b>, from the data model and the army of Celery workers to the anomaly detection and the circuit breakers guarding 2-3 million third-party API calls a day. I also speak at <a href="/talks/"><b>developer conferences</b></a> like Devoxx Belgium and J-Fall, and I work remotely from Slovenia.
 
-I've been building software for almost <b>two decades</b>, mostly in <b>Python</b> these days, and lately <b>Go</b>.
+I've been building software for almost <b>two decades</b>, mostly in <b>Python</b> these days, and <b>Go</b>.
 
-<p>
-  <span class="badge bg-yellow">Python</span>
-  <span class="badge bg-yellow">Go</span>
-  <span class="badge bg-yellow">Django</span>
-  <span class="badge bg-yellow">Celery</span>
-  <span class="badge bg-yellow">PostgreSQL</span>
-  <span class="badge bg-yellow">Redis</span>
-  <span class="badge bg-yellow">RabbitMQ</span>
-  <span class="badge bg-yellow">Elasticsearch</span>
-  <span class="badge bg-yellow">LLM agents</span>
-  <a href="/talks/"><span class="badge bg-yellow">Conference speaking</span></a>
-</p>
+{% include badges.html %}
 
 Anything tangled, a codebase, an argument, a hard idea, has a shape that makes it feel obvious. I'm good at finding that shape. With agents, code now gets written faster than it gets understood. And so my speciality has become <b>breaking code I didn't write</b>: it's the quickest way to understand it.
 

@@ -1,0 +1,14 @@
+# The tech badges, in one place: home page hero, about page, talk landing pages.
+# Order is the order they render in.
+
+- name: Python
+- name: Go
+- name: Django
+- name: Celery
+- name: PostgreSQL
+- name: Redis
+- name: RabbitMQ
+- name: Elasticsearch
+- name: LLM agents
+- name: Conference speaking
+  link: /talks/
