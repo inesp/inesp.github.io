@@ -3,6 +3,7 @@ series: API Resilience Patterns
 title: "Deep-dive #1: Why a Slow API Is Worse Than a Dead One"
 tags: ["API Resilience Patterns", "Networking", "System Design"]
 prev_post: 2026-04-09-api-resilience-circuit-breaker
+next_post: 2026-09-23-api-resilience-load-shedding
 intro_truncatewords: 35
 image: /assets/http/how-long-is-eventually.png
 biblio:
