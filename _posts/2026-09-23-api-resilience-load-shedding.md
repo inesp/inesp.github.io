@@ -2,6 +2,7 @@
 series: API Resilience Patterns
 title: "Pattern #4: Load Shedding, or Letting Tasks Expire on Purpose"
 tags: ["API Resilience Patterns", "Code Patterns"]
+image: /assets/http/load-shedding-stale-queue.png
 prev_post: 2026-09-09-api-resilience-slow-vs-dead
 biblio:
   - title: "Wikipedia: Load shedding"

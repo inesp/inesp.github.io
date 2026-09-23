@@ -2,6 +2,7 @@
 series: API Resilience Patterns
 title: "Pattern #3: Circuit Breaker design pattern"
 tags: ["API Resilience Patterns", "Code Patterns"]
+image: /assets/http/celery-retry-dance.png
 prev_post: 2026-02-24-api-resilience-resumable-pagination
 next_post: 2026-09-09-api-resilience-slow-vs-dead
 biblio:
