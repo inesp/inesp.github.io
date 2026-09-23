@@ -1,0 +1,49 @@
+<svg viewBox="0 0 520 178" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="178" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker></defs>
+
+  <!-- Title -->
+  <text x="20" y="22" font-size="11" fill="#212529" font-weight="bold">fetch_metrics, queued during a 3-hour incident</text>
+
+  <!-- Workers (right): stuck -->
+  <rect x="430" y="86" width="70" height="40" fill="#d4edda" rx="4" stroke="#4a9c6d" stroke-width="1.5"/>
+  <text x="465" y="110" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">Workers</text>
+  <text x="465" y="142" font-size="9" fill="#fd456f" text-anchor="middle">stuck on the</text>
+  <text x="465" y="153" font-size="9" fill="#fd456f" text-anchor="middle">slow API</text>
+  <line x1="419" y1="106" x2="426" y2="106" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Queue: identical tasks, one every 2 minutes, oldest at the front (right) -->
+  <rect x="376" y="86" width="40" height="40" fill="#f0f0f0" rx="4" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="396.0" y="110" font-size="10" fill="#6c757d" text-anchor="middle">10:02</text>
+  <rect x="332" y="86" width="40" height="40" fill="#f0f0f0" rx="4" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="352.0" y="110" font-size="10" fill="#6c757d" text-anchor="middle">10:04</text>
+  <rect x="288" y="86" width="40" height="40" fill="#f0f0f0" rx="4" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="308.0" y="110" font-size="10" fill="#6c757d" text-anchor="middle">10:06</text>
+  <rect x="244" y="86" width="40" height="40" fill="#f0f0f0" rx="4" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="264.0" y="110" font-size="10" fill="#6c757d" text-anchor="middle">10:08</text>
+  <rect x="164" y="86" width="40" height="40" fill="#f0f0f0" rx="4" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="184.0" y="110" font-size="10" fill="#6c757d" text-anchor="middle">12:54</text>
+  <rect x="120" y="86" width="40" height="40" fill="#f0f0f0" rx="4" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="140.0" y="110" font-size="10" fill="#6c757d" text-anchor="middle">12:56</text>
+  <rect x="76" y="86" width="40" height="40" fill="#f0f0f0" rx="4" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="96.0" y="110" font-size="10" fill="#6c757d" text-anchor="middle">12:58</text>
+  <rect x="32" y="86" width="40" height="40" fill="#ffed50" rx="4" stroke="#e7d749" stroke-width="1"/>
+  <text x="52.0" y="110" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">13:00</text>
+  <text x="226" y="111" font-size="12" fill="#6c757d" text-anchor="middle">...</text>
+
+  <!-- Scheduler (left): drops a new copy at the back every 2 minutes -->
+  <circle cx="52.0" cy="44.0" r="11" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <line x1="52.0" y1="44" x2="52.0" y2="37" stroke="#212529" stroke-width="1.5"/>
+  <line x1="52.0" y1="44" x2="57.0" y2="44" stroke="#212529" stroke-width="1.5"/>
+  <text x="70.0" y="42" font-size="10" fill="#212529" font-weight="bold">scheduler</text>
+  <text x="70.0" y="54" font-size="9" fill="#6c757d">a new copy every 2 min</text>
+  <line x1="52.0" y1="57" x2="52.0" y2="81" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Brackets -->
+  <line x1="76" y1="136" x2="416" y2="136" stroke="#9f9f9f" stroke-width="1"/>
+  <line x1="76" y1="132" x2="76" y2="136" stroke="#9f9f9f" stroke-width="1"/>
+  <line x1="416" y1="132" x2="416" y2="136" stroke="#9f9f9f" stroke-width="1"/>
+  <text x="246.0" y="150" font-size="9" fill="#6c757d" text-anchor="middle">89 stale copies of the same task</text>
+  <text x="52.0" y="144" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">the only one</text>
+  <text x="52.0" y="155" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">anybody needs</text>
+</svg>

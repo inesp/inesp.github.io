@@ -1,0 +1,35 @@
+<svg viewBox="0 0 520 150" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="150" fill="#fff"/>
+
+  <!-- Soft background: pale green (easier) to pale red (harder) -->
+  <defs><linearGradient id="ease" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#d4edda"/><stop offset="0.5" stop-color="#fff8cd"/><stop offset="1" stop-color="#ffe6e6"/></linearGradient></defs>
+  <rect x="20" y="36" width="480" height="108" rx="8" fill="url(#ease)"/>
+
+  <!-- Spectrum line with arrowheads on both ends -->
+  <line x1="40" y1="78" x2="480" y2="78" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="32,78 40,74 40,82" fill="#212529"/>
+  <polygon points="488,78 480,74 480,82" fill="#212529"/>
+  <text x="32" y="22" font-size="11" fill="#6c757d" font-weight="bold">easier to let go</text>
+  <text x="488" y="22" font-size="11" fill="#6c757d" font-weight="bold" text-anchor="end">harder to let go</text>
+
+  <!-- Task: nightly sync -->
+  <text x="120" y="62" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">nightly sync</text>
+  <circle cx="120.0" cy="78.0" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="120" y="104" font-size="9" fill="#6c757d" text-anchor="middle">loses value: a bit</text>
+  <text x="120" y="118" font-size="9" fill="#6c757d" text-anchor="middle">covered: yes, fully</text>
+  <text x="120" y="132" font-size="9" fill="#6c757d" text-anchor="middle">(tomorrow's run)</text>
+
+  <!-- Task: daily report -->
+  <text x="260" y="62" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">daily report</text>
+  <circle cx="260.0" cy="78.0" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="260" y="104" font-size="9" fill="#6c757d" text-anchor="middle">loses value: yes</text>
+  <text x="260" y="118" font-size="9" fill="#6c757d" text-anchor="middle">covered: partially</text>
+  <text x="260" y="132" font-size="9" fill="#6c757d" text-anchor="middle">(the next report)</text>
+
+  <!-- Task: metrics every 2 min -->
+  <text x="400" y="62" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">metrics every 2 min</text>
+  <circle cx="400.0" cy="78.0" r="6" fill="#ffed50" stroke="#e7d749" stroke-width="1.5"/>
+  <text x="400" y="104" font-size="9" fill="#6c757d" text-anchor="middle">loses value: a bit</text>
+  <text x="400" y="118" font-size="9" fill="#6c757d" text-anchor="middle">covered: not really</text>
+  <text x="400" y="132" font-size="9" fill="#6c757d" text-anchor="middle">(gaps in the   charts)</text>
+</svg>
