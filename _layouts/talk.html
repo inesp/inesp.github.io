@@ -21,17 +21,19 @@ nothing about me, so the page opens with who I am and gets to the talk after.
   {%- endif -%}
 {%- endfor -%}
 
-{%- comment -%}The writing this talk draws on: a series, a handful of posts, or both.
-related_posts feeds the reference list, named_posts feeds the links at the bottom.{%- endcomment -%}
-{%- assign related_posts = "" | split: "" -%}
-{%- assign named_posts = "" | split: "" -%}
+{%- comment -%}The writing this talk draws on, kept in two buckets so the page can say
+where each post comes from: series_posts are the talk's own series, extra_posts are the
+ones named one by one (often from a different series entirely).
+related_posts is the two of them together, and feeds the reference list.{%- endcomment -%}
+{%- assign series_posts = "" | split: "" -%}
+{%- assign extra_posts = "" | split: "" -%}
 {%- assign seen_urls = "" | split: "" -%}
 
 {%- if talk.series -%}
   {%- for post in site.tags[talk.series] -%}
     {%- unless seen_urls contains post.url -%}
       {%- assign seen_urls = seen_urls | push: post.url -%}
-      {%- assign related_posts = related_posts | push: post -%}
+      {%- assign series_posts = series_posts | push: post -%}
     {%- endunless -%}
   {%- endfor -%}
 {%- endif -%}
@@ -40,16 +42,27 @@ related_posts feeds the reference list, named_posts feeds the links at the botto
   {%- for slug in talk.post_slugs -%}
     {%- for post in site.posts -%}
       {%- if post.slug == slug -%}
-        {%- assign named_posts = named_posts | push: post -%}
         {%- unless seen_urls contains post.url -%}
           {%- assign seen_urls = seen_urls | push: post.url -%}
-          {%- assign related_posts = related_posts | push: post -%}
+          {%- assign extra_posts = extra_posts | push: post -%}
         {%- endunless -%}
         {%- break -%}
       {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
 {%- endif -%}
+
+{%- assign related_posts = series_posts | concat: extra_posts -%}
+
+{%- comment -%}The series the extra posts come from, deduplicated, for the label above them{%- endcomment -%}
+{%- assign extra_series = "" | split: "" -%}
+{%- for post in extra_posts -%}
+  {%- if post.series and post.series != talk.series -%}
+    {%- unless extra_series contains post.series -%}
+      {%- assign extra_series = extra_series | push: post.series -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
 
 <section class="home-hero talk-hero">
   <img class="hero-photo" src="/assets/photos/ines-panker-460.jpeg" alt="Ines Panker" width="460" height="460">
@@ -110,16 +123,66 @@ related_posts feeds the reference list, named_posts feeds the links at the botto
   </section>
   {%- endif -%}
 
-  {%- comment -%}Links to the writing, not a second copy of it{%- endcomment -%}
-  {%- if talk.series or named_posts.size > 0 -%}
-  <div class="talk-sources">
-    {%- if talk.series -%}
-    <a href="/topic/{{ talk.series | slugify }}/">Read the whole series: {{ talk.series }} &#8594;</a>
+  {%- comment -%}The writing behind the talk: title and date, nothing more. The series
+  posts and the ones borrowed from elsewhere are listed apart, each under a line saying
+  where they come from, so no post looks like it belongs to a series it doesn't.
+
+  One post and no series behind it is a sentence, not a list of one. A series with one
+  post written so far still gets the list, because the list is going to grow.{%- endcomment -%}
+  {%- if series_posts.size == 0 and extra_posts.size == 1 -%}
+    {%- assign only_post = extra_posts[0] -%}
+  <section class="talk-writing">
+    <h2>The post behind this talk ✍︎</h2>
+    <p class="talk-writing-one">
+      <a href="{{ only_post.url | relative_url }}">{{ only_post.title }}</a>
+      <span class="talk-writing-meta">
+        {{ only_post.date | date: "%b %-d, %Y" }}
+        {%- for tag in only_post.tags -%}
+          <span class="talk-writing-sep">&#183;</span>{% include topic_badge.html topic=tag %}
+        {%- endfor -%}
+      </span>
+    </p>
+    {%- if only_post.excerpt -%}
+    <p class="talk-writing-teaser">{{ only_post.excerpt | strip_html | strip_newlines | truncatewords: 25 }}</p>
     {%- endif -%}
-    {%- for post in named_posts -%}
-    <a href="{{ post.url | relative_url }}">{% if talk.series or named_posts.size > 1 %}Read: {{ post.title }}{% else %}Read the post behind the talk: {{ post.title }}{% endif %} &#8594;</a>
-    {%- endfor -%}
-  </div>
+  </section>
+  {%- elsif related_posts.size > 0 -%}
+  <section class="talk-writing">
+    <h2>Posts behind this talk ✍︎</h2>
+
+    {%- if series_posts.size > 0 -%}
+    <p class="talk-writing-series">From series {% include topic_badge.html topic=talk.series %}{%- comment -%}A series of one is a series that has only started{%- endcomment -%}{% if series_posts.size == 1 %}, still being written{% endif %}</p>
+    <ul>
+      {%- for post in series_posts -%}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="talk-writing-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+
+    {%- if extra_posts.size > 0 -%}
+      {%- if series_posts.size > 0 -%}
+      <p class="talk-writing-series">
+        {%- if extra_series.size > 0 -%}
+          {% if extra_posts.size == 1 %}And one from{% else %}And more from{% endif %}
+          {%- for topic in extra_series %} {% include topic_badge.html topic=topic %}{% endfor -%}
+        {%- else -%}
+          And also
+        {%- endif -%}
+      </p>
+      {%- endif -%}
+    <ul>
+      {%- for post in extra_posts -%}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="talk-writing-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+  </section>
   {%- endif -%}
 
 </div>
