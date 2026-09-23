@@ -26,6 +26,20 @@ layout: default
   {{ content }}
 </div>
 
+{%- comment -%}A talk built on this series gets a link to its talk page, in the talks page's highlight-card style{%- endcomment -%}
+{%- if tag -%}
+  {%- assign topic_talks = site.data.talk_catalogue | where: "series", tag -%}
+  {%- for talk in topic_talks -%}
+<a class="featured-video" href="/talk/{{ talk.key }}/">
+  {% include career_icon.html name="mic" %}
+  <span class="featured-video-text">
+    <b>There's a talk about this</b>
+    <span>{{ talk.title }}</span>
+  </span>
+</a>
+  {%- endfor -%}
+{%- endif -%}
+
 <div class="colorful"></div>
 
 <div class="topic-page">
