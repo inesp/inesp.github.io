@@ -98,7 +98,6 @@
   }
 }
 
-/* One button per piece of writing the talk draws on: the series, the posts, or both. */
 /* A talk with nothing written up yet still gets the section, just not a list. */
 .talk-no-references {
   border-left-color: $color-yellow-dark;
@@ -108,24 +107,85 @@
   }
 }
 
-.talk-sources {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 0 0 3rem;
+/* The writing the talk draws on. Just titles and dates: someone standing in a
+   hallway wants to see what to read, not a second copy of the blog. */
+.talk-writing {
+  margin-bottom: 3rem;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  li + li {
+    margin-top: 0.5rem;
+  }
+
+  li a {
+    font-weight: 600;
+  }
+
+  // the second group ("And one from ...") needs air after the list above it
+  ul + .talk-writing-series {
+    margin-top: 1.5rem;
+  }
+}
+
+
+/* Names the series the posts below belong to */
+.talk-writing-series {
+  margin-bottom: 0.75rem;
+  color: $color-text-muted;
+}
+
+/* A talk built on a single post: the post, then a taste of what it says, because a
+   lone title under a heading reads like an afterthought. */
+.talk-writing-one {
+  margin: 0 0 0.6rem;
 
   a {
-    display: inline-block;
     font-weight: 600;
-    padding: 0.6rem 1.5rem;
-    background: $color-yellow;
-    border: 3px solid $color-yellow-dark;
-    border-radius: $standard-radius;
-    text-decoration: none;
-    color: $color-text;
+  }
 
-    &:hover {
-      background: $color-yellow-dark;
-    }
+  .talk-writing-meta {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.85rem;
+    color: $color-text-muted;
+  }
+
+  .talk-writing-sep {
+    margin: 0 0.35rem;
+  }
+}
+
+.talk-writing-teaser {
+  margin: 0;
+  max-width: 44rem;
+}
+
+.talk-writing-date {
+  display: block;
+  font-size: 0.85rem;
+  color: $color-text-muted;
+}
+
+/* A series name as a badge, so the page gets some colour where it names a topic */
+.topic-badge-link {
+  text-decoration: none;
+
+  .badge {
+    margin-right: 0;
+    white-space: normal; // long series names wrap instead of overflowing on a phone
+  }
+
+  &:hover .badge {
+    background: $color-yellow-dark;
   }
 }

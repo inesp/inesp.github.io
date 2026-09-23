@@ -1,0 +1,6 @@
+{%- comment -%}
+A topic/series name as a yellow badge linking to its /topic/ page.
+
+- topic: the series or tag name, exactly as it appears in _data/topics.yml
+{%- endcomment -%}
+<a href="/topic/{{ include.topic | slugify }}/" class="topic-badge-link"><span class="badge bg-yellow">{{ include.topic }}</span></a>
