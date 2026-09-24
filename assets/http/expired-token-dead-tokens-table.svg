@@ -1,0 +1,55 @@
+<svg viewBox="0 0 520 234" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="234" fill="#fff"/>
+
+  <!-- Panel -->
+  <rect x="20" y="10" width="480" height="214" fill="#fff" rx="5" stroke="#dadada" stroke-width="1"/>
+  <text x="34" y="32" font-size="11" fill="#212529" font-weight="bold">Dead tokens</text>
+  <text x="486" y="32" font-size="9" fill="#6c757d" text-anchor="end">sorted by: broken since</text>
+  <line x1="20" y1="42" x2="500" y2="42" stroke="#dadada" stroke-width="1"/>
+  <text x="34" y="62" font-size="8" fill="#6c757d" font-weight="bold">ORG</text>
+  <text x="120" y="62" font-size="8" fill="#6c757d" font-weight="bold">PROVIDER</text>
+  <text x="210" y="62" font-size="8" fill="#6c757d" font-weight="bold">BROKEN SINCE</text>
+  <text x="310" y="62" font-size="8" fill="#6c757d" font-weight="bold">EMAILED</text>
+  <text x="400" y="62" font-size="8" fill="#6c757d" font-weight="bold">API CALLS</text>
+  <line x1="34" y1="68" x2="486" y2="68" stroke="#dadada" stroke-width="1"/>
+
+  <!-- Row: umbrella -->
+  <rect x="34" y="74" width="452" height="24" fill="#f8f8f8"/>
+  <text x="34" y="90" font-size="9.5" fill="#212529" font-family="monospace">umbrella</text>
+  <text x="120" y="90" font-size="9.5" fill="#212529">PagerDuty</text>
+  <text x="210" y="90" font-size="9.5" fill="#fd456f" font-weight="bold">41 days</text>
+  <text x="310" y="90" font-size="9.5" fill="#28a745" font-weight="bold">yes</text>
+  <text x="400" y="90" font-size="9.5" fill="#28a745" font-weight="bold">stopped</text>
+
+  <!-- Row: acme -->
+  <text x="34" y="114" font-size="9.5" fill="#212529" font-family="monospace">acme</text>
+  <text x="120" y="114" font-size="9.5" fill="#212529">GitHub</text>
+  <text x="210" y="114" font-size="9.5" fill="#212529">23 days</text>
+  <text x="310" y="114" font-size="9.5" fill="#28a745" font-weight="bold">yes</text>
+  <text x="400" y="114" font-size="9.5" fill="#28a745" font-weight="bold">stopped</text>
+
+  <!-- Row: globex -->
+  <rect x="34" y="122" width="452" height="24" fill="#f8f8f8"/>
+  <text x="34" y="138" font-size="9.5" fill="#212529" font-family="monospace">globex</text>
+  <text x="120" y="138" font-size="9.5" fill="#212529">Jira</text>
+  <text x="210" y="138" font-size="9.5" fill="#212529">3 days</text>
+  <text x="310" y="138" font-size="9.5" fill="#28a745" font-weight="bold">yes</text>
+  <text x="400" y="138" font-size="9.5" fill="#28a745" font-weight="bold">stopped</text>
+
+  <!-- Row: hooli -->
+  <text x="34" y="162" font-size="9.5" fill="#212529" font-family="monospace">hooli</text>
+  <text x="120" y="162" font-size="9.5" fill="#212529">GitHub</text>
+  <text x="210" y="162" font-size="9.5" fill="#212529">2 days</text>
+  <text x="310" y="162" font-size="9.5" fill="#28a745" font-weight="bold">yes</text>
+  <text x="400" y="162" font-size="9.5" fill="#28a745" font-weight="bold">stopped</text>
+
+  <!-- Row: initech -->
+  <rect x="34" y="170" width="452" height="24" fill="#f8f8f8"/>
+  <text x="34" y="186" font-size="9.5" fill="#212529" font-family="monospace">initech</text>
+  <text x="120" y="186" font-size="9.5" fill="#212529">GitHub</text>
+  <text x="210" y="186" font-size="9.5" fill="#212529">1 day</text>
+  <text x="310" y="186" font-size="9.5" fill="#e6a000" font-weight="bold">not yet</text>
+  <text x="400" y="186" font-size="9.5" fill="#e6a000" font-weight="bold">still calling</text>
+  <text x="34" y="210" font-size="8.5" fill="#fd456f">41 days: they got the email, nobody fixed it</text>
+  <text x="486" y="210" font-size="8.5" fill="#e6a000" text-anchor="end">1 day: still collecting proof</text>
+</svg>
