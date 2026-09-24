@@ -44,6 +44,7 @@ Field-by-field:
 - `series`: Optional series/collection name; must match a key in `_data/topics.yml` exactly. Adds a collection link above the title and groups the post under a shared topic page. See [add-a-series.md](add-a-series.md).
 - `biblio`: Optional array of `{title, link}` objects, rendered as an "External sources" section. On a series page (see [add-a-series.md](add-a-series.md)) the `biblio` lists of all posts in that series are merged, de-duplicated and sorted by title into an "All sources in this series" section.
 - `prev_post` / `next_post`: Optional post slugs linking chapters within a series. Verify with `make check-links`.
+- `no_next`: Optional boolean; set on the last post of a finished series so it doesn't show "Next chapter: To be continued...".
 - `intro_truncatewords`: Optional override for how many words of the excerpt to show in post listings.
 - `image`: Optional path to a social/OG preview image, picked up by the jekyll-seo-tag plugin.
 - `css`: Optional extra CSS class(es) applied to the post body wrapper.

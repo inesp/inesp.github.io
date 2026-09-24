@@ -4,6 +4,7 @@ title: "Deep dive #2: How to trigger a human fix when a token dies"
 tags: ["API Resilience Patterns", "Code Patterns"]
 image: /assets/http/auth-rejected-wall.png
 prev_post: 2026-09-23-api-resilience-load-shedding
+no_next: true
 intro_truncatewords: 50
 biblio:
   - title: "HTTP 401 Unauthorized"
