@@ -1,0 +1,40 @@
+<svg viewBox="0 0 520 236" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="236" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker></defs>
+
+  <!-- Message card -->
+  <rect x="20" y="20" width="330" height="196" fill="#fff" rx="5" stroke="#dadada" stroke-width="1"/>
+  <rect x="20" y="20" width="330" height="26" fill="#f0f0f0" rx="5"/>
+  <rect x="20" y="38" width="330" height="8" fill="#f0f0f0"/>
+  <text x="32" y="37" font-size="9" fill="#6c757d">Action required on your settings</text>
+
+  <!-- Part 1: what broke -->
+  <circle cx="40.0" cy="71.0" r="8" fill="#fd456f"/>
+  <text x="40" y="75" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">!</text>
+  <text x="56" y="75" font-size="12" fill="#212529" font-weight="bold">Your GitHub token stopped working</text>
+
+  <!-- Part 2: what doesn't work now -->
+  <text x="34" y="105" font-size="10" fill="#212529">Since Oct 3 we can't fetch data for:</text>
+  <text x="44" y="122" font-size="10" fill="#212529">• Deploy tracking in 3 projects</text>
+  <text x="44" y="137" font-size="10" fill="#212529">• PR review times</text>
+
+  <!-- Part 3: exactly where to fix it -->
+  <rect x="34" y="160" width="160" height="30" fill="#4a9c6d" rx="4"/>
+  <text x="114" y="179" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">Reconnect GitHub  →</text>
+  <text x="204" y="179" font-size="9" fill="#6c757d">takes 1 minute</text>
+
+  <!-- Callouts on the right -->
+  <line x1="345" y1="72" x2="368" y2="72" stroke="#dadada" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="380.0" cy="72.0" r="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="380" y="76" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">1</text>
+  <text x="396" y="76" font-size="10" fill="#212529">what broke</text>
+  <line x1="345" y1="121" x2="368" y2="121" stroke="#dadada" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="380.0" cy="121.0" r="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="380" y="125" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">2</text>
+  <text x="396" y="125" font-size="10" fill="#212529">what doesn't work now</text>
+  <line x1="262" y1="175" x2="368" y2="175" stroke="#212529" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="380.0" cy="175.0" r="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="380" y="179" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">3</text>
+  <text x="396" y="179" font-size="10" fill="#212529" font-weight="bold">exactly where to fix it</text>
+  <text x="396" y="191" font-size="9" fill="#6c757d">the part that matters most</text>
+</svg>
