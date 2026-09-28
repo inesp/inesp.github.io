@@ -13,6 +13,10 @@ pre[class*="language-"] {
 // Inline code
 code:not([class*="language-"]) {
   text-shadow: none;
+  background: $color-gray-lightest;
+  border: 1px solid $color-gray;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
 }
 
 // comments in code
