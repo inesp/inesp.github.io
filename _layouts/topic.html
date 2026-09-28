@@ -18,27 +18,18 @@ layout: default
 {% endif %}
 <h1 class="text-center">{% if topic_icon %}{% include career_icon.html name=topic_icon %}{% endif %}{{ page.title }}</h1>
 
-<div class="flex-row justify-content-center">{%- for tag in page.tags -%}
-  {% assign tag_slug = tag | slugify %}
-  <span class="badge bg-yellow-washed-out">{{ tag }}</span>{%- endfor -%}</div>
+<div class="flex-row justify-content-center">
+  {%- comment -%}A talk built on this series: just a small mic icon linking to its talk page{%- endcomment -%}
+  {%- if tag -%}
+    {%- assign topic_talks = site.data.talk_catalogue | where: "series", tag -%}
+    {%- for talk in topic_talks -%}
+  <a class="topic-talk-link" href="/talk/{{ talk.key }}/" title="Talk: {{ talk.title }}">{% include career_icon.html name="mic" %}</a>
+    {%- endfor -%}
+  {%- endif -%}</div>
 
 <div class="my-5">
   {{ content }}
 </div>
-
-{%- comment -%}A talk built on this series gets a link to its talk page, in the talks page's highlight-card style{%- endcomment -%}
-{%- if tag -%}
-  {%- assign topic_talks = site.data.talk_catalogue | where: "series", tag -%}
-  {%- for talk in topic_talks -%}
-<a class="featured-video" href="/talk/{{ talk.key }}/">
-  {% include career_icon.html name="mic" %}
-  <span class="featured-video-text">
-    <b>There's a talk about this</b>
-    <span>{{ talk.title }}</span>
-  </span>
-</a>
-  {%- endfor -%}
-{%- endif -%}
 
 <div class="colorful"></div>
 
