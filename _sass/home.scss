@@ -136,6 +136,24 @@
     display: block;
     color: $color-gray-4;
   }
+
+  .home-updated {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    margin-top: 0.75rem;
+    padding: 0 1.5rem;
+    text-decoration: none;
+
+    &:hover .home-updated-title {
+      text-decoration: underline;
+    }
+  }
+
+  .home-updated-title {
+    font-weight: 600;
+  }
 }
 
 /* What I do */
