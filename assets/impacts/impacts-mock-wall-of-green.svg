@@ -16,11 +16,11 @@
 
   <!-- title -->
   <text x="72" y="94" font-size="32" font-weight="800" fill="#2b2f36" letter-spacing="-0.3">Health of Production Environment</text>
-  <text x="72" y="128" font-size="17" fill="#8a919c">last 24 hours</text>
+  <text x="72" y="128" font-size="17" fill="#8a919c">last hour</text>
 
   <!-- tooltip -->
   <rect x="424" y="152" width="430" height="244" rx="20" fill="#ffffff" stroke="#f1f2f4" filter="url(#tipShadow)"/>
-  <text x="448" y="188" font-size="15" font-weight="700" fill="#2b2f36">8 July, 10:00 – 11:00</text>
+  <text x="448" y="188" font-size="15" font-weight="700" fill="#2b2f36">8 July, 10:33 – 10:36</text>
 
   <!-- rows: name left, pill right (pill right edge at x=830) -->
   <text x="448" y="226" font-size="16" font-weight="600" fill="#2b2f36">VM CPU utilization</text>
@@ -44,38 +44,34 @@
   <text x="774" y="370" font-size="14" font-weight="700" fill="#0d7a67" text-anchor="middle">healthy · 0</text>
 
   <!-- stem from tooltip to hovered dot -->
-  <line x1="639" y1="400" x2="639" y2="431" stroke="#d6336c" stroke-width="2" stroke-linecap="round"/>
+  <line x1="652.3" y1="400" x2="652.3" y2="431" stroke="#d6336c" stroke-width="2" stroke-linecap="round"/>
 
-  <!-- dots: 1h each, r=16, pitch 42, centers y=458 -->
+  <!-- dots: 20 pips, 3 min each = 1 hour, r=16, centers y=458 -->
   <g>
-    <circle cx="93"  cy="458" r="16" fill="#14a68c"/>
-    <circle cx="135" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="177" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="219" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="261" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="303" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="345" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="387" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="429" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="471" cy="458" r="16" fill="#f59e4b"/>
-    <circle cx="513" cy="458" r="16" fill="#f59e4b"/>
-    <circle cx="555" cy="458" r="16" fill="#d6336c"/>
-    <circle cx="597" cy="458" r="16" fill="#d6336c"/>
-    <circle cx="639" cy="458" r="16" fill="#d6336c"/>
-    <circle cx="639" cy="458" r="23" fill="none" stroke="#d6336c" stroke-width="3"/>
-    <circle cx="681" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="723" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="765" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="807" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="849" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="891" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="933" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="975" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="1017" cy="458" r="16" fill="#14a68c"/>
-    <circle cx="1059" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="93.0" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="143.8" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="194.7" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="245.5" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="296.4" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="347.2" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="398.1" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="448.9" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="499.7" cy="458" r="16" fill="#f59e4b"/>
+    <circle cx="550.6" cy="458" r="16" fill="#f59e4b"/>
+    <circle cx="601.4" cy="458" r="16" fill="#d6336c"/>
+    <circle cx="652.3" cy="458" r="16" fill="#d6336c"/>
+    <circle cx="652.3" cy="458" r="23" fill="none" stroke="#d6336c" stroke-width="3"/>
+    <circle cx="703.1" cy="458" r="16" fill="#d6336c"/>
+    <circle cx="753.9" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="804.8" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="855.6" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="906.5" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="957.3" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="1008.2" cy="458" r="16" fill="#14a68c"/>
+    <circle cx="1059.0" cy="458" r="16" fill="#14a68c"/>
   </g>
 
   <!-- axis labels -->
-  <text x="77" y="514" font-size="15" fill="#8a919c">24 hours ago</text>
+  <text x="77" y="514" font-size="15" fill="#8a919c">1 hour ago</text>
   <text x="1075" y="514" font-size="15" fill="#8a919c" text-anchor="end">now</text>
 </svg>
