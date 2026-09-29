@@ -1,5 +1,6 @@
 ---
 title: "Detecting Bad Deploys with Math, Not AI"
+updated: 2026-09-29
 tags: ["Algorithms"]
 biblio:
   - link: https://en.wikipedia.org/wiki/Normal_distribution

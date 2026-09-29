@@ -29,6 +29,27 @@ layout: default
       {%- assign latest_teaser_length = latest.intro_truncatewords | default: 30 -%}
       <span class="home-latest-teaser">{{ latest.excerpt | strip_html | truncatewords: latest_teaser_length }}</span>
     </a>
+
+    {%- comment %}Recently updated: the post with the newest `updated` date from the last 30 days (evaluated at build time){% endcomment -%}
+    {%- assign updated_cutoff = site.time | date: "%s" | minus: 2592000 -%}
+    {%- assign updated_post = nil -%}
+    {%- assign updated_ts = 0 -%}
+    {%- for p in site.posts -%}
+      {%- if p.updated and p.url != latest.url -%}
+        {%- assign ts = p.updated | date: "%s" | plus: 0 -%}
+        {%- if ts > updated_cutoff and ts > updated_ts -%}
+          {%- assign updated_post = p -%}
+          {%- assign updated_ts = ts -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if updated_post %}
+    <a class="home-updated" href="{{ updated_post.url | relative_url }}">
+      <span class="home-latest-label">Recently updated</span>
+      <span class="home-updated-title">{{ updated_post.title }}</span>
+      <span class="text-muted">· {{ updated_post.updated | date: site.date_format }}</span>
+    </a>
+    {%- endif %}
   </section>
 
   <!-- What I do -->

@@ -19,6 +19,10 @@ series: "Series Name"
 prev_post: 2026-02-24-some-earlier-post-slug
 next_post: 2026-09-09-some-later-post-slug
 
+# Date of a substantial rewrite (optional). Shown next to "Published" on the post, and puts
+# the post in a "Recently updated" line on the home page for 30 days.
+updated: 2026-09-29
+
 # Excerpt length override for post listings (optional, default is 15-30 depending on context).
 intro_truncatewords: 30
 
@@ -45,6 +49,7 @@ Field-by-field:
 - `biblio`: Optional array of `{title, link}` objects, rendered as an "External sources" section. On a series page (see [add-a-series.md](add-a-series.md)) the `biblio` lists of all posts in that series are merged, de-duplicated and sorted by title into an "All sources in this series" section.
 - `prev_post` / `next_post`: Optional post slugs linking chapters within a series. Verify with `make check-links`.
 - `no_next`: Optional boolean; set on the last post of a finished series so it doesn't show "Next chapter: To be continued...".
+- `updated`: Optional date of a substantial rewrite. The post header shows "Updated: <date>" next to "Published", and the home page shows the most recently updated post (other than the latest post) in a "Recently updated" line under the Latest card, for 30 days after that date. The 30 days are counted when the site is built, so the line disappears on the first build after that.
 - `intro_truncatewords`: Optional override for how many words of the excerpt to show in post listings.
 - `image`: Optional path to a social/OG preview image, picked up by the jekyll-seo-tag plugin.
 - `css`: Optional extra CSS class(es) applied to the post body wrapper.

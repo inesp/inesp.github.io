@@ -11,6 +11,11 @@ layout: default
       Published: <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
         {{ page.date | date: site.date_format }}
       </time>
+      {%- if page.updated %}
+        • Updated: <time itemprop="dateModified" datetime="{{ page.updated | date_to_xmlschema }}">
+          {{ page.updated | date: site.date_format }}
+        </time>
+      {%- endif %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author | escape }}</span>
     </p>
 
