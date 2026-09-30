@@ -12,6 +12,16 @@
 # series + post_slugs are where the reference list comes from: every source cited
 # by any of that writing, deduplicated.
 
+
+- key: api-resilience
+  title: "Their API Went Down. So Why Is My App on Fire?"
+  series: API Resilience Patterns
+  post_slugs:
+    - self-documented-code-part-II
+  description: Every API is doing its own thing. Authorization, headers, rate limiting (devs are creative people, so we just like to invent our own rules). After integrating **40+ APIs into the same product**, I have a lot to say about **handling failures of remote APIs**.
+  abstract: |
+    Third-party APIs are fickle and entirely out of your control. Sooner or later they will have an incident. Will your app survive their outage? Or will they drag you down with them?
+
 - key: data-lies
   title: How We Lie to Each Other with Data
   series: "The Algorithm Decided"
@@ -22,10 +32,6 @@
     But we don't really use it at work... when writing code, except.... that we love **proving a point with a good chart**. That would be a harmless quirk if we were bakers, but our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you. 
     
     Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing."
-
-- key: tests
-  title: How Many Tests Is Enough?
-  description: "What makes us really calm when deploying code to production? A green test suite with **100% test coverage**. But then we merge, deploy, go to lunch... and somewhere out there a user does something so creative that **production goes down anyway**. There's no amount of tests that makes the bugs go away. We wish test coverage was a magic number, just like we want to believe in the power of other metrics (LOC, story points, DORA, ...). This talk grapples with two questions: **what our tests actually catch**, and why we keep reaching for these numbers."
 
 - key: estimation
   title: Software Estimation Is a Delusion
@@ -43,11 +49,6 @@
 
     Unfortunately, I'm not offering a magic formula. I'm offering language on how to push back on false precision, and how to plan better: not answer "how long will this take?" but "what can we actually build with the time and the resources we have?".
 
-
-- key: nobody-cares
-  title: Nobody Cares What You Built
-  description: There's an entire field dedicated to **getting people to read what you write**, developers just aren't in it. We're trained in precision and completeness. Marketers know people only skim, they **decide in 3 seconds**, and only care about what's relevant to them. This talk steals their tricks for **standups, PRs, proposals**, and that email nobody answered.
-
 - key: deploy-impact
   title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math, Not AI"
   post_slugs:
@@ -59,11 +60,10 @@
   series: Cognitive Biases in Code
   description: Knowing about cognitive biases is like **debugging our brain**. Devs spend tons of time fixing bugs in code, but biases are **the mental bugs** that mess with our decisions. They make us overconfident, they make us ignore users and fight for bad ideas. But it needn't be this way.
 
-- key: api-resilience
-  title: "Their API Went Down. So Why Is My App on Fire?"
-  series: API Resilience Patterns
-  post_slugs:
-    - self-documented-code-part-II
-  description: Every API is doing its own thing. Authorization, headers, rate limiting (devs are creative people, so we just like to invent our own rules). After integrating **40+ APIs into the same product**, I have a lot to say about **handling failures of remote APIs**.
-  abstract: |
-    Third-party APIs are fickle and entirely out of your control. Sooner or later they will have an incident. Will your app survive their outage? Or will they drag you down with them?
+- key: tests
+  title: How Many Tests Is Enough?
+  description: "What makes us really calm when deploying code to production? A green test suite with **100% test coverage**. But then we merge, deploy, go to lunch... and somewhere out there a user does something so creative that **production goes down anyway**. There's no amount of tests that makes the bugs go away. We wish test coverage was a magic number, just like we want to believe in the power of other metrics (LOC, story points, DORA, ...). This talk grapples with two questions: **what our tests actually catch**, and why we keep reaching for these numbers."
+
+- key: nobody-cares
+  title: Nobody Cares What You Built
+  description: There's an entire field dedicated to **getting people to read what you write**, developers just aren't in it. We're trained in precision and completeness. Marketers know people only skim, they **decide in 3 seconds**, and only care about what's relevant to them. This talk steals their tricks for **standups, PRs, proposals**, and that email nobody answered.
