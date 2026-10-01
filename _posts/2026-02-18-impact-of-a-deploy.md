@@ -137,6 +137,10 @@ We knew we needed lots of data, so we collect every metric (response time, error
 
 ![The eternal loop: collect metric, compare to historical data, return health](/assets/impacts/eternal-loop.svg)
 
+We don't own the data, it lives in Datadog, Sentry, AWS CloudWatch, ... So every 2 minutes, for every metric, we send 1 API call to the provider, get 1 value back and append it to our own timeseries. **1 data point = 1 API call.**
+
+![Every 2 minutes Impacts sends 1 API call to a provider, gets 1 value back and appends it to the timeseries](/assets/impacts/one-api-call-flow.svg)
+
 <details markdown="1" class="rabbit-hole">
 <summary>Rabbit hole: Why 14 days?</summary>
 
