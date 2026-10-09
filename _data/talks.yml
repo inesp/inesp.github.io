@@ -40,10 +40,9 @@
   flag: belgium
   location: Antwerp, Belgium
   title: "Their API Went Down. So Why Is My App on Fire?"
-  coming_soon: true
-  video_link:
+  video_link: https://www.youtube.com/watch?v=PGpKfdXZrpc
   details_link: https://m.devoxx.com/events/dvbe26/talks/7035/their-api-went-down-so-why-is-my-app-on-fire
-  slides_link:
+  slides_link: https://speakerdeck.com/inesp/their-api-went-down-so-why-is-my-app-on-fire
   talk: api-resilience
 
 - date: Sep 2026
