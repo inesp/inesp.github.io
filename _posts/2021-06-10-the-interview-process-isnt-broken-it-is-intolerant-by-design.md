@@ -13,7 +13,7 @@ biblio:
   - title: There is a real connection between technical interview performance and salary.
     link: https://blog.interviewing.io/there-is-a-real-connection-between-technical-interview-performance-and-salary-heres-the-data/
   - title: Who Y Combinator companies want
-    link: https://triplebyte.com/blog/who-y-combinator-companies-want
+    link: https://web.archive.org/web/20220219002254/https://triplebyte.com/blog/who-y-combinator-companies-want
   - title: "Hans Christian Andersen: The Princess and the Pea"
     link: http://www.eastoftheweb.com/short-stories/UBooks/PriPea.shtml
   - title: "Invisible Women: Exposing Data Bias in a World Designed for Men"
@@ -22,7 +22,7 @@ biblio:
 
 At the moment, the IT industry is considered a pretty prestigious profession. It attracts lots and lots of people because the pay is good, the working conditions are good and the whole society is in awe of the masterful things programmers produce.
 
-Potential workers are trying join the IT train in droves. So many have been joining us that a third of working developers only have <= 4 years of work experience (according to Stack Overflow surveys).   
+Potential workers are trying to join the IT train in droves. So many have been joining us that a third of working developers only have <= 4 years of work experience (according to Stack Overflow surveys).   
 
 This could have been a golden opportunity for IT companies to test all kinds of interview approaches on a vast number of people and develop a data-backed super approach. One that could finally tell us what makes a good (co-)worker. 
 
@@ -32,7 +32,7 @@ Instead, we are willingly standing still, voluntarily propping up this broken an
 
 The answer is simple: **it produces "proper" IT teams**. It does not create great teams that deliver great products or services or are pleasant to work with or are innovative or are prolific. But it *does* create teams that look as if they are good IT teams. 
 
-We are mostly concerned with copy-pasting what we consciously or subconsciously believe is a good IT team: young, white, male, dressed in hoodies, socially awkward, having gone to the same universities we went to, having the same beer preferences we have, have had the same life experiences that we had, ... .
+We are mostly concerned with copy-pasting what we consciously or subconsciously believe is a good IT team: young, white, male, dressed in hoodies, socially awkward, having gone to the same universities we went to, having the same beer preferences we have, having had the same life experiences that we had, ... .
 
 
 {% include toc.html %}
@@ -40,33 +40,31 @@ We are mostly concerned with copy-pasting what we consciously or subconsciously 
 ## Why do many claim the interview process is broken?
 
 
-The short answer: people, who consider themselves completely decent devs, feel left out. 
+The short answer: people who consider themselves completely decent devs, feel left out. 
 
 Now, are they right or are they not? 
 
-That's hard to judge when what we have are mostly just internet anecdotes. But, my bet is placed squarely on "yes, they are right". 
+That's hard to judge when what we have are mostly just internet anecdotes. But my bet is placed squarely on _"yes, they are right"_. 
 
-And my strongest argument is the statistical analysis of the IT population. Given the billions of people on earth, how can it be there is sooo little variance in the IT population? How is it possible that a group of devs can be spotted on the street by their looks alone? This shouldn't be possible, if we really were a merit-based profession.
+Just think about it this was: given the billions of people on earth, how can it be that there is sooo little variance in the IT population? **How is it possible that a group of devs can be spotted on the street by their looks alone?** If we really are a merit-based profession, then this would be impossible.
 
-**The perfectly competent devs feel they were rejected not because they had too little skill or talent, but because they didn't know answers to questions, they felt weren't truly relevant to the job posting. And I tend to agree with them.**
+From what I've seen and learned over the years, I have very little trust in most questions that wind up being asked in interviews.
 
-From what I've seen and learned over the years, I have 0 trust in most questions that wind up being asked in interviews.
+Obviously, companies are very diverse and some must have adequate and successful interview processes, but why don't most have them?
 
-Obviously, companies are very different from each other and some do have adequate and successful interview processes, but those are the exception, not the rule.
-
-Over the years, I have been on all sides of the interview process, I've been the interviewer, the interviewee, the observer, the interviewer-adviser, the interviewee-adviser, ... . This does not make me an expert on interviews in any way, but I also can't just ignore the patterns I'm seeing.
+Over the years, I have been on all sides of the interview process. I've been the interviewer, the interviewee, the observer, the interviewer-adviser, the interviewee-adviser, ... . This does not make me an expert on interviews in any way, but I also can't just ignore the patterns I'm seeing.
 
 
 #### What's the point of the questions
 
 
-**The worst failing** I have noticed **is that almost no interviewer** I spoke to **concerned themselves with the value of all the possible answers to their questions.**
+**The worst failing** I have noticed **is that very few interviewers** I spoke to **concerned themselves with the value of all the possible answers to their questions.**
 
 Things like: **What am I even trying to learn about the interviewee with Question 43?** Why am I asking this specific question and not some other? Does this question tell me anything useful about the potential hire, what is the big picture? What are all the possible "good" answers to this question 43, what are really "bad" ones and what does it mean if the interviewee answers something in between, does it mean anything at all?
 
-Too many interviewers treat questions like a test: you get 10 questions, each is worth 10 points, you get a score according to how close you are to what I deem the most correct answer and you need 80 points to get to the next level.
+Too many interviewers treat questions like a test: you get 10 questions, each is worth 10 points, you get a score according to how close you are to what I deem the most correct answer, and you need 80 points to get to the next level.
 
-I don't want to say I never met anybody, who cared whether the questions they were asking actually gave them any useful information, it's just that there are so few of them.
+I don't want to say I never met anybody who cared whether the questions they were asking actually gave them any useful information. It's just that there are so few of them.
 
 The obvious flaw in this approach is that all human knowledge is absolutely vast, even if you limit it to IT knowledge. Everybody will have gaping gaps in their knowledge. 
 
@@ -77,18 +75,18 @@ The interviewer will (and should) always know more about a question, because she
 Even worse, many believe the topics have been chosen objectively.
 
 
-#### *"I'm searching for somebody, who is just like me"*
+#### *"I'm searching for somebody who is just like me"*
 
 
-In reality, **the topics are mostly chosen poorly and randomly**. More often than not they are chosen **from the knowledge that the first interviewer happened to have**. And what these topics are good at is finding other people, who are just like that first interviewer.
+In reality, **the topics are mostly chosen poorly and randomly**. More often than not they are chosen **from the knowledge that the first interviewer happened to have**. And what these topics are good at is finding other people who are just like that first interviewer.
 
-We are not searching for the best developer, we are searching for those, who feel and look and smell like that first person with hiring power in the company.
+We are not searching for the best developer, we are searching for those who feel and look and smell like that first person with hiring power in the company.
 
-If you are not like that first interviewer, then the only other way to get hired is luck or networking. The "correct" answers to all interview topics can usually be obtained by having friends, who work there or are otherwise close to the company. 
+If you are not like that first interviewer, then the only other way to get hired is luck or networking. The "correct" answers to all interview topics can usually be obtained by having friends who work there or are otherwise close to the company. 
 
 But last time I checked, to be friends with somebody, you have to have even more in common than just the knowledge of some IT topics.
 
-Rejecting everybody, who is not deeply similar to the existing employees or does not have informal connections to your employees, helps to make the interview process feel broken.
+Rejecting everybody who is not deeply similar to the existing employees or does not have informal connections to your employees, helps to make the interview process feel broken.
 
 
 ## Everybody can be an interviewer
@@ -113,7 +111,7 @@ To be honest, Google does add that they train their interviewers before they put
 &mdash; Google Guide: Train your interviewers
 </figcaption>
 
-But, I do wonder, how well they really train them. Everybody does not make a good interviewer. Being good at interviewing is a skill and like every other skill, you get better as you practice. But you will suck at it for a long long time, before becoming good at it. Imagine how good a piano student is after 1 month of practice or even after the 1st year of practice. So, how long should you actively practice interviewing, before you can be trusted with a job candidate?
+But I do wonder how well they really train them. Not everybody makes a good interviewer. Being good at interviewing is a skill and like every other skill, you get better as you practice. But you will suck at it for a long, long time before becoming good at it. Imagine how good a piano student is after 1 month of practice or even after the 1st year of practice. So, how long should you actively practice interviewing before you can be trusted with a job candidate?
 
 
 #### Can you beat bias with bias?
@@ -123,15 +121,15 @@ I understand the appeal of making everybody participate in hiring. We are all bi
 
 If a group of people is diverse, then their biases should be just as diverse and the group together will make a better hiring apparatus.
 
-Diversity is a goal worth pursuing because it gives you greater flexibility and stability. Just as a diverse microbiome in your gut gives you better health or a diverse portfolio of stocks gives your better wealth or a diverse group of friends gives you better social support.
+Diversity is a goal worth pursuing because it gives you greater flexibility and stability. Just as a diverse microbiome in your gut gives you better health or a diverse portfolio of stocks gives you better wealth or a diverse group of friends gives you better social support.
 
 But what gives us the confidence that a diverse group of interviewers has diverse biases? They might be different, but if they are very well assimilated into a cohesive community, then their biases will reflect the average bias of the community.
 
-**Just because people seem varied, doesn't mean their biases are varied.** A bias is something that we form from experience and from what we believe is expected of us. It is not as trivial to identify bias as most believe.
+**Just because people seem varied doesn't mean their biases are varied.** A bias is something that we form from experience and from what we believe is expected of us. It is not as trivial to identify bias as most believe.
 
-`GapJumper` is a company that tries to perform blind recruitment processes in the name of other companies. They give all applicants the same task and send those with the best results to the company with no identifying information.
+`GapJumpers` is a company that tries to perform blind recruitment processes in the name of other companies. They give all applicants the same task and send those with the best results to the company with no identifying information.
 
-In 2019 a company asked them to figure out why they had low promotion levels of female employees in some departments. It turned out that the problem wasn't bias of those, who reviewed the work of women, but the bias of those, who assigned tasks. **The women employees were reviewed favourably, the issue was simply that the tasks they got assigned were less important than the tasks assigned to a few men.**
+In 2019 a company asked them to figure out why they had low promotion levels of female employees in some departments. It turned out that the problem wasn't bias of those who reviewed the work of women, but the bias of those who assigned tasks. **The women employees were reviewed favourably. The issue was simply that the tasks they got assigned were less important than the tasks assigned to a few men.**
 
 > Our analysis of performance reviews found no bias during performance review. Issue was disproportionate assigning of high impact project to a few (male) employees.
 <figcaption>
@@ -155,7 +153,7 @@ Interviewing is a skill. If you want to be good at it, you have to learn, you ha
 
 But if you have to practice a lot, then you have to enjoy doing it. You have to enjoy helping strangers show off their skills, their personality, while under pressure, even if you don't see yourself getting a beer with them afterward.
 
-How many people do you know, who interview like that?
+How many people do you know who interview like that?
 
 
 ## We don't understand our profession, but we do believe the interview process is infallible
@@ -171,15 +169,15 @@ This can cause 2 problems:
 
   Our ideal programmer knows everything about sorting algorithms and bit manipulation, so we ask those questions. Forgetting that neither we nor any of our co-workers used this knowledge in the last 10 years.
 
-- **We are suspicious of the candidate,** erring rather on the side of reject.
+- **We are suspicious of the candidate,** erring rather on the side of rejection.
 
   After all, the candidate has to prove herself worthy of this job opportunity. What we do is only for the anointed.
 
-The research, however, shows that performance on technical interviews is highly volatile for almost all candidates.
+Their data, however, shows that performance on technical interviews is highly volatile for almost all candidates.
 
-`interviewing.io` provides mock interviews to their users, they can use the platform to practice interviewing or to practice being interviewed. Each person does multiple of these sessions, which allows the company to compare the results for each person.
+`interviewing.io` provides mock interviews to their users. They can use the platform to practice interviewing or to practice being interviewed. Many people do several of these sessions, which allows the company to compare the results for each person.
 
-They found that **just 20% of their users consistently scored the same**. The others did well on some interviews and poorly on others. In real life, you usually can't afford to not be at your best all the time... always. Usually, **if you flunk 1 interview step, you are out**.
+They found that **just 20% of their users performed consistently**. The others did well on some interviews and poorly on others. In real life, you usually can't afford to not be at your best all the time... always. Usually, **if you flunk 1 interview step, you are out**.
 
 Their scores go from 1 to 4:
 
@@ -202,28 +200,28 @@ All of this builds up huge pressure on interviewees. Especially on 3 groups:
 - **underrepresented groups**, who are more likely to be sidelined by the community and thus also don't know how to play the game
 - **senior devs**, because they have to prove themselves with college knowledge as well as detailed accounts of real-life problem-solving experiences
 
-Playing the game is hard work. But that is not the real problem, **the real problem is withholding information.**
+Playing the game is hard work. But that is not the real problem. **The real problem is withholding information.**
 
 The IT interviewing process is a game when it shouldn't be.
 
 **This game has exact rules of behaviour and exact, unambiguous rules for winning.** Proof for this are all the "Cracking the Coding Interview."-books and courses, which will successfully teach you how to win in interviews.
 
 
-If you want to be a master interviewee, you have to look up certain topics, that are considered "basic IT knowledge", approach problems in a constructive, "I fear you not"-way and you have to have an air around you that says "I have a wide range of experience", "I have smart things to say about your product", and of course you need a healthy amount of self-confidence, ... . **It's like Tinder, but for jobs.**
+If you want to be a master interviewee, you have to look up certain topics that are considered "basic IT knowledge", approach problems in a constructive, "I fear you not"-way and you have to have an air around you that says "I have a wide range of experience", "I have smart things to say about your product", and of course you need a healthy amount of self-confidence, ... . **It's like Tinder, but for jobs.**
 
 Nobody actually is all those things, but that's not a problem, because the interview process is a lot about the looks.
 
-As a complete beginner, I had no idea, there was a game, let alone what rules there were or what was expected of me. I didn't know the common questions nor the "correct" answers.
+As a complete beginner, I had no idea there was a game, let alone what rules there were or what was expected of me. I didn't know the common questions nor the "correct" answers.
 
-And as I belonged to an under-represented group, my friends weren't in IT and when we met, we would not talk about the latest Linux distro or an awesome dev blog post. It took time for me to figure all this out. But now, that I'm "in", I can see that most of my colleagues are unaware of this advantage. Even the most welcoming, supportive people, including me sometimes.
+And as I belonged to an under-represented group, my friends weren't in IT and when we met, we would not talk about the latest Linux distro or an awesome dev blog post. It took time for me to figure all this out. But now that I'm "in", I can see that most of my colleagues are unaware of this advantage. Even the most welcoming, supportive people, including me sometimes.
 
-It so happened that I once had an opportunity to work with somebody, who I rejected on the interview. And you know what? This person proved to be a good dev, who could do his job successfully. I misjudged him, even though I was actively trying not to 🙂.
+It so happened that I once had an opportunity to work with somebody who I rejected in the interview. And you know what? This person proved to be a good dev who could do his job successfully. I misjudged him, even though I was actively trying not to 🙂.
 
 
 #### Interviews pin your compensation options  
 
 
-I've also seen a very good dev, go to an interview, totally unprepared. **The result was a job offer for a low position with small pay.** `interviewing.io` also found a correlation between how good the interview goes and your eventual compensation (their data is for San Francisco):
+I've also seen a very good dev go to an interview, totally unprepared. **The result was a job offer for a low position with small pay.** `interviewing.io` also found a correlation between how good the interview goes and your eventual compensation:
 
 > Interview performance doesn’t just get you in the door or not: it can have a demonstrable connection to your eventual compensation. For instance, doing just a point better in your technical interview could be worth 10k or more, and with bonus, it could add 20k to your annual comp.
 <figcaption>
@@ -232,13 +230,13 @@ I've also seen a very good dev, go to an interview, totally unprepared. **The re
 
 The interview doesn't just determine whether or not you get the job, it also **determines what you are going to be paid for the foreseeable future.**
 
-I don't know how it is where you live, but where I live, upwards mobility inside the same company is much more difficult than switching jobs and getting a better position and compensation at a different company.
+I don't know how it is where you live, but where I live, upward mobility inside the same company is much more difficult than switching jobs and getting a better position and compensation at a different company.
 
-We are all more sympathetic to people, who have had the same struggles in life as we did and less sympathetic to those who can't overcome something foreign to us.
+We are all more sympathetic to people who have had the same struggles in life as we did and less sympathetic to those who can't overcome something foreign to us.
 
-Recently an old colleague lamented how devs have become too expensive, but in the same breath said that he doesn't really want to hire a dev, who doesn't know what the current rate for a dev is. If you don't know how much the top 10% of devs in our area is paid, then you probably also don't know the latest programming approaches.
+Recently an old colleague lamented how devs have become too expensive, but in the same breath said that he doesn't really want to hire a dev who doesn't know what the current rate for a dev is. If you don't know how much the top 10% of devs in our area is paid, then you probably also don't know the latest programming approaches.
 
-In my eyes, this principle just makes sure that people, who are on the outside, stay on the outside.
+In my eyes, this principle just makes sure that people who are on the outside stay on the outside.
 
 People like forgetting how they came to where they are. **We all experience amnesia when it comes to remembering our past incompetence.** And still, we are tasked with assessing a job applicant and deciding how much money they are worth.
 
@@ -258,7 +256,7 @@ The sad truth we don't realize is, however, that we are perpetuating old wrongs,
 
 If we were filtering by job-relevant skills, the approach would work. But we don't.
 
-We filter by what a programmer should feel and look and smell like and most often than not, they should feel and look and smell like our boss and our colleagues and us.
+We filter by what a programmer should feel and look and smell like and more often than not, they should feel and look and smell like our boss and our colleagues and us.
 
 
 #### How to objectively score job applicants?
@@ -287,9 +285,9 @@ It doesn't matter if we rely on a point system or interviewers' guts, both appro
 #### The "Princess on the pea"-test
 
 
-Sadly, the heterogeneity among software engineers is so small that you can cover the vast majority with this description: white, male, aged 25-35, wearing a hoody.
+Sadly, the heterogeneity among software engineers is so small that you can cover the vast majority with this description: white, male, aged 25-35, wearing a hoodie.
 
-Add to this the **cultural stereotypes, we** kinda, truly **still believe**: that the best devs are socially awkward, have no children, know all the trivia of the IT world, are obsessed with their coding to the point of coding all the time and most importantly **are born this way**.
+Add to this the **cultural stereotypes we** kinda, truly **still believe**: that the best devs are socially awkward, have no children, know all the trivia of the IT world, are obsessed with their coding to the point of coding all the time and most importantly **are born this way**.
 
 If somebody does not exhibit at least some of these characteristics, then they are just not a true developer.
 
@@ -310,22 +308,22 @@ If somebody does not exhibit at least some of these characteristics, then they a
 </figcaption>
 
 
-## What are we losing, by being snobbish
+## What are we losing by being snobbish
 
 
 Ok, so our interview processes are killing diversity. So what?
 
-**If the best of the best are all young white man, who all know each other because they all went to the same school and worked at the same couple of companies and are all mostly almost the same age and all meet at the same meetups and talk at the same conferences and have the same interests and ... What are the odds of that being true? Zero.**
+**If the best of the best are all young white men who all know each other because they all went to the same school and worked at the same couple of companies and are all mostly almost the same age and all meet at the same meetups and talk at the same conferences and have the same interests and ... What are the odds of that being true? Zero.**
 
-A political system, where all the control is in the hands of a small group of people, who all know each other and all socialize with each other, is called an oligarchy.
+A political system where all the control is in the hands of a small group of people who all know each other and all socialize with each other is called an oligarchy.
 
-By definition oligarchy does *not* place the best people into the most important positions, because it doesn't have access to the best people, its pool of possible  candidates is diminished to the extreme because only members of the oligarchy can be given positions.
+By definition oligarchy does *not* place the best people into the most important positions, because it doesn't have access to the best people, its pool of possible candidates is diminished to the extreme because only members of the oligarchy can be given positions.
 
-**Instead of picking the best and brightest of all, who were born, they are forced to pick whoever is best amongst them.** Preferably they would like to give all the oligarchy members important positions, **but competence is always equally distributed in a society,** so they can't all be better than all the rest of the population.
+**Instead of picking the best and brightest of all who were born, they are forced to pick whoever is best amongst them.** Preferably they would like to give all the oligarchy members important positions, **but competence is always equally distributed in a society,** so they can't all be better than all the rest of the population.
 
-That is what we are losing. We are losing innovation and richness of taste. **It is not just the underrepresented groups that are being left behind, but everybody, who doesn't want or can pretend to be the best thing that ever happened to development.**
+That is what we are losing. We are losing innovation and richness of taste. **It is not just the underrepresented groups that are being left behind, but everybody who doesn't want to or can't pretend to be the best thing that ever happened to development.**
 
-**We are losing new ideas, better approaches, we could already have solutions to a million still unsolved problems, but we don't, because we want to handpick the people, who will be allowed to work on them.**
+**We are losing new ideas, better approaches, we could already have solutions to a million still unsolved problems, but we don't, because we want to handpick the people who will be allowed to work on them.**
 
 So,... if you are hiring, look at your already hired employees.
 
@@ -337,8 +335,8 @@ Is it equally likely that all your job applicants would know how to correctly an
 
 Are you sure you are not **missing out on somebody talented, just because they don't fit your mental image of a dev?**
 
-And if you are searching for a job, just treat it like Tinder. Figure out what type of company you wish to work for then figure out what type of dev they are looking for and try to show that you have those very specific characteristics.
+And if you are searching for a job, just treat it like Tinder. Figure out what type of company you wish to work for, then figure out what type of dev they are looking for and try to show that you have those very specific characteristics.
 
-And try not to feel jaded, that the system is as shitty as it is. But the best jobs are usually still best accessible via acquaintances.
+And try not to feel jaded that the system is as shitty as it is. But the best jobs are usually still best accessible via acquaintances.
 
 And who knows, maybe we will one day live in a society that will give everybody a chance.
