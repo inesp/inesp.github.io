@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Ines Panker",
+    "short_name": "Ines Panker",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,5 +15,5 @@
     ],
     "theme_color": "#ffde59",
     "background_color": "#ffde59",
-    "display": "standalone"
+    "display": "browser"
 }
