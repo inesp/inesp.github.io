@@ -1,6 +1,6 @@
 ---
-title: "Detecting Bad Deploys with Math, Not AI"
-updated: 2026-09-29
+title: "How I Built Anomaly Detection from Scratch (and How We Ran It for Customers for 6 Years)"
+updated: 2026-10-15
 tags: ["Algorithms"]
 biblio:
   - link: https://en.wikipedia.org/wiki/Normal_distribution
@@ -153,6 +153,8 @@ It shouldn't be too much time, because then we will be too slow to pick up on ne
 I experimented on metric data we gathered in production, our own and that of customers and decided that 14 days sounds like it will work just fine. At least good enough for milestone 1. 
 
 I liked the idea that we are capturing 2 full weeks.
+
+Strictly speaking, we don't take the last 14 days, we take the last 10,080 values, which is 14 days' worth (14 × 720). If a metric has gaps, those values reach a bit further back.
 </details>
 
 <details markdown="1" class="rabbit-hole">
@@ -170,7 +172,7 @@ $$
 \text{per customer} = 20 \text{ metrics} \times 720 \frac{\text{data points}}{\text{day}} = 14\,400 \frac{\text{data points}}{\text{day}}
 $$
 
-At the beginning, we stored these all together in one Postgres table. If our predictions come true, then the table will be growing at the rate of 14,400 rows per customer per day. (A problem we will solve in milestone 2, promise!) 
+At the beginning, we stored these all together in one Postgres table. If our predictions come true, then the table will be growing at the rate of 14,400 rows per customer per day. (A problem we will solve in [milestone 2](#redis-storage), promise!) 
 
 But in reality, some **customers won't think twice before defining 100s of metrics for us to track**. So we had to make sure our limits are as low as they can be while still performing well.
 
@@ -863,6 +865,62 @@ The new `AILING` is `>= 61.80` and `UNHEALTHY` is `>= 117.62`.
 Here we can see 2 significant incidents that lasted for a while. Still, KDE identifies them as outliers, not as the new normal.
 
 ![Sustained incident example](/assets/impacts/errors_5_blog_charts.png)
+
+
+## Database overhaul: replacing Postgres with Redis {#redis-storage}
+
+**It took less than 1 year for Postgres's alarm to start going off regularly.** 
+
+The 720 rows we created per metric per day quickly became too much for Postgres.
+
+Still, we had almost **one full year** to test this feature out in production with real customers and real data, before we needed to polish the storage.
+
+Originally, we stored all values for all customers in 1 single DB table called `impact`. To recalculate the borders, we kept reading the last 10,080 rows of each metric back, 14 days' worth. Our database lived on AWS, where the disk gives you a budget of operations per second (IOPS), and you can go above it for a while by spending credits, but we spent all of them. Once the credits are gone, the whole database slows down, not just the impacts part.
+
+So... what were we actually asking this table? Never anything like _"find all unhealthy values of customer X"_. It was always the same question: **"give me the last N days of this 1 metric, all of them, in order"**. A table with 1 row per value isn't the most optimal storage. Postgres has to fetch about ten thousand rows, scattered all over the disk between everybody else's rows, every single time.
+
+**What we really wanted, was 1 long array per metric.**
+
+But to give us some flexibility, let's store 28 days of metrics, 2x as much as the algorithm needs: 28 days × 720 values per day = **20,160 values per metric**. A nice side effect was that if a metric had gaps, **the algorithm skips the empty slots and keeps collecting older values until it has its 10,080, but it can never reach further back than 28 days.**
+
+I looked at a few options:
+
+- **1 Postgres row per metric, with a JSONB column.** Only 1 row per metric, and the oldest values could simply be dropped. But JSONB stores every number as text-like `numeric`, so 20,160 values make a big blob, and Postgres rewrites the whole blob on every update, so every 2 minutes, for every metric.
+- **1 Postgres row per metric, with a fixed `double precision[20160]` array.** Same idea, but typed: 8 bytes per value. This would be much more compact, but it's still Postgres, and Postgres still writes a new copy of the row on every update.
+- **Timescale**, a Postgres extension made exactly for time series. Timescale would nicely solve most, if not all, problems we've encountered, but our Postgres was Amazon's managed RDS, which doesn't support it, so it would have meant running a whole separate database, just for this 1 feature.
+- **Redis.** The same fixed-length array, but in memory. Rewriting it every 2 minutes costs no disk operations at all, and we were already running Redis for caching.
+
+At the beginning, I wasn't sure which direction we'd go, so I wrote the code so that the arrays could be stored anywhere: Postgres, DynamoDB, Redis... That made the move easy.
+
+![From one Postgres row per value to one Redis list per metric](/assets/impacts/pg-to-redis.svg)
+
+
+<details markdown="1" class="rabbit-hole">
+<summary>Rabbit hole: What's in Redis, per metric?</summary>
+
+Every metric got a handful of keys:
+
+![The Redis keys that hold one metric](/assets/impacts/redis-keys-per-metric.svg)
+
+- `measurements`: a list of exactly 20,160 values, the 28 days of 2-minute slots. The oldest value is on the left, the newest on the right. A slot where we got no value holds an empty string.
+- `ailing_idx`, `unhealthy_idx`: positions in `measurements`. We don't store a health next to every value, **we only store where things were not healthy**. Everything else is `HEALTHY`. Most of the time these lists are short, often empty. (There were 2 more lists like these, for rollbacks and incidents, that work the same way.)
+- `_meta`: a hash with `last_change`, the time of the newest slot. Every other slot is exactly 2 minutes before its neighbor, so from this 1 timestamp we can compute the time of any slot.
+
+The upside of the new setup:
+
+- **The list has a fixed length.** With every new value we shift the array 1 slot to the left (1 slot or several slots), and the oldest value falls off on the left. Deletion is for free. 
+- **1 round trip.** Reading or writing a metric is a single pipeline call that touches all the keys.
+- **Every key has a TTL of 14 days**, renewed on every write. If a metric stops sending data, because the customer deleted it or left, its keys disappear by themselves. Again, deletion is for free.
+
+</details>
+
+In January 2022 we dropped the old table. I really, really hate deleting production data!!!
+
+![The PR that dropped the impact table](/assets/impacts/truncate-impact-pr.png)
+
+Before we did, I created a test copy of the database in AWS to look at the data one last time. 
+
+We had accumulated LOTS of values... to the point that I had to kill the `select count(*)` I ran, because no result wanted to materialize after several minutes of waiting. Luckily, truncating a table is much faster (`TRUNCATE impact`), because `TRUNCATE` doesn't go row by row like `DELETE` does, it throws away the table's data files in one go.
 
 
 ## What customers asked us to change
