@@ -6,8 +6,8 @@
   title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math, Not AI"
   coming_soon: true
   video_link:
-  details_link:
-  slides_link:
+  details_link: https://buildstuff.events/pages/agenda
+  slides_link: https://speakerdeck.com/inesp/how-i-built-anomaly-detection-from-scratch-and-how-we-ran-it-for-customers-for-6-years
   talk: deploy-impact
 
 - conf: Heapcon 2026
@@ -31,7 +31,7 @@
   coming_soon: true
   video_link:
   details_link: https://2026.trondheimdc.no/en/#program
-  slides_link:
+  slides_link: https://speakerdeck.com/inesp/how-i-built-anomaly-detection-from-scratch-and-how-we-ran-it-for-customers-for-6-years
   talk: deploy-impact
 
 - conf: Devoxx Belgium 2026

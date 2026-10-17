@@ -25,19 +25,19 @@
 - key: data-lies
   title: How We Lie to Each Other with Data
   series: "The Algorithm Decided"
-  description: "Of course, we learned statistics. We went to university, there was a course, there was an exam, we passed it. But we don't really use it at work... when writing code, except.... that we love **proving a point with a good chart**. That would be a harmless quirk if we were bakers, but our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you. Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing."
+  description: "Of course, we learned statistics. We went to university, there was a course, there was an exam, we passed it. But we don't really use it at work... when writing code, except... that we love **proving a point with a good chart**. That would be a harmless quirk if we were bakers, but our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you. Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing."
   abstract: |
     Of course, we learned statistics. We went to university, there was a course, there was an exam, we passed it. 
     
-    But we don't really use it at work... when writing code, except.... that we love **proving a point with a good chart**. That would be a harmless quirk if we were bakers, but our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you. 
+    But we don't really use it at work... when writing code, except... that we love **proving a point with a good chart**. That would be a harmless quirk if we were bakers, but our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you. 
     
-    Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing."
+    Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing.
 
 - key: estimation
   title: Software Estimation Is a Delusion
   post_slugs:
     - estimation-is-a-delusion
-  description: Software estimation has turned into **ritualized guessing**. We are pushed to estimate, but **nobody is teaching us how** to do it. Our estimates are deemed crucial, but the project's specs keep changing mid-work. It's time we abandoned long-term estimates and focus instead on **managing project risks**.
+  description: Software estimation has turned into **ritualized guessing**. We are pushed to estimate, but **nobody is teaching us how** to do it. Our estimates are deemed crucial, but the project's specs keep changing mid-work. It's time we abandoned long-term estimates and focused instead on **managing project risks**.
   abstract: |
     Software estimation has turned into **ritualized guessing**. 
     
@@ -50,10 +50,22 @@
     Unfortunately, I'm not offering a magic formula. I'm offering language on how to push back on false precision, and how to plan better: not answer "how long will this take?" but "what can we actually build with the time and the resources we have?".
 
 - key: deploy-impact
-  title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math, Not AI"
+  title: "How I Built Anomaly Detection from Scratch (and How We Ran It for Customers for 6 Years)"
   post_slugs:
     - impact-of-a-deploy
   description: When you deploy some code, do you know its **impact on your production stats**, like memory usage, request duration, error rates? If you wanted to know if your code improved or deteriorated the speed of SQL queries, would you know where to get this data? In this talk, I walk through a real-world system we built to **automatically detect pattern changes** to metrics without having to set thresholds manually. (And with **no LLMs**.)
+  abstract: |
+    When you deploy some code, do you know its impact on your production stats, like memory usage, request duration, error rates?
+
+    If you wanted to know if your code improved or deteriorated the speed of SQL queries, would you know where to get this data?
+
+    In this talk, I walk through a real-world algorithm I built to automatically detect pattern changes to metrics: no thresholds set by hand, and no LLMs.
+
+    I'm not a data scientist (I don't even have an ML degree), which meant my first attempts were... not great. I threw some off-the-shelf ML libraries at the problem, hoping they'd just work. Which, of course, they didn't.
+
+    I had no choice but to actually sit down, understand what production time series data really looks like, and then reach for simpler statistical tools. It turns out they work better than anything off-the-shelf, once you figure out how to apply them.
+
+    I'll walk through the evolution of the algorithm, the edge cases I uncovered, and the tricks I've set up. The system ran on real customer data from 2020. It worked great, spotted real degradations, and yet... it kinda never got many fans. So it will soon be archived. Still, it was the most fun problem I ever got to work on: no library to install, no right answer to copy, just data and trial and error.
 
 - key: cognitive-biases
   title: Why Smart Developers Write Silly Code
