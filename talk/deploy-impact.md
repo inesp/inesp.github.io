@@ -4,5 +4,5 @@
 layout: talk
 permalink: /talk/deploy-impact/
 talk: deploy-impact
-title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math, Not AI"
+title: "How I Built Anomaly Detection from Scratch (and We Ran It for Customers for 6 Years)"
 ---
