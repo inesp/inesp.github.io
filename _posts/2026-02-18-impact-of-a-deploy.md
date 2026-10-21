@@ -174,7 +174,7 @@ $$
 
 At the beginning, we stored these all together in one Postgres table. If our predictions come true, then the table will be growing at the rate of 14,400 rows per customer per day. (A problem we will solve in [milestone 2](#redis-storage), promise!) 
 
-But in reality, some **customers won't think twice before defining 100s of metrics for us to track**. So we had to make sure our limits are as low as they can be while still performing well.
+But in reality, some **customers won't think twice before defining 100s of metrics for us to track**. In November 2023, we were collecting data for 1,832 metrics: 1.3 million task runs and value writes every day. So we had to make sure our limits are as low as they can be while still performing well.
 
 ![Rows grow, writes per minute grow](/assets/impacts/rows-growing-forever.svg)
 
