@@ -1,0 +1,68 @@
+<svg viewBox="0 0 520 325" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="325" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="260" y="28" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Teams that kept their manager recovered faster</text>
+  <text x="260" y="44" font-size="9" fill="#6c757d" text-anchor="middle">Dutch top league, 1988-2000. 100% = how the team usually plays that season.</text>
+
+  <!-- Grid lines -->
+  <line x1="75" y1="250.0" x2="405" y2="250.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69" y="253.0" font-size="8" fill="#6c757d" text-anchor="end">40%</text>
+  <line x1="75" y1="207.0" x2="405" y2="207.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69" y="210.0" font-size="8" fill="#6c757d" text-anchor="end">60%</text>
+  <line x1="75" y1="164.0" x2="405" y2="164.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69" y="167.0" font-size="8" fill="#6c757d" text-anchor="end">80%</text>
+  <line x1="75" y1="78.0" x2="405" y2="78.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69" y="81.0" font-size="8" fill="#6c757d" text-anchor="end">120%</text>
+
+  <!-- Season average -->
+  <line x1="75" y1="121.0" x2="405" y2="121.0" stroke="#6c757d" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <text x="69" y="124.0" font-size="8" fill="#6c757d" text-anchor="end">100%</text>
+  <text x="409" y="124.0" font-size="8" fill="#6c757d">season avg</text>
+
+  <!-- The decision: fire or keep -->
+  <line x1="258.3" y1="72" x2="258.3" y2="250" stroke="#212529" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="258.3" y="68" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">manager fired (or kept)</text>
+
+  <!-- Lines -->
+  <polyline points="93.3,132.2 130.0,148.7 166.7,154.8 203.3,169.6 240.0,196.2 276.7,193.2 313.3,184.6 350.0,179.5 386.7,141.9" fill="none" stroke="#fd456f" stroke-width="2"/>
+  <circle cx="93.3" cy="132.2" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="130.0" cy="148.7" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="166.7" cy="154.8" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="203.3" cy="169.6" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="240.0" cy="196.2" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="276.7" cy="193.2" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="313.3" cy="184.6" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="350.0" cy="179.5" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <circle cx="386.7" cy="141.9" r="3.5" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <polyline points="93.3,138.0 130.0,158.2 166.7,181.0 203.3,203.8 240.0,248.1 276.7,210.2 313.3,166.6 350.0,130.0 386.7,87.0" fill="none" stroke="#28a745" stroke-width="2"/>
+  <circle cx="93.3" cy="138.0" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="130.0" cy="158.2" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="166.7" cy="181.0" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="203.3" cy="203.8" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="240.0" cy="248.1" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="276.7" cy="210.2" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="313.3" cy="166.6" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="350.0" cy="130.0" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <circle cx="386.7" cy="87.0" r="3.5" fill="#d4edda" stroke="#28a745" stroke-width="1.2"/>
+  <text x="394.7" y="144.9" font-size="9" fill="#fd456f" font-weight="bold">fired the manager</text>
+  <text x="394.7" y="90.0" font-size="9" fill="#28a745" font-weight="bold">kept the manager</text>
+
+  <!-- Axes -->
+  <line x1="75" y1="250" x2="405" y2="250" stroke="#212529" stroke-width="1.5"/>
+  <line x1="75" y1="68" x2="75" y2="250" stroke="#212529" stroke-width="1.5"/>
+  <text x="93.3" y="264" font-size="8" fill="#6c757d" text-anchor="middle">5</text>
+  <text x="130.0" y="264" font-size="8" fill="#6c757d" text-anchor="middle">4</text>
+  <text x="166.7" y="264" font-size="8" fill="#6c757d" text-anchor="middle">3</text>
+  <text x="203.3" y="264" font-size="8" fill="#6c757d" text-anchor="middle">2</text>
+  <text x="240.0" y="264" font-size="8" fill="#6c757d" text-anchor="middle">1</text>
+  <text x="276.7" y="264" font-size="8" fill="#6c757d" text-anchor="middle">1</text>
+  <text x="313.3" y="264" font-size="8" fill="#6c757d" text-anchor="middle">2</text>
+  <text x="350.0" y="264" font-size="8" fill="#6c757d" text-anchor="middle">3</text>
+  <text x="386.7" y="264" font-size="8" fill="#6c757d" text-anchor="middle">4</text>
+  <text x="20" y="164" font-size="10" fill="#6c757d" text-anchor="middle" transform="rotate(-90, 20, 164)">Points, last 4 games vs. season average</text>
+  <text x="167" y="278" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">before</text>
+  <text x="332" y="278" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">after</text>
+  <text x="240" y="294" font-size="10" fill="#6c757d" text-anchor="middle">Games</text>
+  <text x="260" y="312" font-size="8" fill="#6c757d" text-anchor="middle">Averages of 27 firings and 103 similar bad runs where the manager stayed. Bruinshoofd &amp; ter Weel (2001)</text>
+</svg>

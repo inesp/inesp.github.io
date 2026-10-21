@@ -20,3 +20,4 @@
 7. Preview locally: `make up`, then open the post's URL.
 8. If the post chains to others via `prev_post`/`next_post`, run `make check-links` before pushing. It verifies every link points to a real post and that the link is reciprocal (A → next → B implies B → prev → A).
 9. Push to `master` and it publishes automatically — see the root [README.md](../README.md) ("Deployment" section) for how that actually works, and for the draft-branch workflow if you're not ready to publish yet.
+10. Styling helpers: put `{:.box}` under a paragraph for a highlighted box, or `{:.steps}` under a list for numbered green leaf markers joined by a line (see `_sass/steps.scss`).

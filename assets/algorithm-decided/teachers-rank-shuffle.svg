@@ -1,0 +1,85 @@
+<svg viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="380" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="260" y="28" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Fired for one bad year</text>
+  <text x="260" y="44" font-size="9" fill="#6c757d" text-anchor="middle">20 teachers ranked by a noisy score, two years in a row</text>
+  <text x="170" y="66" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">Year 1</text>
+  <text x="350" y="66" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">Year 2</text>
+  <text x="130" y="83.0" font-size="8" fill="#6c757d" text-anchor="end">best</text>
+  <text x="130" y="339.5" font-size="8" fill="#6c757d" text-anchor="end">worst</text>
+
+  <!-- Bottom 3 in year 1: the 'fired' zone -->
+  <rect x="138" y="302.5" width="64" height="40.5" fill="#ffe6e6" rx="3" stroke="#fd456f" stroke-width="1"/>
+  <text x="134" y="326.0" font-size="9" fill="#fd456f" font-weight="bold" text-anchor="end">fired</text>
+
+  <!-- Lines from year-1 rank to year-2 rank; the fired ones in red -->
+  <line x1="178" y1="120.5" x2="342" y2="134.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="161.0" x2="342" y2="188.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="80.0" x2="342" y2="93.5" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="93.5" x2="342" y2="80.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="242.0" x2="342" y2="336.5" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="296.0" x2="342" y2="120.5" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="269.0" x2="342" y2="309.5" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="174.5" x2="342" y2="107.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="228.5" x2="342" y2="255.5" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="107.0" x2="342" y2="296.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="201.5" x2="342" y2="242.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="255.5" x2="342" y2="269.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="134.0" x2="342" y2="323.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="188.0" x2="342" y2="161.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="282.5" x2="342" y2="228.5" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="215.0" x2="342" y2="201.5" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="147.5" x2="342" y2="215.0" stroke="#dadada" stroke-width="1"/>
+  <line x1="178" y1="309.5" x2="342" y2="282.5" stroke="#fd456f" stroke-width="1.5"/>
+  <line x1="178" y1="323.0" x2="342" y2="174.5" stroke="#fd456f" stroke-width="1.5"/>
+  <line x1="178" y1="336.5" x2="342" y2="147.5" stroke="#fd456f" stroke-width="1.5"/>
+
+  <!-- Rank dots -->
+  <circle cx="170.0" cy="80.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="80.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="93.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="93.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="107.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="107.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="120.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="120.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="134.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="134.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="147.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="147.5" r="4" fill="#fd456f"/>
+  <circle cx="170.0" cy="161.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="161.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="174.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="174.5" r="4" fill="#fd456f"/>
+  <circle cx="170.0" cy="188.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="188.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="201.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="201.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="215.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="215.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="228.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="228.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="242.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="242.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="255.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="255.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="269.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="269.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="282.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="282.5" r="4" fill="#fd456f"/>
+  <circle cx="170.0" cy="296.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="350.0" cy="296.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="309.5" r="4" fill="#fd456f"/>
+  <circle cx="350.0" cy="309.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="323.0" r="4" fill="#fd456f"/>
+  <circle cx="350.0" cy="323.0" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="170.0" cy="336.5" r="4" fill="#fd456f"/>
+  <circle cx="350.0" cy="336.5" r="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+
+  <!-- Annotation -->
+  <text x="364" y="150.5" font-size="9" fill="#fd456f">a year later, one of them</text>
+  <text x="364" y="161.5" font-size="9" fill="#fd456f" font-weight="bold">ranks #6 of 20</text>
+  <text x="260" y="362" font-size="8" fill="#6c757d" text-anchor="middle">simulated: same teachers, new noise; year-to-year correlation 0.34</text>
+  <text x="260" y="373" font-size="8" fill="#6c757d" text-anchor="middle">(real value-added scores: 0.2 to 0.5, McCaffrey et al. 2009)</text>
+</svg>

@@ -1,0 +1,48 @@
+@import "colors";
+
+// Numbered steps with green leaf markers, joined by a thin line: {:.steps} on a markdown list
+.steps{
+  list-style: none;
+  counter-reset: step;
+  padding-left: 0;
+  margin-bottom: $standard-margin;
+
+  li{
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.75rem;
+    padding-bottom: 1rem;
+    min-height: 1.75rem;
+
+    p{
+      margin: 0;
+    }
+  }
+
+  li::before{
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 0 50%;  // leaf: two round corners, two pointy
+    background: $color-green-vivid;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    left: calc(0.875rem - 1px);
+    top: 1.75rem;
+    bottom: 0;
+    width: 2px;
+    background: $color-green-mint;
+  }
+}

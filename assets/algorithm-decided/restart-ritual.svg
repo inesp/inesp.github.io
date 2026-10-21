@@ -1,0 +1,161 @@
+<svg viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="330" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="260" y="28" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">“Scaling up the DB fixed it.” So did doing nothing.</text>
+  <text x="260" y="44" font-size="9" fill="#6c757d" text-anchor="middle">two latency spikes: in one we scaled up the DB at the peak, in the other nobody did anything</text>
+
+  <!-- Panel: we scaled up the DB -->
+  <line x1="70" y1="146.1" x2="480" y2="146.1" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="70" y1="127.2" x2="480" y2="127.2" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="70" y1="108.3" x2="480" y2="108.3" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="70" y1="89.4" x2="480" y2="89.4" stroke="#dadada" stroke-width="0.5"/>
+  <text x="65" y="168.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <text x="65" y="130.2" font-size="8" fill="#6c757d" text-anchor="end">2s</text>
+  <text x="65" y="92.4" font-size="8" fill="#6c757d" text-anchor="end">4s</text>
+  <line x1="70" y1="165" x2="485" y2="165" stroke="#212529" stroke-width="1.5"/>
+  <line x1="70" y1="75" x2="70" y2="165" stroke="#212529" stroke-width="1.5"/>
+  <text x="76" y="84" font-size="10" fill="#fd456f" font-weight="bold">we scaled up the DB</text>
+  <polyline points="75.0,147.8 81.9,146.9 88.7,150.2 95.6,162.2 102.5,154.6 109.3,154.9 116.2,136.9 123.1,155.4 129.9,141.1 136.8,149.2 143.6,154.2 150.5,150.8 157.4,151.1 164.2,160.4 171.1,151.2 178.0,151.3 184.8,150.8 191.7,161.5 198.6,160.7 205.4,143.2 212.3,127.3 219.2,122.5 226.0,110.4 232.9,106.8 239.7,90.9 246.6,104.1 253.5,116.0 260.3,133.6 267.2,151.2 274.1,153.0 280.9,150.6 287.8,159.8 294.7,136.5 301.5,147.5 308.4,155.4 315.3,153.8 322.1,161.1 329.0,159.8 335.8,157.4 342.7,152.5 349.6,163.1 356.4,138.8 363.3,156.7 370.2,160.7 377.0,154.8 383.9,146.6 390.8,158.4 397.6,148.5 404.5,161.9 411.4,146.0 418.2,156.6 425.1,148.9 431.9,149.9 438.8,152.5 445.7,150.9 452.5,149.4 459.4,132.5 466.3,158.2 473.1,145.1 480.0,149.5" fill="none" stroke="#dadada" stroke-width="1"/>
+  <circle cx="75.0" cy="147.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="81.9" cy="146.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="88.7" cy="150.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="95.6" cy="162.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="102.5" cy="154.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="109.3" cy="154.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="116.2" cy="136.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="123.1" cy="155.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="129.9" cy="141.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="136.8" cy="149.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="143.6" cy="154.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="150.5" cy="150.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="157.4" cy="151.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="164.2" cy="160.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="171.1" cy="151.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="178.0" cy="151.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="184.8" cy="150.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="191.7" cy="161.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="198.6" cy="160.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="205.4" cy="143.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="212.3" cy="127.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="219.2" cy="122.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="226.0" cy="110.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="232.9" cy="106.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="239.7" cy="90.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="246.6" cy="104.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="253.5" cy="116.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="260.3" cy="133.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="267.2" cy="151.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="274.1" cy="153.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="280.9" cy="150.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="287.8" cy="159.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="294.7" cy="136.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="301.5" cy="147.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="308.4" cy="155.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="315.3" cy="153.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="322.1" cy="161.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="329.0" cy="159.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="335.8" cy="157.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="342.7" cy="152.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="349.6" cy="163.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="356.4" cy="138.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="363.3" cy="156.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="370.2" cy="160.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="377.0" cy="154.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="383.9" cy="146.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="390.8" cy="158.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="397.6" cy="148.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="404.5" cy="161.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="411.4" cy="146.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="418.2" cy="156.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="425.1" cy="148.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="431.9" cy="149.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="438.8" cy="152.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="445.7" cy="150.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="452.5" cy="149.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="459.4" cy="132.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="466.3" cy="158.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="473.1" cy="145.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="480.0" cy="149.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <line x1="239.7" y1="75" x2="239.7" y2="165" stroke="#fd456f" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="244.7" y="96" font-size="9" fill="#fd456f" font-weight="bold">scale up the DB!</text>
+  <text x="349.5762711864407" y="106.0" font-size="9" fill="#6c757d">back to normal</text>
+  <text x="349.5762711864407" y="117.0" font-size="9" fill="#6c757d">after ~20 minutes</text>
+
+  <!-- Panel: nobody touched it -->
+  <line x1="70" y1="271.1" x2="480" y2="271.1" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="70" y1="252.2" x2="480" y2="252.2" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="70" y1="233.3" x2="480" y2="233.3" stroke="#dadada" stroke-width="0.5"/>
+  <line x1="70" y1="214.4" x2="480" y2="214.4" stroke="#dadada" stroke-width="0.5"/>
+  <text x="65" y="293.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <text x="65" y="255.2" font-size="8" fill="#6c757d" text-anchor="end">2s</text>
+  <text x="65" y="217.4" font-size="8" fill="#6c757d" text-anchor="end">4s</text>
+  <line x1="70" y1="290" x2="485" y2="290" stroke="#212529" stroke-width="1.5"/>
+  <line x1="70" y1="200" x2="70" y2="290" stroke="#212529" stroke-width="1.5"/>
+  <text x="76" y="209" font-size="10" fill="#6c757d" font-weight="bold">nobody touched it</text>
+  <polyline points="75.0,256.7 81.9,283.1 88.7,281.8 95.6,283.6 102.5,284.4 109.3,277.4 116.2,273.7 123.1,278.2 129.9,287.7 136.8,272.0 143.6,280.9 150.5,277.0 157.4,272.2 164.2,285.5 171.1,288.1 178.0,267.8 184.8,285.9 191.7,278.0 198.6,286.3 205.4,250.6 212.3,272.3 219.2,254.7 226.0,239.4 232.9,235.1 239.7,224.0 246.6,232.3 253.5,241.7 260.3,261.5 267.2,271.4 274.1,265.2 280.9,281.9 287.8,271.6 294.7,281.8 301.5,281.0 308.4,276.3 315.3,276.0 322.1,287.3 329.0,282.0 335.8,266.7 342.7,277.2 349.6,282.8 356.4,274.7 363.3,256.5 370.2,258.3 377.0,278.2 383.9,276.3 390.8,272.2 397.6,274.9 404.5,264.6 411.4,273.9 418.2,278.5 425.1,274.2 431.9,285.9 438.8,275.0 445.7,276.2 452.5,282.5 459.4,279.9 466.3,272.9 473.1,267.3 480.0,273.4" fill="none" stroke="#dadada" stroke-width="1"/>
+  <circle cx="75.0" cy="256.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="81.9" cy="283.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="88.7" cy="281.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="95.6" cy="283.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="102.5" cy="284.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="109.3" cy="277.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="116.2" cy="273.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="123.1" cy="278.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="129.9" cy="287.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="136.8" cy="272.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="143.6" cy="280.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="150.5" cy="277.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="157.4" cy="272.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="164.2" cy="285.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="171.1" cy="288.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="178.0" cy="267.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="184.8" cy="285.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="191.7" cy="278.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="198.6" cy="286.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="205.4" cy="250.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="212.3" cy="272.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="219.2" cy="254.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="226.0" cy="239.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="232.9" cy="235.1" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="239.7" cy="224.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="246.6" cy="232.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="253.5" cy="241.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="260.3" cy="261.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="267.2" cy="271.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="274.1" cy="265.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="280.9" cy="281.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="287.8" cy="271.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="294.7" cy="281.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="301.5" cy="281.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="308.4" cy="276.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="315.3" cy="276.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="322.1" cy="287.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="329.0" cy="282.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="335.8" cy="266.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="342.7" cy="277.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="349.6" cy="282.8" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="356.4" cy="274.7" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="363.3" cy="256.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="370.2" cy="258.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="377.0" cy="278.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="383.9" cy="276.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="390.8" cy="272.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="397.6" cy="274.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="404.5" cy="264.6" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="411.4" cy="273.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="418.2" cy="278.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="425.1" cy="274.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="431.9" cy="285.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="438.8" cy="275.0" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="445.7" cy="276.2" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="452.5" cy="282.5" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="459.4" cy="279.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="466.3" cy="272.9" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="473.1" cy="267.3" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="480.0" cy="273.4" r="2.2" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <text x="349.5762711864407" y="231.0" font-size="9" fill="#6c757d">back to normal</text>
+  <text x="349.5762711864407" y="242.0" font-size="9" fill="#6c757d">after ~20 minutes</text>
+  <text x="20" y="192" font-size="10" fill="#6c757d" text-anchor="middle" transform="rotate(-90, 20, 192)">p99 latency</text>
+  <text x="275" y="312" font-size="10" fill="#6c757d" text-anchor="middle">Time (one dot per minute)</text>
+</svg>
