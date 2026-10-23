@@ -124,6 +124,23 @@ table.talks {
     border-left-color: $color-red-bright;
   }
 
+  // accepted, but never got there: keep the row, fade it
+  tbody tr.missed td {
+    opacity: 0.45;
+  }
+
+  tbody tr.missed td:first-child {
+    opacity: 1;
+  }
+
+  .missed-tag {
+    display: block;
+    font-size: 0.85em;
+    font-style: italic;
+    color: $color-gray-4;
+    margin-bottom: 0.2rem;
+  }
+
 
   @media (min-width: 1200px) {
     td.link-texts {

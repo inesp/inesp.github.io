@@ -51,8 +51,8 @@ fluid: true
         {%- assign talk_page = "/talk/" | append: talk.talk | append: "/" -%}
       {%- endif -%}
 
-      <tr{% if talk.coming_soon %} class="coming-soon"{% endif %}>
-        <td>{% if talk.coming_soon %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date }}</td>
+      <tr{% if talk.coming_soon %} class="coming-soon"{% elsif talk.missed %} class="missed"{% endif %}>
+        <td>{% if talk.missed %}<span class="missed-tag">{{ talk.missed }}</span><span title="{{ talk.missed }}">{% include career_icon.html name="mic-off" %}</span>{% endif %}{% if talk.coming_soon %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date }}</td>
         <td class="talk-conf">
           {%- if talk.link -%}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{%- else -%}{{ talk.conf }}{%- endif -%}
           <div class="talk-place"><img class="talk-flag" src="/assets/flags/{{ talk.flag }}.svg" alt="" loading="lazy"> {{ talk.location }}</div>
