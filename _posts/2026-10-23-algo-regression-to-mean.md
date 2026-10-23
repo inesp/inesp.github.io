@@ -3,6 +3,7 @@ title: "Case #2: Want the nicer coffee machine? Wait for the next latency spike"
 series: "The Algorithm Decided"
 tags: ["The Algorithm Decided", "Statistics"]
 prev_post: 2026-08-18-the-algorithm-decided-intro
+image: /assets/algorithm-decided/ritual-coffee-machine.png
 biblio:
   - link: https://interviewing.io/blog/technical-interview-performance-is-kind-of-arbitrary-heres-the-data
     title: "Aline Lerner, interviewing.io: Technical interview performance is kind of arbitrary. Here's the data."
