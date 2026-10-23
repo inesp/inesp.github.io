@@ -1,0 +1,47 @@
+<svg viewBox="0 0 520 255" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="255" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="260" y="28" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Two incident reports</text>
+
+  <!-- LEFT: what usually gets written -->
+  <text x="135" y="58" font-size="10" fill="#fd456f" font-weight="bold" text-anchor="middle">What often gets written</text>
+  <rect x="30" y="68" width="210" height="140" fill="#fff" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <rect x="30" y="68" width="210" height="26" fill="#f6f6f6" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <text x="42" y="85" font-size="10" fill="#212529" font-weight="bold">Incident #482: p99 latency spike</text>
+  <text x="42" y="114" font-size="8" fill="#6c757d">Impact</text>
+  <text x="100" y="114" font-size="9" fill="#212529">p99 at 4s for 25 min</text>
+  <text x="42" y="136" font-size="8" fill="#6c757d">Root cause</text>
+  <text x="100" y="136" font-size="9" fill="#212529">DB under-provisioned</text>
+  <text x="42" y="158" font-size="8" fill="#6c757d">Fix</text>
+  <text x="100" y="158" font-size="9" fill="#212529">Scaled up the DB</text>
+  <path d="M 176 154 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <text x="42" y="180" font-size="8" fill="#6c757d">Follow-up</text>
+  <rect x="96" y="169" width="74" height="15" fill="#ffed50" rx="2"/>
+  <text x="100" y="180" font-size="9" fill="#212529" font-weight="bold">Add to runbook</text>
+
+  <!-- VS -->
+  <line x1="260" y1="74" x2="260" y2="122" stroke="#dadada" stroke-width="1.5"/>
+  <text x="260" y="143" font-size="14" fill="#6c757d" font-weight="bold" text-anchor="middle" letter-spacing="1">VS</text>
+  <line x1="260" y1="154" x2="260" y2="202" stroke="#dadada" stroke-width="1.5"/>
+
+  <!-- RIGHT: what we actually know -->
+  <text x="385" y="58" font-size="10" fill="#28a745" font-weight="bold" text-anchor="middle">What is more honest</text>
+  <rect x="280" y="68" width="210" height="140" fill="#fff" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <rect x="280" y="68" width="210" height="26" fill="#f6f6f6" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <text x="292" y="85" font-size="10" fill="#212529" font-weight="bold">Incident #482: p99 latency spike</text>
+  <text x="292" y="114" font-size="8" fill="#6c757d">Impact</text>
+  <text x="350" y="114" font-size="9" fill="#212529">p99 at 4s for 25 min</text>
+  <text x="292" y="136" font-size="8" fill="#6c757d">Root cause</text>
+  <rect x="346" y="125" width="48" height="15" fill="#ffed50" rx="2"/>
+  <text x="350" y="136" font-size="9" fill="#212529" font-weight="bold">Unknown</text>
+  <text x="292" y="158" font-size="8" fill="#6c757d">Action</text>
+  <text x="350" y="158" font-size="9" fill="#212529">Scaled up the DB</text>
+  <text x="292" y="180" font-size="8" fill="#6c757d">Result</text>
+  <text x="350" y="180" font-size="9" fill="#212529">Latency went down 15 min</text>
+  <rect x="373" y="181" width="94" height="15" fill="#ffed50" rx="2"/>
+  <text x="350" y="192" font-size="9" fill="#212529">later. <tspan font-weight="bold">Could be coincidence.</tspan></text>
+
+  <!-- Caption -->
+  <text x="260" y="238" font-size="10" fill="#6c757d" text-anchor="middle">Same facts. Only the left one ends up in the runbook.</text>
+</svg>

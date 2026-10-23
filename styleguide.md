@@ -81,6 +81,31 @@ def example_function():
 
 ---
 
+## List Classes
+
+### `.steps` - Numbered Steps
+
+A numbered list with green leaf markers joined by a thin line. Good for a short chain of reasoning, where each step leads to the next.
+
+**Usage:**
+```markdown
+- Who signs up for a bootcamp? Mostly people who just lost their job.
+- When do they sign up? Right at their worst moment.
+- What happens next? Most of them find a job, bootcamp or no bootcamp.
+- And who gets the credit? The bootcamp.
+{:.steps}
+```
+
+**Example:**
+
+- Who signs up for a bootcamp? Mostly people who just lost their job.
+- When do they sign up? Right at their worst moment.
+- What happens next? Most of them find a job, bootcamp or no bootcamp.
+- And who gets the credit? The bootcamp.
+{:.steps}
+
+---
+
 ## Table Classes
 
 ### `.table-small` - Compact Table

@@ -1,0 +1,66 @@
+<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="300" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="260.0" y="28.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Most sprints land in the middle</text>
+  <text x="260.0" y="44.0" font-size="9" fill="#6c757d" text-anchor="middle">36 sprints, one square each</text>
+
+  <!-- Squares: one per sprint, stacked by incident count -->
+  <rect x="93.0" y="228.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="93.0" y="216.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="93.0" y="204.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="93.0" y="192.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="104.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">0</text>
+  <rect x="141.0" y="228.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="141.0" y="216.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="141.0" y="204.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="141.0" y="192.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="141.0" y="180.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="141.0" y="168.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="141.0" y="156.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="141.0" y="144.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="152.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">1</text>
+  <rect x="189.0" y="228.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="216.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="204.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="192.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="180.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="168.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="156.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="144.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="132.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="189.0" y="120.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="200.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">2</text>
+  <rect x="237.0" y="228.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="237.0" y="216.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="237.0" y="204.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="237.0" y="192.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="237.0" y="180.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="237.0" y="168.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="237.0" y="156.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="248.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">3</text>
+  <rect x="285.0" y="228.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="285.0" y="216.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="285.0" y="204.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="285.0" y="192.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="296.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">4</text>
+  <rect x="333.0" y="228.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="333.0" y="216.0" width="22" height="10" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="344.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">5</text>
+  <text x="392.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">6</text>
+  <rect x="429.0" y="228.0" width="22" height="10" fill="#ff7898" stroke="#fd456f" stroke-width="1"/>
+  <text x="440.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">7</text>
+
+  <!-- The terrible sprint -->
+  <text x="440.0" y="210.0" font-size="8" fill="#fd456f" font-weight="bold" text-anchor="middle">the terrible</text>
+  <text x="440.0" y="220.0" font-size="8" fill="#fd456f" font-weight="bold" text-anchor="middle">sprint</text>
+
+  <!-- Arrow back to the middle -->
+  <path d="M 440.0 196 C 420.0 80, 280.0 80, 206.0 112" fill="none" stroke="#212529" stroke-width="1.2"/>
+  <polygon points="202.0,115 205.0,106 211.0,113" fill="#212529"/>
+  <text x="350.0" y="86.0" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">next sprint: most likely here</text>
+
+  <!-- Axes -->
+  <line x1="70" y1="240" x2="474" y2="240" stroke="#212529" stroke-width="1.5"/>
+  <text x="260.0" y="276.0" font-size="10" fill="#6c757d" text-anchor="middle">Incidents per sprint</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg viewBox="0 0 520 418" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="418" fill="#fff"/>
+  <text x="260" y="28" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Runbooks</text>
+  <defs><filter id="blur"><feGaussianBlur stdDeviation="1.4"/></filter></defs>
+
+  <!-- Other runbooks, blurred -->
+  <g opacity="0.7">
+  <rect x="60" y="46" width="400" height="44" fill="#fff" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <rect x="60" y="46" width="400" height="22" fill="#f6f6f6" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <text x="72" y="61" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Runbook: disk full</text>
+  <g filter="url(#blur)">
+  <text x="72" y="82" font-size="8" fill="#6c757d" text-anchor="start">Step 1</text>
+  <text x="118" y="82" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Restart the pod.</text>
+  </g>
+  </g>
+  <g opacity="0.7">
+  <rect x="60" y="98" width="400" height="44" fill="#fff" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <rect x="60" y="98" width="400" height="22" fill="#f6f6f6" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <text x="72" y="113" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Runbook: queue backlog</text>
+  <g filter="url(#blur)">
+  <text x="72" y="134" font-size="8" fill="#6c757d" text-anchor="start">Step 1</text>
+  <text x="118" y="134" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Add more workers.</text>
+  </g>
+  </g>
+  <g opacity="0.7">
+  <rect x="60" y="330" width="400" height="44" fill="#fff" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <rect x="60" y="330" width="400" height="22" fill="#f6f6f6" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <text x="72" y="345" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Runbook: 502 errors</text>
+  <g filter="url(#blur)">
+  <text x="72" y="366" font-size="8" fill="#6c757d" text-anchor="start">Step 1</text>
+  <text x="118" y="366" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Roll back the last deploy.</text>
+  </g>
+  </g>
+  <g transform="translate(0, 104)">
+
+  <!-- Runbook card -->
+  <rect x="60" y="46" width="400" height="170" fill="#fff" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <rect x="60" y="46" width="400" height="26" fill="#f6f6f6" stroke="#dadada" stroke-width="1.5" rx="4"/>
+  <text x="72" y="63" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Runbook: p99 latency spike</text>
+  <text x="72" y="94" font-size="8" fill="#6c757d" text-anchor="start">Step 1</text>
+  <rect x="114" y="82" width="86" height="16" fill="#ffed50" rx="2"/>
+  <text x="118" y="94" font-size="10" fill="#212529" font-weight="bold" text-anchor="start">Scale up the DB.</text>
+
+  <!-- History -->
+  <text x="72" y="122" font-size="8" fill="#6c757d" text-anchor="start">Incident</text>
+  <text x="132" y="122" font-size="8" fill="#6c757d" text-anchor="start">Date</text>
+  <text x="192" y="122" font-size="8" fill="#6c757d" text-anchor="start">Followed runbook?</text>
+  <text x="286" y="122" font-size="8" fill="#6c757d" text-anchor="start">Latency back to normal?</text>
+  <text x="448" y="122" font-size="8" fill="#6c757d" text-anchor="end">Recovered in</text>
+  <line x1="72" y1="128" x2="448" y2="128" stroke="#dadada" stroke-width="0.8"/>
+  <text x="72" y="146" font-size="9" fill="#212529" text-anchor="start">#482</text>
+  <text x="132" y="146" font-size="9" fill="#6c757d" text-anchor="start">Mar 3</text>
+  <path d="M 194 142 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <path d="M 288 142 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <text x="448" y="146" font-size="9" fill="#212529" font-weight="bold" text-anchor="end">18 min</text>
+  <text x="72" y="166" font-size="9" fill="#212529" text-anchor="start">#517</text>
+  <text x="132" y="166" font-size="9" fill="#6c757d" text-anchor="start">Apr 19</text>
+  <path d="M 194 162 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <path d="M 288 162 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <text x="448" y="166" font-size="9" fill="#212529" font-weight="bold" text-anchor="end">22 min</text>
+  <text x="72" y="186" font-size="9" fill="#212529" text-anchor="start">#563</text>
+  <text x="132" y="186" font-size="9" fill="#6c757d" text-anchor="start">Jun 2</text>
+  <path d="M 194 182 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <path d="M 288 182 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <text x="448" y="186" font-size="9" fill="#212529" font-weight="bold" text-anchor="end">19 min</text>
+  <text x="72" y="206" font-size="9" fill="#212529" text-anchor="start">#601</text>
+  <text x="132" y="206" font-size="9" fill="#6c757d" text-anchor="start">Aug 14</text>
+  <path d="M 194 202 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <path d="M 288 202 l 3 3 l 6 -7" fill="none" stroke="#28a745" stroke-width="1.8"/>
+  <text x="448" y="206" font-size="9" fill="#212529" font-weight="bold" text-anchor="end">21 min</text>
+  </g>
+  <text x="260" y="400" font-size="9" fill="#6c757d" text-anchor="middle">Every spike comes down on its own eventually, so the runbook is never wrong. It always takes about 20 minutes.</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="300" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="260" y="28" font-size="12" fill="#212529" font-weight="bold" text-anchor="middle">After every terrible sprint, the next one is delightful</text>
+
+  <!-- Grid lines (subtle) -->
+  <line x1="60" y1="190.0" x2="480" y2="190.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54" y="193.0" font-size="8" fill="#6c757d" text-anchor="end">2</text>
+  <line x1="60" y1="150.0" x2="480" y2="150.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54" y="153.0" font-size="8" fill="#6c757d" text-anchor="end">4</text>
+  <line x1="60" y1="110.0" x2="480" y2="110.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54" y="113.0" font-size="8" fill="#6c757d" text-anchor="end">6</text>
+  <line x1="60" y1="70.0" x2="480" y2="70.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54" y="73.0" font-size="8" fill="#6c757d" text-anchor="end">8</text>
+
+  <!-- Normal level: the average of all the ordinary sprints -->
+  <line x1="60" y1="199.52380952380952" x2="480" y2="199.52380952380952" stroke="#6c757d" stroke-width="0.8" stroke-dasharray="4,4"/>
+  <text x="484" y="202.52380952380952" font-size="8" fill="#6c757d">normal</text>
+
+  <!-- Retro fill: green stripes at 45 degrees -->
+  <defs><pattern id="retro-hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="4" height="4" fill="#d4edda"/><rect width="2" height="4" fill="#28a745"/></pattern></defs>
+
+  <!-- One bar per sprint (terrible ones in red); a slim striped marker for each retro; the sprint after is labelled -->
+  <rect x="63" y="170.0" width="13.5" height="60.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="79.5" y="210.0" width="13.5" height="20.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="96.1" y="190.0" width="13.5" height="40.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="112.6" y="226" width="13.6" height="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="129.2" y="110.0" width="13.5" height="120.0" fill="#ff7898" stroke="#fd456f" stroke-width="1"/>
+  <rect x="145.7" y="62" width="7" height="168" fill="url(#retro-hatch)" rx="1" stroke="#28a745" stroke-width="0.8"/>
+  <text x="149.2" y="57" font-size="8" fill="#28a745" font-weight="bold" text-anchor="middle">retro</text>
+  <rect x="155.7" y="210.0" width="13.5" height="20.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="162.5" y="243" font-size="8" fill="#6c757d" font-weight="bold" text-anchor="middle">ignored</text>
+  <text x="162.5" y="253" font-size="7" fill="#6c757d" text-anchor="middle">action items</text>
+  <rect x="172.2" y="170.0" width="13.5" height="60.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="188.8" y="190.0" width="13.5" height="40.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="205.3" y="226" width="13.6" height="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="221.9" y="190.0" width="13.5" height="40.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="238.4" y="210.0" width="13.5" height="20.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="255.0" y="115.0" width="13.5" height="115.0" fill="#ff7898" stroke="#fd456f" stroke-width="1"/>
+  <rect x="271.5" y="190.0" width="13.5" height="40.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="278.3" y="243" font-size="8" fill="#6c757d" font-weight="bold" text-anchor="middle">no retro</text>
+  <text x="278.3" y="253" font-size="7" fill="#6c757d" text-anchor="middle">next sprint went well</text>
+  <rect x="288.0" y="170.0" width="13.5" height="60.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="304.6" y="210.0" width="13.5" height="20.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="321.1" y="226" width="13.6" height="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="337.7" y="190.0" width="13.5" height="40.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="354.2" y="210.0" width="13.5" height="20.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="370.8" y="90.0" width="13.5" height="140.0" fill="#ff7898" stroke="#fd456f" stroke-width="1"/>
+  <rect x="387.3" y="62" width="7" height="168" fill="url(#retro-hatch)" rx="1" stroke="#28a745" stroke-width="0.8"/>
+  <text x="390.8" y="57" font-size="8" fill="#28a745" font-weight="bold" text-anchor="middle">retro</text>
+  <rect x="397.3" y="210.0" width="13.5" height="20.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <text x="404.1" y="243" font-size="8" fill="#6c757d" font-weight="bold" text-anchor="middle">ignored</text>
+  <text x="404.1" y="253" font-size="7" fill="#6c757d" text-anchor="middle">action items</text>
+  <rect x="413.8" y="190.0" width="13.5" height="40.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="430.4" y="170.0" width="13.5" height="60.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="446.9" y="226" width="13.6" height="4" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <rect x="463.5" y="190.0" width="13.5" height="40.0" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+
+  <!-- Axes -->
+  <line x1="60" y1="230" x2="480" y2="230" stroke="#212529" stroke-width="1.5"/>
+  <polygon points="490,230 480,226 480,234" fill="#212529"/>
+  <line x1="60" y1="65" x2="60" y2="230" stroke="#212529" stroke-width="1.5"/>
+  <text x="20" y="150" font-size="10" fill="#6c757d" text-anchor="middle" transform="rotate(-90, 20, 150)">Incidents per sprint</text>
+  <text x="275" y="278" font-size="10" fill="#6c757d" text-anchor="middle">Sprints, one bar each</text>
+</svg>

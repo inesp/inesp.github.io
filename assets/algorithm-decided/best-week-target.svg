@@ -1,0 +1,46 @@
+<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="300" fill="#fff"/>
+  <text x="260.0" y="28.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Your best week became your target</text>
+  <text x="260.0" y="44.0" font-size="9" fill="#6c757d" text-anchor="middle">Same person, same skill, every week. Only the luck changes.</text>
+
+  <!-- Grid -->
+  <line x1="70" y1="230.0" x2="470" y2="230.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="64.0" y="233.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <line x1="70" y1="180.0" x2="470" y2="180.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="64.0" y="183.0" font-size="8" fill="#6c757d" text-anchor="end">5</text>
+  <line x1="70" y1="130.0" x2="470" y2="130.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="64.0" y="133.0" font-size="8" fill="#6c757d" text-anchor="end">10</text>
+  <line x1="70" y1="80.0" x2="470" y2="80.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="64.0" y="83.0" font-size="8" fill="#6c757d" text-anchor="end">15</text>
+
+  <!-- Bars -->
+  <rect x="74.0" y="140.0" width="17.0" height="90.0" fill="#ffed50" stroke="#e7d749" stroke-width="1.2" rx="2"/>
+  <rect x="99.0" y="120.0" width="17.0" height="110.0" fill="#ffed50" stroke="#e7d749" stroke-width="1.2" rx="2"/>
+  <rect x="124.0" y="150.0" width="17.0" height="80.0" fill="#ffed50" stroke="#e7d749" stroke-width="1.2" rx="2"/>
+  <rect x="149.0" y="130.0" width="17.0" height="100.0" fill="#ffed50" stroke="#e7d749" stroke-width="1.2" rx="2"/>
+  <rect x="174.0" y="110.0" width="17.0" height="120.0" fill="#ffed50" stroke="#e7d749" stroke-width="1.2" rx="2"/>
+  <rect x="199.0" y="90.0" width="17.0" height="140.0" fill="#d4edda" stroke="#28a745" stroke-width="1.2" rx="2"/>
+  <rect x="224.0" y="130.0" width="17.0" height="100.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="249.0" y="140.0" width="17.0" height="90.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="274.0" y="120.0" width="17.0" height="110.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="299.0" y="150.0" width="17.0" height="80.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="324.0" y="110.0" width="17.0" height="120.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="349.0" y="130.0" width="17.0" height="100.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="374.0" y="140.0" width="17.0" height="90.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="399.0" y="120.0" width="17.0" height="110.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="424.0" y="130.0" width="17.0" height="100.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <rect x="449.0" y="110.0" width="17.0" height="120.0" fill="#ffe6e6" stroke="#fd456f" stroke-width="1.2" rx="2"/>
+  <text x="207.5" y="84.0" font-size="9" fill="#28a745" font-weight="bold" text-anchor="middle">best week</text>
+
+  <!-- The target -->
+  <line x1="220.0" y1="90.0" x2="470" y2="90.0" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="474.0" y="93.0" font-size="9" fill="#fd456f" font-weight="bold" text-anchor="start">target</text>
+  <text x="345.0" y="84.0" font-size="9" fill="#fd456f" font-weight="bold" text-anchor="middle">every week since: "below target"</text>
+
+  <!-- Axes -->
+  <line x1="70" y1="230" x2="475" y2="230" stroke="#212529" stroke-width="1.5"/>
+  <line x1="70" y1="60" x2="70" y2="230" stroke="#212529" stroke-width="1.5"/>
+  <text transform="rotate(-90, 20, 150)" x="20.0" y="150.0" font-size="10" fill="#6c757d" text-anchor="middle">Tickets closed</text>
+  <text x="270.0" y="250.0" font-size="10" fill="#6c757d" text-anchor="middle">Week</text>
+  <text x="260.0" y="276.0" font-size="9" fill="#6c757d" text-anchor="middle">The average never moved: about 10 tickets a week, before and after.</text>
+</svg>

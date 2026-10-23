@@ -1,0 +1,84 @@
+<svg viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="320" fill="#fff"/>
+
+  <!-- Title block -->
+  <text x="260.0" y="28.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">They were kept out of the training. Their earnings recovered anyway.</text>
+  <text x="260.0" y="44.0" font-size="9" fill="#6c757d" text-anchor="middle">Men who applied to a US job-training program, but were randomly kept out of it</text>
+
+  <!-- Grid lines -->
+  <line x1="75" y1="240.0" x2="470" y2="240.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69.0" y="243.0" font-size="8" fill="#6c757d" text-anchor="end">$200</text>
+  <line x1="75" y1="183.3" x2="470" y2="183.3" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69.0" y="186.3" font-size="8" fill="#6c757d" text-anchor="end">$400</text>
+  <line x1="75" y1="126.7" x2="470" y2="126.7" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69.0" y="129.7" font-size="8" fill="#6c757d" text-anchor="end">$600</text>
+  <line x1="75" y1="70.0" x2="470" y2="70.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="69.0" y="73.0" font-size="8" fill="#6c757d" text-anchor="end">$800</text>
+
+  <!-- Job loss: spread over the months before applying, not one moment -->
+  <rect x="184.7" y="64" width="87.8" height="176" fill="#ffe6e6" opacity="0.6"/>
+  <text x="228.6" y="78.0" font-size="8" fill="#fd456f" font-weight="bold" text-anchor="middle">many lost their job</text>
+  <text x="228.6" y="88.0" font-size="8" fill="#fd456f" font-weight="bold" text-anchor="middle">in these months</text>
+
+  <!-- The moment they applied -->
+  <line x1="272.5" y1="64" x2="272.5" y2="240" stroke="#212529" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="272.5" y="60.0" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">applied for training</text>
+
+  <!-- Earnings line: one dot per month -->
+  <polyline points="75.0,106.8 86.0,105.4 96.9,112.5 107.9,115.3 118.9,116.8 129.9,113.9 140.8,119.6 151.8,123.8 162.8,122.4 173.8,122.4 184.7,132.3 195.7,142.2 206.7,160.7 217.6,172.0 228.6,183.3 239.6,191.8 250.6,197.5 261.5,211.7 272.5,224.4 283.5,155.0 294.4,133.8 305.4,116.8 316.4,109.7 327.4,111.1 338.3,111.1 349.3,111.1 360.3,96.9 371.2,99.8 382.2,95.5 393.2,92.7 404.2,92.7 415.1,91.2 426.1,91.2 437.1,92.7 448.1,94.1 459.0,94.1 470.0,92.7" fill="none" stroke="#dadada" stroke-width="1.2"/>
+  <circle cx="75.0" cy="106.8" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="86.0" cy="105.4" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="96.9" cy="112.5" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="107.9" cy="115.3" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="118.9" cy="116.8" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="129.9" cy="113.9" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="140.8" cy="119.6" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="151.8" cy="123.8" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="162.8" cy="122.4" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="173.8" cy="122.4" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="184.7" cy="132.3" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="195.7" cy="142.2" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="206.7" cy="160.7" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="217.6" cy="172.0" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="228.6" cy="183.3" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="239.6" cy="191.8" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="250.6" cy="197.5" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="261.5" cy="211.7" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="272.5" cy="224.4" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="283.5" cy="155.0" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="294.4" cy="133.8" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="305.4" cy="116.8" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="316.4" cy="109.7" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="327.4" cy="111.1" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="338.3" cy="111.1" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="349.3" cy="111.1" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="360.3" cy="96.9" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="371.2" cy="99.8" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="382.2" cy="95.5" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="393.2" cy="92.7" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="404.2" cy="92.7" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="415.1" cy="91.2" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="426.1" cy="91.2" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="437.1" cy="92.7" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="448.1" cy="94.1" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="459.0" cy="94.1" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+  <circle cx="470.0" cy="92.7" r="3" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+
+  <!-- The dip -->
+  <circle cx="272.5" cy="224.4" r="4" fill="#ff7898" stroke="#fd456f" stroke-width="1.2"/>
+  <text x="264.5" y="228.4" font-size="9" fill="#fd456f" font-weight="bold" text-anchor="end">Ashenfelter's dip</text>
+
+  <!-- Axes -->
+  <line x1="75" y1="240" x2="470" y2="240" stroke="#212529" stroke-width="1.5"/>
+  <line x1="75" y1="60" x2="75" y2="240" stroke="#212529" stroke-width="1.5"/>
+  <text x="75.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">-18</text>
+  <text x="140.8" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">-12</text>
+  <text x="206.7" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">-6</text>
+  <text x="272.5" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">0</text>
+  <text x="338.3" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">+6</text>
+  <text x="404.2" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">+12</text>
+  <text x="470.0" y="254.0" font-size="8" fill="#6c757d" text-anchor="middle">+18</text>
+  <text transform="rotate(-90, 20, 155)" x="20.0" y="155.0" font-size="10" fill="#6c757d" text-anchor="middle">Monthly earnings</text>
+  <text x="272.5" y="272.0" font-size="10" fill="#6c757d" text-anchor="middle">Months before and after applying</text>
+  <text x="260.0" y="298.0" font-size="8" fill="#6c757d" text-anchor="middle">Adult men, JTPA control group. Traced from Heckman &amp; Smith (1999), Figure 1A, values approximate.</text>
+</svg>
