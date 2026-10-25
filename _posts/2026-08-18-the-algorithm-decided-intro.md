@@ -1,7 +1,7 @@
 ---
 title: "Case #1: The more senior the developer, the worse her incident stats"
 series: "The Algorithm Decided"
-tags: ["The Algorithm Decided", "Statistics"]
+tags: ["The Algorithm Decided"]
 next_post: 2026-10-23-algo-regression-to-mean
 biblio: 
   - link: https://www.youtube.com/watch?v=I-FTa_-fwB0
