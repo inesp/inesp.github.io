@@ -45,9 +45,12 @@ layout: default
     {%- endfor -%}
     {%- if updated_post %}
     <a class="home-updated" href="{{ updated_post.url | relative_url }}">
-      <span class="home-latest-label">Recently updated</span>
+      <span class="home-latest-top">
+        <span class="home-latest-label">Recently updated</span>
+        <span class="home-latest-meta text-muted">{{ updated_post.updated | date: site.date_format }}</span>
+      </span>
       <span class="home-updated-title">{{ updated_post.title }}</span>
-      <span class="text-muted">· {{ updated_post.updated | date: site.date_format }}</span>
+      <span class="home-latest-teaser">{{ updated_post.excerpt | strip_html | truncatewords: 20 }}</span>
     </a>
     {%- endif %}
   </section>
