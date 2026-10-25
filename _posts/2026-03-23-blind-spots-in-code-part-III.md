@@ -37,6 +37,8 @@ programming, 2006"
     link: https://d1wqtxts1xzle7.cloudfront.net/92130960/ICSE2020_Bias-libre.pdf
   - title: "Jihun Park, Miryung Kim, Baishakhi Ray, and Doo-Hwan Bae. An empirical study of supplementary bug fixes, 2012"
     link: https://www.researchgate.net/publication/254040777_An_empirical_study_of_supplementary_bug_fixes
+  - title: "M. Jørgensen, Identification of More Risks Can Lead to Increased Over-Optimism of and Over-Confidence in Software Development Effort Estimates, 2010"
+    link: https://www.simula.no/research/identification-more-risks-can-lead-increased-over-optimism-and-over-confidence-software
 ---
 
 The previous chapters covered anchoring bias and confirmation bias. This chapter is dedicated to **optimism bias**: **the tendency to overestimate the likelihood of positive events and underestimate that of negative events**.
@@ -112,6 +114,11 @@ Half of the group was given substantially more time to think about the risks, to
 Then the researchers compared the estimates of the 2 groups. It turns out, **the more time the participants thought about risks, the _lower_ their estimate for the project.**
 
 Rather counterintuitive...  **The more risks the developers identified, the more optimistic they were about the project.**
+
+> We hypothesize that there are situations where **more work on risk identification leads to increased over-optimism and over-confidence** in software development effort estimates, instead of the intended improvement of realism. Four experiments with software professionals are conducted to test the hypothesis. Results: **All four experiments provide results in support of the hypothesis.**
+<figcaption>
+&mdash; M. Jørgensen, Identification of More Risks Can Lead to Increased Over-Optimism of and Over-Confidence in Software Development Effort Estimates
+</figcaption>
 
 Why might this be?
 
