@@ -10,13 +10,13 @@
   <meta name="theme-color" content="#ffde59">
 
   <title>{%- if page.title -%}
-      {{ page.title }}{%- if page.series -%}{%- assign head_coll = site.data.topics[page.series] -%} (Collection: {{ head_coll.display_title | default: page.series }}){%- endif -%}
+      {{ page.title }}{%- if page.series -%}{%- assign head_coll = site.data.topics[page.series] %} (Collection: {{ head_coll.display_title | default: page.series }}){%- endif -%}
     {%- else -%}
       {{ site.title }}
     {%- endif -%}&nbsp;by {{ site.author }}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
+  {%- seo title=false -%}
 
   <link rel="stylesheet" href="{{ "/assets/bs-override.css" | relative_url }}?v={{ site.time | date: '%s' }}">
 

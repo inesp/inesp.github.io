@@ -138,21 +138,28 @@
   }
 
   .home-updated {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 0.25rem 0.75rem;
+    display: block;
     margin-top: 0.75rem;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
+    background: $color-violet-light;
+    border: 1px solid mix($color-violet, $color-violet-light, 40%);
+    border-radius: $standard-radius;
     text-decoration: none;
+    transition: background 0.2s ease-in-out;
 
-    &:hover .home-updated-title {
-      text-decoration: underline;
+    &:hover {
+      background: mix($color-violet, $color-violet-light, 20%);
+
+      .home-updated-title {
+        text-decoration: underline;
+      }
     }
   }
 
   .home-updated-title {
+    display: block;
     font-weight: 600;
+    margin-bottom: 0.3rem;
   }
 }
 
