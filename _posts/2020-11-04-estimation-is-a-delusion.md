@@ -1,5 +1,6 @@
 ---
 title: Software estimation is a delusion
+updated: 2026-10-25
 tags: ["Engineering Research"]
 biblio:
   - title: "N. Fenton: Software measurement: a necessary scientific basis, 1994"
