@@ -81,6 +81,8 @@ But then research shatters our idea of a superior robot, by proving that the bes
 
 By "calibrated" I mean that the function for calculating the required effort is fitted to data produced by this team in past projects. Or simpler: you need a team's statistics to be able to predict the team's future work.
 
+And by mathematical models, I also mean LLMs.
+
 1. So, first you have to have a stable team. No team changes every year, no hiring no firing. 
 2. And then you need to measure the team's work, categorize every task and measure the time. 
 
@@ -613,12 +615,31 @@ But as we've seen, **maybe it isn't really accuracy that businesses and people a
 
 Risk can be measured in other ways.
 
+First of all, there are no shortcuts. No mathematical model and no AI will solve this problem for you. It is just you. **Nobody is coming to save us.**
+
 At my current stage in life, I find that **everybody involved in a project is much happier if we go through the project in iterations**.
 
-We don't have to decide everything at the beginning of a project. We should first concentrate on the essential bits. Things that can be done in a few days, a week at most and review the result.
+We don't have to decide everything at the beginning. We can first concentrate on the essential bits, things that take a few days, a few weeks, a month at most, and then review the result.
 
-It is much less risky to see somebody spend a few days on a project and then review the results than it is to wait for a few months.
+**And we can say out loud what we _don't_ know.** We know people prefer precise estimates (_"this will take exactly 8 days, 3 hours and 20 minutes"_), so saying _"I don't know how long this will take"_ will feel wrong. But take it as a test of confidence. If you are truly confident, admitting that you don't know something doesn't scare you, because you don't see how it could hurt you.
 
-An amusing consequence of this approach is that the developer will then also first concentrate on the essential bits. Maybe the first goal will be a proof of concept, something ugly and hacky, but something that works. Or maybe the first goal will be bits and pieces of code and in-depth research of the requirements and limitations and then comes the proof of concept. Either way, we will be kept in the loop on the progress. And being kept in the loop is what makes the risk lesser.
+What you do owe the other person is an expert's explanation: how things are interconnected and where the risk comes from.
 
-**Maybe it is time we stop estimating tasks left and right and instead start managing the project's risk and customer's expectations.**
+- _"If the API does what the docs say, it will be quick. If it doesn't, it might get messy."_
+- _"If the migration runs in seconds on the production table, it will be quick. If it locks a table with 200 million rows, it might get messy."_
+
+Once the other person knows where the risk is, they won't be surprised when the unfortunate thing happens. **People value predictability even more than precision.**
+
+If you still have to give a number, first ask: **who is this number for?** Is it to decide whether to start the project at all? To pick a release date? To send to a customer? These are 3 different questions, and they need 3 different answers. Very often the person asking only needs to know whether this is a 2-week thing or a 6-month thing. And _that_ you can usually tell them.
+
+Focusing on risk instead of on dates has 2 nice side effects.
+
+First, managers and customers start caring about the risks too, which buys developers time to research them and find ways to reduce them.
+
+Second, it changes how developers approach the work. When the goal is to reduce risk, we build the essential bits first. Maybe the first milestone is a proof of concept, something ugly and hacky, but working. Or maybe it is research into the requirements and limitations, plus a few bits and pieces of code, and only then the proof of concept. 
+
+It is much less risky to review a few days of work than to wait months before seeing anything.
+
+**Maybe it is time we stop estimating tasks left and right and instead start managing the project's risk and customers' expectations.**
+
+Life is unpredictable. Most of the time, people just want to know they can depend on you.
