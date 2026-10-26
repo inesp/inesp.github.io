@@ -2,6 +2,7 @@
 series: Cognitive Biases in Code
 title: "Exhibit D: Looks Good to Me (Well, at Least the First Few Files)"
 tags: ["Cognitive Biases in Code", "Engineering Research", "Opinion"]
+image: /assets/bias/pr-review-shortcuts.png
 prev_post: 2026-03-23-blind-spots-in-code-part-III
 biblio:
   - title: "Wikipedia: Confirmation bias"
