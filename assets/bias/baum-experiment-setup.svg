@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 215" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="210.0" y="20" text-anchor="middle" font-weight="bold" font-size="11px" fill="#212529">50 developers, each reviewed all 3 changes</text>
+  <text x="210.0" y="33" text-anchor="middle" font-size="8px" fill="#6c757d">real code changes from jEdit (Java), most bugs planted by the researchers</text>
+
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#9f9f9f"/></marker></defs>
+
+  <!-- warm-up: 2 files, 31 lines, 3 bugs -->
+  <rect x="20" y="48" width="118" height="150" rx="4" fill="#e6a000"/>
+  <text x="79.0" y="66" text-anchor="middle" font-size="11px" font-weight="bold" fill="#fff">warm-up</text>
+  <text x="79.0" y="79" text-anchor="middle" font-size="9px" fill="#fff">31 lines</text>
+  <text x="30" y="100" font-size="8px" font-weight="bold" fill="#fff">2 files</text>
+  <path d="M30,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M44,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <text x="30" y="144" font-size="8px" font-weight="bold" fill="#fff">3 bugs</text>
+  <circle cx="35" cy="158" r="6" fill="#fff"/>
+  <circle cx="35" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="52" cy="158" r="6" fill="#fff"/>
+  <circle cx="52" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="69" cy="158" r="6" fill="#fff"/>
+  <circle cx="69" cy="158" r="3.2" fill="#fd456f"/>
+  <line x1="141" y1="123.0" x2="154" y2="123.0" stroke="#9f9f9f" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- change A: 7 files, 490 lines, 9 bugs -->
+  <rect x="159" y="48" width="118" height="150" rx="4" fill="#06bdad"/>
+  <text x="218.0" y="66" text-anchor="middle" font-size="11px" font-weight="bold" fill="#fff">change A</text>
+  <text x="218.0" y="79" text-anchor="middle" font-size="9px" fill="#fff">490 lines</text>
+  <text x="169" y="100" font-size="8px" font-weight="bold" fill="#fff">7 files</text>
+  <path d="M169,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M183,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M197,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M211,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M225,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M239,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M253,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <text x="169" y="144" font-size="8px" font-weight="bold" fill="#fff">9 bugs</text>
+  <circle cx="174" cy="158" r="6" fill="#fff"/>
+  <circle cx="174" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="191" cy="158" r="6" fill="#fff"/>
+  <circle cx="191" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="208" cy="158" r="6" fill="#fff"/>
+  <circle cx="208" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="225" cy="158" r="6" fill="#fff"/>
+  <circle cx="225" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="242" cy="158" r="6" fill="#fff"/>
+  <circle cx="242" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="259" cy="158" r="6" fill="#fff"/>
+  <circle cx="259" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="174" cy="175" r="6" fill="#fff"/>
+  <circle cx="174" cy="175" r="3.2" fill="#fd456f"/>
+  <circle cx="191" cy="175" r="6" fill="#fff"/>
+  <circle cx="191" cy="175" r="3.2" fill="#fd456f"/>
+  <circle cx="208" cy="175" r="6" fill="#fff"/>
+  <circle cx="208" cy="175" r="3.2" fill="#fd456f"/>
+  <line x1="280" y1="123.0" x2="293" y2="123.0" stroke="#9f9f9f" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- change B: 7 files, 233 lines, 10 bugs -->
+  <rect x="298" y="48" width="118" height="150" rx="4" fill="#35b0e8"/>
+  <text x="357.0" y="66" text-anchor="middle" font-size="11px" font-weight="bold" fill="#fff">change B</text>
+  <text x="357.0" y="79" text-anchor="middle" font-size="9px" fill="#fff">233 lines</text>
+  <text x="308" y="100" font-size="8px" font-weight="bold" fill="#fff">7 files</text>
+  <path d="M308,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M322,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M336,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M350,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M364,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M378,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <path d="M392,106 h7 l3,3 v11 h-10 z" fill="#fff"/>
+  <text x="308" y="144" font-size="8px" font-weight="bold" fill="#fff">10 bugs</text>
+  <circle cx="313" cy="158" r="6" fill="#fff"/>
+  <circle cx="313" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="330" cy="158" r="6" fill="#fff"/>
+  <circle cx="330" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="347" cy="158" r="6" fill="#fff"/>
+  <circle cx="347" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="364" cy="158" r="6" fill="#fff"/>
+  <circle cx="364" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="381" cy="158" r="6" fill="#fff"/>
+  <circle cx="381" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="398" cy="158" r="6" fill="#fff"/>
+  <circle cx="398" cy="158" r="3.2" fill="#fd456f"/>
+  <circle cx="313" cy="175" r="6" fill="#fff"/>
+  <circle cx="313" cy="175" r="3.2" fill="#fd456f"/>
+  <circle cx="330" cy="175" r="6" fill="#fff"/>
+  <circle cx="330" cy="175" r="3.2" fill="#fd456f"/>
+  <circle cx="347" cy="175" r="6" fill="#fff"/>
+  <circle cx="347" cy="175" r="3.2" fill="#fd456f"/>
+  <circle cx="364" cy="175" r="6" fill="#fff"/>
+  <circle cx="364" cy="175" r="3.2" fill="#fd456f"/>
+</svg>

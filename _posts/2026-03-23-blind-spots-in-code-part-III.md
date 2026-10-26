@@ -3,6 +3,7 @@ series: Cognitive Biases in Code
 title: "Exhibit C: It'll Take Two Weeks, Tops"
 tags: ["Cognitive Biases in Code", "Engineering Research"]
 prev_post: 2025-07-23-blind-spots-in-code-part-II
+next_post: 2026-10-26-blind-spots-in-code-part-IV
 biblio:
   - title: "R. Mohanani, I. Salman, B. Turhan P. Rodriguez & P. Ralph, Cognitive Biases in Software Engineering: A Systematic Mapping Study, 2020"
     link: https://www.researchgate.net/publication/328410759_Cognitive_Biases_in_Software_Engineering_A_Systematic_Mapping_Study

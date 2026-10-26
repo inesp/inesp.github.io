@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="210.0" y="20" text-anchor="middle" font-weight="bold" font-size="11px" fill="#212529">How well do you need to understand the change to...</text>
+  <text x="210.0" y="33" text-anchor="middle" font-size="8px" fill="#6c757d">survey of Microsoft developers, redrawn from Bacchelli &amp; Bird 2013, Figure 5 (percentages approximate)</text>
+
+  <!-- Legend -->
+  <rect x="95" y="42" width="10" height="10" rx="2" fill="#ff7898"/>
+  <text x="109" y="50" font-size="9px" fill="#495057">none</text>
+  <rect x="160" y="42" width="10" height="10" rx="2" fill="#ffcf65"/>
+  <text x="174" y="50" font-size="9px" fill="#495057">low</text>
+  <rect x="225" y="42" width="10" height="10" rx="2" fill="#35b0e8"/>
+  <text x="239" y="50" font-size="9px" fill="#495057">high</text>
+  <rect x="290" y="42" width="10" height="10" rx="2" fill="#06bdad"/>
+  <text x="304" y="50" font-size="9px" fill="#495057">complete</text>
+
+  <!-- Bars: low side grows left of the center line, high side grows right -->
+  <!-- Finding defects: about 83% high or complete -->
+  <text x="197.3" y="76" text-anchor="end" font-size="9px" fill="#212529" font-weight="bold">Finding defects</text>
+  <rect x="203.3" y="66" width="3.8" height="14" fill="#ff7898"/>
+  <rect x="207.2" y="66" width="27.8" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="66" width="109.9" height="14" fill="#35b0e8"/>
+  <rect x="344.9" y="66" width="42.5" height="14" fill="#06bdad"/>
+  <text x="392.4" y="76" font-size="8px" font-weight="bold" fill="#0288d1">≈83%</text>
+  <!-- Alternative solutions: about 81% high or complete -->
+  <text x="193.7" y="97" text-anchor="end" font-size="9px" fill="#212529" font-weight="bold">Alternative solutions</text>
+  <rect x="199.7" y="87" width="3.1" height="14" fill="#ff7898"/>
+  <rect x="202.8" y="87" width="32.2" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="87" width="102.0" height="14" fill="#35b0e8"/>
+  <rect x="337.0" y="87" width="44.6" height="14" fill="#06bdad"/>
+  <text x="386.6" y="97" font-size="8px" font-weight="bold" fill="#0288d1">≈81%</text>
+  <!-- Share code ownership: about 45% high or complete -->
+  <text x="130.4" y="118" text-anchor="end" font-size="9px" fill="#212529">Share code ownership</text>
+  <rect x="136.4" y="108" width="29.3" height="14" fill="#ff7898"/>
+  <rect x="165.6" y="108" width="69.4" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="108" width="67.4" height="14" fill="#35b0e8"/>
+  <rect x="302.4" y="108" width="12.0" height="14" fill="#06bdad"/>
+  <text x="319.4" y="118" font-size="8px" font-weight="bold" fill="#0288d1">≈45%</text>
+  <!-- Knowledge transfer: about 41% high or complete -->
+  <text x="123.2" y="139" text-anchor="end" font-size="9px" fill="#212529">Knowledge transfer</text>
+  <rect x="129.2" y="129" width="21.4" height="14" fill="#ff7898"/>
+  <rect x="150.5" y="129" width="84.5" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="129" width="64.6" height="14" fill="#35b0e8"/>
+  <rect x="299.6" y="129" width="9.4" height="14" fill="#06bdad"/>
+  <text x="313.9" y="139" font-size="8px" font-weight="bold" fill="#0288d1">≈41%</text>
+  <!-- Team assessment: about 39% high or complete -->
+  <text x="121.5" y="160" text-anchor="end" font-size="9px" fill="#212529">Team assessment</text>
+  <rect x="127.5" y="150" width="27.8" height="14" fill="#ff7898"/>
+  <rect x="155.3" y="150" width="79.7" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="150" width="60.5" height="14" fill="#35b0e8"/>
+  <rect x="295.5" y="150" width="8.4" height="14" fill="#06bdad"/>
+  <text x="308.9" y="160" font-size="8px" font-weight="bold" fill="#0288d1">≈39%</text>
+  <!-- Code improvement: about 36% high or complete -->
+  <text x="111.9" y="181" text-anchor="end" font-size="9px" fill="#212529">Code improvement</text>
+  <rect x="117.9" y="171" width="21.8" height="14" fill="#ff7898"/>
+  <rect x="139.7" y="171" width="95.3" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="171" width="53.3" height="14" fill="#35b0e8"/>
+  <rect x="288.3" y="171" width="12.7" height="14" fill="#06bdad"/>
+  <text x="306.0" y="181" font-size="8px" font-weight="bold" fill="#0288d1">≈36%</text>
+  <!-- Improve dev process: about 31% high or complete -->
+  <text x="105.9" y="202" text-anchor="end" font-size="9px" fill="#212529">Improve dev process</text>
+  <rect x="111.9" y="192" width="25.9" height="14" fill="#ff7898"/>
+  <rect x="137.8" y="192" width="97.2" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="192" width="49.0" height="14" fill="#35b0e8"/>
+  <rect x="284.0" y="192" width="6.7" height="14" fill="#06bdad"/>
+  <text x="295.7" y="202" font-size="8px" font-weight="bold" fill="#0288d1">≈31%</text>
+  <!-- Team awareness: about 30% high or complete -->
+  <text x="103.7" y="223" text-anchor="end" font-size="9px" fill="#212529">Team awareness</text>
+  <rect x="109.7" y="213" width="28.1" height="14" fill="#ff7898"/>
+  <rect x="137.8" y="213" width="97.2" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="213" width="46.3" height="14" fill="#35b0e8"/>
+  <rect x="281.3" y="213" width="7.9" height="14" fill="#06bdad"/>
+  <text x="294.2" y="223" font-size="8px" font-weight="bold" fill="#0288d1">≈30%</text>
+  <!-- Track rationale: about 27% high or complete -->
+  <text x="98.4" y="244" text-anchor="end" font-size="9px" fill="#212529">Track rationale</text>
+  <rect x="104.4" y="234" width="46.6" height="14" fill="#ff7898"/>
+  <rect x="151.0" y="234" width="84.0" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="234" width="40.6" height="14" fill="#35b0e8"/>
+  <rect x="275.6" y="234" width="7.2" height="14" fill="#06bdad"/>
+  <text x="287.8" y="244" font-size="8px" font-weight="bold" fill="#0288d1">≈27%</text>
+  <!-- Avoid build breaks: about 20% high or complete -->
+  <text x="85.5" y="265" text-anchor="end" font-size="9px" fill="#212529">Avoid build breaks</text>
+  <rect x="91.5" y="255" width="57.1" height="14" fill="#ff7898"/>
+  <rect x="148.6" y="255" width="86.4" height="14" fill="#ffcf65"/>
+  <rect x="235.0" y="255" width="23.8" height="14" fill="#35b0e8"/>
+  <rect x="258.8" y="255" width="13.2" height="14" fill="#06bdad"/>
+  <text x="277.0" y="265" font-size="8px" font-weight="bold" fill="#0288d1">≈20%</text>
+
+  <!-- Center line -->
+  <line x1="235" y1="60" x2="235" y2="276" stroke="#212529" stroke-width="1"/>
+  <text x="227" y="288" text-anchor="end" font-size="8px" fill="#6c757d">&#8592; less understanding</text>
+  <text x="243" y="288" font-size="8px" fill="#6c757d">more understanding &#8594;</text>
+  <text x="410" y="288" text-anchor="end" font-size="7px" fill="#0288d1">% high or complete</text>
+</svg>

@@ -46,7 +46,7 @@ Why is fighting cognitive biases important? Because research shows they lead to 
 
 {% include toc.html %}
 
-## Exhibit B: I just need to confirm something (but I'm pretty sure I'm right)
+## "I just need to confirm something (but I'm pretty sure I'm right)"
 
 **Confirmation bias** is about being deaf to everything that contradicts your beliefs. Your mind has been made up. This is unchangeable. It is:
 
@@ -73,7 +73,7 @@ There are 2 distinct phases in creating software: one is solitary and the other 
 
 The solitary phase is the physical action of writing words into code, it is about **pouring our technical knowledge into a solution**. We do this alone with our thoughts and our screens. 
 
-The social phase is about the meetings and discussions that precede and also follow the solitary phase. Before we write some code, we often talk about it, about the expanse of the problem and the options for solutions. And after we write the code **we go out into the collective to defend it, in the form of PR reviews**.
+The social phase is about the meetings and discussions that precede and also follow the solitary phase. Before we write some code, we often talk about it, about the expanse of the problem and the options for solutions. And after we write the code **we go out into the collective to defend it, in the form of PR reviews** (which got [their own chapter]({% post_url 2026-10-26-blind-spots-in-code-part-IV %})).
 
 The probability that **we fail to solve the original problem is just as high at the solitary stage (creating a technical solution) as it is at the social stage (defending the solution in front of our peers)**.
 
@@ -92,61 +92,6 @@ We, as the oldtimer, focus on the good-old-framework, because knowledge about it
 However, **bias also works the other way**. The team member suggesting the new framework might just be excited **because she read about it in several places already.** This framework seems to be the great new thing, the thing that everybody will adopt sooner or later, so let's join the "sooner"-cohort. After reading soo much about it, all she can see is the glittering features of the new framework, the promise of easier work, the poetry of the new code... _"It's just going to be such a joy to work with the new framework"_.
 
 Always choosing the new thing or always sticking with the old, both tendencies often stem from biases.
-
-
-## PR reviews are a spectacular breeding ground for biases
-
-Now, how do we review PRs?
-
-PR reviews are a spectacular breeding ground for biases. Because they are a deeply social activity.
-
-The idea of PR reviewing is great, it's the same as peer-reviewing a scientific paper. **We need to double-check everybody's work, not because we don't trust people, but because we are wisely accepting our own imperfections.** Everybody can make mistakes, small typos or big, silly logic errors. If we work together, we can catch bugs in the making, before they reach our users.
-
-This is all in theory, however.
-
-In practice, PRs as well as scientific papers (and all other types of reviews) are often poorly peer-reviewed. The reason? **It is SOOOO MUCH WORK to review something.** And this is work that **isn't really appreciated or rewarded**.
-
-We neither care if you did a good job reviewing _this_ nor are we going to award you for it.
-
-There is basically nothing in it for you, no reason to do a good job at reviewing.
-
-Spending a good amount of time and energy to deliver a thorough review can even hurt you. **People dislike reviewing, even when it is about their own code. So if you are offering excellent reviews for free, then why should they be diligent when writing code? We have tests and great reviews, those will catch any bugs.** They can just write what looks like working code, and you will then review the code and find all the bugs. There really isn't any point in doing a wholesome review.
-
-What do we do to reduce the load of reviewing? We apply shortcuts, the same ones that are classified as cognitive biases.
-
-| Shortcut                   | Bias                  | Inner monologue                                    |
-|----------------------------|-----------------------|----------------------------------------------------|
-| Author's past mistakes     | **Confirmation bias** | _"What do I already believe about this author?"_   |
-| Recent production bugs     | **Availability bias** | _"What can I think of without thinking too much?"_ |
-| My own recent code changes | **Availability bias** | _"I'm still thinking of my code anyway."_          |
-| Existing PR comments       | **Bystander effect**  | _"Let's just follow the crowd."_                   |
-| Author's seniority         | **Halo Effect**       | _"Superheroes are always right."_                  |
-| PR's age                   | **Sunk Cost Fallacy** | _"It's too late now, let's just merge it."_        |
-
-At the end of the day, we are told: _"Reviewing something is surely better than reviewing nothing."_ But is it?
-
-![PR review shortcuts](/assets/bias/pr-review-shortcuts.svg)
-
-
-## Is there a solution for PRs?
-
-I think we need to have an honest conversation about how pull request reviews don't really work.
-
-PRs are a **group effort**, it's not something you can solve by yourself. 
-
-How many people are going to devote themselves to overcoming their reviewing biases? Very few, I'd say. 
-
-Think about the junior on your team, who just doesn't yet have meaningful insights to contribute. And of your boss, who still sometimes meddles in PRs, although he shouldn't. Or the new hire, who says they did it differently at their previous company, and low-key suggests it was better there. 
-
-Reading about biases once won't make a difference. It takes continuous effort, constant self-reflection, and a genuine desire to improve. It is hard work to silence your opinionated ego. **Good reviewing is practically non-existent.** So maybe we shouldn't expect it from people.
-
-PRs might work for open source, where it solves an actual problem: who decides what gets included into a library?
-
-In companies, however, each team generally owns one part of any repo. Gatekeeping with PRs is very much too late. The gatekeeping should have happened in meetings and instructions and planning stages. 
-
-**PRs just seem like a lost cause to me.**
-
-Maybe we should focus our energy elsewhere: on better testing, on pair programming, on automated checks... Because relying on humans to overcome their cognitive shortcuts in every single review, is wishful thinking.
 
 
 ## Cognitive biases lead to code reverting

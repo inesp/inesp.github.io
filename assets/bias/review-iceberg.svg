@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 260" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Water -->
+  <rect x="0" y="92" width="440" height="168" fill="#e1f5fe"/>
+  <line x1="0" y1="92" x2="440" y2="92" stroke="#35b0e8" stroke-width="1.5"/>
+
+  <!-- Tip of the iceberg: what gets counted -->
+  <polygon points="290,22 338,92 242,92" fill="#06bdad"/>
+  <text x="290" y="64" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">Feature X</text>
+  <text x="290" y="76" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">shipped</text>
+
+  <!-- Under water: what reviewers do -->
+  <polygon points="242,92 338,92 402,140 386,214 310,246 230,236 182,180 192,128" fill="#0288d1"/>
+  <text x="290" y="116" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">• caught a bug before prod</text>
+  <text x="290" y="133" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">• explained a pattern to a junior</text>
+  <text x="290" y="150" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">• spotted the query that won't scale</text>
+  <text x="290" y="167" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">• asked &quot;what if the API is down?&quot;</text>
+  <text x="290" y="184" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">• suggested a simpler solution</text>
+  <text x="290" y="201" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">• kept the code consistent</text>
+  <text x="290" y="218" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fff">• incident A never happened</text>
+
+  <!-- Side labels -->
+  <text x="20" y="58" font-size="9px" font-weight="bold" fill="#00a89a">in the performance review</text>
+  <text x="20" y="70" font-size="8px" fill="#6c757d">easy to see, easy to count</text>
+  <text x="20" y="150" font-size="9px" font-weight="bold" fill="#0288d1">not in the performance review</text>
+  <text x="20" y="162" font-size="8px" fill="#6c757d">the free labor of reviewers</text>
+</svg>
