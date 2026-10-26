@@ -629,9 +629,13 @@ What you do owe the other person is an expert's explanation: how things are inte
 - _"If the API does what the docs say, it will be quick. If it doesn't, it might get messy."_
 - _"If the migration runs in seconds on the production table, it will be quick. If it locks a table with 200 million rows, it might get messy."_
 
+![Instead of a date: where is the risk?](/assets/estimation/risk-fork.svg)
+
 Once the other person knows where the risk is, they won't be surprised when the unfortunate thing happens. **People value predictability even more than precision.**
 
 If you still have to give a number, first ask: **who is this number for?** Is it to decide whether to start the project at all? To pick a release date? To send to a customer? These are 3 different questions, and they need 3 different answers. Very often the person asking only needs to know whether this is a 2-week thing or a 6-month thing. And _that_ you can usually tell them.
+
+![Who is this number for?](/assets/estimation/who-is-the-number-for.svg)
 
 Focusing on risk instead of on dates has 2 nice side effects.
 
@@ -640,6 +644,8 @@ First, managers and customers start caring about the risks too, which buys devel
 Second, it changes how developers approach the work. When the goal is to reduce risk, we build the essential bits first. Maybe the first milestone is a proof of concept, something ugly and hacky, but working. Or maybe it is research into the requirements and limitations, plus a few bits and pieces of code, and only then the proof of concept. 
 
 It is much less risky to review a few days of work than to wait months before seeing anything.
+
+![When do we first see the work?](/assets/estimation/review-early.svg)
 
 **Maybe it is time we stop estimating tasks left and right and instead start managing the project's risk and customers' expectations.**
 

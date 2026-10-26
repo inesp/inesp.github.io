@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 215">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="200.0" y="22" text-anchor="middle" font-weight="bold" font-size="11px" font-family="system-ui, -apple-system, sans-serif" fill="#212529">Who found the bug? File shown first vs. last</text>
+
+  <!-- Y-axis (% of developers who found the bug) -->
+  <line x1="60" y1="45" x2="60" y2="155" stroke="#dadada" stroke-width="1"/>
+  <text x="52" y="158.0" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">0%</text>
+  <text x="52" y="130.5" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">25%</text>
+  <line x1="60" y1="127.5" x2="360" y2="127.5" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="52" y="103.0" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">50%</text>
+  <line x1="60" y1="100.0" x2="360" y2="100.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="52" y="75.5" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">75%</text>
+  <line x1="60" y1="72.5" x2="360" y2="72.5" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="52" y="48.0" text-anchor="end" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">100%</text>
+  <line x1="60" y1="45.0" x2="360" y2="45.0" stroke="#f0f0f0" stroke-width="1"/>
+
+  <!-- X-axis -->
+  <line x1="60" y1="155" x2="360" y2="155" stroke="#dadada" stroke-width="1"/>
+
+  <!-- Edge-case bug: first 34/56, last 18/50 -->
+  <rect x="92" y="88.2" width="40" height="66.8" rx="2" fill="#06bdad"/>
+  <text x="112.0" y="102.2" text-anchor="middle" font-size="10px" font-family="system-ui, -apple-system, sans-serif" fill="#fff" font-weight="bold">61%</text>
+  <text x="112.0" y="149" text-anchor="middle" font-size="7px" font-family="system-ui, -apple-system, sans-serif" fill="#fff">34 of 56</text>
+  <rect x="138" y="115.4" width="40" height="39.6" rx="2" fill="#35b0e8"/>
+  <text x="158.0" y="129.4" text-anchor="middle" font-size="10px" font-family="system-ui, -apple-system, sans-serif" fill="#fff" font-weight="bold">36%</text>
+  <text x="158.0" y="149" text-anchor="middle" font-size="7px" font-family="system-ui, -apple-system, sans-serif" fill="#fff">18 of 50</text>
+  <text x="135" y="169" text-anchor="middle" font-size="10px" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" fill="#212529">Edge-case bug</text>
+  <text x="135" y="181" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">significant, p = 0.011</text>
+
+  <!-- Missing break: first 26/50, last 24/56 -->
+  <rect x="242" y="97.8" width="40" height="57.2" rx="2" fill="#06bdad"/>
+  <text x="262.0" y="111.8" text-anchor="middle" font-size="10px" font-family="system-ui, -apple-system, sans-serif" fill="#fff" font-weight="bold">52%</text>
+  <text x="262.0" y="149" text-anchor="middle" font-size="7px" font-family="system-ui, -apple-system, sans-serif" fill="#fff">26 of 50</text>
+  <rect x="288" y="107.9" width="40" height="47.1" rx="2" fill="#35b0e8"/>
+  <text x="308.0" y="121.9" text-anchor="middle" font-size="10px" font-family="system-ui, -apple-system, sans-serif" fill="#fff" font-weight="bold">43%</text>
+  <text x="308.0" y="149" text-anchor="middle" font-size="7px" font-family="system-ui, -apple-system, sans-serif" fill="#fff">24 of 56</text>
+  <text x="285" y="169" text-anchor="middle" font-size="10px" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" fill="#212529">Missing break</text>
+  <text x="285" y="181" text-anchor="middle" font-size="8px" font-family="system-ui, -apple-system, sans-serif" fill="#6c757d">not significant, p = 0.35</text>
+
+  <!-- Legend -->
+  <rect x="125" y="201" width="10" height="10" rx="2" fill="#06bdad"/>
+  <text x="139" y="209" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">bug in the first file</text>
+  <rect x="235" y="201" width="10" height="10" rx="2" fill="#35b0e8"/>
+  <text x="249" y="209" font-size="9px" font-family="system-ui, -apple-system, sans-serif" fill="#495057">bug in the last file</text>
+</svg>

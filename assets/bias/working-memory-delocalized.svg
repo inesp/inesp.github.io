@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="200.0" y="20" text-anchor="middle" font-weight="bold" font-size="11px" fill="#212529">Working memory vs. delocalized bugs found</text>
+  <text x="200.0" y="33" text-anchor="middle" font-size="8px" fill="#6c757d">one dot per reviewer, Baum et al. 2019</text>
+
+  <!-- Empty corner: low working memory never found many -->
+  <rect x="55.0" y="45.0" width="176.4" height="70.0" rx="4" fill="#ffe6e6"/>
+  <text x="143.2" y="78.0" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">nobody here</text>
+  <text x="143.2" y="90.0" text-anchor="middle" font-size="7px" fill="#6c757d">low memory, many bugs found</text>
+
+  <!-- Grid lines + y labels -->
+  <text x="49" y="188.0" text-anchor="end" font-size="8px" fill="#6c757d">0</text>
+  <line x1="55" y1="161.66666666666666" x2="380" y2="161.66666666666666" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="49" y="164.66666666666666" text-anchor="end" font-size="8px" fill="#6c757d">1</text>
+  <line x1="55" y1="138.33333333333334" x2="380" y2="138.33333333333334" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="49" y="141.33333333333334" text-anchor="end" font-size="8px" fill="#6c757d">2</text>
+  <line x1="55" y1="115.0" x2="380" y2="115.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="49" y="118.0" text-anchor="end" font-size="8px" fill="#6c757d">3</text>
+  <line x1="55" y1="91.66666666666667" x2="380" y2="91.66666666666667" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="49" y="94.66666666666667" text-anchor="end" font-size="8px" fill="#6c757d">4</text>
+  <line x1="55" y1="68.33333333333333" x2="380" y2="68.33333333333333" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="49" y="71.33333333333333" text-anchor="end" font-size="8px" fill="#6c757d">5</text>
+  <line x1="55" y1="45.0" x2="380" y2="45.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="49" y="48.0" text-anchor="end" font-size="8px" fill="#6c757d">6</text>
+  <text x="101.4" y="197" text-anchor="middle" font-size="8px" fill="#6c757d">20</text>
+  <text x="194.3" y="197" text-anchor="middle" font-size="8px" fill="#6c757d">30</text>
+  <text x="287.1" y="197" text-anchor="middle" font-size="8px" fill="#6c757d">40</text>
+  <text x="380.0" y="197" text-anchor="middle" font-size="8px" fill="#6c757d">50</text>
+
+  <!-- Axes -->
+  <line x1="55" y1="45" x2="55" y2="185" stroke="#dadada" stroke-width="1"/>
+  <line x1="55" y1="185" x2="380" y2="185" stroke="#dadada" stroke-width="1"/>
+  <text x="217.5" y="211" text-anchor="middle" font-size="9px" fill="#495057">working memory test score</text>
+  <text x="14" y="115.0" text-anchor="middle" font-size="9px" fill="#495057" transform="rotate(-90 14 115.0)">delocalized bugs found (of 6)</text>
+
+  <!-- One dot per reviewer; identical points are nudged sideways -->
+  <circle cx="73.6" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="166.4" cy="138.3" r="3.5" fill="#06bdad"/>
+  <circle cx="194.3" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="194.3" cy="138.3" r="3.5" fill="#06bdad"/>
+  <circle cx="240.7" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="240.7" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="240.7" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="240.7" cy="91.7" r="3.5" fill="#06bdad"/>
+  <circle cx="250.0" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="255.0" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="259.3" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="259.3" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="264.3" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="268.6" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="268.6" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="287.1" cy="138.3" r="3.5" fill="#06bdad"/>
+  <circle cx="287.1" cy="91.7" r="3.5" fill="#06bdad"/>
+  <circle cx="296.4" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="315.0" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="320.0" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="324.3" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="329.3" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="324.3" cy="68.3" r="3.5" fill="#06bdad"/>
+  <circle cx="333.6" cy="185.0" r="3.5" fill="#06bdad"/>
+  <circle cx="333.6" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="333.6" cy="138.3" r="3.5" fill="#06bdad"/>
+  <circle cx="333.6" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="333.6" cy="68.3" r="3.5" fill="#06bdad"/>
+  <circle cx="342.9" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="347.9" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="342.9" cy="138.3" r="3.5" fill="#06bdad"/>
+  <circle cx="342.9" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="347.9" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="342.9" cy="91.7" r="3.5" fill="#06bdad"/>
+  <circle cx="342.9" cy="68.3" r="3.5" fill="#06bdad"/>
+  <circle cx="352.1" cy="91.7" r="3.5" fill="#06bdad"/>
+  <circle cx="361.4" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="361.4" cy="138.3" r="3.5" fill="#06bdad"/>
+  <circle cx="361.4" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="361.4" cy="91.7" r="3.5" fill="#06bdad"/>
+  <circle cx="370.7" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="375.7" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="370.7" cy="45.0" r="3.5" fill="#06bdad"/>
+  <circle cx="380.0" cy="161.7" r="3.5" fill="#06bdad"/>
+  <circle cx="380.0" cy="115.0" r="3.5" fill="#06bdad"/>
+  <circle cx="380.0" cy="68.3" r="3.5" fill="#06bdad"/>
+</svg>
