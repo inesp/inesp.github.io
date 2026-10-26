@@ -5,37 +5,16 @@ tags: ["Cognitive Biases in Code", "Engineering Research"]
 prev_post: 2025-07-23-blind-spots-in-code-part-II
 next_post: 2026-10-26-blind-spots-in-code-part-IV
 biblio:
-  - title: "R. Mohanani, I. Salman, B. Turhan P. Rodriguez & P. Ralph, Cognitive Biases in Software Engineering: A Systematic Mapping Study, 2020"
-    link: https://www.researchgate.net/publication/328410759_Cognitive_Biases_in_Software_Engineering_A_Systematic_Mapping_Study
   - title: "D. Kahneman & A. Tversky, Intuitive Prediction: Biases and Corrective Procedures, 1977"
     link: https://apps.dtic.mil/sti/pdfs/ADA047747.pdf
   - title: "Kahneman and Lovallo, Timid Choices and Bold Forecasts: A Cognitive Perspective on Risk Taking, 1993"
     link: https://doi.org/10.1287/mnsc.39.1.17
   - title: "Wikipedia: Optimism bias"
     link: https://en.wikipedia.org/wiki/Optimism_bias
-  - title: "Wikipedia: Status quo bias"
-    link: https://en.wikipedia.org/wiki/Status_quo_bias
   - title: "Wikipedia: Confirmation bias"
     link: https://en.wikipedia.org/wiki/Confirmation_bias
-  - title: "Wikipedia: Availability heuristic"
-    link: https://en.wikipedia.org/wiki/Availability_heuristic
   - title: "Wikipedia: Anchoring effect"
     link: https://en.wikipedia.org/wiki/Anchoring_effect
-  - title: "G. Allen and B. J. Parsons, A Little Help can Be A Bad Thing: Anchoring and Adjustment in Adaptive Query Reuse, 2006"
-    link: https://www.researchgate.net/publication/221598895_A_Little_Help_can_Be_A_Bad_Thing_Anchoring_and_Adjustment_in_Adaptive_Query_Reuse
-  - title: "R. Jain, J. Muro, and K. Mohan, A cognitive perspective on pair
-programming, 2006"
-    link: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=2e0461a5259134e8f59ac9eda1c5df185f607a3d
-  - title: J. Klayman, Y.-W. Ha, Confirmation, disconfirmation, and information in hypothesis testing, 1987
-    link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=PsHLbGUAAAAJ&citation_for_view=PsHLbGUAAAAJ:u5HHmVD_uO8C
-  - title: "Jetzen T, Devroey X., Matton N. and Vanderose B., Towards debiasing code review support, 2024"
-    link: https://arxiv.org/abs/2407.01407
-  - title: "Salman I., Turhan B. and Vegas S., A controlled experiment on time pressure and confirmation bias in functional software testing, 2018"
-    link: https://www.researchgate.net/publication/329751502_A_controlled_experiment_on_time_pressure_and_confirmation_bias_in_functional_software_testing
-  - title: "D. Spadini, G. C¸ alikli, and A. Bacchelli, Primers or reminders? The Effects of Existing Review Comments on Code Review, 2020”"
-    link: https://sback.it/publications/icse2020.pdf
-  - title: "S. Chattopadhyay, N. Nelson, A. Au, N. Morales, C. Sanchez, R. Pandita, and A. Sarma, A tale from the trenches: cognitive biases and software development, 2020"
-    link: https://d1wqtxts1xzle7.cloudfront.net/92130960/ICSE2020_Bias-libre.pdf
   - title: "Jihun Park, Miryung Kim, Baishakhi Ray, and Doo-Hwan Bae. An empirical study of supplementary bug fixes, 2012"
     link: https://www.researchgate.net/publication/254040777_An_empirical_study_of_supplementary_bug_fixes
   - title: "M. Jørgensen, Identification of More Risks Can Lead to Increased Over-Optimism of and Over-Confidence in Software Development Effort Estimates, 2010"
