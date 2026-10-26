@@ -5,6 +5,7 @@
 # gem forces safe mode, which disables custom Jekyll plugins entirely.
 
 require "yaml"
+require "date"
 
 posts_dir = File.expand_path("../_posts", __dir__)
 files = Dir.glob(File.join(posts_dir, "*.md"))
@@ -15,7 +16,7 @@ files.each do |f|
   content = File.read(f)
   if content.start_with?("---")
     _, fm, = content.split(/^---\s*$/, 3)
-    front_matter[File.basename(f, ".md")] = YAML.safe_load(fm) || {}
+    front_matter[File.basename(f, ".md")] = YAML.safe_load(fm, permitted_classes: [Date, Time]) || {}
   end
 end
 
