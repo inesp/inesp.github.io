@@ -271,36 +271,61 @@ I hate spending time reviewing open PRs, but if I can overcome this annoyance an
 
 **So, for 4 years (from 2021 till 2024) I made sure to review PRs swiftly!** 
 
-Over all 4 years, I reviewed 42.4% of all PRs that were opened on our 2 main repositories. (They opened 8,346 PRs, I reviewed 3,523 of them.)
+Over all 4 years, I reviewed 42.0% of all PRs that were opened on our 2 main repositories. (They opened 8,192 PRs, I reviewed 3,441 of them.)
 
 ![my-reviews-per-year](/assets/bias/my-reviews-per-year.svg)
 
-**On a hypothetical average day in 2022, I would thus review 4.7 PRs and open 2.3 PRs.** Looking back now, I must have been quite bussy... but I promise I've double-tripple-quadruple checked all numbers!
+**On a hypothetical average day in 2022, I would thus review 4.7 PRs and open 2.3 PRs.** Looking back now, I must have been quite busy... but I promise I've double-triple-quadruple checked all numbers!
 
 | Year | PRs I reviewed | Share of colleagues' PRs I reviewed | PRs I opened |
 |------|----------------|-------------------------------------|--------------|
-| 2021 | 798            | 44% (of 1,802)                      | 482          |
-| 2022 | 1,036          | 52% (of 1,980)                      | 511          |
-| 2023 | 905            | 38% (of 2,393)                      | 512          |
-| 2024 | 784            | 36% (of 2,171)                      | 511          |
+| 2021 | 793            | 44% (of 1,803)                      | 481          |
+| 2022 | 1,028          | 52% (of 1,982)                      | 509          |
+| 2023 | 876            | 37% (of 2,393)                      | 512          |
+| 2024 | 744            | 37% (of 2,014)                      | 425          |
 {:.table-center}
 
 ## But was I fast?
 
-Yes, I was also fast:
+Yes, I was also fast. Here I am next to the 3 colleagues who reviewed the most PRs after me, under friendly nicknames:
 
-|                             | With me  | Without me      |
-|-----------------------------|----------|-----------------|
-| Median time to first review | 25 min   | **50 min**      |
-| Within 1 hour               | 65%      | 52%             |
-| Within 24 hours             | 94%      | 82%             |
-| Reviewed only by me         | -        | **14%**         |
+| 2021-2024                                   | Me                          | Kiki                    | Momo                    | Lulu                    |
+|---------------------------------------------|-----------------------------|-------------------------|-------------------------|-------------------------|
+| PRs reviewed: total (EU team + US team)     | **3,441** (2,906 + 535)     | 2,866 (2,512 + 354)     | 3,281 (2,817 + 464)     | 2,422 (2,142 + 280)     |
+| Median time to review, EU team's PRs        | **24 min**                  | 43 min                  | 47 min                  | 78 min                  |
+| Within 10 min                               | **37%**                     | 21%                     | 21%                     | 12%                     |
+| Within 20 min                               | **48%**                     | 34%                     | 33%                     | 20%                     |
+| Within 30 min                               | **55%**                     | 43%                     | 41%                     | 27%                     |
+| Within 1 hour                               | **68%**                     | 57%                     | 56%                     | 43%                     |
+| Within 2 hours                              | **78%**                     | 72%                     | 69%                     | 64%                     |
+{:.table-center}
 
-**My median time to first review for _the whole of 4 years_ was just 25 mins.** And 65% of PRs I've looked at within the 1st hour.
+![reviewer-speed-cumulative](/assets/bias/reviewer-speed-cumulative.svg)
+
+**My median time to first review for _the whole of 4 years_ was just 24 mins.** And 68% of PRs I've looked at within the 1st hour.
+
+![reviewer-speed-per-quarter](/assets/bias/reviewer-speed-per-quarter.svg)
+
+<details class="rabbit-hole" markdown="1">
+<summary>Rabbit hole: How I got the numbers</summary>
+
+We had 2 main GitHub repos.
+
+The rules for my calculations are:
+
+- I use **medians**, not averages, because a median is supposed to be the typical behavior and 1 bad PR can skew the average too strongly.
+- I count only the **PRs where a review actually happened**. This unfortunately means that people can get _great stats_ if they review 1 PR quickly and never touch any other PR. 
+- **Bots** are ignored: Dependabot, GitHub Actions, Copilot
+- I **ignore working hours** because it would be too complex to respect them. So, if somebody opens a PR on Friday and I review it on Monday... tought luck for me.
+- I limited the stats to the team that worked in **the central european timezone**, because again, it's just easier this way. 
+
+</details>
 
 I also came back for **2.0 review rounds per PR**. My colleagues: 1.1 to 1.3.
 
-So, when I say that reviewing other's PRs doesn't pay... I speak out of personal experience. This was a long-running experiments, years of experimenting, and these years conclusively show that this is un-rewarded-hard-labor.
+And **905 of the PRs I reviewed were never reviewed by anybody else.**
+
+So, when I say that reviewing others' PRs doesn't pay... I speak out of personal experience. This was a long-running experiment, years of experimenting, and these years conclusively show that this is un-rewarded-hard-labor.
 
 
 ## Do we have any data on how fast PR reviews are in general?
@@ -322,7 +347,7 @@ LinearB, a company that sells engineering metrics, publishes yearly benchmarks, 
 | over 16h    | Needs focus |
 {:.table-center}
 
-This means m 25mins till first comment truly **is** fast.
+This means my 24 mins till first review truly **is** fast.
 
 
 ## Is there a solution for PRs?

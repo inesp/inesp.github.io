@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="260.0" y="20" text-anchor="middle" font-weight="bold" font-size="11px" fill="#212529">How many PRs each of us reviewed within the first 2 hours</text>
+  <text x="260.0" y="32" text-anchor="middle" font-size="8px" fill="#6c757d">share of PRs reviewed, by time since 'ready for review' · EU team's PRs · 2021-2024</text>
+
+  <!-- Grid lines + labels -->
+  <line x1="40" y1="210.0" x2="462" y2="210.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="213.0" text-anchor="end" font-size="8px" fill="#6c757d">20%</text>
+  <line x1="40" y1="170.0" x2="462" y2="170.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="173.0" text-anchor="end" font-size="8px" fill="#6c757d">40%</text>
+  <line x1="40" y1="130.0" x2="462" y2="130.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="133.0" text-anchor="end" font-size="8px" fill="#6c757d">60%</text>
+  <line x1="40" y1="90.0" x2="462" y2="90.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="93.0" text-anchor="end" font-size="8px" fill="#6c757d">80%</text>
+  <line x1="40" y1="50.0" x2="462" y2="50.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="53.0" text-anchor="end" font-size="8px" fill="#6c757d">100%</text>
+  <text x="34" y="253" text-anchor="end" font-size="8px" fill="#6c757d">0</text>
+  <line x1="75.2" y1="50" x2="75.2" y2="250" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="75.2" y="263" text-anchor="middle" font-size="8px" fill="#6c757d">10m</text>
+  <line x1="110.3" y1="50" x2="110.3" y2="250" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="110.3" y="263" text-anchor="middle" font-size="8px" fill="#6c757d">20m</text>
+  <line x1="145.5" y1="50" x2="145.5" y2="250" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="145.5" y="263" text-anchor="middle" font-size="8px" fill="#6c757d">30m</text>
+  <line x1="251.0" y1="50" x2="251.0" y2="250" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="251.0" y="263" text-anchor="middle" font-size="8px" fill="#6c757d">1h</text>
+  <line x1="462.0" y1="50" x2="462.0" y2="250" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="462.0" y="263" text-anchor="middle" font-size="8px" fill="#6c757d">2h</text>
+
+  <!-- Axes -->
+  <line x1="40" y1="50" x2="40" y2="250" stroke="#dadada" stroke-width="1"/>
+  <line x1="40" y1="250" x2="462" y2="250" stroke="#dadada" stroke-width="1"/>
+
+  <!-- Lulu: 0m 0%, 10m 12%, 20m 20%, 30m 27%, 60m 43%, 120m 64% -->
+  <polyline points="40.0,250.0 75.2,226.0 110.3,210.2 145.5,196.2 251.0,163.1 462.0,122.8" fill="none" stroke="#e6a000" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="75.2" cy="226.0" r="2" fill="#e6a000"/>
+  <circle cx="110.3" cy="210.2" r="2" fill="#e6a000"/>
+  <circle cx="145.5" cy="196.2" r="2" fill="#e6a000"/>
+  <circle cx="251.0" cy="163.1" r="2" fill="#e6a000"/>
+  <circle cx="462.0" cy="122.8" r="2" fill="#e6a000"/>
+
+  <!-- Momo: 0m 0%, 10m 21%, 20m 33%, 30m 41%, 60m 56%, 120m 69% -->
+  <polyline points="40.0,250.0 75.2,207.6 110.3,184.3 145.5,167.3 251.0,138.3 462.0,111.5" fill="none" stroke="#35b0e8" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="75.2" cy="207.6" r="2" fill="#35b0e8"/>
+  <circle cx="110.3" cy="184.3" r="2" fill="#35b0e8"/>
+  <circle cx="145.5" cy="167.3" r="2" fill="#35b0e8"/>
+  <circle cx="251.0" cy="138.3" r="2" fill="#35b0e8"/>
+  <circle cx="462.0" cy="111.5" r="2" fill="#35b0e8"/>
+
+  <!-- Kiki: 0m 0%, 10m 21%, 20m 34%, 30m 43%, 60m 57%, 120m 72% -->
+  <polyline points="40.0,250.0 75.2,207.8 110.3,182.6 145.5,164.9 251.0,135.6 462.0,105.1" fill="none" stroke="#06bdad" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="75.2" cy="207.8" r="2" fill="#06bdad"/>
+  <circle cx="110.3" cy="182.6" r="2" fill="#06bdad"/>
+  <circle cx="145.5" cy="164.9" r="2" fill="#06bdad"/>
+  <circle cx="251.0" cy="135.6" r="2" fill="#06bdad"/>
+  <circle cx="462.0" cy="105.1" r="2" fill="#06bdad"/>
+
+  <!-- Me: 0m 0%, 10m 37%, 20m 48%, 30m 55%, 60m 68%, 120m 78% -->
+  <polyline points="40.0,250.0 75.2,177.0 110.3,154.5 145.5,141.0 251.0,114.0 462.0,93.0" fill="none" stroke="#fd456f" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="75.2" cy="177.0" r="2.5" fill="#fd456f"/>
+  <circle cx="110.3" cy="154.5" r="2.5" fill="#fd456f"/>
+  <circle cx="145.5" cy="141.0" r="2.5" fill="#fd456f"/>
+  <circle cx="251.0" cy="114.0" r="2.5" fill="#fd456f"/>
+  <circle cx="462.0" cy="93.0" r="2.5" fill="#fd456f"/>
+
+  <!-- Labels: name + share reviewed within 2h -->
+  <text x="468" y="96.0" font-size="8px" font-weight="bold" fill="#fd456f">Me 78%</text>
+  <text x="468" y="108.1" font-size="8px" font-weight="bold" fill="#06bdad">Kiki 72%</text>
+  <text x="468" y="119.1" font-size="8px" font-weight="bold" fill="#35b0e8">Momo 69%</text>
+  <text x="468" y="130.1" font-size="8px" font-weight="bold" fill="#e6a000">Lulu 64%</text>
+</svg>

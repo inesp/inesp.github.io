@@ -20,44 +20,44 @@
   <line x1="50" y1="55" x2="50" y2="180" stroke="#dadada" stroke-width="1"/>
   <line x1="50" y1="180" x2="380" y2="180" stroke="#dadada" stroke-width="1"/>
 
-  <!-- 2021: all 2284, reviewed 798, opened 482 -->
-  <text x="78.0" y="92.9" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">44%</text>
-  <rect x="63" y="96.9" width="30" height="83.1" rx="2" fill="#fd456f"/>
-  <text x="78.0" y="108.9" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">798</text>
-  <text x="78.0" y="118.9" text-anchor="middle" font-size="6.5px" fill="#fff">3.6/day</text>
-  <rect x="97" y="129.8" width="30" height="50.2" rx="2" fill="#35b0e8"/>
-  <text x="112.0" y="141.8" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">482</text>
-  <text x="112.0" y="151.8" text-anchor="middle" font-size="6.5px" fill="#fff">2.2/day</text>
+  <!-- 2021: all 2284, reviewed 793, opened 481 -->
+  <text x="78.0" y="93.4" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">44%</text>
+  <rect x="63" y="97.4" width="30" height="82.6" rx="2" fill="#fd456f"/>
+  <text x="78.0" y="109.4" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">793</text>
+  <text x="78.0" y="119.4" text-anchor="middle" font-size="6.5px" fill="#fff">3.6/day</text>
+  <rect x="97" y="129.9" width="30" height="50.1" rx="2" fill="#35b0e8"/>
+  <text x="112.0" y="141.9" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">481</text>
+  <text x="112.0" y="151.9" text-anchor="middle" font-size="6.5px" fill="#fff">2.2/day</text>
   <text x="95" y="193" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2021</text>
 
-  <!-- 2022: all 2491, reviewed 1036, opened 511 -->
-  <text x="158.0" y="68.1" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">52%</text>
-  <rect x="143" y="72.1" width="30" height="107.9" rx="2" fill="#fd456f"/>
-  <text x="158.0" y="84.1" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">1,036</text>
-  <text x="158.0" y="94.1" text-anchor="middle" font-size="6.5px" fill="#fff">4.7/day</text>
-  <rect x="177" y="126.8" width="30" height="53.2" rx="2" fill="#35b0e8"/>
-  <text x="192.0" y="138.8" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">511</text>
-  <text x="192.0" y="148.8" text-anchor="middle" font-size="6.5px" fill="#fff">2.3/day</text>
+  <!-- 2022: all 2491, reviewed 1028, opened 509 -->
+  <text x="158.0" y="68.9" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">52%</text>
+  <rect x="143" y="72.9" width="30" height="107.1" rx="2" fill="#fd456f"/>
+  <text x="158.0" y="84.9" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">1,028</text>
+  <text x="158.0" y="94.9" text-anchor="middle" font-size="6.5px" fill="#fff">4.7/day</text>
+  <rect x="177" y="127.0" width="30" height="53.0" rx="2" fill="#35b0e8"/>
+  <text x="192.0" y="139.0" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">509</text>
+  <text x="192.0" y="149.0" text-anchor="middle" font-size="6.5px" fill="#fff">2.3/day</text>
   <text x="175" y="193" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2022</text>
 
-  <!-- 2023: all 2905, reviewed 905, opened 512 -->
-  <text x="238.0" y="81.7" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">38%</text>
-  <rect x="223" y="85.7" width="30" height="94.3" rx="2" fill="#fd456f"/>
-  <text x="238.0" y="97.7" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">905</text>
-  <text x="238.0" y="107.7" text-anchor="middle" font-size="6.5px" fill="#fff">4.1/day</text>
+  <!-- 2023: all 2905, reviewed 876, opened 512 -->
+  <text x="238.0" y="84.8" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">37%</text>
+  <rect x="223" y="88.8" width="30" height="91.2" rx="2" fill="#fd456f"/>
+  <text x="238.0" y="100.8" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">876</text>
+  <text x="238.0" y="110.8" text-anchor="middle" font-size="6.5px" fill="#fff">4.0/day</text>
   <rect x="257" y="126.7" width="30" height="53.3" rx="2" fill="#35b0e8"/>
   <text x="272.0" y="138.7" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">512</text>
   <text x="272.0" y="148.7" text-anchor="middle" font-size="6.5px" fill="#fff">2.3/day</text>
   <text x="255" y="193" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2023</text>
 
-  <!-- 2024: all 2682, reviewed 784, opened 511 -->
-  <text x="318.0" y="94.3" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">36%</text>
-  <rect x="303" y="98.3" width="30" height="81.7" rx="2" fill="#fd456f"/>
-  <text x="318.0" y="110.3" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">784</text>
-  <text x="318.0" y="120.3" text-anchor="middle" font-size="6.5px" fill="#fff">3.6/day</text>
-  <rect x="337" y="126.8" width="30" height="53.2" rx="2" fill="#35b0e8"/>
-  <text x="352.0" y="138.8" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">511</text>
-  <text x="352.0" y="148.8" text-anchor="middle" font-size="6.5px" fill="#fff">2.3/day</text>
+  <!-- 2024: all 2439, reviewed 744, opened 425 -->
+  <text x="318.0" y="98.5" text-anchor="middle" font-size="9px" font-weight="bold" fill="#fd456f">37%</text>
+  <rect x="303" y="102.5" width="30" height="77.5" rx="2" fill="#fd456f"/>
+  <text x="318.0" y="114.5" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">744</text>
+  <text x="318.0" y="124.5" text-anchor="middle" font-size="6.5px" fill="#fff">3.4/day</text>
+  <rect x="337" y="135.7" width="30" height="44.3" rx="2" fill="#35b0e8"/>
+  <text x="352.0" y="147.7" text-anchor="middle" font-size="8px" font-weight="bold" fill="#fff">425</text>
+  <text x="352.0" y="157.7" text-anchor="middle" font-size="6.5px" fill="#fff">1.9/day</text>
   <text x="335" y="193" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2024</text>
 
   <!-- Legend -->
