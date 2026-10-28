@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 280" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="260.0" y="20" text-anchor="middle" font-weight="bold" font-size="11px" fill="#212529">How fast each of us got to a PR, per quarter</text>
+  <text x="260.0" y="32" text-anchor="middle" font-size="8px" fill="#6c757d">median time from 'ready for review' to that person's first review · EU team's PRs · top 4 reviewers</text>
+
+  <!-- Grid lines + labels -->
+  <line x1="40" y1="200.0" x2="462" y2="200.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="203.0" text-anchor="end" font-size="8px" fill="#6c757d">30m</text>
+  <line x1="40" y1="150.0" x2="462" y2="150.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="153.0" text-anchor="end" font-size="8px" fill="#6c757d">1h</text>
+  <line x1="40" y1="100.0" x2="462" y2="100.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="103.0" text-anchor="end" font-size="8px" fill="#6c757d">1h30</text>
+  <line x1="40" y1="50.0" x2="462" y2="50.0" stroke="#f0f0f0" stroke-width="1"/>
+  <text x="34" y="53.0" text-anchor="end" font-size="8px" fill="#6c757d">2h</text>
+  <text x="34" y="253" text-anchor="end" font-size="8px" fill="#6c757d">0</text>
+
+  <!-- Axes -->
+  <line x1="40" y1="50" x2="40" y2="250" stroke="#dadada" stroke-width="1"/>
+  <line x1="40" y1="250" x2="462" y2="250" stroke="#dadada" stroke-width="1"/>
+  <text x="92.8" y="264" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2021</text>
+  <text x="198.2" y="264" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2022</text>
+  <line x1="145.5" y1="250" x2="145.5" y2="254" stroke="#dadada" stroke-width="1"/>
+  <text x="303.8" y="264" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2023</text>
+  <line x1="251.0" y1="250" x2="251.0" y2="254" stroke="#dadada" stroke-width="1"/>
+  <text x="409.2" y="264" text-anchor="middle" font-size="9px" font-weight="bold" fill="#212529">2024</text>
+  <line x1="356.5" y1="250" x2="356.5" y2="254" stroke="#dadada" stroke-width="1"/>
+
+  <!-- Lulu -->
+  <polyline points="53.2,102.2 79.6,131.8 105.9,139.5 132.3,111.5 158.7,134.2 185.1,168.2 211.4,123.5 237.8,165.7 264.2,53.5 290.6,91.0 316.9,116.5 343.3,130.3 369.7,118.2 396.1,61.3 422.4,87.8 448.8,150.2" fill="none" stroke="#e6a000" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="53.2" cy="102.2" r="1.75" fill="#e6a000"/>
+  <circle cx="79.6" cy="131.8" r="1.75" fill="#e6a000"/>
+  <circle cx="105.9" cy="139.5" r="1.75" fill="#e6a000"/>
+  <circle cx="132.3" cy="111.5" r="1.75" fill="#e6a000"/>
+  <circle cx="158.7" cy="134.2" r="1.75" fill="#e6a000"/>
+  <circle cx="185.1" cy="168.2" r="1.75" fill="#e6a000"/>
+  <circle cx="211.4" cy="123.5" r="1.75" fill="#e6a000"/>
+  <circle cx="237.8" cy="165.7" r="1.75" fill="#e6a000"/>
+  <circle cx="264.2" cy="53.5" r="1.75" fill="#e6a000"/>
+  <circle cx="290.6" cy="91.0" r="1.75" fill="#e6a000"/>
+  <circle cx="316.9" cy="116.5" r="1.75" fill="#e6a000"/>
+  <circle cx="343.3" cy="130.3" r="1.75" fill="#e6a000"/>
+  <circle cx="369.7" cy="118.2" r="1.75" fill="#e6a000"/>
+  <circle cx="396.1" cy="61.3" r="1.75" fill="#e6a000"/>
+  <circle cx="422.4" cy="87.8" r="1.75" fill="#e6a000"/>
+  <circle cx="448.8" cy="150.2" r="1.75" fill="#e6a000"/>
+
+  <!-- Momo -->
+  <polyline points="53.2,101.8 79.6,154.5 105.9,119.3 132.3,158.5 158.7,155.3 185.1,181.0 211.4,191.8 237.8,182.7 264.2,161.8 290.6,183.0 316.9,153.5 343.3,189.3 369.7,215.0 396.1,204.8 422.4,155.3 448.8,210.8" fill="none" stroke="#35b0e8" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="53.2" cy="101.8" r="1.75" fill="#35b0e8"/>
+  <circle cx="79.6" cy="154.5" r="1.75" fill="#35b0e8"/>
+  <circle cx="105.9" cy="119.3" r="1.75" fill="#35b0e8"/>
+  <circle cx="132.3" cy="158.5" r="1.75" fill="#35b0e8"/>
+  <circle cx="158.7" cy="155.3" r="1.75" fill="#35b0e8"/>
+  <circle cx="185.1" cy="181.0" r="1.75" fill="#35b0e8"/>
+  <circle cx="211.4" cy="191.8" r="1.75" fill="#35b0e8"/>
+  <circle cx="237.8" cy="182.7" r="1.75" fill="#35b0e8"/>
+  <circle cx="264.2" cy="161.8" r="1.75" fill="#35b0e8"/>
+  <circle cx="290.6" cy="183.0" r="1.75" fill="#35b0e8"/>
+  <circle cx="316.9" cy="153.5" r="1.75" fill="#35b0e8"/>
+  <circle cx="343.3" cy="189.3" r="1.75" fill="#35b0e8"/>
+  <circle cx="369.7" cy="215.0" r="1.75" fill="#35b0e8"/>
+  <circle cx="396.1" cy="204.8" r="1.75" fill="#35b0e8"/>
+  <circle cx="422.4" cy="155.3" r="1.75" fill="#35b0e8"/>
+  <circle cx="448.8" cy="210.8" r="1.75" fill="#35b0e8"/>
+
+  <!-- Kiki -->
+  <polyline points="53.2,184.3 79.6,197.8 105.9,171.0 132.3,176.0 158.7,182.8 185.1,163.7 211.4,181.0 237.8,184.8 264.2,179.0 290.6,199.3 316.9,157.8 343.3,125.8 369.7,156.5 396.1,186.2 422.4,151.8 448.8,201.0" fill="none" stroke="#06bdad" stroke-width="1.25" stroke-linejoin="round"/>
+  <circle cx="53.2" cy="184.3" r="1.75" fill="#06bdad"/>
+  <circle cx="79.6" cy="197.8" r="1.75" fill="#06bdad"/>
+  <circle cx="105.9" cy="171.0" r="1.75" fill="#06bdad"/>
+  <circle cx="132.3" cy="176.0" r="1.75" fill="#06bdad"/>
+  <circle cx="158.7" cy="182.8" r="1.75" fill="#06bdad"/>
+  <circle cx="185.1" cy="163.7" r="1.75" fill="#06bdad"/>
+  <circle cx="211.4" cy="181.0" r="1.75" fill="#06bdad"/>
+  <circle cx="237.8" cy="184.8" r="1.75" fill="#06bdad"/>
+  <circle cx="264.2" cy="179.0" r="1.75" fill="#06bdad"/>
+  <circle cx="290.6" cy="199.3" r="1.75" fill="#06bdad"/>
+  <circle cx="316.9" cy="157.8" r="1.75" fill="#06bdad"/>
+  <circle cx="343.3" cy="125.8" r="1.75" fill="#06bdad"/>
+  <circle cx="369.7" cy="156.5" r="1.75" fill="#06bdad"/>
+  <circle cx="396.1" cy="186.2" r="1.75" fill="#06bdad"/>
+  <circle cx="422.4" cy="151.8" r="1.75" fill="#06bdad"/>
+  <circle cx="448.8" cy="201.0" r="1.75" fill="#06bdad"/>
+
+  <!-- Me (inesp) -->
+  <polyline points="53.2,168.3 79.6,185.0 105.9,181.2 132.3,195.2 158.7,205.3 185.1,208.3 211.4,193.3 237.8,205.5 264.2,235.0 290.6,192.8 316.9,239.5 343.3,227.8 369.7,243.5 396.1,228.5 422.4,240.0 448.8,242.0" fill="none" stroke="#fd456f" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="53.2" cy="168.3" r="2.25" fill="#fd456f"/>
+  <circle cx="79.6" cy="185.0" r="2.25" fill="#fd456f"/>
+  <circle cx="105.9" cy="181.2" r="2.25" fill="#fd456f"/>
+  <circle cx="132.3" cy="195.2" r="2.25" fill="#fd456f"/>
+  <circle cx="158.7" cy="205.3" r="2.25" fill="#fd456f"/>
+  <circle cx="185.1" cy="208.3" r="2.25" fill="#fd456f"/>
+  <circle cx="211.4" cy="193.3" r="2.25" fill="#fd456f"/>
+  <circle cx="237.8" cy="205.5" r="2.25" fill="#fd456f"/>
+  <circle cx="264.2" cy="235.0" r="2.25" fill="#fd456f"/>
+  <circle cx="290.6" cy="192.8" r="2.25" fill="#fd456f"/>
+  <circle cx="316.9" cy="239.5" r="2.25" fill="#fd456f"/>
+  <circle cx="343.3" cy="227.8" r="2.25" fill="#fd456f"/>
+  <circle cx="369.7" cy="243.5" r="2.25" fill="#fd456f"/>
+  <circle cx="396.1" cy="228.5" r="2.25" fill="#fd456f"/>
+  <circle cx="422.4" cy="240.0" r="2.25" fill="#fd456f"/>
+  <circle cx="448.8" cy="242.0" r="2.25" fill="#fd456f"/>
+
+  <!-- Labels: name + median over all 4 years -->
+  <text x="468" y="122.5" font-size="8px" font-weight="bold" fill="#e6a000">Lulu 78m</text>
+  <text x="468" y="174.1" font-size="8px" font-weight="bold" fill="#35b0e8">Momo 47m</text>
+  <text x="468" y="185.1" font-size="8px" font-weight="bold" fill="#06bdad">Kiki 43m</text>
+  <text x="468" y="213.8" font-size="8px" font-weight="bold" fill="#fd456f">Me 24m</text>
+</svg>
