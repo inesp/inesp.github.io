@@ -19,7 +19,7 @@ description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.ines-panker.com" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/ines-panker-logo.jpg"
-google_analytics: true
+goatcounter: inesp
 
 permalink: /:year/:month/:day/:title.html
 
