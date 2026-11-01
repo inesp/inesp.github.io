@@ -1,0 +1,74 @@
+<svg viewBox="0 0 480 310" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="480" height="310" fill="#fff"/>
+  <text x="240" y="26" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Who gets called "brilliant"?</text>
+  <text x="240" y="42" font-size="9" fill="#6c757d" text-anchor="middle">uses per million words in RateMyProfessors reviews (Storage et al., 2016)</text>
+
+  <!-- Legend -->
+  <circle cx="134" cy="56" r="4" fill="#ff7898"/><text x="142" y="59" font-size="9" fill="#212529">women professors</text>
+  <circle cx="234" cy="56" r="4" fill="#35b0e8"/><text x="242" y="59" font-size="9" fill="#212529">men professors</text>
+  <text x="444" y="59" font-size="8" fill="#6c757d" text-anchor="middle">women PhDs</text>
+
+  <!-- Grid lines (subtle) -->
+  <line x1="130.0" y1="68" x2="130.0" y2="270" stroke="#dadada" stroke-width="0.5"/>
+  <text x="130.0" y="282" font-size="8" fill="#6c757d" text-anchor="middle">0</text>
+  <line x1="197.5" y1="68" x2="197.5" y2="270" stroke="#dadada" stroke-width="0.5"/>
+  <text x="197.5" y="282" font-size="8" fill="#6c757d" text-anchor="middle">50</text>
+  <line x1="265.0" y1="68" x2="265.0" y2="270" stroke="#dadada" stroke-width="0.5"/>
+  <text x="265.0" y="282" font-size="8" fill="#6c757d" text-anchor="middle">100</text>
+  <line x1="332.5" y1="68" x2="332.5" y2="270" stroke="#dadada" stroke-width="0.5"/>
+  <text x="332.5" y="282" font-size="8" fill="#6c757d" text-anchor="middle">150</text>
+  <line x1="400.0" y1="68" x2="400.0" y2="270" stroke="#dadada" stroke-width="0.5"/>
+  <text x="400.0" y="282" font-size="8" fill="#6c757d" text-anchor="middle">200</text>
+  <!-- One row per field: women dot, men dot, % women PhDs -->
+  <text x="122" y="83.0" font-size="9" fill="#212529" text-anchor="end">Philosophy</text>
+  <line x1="339.6" y1="80.0" x2="380.4" y2="80.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="339.6" cy="80.0" r="4.5" fill="#ff7898"/>
+  <circle cx="380.4" cy="80.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="83.0" font-size="9" fill="#6c757d" text-anchor="middle">31%</text>
+  <text x="122" y="103.0" font-size="9" fill="#212529" text-anchor="end">Political science</text>
+  <line x1="307.2" y1="100.0" x2="344.4" y2="100.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="307.2" cy="100.0" r="4.5" fill="#ff7898"/>
+  <circle cx="344.4" cy="100.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="103.0" font-size="9" fill="#6c757d" text-anchor="middle">43%</text>
+  <text x="122" y="123.0" font-size="9" fill="#212529" text-anchor="end">English</text>
+  <line x1="232.7" y1="120.0" x2="330.1" y2="120.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="232.7" cy="120.0" r="4.5" fill="#ff7898"/>
+  <circle cx="330.1" cy="120.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="123.0" font-size="9" fill="#6c757d" text-anchor="middle">62%</text>
+  <text x="122" y="143.0" font-size="9" fill="#212529" text-anchor="end">Music</text>
+  <line x1="260.0" y1="140.0" x2="305.2" y2="140.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="260.0" cy="140.0" r="4.5" fill="#ff7898"/>
+  <circle cx="305.2" cy="140.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="143.0" font-size="9" fill="#6c757d" text-anchor="middle">16%</text>
+  <text x="122" y="163.0" font-size="9" fill="#212529" text-anchor="end">Physics</text>
+  <line x1="190.0" y1="160.0" x2="255.9" y2="160.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="190.0" cy="160.0" r="4.5" fill="#ff7898"/>
+  <circle cx="255.9" cy="160.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="163.0" font-size="9" fill="#6c757d" text-anchor="middle">20%</text>
+  <text x="122" y="183.0" font-size="9" fill="#212529" text-anchor="end">Education</text>
+  <line x1="177.4" y1="180.0" x2="239.9" y2="180.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="177.4" cy="180.0" r="4.5" fill="#ff7898"/>
+  <circle cx="239.9" cy="180.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="183.0" font-size="9" fill="#6c757d" text-anchor="middle">69%</text>
+  <text x="122" y="203.0" font-size="9" fill="#212529" text-anchor="end">Psychology</text>
+  <line x1="184.1" y1="200.0" x2="228.2" y2="200.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="184.1" cy="200.0" r="4.5" fill="#ff7898"/>
+  <circle cx="228.2" cy="200.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="203.0" font-size="9" fill="#6c757d" text-anchor="middle">72%</text>
+  <text x="122" y="223.0" font-size="9" fill="#212529" text-anchor="end">Communication</text>
+  <line x1="167.7" y1="220.0" x2="205.9" y2="220.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="167.7" cy="220.0" r="4.5" fill="#ff7898"/>
+  <circle cx="205.9" cy="220.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="223.0" font-size="9" fill="#6c757d" text-anchor="middle">64%</text>
+  <text x="122" y="243.0" font-size="9" fill="#212529" text-anchor="end">Mathematics</text>
+  <line x1="158.6" y1="240.0" x2="198.6" y2="240.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="158.6" cy="240.0" r="4.5" fill="#ff7898"/>
+  <circle cx="198.6" cy="240.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="243.0" font-size="9" fill="#6c757d" text-anchor="middle">29%</text>
+  <text x="122" y="263.0" font-size="9" fill="#212529" text-anchor="end">Computer science</text>
+  <line x1="155.8" y1="260.0" x2="196.4" y2="260.0" stroke="#dadada" stroke-width="2"/>
+  <circle cx="155.8" cy="260.0" r="4.5" fill="#ff7898"/>
+  <circle cx="196.4" cy="260.0" r="4.5" fill="#35b0e8"/>
+  <text x="444" y="263.0" font-size="9" fill="#6c757d" text-anchor="middle">19%</text>
+  <text x="240.0" y="302" font-size="8" fill="#6c757d" text-anchor="middle">10 of the 18 fields studied; "brilliant" is used 1.8x and "genius" 3.1x more often for men overall</text>
+</svg>

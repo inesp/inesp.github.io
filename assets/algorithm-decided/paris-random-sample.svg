@@ -1,0 +1,136 @@
+<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="300" fill="#fff"/>
+  <text x="260" y="26" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">A random sample: a list of everybody, then a lottery</text>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#212529"/></marker></defs>
+
+  <!-- LEFT: the list of all Parisians, two columns of rows; picked rows highlighted -->
+  <rect x="20" y="46" width="300" height="214" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <rect x="20" y="46" width="300" height="22" fill="#f6f6f6" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="32" y="61" font-size="10" fill="#212529" font-weight="bold">List of all Parisians</text>
+  <circle cx="34.0" cy="80.0" r="3.6" fill="#06bdad"/>
+  <text x="42" y="83.0" font-size="7.5" fill="#6c757d">#0000001</text>
+  <rect x="84" y="78.5" width="30" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="91.6" r="3.6" fill="#35b0e8"/>
+  <text x="42" y="94.6" font-size="7.5" fill="#6c757d">#0000002</text>
+  <rect x="84" y="90.1" width="67" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="103.2" r="3.6" fill="#35b0e8"/>
+  <text x="42" y="106.2" font-size="7.5" fill="#6c757d">#0000003</text>
+  <rect x="84" y="101.7" width="59" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="114.8" r="3.6" fill="#35b0e8"/>
+  <text x="42" y="117.8" font-size="7.5" fill="#6c757d">#0000004</text>
+  <rect x="84" y="113.3" width="51" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="26" y="120.9" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="34.0" cy="126.4" r="3.6" fill="#35b0e8"/>
+  <text x="42" y="129.4" font-size="7.5" fill="#6c757d">#0000005</text>
+  <rect x="84" y="124.9" width="43" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="26" y="132.5" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="34.0" cy="138.0" r="3.6" fill="#06bdad"/>
+  <text x="42" y="141.0" font-size="7.5" fill="#6c757d">#0000006</text>
+  <rect x="84" y="136.5" width="35" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="26" y="144.1" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="34.0" cy="149.6" r="3.6" fill="#35b0e8"/>
+  <text x="42" y="152.6" font-size="7.5" fill="#6c757d">#0000007</text>
+  <rect x="84" y="148.1" width="72" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="161.2" r="3.6" fill="#ffcf65"/>
+  <text x="42" y="164.2" font-size="7.5" fill="#6c757d">#0000008</text>
+  <rect x="84" y="159.7" width="64" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="172.8" r="3.6" fill="#06bdad"/>
+  <text x="42" y="175.8" font-size="7.5" fill="#6c757d">#0000009</text>
+  <rect x="84" y="171.3" width="56" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="184.4" r="3.6" fill="#35b0e8"/>
+  <text x="42" y="187.39999999999998" font-size="7.5" fill="#6c757d">#0000010</text>
+  <rect x="84" y="182.89999999999998" width="48" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="26" y="190.5" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="34.0" cy="196.0" r="3.6" fill="#ffcf65"/>
+  <text x="42" y="199.0" font-size="7.5" fill="#6c757d">#0000011</text>
+  <rect x="84" y="194.5" width="40" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="26" y="202.1" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="34.0" cy="207.6" r="3.6" fill="#06bdad"/>
+  <text x="42" y="210.6" font-size="7.5" fill="#6c757d">#0000012</text>
+  <rect x="84" y="206.1" width="32" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="219.2" r="3.6" fill="#ffcf65"/>
+  <text x="42" y="222.2" font-size="7.5" fill="#6c757d">#0000013</text>
+  <rect x="84" y="217.7" width="69" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="26" y="225.29999999999998" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="34.0" cy="230.8" r="3.6" fill="#35b0e8"/>
+  <text x="42" y="233.79999999999998" font-size="7.5" fill="#6c757d">#0000014</text>
+  <rect x="84" y="229.29999999999998" width="61" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="34.0" cy="242.4" r="3.6" fill="#06bdad"/>
+  <text x="42" y="245.4" font-size="7.5" fill="#6c757d">#0000015</text>
+  <rect x="84" y="240.9" width="53" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="80.0" r="3.6" fill="#06bdad"/>
+  <text x="186" y="83.0" font-size="7.5" fill="#6c757d">#0000016</text>
+  <rect x="228" y="78.5" width="45" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="91.6" r="3.6" fill="#ffcf65"/>
+  <text x="186" y="94.6" font-size="7.5" fill="#6c757d">#0000017</text>
+  <rect x="228" y="90.1" width="37" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="103.2" r="3.6" fill="#35b0e8"/>
+  <text x="186" y="106.2" font-size="7.5" fill="#6c757d">#0000018</text>
+  <rect x="228" y="101.7" width="74" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="170" y="109.3" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="178.0" cy="114.8" r="3.6" fill="#ffcf65"/>
+  <text x="186" y="117.8" font-size="7.5" fill="#6c757d">#0000019</text>
+  <rect x="228" y="113.3" width="66" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="126.4" r="3.6" fill="#35b0e8"/>
+  <text x="186" y="129.4" font-size="7.5" fill="#6c757d">#0000020</text>
+  <rect x="228" y="124.9" width="58" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="170" y="132.5" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="178.0" cy="138.0" r="3.6" fill="#06bdad"/>
+  <text x="186" y="141.0" font-size="7.5" fill="#6c757d">#0000021</text>
+  <rect x="228" y="136.5" width="50" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="149.6" r="3.6" fill="#06bdad"/>
+  <text x="186" y="152.6" font-size="7.5" fill="#6c757d">#0000022</text>
+  <rect x="228" y="148.1" width="42" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="161.2" r="3.6" fill="#ffcf65"/>
+  <text x="186" y="164.2" font-size="7.5" fill="#6c757d">#0000023</text>
+  <rect x="228" y="159.7" width="34" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="172.8" r="3.6" fill="#35b0e8"/>
+  <text x="186" y="175.8" font-size="7.5" fill="#6c757d">#0000024</text>
+  <rect x="228" y="171.3" width="71" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="184.4" r="3.6" fill="#ffcf65"/>
+  <text x="186" y="187.39999999999998" font-size="7.5" fill="#6c757d">#0000025</text>
+  <rect x="228" y="182.89999999999998" width="63" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="196.0" r="3.6" fill="#ffcf65"/>
+  <text x="186" y="199.0" font-size="7.5" fill="#6c757d">#0000026</text>
+  <rect x="228" y="194.5" width="55" height="3" fill="#dadada" rx="1.5"/>
+  <rect x="170" y="202.1" width="138" height="11" fill="#ffe6e6" rx="2" stroke="#fd456f" stroke-width="1"/>
+  <circle cx="178.0" cy="207.6" r="3.6" fill="#ffcf65"/>
+  <text x="186" y="210.6" font-size="7.5" fill="#6c757d">#0000027</text>
+  <rect x="228" y="206.1" width="47" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="219.2" r="3.6" fill="#06bdad"/>
+  <text x="186" y="222.2" font-size="7.5" fill="#6c757d">#0000028</text>
+  <rect x="228" y="217.7" width="39" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="230.8" r="3.6" fill="#35b0e8"/>
+  <text x="186" y="233.79999999999998" font-size="7.5" fill="#6c757d">#0000029</text>
+  <rect x="228" y="229.29999999999998" width="31" height="3" fill="#dadada" rx="1.5"/>
+  <circle cx="178.0" cy="242.4" r="3.6" fill="#06bdad"/>
+  <text x="186" y="245.4" font-size="7.5" fill="#6c757d">#0000030</text>
+  <rect x="228" y="240.9" width="68" height="3" fill="#dadada" rx="1.5"/>
+
+  <!-- Arrow: random pick -->
+  <line x1="328" y1="153" x2="368" y2="153" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="348" y="144" font-size="9" fill="#6c757d" text-anchor="middle">random</text>
+  <text x="348" y="168" font-size="9" fill="#6c757d" text-anchor="middle">pick</text>
+
+  <!-- RIGHT: the sample, same mix as the city -->
+  <text x="440" y="98" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">Your sample</text>
+  <circle cx="404.0" cy="122.0" r="9" fill="#ffcf65"/>
+  <circle cx="440.0" cy="122.0" r="9" fill="#ffcf65"/>
+  <circle cx="476.0" cy="122.0" r="9" fill="#ffcf65"/>
+  <circle cx="404.0" cy="152.0" r="9" fill="#06bdad"/>
+  <circle cx="440.0" cy="152.0" r="9" fill="#06bdad"/>
+  <circle cx="476.0" cy="152.0" r="9" fill="#06bdad"/>
+  <circle cx="404.0" cy="182.0" r="9" fill="#35b0e8"/>
+  <circle cx="440.0" cy="182.0" r="9" fill="#35b0e8"/>
+  <circle cx="476.0" cy="182.0" r="9" fill="#35b0e8"/>
+  <text x="440" y="222" font-size="9" fill="#212529" text-anchor="middle">every name had the</text>
+  <text x="440" y="234" font-size="9" fill="#212529" text-anchor="middle">same chance to be picked</text>
+
+  <!-- Legend -->
+  <circle cx="70.0" cy="284.0" r="5" fill="#ffcf65"/>
+  <text x="79" y="287" font-size="9" fill="#212529">café regulars</text>
+  <circle cx="200.0" cy="284.0" r="5" fill="#06bdad"/>
+  <text x="209" y="287" font-size="9" fill="#212529">tea drinkers</text>
+  <circle cx="320.0" cy="284.0" r="5" fill="#35b0e8"/>
+  <text x="329" y="287" font-size="9" fill="#212529">work elsewhere, stay home</text>
+</svg>

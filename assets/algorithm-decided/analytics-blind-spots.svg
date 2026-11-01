@@ -1,0 +1,177 @@
+<svg viewBox="0 0 520 326" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="326" fill="#fff"/>
+  <text x="260" y="26" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Who never makes it into your analytics</text>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#212529"/></marker></defs>
+
+  <!-- LEFT: everybody who visited -->
+  <text x="80" y="54" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">Real visitors</text>
+  <circle cx="36.0" cy="70.0" r="6" fill="#ff7898"/>
+  <circle cx="53.5" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="71.0" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="88.5" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="106.0" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="123.5" cy="70.0" r="6" fill="#35b0e8"/>
+  <circle cx="36.0" cy="87.5" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="87.5" r="6" fill="#35b0e8"/>
+  <circle cx="71.0" cy="87.5" r="6" fill="#da4ada"/>
+  <circle cx="88.5" cy="87.5" r="6" fill="#06bdad"/>
+  <circle cx="106.0" cy="87.5" r="6" fill="#35b0e8"/>
+  <circle cx="123.5" cy="87.5" r="6" fill="#ff7898"/>
+  <circle cx="36.0" cy="105.0" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="105.0" r="6" fill="#35b0e8"/>
+  <circle cx="71.0" cy="105.0" r="6" fill="#ff7898"/>
+  <circle cx="88.5" cy="105.0" r="6" fill="#ff7898"/>
+  <circle cx="106.0" cy="105.0" r="6" fill="#ff7898"/>
+  <circle cx="123.5" cy="105.0" r="6" fill="#06bdad"/>
+  <circle cx="36.0" cy="122.5" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="122.5" r="6" fill="#35b0e8"/>
+  <circle cx="71.0" cy="122.5" r="6" fill="#06bdad"/>
+  <circle cx="88.5" cy="122.5" r="6" fill="#ff7898"/>
+  <circle cx="106.0" cy="122.5" r="6" fill="#06bdad"/>
+  <circle cx="123.5" cy="122.5" r="6" fill="#35b0e8"/>
+  <circle cx="36.0" cy="140.0" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="140.0" r="6" fill="#35b0e8"/>
+  <circle cx="71.0" cy="140.0" r="6" fill="#35b0e8"/>
+  <circle cx="88.5" cy="140.0" r="6" fill="#06bdad"/>
+  <circle cx="106.0" cy="140.0" r="6" fill="#06bdad"/>
+  <circle cx="123.5" cy="140.0" r="6" fill="#06bdad"/>
+  <circle cx="36.0" cy="157.5" r="6" fill="#ff7898"/>
+  <circle cx="53.5" cy="157.5" r="6" fill="#35b0e8"/>
+  <circle cx="71.0" cy="157.5" r="6" fill="#ff7898"/>
+  <circle cx="88.5" cy="157.5" r="6" fill="#06bdad"/>
+  <circle cx="106.0" cy="157.5" r="6" fill="#06bdad"/>
+  <circle cx="123.5" cy="157.5" r="6" fill="#35b0e8"/>
+  <circle cx="36.0" cy="175.0" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="175.0" r="6" fill="#35b0e8"/>
+  <circle cx="71.0" cy="175.0" r="6" fill="#06bdad"/>
+  <circle cx="88.5" cy="175.0" r="6" fill="#ff7898"/>
+  <circle cx="106.0" cy="175.0" r="6" fill="#06bdad"/>
+  <circle cx="123.5" cy="175.0" r="6" fill="#06bdad"/>
+  <circle cx="36.0" cy="192.5" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="192.5" r="6" fill="#06bdad"/>
+  <circle cx="71.0" cy="192.5" r="6" fill="#06bdad"/>
+  <circle cx="88.5" cy="192.5" r="6" fill="#ffcf65"/>
+  <circle cx="106.0" cy="192.5" r="6" fill="#35b0e8"/>
+  <circle cx="123.5" cy="192.5" r="6" fill="#06bdad"/>
+  <circle cx="36.0" cy="210.0" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="210.0" r="6" fill="#da4ada"/>
+  <circle cx="71.0" cy="210.0" r="6" fill="#ff7898"/>
+  <circle cx="88.5" cy="210.0" r="6" fill="#06bdad"/>
+  <circle cx="106.0" cy="210.0" r="6" fill="#35b0e8"/>
+  <circle cx="123.5" cy="210.0" r="6" fill="#ff7898"/>
+  <circle cx="36.0" cy="227.5" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="227.5" r="6" fill="#06bdad"/>
+  <circle cx="71.0" cy="227.5" r="6" fill="#35b0e8"/>
+  <circle cx="88.5" cy="227.5" r="6" fill="#ffcf65"/>
+  <circle cx="106.0" cy="227.5" r="6" fill="#ff7898"/>
+  <circle cx="123.5" cy="227.5" r="6" fill="#ff7898"/>
+  <circle cx="36.0" cy="245.0" r="6" fill="#06bdad"/>
+  <circle cx="53.5" cy="245.0" r="6" fill="#ff7898"/>
+  <circle cx="71.0" cy="245.0" r="6" fill="#ff7898"/>
+  <circle cx="88.5" cy="245.0" r="6" fill="#06bdad"/>
+  <circle cx="106.0" cy="245.0" r="6" fill="#06bdad"/>
+  <circle cx="123.5" cy="245.0" r="6" fill="#35b0e8"/>
+
+  <!-- MIDDLE: the reasons, one row each -->
+  <rect x="168" y="62" width="190" height="176" fill="#ffe6e6" rx="4" stroke="#fd456f" stroke-width="1.2"/>
+  <text x="263.0" y="78" font-size="10" fill="#fd456f" font-weight="bold" text-anchor="middle">Lost on the way</text>
+  <path d="M180 94 l5 5 M185 94 l-5 5" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="192" y="100" font-size="9" fill="#212529">blocks trackers</text>
+  <path d="M180 116 l5 5 M185 116 l-5 5" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="192" y="122" font-size="9" fill="#212529">didn't accept cookies</text>
+  <path d="M180 138 l5 5 M185 138 l-5 5" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="192" y="144" font-size="9" fill="#212529">JS error elsewhere on the page</text>
+  <path d="M180 160 l5 5 M185 160 l-5 5" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="192" y="166" font-size="9" fill="#212529">page too slow, script never loaded</text>
+  <path d="M180 182 l5 5 M185 182 l-5 5" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="192" y="188" font-size="9" fill="#212529">DNS blocker, corporate firewall</text>
+  <path d="M180 204 l5 5 M185 204 l-5 5" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="192" y="210" font-size="9" fill="#212529">RSS reader, read-later app</text>
+  <path d="M180 226 l5 5 M185 226 l-5 5" stroke="#fd456f" stroke-width="1.5"/>
+  <text x="192" y="232" font-size="9" fill="#212529">tool dropped it: quota, incident</text>
+  <line x1="146" y1="150" x2="163" y2="150" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="362" y1="150" x2="380" y2="150" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- RIGHT: what the analytics sees, the rest are dashed ghosts -->
+  <text x="445" y="54" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">What analytics sees</text>
+  <circle cx="401.0" cy="70.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="418.5" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="436.0" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="453.5" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="471.0" cy="70.0" r="6" fill="#06bdad"/>
+  <circle cx="488.5" cy="70.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="401.0" cy="87.5" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="87.5" r="6" fill="#35b0e8"/>
+  <circle cx="436.0" cy="87.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="453.5" cy="87.5" r="6" fill="#06bdad"/>
+  <circle cx="471.0" cy="87.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="488.5" cy="87.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="401.0" cy="105.0" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="105.0" r="6" fill="#35b0e8"/>
+  <circle cx="436.0" cy="105.0" r="6" fill="#ff7898"/>
+  <circle cx="453.5" cy="105.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="471.0" cy="105.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="488.5" cy="105.0" r="6" fill="#06bdad"/>
+  <circle cx="401.0" cy="122.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="418.5" cy="122.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="436.0" cy="122.5" r="6" fill="#06bdad"/>
+  <circle cx="453.5" cy="122.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="471.0" cy="122.5" r="6" fill="#06bdad"/>
+  <circle cx="488.5" cy="122.5" r="6" fill="#35b0e8"/>
+  <circle cx="401.0" cy="140.0" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="140.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="436.0" cy="140.0" r="6" fill="#35b0e8"/>
+  <circle cx="453.5" cy="140.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="471.0" cy="140.0" r="6" fill="#06bdad"/>
+  <circle cx="488.5" cy="140.0" r="6" fill="#06bdad"/>
+  <circle cx="401.0" cy="157.5" r="6" fill="#ff7898"/>
+  <circle cx="418.5" cy="157.5" r="6" fill="#35b0e8"/>
+  <circle cx="436.0" cy="157.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="453.5" cy="157.5" r="6" fill="#06bdad"/>
+  <circle cx="471.0" cy="157.5" r="6" fill="#06bdad"/>
+  <circle cx="488.5" cy="157.5" r="6" fill="#35b0e8"/>
+  <circle cx="401.0" cy="175.0" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="175.0" r="6" fill="#35b0e8"/>
+  <circle cx="436.0" cy="175.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="453.5" cy="175.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="471.0" cy="175.0" r="6" fill="#06bdad"/>
+  <circle cx="488.5" cy="175.0" r="6" fill="#06bdad"/>
+  <circle cx="401.0" cy="192.5" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="192.5" r="6" fill="#06bdad"/>
+  <circle cx="436.0" cy="192.5" r="6" fill="#06bdad"/>
+  <circle cx="453.5" cy="192.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="471.0" cy="192.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="488.5" cy="192.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="401.0" cy="210.0" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="210.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="436.0" cy="210.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="453.5" cy="210.0" r="6" fill="#06bdad"/>
+  <circle cx="471.0" cy="210.0" r="6" fill="#35b0e8"/>
+  <circle cx="488.5" cy="210.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="401.0" cy="227.5" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="227.5" r="6" fill="#06bdad"/>
+  <circle cx="436.0" cy="227.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="453.5" cy="227.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="471.0" cy="227.5" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="488.5" cy="227.5" r="6" fill="#ff7898"/>
+  <circle cx="401.0" cy="245.0" r="6" fill="#06bdad"/>
+  <circle cx="418.5" cy="245.0" r="6" fill="#ff7898"/>
+  <circle cx="436.0" cy="245.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="453.5" cy="245.0" r="6" fill="#06bdad"/>
+  <circle cx="471.0" cy="245.0" r="6" fill="#06bdad"/>
+  <circle cx="488.5" cy="245.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="80" y="268" font-size="10" fill="#6c757d" text-anchor="middle">66 visitors</text>
+  <text x="445" y="268" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">40 visitors</text>
+
+  <!-- Legend: how many of each type survive -->
+  <circle cx="40.0" cy="291.0" r="5" fill="#ff7898"/>
+  <text x="49" y="294" font-size="9" fill="#212529">privacy-minded devs: 4 of 15</text>
+  <circle cx="205.0" cy="291.0" r="5" fill="#35b0e8"/>
+  <text x="214" y="294" font-size="9" fill="#212529">slow phones and networks: 8 of 15</text>
+  <circle cx="385.0" cy="291.0" r="5" fill="#06bdad"/>
+  <text x="394" y="294" font-size="9" fill="#212529">everyone else: 28 of 32</text>
+  <circle cx="120.0" cy="311.0" r="5" fill="#ffcf65"/>
+  <text x="129" y="314" font-size="9" fill="#212529">RSS, read-later: 0 of 2</text>
+  <circle cx="300.0" cy="311.0" r="5" fill="#da4ada"/>
+  <text x="309" y="314" font-size="9" fill="#212529">corporate firewall: 0 of 2</text>
+</svg>

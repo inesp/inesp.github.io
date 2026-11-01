@@ -1,0 +1,103 @@
+<svg viewBox="0 0 520 262" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="262" fill="#fff"/>
+  <text x="260.0" y="24" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">What our analytics tool loses</text>
+
+  <!-- MCAR: a few visitors lost at random, any color -->
+  <rect x="10" y="40" width="160" height="176" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="90" y="62" font-size="14" fill="#06bdad" font-weight="bold" text-anchor="middle">MCAR</text>
+  <text x="90" y="78" font-size="9" fill="#6c757d" text-anchor="middle">missing completely at random</text>
+  <circle cx="45.0" cy="100.0" r="7" fill="#ff7898"/>
+  <circle cx="67.5" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="90.0" cy="100.0" r="7" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="112.5" cy="100.0" r="7" fill="#ff7898"/>
+  <circle cx="135.0" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="45.0" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="67.5" cy="122.0" r="7" fill="#ff7898"/>
+  <circle cx="90.0" cy="122.0" r="7" fill="#ff7898"/>
+  <circle cx="112.5" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="135.0" cy="122.0" r="7" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="45.0" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="67.5" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="90.0" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="112.5" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="135.0" cy="144.0" r="7" fill="#ff7898"/>
+  <circle cx="45.0" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="67.5" cy="166.0" r="7" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="90.0" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="112.5" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="135.0" cy="166.0" r="7" fill="#06bdad"/>
+  <text x="90" y="202" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">the lost ones look like the rest</text>
+
+  <!-- MAR: everybody arrives, old version visitors arrive without a screen size -->
+  <rect x="180" y="40" width="160" height="176" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="260" y="62" font-size="14" fill="#35b0e8" font-weight="bold" text-anchor="middle">MAR</text>
+  <text x="260" y="78" font-size="9" fill="#6c757d" text-anchor="middle">missing at random</text>
+  <circle cx="215.0" cy="100.0" r="7" fill="#ff7898"/>
+  <circle cx="215.0" cy="100.0" r="7" fill="#fff" stroke="#e6a000" stroke-width="1.8"/>
+  <text x="215.0" y="103.5" font-size="10" fill="#e6a000" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="237.5" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="260.0" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="282.5" cy="100.0" r="7" fill="#ff7898"/>
+  <circle cx="305.0" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="215.0" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="215.0" cy="122.0" r="7" fill="#fff" stroke="#e6a000" stroke-width="1.8"/>
+  <text x="215.0" y="125.5" font-size="10" fill="#e6a000" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="237.5" cy="122.0" r="7" fill="#ff7898"/>
+  <circle cx="260.0" cy="122.0" r="7" fill="#ff7898"/>
+  <circle cx="282.5" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="305.0" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="215.0" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="237.5" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="260.0" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="260.0" cy="144.0" r="7" fill="#fff" stroke="#e6a000" stroke-width="1.8"/>
+  <text x="260.0" y="147.5" font-size="10" fill="#e6a000" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="282.5" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="305.0" cy="144.0" r="7" fill="#ff7898"/>
+  <circle cx="305.0" cy="144.0" r="7" fill="#fff" stroke="#e6a000" stroke-width="1.8"/>
+  <text x="305.0" y="147.5" font-size="10" fill="#e6a000" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="215.0" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="237.5" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="260.0" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="282.5" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="305.0" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="305.0" cy="166.0" r="7" fill="#fff" stroke="#e6a000" stroke-width="1.8"/>
+  <text x="305.0" y="169.5" font-size="10" fill="#e6a000" font-weight="bold" text-anchor="middle">?</text>
+  <text x="260" y="202" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">we can see who is missing a value</text>
+
+  <!-- MNAR: the privacy-minded visitors block the tool, so they are the missing ones -->
+  <rect x="350" y="40" width="160" height="176" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="430" y="62" font-size="14" fill="#fd456f" font-weight="bold" text-anchor="middle">MNAR</text>
+  <text x="430" y="78" font-size="9" fill="#6c757d" text-anchor="middle">missing not at random</text>
+  <circle cx="385.0" cy="100.0" r="7" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="407.5" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="430.0" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="452.5" cy="100.0" r="7" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="475.0" cy="100.0" r="7" fill="#06bdad"/>
+  <circle cx="385.0" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="407.5" cy="122.0" r="7" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="430.0" cy="122.0" r="7" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="452.5" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="475.0" cy="122.0" r="7" fill="#06bdad"/>
+  <circle cx="385.0" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="407.5" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="430.0" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="452.5" cy="144.0" r="7" fill="#06bdad"/>
+  <circle cx="475.0" cy="144.0" r="7" fill="#ff7898"/>
+  <circle cx="385.0" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="407.5" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="430.0" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="452.5" cy="166.0" r="7" fill="#06bdad"/>
+  <circle cx="475.0" cy="166.0" r="7" fill="#06bdad"/>
+  <text x="430" y="202" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">the blockers are the missing ones</text>
+
+  <!-- Legend -->
+  <circle cx="40.0" cy="239.0" r="6" fill="#06bdad"/>
+  <text x="50" y="242" font-size="9" fill="#212529">visitor</text>
+  <circle cx="115.0" cy="239.0" r="6" fill="#ff7898"/>
+  <text x="125" y="242" font-size="9" fill="#212529">privacy-minded</text>
+  <circle cx="225" cy="239" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="235" y="242" font-size="9" fill="#212529">missing</text>
+  <circle cx="310.0" cy="239.0" r="6" fill="#fff" stroke="#e6a000" stroke-width="1.8"/>
+  <text x="310" y="242.5" font-size="9" fill="#e6a000" font-weight="bold" text-anchor="middle">?</text>
+  <text x="320" y="242" font-size="9" fill="#212529">old version: no screen size</text>
+</svg>

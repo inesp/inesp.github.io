@@ -1,0 +1,19 @@
+<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="480" height="230" fill="#fff"/>
+  <text x="240" y="26" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Tell managers "we reward merit" and the bonus flips</text>
+  <text x="240" y="42" font-size="9" fill="#6c757d" text-anchor="middle">extra bonus for one of two equally performing employees, $1,000 pool (Castilla &amp; Benard, 2010)</text>
+
+  <!-- Direction labels -->
+  <text x="230" y="68" font-size="10" fill="#ff7898" font-weight="bold" text-anchor="end">← the woman gets more</text>
+  <text x="250" y="68" font-size="10" fill="#35b0e8" font-weight="bold">the man gets more →</text>
+  <line x1="240" y1="76" x2="240" y2="190" stroke="#212529" stroke-width="1.5"/>
+  <!-- company with no merit talk: -51 -->
+  <text x="250" y="112" font-size="10" fill="#212529">company with no merit talk</text>
+  <rect x="127.8" y="95" width="112.2" height="26" rx="3" fill="#ff7898"/>
+  <text x="135.8" y="112" font-size="11" fill="#fff" font-weight="bold">+$51</text>
+  <!-- company that "rewards merit": 46 -->
+  <text x="230" y="162" font-size="10" fill="#212529" text-anchor="end">company that "rewards merit"</text>
+  <rect x="240" y="145" width="101.2" height="26" rx="3" fill="#35b0e8"/>
+  <text x="333.2" y="162" font-size="11" fill="#fff" font-weight="bold" text-anchor="end">+$46</text>
+  <text x="240" y="216" font-size="8" fill="#6c757d" text-anchor="middle">same employee profiles, only the company description changed; 229 people with management experience</text>
+</svg>

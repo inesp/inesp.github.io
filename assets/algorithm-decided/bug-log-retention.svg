@@ -1,0 +1,56 @@
+<svg viewBox="0 0 520 188" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="188" fill="#fff"/>
+
+  <!-- PANEL 2: log events for BUG-1234, nothing before 30 days ago (the log retention) -->
+  <rect x="8" y="8" width="504" height="172" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.2"/>
+  <text x="18" y="26" font-size="10" fill="#212529" font-weight="bold">Logs: "BUG-1234"</text>
+  <rect x="422" y="15" width="80" height="16" fill="#f4f5f5" rx="3" stroke="#dadada" stroke-width="1"/>
+  <text x="462" y="26" font-size="8.5" fill="#6c757d" text-anchor="middle">Past 3 months</text>
+  <line x1="52" y1="144.0" x2="490" y2="144.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="147.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <line x1="52" y1="118.5" x2="490" y2="118.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="121.5" font-size="8" fill="#6c757d" text-anchor="end">20</text>
+  <line x1="52" y1="93.0" x2="490" y2="93.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="96.0" font-size="8" fill="#6c757d" text-anchor="end">40</text>
+  <line x1="52" y1="67.5" x2="490" y2="67.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="70.5" font-size="8" fill="#6c757d" text-anchor="end">60</text>
+  <line x1="52" y1="42.0" x2="490" y2="42.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="45.0" font-size="8" fill="#6c757d" text-anchor="end">80</text>
+  <rect x="347.5739130434782" y="90.44999999999999" width="3.9608695652173918" height="53.55000000000001" fill="#ff7898" rx="0.5"/>
+  <rect x="352.33478260869566" y="82.80000000000001" width="3.9608695652173918" height="61.19999999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="357.09565217391304" y="67.5" width="3.9608695652173918" height="76.5" fill="#ff7898" rx="0.5"/>
+  <rect x="361.8565217391304" y="96.82499999999999" width="3.9608695652173918" height="47.17500000000001" fill="#ff7898" rx="0.5"/>
+  <rect x="366.61739130434785" y="93.0" width="3.9608695652173918" height="51.0" fill="#ff7898" rx="0.5"/>
+  <rect x="371.3782608695652" y="95.55000000000001" width="3.9608695652173918" height="48.44999999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="376.1391304347826" y="84.07499999999999" width="3.9608695652173918" height="59.92500000000001" fill="#ff7898" rx="0.5"/>
+  <rect x="380.9" y="75.14999999999999" width="3.9608695652173918" height="68.85000000000001" fill="#ff7898" rx="0.5"/>
+  <rect x="385.6608695652174" y="93.0" width="3.9608695652173918" height="51.0" fill="#ff7898" rx="0.5"/>
+  <rect x="390.4217391304348" y="85.35" width="3.9608695652173918" height="58.650000000000006" fill="#ff7898" rx="0.5"/>
+  <rect x="395.18260869565216" y="107.025" width="3.9608695652173918" height="36.974999999999994" fill="#ff7898" rx="0.5"/>
+  <rect x="399.94347826086954" y="75.14999999999999" width="3.9608695652173918" height="68.85000000000001" fill="#ff7898" rx="0.5"/>
+  <rect x="404.704347826087" y="85.35" width="3.9608695652173918" height="58.650000000000006" fill="#ff7898" rx="0.5"/>
+  <rect x="409.46521739130435" y="108.30000000000001" width="3.9608695652173918" height="35.69999999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="414.2260869565217" y="76.425" width="3.9608695652173918" height="67.575" fill="#ff7898" rx="0.5"/>
+  <rect x="418.9869565217391" y="86.625" width="3.9608695652173918" height="57.375" fill="#ff7898" rx="0.5"/>
+  <rect x="423.74782608695654" y="99.375" width="3.9608695652173918" height="44.625" fill="#ff7898" rx="0.5"/>
+  <rect x="428.5086956521739" y="70.05" width="3.9608695652173918" height="73.95" fill="#ff7898" rx="0.5"/>
+  <rect x="433.2695652173913" y="86.625" width="3.9608695652173918" height="57.375" fill="#ff7898" rx="0.5"/>
+  <rect x="438.0304347826087" y="100.65" width="3.9608695652173918" height="43.349999999999994" fill="#ff7898" rx="0.5"/>
+  <rect x="442.7913043478261" y="75.14999999999999" width="3.9608695652173918" height="68.85000000000001" fill="#ff7898" rx="0.5"/>
+  <rect x="447.5521739130435" y="71.325" width="3.9608695652173918" height="72.675" fill="#ff7898" rx="0.5"/>
+  <rect x="452.31304347826085" y="63.675" width="3.9608695652173918" height="80.325" fill="#ff7898" rx="0.5"/>
+  <rect x="457.0739130434783" y="101.92500000000001" width="3.9608695652173918" height="42.07499999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="461.83478260869566" y="70.05" width="3.9608695652173918" height="73.95" fill="#ff7898" rx="0.5"/>
+  <rect x="466.59565217391304" y="103.19999999999999" width="3.9608695652173918" height="40.80000000000001" fill="#ff7898" rx="0.5"/>
+  <rect x="471.3565217391304" y="89.17500000000001" width="3.9608695652173918" height="54.82499999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="476.11739130434785" y="105.75" width="3.9608695652173918" height="38.25" fill="#ff7898" rx="0.5"/>
+  <rect x="480.8782608695652" y="63.675" width="3.9608695652173918" height="80.325" fill="#ff7898" rx="0.5"/>
+  <rect x="485.6391304347826" y="72.60000000000001" width="3.9608695652173918" height="71.39999999999999" fill="#ff7898" rx="0.5"/>
+  <text x="63.90217391304348" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Aug 1</text>
+  <text x="211.48913043478262" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Sep 1</text>
+  <text x="354.3152173913043" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Oct 1</text>
+  <text x="490.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Oct 29</text>
+  <rect x="52" y="166" width="10" height="4" fill="#ff7898" rx="1"/>
+  <text x="67" y="171" font-size="8.5" fill="#212529">log events</text>
+  <text x="490" y="171" font-size="8.5" fill="#6c757d" text-anchor="end">1,368 events · first: Sep 30</text>
+</svg>

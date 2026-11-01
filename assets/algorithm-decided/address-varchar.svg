@@ -1,0 +1,54 @@
+<svg viewBox="0 0 520 188" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="188" fill="#fff"/>
+  <rect x="8" y="8" width="504" height="172" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.2"/>
+  <text x="18" y="26" font-size="10" fill="#212529" font-weight="bold">customers: address length</text>
+  <rect x="422" y="15" width="80" height="16" fill="#f4f5f5" rx="3" stroke="#dadada" stroke-width="1"/>
+  <text x="462" y="26" font-size="8.5" fill="#6c757d" text-anchor="middle">All time</text>
+
+  <!-- ADDRESS: lengths stop dead at 255, the varchar(255) column rejects longer ones -->
+  <line x1="56" y1="144.0" x2="490" y2="144.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="147.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <line x1="56" y1="118.5" x2="490" y2="118.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="121.5" font-size="8" fill="#6c757d" text-anchor="end">250</text>
+  <line x1="56" y1="93.0" x2="490" y2="93.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="96.0" font-size="8" fill="#6c757d" text-anchor="end">500</text>
+  <line x1="56" y1="67.5" x2="490" y2="67.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="70.5" font-size="8" fill="#6c757d" text-anchor="end">750</text>
+  <line x1="56" y1="42.0" x2="490" y2="42.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="45.0" font-size="8" fill="#6c757d" text-anchor="end">1000</text>
+  <rect x="56.4" y="114.828" width="13.666666666666666" height="29.171999999999997" fill="#ff7898" rx="0.5"/>
+  <rect x="70.86666666666667" y="105.95400000000001" width="13.666666666666666" height="38.04599999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="85.33333333333334" y="89.94" width="13.666666666666666" height="54.06" fill="#ff7898" rx="0.5"/>
+  <rect x="99.80000000000001" y="71.88600000000001" width="13.666666666666666" height="72.11399999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="114.26666666666668" y="51.587999999999994" width="13.666666666666666" height="92.412" fill="#ff7898" rx="0.5"/>
+  <rect x="128.73333333333332" y="39.65400000000001" width="13.666666666666666" height="104.34599999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="143.20000000000002" y="40.367999999999995" width="13.666666666666666" height="103.632" fill="#ff7898" rx="0.5"/>
+  <rect x="157.66666666666666" y="55.158" width="13.666666666666666" height="88.842" fill="#ff7898" rx="0.5"/>
+  <rect x="172.13333333333335" y="76.782" width="13.666666666666666" height="67.218" fill="#ff7898" rx="0.5"/>
+  <rect x="186.6" y="97.896" width="13.666666666666666" height="46.104" fill="#ff7898" rx="0.5"/>
+  <rect x="201.06666666666666" y="113.298" width="13.666666666666666" height="30.701999999999998" fill="#ff7898" rx="0.5"/>
+  <rect x="215.53333333333333" y="124.72200000000001" width="13.666666666666666" height="19.27799999999999" fill="#ff7898" rx="0.5"/>
+  <rect x="230.0" y="131.25" width="13.666666666666666" height="12.75" fill="#ff7898" rx="0.5"/>
+  <rect x="244.46666666666667" y="133.8" width="13.666666666666666" height="10.199999999999989" fill="#ff7898" rx="0.5"/>
+  <rect x="258.9333333333333" y="134.106" width="13.666666666666666" height="9.894000000000005" fill="#ff7898" rx="0.5"/>
+  <rect x="273.4" y="136.044" width="13.666666666666666" height="7.955999999999989" fill="#ff7898" rx="0.5"/>
+  <rect x="287.8666666666667" y="137.37" width="13.666666666666666" height="6.6299999999999955" fill="#ff7898" rx="0.5"/>
+  <rect x="302.3333333333333" y="135.534" width="13.666666666666666" height="8.466000000000008" fill="#ff7898" rx="0.5"/>
+  <rect x="316.79999999999995" y="136.656" width="13.666666666666666" height="7.343999999999994" fill="#ff7898" rx="0.5"/>
+  <rect x="331.26666666666665" y="138.594" width="13.666666666666666" height="5.406000000000006" fill="#ff7898" rx="0.5"/>
+  <rect x="345.7333333333333" y="139.104" width="13.666666666666666" height="4.895999999999987" fill="#ff7898" rx="0.5"/>
+  <rect x="360.2" y="139.41" width="13.666666666666666" height="4.590000000000003" fill="#ff7898" rx="0.5"/>
+  <rect x="374.66666666666663" y="137.166" width="13.666666666666666" height="6.834000000000003" fill="#ff7898" rx="0.5"/>
+  <rect x="389.1333333333333" y="140.124" width="13.666666666666666" height="3.8760000000000048" fill="#ff7898" rx="0.5"/>
+  <rect x="403.59999999999997" y="138.798" width="13.666666666666666" height="5.201999999999998" fill="#ff7898" rx="0.5"/>
+  <text x="56.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">0</text>
+  <text x="128.33333333333331" y="157" font-size="8" fill="#6c757d" text-anchor="middle">50</text>
+  <text x="200.66666666666666" y="157" font-size="8" fill="#6c757d" text-anchor="middle">100</text>
+  <text x="273.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">150</text>
+  <text x="345.3333333333333" y="157" font-size="8" fill="#6c757d" text-anchor="middle">200</text>
+  <text x="424.9" y="157" font-size="8" fill="#6c757d" text-anchor="middle">255</text>
+  <text x="490.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">300</text>
+  <rect x="56" y="166" width="10" height="4" fill="#ff7898" rx="1"/>
+  <text x="71" y="171" font-size="8.5" fill="#212529">addresses</text>
+  <text x="490" y="171" font-size="8.5" fill="#6c757d" text-anchor="end">max 255 chars</text>
+</svg>

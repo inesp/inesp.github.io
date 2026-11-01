@@ -1,0 +1,53 @@
+<svg viewBox="0 0 520 188" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="188" fill="#fff"/>
+  <rect x="8" y="8" width="504" height="172" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.2"/>
+  <text x="18" y="26" font-size="10" fill="#212529" font-weight="bold">nightly-export: avg run duration</text>
+  <rect x="422" y="15" width="80" height="16" fill="#f4f5f5" rx="3" stroke="#dadada" stroke-width="1"/>
+  <text x="462" y="26" font-size="8.5" fill="#6c757d" text-anchor="middle">Past 7 days</text>
+
+  <!-- NIGHTLY JOB: since Thursday the slowest runs get killed by the timeout and have no duration, so the average drops -->
+  <line x1="56" y1="144.0" x2="490" y2="144.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="147.0" font-size="8" fill="#6c757d" text-anchor="end">0 min</text>
+  <line x1="56" y1="118.5" x2="490" y2="118.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="121.5" font-size="8" fill="#6c757d" text-anchor="end">15 min</text>
+  <line x1="56" y1="93.0" x2="490" y2="93.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="96.0" font-size="8" fill="#6c757d" text-anchor="end">30 min</text>
+  <line x1="56" y1="67.5" x2="490" y2="67.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="70.5" font-size="8" fill="#6c757d" text-anchor="end">45 min</text>
+  <line x1="56" y1="42.0" x2="490" y2="42.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="45.0" font-size="8" fill="#6c757d" text-anchor="end">60 min</text>
+
+  <!-- last week: grey, dashed -->
+  <polyline points="70.0,77.1 137.7,75.3 205.3,78.7 273.0,76.5 340.7,78.8 408.3,79.3 476.0,77.0" fill="none" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="70.0" cy="77.1" r="2" fill="#6c757d"/>
+  <circle cx="137.7" cy="75.3" r="2" fill="#6c757d"/>
+  <circle cx="205.3" cy="78.7" r="2" fill="#6c757d"/>
+  <circle cx="273.0" cy="76.5" r="2" fill="#6c757d"/>
+  <circle cx="340.7" cy="78.8" r="2" fill="#6c757d"/>
+  <circle cx="408.3" cy="79.3" r="2" fill="#6c757d"/>
+  <circle cx="476.0" cy="77.0" r="2" fill="#6c757d"/>
+
+  <!-- this week: blue -->
+  <polyline points="70.0,78.4 137.7,76.8 205.3,73.1 273.0,92.8 340.7,89.8 408.3,92.3 476.0,88.9" fill="none" stroke="#35b0e8" stroke-width="1.8"/>
+  <circle cx="70.0" cy="78.4" r="2.4" fill="#35b0e8"/>
+  <circle cx="137.7" cy="76.8" r="2.4" fill="#35b0e8"/>
+  <circle cx="205.3" cy="73.1" r="2.4" fill="#35b0e8"/>
+  <circle cx="273.0" cy="92.8" r="2.4" fill="#35b0e8"/>
+  <circle cx="340.7" cy="89.8" r="2.4" fill="#35b0e8"/>
+  <circle cx="408.3" cy="92.3" r="2.4" fill="#35b0e8"/>
+  <circle cx="476.0" cy="88.9" r="2.4" fill="#35b0e8"/>
+  <text x="70.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Mon</text>
+  <text x="137.66666666666666" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Tue</text>
+  <text x="205.33333333333331" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Wed</text>
+  <text x="273.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Thu</text>
+  <text x="340.66666666666663" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Fri</text>
+  <text x="408.33333333333337" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Sat</text>
+  <text x="476.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">Sun</text>
+
+  <!-- legend with two series -->
+  <rect x="56" y="166" width="10" height="4" fill="#35b0e8" rx="1"/>
+  <text x="71" y="171" font-size="8.5" fill="#212529">this week</text>
+  <line x1="126" y1="168" x2="136" y2="168" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="141" y="171" font-size="8.5" fill="#212529">last week</text>
+  <text x="490" y="171" font-size="8.5" fill="#6c757d" text-anchor="end">avg 35 min vs 39 min · −11%</text>
+</svg>

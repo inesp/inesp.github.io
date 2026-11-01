@@ -1,0 +1,83 @@
+<svg viewBox="0 0 520 230" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="230" fill="#fff"/>
+  <text x="260" y="26" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">We only learn the outcome for the ones we let in</text>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#212529"/></marker></defs>
+
+  <!-- Applicants -->
+  <text x="70" y="58" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">Applicants</text>
+  <circle cx="40.0" cy="72.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="55.0" cy="72.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="70.0" cy="72.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="85.0" cy="72.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="100.0" cy="72.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="40.0" cy="87.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="55.0" cy="87.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="70.0" cy="87.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="85.0" cy="87.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="100.0" cy="87.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="40.0" cy="102.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="55.0" cy="102.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="70.0" cy="102.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="85.0" cy="102.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="100.0" cy="102.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="40.0" cy="117.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="55.0" cy="117.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="70.0" cy="117.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="85.0" cy="117.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <circle cx="100.0" cy="117.0" r="5" fill="#ffed50" stroke="#e7d749" stroke-width="0.6"/>
+  <line x1="118" y1="105" x2="158" y2="105" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Decision diamond -->
+  <polygon points="210,65 262,105 210,145 158,105" fill="#35b0e8"/>
+  <text x="210" y="102" font-size="11" fill="#fff" font-weight="bold" text-anchor="middle">Hired?</text>
+  <text x="210" y="115" font-size="7.5" fill="#fff" text-anchor="middle">(approved, released)</text>
+  <line x1="245" y1="88" x2="300" y2="66" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="245" y1="122" x2="300" y2="150" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- YES: outcome known -->
+  <text x="310" y="50" font-size="10" fill="#28a745" font-weight="bold">Yes → we see how it went</text>
+  <circle cx="318.0" cy="72.0" r="8" fill="#4a9c6d"/>
+  <path d="M314.5 72 l2.5 2.5 l5 -5.5" fill="none" stroke="#fff" stroke-width="1.8"/>
+  <circle cx="340.0" cy="72.0" r="8" fill="#4a9c6d"/>
+  <path d="M336.5 72 l2.5 2.5 l5 -5.5" fill="none" stroke="#fff" stroke-width="1.8"/>
+  <circle cx="362.0" cy="72.0" r="8" fill="#fd456f"/>
+  <path d="M359 69 l6 6 M365 69 l-6 6" stroke="#fff" stroke-width="1.8"/>
+  <circle cx="384.0" cy="72.0" r="8" fill="#4a9c6d"/>
+  <path d="M380.5 72 l2.5 2.5 l5 -5.5" fill="none" stroke="#fff" stroke-width="1.8"/>
+  <circle cx="406.0" cy="72.0" r="8" fill="#4a9c6d"/>
+  <path d="M402.5 72 l2.5 2.5 l5 -5.5" fill="none" stroke="#fff" stroke-width="1.8"/>
+  <circle cx="428.0" cy="72.0" r="8" fill="#fd456f"/>
+  <path d="M425 69 l6 6 M431 69 l-6 6" stroke="#fff" stroke-width="1.8"/>
+  <circle cx="450.0" cy="72.0" r="8" fill="#4a9c6d"/>
+  <path d="M446.5 72 l2.5 2.5 l5 -5.5" fill="none" stroke="#fff" stroke-width="1.8"/>
+  <circle cx="472.0" cy="72.0" r="8" fill="#4a9c6d"/>
+  <path d="M468.5 72 l2.5 2.5 l5 -5.5" fill="none" stroke="#fff" stroke-width="1.8"/>
+
+  <!-- NO: outcome never known -->
+  <text x="310" y="140" font-size="10" fill="#6c757d" font-weight="bold">No → we never find out</text>
+  <circle cx="318" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="318" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="340" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="340" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="362" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="362" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="384" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="384" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="406" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="406" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="428" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="428" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="450" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="450" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="472" cy="162" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="472" y="165.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="318" cy="184" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="318" y="187.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="340" cy="184" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="340" y="187.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="362" cy="184" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="362" y="187.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <circle cx="384" cy="184" r="8" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="384" y="187.5" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">?</text>
+  <text x="260" y="222" font-size="9" fill="#6c757d" text-anchor="middle">The next model is trained, and tested, only on the top row.</text>
+</svg>
