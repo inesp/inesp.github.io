@@ -4,6 +4,7 @@ series: "The Algorithm Decided"
 tags: ["The Algorithm Decided"]
 prev_post: 2026-10-23-algo-regression-to-mean
 next_post: 2026-11-17-algo-feedback-loops
+image: /assets/algorithm-decided/self-selection-loud-customers.png
 biblio:
   - link: https://ankursethi.com/blog/your-analytics-are-lying-to-you/
     title: "Ankur Sethi: Your analytics are lying to you"
