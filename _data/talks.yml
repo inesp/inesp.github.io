@@ -1,3 +1,15 @@
+- conf: QCon London 2027
+  link: https://qconlondon.com
+  date: Apr 2027
+  flag: united-kingdom
+  location: London, UK
+  title: "Did My Deploy Degrade Production? Answering It for Other People's Systems"
+  coming_soon: true
+  video_link:
+  details_link: https://qconlondon.com/presentation/apr2027/did-my-deploy-degrade-production-answering-it-other-peoples-systems
+  slides_link:
+  talk: deploy-impact
+
 - conf: BuildStuff 2026
   link: https://buildstuff.events/
   date: Dec 2026

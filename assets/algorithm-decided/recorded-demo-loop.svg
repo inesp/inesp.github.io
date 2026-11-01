@@ -57,12 +57,15 @@
   <path d="M443 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   <rect x="457" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
   <path d="M461 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="475" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
-  <path d="M479 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Forced to go live, out of practice: it fails -->
+  <circle cx="482" cy="56" r="7" fill="#fd456f"/>
+  <path d="M479.4 53.4 l5.2 5.2 M484.6 53.4 l-5.2 5.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="489" y="78" font-size="8.5" fill="#fd456f" font-weight="bold" text-anchor="end">forced to go live,</text>
+  <text x="489" y="88" font-size="8.5" fill="#fd456f" font-weight="bold" text-anchor="end">out of practice</text>
   <!-- Belief line -->
   <text x="40" y="94" font-size="10" fill="#212529" font-weight="bold">How sure we are that live demos break</text>
   <line x1="40" y1="205" x2="480" y2="205" stroke="#dadada" stroke-width="1.5"/>
-  <polyline points="50,190.8 68,191.7 86,191.7 104,192.7 122,182.2 140,182.2 158,185.1 176,186.9 194,186.9 212,187.9 230,188.8 248,162.2 266,143.2 284,140.4 302,137.6 320,134.7 338,131.9 356,129.9 374,128.1 392,126.2 410,124.2 428,122.4 446,120.5 464,119.5 482,117.6" fill="none" stroke="#e6a000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="50,190.8 68,191.7 86,191.7 104,192.7 122,182.2 140,182.2 158,185.1 176,186.9 194,186.9 212,187.9 230,188.8 248,162.2 266,143.2 284,140.4 302,137.6 320,134.7 338,131.9 356,129.9 374,128.1 392,126.2 410,124.2 428,122.4 446,120.5 464,119.5 482,100" fill="none" stroke="#e6a000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
   <text x="383" y="172" font-size="9" fill="#6c757d" font-style="italic" text-anchor="middle">Nothing new learned about live demos</text>
   <text x="260" y="232" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">Every recorded demo makes us more sure that live demos break</text>
 </svg>

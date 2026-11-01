@@ -40,13 +40,13 @@ If we can find the exact chain of events, then we can find the culprit, and then
 
 We like stories about people who have single-handedly overcome such incredible odds that luck could have absolutely no hand in their success. And even if you were given a bad hand in life, with dedication and perseverance, you can still become a success story. **We believe _luck_ is a nice-to-have, not a fundamental part of success.** But we are wrong.
 
-Often times, a week/sprint doesn't turn into a disaster only because the team is doing something wrong, but because of a series of unfortunate events outside the team's control. Or in other words: because the team was unlucky.
+Oftentimes, a week/sprint doesn't turn into a disaster only because the team is doing something wrong, but because of a series of unfortunate events outside the team's control. Or in other words: because the team was unlucky.
 
 Events out of the team's control: 
 - a big customer onboards, 
 - a cloud provider has a bad day, 
 - a certificate expires, 
-- a dependency ships a broken minor version, ...
+- a dependency ships a broken minor version...
 
 ## Catch the right timing
 
@@ -123,7 +123,7 @@ Of course, we should try to do something when latency spikes beyond what we cons
 
 But already step 1 needs judgment: "where is the acceptable boundary?". We don't need to act on every spike. Some spiking is expected. 
 
-Sometimes a step back, **a zoom out shows the bigger picture**. Maybe the real culprit is something silly like: at 3PM every day we generate reports for all tenants of our app. Triggering 1000 background tasks at the same second does have the tendency to provoke a latency spike, a DB CPU spike and to fill up the queue.
+Sometimes a step back, **a zoom-out shows the bigger picture**. Maybe the real culprit is something silly like: at 3PM every day we generate reports for all tenants of our app. Triggering 1000 background tasks at the same second does have the tendency to provoke a latency spike, a DB CPU spike and to fill up the queue.
 
 ```py
 # every day at 15:00:
@@ -145,7 +145,7 @@ The trick is mostly in observing your system and your actions humbly. **Maybe yo
 
 ## A cheeky abuse of regression to the mean
 
-The scenario I painted does offer one interesting opportunity, if we flip the pattern upside down.
+The scenario I painted does offer one interesting opportunity if we flip the pattern upside down.
 
 If we know the metric will regress to the mean soon by itself, then we can use this fact to manufacture a new ritual. 
 
@@ -210,7 +210,7 @@ Have you ever seen an ad saying something like: _"9 out of 10 of our graduates f
 - And who gets the credit? The bootcamp. _"9 out of 10 of our graduates find a job within 6 months!"_
 {:.steps}
 
-In the 70s, **economists** named this dip in the income of people who apply for a training program **Ashenfelter's dip** (after Orley Ashenfelter, 1978). Here is a chart from a 1999 study of men who applied for a US job-training program, but were randomly kept out of it:
+In the 70s, **economists** named this dip in the income of people who apply for a training program **Ashenfelter's dip** (after Orley Ashenfelter, 1978). Here is a chart from a 1999 study of men who applied for a US job-training program but were randomly kept out of it:
 
 ![ashenfelter-dip](/assets/algorithm-decided/ashenfelter-dip.svg)
 
@@ -226,7 +226,7 @@ The football paper (in the football rabbit hole above) has a curious line: _"The
 
 Yes! In 1978, the economist Orley Ashenfelter looked at people who joined a government job-training program in the US, and noticed that their earnings dropped just before they joined.
 
-Ok, but... why would that be a problem? Of course their earnings dropped just before "going back to school", that is why they are "back to school". If they had a successful career with lots of growth opportunities, they would hardly join a government job-training program. So obvious! (Heckman and Smith saw this too: men who had just lost their job were 10 times more likely to sign up than men who hadn't.)
+Ok, but... why would that be a problem? Of course their earnings dropped just before "going back to school". That is why they are "back to school". If they had a successful career with lots of growth opportunities, they would hardly join a government job-training program. So obvious! (Heckman and Smith saw this too: men who had just lost their job were 10 times more likely to sign up than men who hadn't.)
 
 **The dip becomes a problem once someone does statistics on top of it. Governments believed the training programs worked, because the earnings of the trainees went way up after the training.**
 
@@ -248,7 +248,7 @@ The success of a job interview is of course also due to luck:
 
 **interview score = real skill + how the day went**
 
-Your performance in an interview is noisy already because the amount of knowledge you'd need is incredibly vast, but they can only ask a very small number of questions. We don't even have to talk about whether the questions are relevant to the job or whether the exam-format spikes stress levels and makes it hard for you to show your skills.
+Your performance in an interview is noisy already because the amount of knowledge you'd need is incredibly vast, but they can only ask a very small number of questions. We don't even have to talk about whether the questions are relevant to the job or whether the exam format spikes stress levels and makes it hard for you to show your skills.
 
 But let's talk numbers ;-).
 
@@ -287,7 +287,7 @@ The new stats paint an even worse picture:
 
 In this imaginary case, candidate #12 has the best skills (85), but she had an average day, which brought her score down to 80. However, candidate #18's true skill is only 71, but she had a great day and her overall score is 86, the best of all the candidates.
 
-So, we hired somebody with good enough skills on a good day. **Once they start working for us, however, they will bring their skills with them, but they can't bring the luck.**
+So we hired somebody with good enough skills on a good day. **Once they start working for us, however, they will bring their skills with them, but they can't bring the luck.**
 
 ## The optimizer's curse
 

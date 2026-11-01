@@ -1,0 +1,43 @@
+<svg viewBox="0 0 520 188" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="188" fill="#fff"/>
+  <rect x="8" y="8" width="504" height="172" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.2"/>
+  <text x="18" y="26" font-size="10" fill="#212529" font-weight="bold">search: clicks by result position</text>
+  <rect x="422" y="15" width="80" height="16" fill="#f4f5f5" rx="3" stroke="#dadada" stroke-width="1"/>
+  <text x="462" y="26" font-size="8.5" fill="#6c757d" text-anchor="middle">Past 30 days</text>
+
+  <!-- SEARCH: the top result gets most clicks, because it is on top -->
+  <line x1="56" y1="144.0" x2="490" y2="144.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="147.0" font-size="8" fill="#6c757d" text-anchor="end">0%</text>
+  <line x1="56" y1="121.3" x2="490" y2="121.3" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="124.3" font-size="8" fill="#6c757d" text-anchor="end">10%</text>
+  <line x1="56" y1="98.7" x2="490" y2="98.7" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="101.7" font-size="8" fill="#6c757d" text-anchor="end">20%</text>
+  <line x1="56" y1="76.0" x2="490" y2="76.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="79.0" font-size="8" fill="#6c757d" text-anchor="end">30%</text>
+  <line x1="56" y1="53.3" x2="490" y2="53.3" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="56.3" font-size="8" fill="#6c757d" text-anchor="end">40%</text>
+  <rect x="64.2" y="51.1" width="26.9" height="92.9" fill="#ff7898" rx="0.5"/>
+  <text x="77.7" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#1</text>
+  <text x="77.7" y="47.1" font-size="8.5" fill="#212529" font-weight="bold" text-anchor="middle">41%</text>
+  <rect x="107.6" y="105.5" width="26.9" height="38.5" fill="#ff7898" rx="0.5"/>
+  <text x="121.1" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#2</text>
+  <rect x="151.0" y="121.3" width="26.9" height="22.7" fill="#ff7898" rx="0.5"/>
+  <text x="164.5" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#3</text>
+  <rect x="194.4" y="128.1" width="26.9" height="15.9" fill="#ff7898" rx="0.5"/>
+  <text x="207.9" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#4</text>
+  <rect x="237.8" y="132.7" width="26.9" height="11.3" fill="#ff7898" rx="0.5"/>
+  <text x="251.3" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#5</text>
+  <rect x="281.2" y="134.9" width="26.9" height="9.1" fill="#ff7898" rx="0.5"/>
+  <text x="294.7" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#6</text>
+  <rect x="324.6" y="137.2" width="26.9" height="6.8" fill="#ff7898" rx="0.5"/>
+  <text x="338.1" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#7</text>
+  <rect x="368.0" y="138.3" width="26.9" height="5.7" fill="#ff7898" rx="0.5"/>
+  <text x="381.5" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#8</text>
+  <rect x="411.4" y="139.5" width="26.9" height="4.5" fill="#ff7898" rx="0.5"/>
+  <text x="424.9" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#9</text>
+  <rect x="454.8" y="140.6" width="26.9" height="3.4" fill="#ff7898" rx="0.5"/>
+  <text x="468.3" y="157" font-size="8" fill="#6c757d" text-anchor="middle">#10</text>
+  <rect x="56" y="166" width="10" height="4" fill="#ff7898" rx="1"/>
+  <text x="71" y="171" font-size="8.5" fill="#212529">share of clicks</text>
+  <text x="490" y="171" font-size="8.5" fill="#6c757d" text-anchor="end">48,210 searches · 41% click result #1</text>
+</svg>

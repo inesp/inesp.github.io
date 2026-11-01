@@ -29,6 +29,13 @@ My software life, told as a timeline of firsts:
 
 <div class="career-list">
   <div class="career-item">
+    <div class="career-years"><svg class="career-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="1.5" fill="none" stroke="#ff7898" stroke-width="2"/><path d="M3.5 7 L12 13.5 L20.5 7" fill="none" stroke="#ff7898" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 2027</div>
+    <div class="career-body">
+      <h3>First talk at an invite-only conference</h3>
+      <p>QCon London: "Did My Deploy Degrade Production? Answering It for Other People's Systems". <a class="remote-link" href="https://qconlondon.com/presentation/apr2027/did-my-deploy-degrade-production-answering-it-other-peoples-systems" target="_blank">The talk on the QCon page.</a></p>
+    </div>
+  </div>
+  <div class="career-item">
     <div class="career-years"><svg class="career-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="8" width="16" height="11" rx="3" fill="none" stroke="#06bdad" stroke-width="2"/><path d="M12 8 V4.5" fill="none" stroke="#06bdad" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="3" r="1.5" fill="#06bdad"/><circle cx="9" cy="13.5" r="1.4" fill="#06bdad"/><circle cx="15" cy="13.5" r="1.4" fill="#06bdad"/></svg> 2026</div>
     <div class="career-body">
       <h3>First agents doing real work for me</h3>

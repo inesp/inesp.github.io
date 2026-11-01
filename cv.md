@@ -10,7 +10,7 @@ Ines Panker, <b>senior staff software engineer</b> and <b><a href="/talks/">conf
 
 Lately my work has turned toward LLMs: I've worked on the <b>LLM pipeline</b> for our AI-usage analytics tool (a tool that gives insights into what your team does with AI). I've built the small <b>RAG</b> behind our product's AI assistant, written many Claude skills and rules and have <b>built several agents for my own tooling</b>.
 
-I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>PyCon Italia</b>. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ...
+I also love speaking at conferences, like <b>QCon London</b> (invite-only, speakers picked by the programme committee), <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>PyCon Italia</b>. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ...
 
 
 <dl class="cv-meta">
@@ -168,7 +168,7 @@ I also love speaking at conferences, like <b>Devoxx Belgium</b> (3,000+ develope
     <div class="career-years">{% include career_icon.html name="mic" %} 2006 – now</div>
     <div class="career-body">
       <h3>Teaching, and later conference speaking</h3>
-      <p>I started teaching before I learned programming. Lately, I speak at big developer conferences like <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>PyCon Italia</b>, all in my own time, no sponsors and no employer agenda. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ... <a href="/talks/">The full record and the talk catalogue.</a></p>
+      <p>I started teaching before I learned programming. Lately, I speak at big developer conferences like <b>QCon London</b> (invite-only, speakers picked by the programme committee), <b>Devoxx Belgium</b> (3,000+ developers, sells out in minutes), <b>J-Fall</b> (the biggest Java conference in the Netherlands) and <b>PyCon Italia</b>, all in my own time, no sponsors and no employer agenda. Some talks come straight from the systems above: what happens when a third-party API goes down, and how to tell if a deploy broke production. The others are about the lies we tell ourselves: how we estimate, how we argue, ... <a href="/talks/">The full record and the talk catalogue.</a></p>
     </div>
   </div>
 </div>

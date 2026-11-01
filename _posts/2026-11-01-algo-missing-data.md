@@ -3,7 +3,7 @@ title: "Case #3: Want faster requests? Just lower the timeout and watch the p99 
 series: "The Algorithm Decided"
 tags: ["The Algorithm Decided"]
 prev_post: 2026-10-23-algo-regression-to-mean
-next_post: 2026-11-17-algo-feedback-loops
+next_post: 2026-11-03-algo-feedback-loops
 image: /assets/algorithm-decided/self-selection-loud-customers.png
 biblio:
   - link: https://ankursethi.com/blog/your-analytics-are-lying-to-you/
@@ -50,7 +50,7 @@ Yes, this is a smart, logical, data-driven business decision... _unless_ the ana
 
 **No. Of course, they don't. They show you the users they are able to record.** And this will _never be all_ the visitors to your pages. 
 
-Some people **block trackers**, or they just don't click "accept cookies" on the warning banner. A **JS error** elsewhere on the page can also block the analytics tool from loading. Or maybe the **page was slow** and the analytics JS code simply never loaded. Or maybe they are behind a **DNS blocker** or **a corporate firewall**. Or maybe the user came via an **[RSS reader](https://en.wikipedia.org/wiki/News_aggregator) or [read-later apps](https://en.wikipedia.org/wiki/Instapaper)** or some other tool that shows a **cached version** of your page to the user, making no actual real-life requests to your pages. Or maybe the analytics tool **dropped the event**, maybe you were simply over your quota, or they had an incident and dropped some events.
+Some people **block trackers**, or they just don't click "accept cookies" on the warning banner. A **JS error** elsewhere on the page can also block the analytics tool from loading. Or maybe the **page was slow** and the analytics JS code simply never loaded. Or maybe they are behind a **DNS blocker** or **a corporate firewall**. Or maybe the user came via an **[RSS reader](https://en.wikipedia.org/wiki/News_aggregator) or [a read-later app](https://en.wikipedia.org/wiki/Instapaper)** or some other tool that shows a **cached version** of your page to the user, making no actual real-life requests to your pages. Or maybe the analytics tool **dropped the event**, maybe you were simply over your quota, or they had an incident and dropped some events.
 
 ![analytics-blind-spots](/assets/algorithm-decided/analytics-blind-spots.svg)
 
@@ -83,7 +83,7 @@ Basically, **how many people your analytics misses depends a lot on who your use
 
 People who choose Firefox often also prefer to block ads and trackers.
 
-So, when your data says 2% of your users are on Firefox, what it's actually saying is: **of the users who aren't blocking us, 2% are on Firefox**.
+So when your data says 2% of your users are on Firefox, what it's actually saying is: **of the users who aren't blocking us, 2% are on Firefox**.
 
 
 ## How much coffee does the average Parisian drink per day?
@@ -197,7 +197,7 @@ What they don't have is information about the rate-limiters. They don't know **w
 
 **We were censoring and truncating.** 
 
-Censoring means that our **metric's values has an upper or lower bound** (in our case 100 req/min per customer).
+Censoring means that our **metric's values have an upper or lower bound** (in our case 100 req/min per customer).
 
 Truncating means that we simply **don't record some values** (in our case we dropped the 101st, 102nd, ... request for every customer).
 
@@ -225,7 +225,7 @@ Here are some similar ways in which we fool ourselves:
 
 ![p99-timeout](/assets/algorithm-decided/p99-timeout.svg)
 
-Yes, but that's the load balancer timeout. Phisically the requests can't be longer. Every request that would have taken 2 minutes gets logged as 60s.
+Yes, but that's the load balancer timeout. Physically the requests can't be longer. Every request that would have taken 2 minutes gets logged as 60s.
 
 #### {% include career_icon.html name="magnifier" %} "This bug started happening 30 days ago. There are no signs of it before that."
 
@@ -237,7 +237,7 @@ Yes, because the log retention is 30 days. We simply don't have older logs. All 
 
 ![queue-limit](/assets/algorithm-decided/queue-limit.svg)
 
-Yes, because that is its limit, the message 10,001 was dropped. 
+Yes, because that is its limit. The message 10,001 was dropped. 
 
 #### {% include career_icon.html name="magnifier" %} "Nobody ever uploaded a file over 10MB."
 
@@ -255,7 +255,7 @@ That is when we migrated the database, and older signup dates got set to the mig
 
 ![address-varchar](/assets/algorithm-decided/address-varchar.svg)
 
-True, however, the DB column is a varchar(255), so it physically can't store a longer value.
+True. However, the DB column is a varchar(255), so it physically can't store a longer value.
 
 #### {% include career_icon.html name="magnifier" %} "The nightly job got faster this week."
 
@@ -295,7 +295,7 @@ Here's how that happens:
   |--------------|-----|-----|------|
   | 101 requests | 1s  | 1ms | 100s |
 
-- But **real customers don't wait for each other**, they keep coming at 1 request per second. The first one waits 100 seconds, the next one 99, then 98... and the last one only 1 second.
+- But **real customers don't wait for each other**. They keep coming at 1 request per second. The first one waits 100 seconds, the next one 99, then 98... and the last one only 1 second.
 
 ![co-customers](/assets/algorithm-decided/co-customers.svg)
 
@@ -330,7 +330,7 @@ Example: 10 people see a video in their feed, 7 scroll past it after 1 second, 3
 
 The reported average is then $$(3×10s) / 3 = 10s$$, not $$(7×1s + 3×10s) / 10 ≈ 3.7s$$.
 
-In 2016, Facebook admitted the average had been inflated by 60% to 80%, advertisers sued claiming it was more like 150% to **900%** (and that Facebook knew), and in 2019 Facebook settled for $40 million.
+In 2016, Facebook admitted the average had been inflated by 60% to 80%, advertisers sued, claiming it was more like 150% to **900%** (and that Facebook knew), and in 2019 Facebook settled for $40 million.
 
 But by then it was too late. The pivot to video had already happened.
 
@@ -339,7 +339,7 @@ But by then it was too late. The pivot to video had already happened.
 
 **Ask: what would make a datapoint go missing?**
 
-**Count the denominator.** How many surveys did we send out vs how many we got back? How many requests reached the gateway vs how many reached the app.
+**Count the denominator.** How many surveys did we send out vs how many we got back? How many requests reached the gateway vs how many reached the app?
 
 Research the limits of your system, but also look at the charts. A flat line at exactly 60s or a suspiciously tall bar at exactly 60s is a bad sign.
 

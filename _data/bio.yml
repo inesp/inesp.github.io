@@ -3,7 +3,7 @@
 
 # /about/ — the long one, the only place that gets the whole story
 about: |
-  <p>Hi, I'm <b>Ines Panker</b>. I'm a <b>senior staff engineer</b> at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a multi-tenant SaaS observability platform. I was the first engineer they hired and became its <b>de-facto architect</b>, from the data model and the army of Celery workers to the anomaly detection and the circuit breakers guarding <b>2-3 million third-party API calls a day</b> across about <b>40 external APIs</b>. I also speak at <a href="/talks/"><b>developer conferences</b></a> like Devoxx Belgium and J-Fall, and I work remotely from Slovenia.</p>
+  <p>Hi, I'm <b>Ines Panker</b>. I'm a <b>senior staff engineer</b> at <a href="https://www.sleuth.io" target="_blank">Sleuth</a>, a multi-tenant SaaS observability platform. I was the first engineer they hired and became its <b>de-facto architect</b>, from the data model and the army of Celery workers to the anomaly detection and the circuit breakers guarding <b>2-3 million third-party API calls a day</b> across about <b>40 external APIs</b>. I also speak at <a href="/talks/"><b>developer conferences</b></a> like QCon London, Devoxx Belgium and J-Fall, and I work remotely from Slovenia.</p>
 
 # Home page hero (_layouts/home.html), above the badges
 home: |

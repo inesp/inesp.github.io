@@ -1,0 +1,58 @@
+<svg viewBox="0 0 520 214" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+<rect width="520" height="214" fill="#fff"/>
+<!-- Month header -->
+<text x="88.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">J</text>
+<text x="120.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">F</text>
+<text x="152.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">M</text>
+<text x="184.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">A</text>
+<text x="216.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">M</text>
+<text x="248.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">J</text>
+<text x="280.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">J</text>
+<text x="312.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">A</text>
+<text x="344.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">S</text>
+<text x="376.0" y="42" font-size="9" fill="#6c757d" text-anchor="middle">O</text>
+<text x="452" y="42" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">"impact" in Nov</text>
+<line x1="400" y1="30" x2="400" y2="188" stroke="#dadada" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="152.0" y="26" font-size="9" fill="#ff7898" font-weight="bold" text-anchor="middle">Jan → May: plant</text>
+<!-- FAVORITE -->
+<text x="64" y="71" font-size="11" fill="#212529" font-weight="bold" text-anchor="end">Favorite</text>
+<rect x="73.5" y="55" width="83.4" height="26" rx="4" fill="#ff7898"/>
+<text x="115.2" y="72" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">migration</text>
+<rect x="169.5" y="55" width="57.8" height="26" rx="4" fill="#ff7898"/>
+<text x="198.4" y="72" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">launch</text>
+<rect x="246.3" y="55" width="102.6" height="26" rx="4" fill="#ff7898"/>
+<text x="297.6" y="72" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">new pricing API</text>
+<polygon points="418.0,62.0 419.6,65.8 423.7,66.1 420.6,68.8 421.5,72.9 418.0,70.7 414.5,72.9 415.4,68.8 412.3,66.1 416.4,65.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<polygon points="435.0,62.0 436.6,65.8 440.7,66.1 437.6,68.8 438.5,72.9 435.0,70.7 431.5,72.9 432.4,68.8 429.3,66.1 433.4,65.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<polygon points="452.0,62.0 453.6,65.8 457.7,66.1 454.6,68.8 455.5,72.9 452.0,70.7 448.5,72.9 449.4,68.8 446.3,66.1 450.4,65.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<polygon points="469.0,62.0 470.6,65.8 474.7,66.1 471.6,68.8 472.5,72.9 469.0,70.7 465.5,72.9 466.4,68.8 463.3,66.1 467.4,65.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<polygon points="486.0,62.0 487.6,65.8 491.7,66.1 488.6,68.8 489.5,72.9 486.0,70.7 482.5,72.9 483.4,68.8 480.3,66.1 484.4,65.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<!-- BEN -->
+<text x="64" y="105" font-size="11" fill="#212529" font-weight="bold" text-anchor="end">Ben</text>
+<rect x="73.5" y="89" width="67.4" height="26" rx="4" fill="#9f9f9f"/>
+<text x="107.2" y="106" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">flaky tests</text>
+<rect x="153.5" y="89" width="70.6" height="26" rx="4" fill="#9cb5c4"/>
+<text x="188.8" y="106" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">help: migration</text>
+<rect x="239.9" y="89" width="96.2" height="26" rx="4" fill="#9db8a8"/>
+<text x="288.0" y="106" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">JS lib upgrade</text>
+<polygon points="418.0,96.0 419.6,99.8 423.7,100.1 420.6,102.8 421.5,106.9 418.0,104.7 414.5,106.9 415.4,102.8 412.3,100.1 416.4,99.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<!-- LEA -->
+<text x="64" y="139" font-size="11" fill="#212529" font-weight="bold" text-anchor="end">Lea</text>
+<rect x="83.1" y="123" width="96.2" height="26" rx="4" fill="#9db8a8"/>
+<text x="131.2" y="140" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">Python lib upgrade</text>
+<rect x="188.7" y="123" width="64.2" height="26" rx="4" fill="#9cb5c4"/>
+<text x="220.8" y="140" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">help: launch</text>
+<rect x="265.5" y="123" width="102.6" height="26" rx="4" fill="#9f9f9f"/>
+<text x="316.8" y="140" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">flaky tests (again)</text>
+<polygon points="418.0,130.0 419.6,133.8 423.7,134.1 420.6,136.8 421.5,140.9 418.0,138.7 414.5,140.9 415.4,136.8 412.3,134.1 416.4,133.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<!-- TOM -->
+<text x="64" y="173" font-size="11" fill="#212529" font-weight="bold" text-anchor="end">Tom</text>
+<rect x="73.5" y="157" width="80.2" height="26" rx="4" fill="#9cb5c4"/>
+<text x="113.6" y="174" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">support rotation</text>
+<rect x="169.5" y="157" width="112.2" height="26" rx="4" fill="#9db8a8"/>
+<text x="225.6" y="174" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">internal admin tool</text>
+<rect x="297.5" y="157" width="80.2" height="26" rx="4" fill="#9f9f9f"/>
+<text x="337.6" y="174" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">help: pricing API</text>
+<polygon points="418.0,164.0 419.6,167.8 423.7,168.1 420.6,170.8 421.5,174.9 418.0,172.7 414.5,174.9 415.4,170.8 412.3,168.1 416.4,167.8" fill="#ffed50" stroke="#e7d749" stroke-width="1"/>
+<text x="260.0" y="206" font-size="10" fill="#6c757d" text-anchor="middle">Nobody ever said a bad word about Ben, Lea or Tom.</text>
+</svg>
