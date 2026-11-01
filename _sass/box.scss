@@ -7,3 +7,21 @@
   margin-bottom: $standard-margin;
   border-radius: $standard-radius;
 }
+
+.box-yellow{
+  @extend .box;
+  border-color: $color-yellow;
+  border-left-color: $color-yellow-dark-3;
+}
+
+.box-blue{
+  @extend .box;
+  border-color: $color-blue-light;
+  border-left-color: $color-blue;
+}
+
+.box-teal{
+  @extend .box;
+  border-color: $color-teal-light;
+  border-left-color: $color-teal;
+}

@@ -27,6 +27,57 @@ This is a hint or important note that deserves attention.
 
 ---
 
+### `.box-yellow` - Yellow Callout Box
+
+Same as `.box`, with a yellow border.
+
+**Usage:**
+```markdown
+{:.box-yellow}
+This is a hint or important note that deserves attention.
+```
+
+**Example:**
+
+{:.box-yellow}
+This is a hint or important note that deserves attention.
+
+---
+
+### `.box-blue` - Blue Callout Box
+
+Same as `.box`, with a blue border.
+
+**Usage:**
+```markdown
+{:.box-blue}
+This is a hint or important note that deserves attention.
+```
+
+**Example:**
+
+{:.box-blue}
+This is a hint or important note that deserves attention.
+
+---
+
+### `.box-teal` - Teal Callout Box
+
+Same as `.box`, with a teal border.
+
+**Usage:**
+```markdown
+{:.box-teal}
+This is a hint or important note that deserves attention.
+```
+
+**Example:**
+
+{:.box-teal}
+This is a hint or important note that deserves attention.
+
+---
+
 ### `.rabbit-hole` - Expandable Tangent
 
 A collapsible details element with a decorative bunny, for tangential content.

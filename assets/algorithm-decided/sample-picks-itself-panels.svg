@@ -1,0 +1,77 @@
+<svg viewBox="0 0 520 232" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="232" fill="#fff"/>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#212529"/></marker></defs>
+  <text x="260.0" y="24" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">2 ways the sample picks itself</text>
+  <rect x="10" y="40" width="245" height="182" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="22" y="60" font-size="11" fill="#ff7898" font-weight="bold">1. Non-response and self-selection</text>
+  <rect x="265" y="40" width="245" height="182" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="277" y="60" font-size="11" fill="#35b0e8" font-weight="bold">2. Truncation and censoring</text>
+
+  <!-- PANEL 1: survey. Faded = didn't answer, pink = came without being asked -->
+  <circle cx="32.0" cy="84.0" r="6" fill="#06bdad"/>
+  <circle cx="50.0" cy="84.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="68.0" cy="84.0" r="6" fill="#06bdad"/>
+  <circle cx="86.0" cy="84.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="104.0" cy="84.0" r="6" fill="#06bdad"/>
+  <circle cx="122.0" cy="84.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="32.0" cy="102.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="50.0" cy="102.0" r="6" fill="#06bdad"/>
+  <circle cx="68.0" cy="102.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="86.0" cy="102.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="104.0" cy="102.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="122.0" cy="102.0" r="6" fill="#06bdad"/>
+  <circle cx="32.0" cy="120.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="50.0" cy="120.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="68.0" cy="120.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="86.0" cy="120.0" r="6" fill="#06bdad"/>
+  <circle cx="104.0" cy="120.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="122.0" cy="120.0" r="6" fill="#06bdad"/>
+  <circle cx="32.0" cy="138.0" r="6" fill="#06bdad"/>
+  <circle cx="50.0" cy="138.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="68.0" cy="138.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="86.0" cy="138.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="104.0" cy="138.0" r="6" fill="#06bdad"/>
+  <circle cx="122.0" cy="138.0" r="6" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="77" y="168" font-size="9" fill="#6c757d" text-anchor="middle">we asked 24, 9 answered</text>
+
+  <!-- self-selected: walk in from outside -->
+  <circle cx="215.0" cy="92.0" r="6" fill="#ff7898"/>
+  <circle cx="215.0" cy="110.0" r="6" fill="#ff7898"/>
+  <circle cx="215.0" cy="128.0" r="6" fill="#ff7898"/>
+  <line x1="202" y1="110" x2="138" y2="110" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="200" y="148" font-size="9" fill="#212529" text-anchor="middle">3 came</text>
+  <text x="200" y="160" font-size="9" fill="#212529" text-anchor="middle">on their own</text>
+  <text x="132.5" y="210" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">the quiet ones vanish, the loud ones show up</text>
+
+  <!-- PANEL 2: values along an axis, a limit line. Past it: gone (truncated) or stuck (censored) -->
+  <text x="285" y="122" font-size="9" fill="#6c757d">truncated: past the limit, the row is gone</text>
+  <line x1="285" y1="109" x2="490" y2="109" stroke="#dadada" stroke-width="1"/>
+  <circle cx="291.0" cy="100.0" r="5" fill="#35b0e8"/>
+  <circle cx="312.4" cy="100.0" r="5" fill="#35b0e8"/>
+  <circle cx="333.9" cy="100.0" r="5" fill="#35b0e8"/>
+  <circle cx="355.3" cy="100.0" r="5" fill="#35b0e8"/>
+  <circle cx="376.8" cy="100.0" r="5" fill="#35b0e8"/>
+  <circle cx="398.2" cy="100.0" r="5" fill="#35b0e8"/>
+  <circle cx="419.7" cy="100.0" r="5" fill="#35b0e8"/>
+  <circle cx="441.1" cy="100.0" r="5" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="462.6" cy="100.0" r="5" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="484.0" cy="100.0" r="5" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <text x="285" y="197" font-size="9" fill="#6c757d">censored: stuck at the limit, "at least 30s"</text>
+  <line x1="285" y1="184" x2="490" y2="184" stroke="#dadada" stroke-width="1"/>
+  <circle cx="291.0" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="312.4" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="333.9" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="355.3" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="376.8" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="398.2" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="419.7" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="441.1" cy="175.0" r="5" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="430.0" cy="175.0" r="5" fill="#35b0e8"/>
+  <circle cx="462.6" cy="175.0" r="5" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="430.0" cy="165.0" r="5" fill="#35b0e8"/>
+  <circle cx="484.0" cy="175.0" r="5" fill="none" stroke="#dadada" stroke-width="1" stroke-dasharray="2,1.5"/>
+  <circle cx="430.0" cy="155.0" r="5" fill="#35b0e8"/>
+  <line x1="430" y1="84" x2="430" y2="112" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="430" y1="132" x2="430" y2="187" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="434" y="80" font-size="9" fill="#fd456f" font-weight="bold">our limit</text>
+</svg>

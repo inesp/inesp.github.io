@@ -1,0 +1,32 @@
+<svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="290" fill="#fff"/>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="#212529"/></marker></defs>
+  <text x="260.0" y="24" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">"No customer ever makes more than 100 req/min"</text>
+
+  <!-- Axes and grid -->
+  <line x1="60" y1="181.9" x2="490" y2="181.9" stroke="#dadada" stroke-width="1"/>
+  <line x1="60" y1="73.6" x2="490" y2="73.6" stroke="#dadada" stroke-width="1"/>
+  <text x="54" y="239.0" font-size="9" fill="#6c757d" text-anchor="end">0</text>
+  <text x="54" y="184.88235294117646" font-size="9" fill="#6c757d" text-anchor="end">50</text>
+  <text x="54" y="130.76470588235293" font-size="9" fill="#6c757d" text-anchor="end">100</text>
+  <text x="54" y="76.64705882352942" font-size="9" fill="#6c757d" text-anchor="end">150</text>
+  <line x1="60" y1="236" x2="498" y2="236" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="60" y1="236" x2="60" y2="44" stroke="#212529" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="60.0" y="251" font-size="9" fill="#6c757d" text-anchor="middle">9:00</text>
+  <text x="275.0" y="251" font-size="9" fill="#6c757d" text-anchor="middle">10:00</text>
+  <text x="490.0" y="251" font-size="9" fill="#6c757d" text-anchor="middle">11:00</text>
+  <text x="54" y="38" font-size="9" fill="#6c757d" text-anchor="middle">req/min</text>
+
+  <!-- The rate limiter -->
+  <line x1="60" y1="127.8" x2="490" y2="127.8" stroke="#fd456f" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="66" y="121.76470588235294" font-size="9" fill="#fd456f" font-weight="bold">rate limiter (room 222, building F)</text>
+
+  <!-- What the customer really sends: dashed -->
+  <polyline points="60.0,172.3 67.2,172.0 74.3,166.2 81.5,167.3 88.7,166.6 95.8,160.4 103.0,152.0 110.2,151.9 117.3,150.9 124.5,156.7 131.7,151.4 138.8,153.5 146.0,152.9 153.2,150.1 160.3,141.3 167.5,118.9 174.7,101.1 181.8,79.5 189.0,61.7 196.2,63.2 203.3,69.8 210.5,85.2 217.7,107.4 224.8,126.5 232.0,140.8 239.2,159.9 246.3,158.2 253.5,160.4 260.7,164.9 267.8,171.3 275.0,169.6 282.2,176.6 289.3,167.6 296.5,170.5 303.7,176.5 310.8,181.5 318.0,175.3 325.2,181.3 332.3,178.7 339.5,180.4 346.7,185.9 353.8,187.9 361.0,185.5 368.2,185.3 375.3,179.8 382.5,157.1 389.7,120.0 396.8,105.4 404.0,104.8 411.2,120.6 418.3,154.5 425.5,170.9 432.7,179.8 439.8,182.8 447.0,173.3 454.2,182.1 461.3,177.4 468.5,178.2 475.7,170.6 482.8,173.2 490.0,170.1" fill="none" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="208.16666666666666" y="65.7346227874867" font-size="9" fill="#6c757d">what the customer really sends</text>
+
+  <!-- What room 504 sees: flat at 100 whenever the customer wants more -->
+  <polyline points="60.0,172.3 67.2,172.0 74.3,166.2 81.5,167.3 88.7,166.6 95.8,160.4 103.0,152.0 110.2,151.9 117.3,150.9 124.5,156.7 131.7,151.4 138.8,153.5 146.0,152.9 153.2,150.1 160.3,141.3 167.5,129.9 174.7,128.8 181.8,131.0 189.0,133.2 196.2,127.8 203.3,127.8 210.5,132.1 217.7,127.8 224.8,129.9 232.0,140.8 239.2,159.9 246.3,158.2 253.5,160.4 260.7,164.9 267.8,171.3 275.0,169.6 282.2,176.6 289.3,167.6 296.5,170.5 303.7,176.5 310.8,181.5 318.0,175.3 325.2,181.3 332.3,178.7 339.5,180.4 346.7,185.9 353.8,187.9 361.0,185.5 368.2,185.3 375.3,179.8 382.5,157.1 389.7,132.1 396.8,127.8 404.0,132.1 411.2,128.8 418.3,154.5 425.5,170.9 432.7,179.8 439.8,182.8 447.0,173.3 454.2,182.1 461.3,177.4 468.5,178.2 475.7,170.6 482.8,173.2 490.0,170.1" fill="none" stroke="#06bdad" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="275.0" y="203.52941176470588" font-size="10" fill="#06bdad" font-weight="bold" text-anchor="middle">what room 504 sees</text>
+  <text x="260.0" y="276" font-size="10" fill="#212529" text-anchor="middle">the 429s never reach the analytics, so the chart stops at 100</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg viewBox="0 0 520 244" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="244" fill="#fff"/>
+  <!-- Legend: circle = live demo, square = recorded demo -->
+  <circle cx="186" cy="12" r="5" fill="#6c757d"/><text x="195" y="15" font-size="9" fill="#6c757d">Live demo</text>
+  <rect x="266" y="7" width="10" height="10" rx="2" fill="#6c757d"/><text x="281" y="15" font-size="9" fill="#6c757d">Recorded demo</text>
+  <!-- The burn: from here on, recorded only -->
+  <line x1="275" y1="26" x2="275" y2="205" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="158" y="36" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">Mostly live demos</text>
+  <text x="383" y="36" font-size="9" fill="#212529" font-weight="bold" text-anchor="middle">Recorded demos only</text>
+  <text x="257" y="42" font-size="9" fill="#fd456f" font-weight="bold" text-anchor="middle">Burnt!</text>
+  <!-- Demo timeline -->
+  <circle cx="50" cy="56" r="7" fill="#28a745"/>
+  <path d="M47 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="68" cy="56" r="7" fill="#28a745"/>
+  <path d="M65 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="79" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M83 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="104" cy="56" r="7" fill="#28a745"/>
+  <path d="M101 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="122" cy="56" r="7" fill="#fd456f"/>
+  <path d="M119.4 53.4 l5.2 5.2 M124.6 53.4 l-5.2 5.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="133" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M137 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="158" cy="56" r="7" fill="#28a745"/>
+  <path d="M155 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="176" cy="56" r="7" fill="#28a745"/>
+  <path d="M173 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="187" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M191 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="212" cy="56" r="7" fill="#28a745"/>
+  <path d="M209 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="230" cy="56" r="7" fill="#28a745"/>
+  <path d="M227 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="248" cy="56" r="7" fill="#fd456f"/>
+  <path d="M245.4 53.4 l5.2 5.2 M250.6 53.4 l-5.2 5.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="266" cy="56" r="7" fill="#fd456f"/>
+  <path d="M263.4 53.4 l5.2 5.2 M268.6 53.4 l-5.2 5.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="277" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M281 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="295" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M299 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="313" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M317 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="331" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M335 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="349" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M353 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="367" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M371 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="385" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M389 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="403" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M407 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="421" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M425 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="439" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M443 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="457" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M461 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="475" y="49" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <path d="M479 56 l2 2.2 l4 -4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Belief line -->
+  <text x="40" y="94" font-size="10" fill="#212529" font-weight="bold">How sure we are that live demos break</text>
+  <line x1="40" y1="205" x2="480" y2="205" stroke="#dadada" stroke-width="1.5"/>
+  <polyline points="50,190.8 68,191.7 86,191.7 104,192.7 122,182.2 140,182.2 158,185.1 176,186.9 194,186.9 212,187.9 230,188.8 248,162.2 266,143.2 284,140.4 302,137.6 320,134.7 338,131.9 356,129.9 374,128.1 392,126.2 410,124.2 428,122.4 446,120.5 464,119.5 482,117.6" fill="none" stroke="#e6a000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="383" y="172" font-size="9" fill="#6c757d" font-style="italic" text-anchor="middle">Nothing new learned about live demos</text>
+  <text x="260" y="232" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">Every recorded demo makes us more sure that live demos break</text>
+</svg>

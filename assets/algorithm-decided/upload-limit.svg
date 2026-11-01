@@ -1,0 +1,46 @@
+<svg viewBox="0 0 520 188" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="188" fill="#fff"/>
+  <rect x="8" y="8" width="504" height="172" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.2"/>
+  <text x="18" y="26" font-size="10" fill="#212529" font-weight="bold">uploads: file size distribution</text>
+  <rect x="422" y="15" width="80" height="16" fill="#f4f5f5" rx="3" stroke="#dadada" stroke-width="1"/>
+  <text x="462" y="26" font-size="8.5" fill="#6c757d" text-anchor="middle">Past 7 days</text>
+
+  <!-- UPLOADS: distribution just stops at 10MB, the load balancer rejects the rest -->
+  <line x1="56" y1="144.0" x2="490" y2="144.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="147.0" font-size="8" fill="#6c757d" text-anchor="end">0k</text>
+  <line x1="56" y1="118.5" x2="490" y2="118.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="121.5" font-size="8" fill="#6c757d" text-anchor="end">1k</text>
+  <line x1="56" y1="93.0" x2="490" y2="93.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="96.0" font-size="8" fill="#6c757d" text-anchor="end">2k</text>
+  <line x1="56" y1="67.5" x2="490" y2="67.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="70.5" font-size="8" fill="#6c757d" text-anchor="end">3k</text>
+  <line x1="56" y1="42.0" x2="490" y2="42.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="50" y="45.0" font-size="8" fill="#6c757d" text-anchor="end">4k</text>
+  <rect x="56.4" y="46.69200000000001" width="13.666666666666666" height="97.30799999999999" fill="#e6a000" rx="0.5"/>
+  <rect x="70.86666666666667" y="63.44550000000001" width="13.666666666666666" height="80.55449999999999" fill="#e6a000" rx="0.5"/>
+  <rect x="85.33333333333334" y="75.2775" width="13.666666666666666" height="68.7225" fill="#e6a000" rx="0.5"/>
+  <rect x="99.80000000000001" y="86.0895" width="13.666666666666666" height="57.9105" fill="#e6a000" rx="0.5"/>
+  <rect x="114.26666666666668" y="93.5355" width="13.666666666666666" height="50.4645" fill="#e6a000" rx="0.5"/>
+  <rect x="128.73333333333332" y="101.364" width="13.666666666666666" height="42.635999999999996" fill="#e6a000" rx="0.5"/>
+  <rect x="143.20000000000002" y="107.1525" width="13.666666666666666" height="36.8475" fill="#e6a000" rx="0.5"/>
+  <rect x="157.66666666666666" y="115.10849999999999" width="13.666666666666666" height="28.891500000000008" fill="#e6a000" rx="0.5"/>
+  <rect x="172.13333333333335" y="118.70400000000001" width="13.666666666666666" height="25.295999999999992" fill="#e6a000" rx="0.5"/>
+  <rect x="186.6" y="123.8295" width="13.666666666666666" height="20.170500000000004" fill="#e6a000" rx="0.5"/>
+  <rect x="201.06666666666666" y="126.5835" width="13.666666666666666" height="17.4165" fill="#e6a000" rx="0.5"/>
+  <rect x="215.53333333333333" y="128.496" width="13.666666666666666" height="15.50399999999999" fill="#e6a000" rx="0.5"/>
+  <rect x="230.0" y="132.3465" width="13.666666666666666" height="11.653500000000008" fill="#e6a000" rx="0.5"/>
+  <rect x="244.46666666666667" y="133.8255" width="13.666666666666666" height="10.174499999999995" fill="#e6a000" rx="0.5"/>
+  <rect x="258.9333333333333" y="134.157" width="13.666666666666666" height="9.84299999999999" fill="#e6a000" rx="0.5"/>
+  <rect x="273.4" y="135.91649999999998" width="13.666666666666666" height="8.083500000000015" fill="#e6a000" rx="0.5"/>
+  <rect x="287.8666666666667" y="138.135" width="13.666666666666666" height="5.865000000000009" fill="#e6a000" rx="0.5"/>
+  <rect x="302.3333333333333" y="138.033" width="13.666666666666666" height="5.967000000000013" fill="#e6a000" rx="0.5"/>
+  <rect x="316.79999999999995" y="138.237" width="13.666666666666666" height="5.763000000000005" fill="#e6a000" rx="0.5"/>
+  <rect x="331.26666666666665" y="141.45" width="13.666666666666666" height="2.5500000000000114" fill="#e6a000" rx="0.5"/>
+  <text x="56.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">0 MB</text>
+  <text x="200.66666666666666" y="157" font-size="8" fill="#6c757d" text-anchor="middle">5 MB</text>
+  <text x="345.3333333333333" y="157" font-size="8" fill="#6c757d" text-anchor="middle">10 MB</text>
+  <text x="490.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">15 MB</text>
+  <rect x="56" y="166" width="10" height="4" fill="#e6a000" rx="1"/>
+  <text x="71" y="171" font-size="8.5" fill="#212529">uploads</text>
+  <text x="490" y="171" font-size="8.5" fill="#6c757d" text-anchor="end">23,593 files · max 10.0 MB</text>
+</svg>

@@ -292,7 +292,8 @@ Yes, I was also fast. Here I am next to the 3 colleagues who reviewed the most P
 | 2021-2024                                   | Me                          | Kiki                    | Momo                    | Lulu                    |
 |---------------------------------------------|-----------------------------|-------------------------|-------------------------|-------------------------|
 | PRs reviewed: total (EU team + US team)     | **3,441** (2,906 + 535)     | 2,866 (2,512 + 354)     | 3,281 (2,817 + 464)     | 2,422 (2,142 + 280)     |
-| Median time to review, EU team's PRs        | **24 min**                  | 43 min                  | 47 min                  | 78 min                  |
+| Median time to review (p50), EU team's PRs  | **24 min**                  | 43 min                  | 47 min                  | 78 min                  |
+| Fastest 25% of reviews came within (p25)    | **4 min**                   | 12 min                  | 13 min                  | 28 min                  |
 | Within 10 min                               | **37%**                     | 21%                     | 21%                     | 12%                     |
 | Within 20 min                               | **48%**                     | 34%                     | 33%                     | 20%                     |
 | Within 30 min                               | **55%**                     | 43%                     | 41%                     | 27%                     |

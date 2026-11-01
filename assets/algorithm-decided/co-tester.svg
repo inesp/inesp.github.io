@@ -1,0 +1,124 @@
+<svg viewBox="0 0 520 112" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="112" fill="#fff"/>
+
+  <!-- 2) OUR TESTER: waits for each response before sending the next request -->
+  <rect x="270.0" y="30" width="230.0" height="46" fill="#ffe6e6"/>
+  <text x="40" y="22" font-size="12" fill="#212529" font-weight="bold">What our tester sends</text>
+  <rect x="40.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="42.9" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="45.2" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="47.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="49.800000000000004" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="52.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="54.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="56.7" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="59.00000000000001" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="61.300000000000004" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="63.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="65.89999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="68.19999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="70.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="72.8" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="75.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="77.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="79.69999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="82.0" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="84.3" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="86.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="88.89999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="91.19999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="93.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="95.79999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="98.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="100.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="102.69999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="105.0" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="107.29999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="109.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="111.89999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="114.2" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="116.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="118.8" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="121.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="123.39999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="125.69999999999999" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="128.0" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="130.29999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="132.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="134.9" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="137.2" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="139.49999999999997" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="141.79999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="144.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="146.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="148.7" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="150.99999999999997" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="153.29999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="155.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="157.9" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="160.20000000000002" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="162.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="164.79999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="167.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="169.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="171.7" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="173.99999999999997" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="176.29999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="178.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="180.89999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="183.2" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="185.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="187.8" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="190.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="192.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="194.70000000000002" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="197.0" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="199.29999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="201.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="203.89999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="206.2" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="208.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="210.79999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="213.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="215.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="217.7" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="220.0" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="222.3" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="224.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="226.9" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="229.2" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="231.49999999999997" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="233.79999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="236.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="238.39999999999998" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="240.7" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="243.0" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="245.3" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="247.6" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="249.9" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="252.20000000000002" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="254.5" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="256.8" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="259.1" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="261.4" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="263.70000000000005" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="266.0" y="46" width="1.1" height="10" fill="#06bdad"/>
+  <rect x="268.3" y="46" width="1.1" height="10" fill="#06bdad"/>
+
+  <!-- the one request that got stuck in the freeze -->
+  <rect x="270.35" y="46" width="229.3" height="10" fill="#06bdad" rx="2"/>
+  <text x="385.0" y="71" font-size="9" fill="#06bdad" font-weight="bold" text-anchor="middle">1 request, waiting 100s</text>
+  <text x="155.0" y="71" font-size="9" fill="#6c757d" text-anchor="middle">100 requests, 1ms each</text>
+  <line x1="40" y1="84" x2="500" y2="84" stroke="#212529" stroke-width="1.5"/>
+  <line x1="40.0" y1="84" x2="40.0" y2="88" stroke="#212529" stroke-width="1.5"/>
+  <text x="40.0" y="100" font-size="9" fill="#6c757d" text-anchor="middle">0s</text>
+  <line x1="155.0" y1="84" x2="155.0" y2="88" stroke="#212529" stroke-width="1.5"/>
+  <text x="155.0" y="100" font-size="9" fill="#6c757d" text-anchor="middle">50s</text>
+  <line x1="270.0" y1="84" x2="270.0" y2="88" stroke="#212529" stroke-width="1.5"/>
+  <text x="270.0" y="100" font-size="9" fill="#6c757d" text-anchor="middle">100s</text>
+  <line x1="385.0" y1="84" x2="385.0" y2="88" stroke="#212529" stroke-width="1.5"/>
+  <text x="385.0" y="100" font-size="9" fill="#6c757d" text-anchor="middle">150s</text>
+  <line x1="500.0" y1="84" x2="500.0" y2="88" stroke="#212529" stroke-width="1.5"/>
+  <text x="500.0" y="100" font-size="9" fill="#6c757d" text-anchor="middle">200s</text>
+  <text x="500" y="22" font-size="10" fill="#212529" font-weight="bold" text-anchor="end">101 requests</text>
+</svg>

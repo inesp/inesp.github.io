@@ -1,0 +1,30 @@
+<svg viewBox="0 0 520 188" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="188" fill="#fff"/>
+
+  <!-- PANEL 1: p99 latency, flat at exactly 60s during the incident (the LB timeout) -->
+  <rect x="8" y="8" width="504" height="172" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.2"/>
+  <text x="18" y="26" font-size="10" fill="#212529" font-weight="bold">checkout-api: request latency p99</text>
+  <rect x="422" y="15" width="80" height="16" fill="#f4f5f5" rx="3" stroke="#dadada" stroke-width="1"/>
+  <text x="462" y="26" font-size="8.5" fill="#6c757d" text-anchor="middle">Past 1 day</text>
+  <line x1="52" y1="144.0" x2="490" y2="144.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="147.0" font-size="8" fill="#6c757d" text-anchor="end">0s</text>
+  <line x1="52" y1="118.5" x2="490" y2="118.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="121.5" font-size="8" fill="#6c757d" text-anchor="end">15s</text>
+  <line x1="52" y1="93.0" x2="490" y2="93.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="96.0" font-size="8" fill="#6c757d" text-anchor="end">30s</text>
+  <line x1="52" y1="67.5" x2="490" y2="67.5" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="70.5" font-size="8" fill="#6c757d" text-anchor="end">45s</text>
+  <line x1="52" y1="42.0" x2="490" y2="42.0" stroke="#eceeef" stroke-width="1"/>
+  <text x="46" y="45.0" font-size="8" fill="#6c757d" text-anchor="end">60s</text>
+  <polyline points="52.0,141.0 55.1,141.4 58.1,141.7 61.2,140.6 64.3,141.3 67.3,141.1 70.4,140.8 73.4,125.1 76.5,140.5 79.6,139.6 82.6,139.5 85.7,140.7 88.8,140.9 91.8,140.7 94.9,139.5 97.9,139.9 101.0,139.3 104.1,139.2 107.1,139.7 110.2,139.9 113.3,140.7 116.3,140.7 119.4,139.4 122.4,139.6 125.5,139.5 128.6,139.8 131.6,139.7 134.7,139.8 137.8,139.4 140.8,140.7 143.9,131.9 147.0,139.6 150.0,139.6 153.1,140.7 156.1,141.0 159.2,140.8 162.3,140.8 165.3,140.1 168.4,140.8 171.5,140.3 174.5,141.1 177.6,140.8 180.6,141.5 183.7,140.8 186.8,141.1 189.8,140.6 192.9,140.5 196.0,141.3 199.0,142.2 202.1,140.8 205.1,140.8 208.2,141.7 211.3,141.8 214.3,133.4 217.4,142.3 220.5,141.6 223.5,141.7 226.6,141.7 229.7,141.6 232.7,142.1 235.8,142.3 238.8,142.7 241.9,142.7 245.0,142.5 248.0,142.4 251.1,141.9 254.2,142.1 257.2,142.3 260.3,142.5 263.3,142.1 266.4,142.5 269.5,141.7 272.5,141.9 275.6,141.8 278.7,142.3 281.7,142.0 284.8,126.8 287.8,141.9 290.9,142.2 294.0,141.5 297.0,133.8 300.1,110.0 303.2,86.2 306.2,62.4 309.3,42.0 312.3,42.0 315.4,42.0 318.5,42.0 321.5,42.0 324.6,42.0 327.7,42.0 330.7,42.0 333.8,42.0 336.9,42.0 339.9,42.0 343.0,42.0 346.0,42.0 349.1,42.0 352.2,42.0 355.2,42.0 358.3,42.0 361.4,76.0 364.4,99.8 367.5,123.6 370.5,140.6 373.6,140.1 376.7,139.2 379.7,140.1 382.8,139.5 385.9,139.5 388.9,139.5 392.0,139.7 395.0,139.2 398.1,140.2 401.2,140.0 404.2,140.1 407.3,140.7 410.4,140.1 413.4,139.7 416.5,140.0 419.6,140.8 422.6,140.7 425.7,134.2 428.7,140.9 431.8,140.1 434.9,141.2 437.9,141.3 441.0,141.3 444.1,140.7 447.1,141.7 450.2,140.6 453.2,140.9 456.3,140.7 459.4,140.7 462.4,140.9 465.5,141.3 468.6,141.8 471.6,141.4 474.7,142.2 477.7,142.1 480.8,141.4 483.9,141.7 486.9,142.5 490.0,142.1" fill="none" stroke="#06bdad" stroke-width="1.6" stroke-linejoin="round"/>
+  <text x="52.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">10:00</text>
+  <text x="125.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">14:00</text>
+  <text x="198.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">18:00</text>
+  <text x="271.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">22:00</text>
+  <text x="344.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">02:00</text>
+  <text x="417.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">06:00</text>
+  <text x="490.0" y="157" font-size="8" fill="#6c757d" text-anchor="middle">10:00</text>
+  <rect x="52" y="166" width="10" height="4" fill="#06bdad" rx="1"/>
+  <text x="67" y="171" font-size="8.5" fill="#212529">p99</text>
+  <text x="490" y="171" font-size="8.5" fill="#6c757d" text-anchor="end">avg 10.1s · max 60.0s</text>
+</svg>

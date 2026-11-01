@@ -1,0 +1,143 @@
+<svg viewBox="0 0 520 210" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="210" fill="#fff"/>
+  <!-- Legend -->
+  <circle cx="190" cy="14" r="4" fill="#28a745"/>
+  <text x="198" y="17" font-size="8" fill="#6c757d">Great</text>
+  <circle cx="250" cy="14" r="4" fill="#ffcf65"/>
+  <text x="258" y="17" font-size="8" fill="#6c757d">Average</text>
+  <circle cx="310" cy="14" r="4" fill="#fd456f"/>
+  <text x="318" y="17" font-size="8" fill="#6c757d">Bad</text>
+  <!-- WORLD 1: We hired the best -->
+  <rect x="10" y="28" width="160" height="152" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="90" y="46" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">We hired the best</text>
+  <text x="38" y="64" font-size="8" fill="#212529" font-weight="bold" text-anchor="middle">A: Hired</text>
+  <text x="121" y="64" font-size="8" fill="#212529" font-weight="bold" text-anchor="middle">B: Rejected</text>
+  <line x1="64" y1="56" x2="64" y2="146" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="31" cy="94" r="5" fill="#28a745"/>
+  <circle cx="45" cy="94" r="5" fill="#ffcf65"/>
+  <circle cx="31" cy="108" r="5" fill="#ffcf65"/>
+  <circle cx="45" cy="108" r="5" fill="#fd456f"/>
+  <circle cx="31" cy="122" r="5" fill="#ffcf65"/>
+  <circle cx="45" cy="122" r="5" fill="#ffcf65"/>
+  <circle cx="86" cy="80" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="100" cy="80" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="114" cy="80" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="128" cy="80" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="142" cy="80" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="156" cy="80" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="86" cy="94" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="100" cy="94" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="114" cy="94" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="128" cy="94" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="142" cy="94" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="156" cy="94" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="86" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="100" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="114" cy="108" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="128" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="142" cy="108" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="156" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="86" cy="122" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="100" cy="122" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="114" cy="122" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="128" cy="122" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="142" cy="122" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="156" cy="122" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="86" cy="136" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="100" cy="136" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="114" cy="136" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="128" cy="136" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="142" cy="136" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="156" cy="136" r="5" fill="#fd456f" opacity="0.45"/>
+  <text x="38" y="164" font-size="8" fill="#6c757d" text-anchor="middle">We see</text>
+  <text x="121" y="164" font-size="8" fill="#6c757d" text-anchor="middle">We never see</text>
+  <!-- WORLD 2: We hired the average -->
+  <rect x="180" y="28" width="160" height="152" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="260" y="46" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">We hired the average</text>
+  <text x="208" y="64" font-size="8" fill="#212529" font-weight="bold" text-anchor="middle">A: Hired</text>
+  <text x="291" y="64" font-size="8" fill="#212529" font-weight="bold" text-anchor="middle">B: Rejected</text>
+  <line x1="234" y1="56" x2="234" y2="146" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="201" cy="94" r="5" fill="#28a745"/>
+  <circle cx="215" cy="94" r="5" fill="#ffcf65"/>
+  <circle cx="201" cy="108" r="5" fill="#ffcf65"/>
+  <circle cx="215" cy="108" r="5" fill="#fd456f"/>
+  <circle cx="201" cy="122" r="5" fill="#ffcf65"/>
+  <circle cx="215" cy="122" r="5" fill="#ffcf65"/>
+  <circle cx="256" cy="80" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="270" cy="80" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="284" cy="80" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="298" cy="80" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="312" cy="80" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="326" cy="80" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="256" cy="94" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="270" cy="94" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="284" cy="94" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="298" cy="94" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="312" cy="94" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="326" cy="94" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="256" cy="108" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="270" cy="108" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="284" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="298" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="312" cy="108" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="326" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="256" cy="122" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="270" cy="122" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="284" cy="122" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="298" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="312" cy="122" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="326" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="256" cy="136" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="270" cy="136" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="284" cy="136" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="298" cy="136" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="312" cy="136" r="5" fill="#fd456f" opacity="0.45"/>
+  <circle cx="326" cy="136" r="5" fill="#ffcf65" opacity="0.45"/>
+  <text x="208" y="164" font-size="8" fill="#6c757d" text-anchor="middle">We see</text>
+  <text x="291" y="164" font-size="8" fill="#6c757d" text-anchor="middle">We never see</text>
+  <!-- WORLD 3: We hired the worst -->
+  <rect x="350" y="28" width="160" height="152" fill="#fff" rx="4" stroke="#dadada" stroke-width="1.5"/>
+  <text x="430" y="46" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">We hired the worst</text>
+  <text x="378" y="64" font-size="8" fill="#212529" font-weight="bold" text-anchor="middle">A: Hired</text>
+  <text x="461" y="64" font-size="8" fill="#212529" font-weight="bold" text-anchor="middle">B: Rejected</text>
+  <line x1="404" y1="56" x2="404" y2="146" stroke="#6c757d" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="371" cy="94" r="5" fill="#28a745"/>
+  <circle cx="385" cy="94" r="5" fill="#ffcf65"/>
+  <circle cx="371" cy="108" r="5" fill="#ffcf65"/>
+  <circle cx="385" cy="108" r="5" fill="#fd456f"/>
+  <circle cx="371" cy="122" r="5" fill="#ffcf65"/>
+  <circle cx="385" cy="122" r="5" fill="#ffcf65"/>
+  <circle cx="426" cy="80" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="440" cy="80" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="454" cy="80" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="468" cy="80" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="482" cy="80" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="496" cy="80" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="426" cy="94" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="440" cy="94" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="454" cy="94" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="468" cy="94" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="482" cy="94" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="496" cy="94" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="426" cy="108" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="440" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="454" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="468" cy="108" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="482" cy="108" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="496" cy="108" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="426" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="440" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="454" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="468" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="482" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="496" cy="122" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="426" cy="136" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="440" cy="136" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="454" cy="136" r="5" fill="#ffcf65" opacity="0.45"/>
+  <circle cx="468" cy="136" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="482" cy="136" r="5" fill="#28a745" opacity="0.45"/>
+  <circle cx="496" cy="136" r="5" fill="#28a745" opacity="0.45"/>
+  <text x="378" y="164" font-size="8" fill="#6c757d" text-anchor="middle">We see</text>
+  <text x="461" y="164" font-size="8" fill="#6c757d" text-anchor="middle">We never see</text>
+  <text x="260" y="200" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">Our data is the same in all 3, so we can't tell which one is true</text>
+</svg>

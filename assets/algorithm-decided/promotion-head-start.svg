@@ -1,0 +1,46 @@
+<svg viewBox="0 0 520 280" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+<rect width="520" height="280" fill="#fff"/>
+<text x="260" y="22" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Mark joined 1 year before the rest of us</text>
+<!-- Levels -->
+<line x1="70" y1="226.8" x2="462" y2="226.8" stroke="#dadada" stroke-width="0.5"/>
+<text x="64" y="229.8" font-size="9" fill="#6c757d" text-anchor="end">Mid</text>
+<line x1="70" y1="159.4" x2="462" y2="159.4" stroke="#dadada" stroke-width="0.5"/>
+<text x="64" y="162.4" font-size="9" fill="#6c757d" text-anchor="end">Senior</text>
+<line x1="70" y1="92.1" x2="462" y2="92.1" stroke="#dadada" stroke-width="0.5"/>
+<text x="64" y="95.1" font-size="9" fill="#6c757d" text-anchor="end">Staff</text>
+<!-- Years -->
+<line x1="70" y1="246" x2="462" y2="246" stroke="#212529" stroke-width="1.5"/>
+<text x="119.0" y="259" font-size="9" fill="#6c757d" text-anchor="middle">Year 1</text>
+<text x="217.0" y="259" font-size="9" fill="#6c757d" text-anchor="middle">Year 2</text>
+<text x="315.0" y="259" font-size="9" fill="#6c757d" text-anchor="middle">Year 3</text>
+<text x="413.0" y="259" font-size="9" fill="#6c757d" text-anchor="middle">Year 4</text>
+<!-- You -->
+<path d="M168.0 196.2 L176.2 195.9 L184.3 195.6 L192.5 195.3 L200.7 195.0 L208.8 194.7 L217.0 194.4 L217.0 177.3 L225.2 177.0 L233.3 176.7 L241.5 176.4 L249.7 176.1 L257.8 175.8 L266.0 175.5 L274.2 175.2 L282.3 174.9 L290.5 174.6 L298.7 174.3 L306.8 174.0 L315.0 173.7 L323.2 173.5 L331.3 173.2 L339.5 172.9 L347.7 172.6 L355.8 172.3 L364.0 172.0 L372.2 171.7 L380.3 171.4 L388.5 171.1 L396.7 170.8 L404.8 170.5 L413.0 170.2 L421.2 169.9 L429.3 169.6 L437.5 169.3 L445.7 169.0 L453.8 168.7 L462.0 168.5" fill="none" stroke="#ff7898" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="168.0" cy="196.2" r="2.5" fill="#ff7898"/>
+<!-- Lea -->
+<path d="M225.2 209.7 L233.3 208.8 L241.5 207.9 L249.7 207.0 L257.8 206.1 L266.0 205.3 L274.2 204.4 L282.3 203.5 L290.5 202.6 L298.7 201.7 L306.8 200.8 L315.0 200.0 L323.2 199.1 L331.3 198.2 L339.5 197.3 L347.7 196.4 L355.8 195.6 L364.0 194.7 L372.2 193.8 L380.3 192.9 L388.5 192.0 L396.7 191.1 L404.8 190.3 L413.0 189.4 L421.2 188.5 L429.3 187.6 L437.5 186.7 L445.7 185.8 L453.8 185.0 L462.0 184.1" fill="none" stroke="#da4ada" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="225.2" cy="209.7" r="2.5" fill="#da4ada"/>
+<!-- Tom -->
+<path d="M192.5 206.0 L200.7 205.5 L208.8 205.1 L217.0 204.7 L225.2 204.2 L233.3 203.8 L241.5 203.3 L249.7 202.9 L257.8 202.5 L266.0 202.0 L274.2 201.6 L282.3 201.1 L290.5 200.7 L298.7 200.3 L306.8 199.8 L315.0 199.4 L323.2 198.9 L331.3 198.5 L339.5 198.0 L347.7 197.6 L355.8 197.2 L364.0 196.7 L372.2 196.3 L380.3 195.8 L388.5 195.4 L396.7 195.0 L404.8 194.5 L413.0 194.1 L413.0 181.8 L421.2 181.4 L429.3 180.9 L437.5 180.5 L445.7 180.1 L453.8 179.6 L462.0 179.2" fill="none" stroke="#ffcf65" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="192.5" cy="206.0" r="2.5" fill="#ffcf65"/>
+<!-- Ana -->
+<path d="M249.7 198.6 L257.8 198.0 L266.0 197.5 L274.2 196.9 L282.3 196.3 L290.5 195.7 L298.7 195.1 L306.8 194.5 L315.0 193.9 L323.2 193.3 L331.3 192.8 L339.5 192.2 L347.7 191.6 L355.8 191.0 L364.0 190.4 L372.2 189.8 L372.2 159.2 L380.3 158.6 L388.5 158.0 L396.7 157.4 L404.8 156.8 L413.0 156.3 L421.2 155.7 L429.3 155.1 L437.5 154.5 L445.7 153.9 L453.8 153.3 L462.0 152.7" fill="none" stroke="#35b0e8" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="249.7" cy="198.6" r="2.5" fill="#35b0e8"/>
+<!-- Mark -->
+<path d="M70.0 202.3 L78.2 201.9 L86.3 201.4 L94.5 201.0 L102.7 200.5 L110.8 200.1 L119.0 199.7 L127.2 199.2 L135.3 198.8 L143.5 198.3 L151.7 197.9 L151.7 164.2 L159.8 163.8 L168.0 163.3 L176.2 162.9 L184.3 162.5 L192.5 162.0 L200.7 161.6 L208.8 161.1 L217.0 160.7 L225.2 160.2 L233.3 159.8 L241.5 159.4 L249.7 158.9 L249.7 125.2 L257.8 124.8 L266.0 124.4 L274.2 123.9 L282.3 123.5 L290.5 123.0 L298.7 122.6 L306.8 122.1 L315.0 121.7 L323.2 121.3 L331.3 120.8 L339.5 120.4 L347.7 119.9 L347.7 89.3 L355.8 88.9 L364.0 88.4 L372.2 88.0 L380.3 87.6 L388.5 87.1 L396.7 86.7 L404.8 86.2 L413.0 85.8 L421.2 85.3 L429.3 84.9 L437.5 84.5 L437.5 60.0 L445.7 59.5 L453.8 59.1 L462.0 58.6" fill="none" stroke="#06bdad" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="70.0" cy="202.3" r="2.5" fill="#06bdad"/>
+<rect x="91.7" y="175.9" width="60" height="14" rx="4" fill="#06bdad"/>
+<text x="121.7" y="185.9" font-size="7.5" fill="#fff" font-weight="bold" text-anchor="middle">First project</text>
+<rect x="189.7" y="136.9" width="60" height="14" rx="4" fill="#06bdad"/>
+<text x="219.7" y="146.9" font-size="7.5" fill="#fff" font-weight="bold" text-anchor="middle">Big launch</text>
+<rect x="287.7" y="97.9" width="60" height="14" rx="4" fill="#06bdad"/>
+<text x="317.7" y="107.9" font-size="7.5" fill="#fff" font-weight="bold" text-anchor="middle">Migration</text>
+<rect x="377.5" y="62.5" width="60" height="14" rx="4" fill="#06bdad"/>
+<text x="407.5" y="72.5" font-size="7.5" fill="#fff" font-weight="bold" text-anchor="middle">New product</text>
+<text x="468" y="61.6" font-size="11" fill="#06bdad" font-weight="bold">Mark</text>
+<text x="468" y="155.7" font-size="9" fill="#35b0e8" font-weight="bold">Ana</text>
+<text x="468" y="171.5" font-size="11" fill="#ff7898" font-weight="bold">You</text>
+<text x="468" y="182.5" font-size="9" fill="#ffcf65" font-weight="bold">Tom</text>
+<text x="468" y="193.5" font-size="9" fill="#da4ada" font-weight="bold">Lea</text>
+<text x="260" y="274" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">Mark got the first big project, and then every next one</text>
+</svg>
