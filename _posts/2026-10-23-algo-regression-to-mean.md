@@ -3,6 +3,7 @@ title: "Case #2: Want the nicer coffee machine? Wait for the next latency spike"
 series: "The Algorithm Decided"
 tags: ["The Algorithm Decided"]
 prev_post: 2026-08-18-the-algorithm-decided-intro
+next_post: 2026-11-01-algo-missing-data
 image: /assets/algorithm-decided/ritual-coffee-machine.png
 biblio:
   - link: https://interviewing.io/blog/technical-interview-performance-is-kind-of-arbitrary-heres-the-data
