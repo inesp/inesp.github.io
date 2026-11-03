@@ -1,0 +1,37 @@
+<svg viewBox="0 0 520 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+<rect width="520" height="300" fill="#fff"/>
+<text x="260.0" y="24.0" font-size="14" fill="#212529" font-weight="bold" text-anchor="middle">Same review scores. One got the grant.</text>
+<text x="260.0" y="40.0" font-size="10" fill="#6c757d" text-anchor="middle">Later research funding (k€), excluding the first grant</text>
+<!-- Grid lines -->
+<line x1="70" y1="195.7" x2="440" y2="195.7" stroke="#dadada" stroke-width="0.5"/>
+<text x="64.0" y="198.7" font-size="9" fill="#6c757d" text-anchor="end">€100k</text>
+<line x1="70" y1="141.4" x2="440" y2="141.4" stroke="#dadada" stroke-width="0.5"/>
+<text x="64.0" y="144.4" font-size="9" fill="#6c757d" text-anchor="end">€200k</text>
+<line x1="70" y1="87.1" x2="440" y2="87.1" stroke="#dadada" stroke-width="0.5"/>
+<text x="64.0" y="90.1" font-size="9" fill="#6c757d" text-anchor="end">€300k</text>
+<!-- Axes -->
+<line x1="70" y1="250" x2="450" y2="250" stroke="#212529" stroke-width="1.5"/>
+<polygon points="456,250 448,246 448,254" fill="#212529"/>
+<text x="70.0" y="264.0" font-size="9" fill="#6c757d" text-anchor="middle">0</text>
+<text x="162.5" y="264.0" font-size="9" fill="#6c757d" text-anchor="middle">2</text>
+<text x="255.0" y="264.0" font-size="9" fill="#6c757d" text-anchor="middle">4</text>
+<text x="347.5" y="264.0" font-size="9" fill="#6c757d" text-anchor="middle">6</text>
+<text x="440.0" y="264.0" font-size="9" fill="#6c757d" text-anchor="middle">8</text>
+<text x="255.0" y="280.0" font-size="10" fill="#6c757d" text-anchor="middle">years after the first grant</text>
+<!-- Gap between the two lines -->
+<polygon points="70.0,250.0 116.2,250.0 162.5,250.0 208.8,225.6 255.0,194.1 301.2,158.8 347.5,122.4 393.8,88.2 440.0,76.3 440.0,177.8 393.8,186.5 347.5,192.5 301.2,200.1 255.0,217.4 208.8,242.9 162.5,245.7 116.2,248.4 70.0,250.0" fill="#06bdad" opacity="0.12"/>
+<!-- JUST MISSED -->
+<polyline points="70.0,250.0 116.2,248.4 162.5,245.7 208.8,242.9 255.0,217.4 301.2,200.1 347.5,192.5 393.8,186.5 440.0,177.8" fill="none" stroke="#ff7898" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="440.0" cy="177.8" r="3" fill="#ff7898"/>
+<!-- JUST WON -->
+<polyline points="70.0,250.0 116.2,250.0 162.5,250.0 208.8,225.6 255.0,194.1 301.2,158.8 347.5,122.4 393.8,88.2 440.0,76.3" fill="none" stroke="#06bdad" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="440.0" cy="76.3" r="3" fill="#06bdad"/>
+<text x="448.0" y="80.3" font-size="11" fill="#06bdad" font-weight="bold">just won</text>
+<text x="448.0" y="181.8" font-size="11" fill="#ff7898" font-weight="bold">just missed</text>
+<!-- Gap brackets -->
+<line x1="261.0" y1="198.1" x2="261.0" y2="213.4" stroke="#212529" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="266.0" y="198.4" font-size="11" fill="#212529" font-weight="bold">€40k</text>
+<line x1="430.0" y1="80.3" x2="430.0" y2="173.8" stroke="#212529" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="425.0" y="131.0" font-size="11" fill="#212529" font-weight="bold" text-anchor="end">€180k</text>
+<text x="512.0" y="294.0" font-size="8" fill="#6c757d" text-anchor="end">Data: Bol, de Vaan, van de Rijt (2018), Fig. 3</text>
+</svg>
