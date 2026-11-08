@@ -1,0 +1,429 @@
+@import "colors";
+
+// Everything on the /talks/ page: the talks table (desktop + mobile cards),
+// the featured video box and the talk catalogue.
+
+// ------------------------ TALKS
+table.talks {
+  width: 100%;
+  margin-bottom: 8rem;
+
+  tbody tr:hover {
+    border-left: 4px solid $color-hover-red;
+  }
+
+  tbody tr.coming-soon:hover {
+    border-left-color: $color-red-bright;
+  }
+
+  // accepted, but never got there: keep the row, fade it
+  tbody tr.missed td {
+    opacity: 0.45;
+  }
+
+  tbody tr.missed td:first-child {
+    opacity: 1;
+  }
+
+  .missed-tag {
+    display: block;
+    font-size: 0.85em;
+    font-style: italic;
+    color: $color-gray-4;
+    margin-bottom: 0.2rem;
+  }
+
+
+  @media (min-width: 1200px) {
+    td.link-texts {
+      white-space: nowrap;
+    }
+    td:first-child {
+      white-space: nowrap;
+    }
+  }
+
+  .talk-conf{
+    font-weight: 500;
+  }
+
+  .talk-place {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: $color-gray-4;
+    margin-top: 0.2rem;
+
+    .talk-flag {
+      width: 1.35em; // the flags carry the travel story, let them show
+      vertical-align: -0.2em;
+      margin-right: 0.1em;
+    }
+  }
+
+  td a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  td.link-texts {
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 0.15rem 0.5rem;
+      margin-right: 0.4rem;
+      transition: all 0.2s ease;
+      color: $color-green-dark;
+      background: $color-green-light;
+      border-radius: 0.75rem;
+      border: 1px solid $color-green;
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+        flex-shrink: 0;
+      }
+
+      &:hover {
+        background: $color-green;
+        color: #fff;
+      }
+    }
+
+    // secondary links collapse to their icon; the label unfolds on hover
+    a.link-slides,
+    a.link-schedule {
+      gap: 0;
+
+      span {
+        max-width: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: max-width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+      }
+
+      &:hover span {
+        max-width: 6rem;
+        margin-left: 0.3rem;
+      }
+    }
+
+    // recordings are the strongest proof, so the video chip gets the site's
+    // look-here yellow instead of blending in with the green chips
+    a.link-video {
+      color: $color-badge-text;
+      background: $color-yellow;
+      border-color: $color-yellow-border;
+
+      &:hover {
+        background: $color-yellow-dark;
+        color: $color-text;
+      }
+    }
+  }
+
+  // the flag label only lives in the mobile timeline
+  .talk-flag-badge {
+    display: none;
+  }
+
+  // Mobile cards (loosely after MarkBoots' "UL timeline cards" pen):
+  // a flag + date label, a white card below
+  @media (max-width: 767px) {
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tbody tr,
+    tbody tr:hover,
+    tbody tr.coming-soon:hover {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin: 0 0 2rem;
+      padding: 0 0 0.75rem; // bottom breathing room even when a talk has no links
+      border: none;
+      background: none;
+      isolation: isolate;
+    }
+
+    // the white card, drawn behind every cell below the date label
+    tr::before {
+      content: "";
+      position: absolute;
+      inset: 1.9rem 0 0 0;
+      z-index: -1;
+      background: #fff;
+      border-radius: $standard-radius;
+      box-shadow: 0 3px 10px rgba(160, 100, 20, 0.25); // warm brown, not cold gray
+      border: 2px solid $color-teal;
+    }
+
+    td {
+      display: block;
+      padding: 0.15rem 1rem;
+      border: none;
+      background: none;
+
+      &.talk-conf {
+        order: 1;
+        padding-top: 0.9rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+
+        // the flag moved up into the date label
+        .talk-flag {
+          display: none;
+        }
+      }
+
+      &.talk-title {
+        order: 2;
+        padding-top: 0.5rem;
+
+        .talk-based-on a {
+          padding: 0;
+          background: none;
+          color: $color-teal-darkest;
+
+          &:hover {
+            background: none;
+            color: $color-hover-red;
+          }
+        }
+      }
+
+      // Links become the card's footer: a hairline, then plain icon links
+      &.link-texts {
+        order: 3;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.25rem;
+        margin: 0.75rem 2px 0;
+        padding: 0.6rem calc(1rem - 2px) 0;
+        border-top: 1px solid $color-teal;
+
+        &:empty {
+          display: none;
+        }
+
+        a {
+          margin: 0;
+          padding: 0;
+          border: none;
+          background: none;
+          border-radius: 0;
+          color: $color-teal-darkest;
+
+          &:hover {
+            background: none;
+            color: $color-hover-red;
+          }
+        }
+
+        // the recording is still the strongest proof: keep its yellow
+        a.link-video {
+          margin-left: -0.5rem;
+          padding: 0.1rem 0.5rem;
+          border-radius: 0.75rem;
+          background: $color-yellow;
+          color: $color-badge-text;
+        }
+
+        // no hover on touch screens, so labels stay visible
+        a span,
+        a.link-slides span,
+        a.link-schedule span {
+          max-width: none;
+          margin-left: 0.3rem;
+        }
+      }
+
+      // flag + date: a label above the card
+      &:first-child {
+        order: 0;
+        margin: 0 0 0.4rem;
+        padding: 0 0.2rem; // optical nudge: flush looks like it pokes out past the shadow
+        display: flex;
+        align-items: center;
+        background: none;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $color-text;
+
+        .talk-flag-badge {
+          display: inline-block;
+          flex-shrink: 0;
+          margin-right: 0.5rem;
+
+          img {
+            display: block;
+            width: 1.5rem;
+          }
+        }
+      }
+    }
+
+    // upcoming talks glow a little teal
+    tr.coming-soon::before {
+      box-shadow: 0 2px 12px rgba($color-teal, 0.45);
+    }
+
+    .missed-tag {
+      display: inline;
+      margin: 0 0.5em 0 0;
+      color: inherit;
+      text-transform: none;
+      font-weight: 500;
+    }
+  }
+
+}
+
+.talk-based-on {
+  font-size: 90%;
+  margin-top: $quarter-standard-margin;
+
+  a {
+    color: $color-green-dark;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    background: $color-green-light;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+
+    &:hover {
+      background: $color-green;
+      color: #fff;
+    }
+  }
+}
+
+// ------------------------ FEATURED VIDEO (talks page)
+.featured-video {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: $color-yellow-light; // same highlight language as the CV's "next" card
+  border-radius: $standard-radius;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-text; // the card darkens instead of the global pink text hover
+    background: $color-yellow;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  .featured-video-thumb {
+    position: relative;
+    flex-shrink: 0;
+    width: 240px;
+    border-radius: $standard-radius;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .featured-video-thumb {
+      width: 100%;
+    }
+  }
+
+  .featured-video-text {
+    display: block;
+
+    b {
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    span {
+      color: $color-gray-4;
+    }
+  }
+}
+
+// ------------------------ TALK CATALOGUE
+.talk-catalogue {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 5px solid $color-teal;
+  margin-bottom: 8rem;
+
+  > p {
+    color: $color-text-muted;
+  }
+}
+
+.talk-catalogue-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.talk-catalogue-item {
+  background: #fff;
+  border: 1px solid $color-gray;
+  border-top: 5px solid $color-teal; // each card gets its own accent below
+  border-radius: $double-radius;
+  padding: 1.25rem 1.5rem;
+
+  // accent colors cycle through the milestone-icon palette
+  &:nth-child(6n + 2) { border-top-color: $color-hover-red; }
+  &:nth-child(6n + 3) { border-top-color: $color-blue; }
+  &:nth-child(6n + 4) { border-top-color: $color-purple; }
+  &:nth-child(6n + 5) { border-top-color: $color-green-vivid; }
+  &:nth-child(6n + 6) { border-top-color: $color-yellow-dark-2; }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  p {
+    margin-bottom: 0; // the card's padding is the spacing
+    color: $color-gray-4;
+  }
+}
+
