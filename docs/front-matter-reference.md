@@ -130,6 +130,6 @@ Removing a talk from the catalogue and re-running the script deletes its page to
 
 ## Appearances (`_data/talks.yml`)
 
-One entry per time a talk was given. `talk: <key>` points at the catalogue entry, which is what puts the "↳ Talk page" link in the table on `/talks/`. Leave it out for an old talk that has no catalogue entry. The per-appearance `title` is the title as delivered at that event, which often differs from the catalogue title.
+One entry per time a talk was given. `talk: <key>` points at the catalogue entry, which is what puts the "↳ Talk page" link in the table on `/talks/`. Leave it out for an old talk that has no catalogue entry. Such a talk can instead have `post_slug: <slug>` (the post's filename without date and extension), which shows a "↳ Blog post" link. The per-appearance `title` is the title as delivered at that event, which often differs from the catalogue title.
 
 `date` is the conference's first day (`2026-11-05`). Talks are sorted newest first by this date, so the order of entries in the file doesn't matter. The page shows it as "Nov 2026" and marks the talk as upcoming while that day hasn't passed yet. That check runs at build time, so a talk stays "upcoming" until the next build after its date.

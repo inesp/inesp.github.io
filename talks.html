@@ -69,6 +69,13 @@ fluid: true
             <div class="talk-based-on">
               <a href="{{ talk_page }}">↳ Talk page</a>
             </div>
+          {%- elsif talk.post_slug -%}
+            {%- assign talk_post = site.posts | where: "slug", talk.post_slug | first -%}
+            {%- if talk_post -%}
+              <div class="talk-based-on">
+                <a href="{{ talk_post.url }}">↳ Blog post</a>
+              </div>
+            {%- endif -%}
           {%- endif -%}
         </td>
         <td class="link-texts">
