@@ -91,10 +91,12 @@ layout: default
   <section class="topic-block">
     <p class="topic-intro">I speak in my free time: no sponsors, no employer agenda, just topics I care about.</p>
     <ul class="list-unstyled">
-      {%- assign given_talks = site.data.talks | where_exp: "talk", "talk.missed == nil" -%}
+      {%- assign given_talks = site.data.talks | sort: "date" | reverse | where_exp: "talk", "talk.missed == nil" -%}
+      {%- assign today = site.time | date: "%Y%m%d" | plus: 0 -%}
       {%- for talk in given_talks limit:5 -%}
+        {%- assign talk_day = talk.date | date: "%Y%m%d" | plus: 0 -%}
         <li class="home-talk-item">
-          <span class="home-talk-date text-muted">{% if talk.coming_soon %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date }}</span>
+          <span class="home-talk-date text-muted">{% if talk_day >= today %}<span title="coming soon">{% include career_icon.html name="hourglass" %}</span>{% endif %}{{ talk.date | date: "%b %Y" }}</span>
           <span class="home-talk-conf">{% if talk.link %}<a href="{{ talk.link }}" target="_blank">{{ talk.conf }}</a>{% else %}{{ talk.conf }}{% endif %} <img class="talk-flag" src="/assets/flags/{{ talk.flag }}.svg" alt="" loading="lazy"></span>
           <span class="home-talk-title">{{ talk.title }}</span>
         </li>

@@ -1,10 +1,9 @@
 - conf: QCon London 2027
   link: https://qconlondon.com
-  date: Apr 2027
+  date: 2027-04-13
   flag: united-kingdom
   location: London, UK
   title: "Did My Deploy Degrade Production? Answering It for Other People's Systems"
-  coming_soon: true
   video_link:
   details_link: https://qconlondon.com/presentation/apr2027/did-my-deploy-degrade-production-answering-it-other-peoples-systems
   slides_link:
@@ -12,11 +11,10 @@
 
 - conf: BuildStuff 2026
   link: https://buildstuff.events/
-  date: Dec 2026
+  date: 2026-12-02
   flag: lithuania
   location: Vilnius, Lithuania
   title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math, Not AI"
-  coming_soon: true
   video_link:
   details_link: https://buildstuff.events/pages/agenda
   slides_link: https://speakerdeck.com/inesp/how-i-built-anomaly-detection-from-scratch-and-how-we-ran-it-for-customers-for-6-years
@@ -24,11 +22,10 @@
 
 - conf: Heapcon 2026
   link: https://heapcon.io/2026
-  date: Nov 2026
+  date: 2026-11-05
   flag: serbia
   location: Belgrade, Serbia
   title: "Software Estimates and the Illusion of Control"
-  coming_soon: true
   video_link:
   details_link: https://heapcon.io/2026/speakers/ines-panker
   slides_link:
@@ -36,7 +33,7 @@
 
 - conf: TDC 2026
   link: https://2026.trondheimdc.no/en/
-  date: Oct 2026
+  date: 2026-10-19
   flag: norway
   location: Trondheim, Norway
   title: "Did My Deploy Degrade Production? Detecting Bad Deploys with Math"
@@ -48,7 +45,7 @@
 
 - conf: Devoxx Belgium 2026
   link: https://devoxx.be/
-  date: Oct 2026
+  date: 2026-10-05
   flag: belgium
   location: Antwerp, Belgium
   title: "Their API Went Down. So Why Is My App on Fire?"
@@ -57,7 +54,7 @@
   slides_link: https://speakerdeck.com/inesp/their-api-went-down-so-why-is-my-app-on-fire
   talk: api-resilience
 
-- date: Sep 2026
+- date: 2026-09-01
   conf: Python Meetup Ljubljana
   link: https://www.meetup.com/ljubljana-python-group/events/315532949/
   flag: slovenia
@@ -67,7 +64,7 @@
 
 - conf: Voxxed Days Luxembourg 2026
   link: https://luxembourg.voxxeddays.com/en/
-  date: Jun 2026
+  date: 2026-06-18
   flag: luxembourg
   location: Mondorf-les-Bains, Luxembourg
   title: "Did My Deploy Degrade Production?"
@@ -78,7 +75,7 @@
 
 - conf: PyCon Italia 2026
   link: https://2026.pycon.it/en
-  date: May 2026
+  date: 2026-05-28
   flag: italy
   location: Bologna, Italy
   title: "Stop asking me how long it will take"
@@ -89,7 +86,7 @@
 
 - conf: VoxxedDays Amsterdam 2026
   link: https://amsterdam.voxxeddays.com/
-  date: Apr 2026
+  date: 2026-04-01
   flag: netherlands
   location: Amsterdam, Netherlands
   title: "Why smart developers write silly code"
@@ -101,7 +98,7 @@
 
 - conf: Codemotion Roma 2026
   link: https://conferences.codemotion.com/roma/
-  date: Mar 2026
+  date: 2026-03-31
   flag: italy
   location: Rome, Italy
   title: "It'll Take Two Weeks: Why Software Estimates Are a Pipe Dream"
@@ -112,7 +109,7 @@
 
 - conf: J-Fall 2025
   link: https://jfall.nl/
-  date: Nov 2025
+  date: 2025-11-06
   flag: netherlands
   location: Ede, Netherlands
   title: Your Brain Is Sabotaging Your Code, But We Can Outsmart It
@@ -123,7 +120,7 @@
 
 - conf: Swiss Python Summit 2025
   link: https://www.python-summit.ch/
-  date: Oct 2025
+  date: 2025-10-17
   flag: switzerland
   location: Rapperswil, Switzerland
   title: "Software estimation: False sense of certainty"
@@ -134,7 +131,7 @@
 
 - conf: Voxxed Days Luxembourg 2025
   link: https://luxembourg.voxxeddays.com/en/
-  date: Jun 2025
+  date: 2025-06-18
   flag: luxembourg
   location: Mondorf-les-Bains, Luxembourg
   title: Software estimation is a delusion
@@ -145,7 +142,7 @@
 
 - conf: PyCon Austria 2025
   link: https://pycon.pyug.at/en/
-  date: Apr 2025
+  date: 2025-04-05
   flag: austria
   location: Eisenstadt, Austria
   title: Software Estimation is a Delusion (or Maybe Just a Misused Tool)
@@ -154,14 +151,14 @@
   slides_link: https://speakerdeck.com/inesp/software-estimation-is-a-delusion
   talk: estimation
 
-- date: Mar 2025
+- date: 2025-03-20
   conf: Meetup of Meetups
   flag: slovenia
   location: Ljubljana, Slovenia
   title: Why do developers like to argue so much?
   post_slug: disagreeing-devs
 
-- date: Sep 2019
+- date: 2019-09-13
   conf: Python Meetup Ljubljana
   link: https://www.meetup.com/ljubljana-python-group/events/264578339/?eventOrigin=group_calendar
   flag: slovenia
@@ -169,14 +166,14 @@
   title: Applying Marketing Techniques to Developers' day-to-day
   slides_link: https://speakerdeck.com/inesp/applying-marketing-techniques-to-developers-day-to-day
 
-- date: Oct 2017
+- date: 2017-10-25
   conf: Python Meetup Ljubljana
   link: https://www.meetup.com/ljubljana-python-group/events/243772267/?eventOrigin=group_calendar
   flag: slovenia
   location: Ljubljana, Slovenia
   title: "Fluent Python: How to write Python as if it were your first programming language"
 
-- date: Apr 2017
+- date: 2017-04-22
   conf: WebCamp Ljubljana 2017
   link: https://2017.webcamp.si/
   flag: slovenia
@@ -186,7 +183,7 @@
   details_link: https://2017.webcamp.si/speakers/ines-panker/
   slides_link: https://speakerdeck.com/inesp/conquering-jsonb-in-postgresql
 
-- date: Oct 2016
+- date: 2016-10-13
   conf: StripeCon 2016
   link: https://2016.stripecon.eu/
   flag: slovenia
