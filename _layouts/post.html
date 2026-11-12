@@ -17,6 +17,9 @@ layout: default
         </time>
       {%- endif %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author | escape }}</span>
+      {%- if page.reviewer %}
+        • With thanks to {{ page.reviewer | escape }}
+      {%- endif %}
     </p>
 
     {% comment %}Look up collection display_title from topics.yml{% endcomment %}

@@ -1,6 +1,7 @@
 ---
 title: "Case #1: The more senior the developer, the worse her incident stats"
 series: "The Algorithm Decided"
+reviewer: Yannick Kirschhoffer
 tags: ["The Algorithm Decided"]
 next_post: 2026-10-23-algo-regression-to-mean
 image: /assets/algorithm-decided/change-failure-rate-by-system.png

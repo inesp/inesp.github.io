@@ -54,6 +54,7 @@ Field-by-field:
 - `image`: Optional path to a social/OG preview image, picked up by the jekyll-seo-tag plugin.
 - `css`: Optional extra CSS class(es) applied to the post body wrapper.
 - `fluid`: Optional boolean; when true, renders the page in the full-width layout instead of the centered reading column.
+- `reviewer`: Optional name of someone who reviewed the post. Shown in the post header as "With thanks to <name>" after the author, not as an author.
 - `author`: Defaults to "Ines Panker" via `_config.yml`; can be overridden per post (rare, no example above since it's basically never needed).
 
 ## Topic pages (`tags/*.md`)
