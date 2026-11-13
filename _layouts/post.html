@@ -18,7 +18,7 @@ layout: default
       {%- endif %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author | escape }}</span>
       {%- if page.reviewer %}
-        • With thanks to {{ page.reviewer | escape }}
+        • With thanks to {% if page.reviewer_url %}<a href="{{ page.reviewer_url }}" target="_blank">{{ page.reviewer | escape }}</a>{% else %}{{ page.reviewer | escape }}{% endif %}
       {%- endif %}
     </p>
 

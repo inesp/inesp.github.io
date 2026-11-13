@@ -2,6 +2,7 @@
 title: "Case #2: Want the nicer coffee machine? Wait for the next latency spike"
 series: "The Algorithm Decided"
 reviewer: Yannick Kirschhoffer
+reviewer_url: https://alcibiade.org/
 tags: ["The Algorithm Decided"]
 prev_post: 2026-08-18-the-algorithm-decided-intro
 next_post: 2026-11-01-algo-missing-data

@@ -2,6 +2,7 @@
 title: "Case #3: Want faster requests? Just lower the timeout and watch the p99 drop"
 series: "The Algorithm Decided"
 reviewer: Yannick Kirschhoffer
+reviewer_url: https://alcibiade.org/
 tags: ["The Algorithm Decided"]
 prev_post: 2026-10-23-algo-regression-to-mean
 next_post: 2026-11-03-algo-feedback-loops

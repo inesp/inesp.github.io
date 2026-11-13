@@ -91,6 +91,11 @@
 .post-meta {
   font-size: 0.9rem;
   letter-spacing: 0.03em;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 

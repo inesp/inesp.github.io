@@ -2,6 +2,7 @@
 title: "Case #4: Our algorithm suggests deploying only on Friday"
 series: "The Algorithm Decided"
 reviewer: Yannick Kirschhoffer
+reviewer_url: https://alcibiade.org/
 tags: ["The Algorithm Decided"]
 prev_post: 2026-11-01-algo-missing-data
 image: /assets/algorithm-decided/matthew-loop-everywhere.png
