@@ -20,6 +20,8 @@ In the [previous post]({% post_url 2026-11-01-algo-missing-data %}) we looked at
 
 Now, let's look at 2 phenomena with a much bigger reach: **the selective labels problem and feedback loops**. Why let your sample data swerve away from the truth by itself, when you can _actively_ steer it towards wherever you want it to go?
 
+Our decisions don't merely rely on an incomplete sample: **they help create the data that will later be used to justify those same decisions.**
+
 ![decisions-shape-data-panels](/assets/algorithm-decided/decisions-shape-data-panels.svg)
 
 The **selective labels problem** describes the situation where our past choices blind us to the true outcomes. The best example is hiring: we only ever learn how the people we _did_ hire turned out, never how the others _would_ have done.
@@ -61,6 +63,8 @@ Our team has a rule: **no deploys on Friday, unless a senior engineer approves i
 Now we train a model to review deploys automatically, but the model doesn't know anything about this rule. It only looks at the stats for every deploy. The model sees that **Friday deploys are very safe**. So... it starts approving every Friday deploy, because **data shows Friday deploys cause no incidents!**
 
 Sure enough, incidents start happening left and right.
+
+The Friday deploys were safe because the seniors filtered them. **Removing that filter while keeping the conclusion means changing the very conditions that made the observation true.**
 
 ![friday-deploys-model](/assets/algorithm-decided/friday-deploys-model.svg){:.breakout}
 
@@ -286,6 +290,8 @@ We never test on Firefox, so half the buttons don't quite work there. Firefox us
 **Keep in mind that your data is a sample, not the full truth.**
 
 Ask: who is missing from your dataset? The rejected candidates, the unflagged transactions, the search result on page 2, the Firefox users...
+
+Not only "what aren't we observing?" but also **"how do our own choices shape what we get to observe?"**
 
 An interesting idea is to mix it up a bit: 
 - Let one borderline candidate through to the next round, even though they'd normally be out.

@@ -68,9 +68,12 @@ What changed between the terrible sprint and the good one? Not the team, nor the
 
 **Regression to the mean is the phenomenon where an extreme result is usually followed by a more ordinary one.** It shows up whenever you have a noisy variable.
 
-The reason for this is simple: outliers are rare, that is what makes them outliers, so the chance of getting two outliers in a row is small.
+The reason for this is simple: outliers are rare, that is what makes them outliers, so the next sprint will most likely be an ordinary one.
 
 ![two-in-a-row](/assets/algorithm-decided/two-in-a-row.svg)
+
+This doesn't mean that a bad sprint makes an ordinary next sprint more likely. **Ordinary sprints were simply more common to begin with.** Otherwise we slip into the same reasoning as roulette players, who base their bets on previous spins, even though the odds for the next spin haven't changed.
+{:.box-yellow}
 
 As people, we like cause and effect. We like to fix problems. And this is where we clash with this simple phenomenon.
 
@@ -87,6 +90,8 @@ But of course, **doing nothing feels threatening, as if we are asking those same
 
 
 **Thus, we like to do something, instead of just nothing.** Even when that something has no basis in logic.
+
+We have to show that we're taking action. Watching and waiting can easily look like passivity, even when the proposed action has little justification. (In the 90s, running a disk defragmentation was one of the first reflexes when a PC got slow, without anybody establishing a connection to the actual problem.)
 
 Let's say the p99 latency jumps from 300ms to 4s. What can you do to get it to go down again?
 
@@ -113,6 +118,8 @@ However, you have no proof that scaling up the database helped at all. Correlati
 In reality, latency spikes usually come down on their own, because some job finishes its work. Maybe a big import ends, or a large calculation finishes, or a problematic user logs off.
 
 **The thing is, we acted at the worst moment, so almost anything we did would have looked as if it worked.**
+
+**This is how professional superstitions develop: we intervene, things improve, and we attribute the improvement to our intervention.**
 
 ![restart-ritual](/assets/algorithm-decided/restart-ritual.svg)
 
@@ -143,6 +150,16 @@ We also need judgment when broadcasting our solution.
 ![incident-report](/assets/algorithm-decided/incident-report.svg)
 
 The trick is mostly in observing your system and your actions humbly. **Maybe you have fixed the system, or maybe it wasn't you.**
+
+## Fixing the worst pages
+
+Let's step out of engineering for a moment and into SEO (search engine optimization), where people try to get more visitors from Google. One of the classic tricks is rewriting a page's title. It is said that a better title translates to more clicks.
+
+So the marketing team pulls last month's report, picks the 50 pages with the fewest clicks, and rewrites their titles. **Four weeks later, clicks on those 50 pages are up 15%.** The new titles work! Let's rewrite all of them.
+
+But we picked those pages _because_ they had a bad month. Some of them really are bad pages. Many just had bad luck: a holiday week, a competitor's campaign, a Google update that came and went. **Pages picked at their worst moment will look better next month, whether we touch them or not.**
+
+The honest test: pick 100 bad pages, rewrite the titles on 50, leave the other 50 alone. If both groups go up by 15%, the titles did nothing.
 
 ## A cheeky abuse of regression to the mean
 
@@ -294,13 +311,80 @@ So we hired somebody with good enough skills on a good day. **Once they start wo
 
 In decision science this has its own name: **the optimizer's curse**. 
 
-Smith and Winkler described it in 2006: if you estimate the value of several options, and your estimates are noisy but completely fair, and you pick the option with the highest estimate... then the option you picked will, on average, disappoint you.
+It was first described in a study from 2006: if you estimate the value of several options, and your estimates are noisy but completely fair, and you pick the option with the highest estimate... then the option you picked will, on average, disappoint you.
+
+> if we take these value estimates at face value and select accordingly, we should expect the value of the chosen alternative to be less than its estimate, even if the value estimates are unbiased. Thus, when comparing actual outcomes to value estimates, **we should expect to be disappointed on average**, not because of any inherent bias in the estimates themselves, but because of the optimization-based selection process. We call this phenomenon the **optimizer’s curse** and argue that it is not well understood or appreciated in the decision analysis and management science communities.
+<figcaption>
+&mdash; Smith and Winkler: The Optimizer's Curse: Skepticism and Postdecision Surprise in Decision Analysis (2006)
+</figcaption>
 
 **The act of picking the maximum creates the disappointment.** You expect too much, because you picked "real value + luck", but the luck will go away, and you will be left with only the "real value". 
+
+Here is how the paper calculated the probabilities:
+
+Imagine we have to choose between 3 projects, we want to choose the one that wil lbe most benefitial to us.
+
+In this hypothetical scenario, all 3 projects are actually worth exactly the same, but we don't know that. We estimate each one and of course, our estimates are sometimes too optimistic, other times too pessimistic.
+
+Still, we of course pick **the project with the highest estimate**.
+
+But the highest estimate is usually the one that came out too high. **When the options are equally good, the only thing that lifts one estimate above the others is its error, so by picking the maximum we are, in effect, picking the biggest error.**
+
+**And the more options we compare, the bigger the error we pick.** 
+
+The paper shows that with 3 projects, the chosen one disappoints, on average, by 85% of our typical estimation error. With 10 projects, it's 154%.
+
+![optimizers-curse-best-of-n](/assets/algorithm-decided/optimizers-curse-best-of-n.svg)
+
+<details class="rabbit-hole" markdown="1">
+<summary>Rabbit hole: Why 154%?</summary>
+
+This is purely mathematical.
+
+Every estimate has an error: some are too high, some too low, most are close. They follow the normal distribution and the "typical error" is the standard deviation of the dataset.
+
+We make 10 estimates, so we get 10 random errors.
+
+**We pick the project with the highest estimate, which, with equal projects, means we pick the highest error.**
+
+How high is the highest of 10 random errors? **On average, it lands around the top 6% of the bell curve, which is 1.54 typical errors above zero, so at 154%.**
+
+With 2 estimates, the higher one is just "the better half", about 0.56 typical errors up. With 100, it would be about 2.5.
+
+![optimizers-curse-top-error](/assets/algorithm-decided/optimizers-curse-top-error.svg)
+
+Smith and Winkler got these numbers from simulation and standard order statistics formulas.
+
+</details>
+
+## Overcoming the optimizer's curse
+
+**If the projects really differ, the curse gets smaller: when one project is clearly better, we'll usually pick it anyway.** Equal options are the worst case.
+
+> The key to overcoming the optimizer's curse is conceptually very simple: treat the results of the analysis as uncertain and combine these results with prior estimates of value using Bayes' rule before choosing an alternative. 
+> [...]
+> To adjust values properly, we need to understand **the degree of uncertainty in these estimates** and in the true values. 
+<figcaption>
+&mdash; Smith and Winkler: The Optimizer's Curse: Skepticism and Postdecision Surprise in Decision Analysis
+</figcaption>
+
+Get more data points for every project. The highest estimate is probably very lucky, so maybe just discount that one. (... Together with the lowest score of course.)
+
+Then consider the average value of such a project, and pull the estimate towards it. What is the degree of uncertainty for your estimate? The higher it is, the less seriously you can take the number.
+
 
 ## Performance management and Bossware
 
 It's all fun and games until somebody gets hurt. **With our quick and easy statistical analysis of whatever metrics we have, we often encode these mistakes into tools that decide somebody's bonus, promotion or job security.**
+
+_Bossware_ is software that monitors and scores employees: keystrokes, screenshots, active hours, tickets closed, commits per day...
+
+It promises to find your most productive people, it sets "objective" targets for people to hit. But of course, it is mostly just garbage:
+- the tool marks you "idle" after 5 minutes without mouse movement, even while you're reading code or just thinking,
+- a dashboard ranks devs by commits per week, so one careful refactor scores worse than ten typo fixes,
+- your "productivity score" drops on the day you spent in meetings helping a junior.
+
+![bossware-productivity-score](/assets/algorithm-decided/bossware-productivity-score.svg)
 
 Our tool that ranks people's performance could be:
 - **Measuring from the dip.** The tool compares a team's numbers before and after a new manager joined. The team's numbers improved and the new manager gets a promotion, even though the manager did not cause the change.
@@ -311,6 +395,8 @@ Our tool that ranks people's performance could be:
 ![algorithm-mistakes](/assets/algorithm-decided/algorithm-mistakes.svg) 
 
 In each case, the code is technically correct, it just treats `skill + luck` as if it were all `skill`.
+
+Bossware is impersonal in nature, and has a ridiculously high potential to be reporting on the wrong thing.
 
 ## What can we do?
 

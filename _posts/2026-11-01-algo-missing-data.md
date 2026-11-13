@@ -135,6 +135,8 @@ Stop asking mainly your friends to rate your work!
 
 We like to think statistics starts when we type `avg()`. But by then, many decisions were already made... by whatever collected the data.
 
+We readily use the mean to aggregate data, even when the median or other measures might better answer the question. But **choosing a good metric is not enough if the underlying data doesn't represent the population we're interested in.**
+
 To understand the shortcomings of your dataset, ask yourself: how did we get the data?
 
 And more particularly: **which data did we fail to collect?**
@@ -166,6 +168,9 @@ All the other customers remained silent (they can be counted under non-response)
 From the data I have, I can accurately say: _"all the customers I talked to were either already using the feature or they expressed liking it"_. Given my data, this is 100% the truth.
 {:.box-yellow}
 
+Of course this goes well beyond computing. Think about politics: might the state of the world be better, if we selected politicians with a lottery from the pool of all citizens, instead of choosing from a self-selected group of people, who are actively seeking power.
+
+![lottery-vs-election-slovenia](/assets/algorithm-decided/lottery-vs-election-slovenia.svg)
 
 ## MCAR, MAR, MNAR and why privacy-conscious people are always missing from stats
 
@@ -201,6 +206,8 @@ What they don't have is information about the rate-limiters. They don't know **w
 Censoring means that our **metric's values have an upper or lower bound** (in our case 100 req/min per customer).
 
 Truncating means that we simply **don't record some values** (in our case we dropped the 101st, 102nd, ... request for every customer).
+
+(This is close to survivorship bias: **what's missing from our observations may be exactly what would change our conclusion.**)
 
 
 ## Truncation on purpose
@@ -311,6 +318,8 @@ Here's how that happens:
 
   To get the p99, we sort all values and take the one at position 99% × 200 = 198, which is 98s.
 
+And in reality it can get even worse: a slowdown can cause in-flight requests to accumulate, which then makes the degradation worse. A tool that waits for each request to finish before sending the next one risks hiding precisely that dynamic.
+
 
 ## The time people lost jobs because of truncated datapoints
 
@@ -335,8 +344,14 @@ In 2016, Facebook admitted the average had been inflated by 60% to 80%, advertis
 
 But by then it was too late. The pivot to video had already happened.
 
+Which raises a fascinating question: **what are we actually trying to measure, and for whom?** Advertisers, platforms and content creators don't necessarily want the same thing from a "view count". And every platform defines a view differently, so for the same total watch time, different counting rules can produce very different view counts. 
+
+Which metric actually reflects what matters to each of them?
+
 
 ## What can we do?
+
+Before interpreting the numbers, we need to ask what might have disappeared along the way.
 
 **Ask: what would make a datapoint go missing?**
 

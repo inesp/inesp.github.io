@@ -1,0 +1,51 @@
+<svg viewBox="0 0 520 290" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="290" fill="#fff"/>
+  <text x="260.0" y="26.0" font-size="14" fill="#212529" text-anchor="middle" font-weight="bold">Every project is really worth $100k</text>
+  <text x="260.0" y="42.0" font-size="9" fill="#6c757d" text-anchor="middle">estimated value of the winning project, depending on how many projects you compare</text>
+  <!-- Grid lines -->
+  <line x1="60" y1="215.0" x2="500" y2="215.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54.0" y="218.0" font-size="8" fill="#6c757d" text-anchor="end">$80k</text>
+  <line x1="60" y1="182.8" x2="500" y2="182.8" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54.0" y="185.8" font-size="8" fill="#6c757d" text-anchor="end">$90k</text>
+  <line x1="60" y1="150.6" x2="500" y2="150.6" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54.0" y="153.6" font-size="8" fill="#6c757d" text-anchor="end">$100k</text>
+  <line x1="60" y1="118.3" x2="500" y2="118.3" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54.0" y="121.3" font-size="8" fill="#6c757d" text-anchor="end">$110k</text>
+  <line x1="60" y1="86.1" x2="500" y2="86.1" stroke="#dadada" stroke-width="0.5"/>
+  <text x="54.0" y="89.1" font-size="8" fill="#6c757d" text-anchor="end">$120k</text>
+  <!-- Bars: teal = real skill, pink = luck on top -->
+  <rect x="75.4" y="150.6" width="42.5" height="64.4" fill="#06bdad"/>
+  <text x="96.7" y="145.6" font-size="10" fill="#212529" text-anchor="middle" font-weight="bold">$100k</text>
+  <text x="96.7" y="228.0" font-size="8" fill="#6c757d" text-anchor="middle">1 project</text>
+  <rect x="148.7" y="150.6" width="42.5" height="64.4" fill="#06bdad"/>
+  <rect x="148.7" y="132.5" width="42.5" height="18.0" fill="#ff7898"/>
+  <text x="170.0" y="145.0" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">+$5.6k</text>
+  <text x="170.0" y="127.5" font-size="10" fill="#212529" text-anchor="middle" font-weight="bold">$105.6k</text>
+  <text x="170.0" y="228.0" font-size="8" fill="#6c757d" text-anchor="middle">best of 2</text>
+  <rect x="222.1" y="150.6" width="42.5" height="64.4" fill="#06bdad"/>
+  <rect x="222.1" y="123.2" width="42.5" height="27.4" fill="#ff7898"/>
+  <text x="243.3" y="140.4" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">+$8.5k</text>
+  <text x="243.3" y="118.2" font-size="10" fill="#212529" text-anchor="middle" font-weight="bold">$108.5k</text>
+  <text x="243.3" y="228.0" font-size="8" fill="#6c757d" text-anchor="middle">best of 3</text>
+  <rect x="295.4" y="150.6" width="42.5" height="64.4" fill="#06bdad"/>
+  <rect x="295.4" y="113.2" width="42.5" height="37.4" fill="#ff7898"/>
+  <text x="316.7" y="135.4" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">+$11.6k</text>
+  <text x="316.7" y="108.2" font-size="10" fill="#212529" text-anchor="middle" font-weight="bold">$111.6k</text>
+  <text x="316.7" y="228.0" font-size="8" fill="#6c757d" text-anchor="middle">best of 5</text>
+  <rect x="368.7" y="150.6" width="42.5" height="64.4" fill="#06bdad"/>
+  <rect x="368.7" y="107.1" width="42.5" height="43.5" fill="#ff7898"/>
+  <text x="390.0" y="132.3" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">+$13.5k</text>
+  <text x="390.0" y="102.1" font-size="10" fill="#212529" text-anchor="middle" font-weight="bold">$113.5k</text>
+  <text x="390.0" y="228.0" font-size="8" fill="#6c757d" text-anchor="middle">best of 7</text>
+  <rect x="442.1" y="150.6" width="42.5" height="64.4" fill="#06bdad"/>
+  <rect x="442.1" y="100.9" width="42.5" height="49.6" fill="#ff7898"/>
+  <text x="463.3" y="129.2" font-size="9" fill="#fff" text-anchor="middle" font-weight="bold">+$15.4k</text>
+  <text x="463.3" y="95.9" font-size="10" fill="#212529" text-anchor="middle" font-weight="bold">$115.4k</text>
+  <text x="463.3" y="228.0" font-size="8" fill="#6c757d" text-anchor="middle">best of 10</text>
+  <!-- Legend -->
+  <rect x="150" y="242" width="10" height="10" fill="#06bdad" rx="2"/>
+  <text x="164.0" y="250.5" font-size="9" fill="#212529" text-anchor="start">real value</text>
+  <rect x="250" y="242" width="10" height="10" fill="#ff7898" rx="2"/>
+  <text x="264.0" y="250.5" font-size="9" fill="#212529" text-anchor="start">estimation error</text>
+  <text x="260.0" y="276.0" font-size="10" fill="#212529" text-anchor="middle" font-weight="bold">The more projects you compare, the more overestimated your winner is.</text>
+</svg>
