@@ -62,3 +62,16 @@
   margin-bottom: $standard-margin;
 }
 
+
+.heading-anchor{
+  margin-left: 0.4em;
+  color: $color-gray-2;
+  opacity: 0;
+  vertical-align: middle;
+
+  &:hover, &:focus{ color: $color-hover-red; opacity: 1; }
+}
+
+:is(h2, h3, h4):hover > .heading-anchor{
+  opacity: 1;
+}
