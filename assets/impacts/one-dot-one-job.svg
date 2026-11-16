@@ -1,0 +1,209 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="500" height="300" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="250.0" y="18" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">1 value = 1 API call = 1 background job</text>
+  <text x="250.0" y="32" text-anchor="middle" font-size="8.5" fill="#6c757d">every metric, every 2 minutes, each job on its own</text>
+
+  <!-- Time axis -->
+  <text x="185.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:26</text>
+  <text x="217.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:28</text>
+  <text x="249.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:30</text>
+  <text x="281.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:32</text>
+  <text x="313.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:34</text>
+  <text x="345.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:36</text>
+  <text x="377.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:38</text>
+  <text x="409.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:40</text>
+  <text x="441.0" y="50" text-anchor="middle" font-size="7" fill="#6c757d">10:42</text>
+
+  <!-- Datadog · CPU -->
+  <text x="30" y="67" font-size="9" fill="#212529" font-weight="bold">Datadog</text>
+  <text x="30" y="77" font-size="8" fill="#6c757d">CPU</text>
+  <line x1="169" y1="68.0" x2="457" y2="68.0" stroke="#dadada" stroke-width="1"/>
+  <rect x="175.0" y="58" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M180.5,68.0 L184.0,71.5 L190.0,64.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="207.0" y="58" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M212.5,68.0 L216.0,71.5 L222.0,64.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="239.0" y="58" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M244.5,68.0 L248.0,71.5 L254.0,64.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="271.0" y="58" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M276.5,68.0 L280.0,71.5 L286.0,64.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="303.0" y="58" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M308.5,68.0 L312.0,71.5 L318.0,64.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="335.0" y="58" width="20" height="20" rx="3" fill="#e6a000"/>
+  <text x="345.0" y="70.5" text-anchor="middle" font-size="7" fill="#fff" font-weight="bold">429</text>
+  <rect x="367.0" y="58" width="20" height="20" rx="3" fill="#e6a000"/>
+  <text x="377.0" y="70.5" text-anchor="middle" font-size="7" fill="#fff" font-weight="bold">429</text>
+  <rect x="399.0" y="58" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M404.5,68.0 L408.0,71.5 L414.0,64.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="431.0" y="58" width="20" height="20" rx="3" fill="#35b0e8"/>
+  <circle cx="437.0" cy="68.0" r="1.3" fill="#fff"/>
+  <circle cx="441.0" cy="68.0" r="1.3" fill="#fff"/>
+  <circle cx="445.0" cy="68.0" r="1.3" fill="#fff"/>
+
+  <!-- Datadog · p95 latency -->
+  <text x="30" y="97" font-size="9" fill="#212529" font-weight="bold">Datadog</text>
+  <text x="30" y="107" font-size="8" fill="#6c757d">p95 latency</text>
+  <line x1="169" y1="98.0" x2="457" y2="98.0" stroke="#dadada" stroke-width="1"/>
+  <rect x="177.5" y="88" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M183.0,98.0 L186.5,101.5 L192.5,94.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="209.5" y="88" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M215.0,98.0 L218.5,101.5 L224.5,94.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="241.5" y="88" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M247.0,98.0 L250.5,101.5 L256.5,94.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="273.5" y="88" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M279.0,98.0 L282.5,101.5 L288.5,94.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="305.5" y="88" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M311.0,98.0 L314.5,101.5 L320.5,94.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="337.5" y="88" width="20" height="20" rx="3" fill="#e6a000"/>
+  <text x="347.5" y="100.5" text-anchor="middle" font-size="7" fill="#fff" font-weight="bold">429</text>
+  <rect x="369.5" y="88" width="20" height="20" rx="3" fill="#e6a000"/>
+  <text x="379.5" y="100.5" text-anchor="middle" font-size="7" fill="#fff" font-weight="bold">429</text>
+  <rect x="401.5" y="88" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M407.0,98.0 L410.5,101.5 L416.5,94.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="433.5" y="88" width="20" height="20" rx="3" fill="#35b0e8"/>
+  <circle cx="439.5" cy="98.0" r="1.3" fill="#fff"/>
+  <circle cx="443.5" cy="98.0" r="1.3" fill="#fff"/>
+  <circle cx="447.5" cy="98.0" r="1.3" fill="#fff"/>
+
+  <!-- Sentry · errors -->
+  <text x="30" y="127" font-size="9" fill="#212529" font-weight="bold">Sentry</text>
+  <text x="30" y="137" font-size="8" fill="#6c757d">errors</text>
+  <line x1="169" y1="128.0" x2="457" y2="128.0" stroke="#dadada" stroke-width="1"/>
+  <rect x="180.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M185.5,128.0 L189.0,131.5 L195.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="212.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M217.5,128.0 L221.0,131.5 L227.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="244.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M249.5,128.0 L253.0,131.5 L259.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="276.0" y="118" width="20" height="20" rx="3" fill="#fd456f"/>
+  <path d="M290.0,126.0 A4.5,4.5 0 1 1 286.5,123.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <polygon points="286.0,121.0 289.5,123.5 286.0,126.0" fill="#fff"/>
+  <rect x="308.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M313.5,128.0 L317.0,131.5 L323.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="340.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M345.5,128.0 L349.0,131.5 L355.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="372.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M377.5,128.0 L381.0,131.5 L387.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="404.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M409.5,128.0 L413.0,131.5 L419.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="436.0" y="118" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M441.5,128.0 L445.0,131.5 L451.0,124.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- AWS CloudWatch · queue depth -->
+  <text x="30" y="157" font-size="9" fill="#212529" font-weight="bold">AWS CloudWatch</text>
+  <text x="30" y="167" font-size="8" fill="#6c757d">queue depth</text>
+  <line x1="169" y1="158.0" x2="457" y2="158.0" stroke="#dadada" stroke-width="1"/>
+  <rect x="182.5" y="148" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M188.0,158.0 L191.5,161.5 L197.5,154.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="214.5" y="148" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M220.0,158.0 L223.5,161.5 L229.5,154.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="246.5" y="148" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M252.0,158.0 L255.5,161.5 L261.5,154.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="278.5" y="148" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M284.0,158.0 L287.5,161.5 L293.5,154.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="310.5" y="148" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M316.0,158.0 L319.5,161.5 L325.5,154.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="342.5" y="148" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M348.0,158.0 L351.5,161.5 L357.5,154.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="374.5" y="148" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M380.0,158.0 L383.5,161.5 L389.5,154.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="406.5" y="148" width="20" height="20" rx="3" fill="#fd456f"/>
+  <path d="M420.5,156.0 A4.5,4.5 0 1 1 417.0,153.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <polygon points="416.5,151.0 420.0,153.5 416.5,156.0" fill="#fff"/>
+  <rect x="438.5" y="148" width="20" height="20" rx="3" fill="#35b0e8"/>
+  <circle cx="444.5" cy="158.0" r="1.3" fill="#fff"/>
+  <circle cx="448.5" cy="158.0" r="1.3" fill="#fff"/>
+  <circle cx="452.5" cy="158.0" r="1.3" fill="#fff"/>
+
+  <!-- New Relic · memory -->
+  <text x="30" y="187" font-size="9" fill="#212529" font-weight="bold">New Relic</text>
+  <text x="30" y="197" font-size="8" fill="#6c757d">memory</text>
+  <line x1="169" y1="188.0" x2="457" y2="188.0" stroke="#dadada" stroke-width="1"/>
+  <rect x="185.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M190.5,188.0 L194.0,191.5 L200.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="217.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M222.5,188.0 L226.0,191.5 L232.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="249.0" y="178" width="20" height="20" rx="3" fill="#fd456f"/>
+  <path d="M263.0,186.0 A4.5,4.5 0 1 1 259.5,183.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <polygon points="259.0,181.0 262.5,183.5 259.0,186.0" fill="#fff"/>
+  <rect x="281.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M286.5,188.0 L290.0,191.5 L296.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="313.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M318.5,188.0 L322.0,191.5 L328.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="345.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M350.5,188.0 L354.0,191.5 L360.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="377.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M382.5,188.0 L386.0,191.5 L392.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="409.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M414.5,188.0 L418.0,191.5 L424.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="441.0" y="178" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M446.5,188.0 L450.0,191.5 L456.0,184.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Prometheus · DB connections -->
+  <text x="30" y="217" font-size="9" fill="#212529" font-weight="bold">Prometheus</text>
+  <text x="30" y="227" font-size="8" fill="#6c757d">DB connections</text>
+  <line x1="169" y1="218.0" x2="457" y2="218.0" stroke="#dadada" stroke-width="1"/>
+  <rect x="187.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M193.0,218.0 L196.5,221.5 L202.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="219.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M225.0,218.0 L228.5,221.5 L234.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="251.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M257.0,218.0 L260.5,221.5 L266.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="283.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M289.0,218.0 L292.5,221.5 L298.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="315.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M321.0,218.0 L324.5,221.5 L330.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="347.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M353.0,218.0 L356.5,221.5 L362.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="379.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M385.0,218.0 L388.5,221.5 L394.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="411.5" y="208" width="20" height="20" rx="3" fill="#28a745"/>
+  <path d="M417.0,218.0 L420.5,221.5 L426.5,214.5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="443.5" y="208" width="20" height="20" rx="3" fill="#35b0e8"/>
+  <circle cx="449.5" cy="218.0" r="1.3" fill="#fff"/>
+  <circle cx="453.5" cy="218.0" r="1.3" fill="#fff"/>
+  <circle cx="457.5" cy="218.0" r="1.3" fill="#fff"/>
+
+  <!-- ... and many more -->
+  <text x="30" y="244" font-size="9" fill="#212529" font-weight="bold">+ 1,994 more metrics</text>
+  <text x="30" y="254" font-size="8" fill="#6c757d">20 per customer × 100 customers</text>
+  <circle cx="185.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="217.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="249.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="281.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="313.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="345.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="377.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="409.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="441.0" cy="240" r="1.2" fill="#dadada"/>
+  <circle cx="187.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="219.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="251.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="283.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="315.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="347.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="379.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="411.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="443.5" cy="246" r="1.2" fill="#dadada"/>
+  <circle cx="190.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="222.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="254.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="286.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="318.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="350.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="382.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="414.0" cy="252" r="1.2" fill="#dadada"/>
+  <circle cx="446.0" cy="252" r="1.2" fill="#dadada"/>
+
+  <!-- Legend -->
+  <rect x="70" y="264" width="14" height="14" rx="2.5" fill="#28a745"/>
+  <text x="89" y="275" font-size="8.5" fill="#212529">done</text>
+  <rect x="120.4" y="264" width="14" height="14" rx="2.5" fill="#35b0e8"/>
+  <text x="139.4" y="275" font-size="8.5" fill="#212529">running</text>
+  <rect x="184.6" y="264" width="14" height="14" rx="2.5" fill="#fd456f"/>
+  <text x="203.6" y="275" font-size="8.5" fill="#212529">failed, retrying</text>
+  <rect x="290.2" y="264" width="14" height="14" rx="2.5" fill="#e6a000"/>
+  <text x="297.2" y="273" text-anchor="middle" font-size="5" fill="#fff" font-weight="bold">429</text>
+  <text x="309.2" y="275" font-size="8.5" fill="#212529">rate limited, waiting</text>
+</svg>
