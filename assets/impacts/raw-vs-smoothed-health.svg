@@ -1,0 +1,149 @@
+<svg viewBox="0 0 560 226" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="560" height="226" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="280.0" y="16" text-anchor="middle" font-size="11" fill="#212529" font-weight="bold">Raw values vs the health we reported (default: last 18 minutes)</text>
+
+  <!-- Zones -->
+  <rect x="70" y="52.0" width="470" height="37.5" fill="#ffe6e6"/>
+  <rect x="70" y="89.5" width="470" height="22.5" fill="#fff283"/>
+  <rect x="70" y="112.0" width="470" height="40.0" fill="#d4edda"/>
+  <text x="536" y="62.0" text-anchor="end" font-size="7" fill="#fd456f" font-weight="bold">UNHEALTHY</text>
+  <text x="536" y="99.5" text-anchor="end" font-size="7" fill="#e6a000" font-weight="bold">AILING</text>
+  <text x="536" y="148.0" text-anchor="end" font-size="7" fill="#4a9c6d" font-weight="bold">HEALTHY</text>
+
+  <!-- Row labels -->
+  <text x="62" y="100.0" text-anchor="end" font-size="9" fill="#212529" font-weight="bold">raw</text>
+  <text x="62" y="111.0" text-anchor="end" font-size="8" fill="#6c757d">every 2 min</text>
+  <text x="62" y="182" text-anchor="end" font-size="9" fill="#212529" font-weight="bold">reported</text>
+  <text x="62" y="192" text-anchor="end" font-size="8" fill="#6c757d">health</text>
+
+  <!-- Raw values: one dot every 2 minutes -->
+
+  <!-- Health changes: one line per change of the reported health -->
+  <line x1="170.3" y1="52" x2="170.3" y2="190" stroke="#e6a000" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="220.4" y1="52" x2="220.4" y2="190" stroke="#4a9c6d" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="283.1" y1="52" x2="283.1" y2="190" stroke="#e6a000" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="308.1" y1="52" x2="308.1" y2="190" stroke="#fd456f" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="352.0" y1="52" x2="352.0" y2="190" stroke="#e6a000" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="377.1" y1="52" x2="377.1" y2="190" stroke="#4a9c6d" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="433.5" y1="52" x2="433.5" y2="190" stroke="#e6a000" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="502.4" y1="52" x2="502.4" y2="190" stroke="#4a9c6d" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="70.0" cy="129.6" r="2.2" fill="#212529"/>
+  <circle cx="76.3" cy="132.2" r="2.2" fill="#212529"/>
+  <circle cx="82.5" cy="124.7" r="2.2" fill="#212529"/>
+  <circle cx="88.8" cy="133.4" r="2.2" fill="#212529"/>
+  <circle cx="95.1" cy="126.5" r="2.2" fill="#212529"/>
+  <circle cx="101.3" cy="73.1" r="2.2" fill="#212529"/>
+  <circle cx="107.6" cy="133.6" r="2.2" fill="#212529"/>
+  <circle cx="113.9" cy="126.9" r="2.2" fill="#212529"/>
+  <circle cx="120.1" cy="133.9" r="2.2" fill="#212529"/>
+  <circle cx="126.4" cy="128.0" r="2.2" fill="#212529"/>
+  <circle cx="132.7" cy="133.5" r="2.2" fill="#212529"/>
+  <circle cx="138.9" cy="133.1" r="2.2" fill="#212529"/>
+  <circle cx="145.2" cy="128.1" r="2.2" fill="#212529"/>
+  <circle cx="151.5" cy="122.1" r="2.2" fill="#212529"/>
+  <circle cx="157.7" cy="77.3" r="2.2" fill="#212529"/>
+  <circle cx="164.0" cy="75.6" r="2.2" fill="#212529"/>
+  <circle cx="170.3" cy="68.5" r="2.2" fill="#212529"/>
+  <circle cx="176.5" cy="120.3" r="2.2" fill="#212529"/>
+  <circle cx="182.8" cy="125.8" r="2.2" fill="#212529"/>
+  <circle cx="189.1" cy="128.5" r="2.2" fill="#212529"/>
+  <circle cx="195.3" cy="119.9" r="2.2" fill="#212529"/>
+  <circle cx="201.6" cy="133.8" r="2.2" fill="#212529"/>
+  <circle cx="207.9" cy="121.6" r="2.2" fill="#212529"/>
+  <circle cx="214.1" cy="130.2" r="2.2" fill="#212529"/>
+  <circle cx="220.4" cy="132.3" r="2.2" fill="#212529"/>
+  <circle cx="226.7" cy="132.7" r="2.2" fill="#212529"/>
+  <circle cx="232.9" cy="129.9" r="2.2" fill="#212529"/>
+  <circle cx="239.2" cy="122.3" r="2.2" fill="#212529"/>
+  <circle cx="245.5" cy="131.8" r="2.2" fill="#212529"/>
+  <circle cx="251.7" cy="125.8" r="2.2" fill="#212529"/>
+  <circle cx="258.0" cy="124.9" r="2.2" fill="#212529"/>
+  <circle cx="264.3" cy="128.9" r="2.2" fill="#212529"/>
+  <circle cx="270.5" cy="69.9" r="2.2" fill="#212529"/>
+  <circle cx="276.8" cy="78.4" r="2.2" fill="#212529"/>
+  <circle cx="283.1" cy="78.5" r="2.2" fill="#212529"/>
+  <circle cx="289.3" cy="75.9" r="2.2" fill="#212529"/>
+  <circle cx="295.6" cy="67.6" r="2.2" fill="#212529"/>
+  <circle cx="301.9" cy="72.0" r="2.2" fill="#212529"/>
+  <circle cx="308.1" cy="74.0" r="2.2" fill="#212529"/>
+  <circle cx="314.4" cy="69.3" r="2.2" fill="#212529"/>
+  <circle cx="320.7" cy="71.6" r="2.2" fill="#212529"/>
+  <circle cx="326.9" cy="74.3" r="2.2" fill="#212529"/>
+  <circle cx="333.2" cy="65.6" r="2.2" fill="#212529"/>
+  <circle cx="339.5" cy="124.0" r="2.2" fill="#212529"/>
+  <circle cx="345.7" cy="130.8" r="2.2" fill="#212529"/>
+  <circle cx="352.0" cy="125.9" r="2.2" fill="#212529"/>
+  <circle cx="358.3" cy="126.6" r="2.2" fill="#212529"/>
+  <circle cx="364.5" cy="121.4" r="2.2" fill="#212529"/>
+  <circle cx="370.8" cy="123.6" r="2.2" fill="#212529"/>
+  <circle cx="377.1" cy="130.2" r="2.2" fill="#212529"/>
+  <circle cx="383.3" cy="119.8" r="2.2" fill="#212529"/>
+  <circle cx="389.6" cy="132.7" r="2.2" fill="#212529"/>
+  <circle cx="395.9" cy="128.2" r="2.2" fill="#212529"/>
+  <circle cx="402.1" cy="123.1" r="2.2" fill="#212529"/>
+  <circle cx="408.4" cy="132.2" r="2.2" fill="#212529"/>
+  <circle cx="414.7" cy="127.2" r="2.2" fill="#212529"/>
+  <circle cx="420.9" cy="78.8" r="2.2" fill="#212529"/>
+  <circle cx="427.2" cy="124.5" r="2.2" fill="#212529"/>
+  <circle cx="433.5" cy="66.1" r="2.2" fill="#212529"/>
+  <circle cx="439.7" cy="125.9" r="2.2" fill="#212529"/>
+  <circle cx="446.0" cy="64.2" r="2.2" fill="#212529"/>
+  <circle cx="452.3" cy="129.8" r="2.2" fill="#212529"/>
+  <circle cx="458.5" cy="67.3" r="2.2" fill="#212529"/>
+  <circle cx="464.8" cy="125.6" r="2.2" fill="#212529"/>
+  <circle cx="471.1" cy="125.8" r="2.2" fill="#212529"/>
+  <circle cx="477.3" cy="127.7" r="2.2" fill="#212529"/>
+  <circle cx="483.6" cy="121.9" r="2.2" fill="#212529"/>
+  <circle cx="489.9" cy="120.3" r="2.2" fill="#212529"/>
+  <circle cx="496.1" cy="127.4" r="2.2" fill="#212529"/>
+  <circle cx="502.4" cy="124.5" r="2.2" fill="#212529"/>
+  <circle cx="508.7" cy="133.6" r="2.2" fill="#212529"/>
+  <circle cx="514.9" cy="124.0" r="2.2" fill="#212529"/>
+  <circle cx="521.2" cy="124.8" r="2.2" fill="#212529"/>
+  <circle cx="527.5" cy="119.6" r="2.2" fill="#212529"/>
+  <circle cx="533.7" cy="122.2" r="2.2" fill="#212529"/>
+  <circle cx="540.0" cy="130.2" r="2.2" fill="#212529"/>
+
+  <!-- Reported health band -->
+  <rect x="70.5" y="176" width="99.3" height="14" rx="3" fill="#4a9c6d"/>
+  <rect x="170.8" y="176" width="49.1" height="14" rx="3" fill="#e6a000"/>
+  <rect x="220.9" y="176" width="61.7" height="14" rx="3" fill="#4a9c6d"/>
+  <rect x="283.6" y="176" width="24.1" height="14" rx="3" fill="#e6a000"/>
+  <rect x="308.6" y="176" width="42.9" height="14" rx="3" fill="#fd456f"/>
+  <rect x="352.5" y="176" width="24.1" height="14" rx="3" fill="#e6a000"/>
+  <rect x="377.6" y="176" width="55.4" height="14" rx="3" fill="#4a9c6d"/>
+  <rect x="434.0" y="176" width="67.9" height="14" rx="3" fill="#e6a000"/>
+  <rect x="502.9" y="176" width="36.6" height="14" rx="3" fill="#4a9c6d"/>
+
+  <!-- Scenario labels -->
+  <path d="M98.3,48 V44 H104.3 V48" fill="none" stroke="#6c757d" stroke-width="0.8"/>
+  <text x="101.3" y="30" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">1 spike</text>
+  <text x="101.3" y="40" text-anchor="middle" font-size="8" fill="#6c757d">ignored</text>
+  <path d="M154.7,48 V44 H173.3 V48" fill="none" stroke="#6c757d" stroke-width="0.8"/>
+  <text x="164.0" y="30" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">6 min of trouble</text>
+  <text x="164.0" y="40" text-anchor="middle" font-size="8" fill="#6c757d">only a warning</text>
+  <path d="M267.5,48 V44 H336.2 V48" fill="none" stroke="#6c757d" stroke-width="0.8"/>
+  <text x="301.9" y="30" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">a real outage</text>
+  <text x="301.9" y="40" text-anchor="middle" font-size="8" fill="#6c757d">red after ~10 min</text>
+  <path d="M417.9,48 V44 H461.5 V48" fill="none" stroke="#6c757d" stroke-width="0.8"/>
+  <text x="439.7" y="30" text-anchor="middle" font-size="9" fill="#212529" font-weight="bold">flapping</text>
+  <text x="439.7" y="40" text-anchor="middle" font-size="8" fill="#6c757d">one calm warning</text>
+
+  <!-- Time axis -->
+  <line x1="70" y1="200" x2="540" y2="200" stroke="#dadada" stroke-width="1"/>
+  <line x1="70.0" y1="200" x2="70.0" y2="203" stroke="#6c757d" stroke-width="1"/>
+  <text x="70.0" y="213" text-anchor="middle" font-size="8" fill="#6c757d">0 min</text>
+  <line x1="164.0" y1="200" x2="164.0" y2="203" stroke="#6c757d" stroke-width="1"/>
+  <text x="164.0" y="213" text-anchor="middle" font-size="8" fill="#6c757d">30 min</text>
+  <line x1="258.0" y1="200" x2="258.0" y2="203" stroke="#6c757d" stroke-width="1"/>
+  <text x="258.0" y="213" text-anchor="middle" font-size="8" fill="#6c757d">60 min</text>
+  <line x1="352.0" y1="200" x2="352.0" y2="203" stroke="#6c757d" stroke-width="1"/>
+  <text x="352.0" y="213" text-anchor="middle" font-size="8" fill="#6c757d">90 min</text>
+  <line x1="446.0" y1="200" x2="446.0" y2="203" stroke="#6c757d" stroke-width="1"/>
+  <text x="446.0" y="213" text-anchor="middle" font-size="8" fill="#6c757d">120 min</text>
+  <line x1="540.0" y1="200" x2="540.0" y2="203" stroke="#6c757d" stroke-width="1"/>
+  <text x="540.0" y="213" text-anchor="middle" font-size="8" fill="#6c757d">150 min</text>
+</svg>

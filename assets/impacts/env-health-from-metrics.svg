@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="576" viewBox="48 50 1056 576" font-family="Lato, system-ui, sans-serif">
+  <!-- background -->
+  <rect x="48" y="50" width="1056" height="576" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="72" y="94" font-size="32" font-weight="800" fill="#2b2f36" letter-spacing="-0.3">Health of Production Environment</text>
+  <text x="72" y="128" font-size="17" fill="#8a919c">every metric has its own health · the worst one wins</text>
+
+  <!-- legend -->
+  <circle cx="790" cy="122" r="6" fill="#14a68c"/>
+  <text x="804" y="128" font-size="16" fill="#2b2f36">healthy</text>
+  <circle cx="883.5" cy="122" r="6" fill="#f59e4b"/>
+  <text x="897.5" y="128" font-size="16" fill="#2b2f36">ailing</text>
+  <circle cx="968.5" cy="122" r="6" fill="#d6336c"/>
+  <text x="982.5" y="128" font-size="16" fill="#2b2f36">unhealthy</text>
+
+  <!-- recompute moments: every start or end of any metric span -->
+  <line x1="612.0" y1="162" x2="612.0" y2="476" stroke="#e4e6ea" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="664.0" y1="162" x2="664.0" y2="476" stroke="#e4e6ea" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="690.0" y1="162" x2="690.0" y2="476" stroke="#e4e6ea" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="703.0" y1="162" x2="703.0" y2="476" stroke="#e4e6ea" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="781.0" y1="162" x2="781.0" y2="476" stroke="#e4e6ea" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="794.0" y1="162" x2="794.0" y2="476" stroke="#e4e6ea" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <line x1="807.0" y1="162" x2="807.0" y2="476" stroke="#e4e6ea" stroke-width="1.5" stroke-dasharray="3 4"/>
+
+  <!-- one lane per metric -->
+  <text x="72" y="193" font-size="16" font-weight="600" fill="#2b2f36">VM CPU utilization</text>
+  <rect x="300.0" y="176" width="361.0" height="22" rx="11" fill="#14a68c"/>
+  <rect x="667.0" y="176" width="33.0" height="22" rx="11" fill="#f59e4b"/>
+  <rect x="706.0" y="176" width="98.0" height="22" rx="11" fill="#d6336c"/>
+  <rect x="810.0" y="176" width="270.0" height="22" rx="11" fill="#14a68c"/>
+  <text x="72" y="239" font-size="16" font-weight="600" fill="#2b2f36">App errors</text>
+  <rect x="300.0" y="222" width="387.0" height="22" rx="11" fill="#14a68c"/>
+  <rect x="693.0" y="222" width="98.0" height="22" rx="11" fill="#d6336c"/>
+  <rect x="797.0" y="222" width="283.0" height="22" rx="11" fill="#14a68c"/>
+  <text x="72" y="285" font-size="16" font-weight="600" fill="#2b2f36">Queued jobs, 5 min</text>
+  <rect x="300.0" y="268" width="309.0" height="22" rx="11" fill="#14a68c"/>
+  <rect x="615.0" y="268" width="163.0" height="22" rx="11" fill="#f59e4b"/>
+  <rect x="784.0" y="268" width="296.0" height="22" rx="11" fill="#14a68c"/>
+  <text x="72" y="331" font-size="16" font-weight="600" fill="#2b2f36">Postgres CPU</text>
+  <rect x="300.0" y="314" width="780.0" height="22" rx="11" fill="#14a68c"/>
+  <text x="72" y="377" font-size="16" font-weight="600" fill="#2b2f36">LB 5xx responses</text>
+  <rect x="300.0" y="360" width="780.0" height="22" rx="11" fill="#14a68c"/>
+
+  <!-- divider -->
+  <line x1="72" y1="424" x2="1080" y2="424" stroke="#e4e6ea" stroke-width="2"/>
+
+  <!-- environment lane: worst health at every moment -->
+  <text x="72" y="466" font-size="18" font-weight="800" fill="#2b2f36">Environment</text>
+  <rect x="300.0" y="444" width="309.0" height="28" rx="14" fill="#14a68c"/>
+  <rect x="615.0" y="444" width="72.0" height="28" rx="14" fill="#f59e4b"/>
+  <rect x="693.0" y="444" width="111.0" height="28" rx="14" fill="#d6336c"/>
+  <rect x="810.0" y="444" width="270.0" height="28" rx="14" fill="#14a68c"/>
+
+  <!-- events: written only when the environment health changes -->
+  <line x1="612.0" y1="480" x2="612.0" y2="504" stroke="#f59e4b" stroke-width="2"/>
+  <circle cx="612.0" cy="480" r="5" fill="#f59e4b"/>
+  <rect x="545.0" y="504" width="134" height="26" rx="13" fill="#fdeeda"/>
+  <text x="612.0" y="522" font-size="14" font-weight="700" fill="#a8621c" text-anchor="middle">10:24 · ailing</text>
+  <line x1="690.0" y1="480" x2="690.0" y2="540" stroke="#d6336c" stroke-width="2"/>
+  <circle cx="690.0" cy="480" r="5" fill="#d6336c"/>
+  <rect x="611.0" y="540" width="158" height="26" rx="13" fill="#fbe3ec"/>
+  <text x="690.0" y="558" font-size="14" font-weight="700" fill="#b52560" text-anchor="middle">10:30 · unhealthy</text>
+  <line x1="807.0" y1="480" x2="807.0" y2="504" stroke="#14a68c" stroke-width="2"/>
+  <circle cx="807.0" cy="480" r="5" fill="#14a68c"/>
+  <rect x="736.0" y="504" width="142" height="26" rx="13" fill="#dcf2ee"/>
+  <text x="807.0" y="522" font-size="14" font-weight="700" fill="#0d7a67" text-anchor="middle">10:39 · healthy</text>
+
+  <!-- axis labels -->
+  <text x="300" y="604" font-size="15" fill="#8a919c">10:00</text>
+  <text x="1080" y="604" font-size="15" fill="#8a919c" text-anchor="end">11:00</text>
+  <text x="72" y="522" font-size="15" fill="#8a919c">saved only on change</text>
+</svg>
