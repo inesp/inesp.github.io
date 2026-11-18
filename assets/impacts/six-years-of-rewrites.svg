@@ -1,0 +1,163 @@
+<svg viewBox="0 0 1020 544" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="1020" height="544" fill="#fff"/>
+
+  <!-- Title -->
+  <text x="510.0" y="22" text-anchor="middle" font-size="15" fill="#212529" font-weight="bold">Impacts, 2020 to 2026: what we changed and when</text>
+  <text x="510.0" y="38" text-anchor="middle" font-size="10" fill="#6c757d">from the Sleuth git history</text>
+
+  <!-- Columns -->
+  <text x="174.0" y="57" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2020 H1</text>
+  <line x1="110.0" y1="62" x2="110.0" y2="520.5" stroke="#dadada" stroke-width="0.5"/>
+  <text x="302.0" y="57" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2020 H2</text>
+  <line x1="238.0" y1="62" x2="238.0" y2="520.5" stroke="#dadada" stroke-width="0.5"/>
+  <text x="430.0" y="57" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2021 H1</text>
+  <line x1="366.0" y1="62" x2="366.0" y2="520.5" stroke="#dadada" stroke-width="0.5"/>
+  <text x="558.0" y="57" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2021 H2</text>
+  <line x1="494.0" y1="62" x2="494.0" y2="520.5" stroke="#dadada" stroke-width="0.5"/>
+  <text x="686.0" y="57" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2022</text>
+  <line x1="622.0" y1="62" x2="622.0" y2="520.5" stroke="#dadada" stroke-width="0.5"/>
+  <text x="814.0" y="57" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2023</text>
+  <line x1="750.0" y1="62" x2="750.0" y2="520.5" stroke="#dadada" stroke-width="0.5"/>
+  <text x="942.0" y="57" text-anchor="middle" font-size="10" fill="#212529" font-weight="bold">2024–26</text>
+  <line x1="878.0" y1="62" x2="878.0" y2="520.5" stroke="#dadada" stroke-width="0.5"/>
+
+  <!-- API calls -->
+  <line x1="14" y1="66.0" x2="878.0" y2="66.0" stroke="#dadada" stroke-width="0.5"/>
+  <rect x="14" y="73.0" width="86" height="22" rx="5" fill="#35b0e8"/>
+  <text x="22" y="88.0" font-size="10" fill="#fff" font-weight="bold">API calls</text>
+  <circle cx="246.0" cy="78.0" r="2.6" fill="#35b0e8"/>
+  <text x="252.0" y="81.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Oct</tspan> retries capped at 6 per</text>
+  <text x="252.0" y="91.5" font-size="8.5" fill="#212529">job (was 11 retries × 3</text>
+  <text x="252.0" y="102.0" font-size="8.5" fill="#212529">requests)</text>
+  <circle cx="246.0" cy="115.5" r="2.6" fill="#35b0e8"/>
+  <text x="252.0" y="118.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Nov</tspan> stop polling sources</text>
+  <text x="252.0" y="129.0" font-size="8.5" fill="#212529">with no data for 48h</text>
+  <circle cx="374.0" cy="78.0" r="2.6" fill="#35b0e8"/>
+  <text x="380.0" y="81.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Jan</tspan> cache 429s per API</text>
+  <text x="380.0" y="91.5" font-size="8.5" fill="#212529">token in Redis, parse every</text>
+  <text x="380.0" y="102.0" font-size="8.5" fill="#212529">Retry-After variant</text>
+  <circle cx="630.0" cy="78.0" r="2.6" fill="#35b0e8"/>
+  <text x="636.0" y="81.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Aug</tspan> circuit breaker per</text>
+  <text x="636.0" y="91.5" font-size="8.5" fill="#212529">domain</text>
+  <circle cx="758.0" cy="78.0" r="2.6" fill="#35b0e8"/>
+  <text x="764.0" y="81.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Apr</tspan> circuit breaker per</text>
+  <text x="764.0" y="91.5" font-size="8.5" fill="#212529">Azure tenant</text>
+  <circle cx="758.0" cy="105.0" r="2.6" fill="#35b0e8"/>
+  <text x="764.0" y="108.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Jul</tspan> load shedding: Celery</text>
+  <text x="764.0" y="118.5" font-size="8.5" fill="#212529">task expiry, drop jobs not</text>
+  <text x="764.0" y="129.0" font-size="8.5" fill="#212529">started in 4h</text>
+  <circle cx="758.0" cy="142.5" r="2.6" fill="#35b0e8"/>
+  <text x="764.0" y="145.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Nov</tspan> stop polling 1,832</text>
+  <text x="764.0" y="156.0" font-size="8.5" fill="#212529">sources of churned orgs</text>
+
+  <!-- Storage + jobs -->
+  <line x1="14" y1="175.5" x2="878.0" y2="175.5" stroke="#dadada" stroke-width="0.5"/>
+  <rect x="14" y="182.5" width="86" height="34" rx="5" fill="#06bdad"/>
+  <text x="22" y="197.5" font-size="10" fill="#fff" font-weight="bold">Storage</text>
+  <text x="22" y="209.5" font-size="10" fill="#fff" font-weight="bold">+ jobs</text>
+  <circle cx="118.0" cy="187.5" r="2.6" fill="#06bdad"/>
+  <text x="124.0" y="190.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Mar</tspan> Postgres: 2 values per</text>
+  <text x="124.0" y="201.0" font-size="8.5" fill="#212529">deploy, at +15 and +60 min</text>
+  <circle cx="246.0" cy="187.5" r="2.6" fill="#06bdad"/>
+  <text x="252.0" y="190.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Oct</tspan> Postgres: 1 row per</text>
+  <text x="252.0" y="201.0" font-size="8.5" fill="#212529">value, every 2 min</text>
+  <circle cx="246.0" cy="214.5" r="2.6" fill="#06bdad"/>
+  <text x="252.0" y="217.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Nov</tspan> collection sharded into</text>
+  <text x="252.0" y="228.0" font-size="8.5" fill="#212529">several Celery tasks</text>
+  <circle cx="374.0" cy="187.5" r="2.6" fill="#06bdad"/>
+  <text x="380.0" y="190.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Feb</tspan> borders cached in</text>
+  <text x="380.0" y="201.0" font-size="8.5" fill="#212529">Redis, recalculated every</text>
+  <text x="380.0" y="211.5" font-size="8.5" fill="#212529">30 min</text>
+  <circle cx="502.0" cy="187.5" r="2.6" fill="#06bdad"/>
+  <text x="508.0" y="190.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Oct</tspan> IOPS credits gone: flag</text>
+  <text x="508.0" y="201.0" font-size="8.5" fill="#212529">to store only every n-th</text>
+  <text x="508.0" y="211.5" font-size="8.5" fill="#212529">value</text>
+  <circle cx="502.0" cy="225.0" r="2.6" fill="#06bdad"/>
+  <text x="508.0" y="228.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Oct</tspan> random ±15 min on the</text>
+  <text x="508.0" y="238.5" font-size="8.5" fill="#212529">cache TTL</text>
+  <circle cx="630.0" cy="187.5" r="2.6" fill="#06bdad"/>
+  <text x="636.0" y="190.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Jan</tspan> 1 Redis list per</text>
+  <text x="636.0" y="201.0" font-size="8.5" fill="#212529">metric, 14-day TTL;</text>
+  <text x="636.0" y="211.5" font-size="8.5" fill="#212529">Postgres table dropped</text>
+  <circle cx="758.0" cy="187.5" r="2.6" fill="#06bdad"/>
+  <text x="764.0" y="190.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Mar</tspan> Celery broker: Redis →</text>
+  <text x="764.0" y="201.0" font-size="8.5" fill="#212529">RabbitMQ</text>
+
+  <!-- Algorithm -->
+  <line x1="14" y1="258.0" x2="878.0" y2="258.0" stroke="#dadada" stroke-width="0.5"/>
+  <rect x="14" y="265.0" width="86" height="22" rx="5" fill="#ff7898"/>
+  <text x="22" y="280.0" font-size="10" fill="#fff" font-weight="bold">Algorithm</text>
+  <circle cx="118.0" cy="270.0" r="2.6" fill="#ff7898"/>
+  <text x="124.0" y="273.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Mar</tspan> kNN outlier detection</text>
+  <text x="124.0" y="283.5" font-size="8.5" fill="#212529">(PyOD)</text>
+  <circle cx="246.0" cy="270.0" r="2.6" fill="#ff7898"/>
+  <text x="252.0" y="273.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Oct</tspan> switch to a 2-min</text>
+  <text x="252.0" y="283.5" font-size="8.5" fill="#212529">timeseries; kNN stops</text>
+  <text x="252.0" y="294.0" font-size="8.5" fill="#212529">working</text>
+  <circle cx="246.0" cy="307.5" r="2.6" fill="#ff7898"/>
+  <text x="252.0" y="310.5" font-size="8.5" fill="#212529"><tspan font-weight="bold">Nov</tspan> error metrics are</text>
+  <text x="252.0" y="321.0" font-size="8.5" fill="#212529">mostly 0s, so 1 error =</text>
+  <text x="252.0" y="331.5" font-size="8.5" fill="#212529">unhealthy</text>
+  <circle cx="246.0" cy="345.0" r="2.6" fill="#ff7898"/>
+  <text x="252.0" y="348.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Dec</tspan> remove outliers first,</text>
+  <text x="252.0" y="358.5" font-size="8.5" fill="#212529">then mean + 3σ</text>
+  <circle cx="374.0" cy="270.0" r="2.6" fill="#ff7898"/>
+  <text x="380.0" y="273.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Jan</tspan> KDE for major outliers;</text>
+  <text x="380.0" y="283.5" font-size="8.5" fill="#212529">changes reviewed on plots</text>
+  <circle cx="374.0" cy="297.0" r="2.6" fill="#ff7898"/>
+  <text x="380.0" y="300.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Feb</tspan> DBSCAN in 2D, elbow</text>
+  <text x="380.0" y="310.5" font-size="8.5" fill="#212529">method, noisiness score</text>
+  <circle cx="374.0" cy="324.0" r="2.6" fill="#ff7898"/>
+  <text x="380.0" y="327.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Mar</tspan> rolled out per org</text>
+  <text x="380.0" y="337.5" font-size="8.5" fill="#212529">behind a feature flag; kNN</text>
+  <text x="380.0" y="348.0" font-size="8.5" fill="#212529">deleted</text>
+  <circle cx="502.0" cy="270.0" r="2.6" fill="#ff7898"/>
+  <text x="508.0" y="273.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Nov</tspan> health smoothing</text>
+  <text x="508.0" y="283.5" font-size="8.5" fill="#212529">rewritten, pips removed</text>
+
+  <!-- Customers asked for -->
+  <line x1="14" y1="378.0" x2="878.0" y2="378.0" stroke="#dadada" stroke-width="0.5"/>
+  <rect x="14" y="385.0" width="86" height="34" rx="5" fill="#e6a000"/>
+  <text x="22" y="400.0" font-size="10" fill="#fff" font-weight="bold">Customers</text>
+  <text x="22" y="412.0" font-size="10" fill="#fff" font-weight="bold">asked for</text>
+  <circle cx="118.0" cy="390.0" r="2.6" fill="#e6a000"/>
+  <text x="124.0" y="393.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Mar</tspan> first sources: Sentry</text>
+  <text x="124.0" y="403.5" font-size="8.5" fill="#212529">and Rollbar errors</text>
+  <circle cx="246.0" cy="390.0" r="2.6" fill="#e6a000"/>
+  <text x="252.0" y="393.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Oct</tspan> manual health override</text>
+  <circle cx="374.0" cy="390.0" r="2.6" fill="#e6a000"/>
+  <text x="380.0" y="393.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Jan</tspan> custom metrics, pushed</text>
+  <text x="380.0" y="403.5" font-size="8.5" fill="#212529">by the customer</text>
+  <circle cx="374.0" cy="417.0" r="2.6" fill="#e6a000"/>
+  <text x="380.0" y="420.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Mar</tspan> change failure rate and</text>
+  <text x="380.0" y="430.5" font-size="8.5" fill="#212529">MTTR</text>
+  <circle cx="374.0" cy="444.0" r="2.6" fill="#e6a000"/>
+  <text x="380.0" y="447.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Mar</tspan> minimum threshold per</text>
+  <text x="380.0" y="457.5" font-size="8.5" fill="#212529">metric</text>
+  <circle cx="374.0" cy="471.0" r="2.6" fill="#e6a000"/>
+  <text x="380.0" y="474.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Apr</tspan> sensitivity setting per</text>
+  <text x="380.0" y="484.5" font-size="8.5" fill="#212529">project</text>
+  <circle cx="374.0" cy="498.0" r="2.6" fill="#e6a000"/>
+  <text x="380.0" y="501.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">May</tspan> CI builds as a source</text>
+  <circle cx="502.0" cy="390.0" r="2.6" fill="#e6a000"/>
+  <text x="508.0" y="393.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Jun</tspan> rollbacks as a health</text>
+  <text x="508.0" y="403.5" font-size="8.5" fill="#212529">state</text>
+  <circle cx="502.0" cy="417.0" r="2.6" fill="#e6a000"/>
+  <text x="508.0" y="420.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Aug</tspan> incidents as a source:</text>
+  <text x="508.0" y="430.5" font-size="8.5" fill="#212529">FireHydrant, then</text>
+  <text x="508.0" y="441.0" font-size="8.5" fill="#212529">PagerDuty, Opsgenie</text>
+  <circle cx="630.0" cy="390.0" r="2.6" fill="#e6a000"/>
+  <text x="636.0" y="393.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Jan</tspan> incidents recalculate</text>
+  <text x="636.0" y="403.5" font-size="8.5" fill="#212529">past health</text>
+  <circle cx="630.0" cy="417.0" r="2.6" fill="#e6a000"/>
+  <text x="636.0" y="420.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Apr</tspan> Datadog monitors as a</text>
+  <text x="636.0" y="430.5" font-size="8.5" fill="#212529">source</text>
+  <circle cx="758.0" cy="390.0" r="2.6" fill="#e6a000"/>
+  <text x="764.0" y="393.0" font-size="8.5" fill="#212529"><tspan font-weight="bold">Nov</tspan> indisputable threshold</text>
+
+  <!-- The quiet years -->
+  <text x="942.0" y="287.2" text-anchor="middle" font-size="11" fill="#6c757d" font-style="italic">maintenance only</text>
+  <text x="942.0" y="302.2" text-anchor="middle" font-size="9" fill="#6c757d">no big changes</text>
+  <line x1="1006" y1="62" x2="1006" y2="520.5" stroke="#212529" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="1002" y="534.5" text-anchor="end" font-size="9" fill="#212529" font-weight="bold">archived, Dec 2026</text>
+</svg>

@@ -36,6 +36,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  // Breathing room instead of a shadow: lets figures read as figures.
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 
   &.full-width{
     width:100%
@@ -55,6 +58,12 @@
 
   &.yellow{
     border: 1rem solid $color-yellow;
+  }
+
+  // For screens (UI mocks, screenshots), not for diagrams: lifts them off the page.
+  &.shadow{
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(31, 41, 51, 0.10);
   }
 }
 

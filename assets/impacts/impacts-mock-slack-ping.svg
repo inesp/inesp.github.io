@@ -1,15 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1152" height="692" viewBox="0 0 1152 692" font-family="Lato, system-ui, sans-serif">
-  <defs>
-    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
-      <feDropShadow dx="0" dy="6" stdDeviation="13" flood-color="#1f2933" flood-opacity="0.10"/>
-    </filter>
-  </defs>
 
   <!-- background -->
   <rect width="1152" height="692" fill="#ffffff"/>
 
-  <!-- card -->
-  <rect x="16" y="12" width="1120" height="648" rx="24" fill="#ffffff" filter="url(#cardShadow)"/>
 
   <!-- ============ message 1: degradation ============ -->
   <!-- avatar -->
