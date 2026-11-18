@@ -1,6 +1,6 @@
 ---
 title: "How I Built Anomaly Detection from Scratch (and How We Ran It for Customers for 6 Years)"
-updated: 2026-10-15
+updated: 2026-11-18
 tags: ["Algorithms"]
 biblio:
   - link: https://en.wikipedia.org/wiki/Normal_distribution
@@ -117,7 +117,7 @@ The easy way out is to set the **threshold really high**, above anything we'd re
 
 The other way out is to set it low. Then the alerts cry wolf too often and thus people learn to ignore them. 
 
-![Where to draw the threshold?](/assets/impacts/where-to-draw-thresholds.png)
+![Where to draw the threshold?](/assets/impacts/where-to-draw-thresholds.png){:.shadow}
 
 **We want thresholds as low as possible, without false alarms, and we want them to follow the data as it changes.** And this demands a lot of judgment, a lot of thinking, a lot of weighing the pros and cons against each other. This isn't a trivial task either for a human engineer or for an LLM.
 
@@ -180,7 +180,6 @@ But in reality, some **customers won't think twice before defining 100s of metri
 
 </details>
 
-
 ## The 3 health states
 
 We don't just do binary "good/bad". We're sophisticated. And thus have all of _three_ states:
@@ -200,17 +199,41 @@ The user didn't have to know how our algorithm works. She just wanted to know wh
 
 **1. An overview of recent health aggregated over all the metrics in the environment.** We collect and analyze the data per metric, but to the user we show just the aggregated value for one whole environment, so production or staging or testing server 5. 
 
-To make it more visually polished, we group the data points into "pips". Here's an example of 1h of pips, each representing 3 mins of time. Each pip shows the worst health seen in those 3 minutes. This is very useful when researching an ongoing problem. It was my favorite place to easily see which metrics are bad, which helped me figure out where to search for the cause:
+To make it more visually polished, we group the data points into "pips". Here's an example of 1h of pips, each representing 3 mins of time. Each pip shows the worst health seen in those 3 minutes. 
 
-![Production overview: the last hour as 20 pips of 3 minutes](/assets/impacts/impacts-mock-wall-of-green.svg)
+The pips show the raw values, not smoothed in any way. This is very useful when researching an ongoing problem. It was my favorite place to check when debugging an incident:
+
+![Production overview: the last hour as 20 pips of 3 minutes](/assets/impacts/impacts-mock-wall-of-green.svg){:.shadow}
 
 **2. A deploy view.** For each deploy, we show the health of the environment while this deploy was the latest one. This helps find deploys that were particularly problematic:
 
-![Deploy view: health since the deploy and a verdict for every metric](/assets/impacts/impacts-mock-bad-deploy.svg)
+![Deploy view: health since the deploy and a verdict for every metric](/assets/impacts/impacts-mock-bad-deploy.svg){:.shadow}
 
-**3. A Slack ping when health changes.** Optionally, customers could subscribe to health changes, so they didn't have to monitor our dashboards manually. An important side note here is that I put extra effort into making sure to smooth out the health changes. It was important that the pinging not be noisy, pinging for healthy then unhealthy shortly after then healthy again and so on. So the ping doesn't react to single values: the health is averaged over the last 18 minutes, and it only changes when things stay bad for a while. 
+**3. A Slack ping when health changes.** Optionally, customers could subscribe to health changes, so they didn't have to monitor our dashboards manually:
 
-![Slack ping: what changed, how far off, the latest deploy and everything else shipped recently](/assets/impacts/impacts-mock-slack-ping.svg)
+![Slack ping: what changed, how far off, the latest deploy and everything else shipped recently](/assets/impacts/impacts-mock-slack-ping.svg){:.shadow}
+
+## The flip-floppy nature of metrics
+
+In theory, aggregating is easy: always show the worst health. If 5 metrics are healthy, but 1 is unhealthy, then the environment health must of course be unhealthy.
+
+The practice is a bit different. Metrics are very unstable, and thus their healths are very unstable. But then again, when we _literally_ get a spike in CPU, then that value _literally_ is unhealthy.
+
+Still, we don't want to flip the metric health too often, because it is tied into alerting.
+
+I had to make a choice: do I want the health to be noisy, flip-floppy or would I rather it was slow, unresponsive?
+
+I chose slow!
+
+I don't flip the health because of 1 data point. I demand several.
+
+This is why it takes the system a bit of time to react to value changes. On average, we call the health ailing after about 3 minutes of bad values and unhealthy after another 6 to 8 minutes.
+
+![Raw values vs the reported health: a spike is ignored, 6 minutes of trouble is only a warning, a real outage turns red after about 10 minutes, flapping stays one calm warning](/assets/impacts/raw-vs-smoothed-health.svg)
+
+Another detail is that ailing always precedes unhealthy, no matter what values we see. No system can ever go from healthy directly into unhealthy. It always crosses into ailing first.
+
+(Unless you have hooked up our system directly into an incident management tool like PagerDuty or Opsgenie, but that is a topic for another post.)
 
 ## Naive Attempt 1: Regular, old average + 3x standard deviation {#naive-attempt-1}
 
@@ -867,6 +890,31 @@ Here we can see 2 significant incidents that lasted for a while. Still, KDE iden
 ![Sustained incident example](/assets/impacts/errors_5_blog_charts.png)
 
 
+## Millions of API calls to other people's systems
+
+And then there is the other aspect of collecting millions of values per day: **the millions of API calls that are needed to get these values** and also **the millions of background jobs that handle these API calls**. 
+
+Each API call is wrapped into its own background job.
+
+This was a choice we made. Our main reason was simply the incredible ease with which the API call can get retriggered on errors and the incredible ease with which we can determine the nature of the problem: _does it even make sense to retry_?
+
+![Many metrics from many providers, every value its own background job: most done, some retrying, some rate limited](/assets/impacts/one-dot-one-job.svg)
+
+We did isolate these API calls from all other processes by giving them dedicated queues. 
+
+However... we didn't isolate them from one another. This meant that one provider was able to poison the queues.
+
+This usually happened when the provider had an incident, an incident often meant that the API calls got much slower. Suddenly the backgrond jobs are much slower and suddenly the throughput drops, but we keep scheduling ever more jobs, because our code re-tries every API call that couldn't succeed... up to 6 times.
+
+So the throughput is much smaller, but we have many more jobs. Amazing!
+
+At one point I built us a circuit breaker and it helped. Somewhat :-D But a circuit breaker isn't enough. It lets us fail fast, which is great, but we still need to build systems that can handle the queues which will now be getting longer and longer.
+
+The most decisive weapon we used was **load shedding**. Every job got an expiry date: if 4 hours passed and it still hadn't started, we dropped it. Yes, that leaves holes in the history. But we've decided that customers care far more about the latest data, about whether production is healthy right now, than about a complete history. 
+
+![One queue of API-call jobs, filling faster than it empties: failed calls go back to the end of the line, the worker calls the API for fresh jobs and drops the ones that are too old](/assets/impacts/queue-overflowing.svg)
+
+
 ## Database overhaul: replacing Postgres with Redis {#redis-storage}
 
 **It took less than 1 year for Postgres's alarm to start going off regularly.** 
@@ -916,7 +964,7 @@ The upside of the new setup:
 
 In January 2022 we dropped the old table. I really, really hate deleting production data!!!
 
-![The PR that dropped the impact table](/assets/impacts/truncate-impact-pr.png)
+![The PR that dropped the impact table](/assets/impacts/truncate-impact-pr.png){:.shadow}
 
 Before we did, I created a test copy of the database in AWS to look at the data one last time. 
 
@@ -942,6 +990,13 @@ After a big change, like a migration or a rewrite, the last 14 days aren't "norm
 The health of each deploy also fed into the **Change Failure Rate**, one of the DORA metrics, and that was shown per team. Nobody likes being the team with the worst metrics. One team really did have the most Sentry errors, but for reasons outside its control. So they wanted to override it. Once a number is used to compare people, people care about how it makes them look, not only about whether it's correct.
 
 ![A team overrides its health by hand](/assets/impacts/ask-manual-override.svg)
+
+
+## 6 years in one picture
+
+Here is a quick overview of the timeline of various changes (some we haven't even talked about): 
+
+![6 years of Impacts: API calls, storage and jobs, the algorithm and what customers asked for, every event a real change in the repo](/assets/impacts/six-years-of-rewrites.svg)
 
 
 ## So... how did the users like it?
