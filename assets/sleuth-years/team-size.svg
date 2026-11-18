@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="180" fill="#fff"/>
+  <text x="30.0" y="14.0" font-size="11" fill="#212529" text-anchor="start" font-weight="bold">Engineers committing code that month (5+ commits)</text>
+  <!-- Grid lines -->
+  <line x1="30.0" y1="158.0" x2="510.0" y2="158.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="161.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <line x1="30.0" y1="116.7" x2="510.0" y2="116.7" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="119.7" font-size="8" fill="#6c757d" text-anchor="end">5</text>
+  <line x1="30.0" y1="75.3" x2="510.0" y2="75.3" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="78.3" font-size="8" fill="#6c757d" text-anchor="end">10</text>
+  <line x1="30.0" y1="34.0" x2="510.0" y2="34.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="37.0" font-size="8" fill="#6c757d" text-anchor="end">15</text>
+  <!-- Step line -->
+  <path d="M30.0,133.2H35.9V133.2H41.7V124.9H47.6V124.9H53.4V124.9H59.3V124.9H65.1V116.7H71.0V116.7H76.8V116.7H82.7V116.7H88.5V116.7H94.4V116.7H100.2V108.4H106.1V108.4H112.0V116.7H117.8V116.7H123.7V108.4H129.5V108.4H135.4V116.7H141.2V108.4H147.1V108.4H152.9V116.7H158.8V108.4H164.6V108.4H170.5V108.4H176.3V108.4H182.2V100.1H188.0V100.1H193.9V100.1H199.8V100.1H205.6V83.6H211.5V58.8H217.3V67.1H223.2V67.1H229.0V50.5H234.9V58.8H240.7V50.5H246.6V42.3H252.4V58.8H258.3V58.8H264.1V50.5H270.0V67.1H275.9V67.1H281.7V67.1H287.6V83.6H293.4V91.9H299.3V100.1H305.1V83.6H311.0V83.6H316.8V75.3H322.7V67.1H328.5V83.6H334.4V83.6H340.2V91.9H346.1V83.6H352.0V100.1H357.8V83.6H363.7V83.6H369.5V100.1H375.4V91.9H381.2V91.9H387.1V83.6H392.9V100.1H398.8V124.9H404.6V133.2H410.5V116.7H416.3V133.2H422.2V124.9H428.0V124.9H433.9V124.9H439.8V124.9H445.6V124.9H451.5V124.9H457.3V124.9H463.2V124.9H469.0V116.7H474.9V124.9H480.7V124.9H486.6V133.2H492.4V158.0H30Z" fill="#e1f5fe"/>
+  <path d="M30.0,133.2H35.9V133.2H41.7V124.9H47.6V124.9H53.4V124.9H59.3V124.9H65.1V116.7H71.0V116.7H76.8V116.7H82.7V116.7H88.5V116.7H94.4V116.7H100.2V108.4H106.1V108.4H112.0V116.7H117.8V116.7H123.7V108.4H129.5V108.4H135.4V116.7H141.2V108.4H147.1V108.4H152.9V116.7H158.8V108.4H164.6V108.4H170.5V108.4H176.3V108.4H182.2V100.1H188.0V100.1H193.9V100.1H199.8V100.1H205.6V83.6H211.5V58.8H217.3V67.1H223.2V67.1H229.0V50.5H234.9V58.8H240.7V50.5H246.6V42.3H252.4V58.8H258.3V58.8H264.1V50.5H270.0V67.1H275.9V67.1H281.7V67.1H287.6V83.6H293.4V91.9H299.3V100.1H305.1V83.6H311.0V83.6H316.8V75.3H322.7V67.1H328.5V83.6H334.4V83.6H340.2V91.9H346.1V83.6H352.0V100.1H357.8V83.6H363.7V83.6H369.5V100.1H375.4V91.9H381.2V91.9H387.1V83.6H392.9V100.1H398.8V124.9H404.6V133.2H410.5V116.7H416.3V133.2H422.2V124.9H428.0V124.9H433.9V124.9H439.8V124.9H445.6V124.9H451.5V124.9H457.3V124.9H463.2V124.9H469.0V116.7H474.9V124.9H480.7V124.9H486.6V133.2H492.4" fill="none" stroke="#35b0e8" stroke-width="1.5"/>
+  <text x="94.4" y="172.0" font-size="8" fill="#6c757d" text-anchor="start">2021</text>
+  <text x="164.6" y="172.0" font-size="8" fill="#6c757d" text-anchor="start">2022</text>
+  <text x="234.9" y="172.0" font-size="8" fill="#6c757d" text-anchor="start">2023</text>
+  <text x="305.1" y="172.0" font-size="8" fill="#6c757d" text-anchor="start">2024</text>
+  <text x="375.4" y="172.0" font-size="8" fill="#6c757d" text-anchor="start">2025</text>
+  <text x="445.6" y="172.0" font-size="8" fill="#6c757d" text-anchor="start">2026</text>
+  <!-- Annotations -->
+  <circle cx="32.9" cy="133.2" r="3" fill="#35b0e8" stroke="#fff" stroke-width="1.5"/>
+  <text x="32.9" y="109.2" font-size="9" fill="#212529" text-anchor="start" font-weight="bold">3: me + 2 founders</text>
+  <circle cx="103.2" cy="108.4" r="3" fill="#35b0e8" stroke="#fff" stroke-width="1.5"/>
+  <text x="103.2" y="101.4" font-size="9" fill="#212529" text-anchor="middle" font-weight="bold">6</text>
+  <circle cx="249.5" cy="42.3" r="3" fill="#35b0e8" stroke="#fff" stroke-width="1.5"/>
+  <text x="249.5" y="35.3" font-size="9" fill="#212529" text-anchor="middle" font-weight="bold">14, the peak</text>
+  <circle cx="319.8" cy="75.3" r="3" fill="#35b0e8" stroke="#fff" stroke-width="1.5"/>
+  <text x="319.8" y="68.3" font-size="9" fill="#212529" text-anchor="middle" font-weight="bold">10, building Pulse</text>
+  <circle cx="401.7" cy="124.9" r="3" fill="#35b0e8" stroke="#fff" stroke-width="1.5"/>
+  <text x="406.7" y="117.9" font-size="9" fill="#212529" text-anchor="start" font-weight="bold">4</text>
+  <circle cx="489.5" cy="133.2" r="3" fill="#35b0e8" stroke="#fff" stroke-width="1.5"/>
+  <text x="489.5" y="117.2" font-size="9" fill="#212529" text-anchor="end" font-weight="bold">3 again</text>
+</svg>

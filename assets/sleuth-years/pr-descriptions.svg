@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="210" fill="#fff"/>
+  <!-- Words in my PR descriptions -->
+  <text x="0" y="14" font-size="11" font-weight="bold" fill="#212529">Words in my PR descriptions</text>
+  <line x1="10" y1="184" x2="245.0" y2="184" stroke="#212529" stroke-width="1"/>
+  <rect x="16.0" y="60.2" width="21.5" height="123.8" rx="2" fill="#06bdad"/>
+  <text x="26.8" y="56.2" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">8.7k</text>
+  <text x="26.8" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'20</text>
+  <rect x="49.6" y="43.7" width="21.5" height="140.3" rx="2" fill="#06bdad"/>
+  <text x="60.4" y="39.7" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">9.8k</text>
+  <text x="60.4" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'21</text>
+  <rect x="83.2" y="91.3" width="21.5" height="92.7" rx="2" fill="#06bdad"/>
+  <text x="93.9" y="87.3" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">6.5k</text>
+  <text x="93.9" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'22</text>
+  <rect x="116.8" y="102.9" width="21.5" height="81.1" rx="2" fill="#06bdad"/>
+  <text x="127.5" y="98.9" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">5.7k</text>
+  <text x="127.5" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'23</text>
+  <rect x="150.3" y="103.4" width="21.5" height="80.6" rx="2" fill="#06bdad"/>
+  <text x="161.1" y="99.4" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">5.6k</text>
+  <text x="161.1" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'24</text>
+  <rect x="183.9" y="110.6" width="21.5" height="73.4" rx="2" fill="#06bdad"/>
+  <text x="194.6" y="106.6" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">5.1k</text>
+  <text x="194.6" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'25</text>
+  <rect x="217.5" y="119.1" width="21.5" height="64.9" rx="2" fill="#06bdad"/>
+  <text x="228.2" y="115.1" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">4.5k</text>
+  <text x="228.2" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'26</text>
+  <!-- Images in my PR descriptions -->
+  <text x="275.0" y="14" font-size="11" font-weight="bold" fill="#212529">Images in my PR descriptions</text>
+  <line x1="285.0" y1="184" x2="520.0" y2="184" stroke="#212529" stroke-width="1"/>
+  <rect x="291.0" y="93.3" width="21.5" height="90.7" rx="2" fill="#ffcf65"/>
+  <text x="301.8" y="89.3" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">130</text>
+  <text x="301.8" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'20</text>
+  <rect x="324.6" y="68.9" width="21.5" height="115.1" rx="2" fill="#ffcf65"/>
+  <text x="335.4" y="64.9" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">165</text>
+  <text x="335.4" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'21</text>
+  <rect x="358.2" y="126.8" width="21.5" height="57.2" rx="2" fill="#ffcf65"/>
+  <text x="368.9" y="122.8" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">82</text>
+  <text x="368.9" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'22</text>
+  <rect x="391.8" y="134.5" width="21.5" height="49.5" rx="2" fill="#ffcf65"/>
+  <text x="402.5" y="130.5" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">71</text>
+  <text x="402.5" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'23</text>
+  <rect x="425.3" y="41.7" width="21.5" height="142.3" rx="2" fill="#ffcf65"/>
+  <text x="436.1" y="37.7" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">204</text>
+  <text x="436.1" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'24</text>
+  <rect x="458.9" y="71.7" width="21.5" height="112.3" rx="2" fill="#ffcf65"/>
+  <text x="469.6" y="67.7" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">161</text>
+  <text x="469.6" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'25</text>
+  <rect x="492.5" y="65.4" width="21.5" height="118.6" rx="2" fill="#ffcf65"/>
+  <text x="503.2" y="61.4" font-size="8.5" font-weight="bold" fill="#212529" text-anchor="middle">170</text>
+  <text x="503.2" y="200" font-size="8.5" fill="#6c757d" text-anchor="middle">'26</text>
+</svg>

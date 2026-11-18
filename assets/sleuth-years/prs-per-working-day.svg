@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 170" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="170" fill="#fff"/>
+  <text x="30.0" y="14.0" font-size="11" fill="#212529" text-anchor="start" font-weight="bold">Merged PRs per working day (Mon–Fri)</text>
+  <!-- Grid lines -->
+  <line x1="30.0" y1="148.0" x2="510.0" y2="148.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="151.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <line x1="30.0" y1="118.0" x2="510.0" y2="118.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="121.0" font-size="8" fill="#6c757d" text-anchor="end">1</text>
+  <line x1="30.0" y1="88.0" x2="510.0" y2="88.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="91.0" font-size="8" fill="#6c757d" text-anchor="end">2</text>
+  <line x1="30.0" y1="58.0" x2="510.0" y2="58.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="61.0" font-size="8" fill="#6c757d" text-anchor="end">3</text>
+  <line x1="30.0" y1="28.0" x2="510.0" y2="28.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="25.0" y="31.0" font-size="8" fill="#6c757d" text-anchor="end">4</text>
+  <!-- Line -->
+  <polyline fill="none" stroke="#00a89a" stroke-width="1.5" stroke-linejoin="round" points="32.9,110.5 38.8,111.2 44.6,98.9 50.5,82.3 56.3,64.8 62.2,68.4 68.0,75.1 73.9,70.3 79.8,86.6 85.6,100.9 91.5,106.3 97.3,90.9 103.2,110.5 109.0,99.7 114.9,85.3 120.7,100.9 126.6,90.7 132.4,120.7 138.3,97.5 144.1,81.2 150.0,102.3 155.9,82.5 161.7,75.0 167.6,48.0 173.4,76.0 179.3,76.3 185.1,93.7 191.0,113.9 196.8,86.6 202.7,82.3 208.5,111.5 214.4,83.9 220.2,113.7 226.1,115.3 232.0,88.0 237.8,96.2 243.7,89.5 249.5,99.7 255.4,103.0 261.2,106.3 267.1,93.5 272.9,129.4 278.8,85.4 284.6,50.9 290.5,60.7 296.3,75.7 302.2,109.4 308.0,108.9 313.9,96.6 319.8,35.1 325.6,89.4 331.5,98.4 337.3,94.0 343.2,116.7 349.0,98.9 354.9,100.9 360.7,76.3 366.6,70.9 372.4,88.0 378.3,89.3 384.1,88.0 390.0,68.0 395.9,75.7 401.7,90.7 407.6,103.7 413.4,99.7 419.3,139.4 425.1,94.8 431.0,110.2 436.8,112.0 442.7,115.4 448.5,79.8 454.4,107.5 460.2,85.3 466.1,119.4 472.0,83.7 477.8,111.2 483.7,97.1 489.5,135.1 495.4,148.0 501.2,146.6 507.1,146.6"/>
+  <text x="94.4" y="162.0" font-size="8" fill="#6c757d" text-anchor="start">2021</text>
+  <text x="164.6" y="162.0" font-size="8" fill="#6c757d" text-anchor="start">2022</text>
+  <text x="234.9" y="162.0" font-size="8" fill="#6c757d" text-anchor="start">2023</text>
+  <text x="305.1" y="162.0" font-size="8" fill="#6c757d" text-anchor="start">2024</text>
+  <text x="375.4" y="162.0" font-size="8" fill="#6c757d" text-anchor="start">2025</text>
+  <text x="445.6" y="162.0" font-size="8" fill="#6c757d" text-anchor="start">2026</text>
+  <circle cx="319.8" cy="35.1" r="3" fill="#00a89a"/>
+  <text x="325.8" y="38.1" font-size="9" fill="#212529" text-anchor="start" font-weight="bold">3.8 a day</text>
+</svg>

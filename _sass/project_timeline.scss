@@ -1,0 +1,103 @@
+@import "colors";
+
+// "Fun projects" timeline: big outlined years, a date column, a colored theme dot per project
+.ptl{
+  margin: $half-standard-margin 0 $standard-margin;
+
+  .ptl-year{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    font-size: 2.6rem;
+    line-height: 1;
+    margin: 2.25rem 0 0.25rem;
+    color: $color-gray-lightest;
+    -webkit-text-stroke: 1.5px $color-gray-3;
+  }
+
+  .ptl-era{
+    color: $color-text-muted;
+    font-size: 0.95rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .ptl-item{
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid $color-gray-lightest;
+
+    > div{ min-width: 0; }
+  }
+
+  .ptl-when{
+    font-family: "Google Sans Code", monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: $color-text-muted;
+  }
+
+  .ptl-title{
+    font-weight: 600;
+    line-height: 1.35;
+    padding-left: 1.1rem;
+    position: relative;
+
+    .ptl-dot{
+      position: absolute;
+      left: 0;
+      top: 0.4em;
+    }
+  }
+
+  .ptl-dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .ptl-repo{
+    margin-left: 0.3rem;
+    white-space: nowrap;
+    font-family: "Google Sans Code", monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: $color-gray-lightest;
+    color: $color-text-muted;
+  }
+
+  .ptl-meta{
+    font-family: "Google Sans Code", monospace;
+    font-size: 0.75rem;
+    color: $color-text-muted;
+    margin: 0.2rem 0 0 1.1rem;
+  }
+
+  .ptl-res{ background: $color-teal; }
+  .ptl-met{ background: $color-red-bright; }
+  .ptl-data{ background: $color-yellow-dark-2; }
+  .ptl-job{ background: $color-blue; }
+  .ptl-tool{ background: $color-green-vivid; }
+  .ptl-ai{ background: $color-teal-dark; }
+  .ptl-comm{ background: $color-yellow-dark-3; }
+
+  .ptl-legend{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    font-size: 0.85rem;
+    color: $color-text-muted;
+
+    span{ display: inline-flex; align-items: center; gap: 0.4rem; }
+  }
+}
+
+@media (max-width: 576px){
+  .ptl .ptl-item{
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}

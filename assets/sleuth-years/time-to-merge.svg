@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="210" fill="#fff"/>
+  <text x="10.0" y="14.0" font-size="11" fill="#212529" text-anchor="start" font-weight="bold">Time from opening a PR to merging it</text>
+  <rect x="13.0" y="135.0" width="32.5" height="51.0" rx="2" fill="#35b0e8"/>
+  <text x="29.2" y="131.0" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">237</text>
+  <text x="29.2" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">&lt;10m</text>
+  <rect x="51.5" y="89.6" width="32.5" height="96.4" rx="2" fill="#35b0e8"/>
+  <text x="67.7" y="85.6" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">448</text>
+  <text x="67.7" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">10-30m</text>
+  <rect x="89.9" y="103.8" width="32.5" height="82.2" rx="2" fill="#35b0e8"/>
+  <text x="106.2" y="99.8" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">382</text>
+  <text x="106.2" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">30m-1h</text>
+  <rect x="128.4" y="99.7" width="32.5" height="86.3" rx="2" fill="#35b0e8"/>
+  <text x="144.6" y="95.7" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">401</text>
+  <text x="144.6" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">1-2h</text>
+  <rect x="166.8" y="114.1" width="32.5" height="71.9" rx="2" fill="#35b0e8"/>
+  <text x="183.1" y="110.1" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">334</text>
+  <text x="183.1" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">2-4h</text>
+  <rect x="205.3" y="163.2" width="32.5" height="22.8" rx="2" fill="#35b0e8"/>
+  <text x="221.5" y="159.2" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">106</text>
+  <text x="221.5" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">4-8h</text>
+  <rect x="243.8" y="36.0" width="32.5" height="150.0" rx="2" fill="#35b0e8"/>
+  <text x="260.0" y="32.0" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">697</text>
+  <text x="260.0" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">8-24h</text>
+  <rect x="282.2" y="155.9" width="32.5" height="30.1" rx="2" fill="#35b0e8"/>
+  <text x="298.5" y="151.9" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">140</text>
+  <text x="298.5" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">1-2d</text>
+  <rect x="320.7" y="147.0" width="32.5" height="39.0" rx="2" fill="#35b0e8"/>
+  <text x="336.9" y="143.0" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">181</text>
+  <text x="336.9" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">2-3d</text>
+  <rect x="359.2" y="155.0" width="32.5" height="31.0" rx="2" fill="#35b0e8"/>
+  <text x="375.4" y="151.0" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">144</text>
+  <text x="375.4" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">3-7d</text>
+  <rect x="397.6" y="180.8" width="32.5" height="5.2" rx="2" fill="#35b0e8"/>
+  <text x="413.8" y="176.8" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">24</text>
+  <text x="413.8" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">1-2w</text>
+  <rect x="436.1" y="184.5" width="32.5" height="1.5" rx="2" fill="#35b0e8"/>
+  <text x="452.3" y="180.5" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">7</text>
+  <text x="452.3" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">2-4w</text>
+  <rect x="474.5" y="185.6" width="32.5" height="0.4" rx="2" fill="#35b0e8"/>
+  <text x="490.8" y="181.6" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">2</text>
+  <text x="490.8" y="200.0" font-size="7.5" fill="#6c757d" text-anchor="middle">&gt;4w</text>
+  <line x1="10.0" y1="186.0" x2="510.0" y2="186.0" stroke="#212529" stroke-width="1"/>
+</svg>
