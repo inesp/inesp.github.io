@@ -6,7 +6,7 @@ css: cv
 ---
 
 
-Ines Panker, <b>senior staff software engineer</b> and <b><a href="/talks/">conference speaker</a></b>. 16 years in software, the last 6 as the first engineer and <b>de-facto architect</b> of a SaaS observability platform. The engineering teams built on what I designed, and I led the response when complex incidents crossed system boundaries.
+Ines Panker, <b>software engineer</b> and <b><a href="/talks/">international speaker</a></b>. 16 years in software, 6 of them as the first engineer and <b>de-facto architect</b> of a SaaS observability platform. The engineering teams built on what I designed, and I led the response when complex incidents crossed system boundaries.
 
 Lately my work has turned toward LLMs: I've worked on the <b>LLM pipeline</b> for our AI-usage analytics tool (a tool that gives insights into what your team does with AI). I've built the small <b>RAG</b> behind our product's AI assistant, written many Claude skills and rules and have <b>built several agents for my own tooling</b>.
 
@@ -38,10 +38,18 @@ I also love speaking at conferences, like <b>QCon London</b> (invite-only, speak
 
 <div class="career-list career-wide">
   <div class="career-item">
-    <div class="career-years">{% include career_icon.html name="nodes" %} 2020 – now</div>
+    <div class="career-years">{% include career_icon.html name="briefcase" %} 2026 – now</div>
+    <div class="career-body">
+      <h3>Product Engineer, <a href="https://www.ashbyhq.com" target="_blank">Ashby</a> <span class="career-place">(San Francisco, remote)</span></h3>
+      <p>Ashby is an all-in-one recruiting platform: applicant tracking, scheduling, sourcing and analytics in one product.</p>
+      <p class="career-tech"><span class="badge bg-teal">TypeScript</span> <span class="badge bg-teal">Node.js</span> <span class="badge bg-teal">React</span> <span class="badge bg-teal">PostgreSQL</span></p>
+    </div>
+  </div>
+  <div class="career-item">
+    <div class="career-years">{% include career_icon.html name="nodes" %} 2020 – 2026</div>
     <div class="career-body">
       <h3>Senior Staff Software Engineer, <a href="https://www.sleuth.io" target="_blank">Sleuth</a> <span class="career-place">(San Francisco, remote)</span></h3>
-      <p>The first engineer they hired, and the <b>de-facto architect</b> ever since. Sleuth is a multi-tenant <b>SaaS observability platform</b> for DORA metrics, environment health and real-time anomalies, fed by 30+ third-party services. I joined when it was two coding founders and a small codebase; the company grew to about 40 people, with the engineering teams building on that architecture.</p>
+      <p>The first engineer they hired, and the <b>de-facto architect</b> for six years. Sleuth is a multi-tenant <b>SaaS observability platform</b> for DORA metrics, environment health and real-time anomalies, fed by 30+ third-party services. I joined when it was two coding founders and a small codebase; the company grew to about 40 people, with the engineering teams building on that architecture.</p>
       <ul class="career-points">
         <li><b>Architecture</b>: <b>set the technical direction</b> the engineering teams built on. Designed the multi-tenant data model, tenant isolation, service boundaries and API contracts, and built the integration framework behind webhook and API ingestion from 30+ third-party services (Datadog, Sentry, PagerDuty, GitHub...).</li>
         <li><b>Resilience</b>: designed a circuit breaker system guarding, at peak, <b>2-3 million API calls a day</b>, added PostgreSQL advisory locks and Redis distributed locks for cluster-wide concurrency, and made Celery tasks transaction-aware to prevent race conditions.</li>
@@ -195,7 +203,7 @@ I also love speaking at conferences, like <b>QCon London</b> (invite-only, speak
     <div class="career-years">next</div>
     <div class="career-body">
       <h3>What I'm looking for</h3>
-      <p>Helping teams make sense of complex systems: a <b>staff engineering role</b>, <b>architecture work</b>, <b>untangling a codebase</b> that's outgrown its team, or <b>developer-facing work</b> where explaining clearly is the job. <br>Reach me on <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>.</p>
+      <p><b>Conference talks</b>, workshops and podcasts, wherever they take me. Always happy to talk about <b>architecture</b>, untangled codebases, and how developers actually work. <br>Reach me on <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">LinkedIn</a>.</p>
     </div>
   </div>
 </div>
