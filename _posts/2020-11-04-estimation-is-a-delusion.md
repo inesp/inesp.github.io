@@ -455,6 +455,8 @@ However, **1 in 10 projects** (10.6%) in the study had overruns of 100% or more.
 
 **Extreme overruns are unavoidable. You can not estimate your way out of this.**
 
+![5 story points? 3? 50!](/assets/estimation/50-story-points.jpg){:.shadow style="max-width: 360px"}
+
 > The extent to which an IT project is completed within budget is a key dimension of its performance and ROI. [...] our research shows that IT project cost overruns follow **a power-law distribution, with a large number of small overruns and a smaller, but significant, number of very large overruns** in
 a fat upper tail. Our research shows that IT projects have far greater cost risk than is commonly assumed. 
 > 

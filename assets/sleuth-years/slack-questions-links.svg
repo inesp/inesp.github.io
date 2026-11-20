@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 98" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="98" fill="#fff"/>
+  <!-- Questions: 12050 of 59058 (20%) -->
+  <text x="82" y="25" font-size="10" fill="#212529" text-anchor="end" font-weight="bold">Questions</text>
+  <rect x="90" y="12" width="350" height="18" rx="4" fill="#eeeeee"/>
+  <rect x="90" y="12" width="71.4" height="18" rx="4" fill="#ff7898"/>
+  <text x="125.7" y="25" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">20%</text>
+  <text x="448" y="25" font-size="9" fill="#6c757d">12,050 of 59,058</text>
+  <!-- With an image: 4466 of 59058 (8%) -->
+  <text x="82" y="53" font-size="10" fill="#212529" text-anchor="end" font-weight="bold">With an image</text>
+  <rect x="90" y="40" width="350" height="18" rx="4" fill="#eeeeee"/>
+  <rect x="90" y="40" width="26.5" height="18" rx="4" fill="#06bdad"/>
+  <text x="103.2" y="53" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">8%</text>
+  <text x="448" y="53" font-size="9" fill="#6c757d">4,466 of 59,058</text>
+  <!-- With a link: 4825 of 59058 (8%) -->
+  <text x="82" y="81" font-size="10" fill="#212529" text-anchor="end" font-weight="bold">With a link</text>
+  <rect x="90" y="68" width="350" height="18" rx="4" fill="#eeeeee"/>
+  <rect x="90" y="68" width="28.6" height="18" rx="4" fill="#35b0e8"/>
+  <text x="104.3" y="81" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">8%</text>
+  <text x="448" y="81" font-size="9" fill="#6c757d">4,825 of 59,058</text>
+</svg>
