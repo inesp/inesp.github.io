@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 215" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="215" fill="#fff"/>
+  <text x="10" y="14" font-size="11" fill="#212529" font-weight="bold">Some words in my Slack messages</text>
+  <!-- Legend -->
+  <rect x="10" y="22" width="9" height="9" rx="2" fill="#06bdad"/><text x="23" y="30" font-size="9" fill="#212529">English</text>
+  <rect x="72" y="22" width="9" height="9" rx="2" fill="#ff7898"/><text x="85" y="30" font-size="9" fill="#212529">Slovenian</text>
+  <rect x="144" y="22" width="9" height="9" rx="2" fill="#ffcf65"/><text x="157" y="30" font-size="9" fill="#212529">emojis</text>
+  <!-- shrug -->
+  <text x="106" y="52" font-size="9" fill="#212529" text-anchor="end">🤷‍♀️</text>
+  <rect x="112.0" y="42" width="300.0" height="12" rx="2" fill="#ffcf65"/>
+  <text x="417.0" y="52" font-size="9" fill="#212529" font-weight="bold">1,440</text>
+  <!-- yes -->
+  <text x="106" y="69" font-size="9" fill="#212529" text-anchor="end">yes</text>
+  <rect x="112.0" y="59" width="255.8" height="12" rx="2" fill="#06bdad"/>
+  <text x="372.8" y="69" font-size="9" fill="#212529" font-weight="bold">1,228</text>
+  <!-- maybe -->
+  <text x="106" y="86" font-size="9" fill="#212529" text-anchor="end">maybe</text>
+  <rect x="112.0" y="76" width="239.2" height="12" rx="2" fill="#06bdad"/>
+  <text x="356.2" y="86" font-size="9" fill="#212529" font-weight="bold">1,148</text>
+  <!-- please / prosim / 🙏 -->
+  <text x="106" y="103" font-size="9" fill="#212529" text-anchor="end">please / prosim / 🙏</text>
+  <rect x="112.0" y="93" width="105.8" height="12" rx="2" fill="#06bdad"/>
+  <rect x="217.8" y="93" width="29.2" height="12" rx="2" fill="#ff7898"/>
+  <rect x="247.0" y="93" width="40.0" height="12" rx="2" fill="#ffcf65"/>
+  <text x="292.0" y="103" font-size="9" fill="#212529" font-weight="bold">840  <tspan font-weight="normal" fill="#6c757d">(508 + 140 + 192)</tspan></text>
+  <!-- hm -->
+  <text x="106" y="120" font-size="9" fill="#212529" text-anchor="end">hm</text>
+  <rect x="112.0" y="110" width="134.6" height="12" rx="2" fill="#06bdad"/>
+  <text x="251.6" y="120" font-size="9" fill="#212529" font-weight="bold">646</text>
+  <!-- thanks / hvala / emojis -->
+  <text x="106" y="137" font-size="9" fill="#212529" text-anchor="end">thanks / hvala / emojis</text>
+  <rect x="112.0" y="127" width="61.5" height="12" rx="2" fill="#06bdad"/>
+  <rect x="173.5" y="127" width="22.3" height="12" rx="2" fill="#ff7898"/>
+  <rect x="195.8" y="127" width="14.2" height="12" rx="2" fill="#ffcf65"/>
+  <text x="214.9" y="137" font-size="9" fill="#212529" font-weight="bold">470  <tspan font-weight="normal" fill="#6c757d">(295 + 107 + 68)</tspan></text>
+  <!-- sorry / sori -->
+  <text x="106" y="154" font-size="9" fill="#212529" text-anchor="end">sorry / sori</text>
+  <rect x="112.0" y="144" width="57.9" height="12" rx="2" fill="#06bdad"/>
+  <rect x="169.9" y="144" width="33.3" height="12" rx="2" fill="#ff7898"/>
+  <text x="208.3" y="154" font-size="9" fill="#212529" font-weight="bold">438  <tspan font-weight="normal" fill="#6c757d">(278 + 160)</tspan></text>
+  <!-- damn -->
+  <text x="106" y="171" font-size="9" fill="#212529" text-anchor="end">damn</text>
+  <rect x="112.0" y="161" width="27.3" height="12" rx="2" fill="#06bdad"/>
+  <text x="144.3" y="171" font-size="9" fill="#212529" font-weight="bold">131</text>
+  <!-- silly -->
+  <text x="106" y="188" font-size="9" fill="#212529" text-anchor="end">silly</text>
+  <rect x="112.0" y="178" width="14.2" height="12" rx="2" fill="#06bdad"/>
+  <text x="131.2" y="188" font-size="9" fill="#212529" font-weight="bold">68</text>
+  <!-- Note: too big for the bars -->
+  <text x="112" y="209" font-size="9" fill="#6c757d">Too big for this chart: <tspan font-weight="bold" fill="#212529">"we" 6,229</tspan> times and <tspan font-weight="bold" fill="#212529">"you" 4,251</tspan> times.</text>
+</svg>

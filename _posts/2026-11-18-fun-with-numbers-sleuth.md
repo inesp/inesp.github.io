@@ -109,6 +109,22 @@ About half of my PRs have a real description. Together that's about 46,000 words
 
 The longest descriptions have: 421 words, 414 words, and 398 words.
 
+## 59,058 Slack messages, about 35 a day
+
+![My Slack messages per year](/assets/sleuth-years/slack-per-year.svg)
+
+![Questions, images and links in my Slack messages](/assets/sleuth-years/slack-questions-links.svg)
+
+![Some words in my Slack messages](/assets/sleuth-years/slack-words.svg)
+
+4,079 of my messages got a reaction, about 1 in 14.
+
+I got @-mentioned on Slack **4930 times**, which is 2.9 times per working day. Digging deeper, I saw that only 2390 were from humans, but this is still **1.4 times / working day** for 6&frac34; years straight... Seems excessive to me.
+
+![Who @-mentioned me in Slack](/assets/sleuth-years/slack-mentions.svg)
+
+
+
 ## On the side: 41 blog posts and 11 conference talks
 
 ![Blog posts and conference talks per year](/assets/sleuth-years/side-projects.svg)

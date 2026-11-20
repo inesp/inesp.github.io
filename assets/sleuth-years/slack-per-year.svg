@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 172" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="172" fill="#fff"/>
+  <text x="40" y="14" font-size="11" fill="#212529" font-weight="bold">My Slack messages per year</text>
+  <!-- Legend -->
+  <rect x="390" y="6" width="9" height="9" rx="2" fill="#06bdad"/>
+  <text x="403" y="14" font-size="9" fill="#6c757d">channels</text>
+  <rect x="452" y="6" width="9" height="9" rx="2" fill="#ff7898"/>
+  <text x="465" y="14" font-size="9" fill="#6c757d">DMs</text>
+  <!-- Grid lines -->
+  <line x1="40" y1="145.0" x2="510" y2="145.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="35" y="148.0" font-size="8" fill="#6c757d" text-anchor="end">0</text>
+  <line x1="40" y1="117.2" x2="510" y2="117.2" stroke="#dadada" stroke-width="0.5"/>
+  <text x="35" y="120.2" font-size="8" fill="#6c757d" text-anchor="end">3,000</text>
+  <line x1="40" y1="89.5" x2="510" y2="89.5" stroke="#dadada" stroke-width="0.5"/>
+  <text x="35" y="92.5" font-size="8" fill="#6c757d" text-anchor="end">6,000</text>
+  <line x1="40" y1="61.8" x2="510" y2="61.8" stroke="#dadada" stroke-width="0.5"/>
+  <text x="35" y="64.8" font-size="8" fill="#6c757d" text-anchor="end">9,000</text>
+  <line x1="40" y1="34.0" x2="510" y2="34.0" stroke="#dadada" stroke-width="0.5"/>
+  <text x="35" y="37.0" font-size="8" fill="#6c757d" text-anchor="end">12,000</text>
+  <!-- 2020: 1647 of 5477 DMs (30%) -->
+  <rect x="53.6" y="94.3" width="40" height="50.7" rx="2" fill="#06bdad"/>
+  <rect x="53.6" y="129.8" width="40" height="15.2" fill="#ff7898"/>
+  <text x="73.6" y="141.4" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">30%</text>
+  <text x="73.6" y="90.3" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">5,477</text>
+  <text x="73.6" y="159" font-size="9" fill="#6c757d" text-anchor="middle">2020</text>
+  <!-- 2021: 1844 of 7680 DMs (24%) -->
+  <rect x="120.7" y="74.0" width="40" height="71.0" rx="2" fill="#06bdad"/>
+  <rect x="120.7" y="127.9" width="40" height="17.1" fill="#ff7898"/>
+  <text x="140.7" y="140.5" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">24%</text>
+  <text x="140.7" y="70.0" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">7,680</text>
+  <text x="140.7" y="159" font-size="9" fill="#6c757d" text-anchor="middle">2021</text>
+  <!-- 2022: 4979 of 10743 DMs (46%) -->
+  <rect x="187.9" y="45.6" width="40" height="99.4" rx="2" fill="#06bdad"/>
+  <rect x="187.9" y="98.9" width="40" height="46.1" fill="#ff7898"/>
+  <text x="207.9" y="126.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">46%</text>
+  <text x="207.9" y="41.6" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">10,743</text>
+  <text x="207.9" y="159" font-size="9" fill="#6c757d" text-anchor="middle">2022</text>
+  <!-- 2023: 5286 of 10165 DMs (52%) -->
+  <rect x="255.0" y="51.0" width="40" height="94.0" rx="2" fill="#06bdad"/>
+  <rect x="255.0" y="96.1" width="40" height="48.9" fill="#ff7898"/>
+  <text x="275.0" y="124.6" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">52%</text>
+  <text x="275.0" y="47.0" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">10,165</text>
+  <text x="275.0" y="159" font-size="9" fill="#6c757d" text-anchor="middle">2023</text>
+  <!-- 2024: 7483 of 10832 DMs (69%) -->
+  <rect x="322.1" y="44.8" width="40" height="100.2" rx="2" fill="#06bdad"/>
+  <rect x="322.1" y="75.8" width="40" height="69.2" fill="#ff7898"/>
+  <text x="342.1" y="114.4" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">69%</text>
+  <text x="342.1" y="40.8" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">10,832</text>
+  <text x="342.1" y="159" font-size="9" fill="#6c757d" text-anchor="middle">2024</text>
+  <!-- 2025: 7643 of 10664 DMs (72%) -->
+  <rect x="389.3" y="46.4" width="40" height="98.6" rx="2" fill="#06bdad"/>
+  <rect x="389.3" y="74.3" width="40" height="70.7" fill="#ff7898"/>
+  <text x="409.3" y="113.7" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">72%</text>
+  <text x="409.3" y="42.4" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">10,664</text>
+  <text x="409.3" y="159" font-size="9" fill="#6c757d" text-anchor="middle">2025</text>
+  <!-- 2026: 2447 of 3497 DMs (70%) -->
+  <rect x="456.4" y="112.7" width="40" height="32.3" rx="2" fill="#06bdad"/>
+  <rect x="456.4" y="122.4" width="40" height="22.6" fill="#ff7898"/>
+  <text x="476.4" y="137.7" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">70%</text>
+  <text x="476.4" y="108.7" font-size="8" fill="#212529" text-anchor="middle" font-weight="bold">3,497</text>
+  <text x="476.4" y="159" font-size="9" fill="#6c757d" text-anchor="middle">2026</text>
+</svg>
