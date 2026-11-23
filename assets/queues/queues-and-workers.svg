@@ -1,0 +1,196 @@
+<svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="360" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker></defs>
+
+  <!-- Column headers -->
+  <text x="96" y="22" font-size="9" fill="#6c757d" font-weight="bold" letter-spacing="0.5">queues</text>
+  <text x="368" y="22" font-size="9" fill="#6c757d" font-weight="bold" letter-spacing="0.5">workers</text>
+
+  <!-- QUEUE emails: 7 waiting, 3 workers, prefetched [2, 2, 2] -->
+  <text x="84" y="49" font-size="10" fill="#212529" font-weight="bold" text-anchor="end">emails</text>
+
+  <!-- length label for emails -->
+  <rect x="35.2" y="55" width="48.8" height="15" fill="#ff7898" rx="7.5"/>
+  <text x="59.6" y="65.5" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">length 7</text>
+  <path d="M 96 39 L 318 39 A 6 13 0 0 1 318 65 L 96 65 A 6 13 0 0 1 96 39 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="318" cy="52" rx="6" ry="13" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <rect x="292" y="46.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 292 46.5 L 300.0 52.55 L 308 46.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="272" y="46.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 272 46.5 L 280.0 52.55 L 288 46.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="252" y="46.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 252 46.5 L 260.0 52.55 L 268 46.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="232" y="46.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 232 46.5 L 240.0 52.55 L 248 46.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="212" y="46.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 212 46.5 L 220.0 52.55 L 228 46.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="192" y="46.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 192 46.5 L 200.0 52.55 L 208 46.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="172" y="46.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 172 46.5 L 180.0 52.55 L 188 46.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+
+  <!-- worker group: the queue hands messages to these workers -->
+  <rect x="362" y="30" width="142" height="46" fill="#f7f7f7" rx="6"/>
+  <line x1="326" y1="52" x2="358" y2="52" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="389.0,41.2 391.7,41.8 391.7,46.2 389.0,46.8 388.9,47.0 390.5,49.3 387.3,52.5 385.0,50.9 384.8,51.0 384.2,53.7 379.8,53.7 379.2,51.0 379.0,50.9 376.7,52.5 373.5,49.3 375.1,47.0 375.0,46.8 372.3,46.2 372.3,41.8 375.0,41.2 375.1,41.0 373.5,38.7 376.7,35.5 379.0,37.1 379.2,37.0 379.8,34.3 384.2,34.3 384.8,37.0 385.0,37.1 387.3,35.5 390.5,38.7 388.9,41.0" fill="#06bdad"/>
+  <circle cx="382.0" cy="44.0" r="3.2" fill="#fff"/>
+  <rect x="374" y="57" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 374 57 L 381.0 62.5 L 388 57" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="377" y="61" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 377 61 L 384.0 66.5 L 391 61" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="423.0,41.2 425.7,41.8 425.7,46.2 423.0,46.8 422.9,47.0 424.5,49.3 421.3,52.5 419.0,50.9 418.8,51.0 418.2,53.7 413.8,53.7 413.2,51.0 413.0,50.9 410.7,52.5 407.5,49.3 409.1,47.0 409.0,46.8 406.3,46.2 406.3,41.8 409.0,41.2 409.1,41.0 407.5,38.7 410.7,35.5 413.0,37.1 413.2,37.0 413.8,34.3 418.2,34.3 418.8,37.0 419.0,37.1 421.3,35.5 424.5,38.7 422.9,41.0" fill="#06bdad"/>
+  <circle cx="416.0" cy="44.0" r="3.2" fill="#fff"/>
+  <rect x="408" y="57" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 408 57 L 415.0 62.5 L 422 57" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="411" y="61" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 411 61 L 418.0 66.5 L 425 61" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="457.0,41.2 459.7,41.8 459.7,46.2 457.0,46.8 456.9,47.0 458.5,49.3 455.3,52.5 453.0,50.9 452.8,51.0 452.2,53.7 447.8,53.7 447.2,51.0 447.0,50.9 444.7,52.5 441.5,49.3 443.1,47.0 443.0,46.8 440.3,46.2 440.3,41.8 443.0,41.2 443.1,41.0 441.5,38.7 444.7,35.5 447.0,37.1 447.2,37.0 447.8,34.3 452.2,34.3 452.8,37.0 453.0,37.1 455.3,35.5 458.5,38.7 456.9,41.0" fill="#06bdad"/>
+  <circle cx="450.0" cy="44.0" r="3.2" fill="#fff"/>
+  <rect x="442" y="57" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 442 57 L 449.0 62.5 L 456 57" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="445" y="61" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 445 61 L 452.0 66.5 L 459 61" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+
+  <!-- QUEUE invoices: 0 waiting, 2 workers, prefetched [1, 0] -->
+  <text x="84" y="105" font-size="10" fill="#212529" font-weight="bold" text-anchor="end">invoices</text>
+
+  <!-- length label for invoices -->
+  <rect x="35.2" y="111" width="48.8" height="15" fill="#ff7898" rx="7.5"/>
+  <text x="59.6" y="121.5" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">length 0</text>
+  <path d="M 96 95 L 318 95 A 6 13 0 0 1 318 121 L 96 121 A 6 13 0 0 1 96 95 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="318" cy="108" rx="6" ry="13" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <text x="207.0" y="111.5" font-size="9" fill="#6c757d" text-anchor="middle">empty</text>
+
+  <!-- worker group: the queue hands messages to these workers -->
+  <rect x="362" y="86" width="142" height="46" fill="#f7f7f7" rx="6"/>
+  <line x1="326" y1="108" x2="358" y2="108" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="389.0,97.2 391.7,97.8 391.7,102.2 389.0,102.8 388.9,103.0 390.5,105.3 387.3,108.5 385.0,106.9 384.8,107.0 384.2,109.7 379.8,109.7 379.2,107.0 379.0,106.9 376.7,108.5 373.5,105.3 375.1,103.0 375.0,102.8 372.3,102.2 372.3,97.8 375.0,97.2 375.1,97.0 373.5,94.7 376.7,91.5 379.0,93.1 379.2,93.0 379.8,90.3 384.2,90.3 384.8,93.0 385.0,93.1 387.3,91.5 390.5,94.7 388.9,97.0" fill="#06bdad"/>
+  <circle cx="382.0" cy="100.0" r="3.2" fill="#fff"/>
+  <rect x="374" y="113" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 374 113 L 381.0 118.5 L 388 113" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="423.0,97.2 425.7,97.8 425.7,102.2 423.0,102.8 422.9,103.0 424.5,105.3 421.3,108.5 419.0,106.9 418.8,107.0 418.2,109.7 413.8,109.7 413.2,107.0 413.0,106.9 410.7,108.5 407.5,105.3 409.1,103.0 409.0,102.8 406.3,102.2 406.3,97.8 409.0,97.2 409.1,97.0 407.5,94.7 410.7,91.5 413.0,93.1 413.2,93.0 413.8,90.3 418.2,90.3 418.8,93.0 419.0,93.1 421.3,91.5 424.5,94.7 422.9,97.0" fill="#06bdad"/>
+  <circle cx="416.0" cy="100.0" r="3.2" fill="#fff"/>
+
+  <!-- QUEUE webhooks: 10 waiting, 4 workers, prefetched [2, 2, 2, 2] -->
+  <text x="84" y="161" font-size="10" fill="#212529" font-weight="bold" text-anchor="end">webhooks</text>
+
+  <!-- length label for webhooks -->
+  <rect x="30.6" y="167" width="53.4" height="15" fill="#ff7898" rx="7.5"/>
+  <text x="57.3" y="177.5" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">length 10</text>
+  <path d="M 96 151 L 318 151 A 6 13 0 0 1 318 177 L 96 177 A 6 13 0 0 1 96 151 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="318" cy="164" rx="6" ry="13" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <rect x="292" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 292 158.5 L 300.0 164.55 L 308 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="272" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 272 158.5 L 280.0 164.55 L 288 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="252" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 252 158.5 L 260.0 164.55 L 268 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="232" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 232 158.5 L 240.0 164.55 L 248 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="212" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 212 158.5 L 220.0 164.55 L 228 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="192" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 192 158.5 L 200.0 164.55 L 208 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="172" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 172 158.5 L 180.0 164.55 L 188 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="152" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 152 158.5 L 160.0 164.55 L 168 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="132" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 132 158.5 L 140.0 164.55 L 148 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="112" y="158.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 112 158.5 L 120.0 164.55 L 128 158.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+
+  <!-- worker group: the queue hands messages to these workers -->
+  <rect x="362" y="142" width="142" height="46" fill="#f7f7f7" rx="6"/>
+  <line x1="326" y1="164" x2="358" y2="164" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="389.0,153.2 391.7,153.8 391.7,158.2 389.0,158.8 388.9,159.0 390.5,161.3 387.3,164.5 385.0,162.9 384.8,163.0 384.2,165.7 379.8,165.7 379.2,163.0 379.0,162.9 376.7,164.5 373.5,161.3 375.1,159.0 375.0,158.8 372.3,158.2 372.3,153.8 375.0,153.2 375.1,153.0 373.5,150.7 376.7,147.5 379.0,149.1 379.2,149.0 379.8,146.3 384.2,146.3 384.8,149.0 385.0,149.1 387.3,147.5 390.5,150.7 388.9,153.0" fill="#06bdad"/>
+  <circle cx="382.0" cy="156.0" r="3.2" fill="#fff"/>
+  <rect x="374" y="169" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 374 169 L 381.0 174.5 L 388 169" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="377" y="173" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 377 173 L 384.0 178.5 L 391 173" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="423.0,153.2 425.7,153.8 425.7,158.2 423.0,158.8 422.9,159.0 424.5,161.3 421.3,164.5 419.0,162.9 418.8,163.0 418.2,165.7 413.8,165.7 413.2,163.0 413.0,162.9 410.7,164.5 407.5,161.3 409.1,159.0 409.0,158.8 406.3,158.2 406.3,153.8 409.0,153.2 409.1,153.0 407.5,150.7 410.7,147.5 413.0,149.1 413.2,149.0 413.8,146.3 418.2,146.3 418.8,149.0 419.0,149.1 421.3,147.5 424.5,150.7 422.9,153.0" fill="#06bdad"/>
+  <circle cx="416.0" cy="156.0" r="3.2" fill="#fff"/>
+  <rect x="408" y="169" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 408 169 L 415.0 174.5 L 422 169" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="411" y="173" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 411 173 L 418.0 178.5 L 425 173" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="457.0,153.2 459.7,153.8 459.7,158.2 457.0,158.8 456.9,159.0 458.5,161.3 455.3,164.5 453.0,162.9 452.8,163.0 452.2,165.7 447.8,165.7 447.2,163.0 447.0,162.9 444.7,164.5 441.5,161.3 443.1,159.0 443.0,158.8 440.3,158.2 440.3,153.8 443.0,153.2 443.1,153.0 441.5,150.7 444.7,147.5 447.0,149.1 447.2,149.0 447.8,146.3 452.2,146.3 452.8,149.0 453.0,149.1 455.3,147.5 458.5,150.7 456.9,153.0" fill="#06bdad"/>
+  <circle cx="450.0" cy="156.0" r="3.2" fill="#fff"/>
+  <rect x="442" y="169" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 442 169 L 449.0 174.5 L 456 169" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="445" y="173" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 445 173 L 452.0 178.5 L 459 173" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="491.0,153.2 493.7,153.8 493.7,158.2 491.0,158.8 490.9,159.0 492.5,161.3 489.3,164.5 487.0,162.9 486.8,163.0 486.2,165.7 481.8,165.7 481.2,163.0 481.0,162.9 478.7,164.5 475.5,161.3 477.1,159.0 477.0,158.8 474.3,158.2 474.3,153.8 477.0,153.2 477.1,153.0 475.5,150.7 478.7,147.5 481.0,149.1 481.2,149.0 481.8,146.3 486.2,146.3 486.8,149.0 487.0,149.1 489.3,147.5 492.5,150.7 490.9,153.0" fill="#06bdad"/>
+  <circle cx="484.0" cy="156.0" r="3.2" fill="#fff"/>
+  <rect x="476" y="169" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 476 169 L 483.0 174.5 L 490 169" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="479" y="173" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 479 173 L 486.0 178.5 L 493 173" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+
+  <!-- QUEUE reports: 0 waiting, 2 workers, prefetched [0, 0] -->
+  <text x="84" y="217" font-size="10" fill="#212529" font-weight="bold" text-anchor="end">reports</text>
+
+  <!-- length label for reports -->
+  <rect x="35.2" y="223" width="48.8" height="15" fill="#ff7898" rx="7.5"/>
+  <text x="59.6" y="233.5" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">length 0</text>
+  <path d="M 96 207 L 318 207 A 6 13 0 0 1 318 233 L 96 233 A 6 13 0 0 1 96 207 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="318" cy="220" rx="6" ry="13" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <text x="207.0" y="223.5" font-size="9" fill="#6c757d" text-anchor="middle">empty</text>
+
+  <!-- worker group: the queue hands messages to these workers -->
+  <rect x="362" y="198" width="142" height="46" fill="#f7f7f7" rx="6"/>
+  <line x1="326" y1="220" x2="358" y2="220" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="389.0,209.2 391.7,209.8 391.7,214.2 389.0,214.8 388.9,215.0 390.5,217.3 387.3,220.5 385.0,218.9 384.8,219.0 384.2,221.7 379.8,221.7 379.2,219.0 379.0,218.9 376.7,220.5 373.5,217.3 375.1,215.0 375.0,214.8 372.3,214.2 372.3,209.8 375.0,209.2 375.1,209.0 373.5,206.7 376.7,203.5 379.0,205.1 379.2,205.0 379.8,202.3 384.2,202.3 384.8,205.0 385.0,205.1 387.3,203.5 390.5,206.7 388.9,209.0" fill="#06bdad"/>
+  <circle cx="382.0" cy="212.0" r="3.2" fill="#fff"/>
+  <polygon points="423.0,209.2 425.7,209.8 425.7,214.2 423.0,214.8 422.9,215.0 424.5,217.3 421.3,220.5 419.0,218.9 418.8,219.0 418.2,221.7 413.8,221.7 413.2,219.0 413.0,218.9 410.7,220.5 407.5,217.3 409.1,215.0 409.0,214.8 406.3,214.2 406.3,209.8 409.0,209.2 409.1,209.0 407.5,206.7 410.7,203.5 413.0,205.1 413.2,205.0 413.8,202.3 418.2,202.3 418.8,205.0 419.0,205.1 421.3,203.5 424.5,206.7 422.9,209.0" fill="#06bdad"/>
+  <circle cx="416.0" cy="212.0" r="3.2" fill="#fff"/>
+
+  <!-- QUEUE default: 4 waiting, 3 workers, prefetched [2, 2, 2] -->
+  <text x="84" y="273" font-size="10" fill="#212529" font-weight="bold" text-anchor="end">default</text>
+
+  <!-- length label for default -->
+  <rect x="35.2" y="279" width="48.8" height="15" fill="#ff7898" rx="7.5"/>
+  <text x="59.6" y="289.5" font-size="8.5" fill="#fff" font-weight="bold" text-anchor="middle">length 4</text>
+  <path d="M 96 263 L 318 263 A 6 13 0 0 1 318 289 L 96 289 A 6 13 0 0 1 96 263 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="318" cy="276" rx="6" ry="13" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <rect x="292" y="270.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 292 270.5 L 300.0 276.55 L 308 270.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="272" y="270.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 272 270.5 L 280.0 276.55 L 288 270.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="252" y="270.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 252 270.5 L 260.0 276.55 L 268 270.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="232" y="270.5" width="16" height="11" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 232 270.5 L 240.0 276.55 L 248 270.5" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+
+  <!-- worker group: the queue hands messages to these workers -->
+  <rect x="362" y="254" width="142" height="46" fill="#f7f7f7" rx="6"/>
+  <line x1="326" y1="276" x2="358" y2="276" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="389.0,265.2 391.7,265.8 391.7,270.2 389.0,270.8 388.9,271.0 390.5,273.3 387.3,276.5 385.0,274.9 384.8,275.0 384.2,277.7 379.8,277.7 379.2,275.0 379.0,274.9 376.7,276.5 373.5,273.3 375.1,271.0 375.0,270.8 372.3,270.2 372.3,265.8 375.0,265.2 375.1,265.0 373.5,262.7 376.7,259.5 379.0,261.1 379.2,261.0 379.8,258.3 384.2,258.3 384.8,261.0 385.0,261.1 387.3,259.5 390.5,262.7 388.9,265.0" fill="#06bdad"/>
+  <circle cx="382.0" cy="268.0" r="3.2" fill="#fff"/>
+  <rect x="374" y="281" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 374 281 L 381.0 286.5 L 388 281" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="377" y="285" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 377 285 L 384.0 290.5 L 391 285" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="423.0,265.2 425.7,265.8 425.7,270.2 423.0,270.8 422.9,271.0 424.5,273.3 421.3,276.5 419.0,274.9 418.8,275.0 418.2,277.7 413.8,277.7 413.2,275.0 413.0,274.9 410.7,276.5 407.5,273.3 409.1,271.0 409.0,270.8 406.3,270.2 406.3,265.8 409.0,265.2 409.1,265.0 407.5,262.7 410.7,259.5 413.0,261.1 413.2,261.0 413.8,258.3 418.2,258.3 418.8,261.0 419.0,261.1 421.3,259.5 424.5,262.7 422.9,265.0" fill="#06bdad"/>
+  <circle cx="416.0" cy="268.0" r="3.2" fill="#fff"/>
+  <rect x="408" y="281" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 408 281 L 415.0 286.5 L 422 281" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="411" y="285" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 411 285 L 418.0 290.5 L 425 285" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <polygon points="457.0,265.2 459.7,265.8 459.7,270.2 457.0,270.8 456.9,271.0 458.5,273.3 455.3,276.5 453.0,274.9 452.8,275.0 452.2,277.7 447.8,277.7 447.2,275.0 447.0,274.9 444.7,276.5 441.5,273.3 443.1,271.0 443.0,270.8 440.3,270.2 440.3,265.8 443.0,265.2 443.1,265.0 441.5,262.7 444.7,259.5 447.0,261.1 447.2,261.0 447.8,258.3 452.2,258.3 452.8,261.0 453.0,261.1 455.3,259.5 458.5,262.7 456.9,265.0" fill="#06bdad"/>
+  <circle cx="450.0" cy="268.0" r="3.2" fill="#fff"/>
+  <rect x="442" y="281" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 442 281 L 449.0 286.5 L 456 281" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="445" y="285" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 445 285 L 452.0 290.5 L 459 285" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+
+  <!-- LEGEND: what prefetched means -->
+  <rect x="22" y="318" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 22 318 L 29.0 323.5 L 36 318" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <rect x="25" y="322" width="14" height="10" fill="#ffed50" rx="1.2" stroke="#c9b800" stroke-width="0.9"/>
+  <path d="M 25 322 L 32.0 327.5 L 39 322" fill="none" stroke="#c9b800" stroke-width="0.9"/>
+  <text x="48" y="327" font-size="9" fill="#212529" font-weight="bold">prefetched:</text>
+  <text x="104" y="327" font-size="9" fill="#6c757d">already handed to a worker, waiting there to run. The broker counts them as unacked, not as ready.</text>
+  <text x="48" y="341" font-size="9" fill="#6c757d">Here, each worker takes up to 2 ahead.</text>
+</svg>

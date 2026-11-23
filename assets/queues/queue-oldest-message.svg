@@ -1,0 +1,51 @@
+<svg viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="180" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker></defs>
+
+  <!-- Header: which queue, how long -->
+  <text x="40" y="26" font-size="10" fill="#6c757d">queue:</text>
+  <text x="76" y="26" font-size="10" fill="#212529" font-weight="bold">emails</text>
+  <text x="440" y="26" font-size="10" fill="#212529" font-weight="bold" text-anchor="end">1,204 messages</text>
+
+  <!-- THE QUEUE: newest at the back (left), oldest at the front (right), next to go -->
+  <path d="M 40 64 L 420 64 A 9 20 0 0 1 420 104 L 40 104 A 9 20 0 0 1 40 64 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="420" cy="84" rx="9" ry="20" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <rect x="52" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 53 78 L 62.0 84.7 L 71 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="79" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 80 78 L 89.0 84.7 L 98 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="106" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 107 78 L 116.0 84.7 L 125 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="133" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 134 78 L 143.0 84.7 L 152 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="160" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 161 78 L 170.0 84.7 L 179 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <text x="226" y="88" font-size="14" fill="#6c757d" font-weight="bold" text-anchor="middle">· · ·</text>
+  <rect x="250" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 251 78 L 260.0 84.7 L 269 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="277" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 278 78 L 287.0 84.7 L 296 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="304" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 305 78 L 314.0 84.7 L 323 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="331" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 332 78 L 341.0 84.7 L 350 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+  <rect x="358" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#316849" stroke-width="1"/>
+  <path d="M 359 78 L 368.0 84.7 L 377 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+
+  <!-- the oldest message, at the front -->
+  <rect x="385" y="77" width="20" height="14" fill="#4a9c6d" rx="1.5" stroke="#fd456f" stroke-width="1.8"/>
+  <path d="M 386 78 L 395.0 84.7 L 404 78" fill="none" stroke="#fff" stroke-width="1.1"/>
+
+  <!-- Out to a worker -->
+  <line x1="432" y1="84" x2="472" y2="84" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="480" y="88" font-size="9" fill="#6c757d">next</text>
+
+  <!-- Ages: how long each message has been waiting -->
+  <line x1="62" y1="108" x2="62" y2="118" stroke="#6c757d" stroke-width="1.0"/>
+  <text x="62" y="131" font-size="9" fill="#6c757d" font-weight="bold" text-anchor="middle">newest</text>
+  <text x="62" y="144" font-size="9" fill="#6c757d" text-anchor="middle">waiting 2 s</text>
+  <line x1="395" y1="108" x2="395" y2="118" stroke="#fd456f" stroke-width="1.0"/>
+  <rect x="343" y="120" width="104" height="18" fill="#fd456f" rx="9"/>
+  <text x="395" y="132.5" font-size="9" fill="#fff" font-weight="bold" text-anchor="middle">oldest: 3 h 12 min</text>
+  <text x="395" y="152" font-size="9" fill="#6c757d" text-anchor="middle">enqueued at 7:30</text>
+</svg>

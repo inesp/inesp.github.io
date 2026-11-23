@@ -1,0 +1,81 @@
+<svg viewBox="0 0 716 300" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="716" height="300" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker><marker id="arrowm" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#6c757d"/></marker></defs>
+
+  <!-- THE BROKER'S TIME LIMIT -->
+  <line x1="352" y1="26" x2="352" y2="250" stroke="#e85a80" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="352" y="18" font-size="10" fill="#e85a80" font-weight="bold" text-anchor="middle">the broker's time limit: no ack from A yet, so B gets the task too</text>
+  <text x="14" y="58" font-size="11" fill="#212529" font-weight="bold">worker A</text>
+  <circle cx="22.0" cy="92.0" r="6" fill="#212529"/>
+  <text x="22" y="127" font-size="9.5" fill="#6c757d" text-anchor="middle">start</text>
+  <line x1="28" y1="92" x2="45.8" y2="92" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="55.0" y="77.0" width="30.0" height="30.0" rx="9" fill="#35b0e8" stroke="#1f8fc4" stroke-width="2.2" transform="rotate(45 70 92)"/>
+  <text x="70" y="97.5" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">?</text>
+  <text x="70" y="127" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">subscribed?</text>
+  <line x1="91.2" y1="92" x2="107" y2="92" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="100.6" y="86" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">no</text>
+  <circle cx="130.0" cy="92.0" r="20" fill="#06bdad" stroke="#04968a" stroke-width="2.2"/>
+  <circle cx="128.0" cy="88.0" r="4.2" fill="#fff"/>
+  <path d="M 120.5 100 Q 128 89.5 135.5 100 Z" fill="#fff"/>
+  <line x1="138" y1="86" x2="138" y2="92.5" stroke="#fff" stroke-width="1.8"/>
+  <line x1="134.8" y1="89.2" x2="141.2" y2="89.2" stroke="#fff" stroke-width="1.8"/>
+  <text x="130" y="127" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">subscribe</text>
+  <line x1="150" y1="92" x2="165" y2="92" stroke="#212529" stroke-width="1.5"/>
+  <circle cx="168.0" cy="92.0" r="2.5" fill="#212529"/>
+  <path d="M 70 70.8 C 70 48, 168 48, 168 89" fill="none" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="119.0" y="46" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">yes</text>
+  <line x1="170" y1="92" x2="189.8" y2="92" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="199.0" y="77.0" width="30.0" height="30.0" rx="9" fill="#35b0e8" stroke="#1f8fc4" stroke-width="2.2" transform="rotate(45 214 92)"/>
+  <text x="214" y="97.5" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">?</text>
+  <text x="214" y="127" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">coupon</text>
+  <text x="214" y="138" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">exists?</text>
+
+  <!-- A's coupon step is slow: a stretched capsule -->
+  <line x1="235.2" y1="92" x2="259" y2="92" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="248.6" y="86" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">no</text>
+  <rect x="262" y="72" width="378" height="40" fill="#06bdad" rx="20" stroke="#fd456f" stroke-width="2.6"/>
+  <path d="M 274 85.5 H 294 V 89.5 A 2.5 2.5 0 0 0 294 94.5 V 98.5 H 274 V 94.5 A 2.5 2.5 0 0 0 274 89.5 Z" fill="#fff"/>
+  <line x1="287" y1="87" x2="287" y2="97" stroke="#06bdad" stroke-width="1.3" stroke-dasharray="2 1.5"/>
+  <text x="304" y="96" font-size="10" fill="#fff" font-weight="bold">create coupon (slow, still running...)</text>
+  <line x1="640" y1="92" x2="665" y2="92" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="688.0" cy="92.0" r="20" fill="#ff7898" stroke="#e85a80" stroke-width="2.2"/>
+  <path d="M 681 92 L 686 97.5 L 696 86.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="688" y="127" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">ack</text>
+  <text x="688" y="138" font-size="9.5" fill="#e85a80" text-anchor="middle">too late</text>
+  <text x="14" y="180" font-size="11" fill="#212529" font-weight="bold">worker B</text>
+  <circle cx="352.0" cy="214.0" r="6" fill="#212529"/>
+  <line x1="358" y1="214" x2="371.8" y2="214" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="381.0" y="199.0" width="30.0" height="30.0" rx="9" fill="#35b0e8" stroke="#1f8fc4" stroke-width="2.2" transform="rotate(45 396 214)"/>
+  <text x="396" y="219.5" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">?</text>
+  <text x="396" y="249" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">subscribed?</text>
+  <line x1="417.2" y1="214" x2="429" y2="214" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- A already subscribed the user, so B skips it: this guard works -->
+  <circle cx="452" cy="214" r="20" fill="#fff" stroke="#6c757d" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="452" y="249" font-size="9.5" fill="#6c757d" font-weight="bold" text-anchor="middle">subscribe</text>
+  <line x1="472" y1="214" x2="485" y2="214" stroke="#212529" stroke-width="1.5"/>
+  <circle cx="488.0" cy="214.0" r="2.5" fill="#212529"/>
+  <path d="M 396 192.8 C 396 170, 488 170, 488 211" fill="none" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="442.0" y="168" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">yes</text>
+  <line x1="490" y1="214" x2="505.8" y2="214" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="515.0" y="199.0" width="30.0" height="30.0" rx="9" fill="#35b0e8" stroke="#1f8fc4" stroke-width="2.2" transform="rotate(45 530 214)"/>
+  <text x="530" y="219.5" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">?</text>
+  <text x="530" y="249" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">coupon</text>
+  <text x="530" y="260" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">exists?</text>
+  <line x1="551.2" y1="214" x2="563" y2="214" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="558.6" y="208" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">no</text>
+
+  <!-- A is still creating it, so B sees 'no' and creates a second one: this guard fails -->
+  <circle cx="586.0" cy="214.0" r="20" fill="#06bdad" stroke="#fd456f" stroke-width="2.6"/>
+  <path d="M 576 207.5 H 596 V 211.5 A 2.5 2.5 0 0 0 596 216.5 V 220.5 H 576 V 216.5 A 2.5 2.5 0 0 0 576 211.5 Z" fill="#fff"/>
+  <line x1="589" y1="209" x2="589" y2="219" stroke="#06bdad" stroke-width="1.3" stroke-dasharray="2 1.5"/>
+  <text x="586" y="249" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">create</text>
+  <text x="586" y="260" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">coupon</text>
+  <line x1="606" y1="214" x2="619" y2="214" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="642.0" cy="214.0" r="20" fill="#ff7898" stroke="#e85a80" stroke-width="2.2"/>
+  <path d="M 635 214 L 640 219.5 L 650 208.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="642" y="249" font-size="9.5" fill="#212529" font-weight="bold" text-anchor="middle">ack</text>
+
+  <!-- THE RESULT -->
+  <text x="358.0" y="278" font-size="10" fill="#fd456f" font-weight="bold" text-anchor="middle">the first guard works, the second one doesn't: A is still creating the coupon, B creates another</text>
+</svg>

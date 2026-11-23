@@ -1,0 +1,54 @@
+<svg viewBox="0 0 520 236" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="236" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker><marker id="ack" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><polygon points="0,0 7,3.5 0,7" fill="#ff7898"/></marker></defs>
+
+  <!-- ROW: acked early -->
+  <text x="30" y="20" font-size="12" fill="#212529" font-weight="bold">acked early</text>
+  <path d="M 30 55 L 112 55 A 9 15 0 0 1 112 85 L 30 85 A 9 15 0 0 1 30 55 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="112" cy="70" rx="9" ry="15" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <rect x="37" y="64" width="17" height="12" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 37 64 L 45.5 70.6 L 54 64" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <rect x="60" y="64" width="17" height="12" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 60 64 L 68.5 70.6 L 77 64" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <line x1="122" y1="70" x2="150" y2="70" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="183.3,66.1 187.7,66.8 187.7,73.2 183.3,73.9 183.2,74.3 186.1,77.6 182.0,82.5 178.1,80.3 177.9,80.5 177.9,84.9 171.6,86.0 170.1,81.8 169.8,81.8 166.9,85.2 161.4,82.0 162.9,77.8 162.7,77.6 158.4,78.4 156.2,72.4 160.0,70.2 160.0,69.8 156.2,67.6 158.4,61.6 162.7,62.4 162.9,62.2 161.4,58.0 166.9,54.8 169.8,58.2 170.1,58.2 171.6,54.0 177.9,55.1 177.9,59.5 178.1,59.7 182.0,57.5 186.1,62.4 183.2,65.7" fill="#06bdad"/>
+  <circle cx="172.0" cy="70.0" r="5" fill="#fff"/>
+
+  <!-- the task running, left to right in time -->
+  <rect x="200" y="61" width="280" height="18" fill="#06bdad" rx="4"/>
+  <text x="340.0" y="74" font-size="10" fill="#fff" font-weight="bold" text-anchor="middle">send_invoice runs</text>
+
+  <!-- the ack: from that moment back to the broker's copy -->
+  <circle cx="204.0" cy="55.0" r="3" fill="#ff7898"/>
+  <path d="M 204 55 Q 148.0 22 94 52" fill="none" stroke="#ff7898" stroke-width="2" marker-end="url(#ack)"/>
+  <text x="166.0" y="32" font-size="10" fill="#ff7898" font-weight="bold" text-anchor="middle">ack</text>
+  <text x="340.0" y="96" font-size="9" fill="#6c757d" text-anchor="middle">the broker has already forgotten it while it runs</text>
+
+  <!-- ROW: acked late -->
+  <text x="30" y="128" font-size="12" fill="#212529" font-weight="bold">acked late</text>
+  <path d="M 30 163 L 112 163 A 9 15 0 0 1 112 193 L 30 193 A 9 15 0 0 1 30 163 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="112" cy="178" rx="9" ry="15" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <rect x="37" y="172" width="17" height="12" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 37 172 L 45.5 178.6 L 54 172" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <rect x="60" y="172" width="17" height="12" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 60 172 L 68.5 178.6 L 77 172" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <rect x="83" y="172" width="17" height="12" rx="1.5" fill="#fff" stroke="#c9b800" stroke-width="1" stroke-dasharray="2.5 2"/>
+  <path d="M 83 172 L 91.5 178.6 L 100 172" fill="none" stroke="#c9b800" stroke-width="1" stroke-dasharray="2.5 2"/>
+  <line x1="122" y1="178" x2="150" y2="178" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <polygon points="183.3,174.1 187.7,174.8 187.7,181.2 183.3,181.9 183.2,182.3 186.1,185.6 182.0,190.5 178.1,188.3 177.9,188.5 177.9,192.9 171.6,194.0 170.1,189.8 169.8,189.8 166.9,193.2 161.4,190.0 162.9,185.8 162.7,185.6 158.4,186.4 156.2,180.4 160.0,178.2 160.0,177.8 156.2,175.6 158.4,169.6 162.7,170.4 162.9,170.2 161.4,166.0 166.9,162.8 169.8,166.2 170.1,166.2 171.6,162.0 177.9,163.1 177.9,167.5 178.1,167.7 182.0,165.5 186.1,170.4 183.2,173.7" fill="#06bdad"/>
+  <circle cx="172.0" cy="178.0" r="5" fill="#fff"/>
+
+  <!-- the task running, left to right in time -->
+  <rect x="200" y="169" width="280" height="18" fill="#06bdad" rx="4"/>
+  <text x="340.0" y="182" font-size="10" fill="#fff" font-weight="bold" text-anchor="middle">send_invoice runs</text>
+
+  <!-- the ack: from that moment back to the broker's copy -->
+  <circle cx="476.0" cy="163.0" r="3" fill="#ff7898"/>
+  <path d="M 476 163 Q 284.0 118 94 160" fill="none" stroke="#ff7898" stroke-width="2" marker-end="url(#ack)"/>
+  <text x="284.0" y="132" font-size="10" fill="#ff7898" font-weight="bold" text-anchor="middle">ack</text>
+  <text x="340.0" y="204" font-size="9" fill="#6c757d" text-anchor="middle">the broker keeps its copy until it’s done</text>
+
+  <!-- time axis -->
+  <line x1="200" y1="226" x2="480" y2="226" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="486" y="229" font-size="8" fill="#6c757d">time</text>
+</svg>
