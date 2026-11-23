@@ -30,6 +30,11 @@ The Algorithm Decided:
 Scaling a System:
   display_title: "Scaling a System"
 
+Twice, Early, or Never:
+  display_title: "Twice, Early, or Never"
+  home_intro: "What actually happens to background jobs when things go wrong."
+  icon: "hourglass"
+
 Engineering Research:
   home_intro: "Posts that draw from research papers"
 
@@ -43,4 +48,5 @@ collection_tags:
   - API Resilience Patterns
   - The Algorithm Decided
   - Scaling a System
+  - Twice, Early, or Never
 

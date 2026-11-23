@@ -1,0 +1,36 @@
+<svg viewBox="0 0 560 196" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="560" height="196" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker><marker id="arrowm" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#6c757d"/></marker></defs>
+
+  <!-- FLOW: start -> already subscribed? -> (no) subscribe -> ack -->
+  <circle cx="30.0" cy="98.0" r="6" fill="#212529"/>
+  <text x="30" y="146" font-size="10" fill="#6c757d" text-anchor="middle">start</text>
+  <line x1="36" y1="98" x2="94.14" y2="98" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="106.75" y="74.75" width="46.5" height="46.5" rx="9" fill="#35b0e8" stroke="#1f8fc4" stroke-width="2.2" transform="rotate(45 130 98)"/>
+  <g transform="translate(130 98) scale(1.45) translate(-130 -98)">
+  <text x="130" y="103.5" font-size="16" fill="#fff" font-weight="bold" text-anchor="middle">?</text>
+  </g>
+  <text x="130" y="146" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">already</text>
+  <text x="130" y="158" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">subscribed?</text>
+  <line x1="162.86" y1="98" x2="236" y2="98" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="200.93" y="92" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">no</text>
+  <circle cx="270.0" cy="98.0" r="31" fill="#06bdad" stroke="#04968a" stroke-width="2.2"/>
+  <g transform="translate(270 98) scale(1.45) translate(-270 -98)">
+  <circle cx="268.0" cy="94.0" r="4.2" fill="#fff"/>
+  <path d="M 260.5 106 Q 268 95.5 275.5 106 Z" fill="#fff"/>
+  <line x1="278" y1="92" x2="278" y2="98.5" stroke="#fff" stroke-width="1.8"/>
+  <line x1="274.8" y1="95.2" x2="281.2" y2="95.2" stroke="#fff" stroke-width="1.8"/>
+  </g>
+  <text x="270" y="146" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">subscribed</text>
+  <text x="270" y="158" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">= true</text>
+  <line x1="301" y1="98" x2="377" y2="98" stroke="#212529" stroke-width="1.5"/>
+  <circle cx="380.0" cy="98.0" r="2.5" fill="#212529"/>
+  <path d="M 130 65.14 C 130 36, 380 36, 380 95" fill="none" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="255.0" y="34" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">yes</text>
+  <line x1="382" y1="98" x2="446" y2="98" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="480.0" cy="98.0" r="31" fill="#ff7898" stroke="#e85a80" stroke-width="2.2"/>
+  <g transform="translate(480 98) scale(1.45) translate(-480 -98)">
+  <path d="M 473 98 L 478 103.5 L 488 92.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="480" y="146" font-size="10" fill="#212529" font-weight="bold" text-anchor="middle">ack</text>
+</svg>

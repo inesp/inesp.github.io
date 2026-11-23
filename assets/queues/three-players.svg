@@ -1,0 +1,74 @@
+<svg viewBox="0 0 520 170" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="170" fill="#fff"/>
+  <defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><polygon points="0,0 6,3 0,6" fill="#212529"/></marker></defs>
+
+  <!-- OUR APP: a server, three stacked rack slabs with status lights and drive slots -->
+  <rect x="36" y="42" width="84" height="19" fill="#fff" rx="3" stroke="#212529" stroke-width="1.5"/>
+  <circle cx="46.0" cy="51.5" r="2.6" fill="#4a9c6d"/>
+  <circle cx="54.0" cy="51.5" r="2.6" fill="#ffcf65"/>
+  <rect x="78" y="48.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="89" y="48.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="100" y="48.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="36" y="65" width="84" height="19" fill="#fff" rx="3" stroke="#212529" stroke-width="1.5"/>
+  <circle cx="46.0" cy="74.5" r="2.6" fill="#4a9c6d"/>
+  <circle cx="54.0" cy="74.5" r="2.6" fill="#ffcf65"/>
+  <rect x="78" y="71.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="89" y="71.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="100" y="71.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="36" y="88" width="84" height="19" fill="#fff" rx="3" stroke="#212529" stroke-width="1.5"/>
+  <circle cx="46.0" cy="97.5" r="2.6" fill="#4a9c6d"/>
+  <circle cx="54.0" cy="97.5" r="2.6" fill="#ffcf65"/>
+  <rect x="78" y="94.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="89" y="94.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <rect x="100" y="94.5" width="7" height="6" fill="#dadada" rx="1"/>
+  <text x="78" y="146" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">our app</text>
+
+  <!-- BROKER: just the queue, a pipe with the tasks waiting inside -->
+  <path d="M 186 55 L 316 55 A 9 20 0 0 1 316 95 L 186 95 A 9 20 0 0 1 186 55 Z" fill="#fff" stroke="#212529" stroke-width="1.5"/>
+  <ellipse cx="316" cy="75" rx="9" ry="20" fill="none" stroke="#212529" stroke-width="1.5"/>
+  <rect x="193" y="68" width="19" height="14" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 193 68 L 202.5 75.7 L 212 68" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <rect x="216" y="68" width="19" height="14" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 216 68 L 225.5 75.7 L 235 68" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <rect x="239" y="68" width="19" height="14" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 239 68 L 248.5 75.7 L 258 68" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <rect x="262" y="68" width="19" height="14" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 262 68 L 271.5 75.7 L 281 68" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <rect x="285" y="68" width="19" height="14" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 285 68 L 294.5 75.7 L 304 68" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <text x="255" y="146" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">broker</text>
+  <text x="255" y="159" font-size="8" fill="#6c757d" text-anchor="middle">RabbitMQ, Redis, SQS, ...</text>
+
+  <!-- WORKERS: gears, there are usually several -->
+  <polygon points="483.3,34.1 487.7,34.8 487.7,41.2 483.3,41.9 483.2,42.3 486.1,45.6 482.0,50.5 478.1,48.3 477.9,48.5 477.9,52.9 471.6,54.0 470.1,49.8 469.8,49.8 466.9,53.2 461.4,50.0 462.9,45.8 462.7,45.6 458.4,46.4 456.2,40.4 460.0,38.2 460.0,37.8 456.2,35.6 458.4,29.6 462.7,30.4 462.9,30.2 461.4,26.0 466.9,22.8 469.8,26.2 470.1,26.2 471.6,22.0 477.9,23.1 477.9,27.5 478.1,27.7 482.0,25.5 486.1,30.4 483.2,33.7" fill="#06bdad"/>
+  <circle cx="472.0" cy="38.0" r="5" fill="#fff"/>
+  <polygon points="483.3,71.1 487.7,71.8 487.7,78.2 483.3,78.9 483.2,79.3 486.1,82.6 482.0,87.5 478.1,85.3 477.9,85.5 477.9,89.9 471.6,91.0 470.1,86.8 469.8,86.8 466.9,90.2 461.4,87.0 462.9,82.8 462.7,82.6 458.4,83.4 456.2,77.4 460.0,75.2 460.0,74.8 456.2,72.6 458.4,66.6 462.7,67.4 462.9,67.2 461.4,63.0 466.9,59.8 469.8,63.2 470.1,63.2 471.6,59.0 477.9,60.1 477.9,64.5 478.1,64.7 482.0,62.5 486.1,67.4 483.2,70.7" fill="#06bdad"/>
+  <circle cx="472.0" cy="75.0" r="5" fill="#fff"/>
+  <polygon points="483.3,108.1 487.7,108.8 487.7,115.2 483.3,115.9 483.2,116.3 486.1,119.6 482.0,124.5 478.1,122.3 477.9,122.5 477.9,126.9 471.6,128.0 470.1,123.8 469.8,123.8 466.9,127.2 461.4,124.0 462.9,119.8 462.7,119.6 458.4,120.4 456.2,114.4 460.0,112.2 460.0,111.8 456.2,109.6 458.4,103.6 462.7,104.4 462.9,104.2 461.4,100.0 466.9,96.8 469.8,100.2 470.1,100.2 471.6,96.0 477.9,97.1 477.9,101.5 478.1,101.7 482.0,99.5 486.1,104.4 483.2,107.7" fill="#06bdad"/>
+  <circle cx="472.0" cy="112.0" r="5" fill="#fff"/>
+  <text x="472" y="146" font-size="11" fill="#212529" font-weight="bold" text-anchor="middle">workers</text>
+
+  <!-- The task's path: app -> queue -> one of the workers -->
+  <line x1="120" y1="75" x2="172" y2="75" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- The app creates a message and puts it in -->
+  <rect x="136" y="68" width="19" height="14" fill="#ffed50" rx="1.5" stroke="#c9b800" stroke-width="1"/>
+  <path d="M 136 68 L 145.5 75.7 L 155 68" fill="none" stroke="#c9b800" stroke-width="1"/>
+  <text x="146" y="58" font-size="8" fill="#6c757d" text-anchor="middle">creates</text>
+
+  <!-- A worker takes a message, opens it and runs the task -->
+  <path d="M 383.5 69 L 393.0 61.3 L 402.5 69 Z" fill="#fff283" stroke="#c9b800" stroke-width="1" stroke-linejoin="round"/>
+  <rect x="386.5" y="62.7" width="13" height="12.6" fill="#fff" rx="0.5" stroke="#c9b800" stroke-width="0.8"/>
+  <line x1="389.0" y1="66.2" x2="397.0" y2="66.2" stroke="#dadada" stroke-width="1"/>
+  <line x1="389.0" y1="69.28" x2="395.0" y2="69.28" stroke="#dadada" stroke-width="1"/>
+  <path d="M 383.5 71.8 L 393.0 77.68 L 402.5 71.8 L 402.5 83 L 383.5 83 Z" fill="#ffed50" stroke="#c9b800" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M 414.5 40 L 424.0 32.3 L 433.5 40 Z" fill="#fff283" stroke="#c9b800" stroke-width="1" stroke-linejoin="round"/>
+  <rect x="417.5" y="33.7" width="13" height="12.6" fill="#fff" rx="0.5" stroke="#c9b800" stroke-width="0.8"/>
+  <line x1="420.0" y1="37.2" x2="428.0" y2="37.2" stroke="#dadada" stroke-width="1"/>
+  <line x1="420.0" y1="40.28" x2="426.0" y2="40.28" stroke="#dadada" stroke-width="1"/>
+  <path d="M 414.5 42.8 L 424.0 48.68 L 433.5 42.8 L 433.5 54 L 414.5 54 Z" fill="#ffed50" stroke="#c9b800" stroke-width="1" stroke-linejoin="round"/>
+  <text x="472" y="14" font-size="8" fill="#6c757d" text-anchor="middle">reads and runs</text>
+  <line x1="326" y1="75" x2="448" y2="38" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="326" y1="75" x2="448" y2="75" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="326" y1="75" x2="448" y2="112" stroke="#212529" stroke-width="1.5" marker-end="url(#arrow)"/>
+</svg>

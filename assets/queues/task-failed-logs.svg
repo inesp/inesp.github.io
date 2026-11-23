@@ -1,0 +1,38 @@
+<svg viewBox="0 0 520 190" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="520" height="190" fill="#fff"/>
+
+  <!-- LOG VIEWER: our breadcrumb among the noise -->
+  <rect x="16" y="12" width="488" height="166" fill="#fff" rx="6" stroke="#212529" stroke-width="1.5"/>
+  <rect x="16" y="12" width="488" height="28" fill="#212529" rx="6"/>
+  <rect x="16" y="30" width="488" height="10" fill="#212529"/>
+  <text x="30" y="31" font-size="10" fill="#fff" font-weight="bold">logs</text>
+  <text x="490" y="31" font-size="9" fill="#ffed50" text-anchor="end">21 Nov, 10:42</text>
+  <text xml:space="preserve" x="30" y="65" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#6c757d">10:42:05</text>
+  <text xml:space="preserve" x="86" y="65" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#4a9c6d" font-weight="bold">INFO</text>
+  <text xml:space="preserve" x="120" y="65" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#212529">GET /orders 200</text>
+  <line x1="26" y1="72" x2="494" y2="72" stroke="#eeeeee" stroke-width="1.0"/>
+  <text xml:space="preserve" x="30" y="86" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#6c757d">10:42:06</text>
+  <text xml:space="preserve" x="86" y="86" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#4a9c6d" font-weight="bold">INFO</text>
+  <text xml:space="preserve" x="120" y="86" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#212529">order 1881 saved</text>
+  <line x1="26" y1="93" x2="494" y2="93" stroke="#eeeeee" stroke-width="1.0"/>
+
+  <!-- OUR TASK: the one line we added at the start of the task -->
+  <rect x="22" y="93" width="476" height="20" fill="#ffed50" rx="3" stroke="#e7d749" stroke-width="1"/>
+  <text xml:space="preserve" x="30" y="107" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#6c757d">10:42:07</text>
+  <text xml:space="preserve" x="86" y="107" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#4a9c6d" font-weight="bold">INFO</text>
+  <text xml:space="preserve" x="120" y="107" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#212529" font-weight="bold">Task send_invoice started</text>
+  <text xml:space="preserve" x="300" y="107" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#212529">task_id=7f3a order_id=42</text>
+  <text xml:space="preserve" x="30" y="128" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#6c757d">10:42:07</text>
+  <text xml:space="preserve" x="86" y="128" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#4a9c6d" font-weight="bold">INFO</text>
+  <text xml:space="preserve" x="120" y="128" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#212529">GET /health 200</text>
+  <line x1="26" y1="135" x2="494" y2="135" stroke="#eeeeee" stroke-width="1.0"/>
+  <text xml:space="preserve" x="30" y="149" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#6c757d">10:42:08</text>
+  <text xml:space="preserve" x="86" y="149" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#4a9c6d" font-weight="bold">INFO</text>
+  <text xml:space="preserve" x="120" y="149" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#212529">Task send_invoice finished</text>
+  <text xml:space="preserve" x="300" y="149" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#6c757d">task_id=91bc order_id=1881</text>
+  <line x1="26" y1="156" x2="494" y2="156" stroke="#eeeeee" stroke-width="1.0"/>
+  <text xml:space="preserve" x="30" y="170" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#6c757d">10:42:09</text>
+  <text xml:space="preserve" x="86" y="170" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#4a9c6d" font-weight="bold">INFO</text>
+  <text xml:space="preserve" x="120" y="170" font-family="ui-monospace, Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="9" fill="#212529">GET /orders/1881 200</text>
+  <line x1="26" y1="177" x2="494" y2="177" stroke="#eeeeee" stroke-width="1.0"/>
+</svg>
