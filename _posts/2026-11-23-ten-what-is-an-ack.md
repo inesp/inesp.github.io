@@ -194,3 +194,49 @@ By default, it commits periodically, every 5s. However, this doesn't change the 
 
 
 
+## Ideas for metrics
+
+What can we monitor to catch the vanished tasks?
+
+Here are some ideas: 
+
+**Started vs finished** 
+
+We count start and end: 
+- as the task starts: `statsd.increment("tasks.started")`, 
+- once it succeeds: `statsd.increment("tasks.succeeded")`, 
+- once it errors out: `statsd.increment("tasks.failed")`. 
+
+A task that dies mid-run never reaches its last line or its error handler, so it gets counted only once, at the start.
+
+Mathematically, it should be:
+
+$$
+\text{started} = \text{succeeded} + \text{failed} + \underbrace{\text{running}}_{\le \text{1 per worker}}
+$$
+
+The `running` is an estimate. Instead of alerting on an exact number, we can watch the trend, or alert when the difference grows over some level.
+
+![started-vs-finished-gap](/assets/queues/started-vs-finished-gap.svg)
+
+This number will only ever go up, because a task that died and ran again was started twice, but it can only finish once. So we don't look at the height of the line, only at its steps.
+
+**Redeliveries** 
+
+Most brokers report that a task is back again (was delivered to the worker again). We can record this on the first line of the task (`statsd.increment("tasks.redelivered")`).
+
+This is our rerun rate. It doesn't show vanished tasks, but it does show the frequency of tasks dying mid-work.
+
+![redeliveries](/assets/queues/redeliveries.svg)
+
+Together with the first chart, this gives us a neat check. A deploy kills 18 tasks, so the first chart goes up by 18. With late `ack`, all 18 tasks come back, so the redeliveries chart shows 18 too. **18 died, 18 came back, nothing is lost.** But if only 15 came back, then 3 tasks are gone for good.
+
+Or, as one metric, counted per day:
+
+$$
+\text{lost} = \text{started} - \text{succeeded} - \text{failed} - \text{redeliveries} - \text{running}
+$$
+
+Every task that came back cancels the run that died before it, so what's left are the tasks that died and never came back. This line should tend towards 0.
+
+![lost-tasks-per-day](/assets/queues/lost-tasks-per-day.svg)
