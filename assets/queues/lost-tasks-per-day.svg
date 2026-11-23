@@ -1,0 +1,54 @@
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="640" height="250" fill="#fff"/>
+  <!-- Widget frame -->
+  <rect x="8" y="8" width="624" height="234" rx="6" fill="#fff" stroke="#dadada" stroke-width="1.2"/>
+  <text x="22" y="32" font-size="12" font-weight="bold" fill="#212529">lost tasks: each bar is 1 day</text>
+  <text x="214" y="32" font-size="10" fill="#6c757d">started − succeeded − failed − redeliveries − running</text>
+  <rect x="542" y="19" width="76" height="19" rx="9.5" fill="#f1f3f5"/>
+  <text x="580" y="32" font-size="9.5" fill="#6c757d" text-anchor="middle">past 14 days</text>
+  <!-- Grid lines + y labels -->
+  <text x="20" y="132.0" font-size="9" fill="#6c757d" text-anchor="middle" transform="rotate(-90 20 132.0)">tasks lost that day</text>
+  <line x1="60" y1="212.0" x2="616" y2="212.0" stroke="#eceff1" stroke-width="1"/>
+  <text x="52" y="215.0" font-size="9" fill="#6c757d" text-anchor="end">-20</text>
+  <line x1="60" y1="180.0" x2="616" y2="180.0" stroke="#eceff1" stroke-width="1"/>
+  <text x="52" y="183.0" font-size="9" fill="#6c757d" text-anchor="end">-10</text>
+  <line x1="60" y1="148.0" x2="616" y2="148.0" stroke="#212529" stroke-width="1.2"/>
+  <text x="52" y="151.0" font-size="9" fill="#6c757d" text-anchor="end">0</text>
+  <line x1="60" y1="116.0" x2="616" y2="116.0" stroke="#eceff1" stroke-width="1"/>
+  <text x="52" y="119.0" font-size="9" fill="#6c757d" text-anchor="end">10</text>
+  <line x1="60" y1="84.0" x2="616" y2="84.0" stroke="#eceff1" stroke-width="1"/>
+  <text x="52" y="87.0" font-size="9" fill="#6c757d" text-anchor="end">20</text>
+  <line x1="60" y1="52.0" x2="616" y2="52.0" stroke="#eceff1" stroke-width="1"/>
+  <text x="52" y="55.0" font-size="9" fill="#6c757d" text-anchor="end">30</text>
+  <!-- Daily bars -->
+  <text x="79.9" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 10</text>
+  <rect x="107.7" y="138.4" width="23.8" height="9.6" fill="#35b0e8"/>
+  <text x="119.6" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 11</text>
+  <rect x="147.4" y="148.0" width="23.8" height="3.2" fill="#35b0e8"/>
+  <text x="159.3" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 12</text>
+  <rect x="187.1" y="144.8" width="23.8" height="3.2" fill="#35b0e8"/>
+  <text x="199.0" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 13</text>
+  <rect x="226.8" y="141.6" width="23.8" height="6.4" fill="#35b0e8"/>
+  <text x="238.7" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 14</text>
+  <rect x="266.5" y="148.0" width="23.8" height="6.4" fill="#35b0e8"/>
+  <text x="278.4" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 15</text>
+  <rect x="306.2" y="148.0" width="23.8" height="9.6" fill="#35b0e8"/>
+  <text x="318.1" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 16</text>
+  <rect x="345.9" y="141.6" width="23.8" height="6.4" fill="#35b0e8"/>
+  <text x="357.9" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 17</text>
+  <rect x="385.7" y="80.8" width="23.8" height="67.2" fill="#fd456f"/>
+  <text x="397.6" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 18</text>
+  <text x="437.3" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 19</text>
+  <rect x="465.1" y="138.4" width="23.8" height="9.6" fill="#35b0e8"/>
+  <text x="477.0" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 20</text>
+  <text x="516.7" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 21</text>
+  <text x="556.4" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 22</text>
+  <rect x="584.2" y="141.6" width="23.8" height="6.4" fill="#35b0e8"/>
+  <text x="596.1" y="227" font-size="9" fill="#6c757d" text-anchor="middle">Nov 23</text>
+  <!-- Annotations -->
+  <text x="417.5" y="71.2" font-size="10.5" font-weight="bold" fill="#fd456f">21 tasks died and never came back:</text>
+  <text x="417.5" y="84.2" font-size="10.5" font-weight="bold" fill="#fd456f">something is losing our tasks</text>
+  <text x="68" y="71.2" font-size="10.5" font-weight="bold" fill="#212529">a normal day: a small wobble around 0</text>
+  <text x="68" y="176.8" font-size="10" font-weight="bold" fill="#6c757d">below 0: a task that started yesterday and finished today,</text>
+  <text x="68" y="189.8" font-size="10" font-weight="bold" fill="#6c757d">or a slow task that the broker gave to a 2nd worker, and both finished</text>
+</svg>
