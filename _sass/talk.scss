@@ -4,7 +4,7 @@
 /* The hero reuses .home-hero, trimmed: someone standing in a conference hallway
    gets a smaller photo and a tighter block before the talk itself. */
 .talk-hero {
-  margin-bottom: 5rem; // let the block breathe before the talk itself starts
+  margin-bottom: 2rem;
 
   .hero-photo {
     width: 140px;
@@ -20,16 +20,6 @@
   .hero-tagline {
     font-size: var(--h5-size);
     max-width: 44rem;
-  }
-
-  .talk-open {
-    font-weight: 500;
-    max-width: 40rem;
-    margin: 0 auto;
-  }
-
-  .hero-links {
-    margin-top: 1.5rem;
   }
 }
 
