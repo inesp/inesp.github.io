@@ -119,10 +119,12 @@ fluid: true
 
   <div class="talk-catalogue-list">
     {%- for talk in site.data.talk_catalogue -%}
-    <div class="talk-catalogue-item">
-      <h3>{%- if talk.key -%}<a href="/talk/{{ talk.key }}/">{{ talk.title }}</a>{%- else -%}{{ talk.title }}{%- endif -%}</h3>
-      {{ talk.description | markdownify }}
-    </div>
+      {%- if talk.feature -%}
+      <div class="talk-catalogue-item">
+        <h3>{%- if talk.key -%}<a href="/talk/{{ talk.key }}/">{{ talk.title }}</a>{%- else -%}{{ talk.title }}{%- endif -%}</h3>
+        {{ talk.description | markdownify }}
+      </div>
+      {%- endif -%}
     {%- endfor -%}
   </div>
 </section>
