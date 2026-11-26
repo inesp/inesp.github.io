@@ -4,5 +4,5 @@
 layout: talk
 permalink: /talk/deploy-impact/
 talk: deploy-impact
-title: "How I Built Anomaly Detection from Scratch (and We Ran It for Customers for 6 Years)"
+title: "How I Built Anomaly Detection from Scratch (and How We Ran It for Customers for 6 Years)"
 ---

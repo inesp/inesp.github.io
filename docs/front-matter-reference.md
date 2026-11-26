@@ -120,6 +120,7 @@ One entry per talk, and it holds everything: the pitch shown on `/talks/`, and t
 - `abstract`: Optional longer text for the talk's own page, markdown, usually several paragraphs.
 - `series`: Optional series name, exactly as in `_data/topics.yml`. Every post in it contributes to the reference list.
 - `post_slugs`: Optional list of post slugs (the filename without the date prefix and extension). Use it alongside `series`, instead of it, or with several posts.
+- `feature: true`: Optional. Shows the talk's card in the catalogue on `/talks/`. Without it the talk still gets its own page, it's just not listed.
 - `page: false`: Optional. Skips the landing page for a talk that shouldn't have one yet.
 
 The reference list on the page is collected from the `biblio` of every post named by `series` and `post_slugs` together, deduplicated by link and sorted by title. The series and each named post also get a button at the bottom of the page.

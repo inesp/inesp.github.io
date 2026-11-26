@@ -13,16 +13,14 @@
 # by any of that writing, deduplicated.
 
 
-- key: api-resilience
-  title: "Their API Went Down. So Why Is My App on Fire?"
-  series: API Resilience Patterns
-  post_slugs:
-    - self-documented-code-part-II
-  description: Every API is doing its own thing. Authorization, headers, rate limiting (devs are creative people, so we just like to invent our own rules). After integrating **40+ APIs into the same product**, I have a lot to say about **handling failures of remote APIs**.
-  abstract: |
-    Third-party APIs are fickle and entirely out of your control. Sooner or later they will have an incident. Will your app survive their outage? Or will they drag you down with them?
+- key: cognitive-biases
+  feature: true
+  title: Why Smart Developers Write Silly Code
+  series: Cognitive Biases in Code
+  description: Knowing about cognitive biases is like **debugging our brain**. Devs spend tons of time fixing bugs in code, but biases are **the mental bugs** that mess with our decisions. They make us overconfident, they make us ignore users and fight for bad ideas. But it needn't be this way.
 
 - key: data-lies
+  feature: true
   title: How We Lie to Each Other with Data
   series: "The Algorithm Decided"
   description: "Of course, we learned statistics. We went to university, there was a course, there was an exam, we passed it. But we don't really use it at work... when writing code, except... that we love **proving a point with a good chart**. That would be a harmless quirk if we were bakers, but our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you. Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing."
@@ -34,6 +32,7 @@
     Software engineers have somehow become some of the **most consequential decision-makers in society**, and we cope with it by pretending we're just typing.
 
 - key: estimation
+  feature: true
   title: Software Estimation Is a Delusion
   post_slugs:
     - estimation-is-a-delusion
@@ -49,7 +48,18 @@
 
     Unfortunately, I'm not offering a magic formula. I'm offering language on how to push back on false precision, and how to plan better: not answer "how long will this take?" but "what can we actually build with the time and the resources we have?".
 
+- key: api-resilience
+  feature: true
+  title: "Their API Went Down. So Why Is My App on Fire?"
+  series: API Resilience Patterns
+  post_slugs:
+    - self-documented-code-part-II
+  description: Every API is doing its own thing. Authorization, headers, rate limiting (devs are creative people, so we just like to invent our own rules). After integrating **40+ APIs into the same product**, I have a lot to say about **handling failures of remote APIs**.
+  abstract: |
+    Third-party APIs are fickle and entirely out of your control. Sooner or later they will have an incident. Will your app survive their outage? Or will they drag you down with them?
+
 - key: deploy-impact
+  feature: true
   title: "How I Built Anomaly Detection from Scratch (and How We Ran It for Customers for 6 Years)"
   post_slugs:
     - impact-of-a-deploy
@@ -67,10 +77,37 @@
 
     I'll walk through the evolution of the algorithm, the edge cases I uncovered, and the tricks I've set up. The system ran on real customer data from 2020. It worked great, spotted real degradations, and yet... it kinda never got many fans. So it will soon be archived. Still, it was the most fun problem I ever got to work on: no library to install, no right answer to copy, just data and trial and error.
 
-- key: cognitive-biases
-  title: Why Smart Developers Write Silly Code
+- key: code-runs-the-world
+  title: "Code Runs the World, Biases Run Our Brains"
   series: Cognitive Biases in Code
-  description: Knowing about cognitive biases is like **debugging our brain**. Devs spend tons of time fixing bugs in code, but biases are **the mental bugs** that mess with our decisions. They make us overconfident, they make us ignore users and fight for bad ideas. But it needn't be this way.
+  post_slugs:
+    - the-algorithm-decided-intro
+    - algo-regression-to-mean
+    - algo-missing-data
+    - algo-feedback-loops
+  description: Knowing about cognitive biases is like **debugging our brain**. Devs spend tons of time fixing bugs in code, but biases are **the mental bugs** that mess with our decisions. And our code now decides **who gets a loan**, whose claim gets approved, when the doctor sees you.
+  abstract: |
+    How many decisions did you make today for people you will never meet?
+
+    As developers, we like to think we just write code, we just deliver tickets. But we are not that innocent. We pick a default, we collect stats, we validate the input, we cap a field, we decide which options the form offers. All of these feel like inconsequential choices, so we let our gut make the decisions. But **our gut is basically a collection of cognitive biases**, patterns of behavior that give us a high chance of survival, not wisdom that will help us build amazing software to support society.
+
+    That our work is riddled with cognitive biases would be a harmless, funny quirk, if we were bakers. **But we are developers.** We write the algorithms that are everywhere now. **Our code is helping to decide** whose transaction gets flagged as fraud, whose CV makes it past the first filter, who gets the next big project and the promotion after it, which neighborhood the police patrol tonight, what half a country believes before an election, ...
+
+    Psychology has studied cognitive biases for decades, but in software engineering **we rarely talk about them**, even though they affect everything from architecture to debugging to reviewing. We make decisions that feel rational but are really the result of shortcuts our brains take to save energy.
+
+    This talk exposes how cognitive biases creep into our work, **disguise themselves as data, and accidentally become rules for everybody to live by.**
+
+- key: twice-early-never
+  feature: true
+  title: "Twice, Early, or Never: Your Queue Has Commitment Issues"
+  series: Twice, Early, or Never
+  description: When we put a task into a queue, we expect the task to be run **soon and precisely once**. But the queue has made us no promises. The only thing the queue agreed to was to hold our message until a worker takes it. It is surprisingly little. So sooner or later, a task will run **twice**, or it will **vanish**, or it will be **cut in half**, or it will be **stuck** behind a slow job, or...
+  abstract: |
+    When you put a job in a queue, it feels like a promise: the job will run once and soon. But the queue never promised that, the only thing it promised was to hold our message until a worker takes it.
+
+    So sooner or later, a job will run twice, because a worker crashed just before saying "done". Or it will run early, before the database transaction that created it has committed. Or it will never run at all, because it expired, got rejected, or failed for a different reason.
+
+    Thus, we design systems around the queues to cover up for the queue's natural shortcomings: use the at-least-once settings, make jobs idempotent, plan for smart retries, use database and Redis locks to guard against race conditions, set up dead-letter queues, log expired and rejected jobs, ... but also fail fast during an incident.
 
 - key: tests
   title: How Many Tests Is Enough?
