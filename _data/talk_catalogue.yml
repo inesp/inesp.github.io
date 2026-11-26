@@ -97,6 +97,18 @@
 
     This talk exposes how cognitive biases creep into our work, **disguise themselves as data, and accidentally become rules for everybody to live by.**
 
+- key: twice-early-never
+  feature: true
+  title: "Twice, Early, or Never: Your Queue Has Commitment Issues"
+  series: Twice, Early, or Never
+  description: When we put a task into a queue, we expect the task to be run **soon and precisely once**. But the queue has made us no promises. The only thing the queue agreed to was to hold our message until a worker takes it. It is surprisingly little. So sooner or later, a task will run **twice**, or it will **vanish**, or it will be **cut in half**, or it will be **stuck** behind a slow job, or...
+  abstract: |
+    When you put a job in a queue, it feels like a promise: the job will run once and soon. But the queue never promised that, the only thing it promised was to hold our message until a worker takes it.
+
+    So sooner or later, a job will run twice, because a worker crashed just before saying "done". Or it will run early, before the database transaction that created it has committed. Or it will never run at all, because it expired, got rejected, or failed for a different reason.
+
+    Thus, we design systems around the queues to cover up for the queue's natural shortcomings: use the at-least-once settings, make jobs idempotent, plan for smart retries, use database and Redis locks to guard against race conditions, set up dead-letter queues, log expired and rejected jobs, ... but also fail fast during an incident.
+
 - key: tests
   title: How Many Tests Is Enough?
   description: "What makes us really calm when deploying code to production? A green test suite with **100% test coverage**. But then we merge, deploy, go to lunch... and somewhere out there a user does something so creative that **production goes down anyway**. There's no amount of tests that makes the bugs go away. We wish test coverage was a magic number, just like we want to believe in the power of other metrics (LOC, story points, DORA, ...). This talk grapples with two questions: **what our tests actually catch**, and why we keep reaching for these numbers."
