@@ -15,5 +15,3 @@ home: |
 # Talk landing pages (_layouts/talk.html), read by someone who just watched the talk
 talk: |
   <p class="hero-tagline">I'm a software engineer and international speaker from Slovenia, and the person who just gave this talk. For six years I was the first engineer and de-facto architect of a SaaS observability platform.</p>
-  <p class="hero-facts">Almost two decades of building software.</p>
-  <p class="hero-facts">Multi-tenant architecture. Circuit breakers guarding 2-3 million third-party API calls a day across about 40 external APIs. Real-time anomaly detection for hundreds of clients.</p>
