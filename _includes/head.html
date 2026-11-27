@@ -17,6 +17,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo title=false -%}
+  {%- if page.noindex %}
+  <meta name="robots" content="noindex">
+  {%- endif %}
 
   <link rel="stylesheet" href="{{ "/assets/bs-override.css" | relative_url }}?v={{ site.time | date: '%s' }}">
 
